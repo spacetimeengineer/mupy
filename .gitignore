@@ -1,0 +1,12 @@
+.installed.cfg
+bin
+develop-eggs
+downloads
+eggs
+parts
+spacetimeengine.egg-info
+.egg-info
+src/*.egg-info
+lib
+lib64
+.DS_Store

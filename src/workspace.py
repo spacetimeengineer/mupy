@@ -1,0 +1,84 @@
+#!/usr/bin/env python3
+
+from distutils.command.build_scripts import first_line_re
+import hashlib
+
+class WorkSpace:
+    """  Gives context to parts and assemblys. Provides functionallity by calling sub-functions of assembly and part objects making code much shorter and much more advanced. 
+    Provides information such as path information or other metadata. Also serves as a virtual workbench which encapsulates parts and assemblys.
+    It is best if workspace is oriented to a certain class of assemblys of projects or just a single assemly or project. It is not nessecary to make a new workspace for 
+    every new gearbox unless they are using different parts completely in which case it may only be advisable but certainly not restricted."""
+
+    def __init__(self, directory):
+
+        self.workspace_directory = directory
+        self.parts= [] # TODO: Depreciate for better variables.
+        self.hardware = []
+        self.assemblies = []
+        self.processed_assemblies = []
+        self.errors = [] # Error aggregation object. # TODO : Make a class for this that is more thoughtful.
+
+    def recursive_import(self, system, system_coordinates):
+        """This is a strange function ; it recursivly takes in objects from the main assembly and gives them a home them in the workspace. 
+        This function was made to so that users would not need to include every individual part or assembly. """
+        first_processed_assemblies_call = True # This is nessary to get things started.  
+        while (len(self.processed_assemblies) > 0 or first_processed_assemblies_call == True):
+
+            if (first_processed_assemblies_call==False):
+                system = self.processed_assemblies[0]
+            else:
+                system.assign_coordinates(system_coordinates)
+
+
+            if (type(system).__name__ == "Hardware"): # If it is a part object.
+                print("Workspace : "+self.workspace_directory+" : Discovering hardware object: "+system.id)
+                system.workspace_directory = self.workspace_directory
+                self.hardware.append(system)
+                if (first_processed_assemblies_call==False):
+                    self.processed_assemblies.remove(system)
+
+            elif (type(system).__name__ == "Assembly"): # If it is an assembly object.
+                print("Discovering assembly object : "+ system.id)
+                system.workspace_directory = self.workspace_directory
+                self.assemblies.append(system)
+
+                if (first_processed_assemblies_call==False):
+                    self.processed_assemblies.remove(system)
+                
+
+                first_processed_assemblies_call = False
+                for component in system.components:
+                    self.processed_assemblies.append(component) # Include assembly into the catagories of assemblues which are being processed.
+
+            else:
+                pass
+
+
+    def detect_duplicates(self, list):    
+        ''' Check if given list contains any duplicates '''
+        if len(list) == len(set(list)):
+            return False # There are no duplicate records because the length of the list and set are equal.
+        else:
+            self.errors.append("Duplicate hardware or assembly component detected and cannot process assembly script. Remove duplicate component in order to run properly.") # Append error.
+            return True # Duplicate record exists.
+
+    def write_scad(self):
+        "Debug function for getting access to system level errors."
+        if not (self.detect_duplicates(self.hardware) or self.detect_duplicates(self.assemblies)):
+            for hardware in self.hardware: # For each part.
+                hardware.build_hardware(self.workspace_directory) # Write scad file for this hardwre.
+            for assembly in self.assemblies: # For each assembly.
+                assembly.assemble(self.workspace_directory) # Write scad file for this assembly.
+
+    def print_errors(self):
+        "Debug function for getting access to system level erros."
+        print(self.errors) # Print erros associated with workspace.
+        for hardware in self.hardware: # For each part.
+            print(hardware.errors) # Print error.
+        for assembly in self.assemblies:  # For each assembly.
+            print(assembly.errors) # Print errors contained. (Debug only)
+
+    def run(self, system, coordinates):
+        "Main function for workspace to get everthing written and initialized."
+        self.recursive_import(system, coordinates) # Recursive inclusion of parts and assemblies into workspace.
+        self.write_scad() # Recursive writing of scad object contained in assembly.
