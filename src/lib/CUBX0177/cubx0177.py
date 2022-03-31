@@ -17,10 +17,10 @@ class CUBX0177:
         self.scad_file_name = directory + hardware_code +".scad" # This scad file is used to build the stl. It can be deleted afterwards. # TODO : Delete this file after run() command is called.
         self.scad_file = open(self.scad_file_name, 'w+')  # open file in append mode
         
-
-        os.system("cp -R lib/scad/CUBX0177/ "+ self.directory)
-
-        self.scad_file.write('use <CUBX0177/CUBX0177.scad>;\n\n')
+        os.system("pwd")
+        os.system("cp -R src/lib/CUBX0177/scad/ "+ self.directory) # Copies resouces into the workspace directory. These will be deletd later.
+ 
+        self.scad_file.write('use <scad/CUBX0177.scad>;\n\n')
         
         
         

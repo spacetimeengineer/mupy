@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import hashlib
-import os, sys
+import os, sys, shutil
 from .decode import Decode
 from os.path import exists
 
@@ -96,6 +96,8 @@ class Hardware:
                 os.remove(directory+self.hardware_code+".scad")
             except OSError:
                 print(Exception)
+        if exists(directory+"scad"):
+            shutil.rmtree(directory+"scad")
 
     def build_hardware(self, directory):
         """Clean function which builds and manages stl files """
