@@ -29,7 +29,6 @@ class WorkSpace:
             else:
                 system.assign_coordinates(system_coordinates)
 
-
             if (type(system).__name__ == "Hardware"): # If it is a part object.
                 print("Workspace : "+self.workspace_directory+" : Discovering hardware object: "+system.id)
                 system.workspace_directory = self.workspace_directory
@@ -49,7 +48,6 @@ class WorkSpace:
                 first_processed_assemblies_call = False
                 for component in system.components:
                     self.processed_assemblies.append(component) # Include assembly into the catagories of assemblues which are being processed.
-
             else:
                 pass
 
@@ -62,11 +60,11 @@ class WorkSpace:
             self.errors.append("Duplicate hardware or assembly component detected and cannot process assembly script. Remove duplicate component in order to run properly.") # Append error.
             return True # Duplicate record exists.
 
-    def write_scad(self):
+    def generate(self):
         "Debug function for getting access to system level errors."
         if not (self.detect_duplicates(self.hardware) or self.detect_duplicates(self.assemblies)):
             for hardware in self.hardware: # For each part.
-                hardware.build_hardware(self.workspace_directory) # Write scad file for this hardwre.
+                hardware.build_hardware(self.workspace_directory) # Write scad file for this hardwere.
             for assembly in self.assemblies: # For each assembly.
                 assembly.assemble(self.workspace_directory) # Write scad file for this assembly.
 
@@ -81,4 +79,4 @@ class WorkSpace:
     def run(self, system, coordinates):
         "Main function for workspace to get everthing written and initialized."
         self.recursive_import(system, coordinates) # Recursive inclusion of parts and assemblies into workspace.
-        self.write_scad() # Recursive writing of scad object contained in assembly.
+        self.generate() # Recursive writing of scad object contained in assembly.

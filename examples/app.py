@@ -1,20 +1,15 @@
 #!/usr/bin/env python3
 
+from src.workspace import WorkSpace
+from src.hardware import Hardware
+from src.coordinates import Coordinates
+from src.assembly import Assembly
 
 
-import sys
-from ..src.workspace import WorkSpace
-from ..src.hardware import Hardware
-from ..src.coordinates import Coordinates
-from ..src.assembly import Assembly
-
-
-
-
-
+# A workspace represents a virtual 3D spce which serves as a virtual workbench except it is not a surface but a space.
 """ Workspace """
 
-workspace = WorkSpace("/home/mryan/Desktop/phi/phi/src/modular_gearboxes/")
+workspace = WorkSpace("/home/mryan/Desktop/psi/modular_gearboxes/")
 
 """ Hardware """
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import os 
 import hashlib
-from coordinates import Coordinates
+from .coordinates import Coordinates
 
 class Assembly:
     """This class builds json objects which define hardware assembly schemes. 
@@ -32,7 +32,7 @@ class Assembly:
         return self.name+"_"+unrefined_hash[:7] #
 
     def assign_parent_id(self):
-        """"""
+        """Empowers each child component a reference to its parent ID ; The ID of this class object."""
         for component in self.components:
             component.parent_id = self.id
         pass

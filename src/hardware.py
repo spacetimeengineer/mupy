@@ -2,7 +2,7 @@
 
 import hashlib
 import os, sys
-from decode import Decode
+from .decode import Decode
 from os.path import exists
 
 class Hardware:
@@ -84,7 +84,7 @@ class Hardware:
     def build_stl(self, directory):
         """"""
         print("Decoding : "+self.hardware_code)
-        Decode(self.hardware_code, directory) #
+        Decode(self.hardware_code, directory) # This is where the hardware code is converted into an scad codewhich can be rendered to an stl.
         if not exists(directory+"stl_files/"+self.hardware_code+".stl"): #
             print("Rendering : "+self.hardware_code+".stl")
             os.system("openscad -o "+directory+"stl_files/"+self.hardware_code+".stl "+directory+self.hardware_code+".scad") # This is the scad file used to create the stl files
@@ -98,7 +98,8 @@ class Hardware:
                 print(Exception)
 
     def build_hardware(self, directory):
-        self.write_scad(directory)
-        self.build_stl(directory)
-        self.remove_jig(directory)
+        """Clean function which builds and manages stl files """
+        self.write_scad(directory) # Write scad files nessecarry to build stl. These files are temporary and the name of these files are equivilent to the hardware code currently.
+        self.build_stl(directory) # Builds stl from hardware code.
+        self.remove_jig(directory) # Removes unnessecary files which were used to buld the stl.
  

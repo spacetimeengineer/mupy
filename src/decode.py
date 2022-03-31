@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-#from hardware.cubx0006 import CUBX0006
+from .lib.CUBX0006.cubx0006 import CUBX0006
 from .lib.CUBX0177.cubx0177 import CUBX0177
 from .lib.CRSPGR022.crspgr022 import CRSPGR022
 
