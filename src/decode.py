@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 
 #from hardware.cubx0006 import CUBX0006
-from lib.cubx0177 import CUBX0177
-from lib.crspgr022 import CRSPGR022
+from .lib.CUBX0177.cubx0177 import CUBX0177
+from .lib.CRSPGR022.crspgr022 import CRSPGR022
 
 class Decode:
     """ This class creates objects which represent a decoding of a knonw hardware code. This object contains a name and hrdware code mostly but handles the hardware library importing routines which provide the system the tools to build the intended hardware element."""
