@@ -2,7 +2,7 @@ It is often subtle how technology in the world progresses and while most of the 
 
 Imagine a technology designed to assist lrgly in the advancemenct of human technology and innovation.
 
-
+![alt text](https://github.com/spacetimeengineer/psi/blob/master/psi/spacetimeengine_logo.png)
 
 What :
 
