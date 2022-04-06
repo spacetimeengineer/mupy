@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 from distutils.core import setup
+from setuptools import setup
 # Parametric System Instructions
 setup(
     name='psi',
@@ -16,4 +17,11 @@ setup(
     install_requires=[
 
     ],
+
+    classifiers=[
+        'Development Status :: 1 - Planning',
+        'Intended Audience :: Science/Research',
+        'License :: OSI Approved :: BSD License',  
+        'Programming Language :: Python :: 3.9',
+    ]
 )

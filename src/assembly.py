@@ -22,7 +22,7 @@ class Assembly:
         self.directory = "" #
         self.file_name = "" 
         self.function_name = ""
-        self.id = self.assign_id()
+        self.id = self.assign_id() # Assigns a special
 
     def assign_id(self):
         """ Assigns an appropriate ID ; one which maintains uniuness but is also alphabetic ; 

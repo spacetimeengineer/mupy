@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import hashlib
-import os, sys, shutil
+import os, shutil
 from .decode import Decode
 from os.path import exists
 
@@ -12,16 +12,15 @@ class Hardware:
     def __init__(self, name, hardware_code):
 
         self.hardware_code = hardware_code # A code which references the geometry of the part. Not the manufacturing process or material.
-        self.coordinate_superset = [] #
-        self.errors = [] #
-        self.name = name #
-        self.id = self.assign_id()
-        self.material_code = "unspecified" #
-        self.manufacturing_code = "unspecified" #
-        self.workspace_directory = "" #
-        self.stl_file_name = self.hardware_code+".stl"
-        self.scad_file_name = self.id+".scad"
-        self.function_name = ""
+        self.coordinate_superset = [] # The set of coordinate-set objects associated with this hardware object. TODO : This is relativly unstable. 
+        self.errors = [] # Error list associated with this object.
+        self.name = name # Hardware object name.
+        self.id = self.assign_id() # Object ID. Used for identification and uniquness mostly.
+        self.material_code = "unspecified" # A code which describes the intended material for this hardware objectto bemade of.
+        self.manufacturing_code = "unspecified" # A code which describes the intended manufacturing process for this hardware object. 
+        self.workspace_directory = "" # The directory associated with workspace which contains this hardware object.
+        self.stl_file_name = self.hardware_code+".stl" # The string path variable associated with the .stl file which this object helps generate.
+        self.scad_file_name = self.id+".scad" # The string path variable associated with the scad file which is used to render the .stl file.
 
     def assign_id(self):
         """ Assigns an appropriate ID ; one which maintains uniuness but is also alphabetic ; 
