@@ -1,6 +1,49 @@
 
 
-well built functions + openscad paramaters = family
+Parametric System Instruction Terminal
+
+Theory
+
+Generates and simulates both hardware and assemblies.
+
+
+
+Encoding
+User selects system provided choices of hardware family, type and parameters. (Which were already programmed in scad) - > Schema/Code -> Represent a mapping to a particular function.
+Decoding
+If an assembly is defined then that assembly can be parametrized and certified.
+
+Implementation
+
+
+Instructions
+
+    Installation
+
+    API
+
+    UI
+
+
+
+
+Keywords
+
+Hardware Codes
+    Family Codes
+    Type Codes
+        In general there is a scad module for each type.
+        The parameter count may vary from type tyo type but not within type. This could be easily overridden but it may just get confusing.
+    Paramater Codes
+Hardware Sets
+    Any hardware codethat is not completely specified s a hardware set since it includes a alist of possible hardware elements.
+Hardware Schemas
+    Encodings
+Hardware Modules
+Python3 Handlers
+    Encoding
+Decoding
+
 
 Certification
 Encoding

@@ -10,7 +10,6 @@ class Decode:
     def __init__(self, hardware_code, directory):
             """Run at object creation."""
 
-            self.name = "unnamed"
             self.hardware_code = hardware_code
             self.family_code = self.hardware_code.split("-")[0]
 

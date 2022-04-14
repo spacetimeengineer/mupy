@@ -7,6 +7,7 @@ import os
 from src.psiterm.input_branch import InputBranch
 from src.lib.CUBX0006.cubx0006 import * 
 from src.decode import Decode
+from src.hardware import Hardware
 
 
 def encoding_session():
@@ -69,19 +70,16 @@ print("Press 'Enter' to begin an encoding session or specify a hardware code and
 
 
 phi_symbol = '\u03C8'
-
-
 while True: # Main loop
-
     user_input = input(phi_symbol+":# ") 
-
     if user_input == "exit" or user_input == "close" or user_input == "done" or user_input == "leave":
         exit()
     elif user_input == "":
         encoding_session()
         pass
     elif len(user_input) > 0:
-        Decode(user_input,os.getcwd())
+        hardware = Hardware("unnamed", user_input)
+        hardware.build_hardware(os.getcwd())
     else:        
         pass
 

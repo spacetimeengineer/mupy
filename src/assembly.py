@@ -52,24 +52,51 @@ class Assembly:
         
         encapsulated_components_scad = "" # Declares scad code component.
         for component in self.components: # For each child component in this assembly object.
-            encapsulated_components_scad = encapsulated_components_scad + str(component.id)+"();" # scad code which just writes the child scad modules to render and execute within the parent assembly.
+            encapsulated_components_scad = encapsulated_components_scad + " " + str(component.id)+"();" # scad code which just writes the child scad modules to render and execute within the parent assembly.
         return encapsulated_components_scad # Returns string of scad function calls.
 
 
     def assembly_scad(self):
         """ Returns scad code representations of entire assembly."""
 
-        scad_code = 'module '+str(self.id)+'()\n{\n' # Creates scad codestring to be placed in new file with a file name using the object identification code.
+        scad_code = '\n/* A module dedicated to this assembly. This module is only called once becasue it references the unique hardware assembly operation (In both real and virtual space) which only needs to be done once. \nThese components are themselves other hardware and assembly objects which carries both python3 and scad representation and eferences other files like these.*/\n'
+        scad_code = scad_code + 'module '+str(self.id)+'()\n{\n' # Creates scad codestring to be placed in new file with a file name using the object identification code.
+
+
         for coordinates in self.coordinate_superset: # For each coordinate set.
+
+            scad_code = scad_code + "    /* Initialize initial and final position and orientation. These values may be modified for assembly purposes. */\n\n" 
+            
+            scad_code = scad_code + "    /* Time */\n"
+            scad_code = scad_code + "    t_position_initial = 0;    // Initial time ( from 0 = initial to 1 = final and globally ).\n"
+            scad_code = scad_code + "    t_position_final = 0;      // Final time ( from 0 = initial to 1 = final and globally ).\n\n"
+
+            scad_code = scad_code + "    /* Position */\n"
+            scad_code = scad_code + "    x_position_initial = 0;    // Initial 'x' position ( in mm ).\n"
+            scad_code = scad_code + "    x_position_final = 0;      // Final 'x' position ( in mm ).\n"
+            scad_code = scad_code + "    y_position_initial = 0;    // Initial 'y' position ( in mm ).\n"
+            scad_code = scad_code + "    y_position_final = 0;      // Final 'y' position ( in mm ).\n"
+            scad_code = scad_code + "    z_position_initial = 0;    // Initial 'z' position ( in mm ).\n"
+            scad_code = scad_code + "    z_position_final = 0;      // Final 'z' position ( in mm ).\n\n"
+
+            scad_code = scad_code + "    /* Orientation */\n"
+            scad_code = scad_code + "    x_axis_angle_initial = 0;  // Initial angle along the 'x' axis. ( in degrees ).\n"
+            scad_code = scad_code + "    x_axis_angle_final = 0;    // Final angle along the 'x' axis. ( in degrees ).\n"
+            scad_code = scad_code + "    y_axis_angle_initial = 0;  // Initial angle along the 'y' axis. ( in degrees ).\n"
+            scad_code = scad_code + "    y_axis_angle_final = 0;    // Final angle along the the 'z' axis. ( in degrees ).\n"
+            scad_code = scad_code + "    z_axis_angle_final = 0;    // Final angle along the 'z' axis. ( in degrees ).\n\n"
+
+            scad_code = scad_code + "    /* Animation routine. */\n"
 
             """This script is contains code which utilizes animation variables ; $t. Using basic linear equations, trajectories are plotted and used for operational and assembly simulations in 3D space."""
 
             scad_code = scad_code + \
-                    '  if ($t >= '+str(coordinates.t_i)+' && $t <= '+str(coordinates.t_f)+')\n'\
-                    '  {\n'\
-                    '    translate(['+str(coordinates.p_i[0])+'+$t*('+str(coordinates.p_f[0])+'-'+str(coordinates.p_i[0])+') , '+str(coordinates.p_i[1])+'+$t*('+str(coordinates.p_f[1])+'-'+str(coordinates.p_i[1])+'), '+str(coordinates.p_i[2])+'+$t*('+str(coordinates.p_f[2])+'-'+str(coordinates.p_i[2])+') ] ) { rotate(['+str(coordinates.a_i[0])+'+$t*('+str(coordinates.a_f[0])+'-'+str(coordinates.a_i[0])+'), '+str(coordinates.a_i[1])+'+$t*('+str(coordinates.a_f[1])+'-'+str(coordinates.a_i[1])+'), '+str(coordinates.a_i[2])+'+$t*('+str(coordinates.a_f[2])+'-'+str(coordinates.a_i[2])+')]) { '+self.encapsulated_components_scad()+' } }\n'\
-                    '  }\n' # scad code.
-        scad_code = scad_code + '}\n' # scad code.
+                    '    if ($t >= '+str(coordinates.t_i)+' && $t <= '+str(coordinates.t_f)+')\n'\
+                    '    {\n'\
+                    '        translate(['+str(coordinates.p_i[0])+'+$t*('+str(coordinates.p_f[0])+'-'+str(coordinates.p_i[0])+') , '+str(coordinates.p_i[1])+'+$t*('+str(coordinates.p_f[1])+'-'+str(coordinates.p_i[1])+'), '+str(coordinates.p_i[2])+'+$t*('+str(coordinates.p_f[2])+'-'+str(coordinates.p_i[2])+') ] ) { rotate(['+str(coordinates.a_i[0])+'+$t*('+str(coordinates.a_f[0])+'-'+str(coordinates.a_i[0])+'), '+str(coordinates.a_i[1])+'+$t*('+str(coordinates.a_f[1])+'-'+str(coordinates.a_i[1])+'), '+str(coordinates.a_i[2])+'+$t*('+str(coordinates.a_f[2])+'-'+str(coordinates.a_i[2])+')]) { '+self.encapsulated_components_scad()+' } }\n'\
+                    '    }\n' # scad code.
+        scad_code = scad_code + '}\n\n' # scad code.
+        scad_code = scad_code + '/* Run */\n' # scad code.
         scad_code = scad_code + str(self.id)+'();' # Writes the function calls.
         return scad_code # Returns scad code as a string.
 
@@ -80,7 +107,10 @@ class Assembly:
             os.mkdir(directory) # Create directory for new objects.
 
         scad_file = open(directory+str(self.id)+".scad", "w") # Creates scad file staging without text.
+        scad_file.write("\n/* Parametric System Instructions : Generated hardware assembly .scad file. */\n\n")
         for component in self.components: # For each part.
+            scad_file.write('/* Imports assembly module '+component.id+'() from "'+component.id+'.scad" . These components are themselves other hardware and assembly \nobjects which carries both python3 and scad representation and eferences other files like these.*/\n') # A comment describing the import structure and it's relation to the assembly.
+
             scad_file.write('use <'+component.id+'.scad>;\n') # Import into file.
         scad_file.write(self.assembly_scad()) # Write file.
         scad_file.close() # Close scad file.

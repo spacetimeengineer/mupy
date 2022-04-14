@@ -14,9 +14,9 @@ class CUBX0006:
         self.type_code = self.hardware_code.split("-")[1] # The second section in the hardwarecode.
         self.directory = directory # Workspace directory to be specific.
 
-        self.scad_file_name = directory + hardware_code +".scad" # This scad file is used to build the stl. It can be deleted afterwards. # TODO : Delete this file after run() command is called.
+        self.scad_file_name = directory +"/"+hardware_code +".scad" # This scad file is used to build the stl. It can be deleted afterwards. # TODO : Delete this file after run() command is called.
         self.scad_file = open(self.scad_file_name, 'w+')  # open file in append mode
-        
+        print(self.scad_file_name)
         os.system("cp -R src/lib/CUBX0006/ "+ self.directory) # Copies resouces into the workspace directory. These will be deletd later.
         self.scad_file.write('use <CUBX0006/scad/CUBX0006.scad>;\n\n') # Write imports.
 

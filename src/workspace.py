@@ -48,7 +48,6 @@ class WorkSpace:
             else: # If there is some other object.
                 pass # Just pass.
 
-
     def detect_duplicates(self, list):    
         ''' Check if given list contains any duplicates '''
         if len(list) == len(set(list)): # If the length of the set is equal to the length of the list.

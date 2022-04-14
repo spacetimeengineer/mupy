@@ -30,7 +30,7 @@ class Hardware:
         return self.name+"_"+unrefined_hash[:7] #
     
     def assign_coordinates(self, coordinates): #
-        """ Adds another assembly epoche effectivly but it is on the user to utalize the $t time variable properly."""
+        """ Adds another assembly epoche effectivly but it is on the user to utilize the $t time variable properly."""
         self.coordinate_superset.append(coordinates) #
 
     def assign_coordinates_operand_id(self, coordinates):
@@ -60,33 +60,20 @@ class Hardware:
         if not os.path.exists(directory): # Checks if main workspace directory exists.
             os.mkdir(directory) # Creates the workspace directory.
 
-        if not os.path.exists(directory+"stl_files/"): # Checks if the stl_file folder exists.
-            os.mkdir(directory+"stl_files/") # Creates the stl_files directory.
+        if not os.path.exists(directory+"/stl_files/"): # Checks if the stl_file folder exists.
+            os.mkdir(directory+"/stl_files/") # Creates the stl_files directory.
 
-        scad_file = open(directory+self.scad_file_name, "w") # Creates new .scad file.
+        scad_file = open(directory+"/"+self.scad_file_name, "w") # Creates new .scad file.
         scad_file.write(self.hardware_scad()) # Writes scad code to file.
         scad_file.close() # Close file.
-
-        """ Builds STLs and dependencies. Deletes everything after object renders."""
-
-        Decode(self.hardware_code, directory) #
-        if not exists(directory+"stl_files/"+self.hardware_code+".stl"): #
-            os.system("openscad -o "+directory+"stl_files/"+self.hardware_code+".stl "+directory+self.hardware_code+".scad") # This is the scad file used to create the stl files
-            
-        if exists(directory+self.hardware_code+".scad"):
-            try:
-                os.remove(directory+self.hardware_code+".scad")
-            except OSError:
-                print(Exception)
-    
     
     def build_stl(self, directory):
         """"""
         print("Decoding : "+self.hardware_code)
         Decode(self.hardware_code, directory) # This is where the hardware code is converted into an scad codewhich can be rendered to an stl.
-        if not exists(directory+"stl_files/"+self.hardware_code+".stl"): #
+        if not exists(directory+"/stl_files/"+self.hardware_code+".stl"): #
             print("Rendering : "+self.hardware_code+".stl")
-            os.system("openscad -o "+directory+"stl_files/"+self.hardware_code+".stl "+directory+self.hardware_code+".scad") # This is the scad file used to create the stl files
+            os.system("openscad -o "+directory+"/stl_files/"+self.hardware_code+".stl "+directory+"/"+self.hardware_code+".scad") # This is the scad file used to create the stl files
     
     def remove_jig(self, directory): # Called with each run command per part.
         """Removes files which have served thier purpose and are no longer needed."""
