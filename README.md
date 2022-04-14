@@ -9,4 +9,4 @@ PSI ( Parametric System Instruction ) is a python3 package
 
 | Project Team          | Email                          |
 | --------------------- | ------------------------------ |
-| Michael Cranston Ryan | spacetime.engineer@gmail.com   |
+| Michael C Ryan | spacetime.engineer@gmail.com   |
