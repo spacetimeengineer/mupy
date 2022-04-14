@@ -1,8 +1,9 @@
-### Project Description:
+### Project Description: PSI ( Parametric System Instruction )
 
-PSI ( Parametric System Instruction ) is a python3 package
 
-### Type: Python Pip Package
+### Installation
+
+    pip3 install psi
 
 
 ### Contacts:
