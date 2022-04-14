@@ -86,7 +86,7 @@ class Assembly:
             scad_code = scad_code + "    y_axis_angle_final = 0;    // Final angle along the the 'z' axis. ( in degrees ).\n"
             scad_code = scad_code + "    z_axis_angle_final = 0;    // Final angle along the 'z' axis. ( in degrees ).\n\n"
 
-            scad_code = scad_code + "    /* Animation routine. */\n"
+            scad_code = scad_code + "    /* Animation */\n"
 
             """This script is contains code which utilizes animation variables ; $t. Using basic linear equations, trajectories are plotted and used for operational and assembly simulations in 3D space."""
 

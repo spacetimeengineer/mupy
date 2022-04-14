@@ -75,11 +75,11 @@ while True: # Main loop
     if user_input == "exit" or user_input == "close" or user_input == "done" or user_input == "leave":
         exit()
     elif user_input == "":
-        encoding_session()
+        #encoding_session()
         pass
     elif len(user_input) > 0:
         hardware = Hardware("unnamed", user_input)
-        hardware.build_hardware(os.getcwd())
+        hardware.build_hardware(os.getcwd()+"/generated_psi_source_code")
     else:        
         pass
 

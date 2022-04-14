@@ -19,12 +19,14 @@ class Decode:
 
             if family_code == "CUBX0177":
                 CUBX0177(self.hardware_code, directory)
-            if family_code == "CUBX0012":
+            elif family_code == "CUBX0012":
                 #CUBX0012(self.hardware_code, directory)
                 pass
-            if family_code == "CUBX0006":
+            elif family_code == "CUBX0006":
                 CUBX0006(self.hardware_code, directory)
                 pass
-            if family_code == "CRSPGR022":
+            elif family_code == "CRSPGR022":
                 CRSPGR022(self.hardware_code, directory)
                 pass
+            else:
+                print("Error : Invalid family code.")

@@ -39,9 +39,34 @@ class Hardware:
 
     def hardware_scad(self): # Retuns scad code and imports the hardware code specified.
         """ Retuns scad code and imports the hardware code specified."""
-
+        scad_code = '\n/* A module dedicated to this hardware object. This module is only called once becasue it references the unique hardware element (In both real and virtual space) which only needs to be done once. */\n\n'
         scad_code = 'module '+self.id+'()\n{\n' #
         for coordinates in self.coordinate_superset: #
+            
+
+            scad_code = scad_code + "    /* Initialize initial and final position and orientation. These values may be modified for assembly purposes. */\n\n" 
+            
+            scad_code = scad_code + "    /* Time */\n"
+            scad_code = scad_code + "    t_position_initial = 0;    // Initial time ( from 0 = initial to 1 = final and globally ).\n"
+            scad_code = scad_code + "    t_position_final = 0;      // Final time ( from 0 = initial to 1 = final and globally ).\n\n"
+
+            scad_code = scad_code + "    /* Position */\n"
+            scad_code = scad_code + "    x_position_initial = 0;    // Initial 'x' position ( in mm ).\n"
+            scad_code = scad_code + "    x_position_final = 0;      // Final 'x' position ( in mm ).\n"
+            scad_code = scad_code + "    y_position_initial = 0;    // Initial 'y' position ( in mm ).\n"
+            scad_code = scad_code + "    y_position_final = 0;      // Final 'y' position ( in mm ).\n"
+            scad_code = scad_code + "    z_position_initial = 0;    // Initial 'z' position ( in mm ).\n"
+            scad_code = scad_code + "    z_position_final = 0;      // Final 'z' position ( in mm ).\n\n"
+
+            scad_code = scad_code + "    /* Orientation */\n"
+            scad_code = scad_code + "    x_axis_angle_initial = 0;  // Initial angle along the 'x' axis. ( in degrees ).\n"
+            scad_code = scad_code + "    x_axis_angle_final = 0;    // Final angle along the 'x' axis. ( in degrees ).\n"
+            scad_code = scad_code + "    y_axis_angle_initial = 0;  // Initial angle along the 'y' axis. ( in degrees ).\n"
+            scad_code = scad_code + "    y_axis_angle_final = 0;    // Final angle along the the 'z' axis. ( in degrees ).\n"
+            scad_code = scad_code + "    z_axis_angle_final = 0;    // Final angle along the 'z' axis. ( in degrees ).\n\n"
+
+            scad_code = scad_code + "    /* Animation */\n"
+
             scad_code = scad_code + \
                     '  if ($t >= '+str(coordinates.t_i)+' && $t <= '+str(coordinates.t_f)+')\n'\
                     '  {\n'\
@@ -51,6 +76,7 @@ class Hardware:
                     +' { import("stl_files/'+ self.hardware_code + '.stl"); } }\n'\
                     '  }\n' # translation block sca code.
         scad_code = scad_code + '}\n' # Finishes themodule closing bracket.
+        scad_code = scad_code + '/* Run */\n' # scad code.
         scad_code = scad_code + self.id+'();' # Writes the scad code used to call the function.
 
         return scad_code # Returns scad code.
@@ -64,6 +90,7 @@ class Hardware:
             os.mkdir(directory+"/stl_files/") # Creates the stl_files directory.
 
         scad_file = open(directory+"/"+self.scad_file_name, "w") # Creates new .scad file.
+        scad_file.write("\n/* Parametric System Instructions : Generated hardware .scad file. */\n\n")
         scad_file.write(self.hardware_scad()) # Writes scad code to file.
         scad_file.close() # Close file.
     
