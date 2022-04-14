@@ -22,6 +22,11 @@ class InputBranch:
         user_input = input("  > ") # Takes in user input.
         for option in self.options: # For each option stored in the object.
             if user_input == option[0]: # For whichever option is selected run its counterpart routine.
-                option[3]() # Execute routine.
+                if len(option) == 5:
+                    option[3](option[4]) # Execute routine.
+                elif len(option) == 3:
+                    option[3]() # Execute routine.
+                else:
+                    pass
 
 

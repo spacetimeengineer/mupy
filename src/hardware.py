@@ -90,13 +90,13 @@ class Hardware:
     
     def remove_jig(self, directory): # Called with each run command per part.
         """Removes files which have served thier purpose and are no longer needed."""
-        if exists(directory+self.hardware_code+".scad"):
-            try:
-                os.remove(directory+self.hardware_code+".scad")
-            except OSError:
-                print(Exception)
-        if exists(directory+"scad"):
-            shutil.rmtree(directory+"scad")
+        if exists(directory+self.hardware_code+".scad"):# Checks for the existence of an .scad file in the workspace with name equal to that of the hardware code.
+            try: # Attempt to delete scad file jig.
+                os.remove(directory+self.hardware_code+".scad") # Remove scad file with a name equal to that of the hardware code. This file is part of the jig.
+            except OSError: # If there is an error with attempting to delete the scad needed to render the STL.
+                print(Exception) # Prints exception.
+        if exists(directory+"scad"): # Checks if scad directory is present in the workspace directory.
+            shutil.rmtree(directory+"scad") # Remove scad directory. TODO : Check this the path may of changed since the reorg.
 
     def build_hardware(self, directory):
         """Clean function which builds and manages stl files """

@@ -19,8 +19,6 @@ class CRSPGR022:
         
 
         os.system("cp -R scad/CRSPGR022/ "+ self.directory)
-
-
         self.scad_file.write('use <CRSPGR022/CRSPGR022.scad>;\n\n')
 
 

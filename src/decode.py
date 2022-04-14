@@ -24,7 +24,7 @@ class Decode:
                 #CUBX0012(self.hardware_code, directory)
                 pass
             if family_code == "CUBX0006":
-                #CUBX0006(self.hardware_code, directory)
+                CUBX0006(self.hardware_code, directory)
                 pass
             if family_code == "CRSPGR022":
                 CRSPGR022(self.hardware_code, directory)

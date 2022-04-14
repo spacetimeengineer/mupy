@@ -11,7 +11,6 @@ class CUBX0177:
         self.id = id # This is a unique name or tag referencing a particular object in a set.
         self.hardware_code = hardware_code
         self.type_code = self.hardware_code.split("-")[1]
-        self.errors = []
         self.directory = directory
 
         self.scad_file_name = directory + hardware_code +".scad" # This scad file is used to build the stl. It can be deleted afterwards. # TODO : Delete this file after run() command is called.
