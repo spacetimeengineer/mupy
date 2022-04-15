@@ -8,7 +8,7 @@ PSI : System Decoder / System Encoder / System Simulator / System Certifier / Fe
 | Acronym               | Meaning                              |
 | --------------------- | ------------------------------------ |
 | (API)                 | Applications Programming Interface   |
-| (CLI)( ψ:# )          | Command Line Interface               |
+| (CLI)  ( ψ:# )        | Command Line Interface               |
 
 ### Prerequisites
 
