@@ -24,10 +24,3 @@ PSI : System Decoder / System Encoder / System Simulator / System Certifier / Fe
 | Project Team          | Email                          |
 | --------------------- | ------------------------------ |
 | Michael C Ryan        | spacetime.engineer@gmail.com   |
-
-
-### CUBX0006 Family
-
-### CUBX0012 Family
-
-### CUBX0177 Family
