@@ -1,5 +1,18 @@
-### Project Description: PSI ( Parametric System Instruction )
+### Project : PSI ( Parametric System Instructions )
 
+PSI : System Decoder / System Encoder / System Simulator / System Certifier / Feature Ingestor
+
+### Interface
+
+
+| Acronym               | Meaning                              |
+| --------------------- | ------------------------------------ |
+| (API)                 | Applications Programming Interface   |
+| (CLI)( ψ:# )          | Command Line Interface               |
+
+### Prerequisites
+
+    apt install openscad
 
 ### Installation
 
@@ -10,4 +23,4 @@
 
 | Project Team          | Email                          |
 | --------------------- | ------------------------------ |
-| Michael C Ryan | spacetime.engineer@gmail.com   |
+| Michael C Ryan        | spacetime.engineer@gmail.com   |
