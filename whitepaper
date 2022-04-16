@@ -1,10 +1,33 @@
 
 
-Parametric System Instruction Terminal
+Parametric System Instructions - Build Anying 
 
-Theory
 
-Generates and simulates both hardware and assemblies.
+
+
+
+Introduction :
+
+
+
+
+Imagine a magic terminal which took in configurable codes (which obeyed system schemas) and generated system files, directories and resources which would give the user the things to build and assemble it.
+
+
+Imagine a script enviornment with those same codes could be named and called as object and put into an asse,bly
+What is it ?
+
+
+python or scad Script -> Parameterize -> Certify
+
+
+Scripting
+
+Parametrizing
+
+Certifying
+
+This involves defining a hardware schema. There are two requirements for creating a new hardware schema :
 
 
 
