@@ -63,3 +63,6 @@ chamber_assembly.include(panel_f, Coordinates(0,1,[8 * 25 / 2 + alpha, 0 , 0],[8
 workspace.run(chamber_assembly, Coordinates(0,1,[0,0,0],[0,0,0],[0,0,0],[0,0,0]))
 
 ```
+
+
+![](https://github.com/spacetimeengineer/psi/raw/master/resources/utility_box.py)
