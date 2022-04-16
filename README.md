@@ -4,7 +4,7 @@ Imagine a technology designed to assist lrgly in the advancemenct of human techn
 
 
 
-Example :
+'''
 
     from src.workspace import WorkSpace
     from src.hardware import Hardware
@@ -39,7 +39,7 @@ Example :
 
     workspace.run(chamber_assembly, Coordinates(0,1,[0,0,0],[0,0,0],[0,0,0],[0,0,0]))
 
-
+'''
 
 Form
 
