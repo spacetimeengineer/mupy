@@ -41,6 +41,9 @@ workspace.run(chamber_assembly, Coordinates(0,1,[0,0,0],[0,0,0],[0,0,0],[0,0,0])
 
 ```
 
+
+
+![](https://github.com/spacetimeengineer/psi/raw/master/resources/utility_box.py)
 Form
 
     - PHICLI - Parametric Hardware Instructions CLI / Used for human tasks / real-time read human input.
