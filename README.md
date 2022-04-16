@@ -65,4 +65,4 @@ workspace.run(chamber_assembly, Coordinates(0,1,[0,0,0],[0,0,0],[0,0,0],[0,0,0])
 ```
 
 
-![Alt Text](https://github.com/spacetimeengineer/psi/blob/master/resources/utility_box.gif)
+![Alt Text](resources/utility_box.gif)
