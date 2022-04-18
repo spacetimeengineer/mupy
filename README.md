@@ -5,13 +5,18 @@ PSI is a strange but a powerful and proven technology which was born from an abs
 
 
 
+### Certification
 
+Certification referes to the most powerful abstraction PSI offers is by far the highest value add to PSI and it's users. 
+Certification refers to the process of one converting a well designed (python3 / openscad) script into a well defined well paramaterized family code which would express the same rules and features expressed by other hardware families. The scripting feature already gives users the ability to design and distribute thier designs but the certification process renders these designs into building blocks. In this way new users will have great ease developeing advanced systems.
 
 ### Current State
 
-PSI in its current state exists much like Excaliber locked in it's stone ; It has power but few who can wi
+PSI in its current state exists much like Excaliber locked in it's stone ; Powerful but useless to those who have no vision and unable to wield it.
 
-Currently PSI lacks hardware families since there is only a single developer. The 
+Due to the fact that there is a single developer, there is only a handful of hardware technologies. In another year or two there will be many more but limited to a single developers vision. 
+
+
 
 ### Prerequisites
 
