@@ -1,6 +1,17 @@
 ### PSI ( Parametric System Instructions )
 
-PSI is a strange but a powerful and proven technology which was born from absolute nessecity not to
+PSI is a strange but a powerful and proven technology which was born from an absolute nessecity to build big things. 
+
+
+
+
+
+
+### Current State
+
+PSI in its current state exists much like Excaliber locked in it's stone ; It has power but few who can wi
+
+Currently PSI lacks hardware families since there is only a single developer. The 
 
 ### Prerequisites
 
