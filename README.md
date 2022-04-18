@@ -1,14 +1,6 @@
-### Project : PSI ( Parametric System Instructions )
+### PSI ( Parametric System Instructions )
 
-PSI : System Decoder / System Encoder / System Simulator / System Certifier / Feature Ingestor
-
-### Interface
-
-
-| Acronym               | Meaning                              |
-| --------------------- | ------------------------------------ |
-| (API)                 | Applications Programming Interface   |
-| (CLI)  ( ψ:# )        | Command Line Interface               |
+PSI is a strange but a powerful and proven technology which was born from absolute nessecity not to
 
 ### Prerequisites
 
@@ -66,3 +58,14 @@ workspace.run(chamber_assembly, Coordinates(0,1,[0,0,0],[0,0,0],[0,0,0],[0,0,0])
 
 
 ![Alt Text](resources/utility_box.gif)
+
+
+
+
+### Interface
+
+
+| Acronym               | Meaning                              |
+| --------------------- | ------------------------------------ |
+| (API)                 | Applications Programming Interface   |
+| (CLI)  ( ψ:# )        | Command Line Interface               |
