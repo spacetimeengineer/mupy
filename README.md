@@ -7,11 +7,14 @@
     μ:# CUBX0006-BLK-L1000W200H15
 
 
- ( which are essentially encodings or simple-string representations of physical hardware or assemblies with specific intended complex goemetries ) and dispenses digital renderings, simulations, resources and metadata upon pressing enter. 
+
+### System Codes
+System codes are essentially encodings or simple-string representations of physical hardware or assemblies with specific intended complex goemetries ) and dispenses digital renderings, simulations, resources and metadata upon pressing enter. 
 
 
 
 ### Certification
+Originally there needed to be a way to ingest and store work from previous jobs.
 
 Certification referes to the most powerful abstraction PSI offers is by far the highest value add to PSI and it's users. 
 Certification refers to the process of one converting a well designed (python3 / openscad) script into a well defined well paramaterized family code which would express the same rules and features expressed by other hardware families. The scripting feature already gives users the ability to design and distribute thier designs but the certification process renders these designs into building blocks. In this way new users will have great ease developeing advanced systems.
