@@ -1,7 +1,13 @@
-### PSI ( Parametric System Instructions )
+### Project : MU ( Manufacturing Utility )
 
-PSI is a strange but a powerful and proven technology which was born from an absolute nessecity to build big things. 
+mu is a novel technology (plus other useful things) implemented in the form of an open source (3-Clause BSD) python pip installable package. More specifically it can be thought of as an abstraction library which leverages the openscad programming language. 
 
+The package mu comes with it bundled a command-line-interface application known as the mu terminal which behaves much like a linux terminal except that it only accepts special strings known as 'system codes'.
+
+    μ:# CUBX0006-BLK-L1000W200H15
+
+
+ ( which are essentially encodings or simple-string representations of physical hardware or assemblies with specific intended complex goemetries ) and dispenses digital renderings, simulations, resources and metadata upon pressing enter. 
 
 
 
