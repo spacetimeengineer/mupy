@@ -1,4 +1,4 @@
-### Project : MU ( Manufacturing Utility )
+### mu : Manufacturing Utility
 
 mu is a novel technology (plus other useful things) implemented in the form of an open source (3-Clause BSD) python pip installable package. More specifically it can be thought of as an abstraction library which leverages the openscad programming language. 
 
