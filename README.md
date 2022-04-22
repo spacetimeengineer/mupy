@@ -2,6 +2,9 @@
 
 μ is a novel technology implemented in the form of an open source (3-Clause BSD) python pip installable package. More specifically it can be thought of as a horizontal abstraction library which leverages and auguments the openscad programming language. On the most fundemental level however, mu is really a manufacturing oriented data compression algorithm. 
 
+
+### Disclaimer
+
 ### μ-terminal or muterm
 μ comes with it bundled a command-line-interface application known as the μ-terminal which behaves much like a linux terminal except that it only accepts special strings known as 'system codes'.
 
