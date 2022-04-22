@@ -1,6 +1,6 @@
 ### μ : Manufacturing Utility
 
-μ is a novel technology implemented in the form of an open source (3-Clause BSD) python pip installable package that essentialy serves as a special abstraction library doesnt layer ontopof but rather aguments the openscad programming language. 
+μ is a novel technology implemented in the form of an open source (3-Clause BSD) python pip installable package that essentialy serves as a special abstraction library horizontal layers with and aguments the openscad programming language. 
 
 μ comes with it bundled a command-line-interface application known as the μ terminal which behaves much like a linux terminal except that it only accepts special strings known as 'system codes'.
 
@@ -16,6 +16,9 @@ System schemas also sometimes refered to less generally as hardware schemas are 
 
 THere are many schemas and there will one day be exponentially more of them.
 
+### Scripting : hardware scripting
+
+### Scripting : assembly scripting
 
 
 
@@ -24,6 +27,10 @@ Originally there needed to be a way to ingest and store work from previous jobs.
 
 Certification referes to the most powerful abstraction PSI offers is by far the highest value add to PSI and it's users. 
 Certification refers to the process of one converting a well designed (python3 / openscad) script into a well defined well paramaterized family code which would express the same rules and features expressed by other hardware families. The scripting feature already gives users the ability to design and distribute thier designs but the certification process renders these designs into building blocks. In this way new users will have great ease developeing advanced systems.
+
+
+### Scripting
+
 
 ### Current State
 
