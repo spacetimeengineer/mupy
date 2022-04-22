@@ -1,6 +1,6 @@
 ### μ : Manufacturing Utility
 
-μ is a novel technology implemented in the form of an open source (3-Clause BSD) python pip installable package that essentialy serves as a special abstraction library horizontal layers with and aguments the openscad programming language. But more fundementally it's a data compression technology and this is what makes it powerful and have much potential.  
+μ is a novel technology implemented in the form of an open source (3-Clause BSD) python pip installable package. More specifically it can be thought of as a horizontal abstraction library which leverages and auguments the openscad programming language. On the most fundemental level however, mu is really a manufacturing oriented data compression algorithm. 
 
 ### μ-terminal or muterm
 μ comes with it bundled a command-line-interface application known as the μ-terminal which behaves much like a linux terminal except that it only accepts special strings known as 'system codes'.
@@ -14,8 +14,8 @@ System codes are essentially encodings or simple-string representations of physi
 ### System Schemas
 System schemas also sometimes refered to less generally as hardware schemas are a pattern or archetype constant associated the form that defines the hardware itself. THese are best momemorized becasue one can more actuartly imagine parts if theyjust use the abstraction.
 
-THere are many schemas and there will one day be exponentially more of them.
-
+### System Sets
+Any system code with unspecified parameters ; rendering a set of possible system configuration. the mu package cannot handle these objects yet but soon it will. 
 
 ### Claim 
 
