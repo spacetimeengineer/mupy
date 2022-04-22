@@ -1,6 +1,6 @@
 ### μ : Manufacturing Utility
 
-μ is a novel technology (plus other useful things) implemented in the form of an open source (3-Clause BSD) python pip installable package. More specifically it can be thought of as an abstraction library which leverages the openscad programming language. 
+μ is a novel technology implemented in the form of an open source (3-Clause BSD) python pip installable package that essentialy serves as a special abstraction library doesnt layer ontopof but rather aguments the openscad programming language. 
 
 μ comes with it bundled a command-line-interface application known as the μ terminal which behaves much like a linux terminal except that it only accepts special strings known as 'system codes'.
 
@@ -10,6 +10,12 @@
 
 ### System Codes
 System codes are essentially encodings or simple-string representations of physical hardware or assemblies with specific intended complex goemetries ) and dispenses digital renderings, simulations, resources and metadata upon pressing enter. 
+
+### System Schemas
+System schemas also sometimes refered to less generally as hardware schemas are a pattern or archetype constant associated the form that defines the hardware itself. THese are best momemorized becasue one can more actuartly imagine parts if theyjust use the abstraction.
+
+THere are many schemas and there will one day be exponentially more of them.
+
 
 
 
@@ -94,3 +100,10 @@ workspace.run(chamber_assembly, Coordinates(0,1,[0,0,0],[0,0,0],[0,0,0],[0,0,0])
 | --------------------- | ------------------------------------ |
 | (API)                 | Applications Programming Interface   |
 | (CLI)  ( ψ:# )        | Command Line Interface               |
+
+
+
+### Scope
+This systems scope is just too large to even discuss. It was named manufacturing utility becasue it was meant to b an open source super tool which could help model the waywe build the future.
+
+
