@@ -1,14 +1,12 @@
 ### μ : Manufacturing Utility
 
-μ is a novel technology implemented in the form of an open source (3-Clause BSD) python pip installable package that essentialy serves as a special abstraction library horizontal layers with and aguments the openscad programming language. But more fundementally it's a data compression technology which is huge!
+μ is a novel technology implemented in the form of an open source (3-Clause BSD) python pip installable package that essentialy serves as a special abstraction library horizontal layers with and aguments the openscad programming language. But more fundementally it's a data compression technology and this is what makes it powerful and have much potential.  
 
-μ comes with it bundled a command-line-interface application known as the μ terminal which behaves much like a linux terminal except that it only accepts special strings known as 'system codes'.
+### μ-terminal or muterm
+μ comes with it bundled a command-line-interface application known as the μ-terminal which behaves much like a linux terminal except that it only accepts special strings known as 'system codes'.
 
     μ:# CUBX0006-BLK-L1000W200H15
-
-### Concept
-
-Can you take an R&D operation and find a better way to store, recall, assemble developed parts? Some kind of ingestion tool which 
+    
 
 ### System Codes
 System codes are essentially encodings or simple-string representations of physical hardware or assemblies with specific intended complex goemetries ) and dispenses digital renderings, simulations, resources and metadata upon pressing enter. 
@@ -17,6 +15,16 @@ System codes are essentially encodings or simple-string representations of physi
 System schemas also sometimes refered to less generally as hardware schemas are a pattern or archetype constant associated the form that defines the hardware itself. THese are best momemorized becasue one can more actuartly imagine parts if theyjust use the abstraction.
 
 THere are many schemas and there will one day be exponentially more of them.
+
+
+### Claim 
+
+mu represents a technology which would eventually be required (in conjuction with other technologies such as AI, Quantum Computers, Cryptocurrency, ) to achieve a type 1 civilization. Mu prescribes a pathway to the development of the future and a new way to consider and even execute the future in a way that should amke everybody happy.  
+
+### Concept
+
+Can you take an R&D operation and find a better way to store, recall, assemble developed parts? Some kind of ingestion tool which 
+
 
 ### Scripting : hardware scripting
 
