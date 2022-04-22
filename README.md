@@ -1,12 +1,14 @@
 ### μ : Manufacturing Utility
 
-μ is a novel technology implemented in the form of an open source (3-Clause BSD) python pip installable package that essentialy serves as a special abstraction library horizontal layers with and aguments the openscad programming language. 
+μ is a novel technology implemented in the form of an open source (3-Clause BSD) python pip installable package that essentialy serves as a special abstraction library horizontal layers with and aguments the openscad programming language. But more fundementally it's a data compression technology which is huge!
 
 μ comes with it bundled a command-line-interface application known as the μ terminal which behaves much like a linux terminal except that it only accepts special strings known as 'system codes'.
 
     μ:# CUBX0006-BLK-L1000W200H15
 
+### Concept
 
+Can you take an R&D operation and find a better way to store, recall, assemble developed parts? Some kind of ingestion tool which 
 
 ### System Codes
 System codes are essentially encodings or simple-string representations of physical hardware or assemblies with specific intended complex goemetries ) and dispenses digital renderings, simulations, resources and metadata upon pressing enter. 
