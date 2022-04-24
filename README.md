@@ -1,18 +1,27 @@
 ### μ : Manufacturing Utility
 
-μ is a novel technology implemented in the form of an open source (3-Clause BSD) python pip installable package. More specifically it can be thought of as a horizontal abstraction library which leverages and auguments the openscad programming language. On the most fundemental level however, mu is really a manufacturing oriented data compression algorithm. 
+μ is a novel technology implemented in the form of an open source (3-Clause BSD) python pip installable package. More specifically it can be thought of as a horizontal abstraction library which leverages and auguments the openscad programming language. On the most fundemental level however, mu is really a manufacturing-oriented data-compression algorithm. μ was born out of a home grown R&D operation which aimed to acomplish the following tasks :
+
+- Maximize the utilization of 3D printing for economio / research and development
+- Develop a decentralized manufacturing utility with a system-script or system-code.
+- Give ambitious engineers a chance to develop 
 
 
-### Disclaimer
 
-### μ-terminal or muterm
-μ comes with it bundled a command-line-interface application known as the μ-terminal which behaves much like a linux terminal except that it only accepts special strings known as 'system codes'.
+### μ-terminal
+μ comes with it bundled a command-line-interface application known as the μ-terminal or 'muterm' which behaves much like a linux terminal except that it only accepts special strings known as 'system codes'. muterm was developed to express to users μ's most rudimetry operation ; producing manufacturing resources for a given system code. In an idealized world, this utility would materialize an entire system (such as a 69 SS Chevelle) right in front of you upon pressing 'enter'. To enter muterm, in the linux terminal
+
+    :~$ ./muterm 
+
+Obviously only certain system-codes will be valid for for input. A simple example can be expressed by the following operation.
+
 
     μ:# CUBX0006-BLK-L1000W200H15
     
 
 ### System Codes
-System codes are essentially encodings or simple-string representations of physical hardware or assemblies with specific intended complex goemetries ) and dispenses digital renderings, simulations, resources and metadata upon pressing enter. 
+System codes are essentially encodings or simple-string representations of physical hardware or assemblies with specific intended geometry and dispenses digital renderings, simulations, resources and metadata upon pressing enter.
+
 
 ### System Schemas
 System schemas also sometimes refered to less generally as hardware schemas are a pattern or archetype constant associated the form that defines the hardware itself. THese are best momemorized becasue one can more actuartly imagine parts if theyjust use the abstraction.
