@@ -1,6 +1,6 @@
 ### μ : Manufacturing Utility
 
-μ is a novel technology implemented in the form of an open source (3-Clause BSD) python pip installable package. More specifically it can be thought of as a horizontal abstraction library which leverages and auguments the openscad programming language. On the most fundemental level however, mu is really a manufacturing-oriented data-compression algorithm. μ was born out of a home grown R&D operation which aimed to acomplish the following tasks :
+μ is a novel technology implemented in the form of an open source (3-Clause BSD) python pip installable package. More specifically it can be thought of as a horizontal abstraction library which leverages and auguments the openscad programming language. On the more fundemental level however, μ is really a manufacturing-oriented data-compression algorithm. μ was born out of a home grown R&D operation which aimed to acomplish the following tasks :
 
 - Maximize the utilization of 3D printing for economio / research and development
 - Develop a decentralized manufacturing utility with a system-script or system-code.
@@ -29,9 +29,7 @@ System schemas also sometimes refered to less generally as hardware schemas are 
 ### System Sets
 Any system code with unspecified parameters ; rendering a set of possible system configuration. the mu package cannot handle these objects yet but soon it will. 
 
-### Claim 
 
-mu represents a technology which would eventually be required (in conjuction with other technologies such as AI, Quantum Computers, Cryptocurrency, ) to achieve a type 1 civilization. Mu prescribes a pathway to the development of the future and a new way to consider and even execute the future in a way that should amke everybody happy.  
 
 ### Concept
 
@@ -135,4 +133,6 @@ workspace.run(chamber_assembly, Coordinates(0,1,[0,0,0],[0,0,0],[0,0,0],[0,0,0])
 ### Scope
 This systems scope is just too large to even discuss. It was named manufacturing utility becasue it was meant to b an open source super tool which could help model the waywe build the future.
 
+### Claim 
 
+mu represents a technology which would eventually be required (in conjuction with other technologies such as AI, Quantum Computers, Cryptocurrency, ) to achieve a type 1 civilization. Mu prescribes a pathway to the development of the future and a new way to consider and even execute the future in a way that should amke everybody happy.  
