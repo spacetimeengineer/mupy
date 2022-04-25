@@ -2,7 +2,9 @@ It is often subtle how technology in the world progresses and while most of the 
 
 Imagine a technology designed to assist lrgly in the advancemenct of human technology and innovation.
 
+### Disclaimer
 
+Everything described in this README.md is designed to inform readers of the capabilities of mu in conjunction with an informed motivated user. mu in it's current state is much like a programming language with no applications ; The rules and logic exist but no implementation excvept a few example scripts and my own work.
 
 ### utility_box.py
 ```python
