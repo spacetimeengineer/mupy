@@ -5,7 +5,7 @@
 
 ### Disclaimer
 
-Everything described in this README.md is designed to inform readers of the capabilities of mu in conjunction with an informed motivated user. mu in it's current state is much like a programming language with no applications ; The rules and logic exist but no implementation excvept a few example scripts and my own work.
+Everything discussed in this README.md deals with the capabilities of mu in conjunction with an informed & motivated user. μ in it's current state is much like a programming language with no applications ; The rules and logic exist but no scripts except a few example scripts and my own work which is private. μ is a platform but it's library content is actually quite low. Even though in it's current form there are incacluable parts it can generate, it still represents a very small subset of the possible designs. μ will be very useless if no users steward it.
 
 
 ### μ-terminal
