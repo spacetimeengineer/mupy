@@ -20,7 +20,7 @@ Obviously only certain system-codes will be valid for for input. A simple exampl
     
 
 ### System Codes
-System codes are essentially encodings or simple-string representations of physical hardware or assemblies with specific intended geometry and dispenses digital renderings, simulations, resources and metadata upon pressing enter.
+This thing known as a system-code serves to identify a general system (literally anything physical or worth manufacturing) and generate resources which  help users manufacture that system at reduced cost. These resources will include cad files and editable genrated openscad code directories which contain assembly and operational animation routines to help users record and transmit 
 
 
 ### System Schemas
