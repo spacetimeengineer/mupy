@@ -1,14 +1,18 @@
 # μ : manufacturing utility
 
-μ is a novel technology implemented in the form of an open source (3-Clause BSD) python pip installable package. More specifically it can be thought of as a horizontal abstraction library which leverages and auguments the openscad programming language. On the more fundemental level however, μ is really a manufacturing-oriented data-compression algorithm. μ was born out of a home grown R&D operation which aimed to acomplish the following tasks :
+μ is a novel technology and super-utility implemented in the form of an open source (3-Clause BSD) python pip installable package. More specifically it can be thought of as a horizontal abstraction library which leverages and auguments the openscad programming language. On the more fundemental level however μ is really just a manufacturing-oriented compression algorithm ; It stores information, instructions and an incalculable amount of 3D printable renderings with discernable non-trivial differences in geometry and it's all just under one megabyte. 
 
+# History
+This package was developed over six-year period where it bec as an internal utility to an innovation operation. When openscad was discovered by the author he became interested in modular hardware development. He believed that modular hardware developement would lead to the development of larger productswhich themselves could benifet from the efficiency of scale. Over time the parametrization that emerged from completed source code made it difficult to keep track of specific part implementations so an encoding scheme was developed to track these parts. Eventially a python package was designed to handle the rendersings by simple python3 libraires.
 
 ### Disclaimer
 
-Everything discussed in this README.md deals with the capabilities of mu in conjunction with an informed & motivated user. μ in it's current state is much like a programming language with no applications ; The rules and logic exist but no scripts except a few example scripts and my own work which is private. μ is a platform but it's library content is actually quite low. Even though in it's current form there are incacluable parts it can generate, it still represents a very small subset of the possible designs. μ will be very useless if no users steward it.
+Everything discussed in this README.md deals with what it handles not what it does of mu in conjunction with an informed & motivated user. μ in it's current state is much like a programming language with no applications built.
 
 # Goals
 μ attempts to serve as a must-own utility for any serious engineer which gives users access to virtually unlimited parts the ability to design physical systems in a simple script format.
+
+
 
 # Does it replace the need for CAD
 In some cases it may, especially for users who need to design something quick and beautiful but who would prefer not to learn an entire CAD. In most cases however it only auguments CAD and it would be more likely in the future that CADs would integrate a μ-terminal into the IDE.
