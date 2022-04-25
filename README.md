@@ -1,4 +1,4 @@
-### μ : Manufacturing Utility
+### μ : manufacturing utility
 
 μ is a novel technology implemented in the form of an open source (3-Clause BSD) python pip installable package. More specifically it can be thought of as a horizontal abstraction library which leverages and auguments the openscad programming language. On the more fundemental level however, μ is really a manufacturing-oriented data-compression algorithm. μ was born out of a home grown R&D operation which aimed to acomplish the following tasks :
 
