@@ -58,7 +58,9 @@ PSI in its current state exists much like Excaliber locked in it's stone ; Power
 
 Due to the fact that there is a single developer, there is only a handful of hardware technologies. In another year or two there will be many more but limited to a single developers vision. 
 
+### Docker ( optional )
 
+If you prefer touse the provided docker image you will need to install docker at https://docs.docker.com/get-docker/ .
 
 ### Prerequisites
 
