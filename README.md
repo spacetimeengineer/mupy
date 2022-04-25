@@ -1,4 +1,4 @@
-### μ : manufacturing utility
+# μ : manufacturing utility
 
 μ is a novel technology implemented in the form of an open source (3-Clause BSD) python pip installable package. More specifically it can be thought of as a horizontal abstraction library which leverages and auguments the openscad programming language. On the more fundemental level however, μ is really a manufacturing-oriented data-compression algorithm. μ was born out of a home grown R&D operation which aimed to acomplish the following tasks :
 
@@ -7,7 +7,7 @@
 
 Everything discussed in this README.md deals with the capabilities of mu in conjunction with an informed & motivated user. μ in it's current state is much like a programming language with no applications ; The rules and logic exist but no scripts except a few example scripts and my own work which is private. μ is a platform but it's library content is actually quite low. Even though in it's current form there are incacluable parts it can generate, it still represents a very small subset of the possible designs. μ will be very useless if no users steward it.
 
-### Goals
+# Goals
 μ attempts to serve as a must-own utility for any serious engineer which gives users access to virtually unlimited parts the ability to design physical systems in a simple script format.
 
 # Does it replace the need for CAD
