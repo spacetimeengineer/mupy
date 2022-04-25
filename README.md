@@ -7,6 +7,14 @@
 
 Everything discussed in this README.md deals with the capabilities of mu in conjunction with an informed & motivated user. μ in it's current state is much like a programming language with no applications ; The rules and logic exist but no scripts except a few example scripts and my own work which is private. μ is a platform but it's library content is actually quite low. Even though in it's current form there are incacluable parts it can generate, it still represents a very small subset of the possible designs. μ will be very useless if no users steward it.
 
+### Goals
+μ attempts to serve as a must-own utility for any serious engineer which gives users access to virtually unlimited parts the ability to design physical systems in a simple script format.
+
+# Does it replace the need for CAD
+In some cases it may, especially for users who need to design something quick and beautiful but who would prefer not to learn an entire CAD. In most cases however it only auguments CAD and it would be more likely in the future that CADs would integrate a μ-terminal into the IDE.
+
+# Is it like Thingaverse?
+Yes actually except that the focus is more on parts with specific intended geometry rather than a store of options which are very much limited.
 
 ### μ-terminal
 μ comes with it bundled a command-line-interface application known as the μ-terminal or 'muterm' which behaves much like a linux terminal except that it only accepts special strings known as 'system codes'. muterm was developed to express to users μ's most rudimetry operation ; producing manufacturing resources for a given system code. In an idealized world, this utility would materialize an entire system (such as a 69 SS Chevelle) right in front of you upon pressing 'enter'. To enter muterm, in the linux terminal
