@@ -1,56 +1,48 @@
 
 
-Parametric System Instructions - Build Anying 
+Abstract
+
+Scaling Efficiency
+Modular Efficiency
+Software Efficiency
 
 
 
 
 
-Introduction :
 
 
+Introduction
 
-
-Imagine a magic terminal which took in configurable codes (which obeyed system schemas) and generated system files, directories and resources which would give the user the things to build and assemble it.
-
-
-Imagine a script enviornment with those same codes could be named and called as object and put into an asse,bly
-What is it ?
-
-
-python or scad Script -> Parameterize -> Certify
-
-
-Scripting
-
-Parametrizing
-
-Certifying
-
-This involves defining a hardware schema. There are two requirements for creating a new hardware schema :
+Scaling
+Modularity adn modularR and D development
+Higher Order Modularity
+COnfiguration
+Build Freedom
+Requirement driven development
 
 
 
 Encoding
-User selects system provided choices of hardware family, type and parameters. (Which were already programmed in scad) - > Schema/Code -> Represent a mapping to a particular function.
-Decoding
-If an assembly is defined then that assembly can be parametrized and certified.
-
-Implementation
-
-
-Instructions
-
-    Installation
-
-    API
-
-    UI
+Code Assignment
+Optimization
+Paramaterization
+Code Assignment
 
 
 
 
-Keywords
+
+
+
+For example :
+
+    ψ:# CUBX0006-BLK-L1000W200H15
+
+would materialize a board object of length 100mm, a width of 200mm and a height of 15mm. 
+
+
+
 
 Hardware Codes
     Family Codes

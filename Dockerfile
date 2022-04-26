@@ -2,17 +2,17 @@
 #
 # Build image
 #
-# 	$ sudo docker build -t psi .
+# 	$ sudo docker build -t mu .
 #
 #
 # Run container
 #
-# 	$ sudo docker run -i psi:latest
+# 	$ sudo docker run -i mu:latest
 #
 #
 # SSH into container
 #
-# 	$ sudo docker exec -it psi:latest /bin/bash
+# 	$ sudo docker exec -it mu:latest /bin/bash
 #
 # ======================================================
 
@@ -21,9 +21,9 @@
 
 FROM ubuntu:18.04
 
-LABEL name = "Parametric Systems Interface"
+LABEL name = "μ"
 LABEL version="1.0"
-LABEL description="System generation utility." 
+LABEL description="Manufacturing Utility" 
 
 
 # Update and upgrade linux systems within the container.
@@ -74,4 +74,4 @@ ENV TERM=xterm
 
 # Execute the command line interface.
 
-CMD [ "python3", "./cli.py" ]
+CMD [ "python3", "./muterm.py" ]

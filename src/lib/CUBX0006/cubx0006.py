@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import os # Importsos library. This is useful for running linux commands with python.
-from src.psiterm.input_branch import InputBranch
+from src.muterm.input_branch import InputBranch
 
 class CUBX0006:
     """ This class builds digital representations of basic block type elements."""
