@@ -1,6 +1,5 @@
 
 ```bash
-#!/bin/bash
 
 #File: tree-md
 
