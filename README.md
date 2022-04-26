@@ -47,6 +47,10 @@ Obviously only certain system-codes will be valid for for input. A simple exampl
     μ:# CUBX0006-BLK-L1000W200H15
     
 
+
+![Alt Text](resources/CUBX0006-BLK-L1000W200H15.png)
+
+
 ### System Codes
 A system-code serves to identify a general system (literally anything physical,especially technological or worth manufacturing) and generate resources and metadata which help users manufacture said system at reduced cost. These resources include CAD files and annotated openscad source code directories containing assembly and operational animation routines which help users record and transmit and intepret complex manufacturing and assembly information.
 
