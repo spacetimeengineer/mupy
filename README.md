@@ -15,7 +15,7 @@ Everything discussed in this README.md deals with what it handles not what it do
 
 ### Installation
 
-    pip3 install psi
+    pip3 install mu
 
 
 # Goals
