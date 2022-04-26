@@ -4,12 +4,12 @@ from src.workspace import WorkSpace
 from src.hardware import Hardware
 from src.coordinates import Coordinates
 from src.assembly import Assembly
+from pathlib import Path
 
 
 # A workspace represents a virtual 3D spce which serves as a virtual workbench except it is not a surface but a space.
 """ Set Up Workspace """
-
-workspace = WorkSpace("~/utility_box/")
+workspace = WorkSpace("~/utility_box")
 
 """ Define Hardware Components"""
 # Declare Hardware codes and unique part names.
