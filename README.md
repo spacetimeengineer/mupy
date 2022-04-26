@@ -1,3 +1,16 @@
+
+```bash
+#!/bin/bash
+
+#File: tree-md
+
+tree=$(tree -tf --noreport -I '*~' --charset ascii $1 |
+       sed -e 's/| \+/  /g' -e 's/[|`]-\+/ */g' -e 's:\(* \)\(\(.*/\)\([^/]\+\)\):\1[\4](\2):g')
+
+printf "# Project tree\n\n${tree}"
+
+```
+
 # μ : manufacturing utility
 
 μ is a novel technology and super-utility implemented in the form of an open source (3-Clause BSD) python pip installable package. More specifically it can be thought of as a horizontal abstraction layer which leverages and auguments the openscad programming language. On the more fundemental level however μ is really just a manufacturing-oriented compression algorithm ; It stores information, instructions and an incalculable amount of 3D printable renderings with discernable non-trivial differences in geometry and it's all just under one megabyte.
