@@ -9,6 +9,15 @@ This package was developed over six-year period where it bec as an internal util
 
 Everything discussed in this README.md deals with what it handles not what it does of mu in conjunction with an informed & motivated user. μ in it's current state is much like a programming language with no applications built.
 
+### Prerequisites
+
+    apt install openscad
+
+### Installation
+
+    pip3 install psi
+
+
 # Goals
 μ attempts to serve as a must-own utility for any serious engineer which gives users access to virtually unlimited parts the ability to design physical systems in a simple script format.
 
@@ -73,14 +82,6 @@ Due to the fact that there is a single developer, there is only a handful of har
 ### Docker ( optional )
 
 If you prefer touse the provided docker image you will need to install docker at https://docs.docker.com/get-docker/ .
-
-### Prerequisites
-
-    apt install openscad
-
-### Installation
-
-    pip3 install psi
 
 
 ### Contacts:
