@@ -31,10 +31,10 @@ Everything discussed in this README.md deals with what it handles not what it do
 
 
 # Does it replace the need for CAD
-In some cases it may, especially for users who need to design something quick and beautiful but who would prefer not to learn an entire CAD. In most cases however it only auguments CAD and it would be more likely in the future that CADs would integrate a μ-terminal into the IDE.
+In some cases it may, especially for users who need to design something quick and beautiful but who would prefer not to learn an entire IDE but in most cases it only auguments CAD and it would be more likely in the future that IDEs would integrate some μ-terminal instance into the IDE.
 
-# Is it like Thingaverse?
-Yes actually except that the focus is more on parts with specific intended geometry rather than a store of options which are very much limited.
+# Does it replace the need for Thingaverse
+mu is similar to thingaverse except that thingaverse is more art driven. mu is precision driven.
 
 ### μ-terminal
 μ comes with it bundled a command-line-interface application known as the μ-terminal or 'muterm' which behaves much like a linux terminal except that it only accepts special strings known as 'system codes'. muterm was developed to express to users μ's most rudimetry operation ; producing manufacturing resources for a given system code. In an idealized world, this utility would materialize an entire system (such as a 69 SS Chevelle) right in front of you upon pressing 'enter'. To enter muterm, in the linux terminal
@@ -43,6 +43,8 @@ Yes actually except that the focus is more on parts with specific intended geome
 
 Obviously only certain system-codes will be valid for for input. A simple example can be expressed by the following operation.
 
+### A simple example
+The CUBX0006 family was created for basic cubic stuctures ( there is only one CUBX0006 type : 'BLK' which stands for 'block' ) ; all 90 degree angles. It is one of the simplest. Here this code will generate a CUBX0006 rendering
 
     μ:# CUBX0006-BLK-L1000W200H15
     
@@ -160,5 +162,4 @@ workspace.run(chamber_assembly, Coordinates(0,1,[0,0,0],[0,0,0],[0,0,0],[0,0,0])
 This systems scope is just too large to even discuss. It was named manufacturing utility becasue it was meant to b an open source super tool which could help model the waywe build the future.
 
 ### Claim 
-
 mu represents a technology which would eventually be required (in conjuction with other technologies such as AI, Quantum Computers, Cryptocurrency, ) to achieve a type 1 civilization. Mu prescribes a pathway to the development of the future and a new way to consider and even execute the future in a way that should amke everybody happy.  
