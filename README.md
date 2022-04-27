@@ -65,16 +65,16 @@ One of the original purposes of mu in it's inception was a place to store old wo
 
 If you prefer touse the provided docker image you will need to install docker at https://docs.docker.com/get-docker/ .
 
-# Build image
+### Build image
 
     $ docker build -t mu .
 
-# Run container
+### Run container
 
     $ docker run -i mu:latest
 
 
-# SSH into container
+### SSH into container
 
  	$ docker exec -it mu:latest /bin/bash
 
