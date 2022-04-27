@@ -36,21 +36,21 @@ The CUBX0006 family was created for basic cubic stuctures ( there is only one CU
 ![Alt Text](resources/CUBX0006-BLK-L1000W200H15.png)
 
 
-### System Codes
+### System Code
 A system-code serves to identify a general system (literally anything physical,especially technological or worth manufacturing) and generate resources and metadata which help users manufacture said system at reduced cost. These resources include CAD files and annotated openscad source code directories containing assembly and operational animation routines which help users record and transmit and intepret complex manufacturing and assembly information.
 
-### Family Codes
+### Family Code
 A 'family-code' is the first section of any system-code sperated by the '-' (dashes).
 
 
-### Type Codes
+### Type Code
 A 'type-code' is the second section of any system-code sperated by the '-' (dashes).
 
 
-### System Schemas
+### System Schema
 System schemas also sometimes refered to less generally as hardware schemas are a pattern or archetype constant associated the form that defines the hardware itself. THese are best momemorized becasue one can more actuartly imagine parts if theyjust use the abstraction.
 
-### System Sets
+### System Set
 Any system code with unspecified parameters ; rendering a set of possible system configuration. the mu package cannot handle these objects yet but soon it will. 
 
 
