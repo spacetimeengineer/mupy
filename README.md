@@ -48,10 +48,7 @@ Any system code with unspecified parameters ; rendering a set of possible system
 
 
 ### Certification
-Originally there needed to be a way to ingest and store work from previous jobs.
-
-Certification referes to the most powerful abstraction PSI offers is by far the highest value add to PSI and it's users. 
-Certification refers to the process of one converting a well designed (python3 / openscad) script into a well defined well paramaterized family code which would express the same rules and features expressed by other hardware families. The scripting feature already gives users the ability to design and distribute thier designs but the certification process renders these designs into building blocks. In this way new users will have great ease developeing advanced systems.
+One of the original purposes of mu in it's inception was a place to store old works. If a prototype had been developed then the parts or prototype itself would be cleaned and parameterized and then certified so that the system is now larger and more capable while at the same time the parts and any derividives are retained.
 
 
 ### Docker ( optional )
