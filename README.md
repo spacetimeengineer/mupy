@@ -1,10 +1,10 @@
 
 # μ : manufacturing utility
 
-μ is a novel technology and super-utility implemented in the form of an open source (3-Clause BSD) python pip installable package. More specifically it can be thought of as a horizontal abstraction layer which leverages and auguments the openscad programming language. On the more fundemental level however μ is really just a manufacturing-oriented compression algorithm ; It stores information, instructions and an incalculable amount of 3D printable renderings with discernable non-trivial differences in geometry and it's all just under one megabyte. The basic idea was to use this enviornment to develop extremely large systems but the modular aspect of this gave users configuration freedonm as well as a low cost alternative to development, Since everything was modular then we could take advantage of smaller manufcturing systems.
+μ is a novel technology and super-utility implemented in the form of an open source (3-Clause BSD) python pip installable package. More specifically it can be thought of as a horizontal abstraction layer which leverages and auguments the openscad programming language. On the more fundemental level however μ is really just a manufacturing-oriented compression algorithm ; It contains instructions on renderings of an incalculable number of CAD renderings with discernable non-trivial differences in geometry and it's all just under one megabyte.
 
 ### History
-This package was developed over six-year period where it bec as an internal utility to an innovation operation. When openscad was discovered by the author he became interested in modular hardware development. He believed that modular hardware developement would lead to the development of larger productswhich themselves could benifet from the efficiency of scale. Over time the parametrization that emerged from completed source code made it difficult to keep track of specific part implementations so an encoding scheme was developed to track these parts. Eventially a python package was designed to handle the rendersings by simple python3 libraires.
+This package was developed over six-year period where it began as an internal utility which supported a small innovation operation. When openscad was discovered by the author he became interested in modular hardware development. Due to the scripting interface, paramaterization was natural. He believed that modular hardware developement would lead to the development of larger products which themselves could benifet from the efficiency of scale. Over time the parametrization that emerged from completed source code made it difficult to keep track of specific part implementations so an encoding scheme was developed to track these parts. Eventially a python package was designed to handle the rendersings by simple python3 libraires.
 
 ### Disclaimer
 
@@ -48,6 +48,9 @@ Any system code with unspecified parameters ; rendering a set of possible system
 
 
 ### Certification
+Certification can be thought of as a second order abstraction or iteration of the technology onto itself ; In other words if one writes a script with the μ package and invokes a collection of system codes into an assembly then they should be able to identify some naturally occuring parameterization scheme once the system is optimized and second to assign a system schema to this assembly giving it configuration freedom within a single string and invokable from the μ-terminal. After this certification is complete, the mu termal can generate some corresponding assembly with just a single system code. Currently this process is manual and the best practices regarding this operation have not been identified as of this time.
+
+
 One of the original purposes of mu in it's inception was a place to store old works. If a prototype had been developed then the parts or prototype itself would be cleaned and parameterized and then certified so that the system is now larger and more capable while at the same time the parts and any derividives are retained.
 
 
