@@ -79,9 +79,6 @@ while True: # Main loop
         pass
     elif len(user_input) > 0:
         hardware = Hardware("unnamed", user_input)
-        hardware.build_hardware(os.getcwd()+"/generated_psi_source_code")
+        hardware.build_hardware(os.getcwd()+"/MU_GENERATED")
     else:        
         pass
-
-
-

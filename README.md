@@ -19,17 +19,6 @@ Everything discussed in this README.md deals with what it handles not what it do
     pip3 install mu
 
 
-# Goals
-μ attempts to serve as a must-own utility for any serious engineer which gives users access to virtually unlimited parts the ability to design physical systems in a simple script format.
-
-
-
-# Does it replace the need for CAD
-In some cases it may, especially for users who need to design something quick and beautiful but who would prefer not to learn an entire IDE but in most cases it only auguments CAD and it would be more likely in the future that IDEs would integrate some μ-terminal instance into the IDE.
-
-# Does it replace the need for Thingaverse
-mu is similar to thingaverse except that thingaverse is more art driven. mu is precision driven.
-
 ### μ-terminal
 μ comes with it bundled a command-line-interface application known as the μ-terminal or 'muterm' which behaves much like a linux terminal except that it only accepts special strings known as 'system codes'. muterm was developed to express to users μ's most rudimetry operation ; producing manufacturing resources for a given system code. In an idealized world, this utility would materialize an entire system (such as a 69 SS Chevelle) right in front of you upon pressing 'enter'. To enter muterm, in the linux terminal
 
@@ -58,18 +47,6 @@ System schemas also sometimes refered to less generally as hardware schemas are 
 Any system code with unspecified parameters ; rendering a set of possible system configuration. the mu package cannot handle these objects yet but soon it will. 
 
 
-
-### Concept
-
-Can you take an R&D operation and find a better way to store, recall, assemble developed parts? Some kind of ingestion tool which 
-
-
-### Scripting : hardware scripting
-
-### Scripting : assembly scripting
-
-
-
 ### Certification
 Originally there needed to be a way to ingest and store work from previous jobs.
 
@@ -77,25 +54,11 @@ Certification referes to the most powerful abstraction PSI offers is by far the 
 Certification refers to the process of one converting a well designed (python3 / openscad) script into a well defined well paramaterized family code which would express the same rules and features expressed by other hardware families. The scripting feature already gives users the ability to design and distribute thier designs but the certification process renders these designs into building blocks. In this way new users will have great ease developeing advanced systems.
 
 
-### Scripting
-
-
-### Current State
-
-PSI in its current state exists much like Excaliber locked in it's stone ; Powerful but useless to those who have no vision and unable to wield it.
-
-Due to the fact that there is a single developer, there is only a handful of hardware technologies. In another year or two there will be many more but limited to a single developers vision. 
-
 ### Docker ( optional )
 
 If you prefer touse the provided docker image you will need to install docker at https://docs.docker.com/get-docker/ .
 
 
-### Contacts:
-
-| Project Team          | Email                          |
-| --------------------- | ------------------------------ |
-| Michael C Ryan        | spacetime.engineer@gmail.com   |
 
 
 
@@ -140,20 +103,8 @@ workspace.run(chamber_assembly, Coordinates(0,1,[0,0,0],[0,0,0],[0,0,0],[0,0,0])
 ![Alt Text](resources/utility_box.gif)
 
 
+### Contacts:
 
-
-### Interface
-
-
-| Acronym               | Meaning                              |
-| --------------------- | ------------------------------------ |
-| (API)                 | Applications Programming Interface   |
-| (CLI)  ( ψ:# )        | Command Line Interface               |
-
-
-
-### Scope
-This systems scope is just too large to even discuss. It was named manufacturing utility becasue it was meant to b an open source super tool which could help model the waywe build the future.
-
-### Claim 
-mu represents a technology which would eventually be required (in conjuction with other technologies such as AI, Quantum Computers, Cryptocurrency, ) to achieve a type 1 civilization. Mu prescribes a pathway to the development of the future and a new way to consider and even execute the future in a way that should amke everybody happy.  
+| Project Team          | Email                          |
+| --------------------- | ------------------------------ |
+| Michael C Ryan        | spacetime.engineer@gmail.com   |
