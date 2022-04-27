@@ -16,14 +16,13 @@ class CUBX0177:
 
         self.scad_file_name = directory + "/" + hardware_code +".scad" # This scad file is used to build the stl. It can be deleted afterwards. # TODO : Delete this file after run() command is called.
         self.scad_file = open(self.scad_file_name, 'w+')  # open file in append mode
-        print(self.scad_file_name)
         os.system("cp -R src/lib/CUBX0177/scad/ "+ self.directory) # Copies resouces into the workspace directory. These will be deletd later.
- 
+        # TODO : Mayneed to put in a double slash test ; replace with one slash incase too many were appended.
         self.scad_file.write('use <scad/CUBX0177.scad>;\n\n')
         
         if (self.type_code=="BPAN"): # Box panel.
             
-            # Example BPAN hardware code : "CUBX0177-BPAN-B25SR2P5-X9Y9P18-RT-SX25Y25-X8Y8-X20Y2010Z5  ->  CUBX0177-BPAN-B25SR2P5-X8Y8PP2-RT-SX25Y25-X8Y8-XO3YO5-X20Y20Z10-S"
+            # Example BPAN hardware code : "CUBX0177-BPAN-B25SR2P5-X8Y8PP2-RT-SX25Y25-X8Y8-XO3YO5-X20Y20Z10-S"
 
             self.block_unit_length = self.hardware_code.split("-")[2].split("B")[1].split("SR")[0] # Block length.
             self.shaft_radius = self.hardware_code.split("-")[2].split("B")[1].split("SR")[1].replace("P", ".", 1) # Shaft radius.
@@ -77,7 +76,9 @@ class CUBX0177:
 
 
             ''' Testing that code is parsed correctly.'''
-            
+            print("")
+            print("Parameterization Information")
+            print("============================")
             print("famliy_code = "+self.family_code)
             print("type_code = "+self.type_code)
             print("block_unit_length = "+self.block_unit_length)
@@ -96,7 +97,7 @@ class CUBX0177:
             print("y_cavity_dimensions = "+self.y_cavity_dimensions)
             print("z_cavity_dimensions = "+self.z_cavity_dimensions)
             print("cavity_type = "+self.cavity_type)
-            
+            print("")
 
 
             ''' Rules logic goes here ; conditions of which parameters combinations can exist.   '''
