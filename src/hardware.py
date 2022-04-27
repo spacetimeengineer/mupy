@@ -4,7 +4,7 @@ import hashlib
 import os, shutil
 from .decode import Decode
 from os.path import exists
-
+from src.coordinates import Coordinates
 class Hardware:
     """ This class builds json objects which define parts. 
         Parts are hardware codes with more identity 
@@ -41,6 +41,9 @@ class Hardware:
         """ Retuns scad code and imports the hardware code specified."""
         scad_code = '\n/* A module dedicated to this hardware object. This module is only called once becasue it references the unique hardware element (In both real and virtual space) which only needs to be done once. */\n\n'
         scad_code = 'module '+self.id+'()\n{\n' #
+        if (len(self.coordinate_superset)==0):
+            self.assign_coordinates(Coordinates(0,1,[0,0,0],[0,0,0],[0,0,0],[0,0,0]))
+
         for coordinates in self.coordinate_superset: #
             
 
