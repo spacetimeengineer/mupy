@@ -9,11 +9,15 @@ hen openscad was discovered by the author he became interested in modular hardwa
 
 ### Disclaimer
 
-Everything discussed in this README.md deals with what it handles not what it does of mu in conjunction with an informed & motivated user. μ in it's current state is much like a programming language with no applications built.
+The liscensing structure should be made clear ;mu comes packaged with many tools to build and develop new inventions but the crux of mu lies in the certification domain which is explained below but this certification serves as an abstraction so that hardware code that other users would like to aply thier own liscens is allowed adn mu only makes calls to that softwre the underlying use of that software is defined by that liscense agreement which is placed in the root directory of the library which mu could link to or come packaged with. The main idea is that mus liscense structute only applies to the abstraction it provides and should not be thought of as a tool which bypasses that liscense structue. It only auguments ones ability to manufacture or render resources for that hardware code more quickly.
 
 ### Prerequisites
 
     apt install openscad
+
+### Reccomended IDE
+
+Download VSCode at https://code.visualstudio.com/download and install the openscad plugin.
 
 ### Installation
 
