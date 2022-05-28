@@ -1,3 +1,5 @@
+Currently the mu project is in alpha testing. Disregard README.md until further notice.
+
 
 # μ : manufacturing utility
 
