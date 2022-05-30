@@ -12,6 +12,7 @@ Project ρ (Recursive Hardware Operations) was a project which explored hardware
 
 ### Project ψ
 
+One of the problems project ρ revealed was the tendency for modular type systems to compound inefficiencies in the final design and are only useful in a 'playing' context. It would be better to make more parts right? 
 Project ψ (Parametric System Instruction) was a project which explored hardware configuration, definition and assembly to it's 
 
 ### Project μ
