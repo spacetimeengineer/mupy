@@ -1,0 +1,74 @@
+
+
+Abstract
+
+Scaling Efficiency
+Modular Efficiency
+Software Efficiency
+
+
+
+
+
+
+
+Introduction
+
+Scaling
+Modularity adn modularR and D development
+Higher Order Modularity
+COnfiguration
+Build Freedom
+Requirement driven development
+
+
+
+Encoding
+Code Assignment
+Optimization
+Paramaterization
+Code Assignment
+
+
+
+
+
+
+
+For example :
+
+    ψ:# CUBX0006-BLK-L1000W200H15
+
+would materialize a board object of length 100mm, a width of 200mm and a height of 15mm. 
+
+
+
+
+Hardware Codes
+    Family Codes
+    Type Codes
+        In general there is a scad module for each type.
+        The parameter count may vary from type tyo type but not within type. This could be easily overridden but it may just get confusing.
+    Paramater Codes
+Hardware Sets
+    Any hardware codethat is not completely specified s a hardware set since it includes a alist of possible hardware elements.
+Hardware Schemas
+    Encodings
+Hardware Modules
+Python3 Handlers
+    Encoding
+Decoding
+
+
+Certification
+Encoding
+Decoding
+Hardware Code 
+Hardware Set
+Software/Protocol EntryPoint
+Family Code
+Type Code
+Paramater Codes
+
+Family Code dependent Schemas + special case context schemas.
+
