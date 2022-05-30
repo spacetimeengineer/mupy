@@ -3,7 +3,7 @@
 
 μ reffers to a novel technology & utility implemented in the form of an open source (3-Clause BSD) python pip installable package. In it's current form it identifies as a horizontal abstraction layer which leverages and auguments the openscad programming language. It's primary function is to help users develop anything 
 
-# Note from the developer..
+### Note from the developer..
 
 Hey, I built this for everybody 
 
