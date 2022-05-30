@@ -148,7 +148,10 @@ Any system code with unspecified parameters ; rendering a set of possible system
 
 
 ### Certification
-Certification can be thought of as a second order abstraction or iteration of the technology onto itself ; if one writes a script with the μ package and invokes a collection of system codes into an assembly then they should be able to identify some naturally occuring parameterization scheme once the system is optimized and second to assign a system schema to this assembly giving it configuration freedom within a single string and invokable from the μ-terminal. After this certification is complete, the mu termal can generate some corresponding assembly with just a single system code. Currently this process is manual and the best practices regarding this operation have not been identified as of this time.
+Certification refers to this idea of creating new hardware families from combinations of assembies of other hardware codes. These hardware codes can be programmed so why not.
+
+
+can be thought of as a second order abstraction or iteration of the technology onto itself ; if one writes a script with the μ package and invokes a collection of system codes into an assembly then they should be able to identify some naturally occuring parameterization scheme once the system is optimized and second to assign a system schema to this assembly giving it configuration freedom within a single string and invokable from the μ-terminal. After this certification is complete, the mu termal can generate some corresponding assembly with just a single system code. Currently this process is manual and the best practices regarding this operation have not been identified as of this time.
 
 
 One of the original purposes of mu in it's inception was a place to store old works. If a prototype had been developed then the parts or prototype itself would be cleaned and parameterized and then certified so that the system is now larger and more capable while at the same time the parts and any derividives are retained.
