@@ -36,7 +36,10 @@ Projct mu was a nessecary bleding of both projects. and mupy was a python implem
 
 Obviously only certain system-codes will be valid for for input. A simple example can be expressed by the following operation.
 
-### A simple example
+# Examples
+
+### muterm
+
 The CUBX0006 family was created for basic cubic stuctures ( there is only one CUBX0006 type : 'BLK' which stands for 'block' ) ; all 90 degree angles. It is one of the simplest hardware families and this system code 'CUBX0006-BLK-L1000W200H15' will dispense a CUBX0006 rendering of 'Block' type with a length of 1000mm, a width of 200mm and a height of 15mm.
 
     μ:# CUBX0006-BLK-L1000W200H15
@@ -83,7 +86,9 @@ If you prefer touse the provided docker image you will need to install docker at
 
 
 
-### Foo.py
+### utility_box.py
+
+
 ```python
 from src.workspace import WorkSpace
 from src.hardware import Hardware
