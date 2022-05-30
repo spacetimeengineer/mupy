@@ -20,6 +20,8 @@ Projct mu was a nessecary bleding of both projects. and mupy was a python implem
 
 # Installation
 
+## Linux
+
 ### Prerequisites
 
     apt install openscad
@@ -28,7 +30,25 @@ Projct mu was a nessecary bleding of both projects. and mupy was a python implem
 
     pip3 install mu
 
+## MacOS
 
+### Prerequisites
+
+    apt install openscad
+
+### Install mupy
+
+    pip3 install mu
+
+## Windows
+
+### Prerequisites
+
+    apt install openscad
+
+### Install mupy
+
+    pip3 install mu
 ### μ-terminal
 μ comes with it bundled a command-line-interface application known as the μ-terminal or 'muterm' which behaves much like a linux terminal except that it only accepts special strings known as 'system codes'. muterm was developed to express to users μ's most rudimetry operation ; dispensing manufacturing resources for a given system code. To enter muterm, in the linux terminal
 
