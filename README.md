@@ -62,6 +62,9 @@ Certification can be thought of as a second order abstraction or iteration of th
 
 One of the original purposes of mu in it's inception was a place to store old works. If a prototype had been developed then the parts or prototype itself would be cleaned and parameterized and then certified so that the system is now larger and more capable while at the same time the parts and any derividives are retained.
 
+### Hardware Family Liscensing
+
+Liscensing should be considered. The mupy platform is protected unde the BSD 3-clause liscense however it can only serve as an abstraction to other hardware families which may or likely possess diffeent liscensing schemes. mupy simplay states that it is an abstraction which makes calls to softeare but does not intend to dispense it. In some cases mu will come bundled with other libraries which are liscened differently.
 
 ### Docker ( optional )
 
