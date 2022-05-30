@@ -48,44 +48,6 @@ The CUBX0006 family was created for basic cubic stuctures ( there is only one CU
 
 ![Alt Text](resources/CUBX0006-BLK-L1000W200H15.png)
 
-
-### System Codes
-A system-code serves to identify a general system (literally anything physical,especially technological or worth manufacturing) and generate resources and metadata which help users manufacture said system at reduced cost. These resources include CAD files and annotated openscad source code directories containing assembly and operational animation routines which help users record and transmit and intepret complex manufacturing and assembly information.
-
-
-### System Schemas
-System schemas also sometimes refered to less generally as hardware schemas are a pattern or archetype constant associated the form that defines the hardware itself. THese are best momemorized becasue one can more actuartly imagine parts if theyjust use the abstraction.
-
-### System Sets
-Any system code with unspecified parameters ; rendering a set of possible system configuration. the mu package cannot handle these objects yet but soon it will. 
-
-
-### Certification
-Certification can be thought of as a second order abstraction or iteration of the technology onto itself ; if one writes a script with the μ package and invokes a collection of system codes into an assembly then they should be able to identify some naturally occuring parameterization scheme once the system is optimized and second to assign a system schema to this assembly giving it configuration freedom within a single string and invokable from the μ-terminal. After this certification is complete, the mu termal can generate some corresponding assembly with just a single system code. Currently this process is manual and the best practices regarding this operation have not been identified as of this time.
-
-
-One of the original purposes of mu in it's inception was a place to store old works. If a prototype had been developed then the parts or prototype itself would be cleaned and parameterized and then certified so that the system is now larger and more capable while at the same time the parts and any derividives are retained.
-
-
-# Docker ( optional )
-
-If you prefer touse the provided docker image you will need to install docker at https://docs.docker.com/get-docker/ .
-
-### Build image
-
-    $ docker build -t mu .
-
-### Run container
-
-    $ docker run -i mu:latest
-
-
-### SSH into container
-
- 	$ docker exec -it mu:latest /bin/bash
-
-
-
 ### utility_box.py
 
 
@@ -127,6 +89,41 @@ workspace.run(chamber_assembly, Coordinates(0,1,[0,0,0],[0,0,0],[0,0,0],[0,0,0])
 
 
 ![Alt Text](resources/utility_box.gif)
+
+### System Codes
+A system-code serves to identify a general system (literally anything physical,especially technological or worth manufacturing) and generate resources and metadata which help users manufacture said system at reduced cost. These resources include CAD files and annotated openscad source code directories containing assembly and operational animation routines which help users record and transmit and intepret complex manufacturing and assembly information.
+
+
+### System Schemas
+System schemas also sometimes refered to less generally as hardware schemas are a pattern or archetype constant associated the form that defines the hardware itself. THese are best momemorized becasue one can more actuartly imagine parts if theyjust use the abstraction.
+
+### System Sets
+Any system code with unspecified parameters ; rendering a set of possible system configuration. the mu package cannot handle these objects yet but soon it will. 
+
+
+### Certification
+Certification can be thought of as a second order abstraction or iteration of the technology onto itself ; if one writes a script with the μ package and invokes a collection of system codes into an assembly then they should be able to identify some naturally occuring parameterization scheme once the system is optimized and second to assign a system schema to this assembly giving it configuration freedom within a single string and invokable from the μ-terminal. After this certification is complete, the mu termal can generate some corresponding assembly with just a single system code. Currently this process is manual and the best practices regarding this operation have not been identified as of this time.
+
+
+One of the original purposes of mu in it's inception was a place to store old works. If a prototype had been developed then the parts or prototype itself would be cleaned and parameterized and then certified so that the system is now larger and more capable while at the same time the parts and any derividives are retained.
+
+
+# Docker ( optional )
+
+If you prefer touse the provided docker image you will need to install docker at https://docs.docker.com/get-docker/ .
+
+### Build image
+
+    $ docker build -t mu .
+
+### Run container
+
+    $ docker run -i mu:latest
+
+
+### SSH into container
+
+ 	$ docker exec -it mu:latest /bin/bash
 
 
 ### Contacts:
