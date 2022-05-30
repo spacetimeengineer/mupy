@@ -18,13 +18,13 @@ Project ψ (Parametric System Instruction) was a project which explored hardware
 
 Projct mu was a nessecary bleding of both projects. and mupy was a python implementation.
 
-### Installation
+# Installation
 
-# Prerequisites
+### Prerequisites
 
     apt install openscad
 
-# Install mupy
+### Install mupy
 
     pip3 install mu
 
@@ -64,20 +64,20 @@ Certification can be thought of as a second order abstraction or iteration of th
 One of the original purposes of mu in it's inception was a place to store old works. If a prototype had been developed then the parts or prototype itself would be cleaned and parameterized and then certified so that the system is now larger and more capable while at the same time the parts and any derividives are retained.
 
 
-### Docker ( optional )
+# Docker ( optional )
 
 If you prefer touse the provided docker image you will need to install docker at https://docs.docker.com/get-docker/ .
 
-# Build image
+### Build image
 
     $ docker build -t mu .
 
-# Run container
+### Run container
 
     $ docker run -i mu:latest
 
 
-# SSH into container
+### SSH into container
 
  	$ docker exec -it mu:latest /bin/bash
 
