@@ -17,7 +17,7 @@ Project ρ (Recursive Hardware Operations) was a project which explored hardware
 Project ψ (Parametric System Instruction) was a project which explored hardware configuration, definition and assembly to it's 
 
 
-
+# Installation
 
 ### Prerequisites
 
