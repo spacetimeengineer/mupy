@@ -3,23 +3,25 @@ Currently the mu project is in alpha testing. Disregard README.md until further 
 
 # μ : manufacturing utility
 
-μ is a novel technology and super-utility implemented in the form of an open source (3-Clause BSD) python pip installable package. More specifically it can be thought of as a horizontal abstraction layer which leverages and auguments the openscad programming language. On the more fundemental level however μ is really just a manufacturing-oriented compression algorithm ; It contains instructions on renderings of an incalculable number of CAD renderings with discernable non-trivial differences in geometry and it's all just under one megabyte. All of this however no matter how cool completely misses the point. The true reason it was built was to empower the user or a community with a real tool which can help anybody build anything. 
+μ reffers to a novel technology & utility implemented in the form of an open source (3-Clause BSD) python pip installable package. In it's current form it identifies as a horizontal abstraction layer which leverages and auguments the openscad programming language. It's primary function is to help users develop anything 
 
 ### History
-This package was developed over six-year period where it began as an internal utility which supported a small innovation operation. It is the combined efforts of project rho ( recursive hardware operations ) and project psi ( parametric system instructions ) two projects which were made into one. These projects however were created for a reason and were originally never meant to be distributed but they were built to achieve something that has not been done before. The author needed a tool whch would empower him with the apabilities he needeed to rapidly prototype and distribute advanced even theoretical systems. W
-hen openscad was discovered by the author he became interested in modular hardware development. Due to the scripting interface, paramaterization was natural. He believed that modular hardware developement would lead to the development of larger products which themselves could benifet from the efficiency of scale. Over time the parametrization that emerged from completed source code made it difficult to keep track of specific part implementations so an encoding scheme was developed to track these parts. Eventially a python package was designed to handle the rendersings by simple python3 libraires.
+This package was developed over 4 year period where it began as an internal utility (project rho) which supported a small innovation operation. When openscad was discovered by the author he became interested in modular hardware development. Due to the scripting interface, paramaterization was natural. (project psi)He believed that modular hardware developement would lead to the development of larger products which themselves could benifet from the efficiency of scale. Over time the parametrization that emerged from completed source code made it difficult to keep track of specific part implementations so an encoding scheme was developed to track these parts. Eventially a python package was designed to handle the rendersings by simple python3 libraires.
 
-### Disclaimer
+### Project ρ
 
-The liscensing structure should be made clear ;mu comes packaged with many tools to build and develop new inventions but the crux of mu lies in the certification domain which is explained below but this certification serves as an abstraction so that hardware code that other users would like to aply thier own liscens is allowed adn mu only makes calls to that softwre the underlying use of that software is defined by that liscense agreement which is placed in the root directory of the library which mu could link to or come packaged with. The main idea is that mus liscense structute only applies to the abstraction it provides and should not be thought of as a tool which bypasses that liscense structue. It only auguments ones ability to manufacture or render resources for that hardware code more quickly.
+Project ρ (Recursive Hardware Operations) was a project which explored hardware modularity to it's manufacturing limit. This was mostly implemented with 3D printers and the main goal of this project was to create hardware families which could satisfy a great deal of requirements pertaining to the possible decentralized development of large scale systems which granted effeciency-of-scale level cost-reduction. 
+
+### Project ψ
+
+Project ψ (Parametric System Instruction) was a project which explored hardware configuration, definition and assembly to it's 
+
+
+
 
 ### Prerequisites
 
     apt install openscad
-
-### Reccomended IDE
-
-Download VSCode at https://code.visualstudio.com/download and install the openscad plugin.
 
 ### Installation
 
@@ -27,14 +29,14 @@ Download VSCode at https://code.visualstudio.com/download and install the opensc
 
 
 ### μ-terminal
-μ comes with it bundled a command-line-interface application known as the μ-terminal or 'muterm' which behaves much like a linux terminal except that it only accepts special strings known as 'system codes'. muterm was developed to express to users μ's most rudimetry operation ; producing manufacturing resources for a given system code. In an idealized world, this utility would materialize an entire system (such as a 69 SS Chevelle) right in front of you upon pressing 'enter'. To enter muterm, in the linux terminal
+μ comes with it bundled a command-line-interface application known as the μ-terminal or 'muterm' which behaves much like a linux terminal except that it only accepts special strings known as 'system codes'. muterm was developed to express to users μ's most rudimetry operation ; dispensing manufacturing resources for a given system code. To enter muterm, in the linux terminal
 
     :~$ ./muterm 
 
 Obviously only certain system-codes will be valid for for input. A simple example can be expressed by the following operation.
 
 ### A simple example
-The CUBX0006 family was created for basic cubic stuctures ( there is only one CUBX0006 type : 'BLK' which stands for 'block' ) ; all 90 degree angles. It is one of the simplest. Here this code will generate a CUBX0006 rendering
+The CUBX0006 family was created for basic cubic stuctures ( there is only one CUBX0006 type : 'BLK' which stands for 'block' ) ; all 90 degree angles. It is one of the simplest hardware families and this system code 'CUBX0006-BLK-L1000W200H15' will dispense a CUBX0006 rendering of 'Block' type with a length of 1000mm, a width of 200mm and a height of 15mm.
 
     μ:# CUBX0006-BLK-L1000W200H15
     
@@ -43,21 +45,14 @@ The CUBX0006 family was created for basic cubic stuctures ( there is only one CU
 ![Alt Text](resources/CUBX0006-BLK-L1000W200H15.png)
 
 
-### System Code
+### System Codes
 A system-code serves to identify a general system (literally anything physical,especially technological or worth manufacturing) and generate resources and metadata which help users manufacture said system at reduced cost. These resources include CAD files and annotated openscad source code directories containing assembly and operational animation routines which help users record and transmit and intepret complex manufacturing and assembly information.
 
-### Family Code
-A 'family-code' is the first section of any system-code sperated by the '-' (dashes).
 
-
-### Type Code
-A 'type-code' is the second section of any system-code sperated by the '-' (dashes).
-
-
-### System Schema
+### System Schemas
 System schemas also sometimes refered to less generally as hardware schemas are a pattern or archetype constant associated the form that defines the hardware itself. THese are best momemorized becasue one can more actuartly imagine parts if theyjust use the abstraction.
 
-### System Set
+### System Sets
 Any system code with unspecified parameters ; rendering a set of possible system configuration. the mu package cannot handle these objects yet but soon it will. 
 
 
@@ -72,16 +67,16 @@ One of the original purposes of mu in it's inception was a place to store old wo
 
 If you prefer touse the provided docker image you will need to install docker at https://docs.docker.com/get-docker/ .
 
-### Build image
+# Build image
 
     $ docker build -t mu .
 
-### Run container
+# Run container
 
     $ docker run -i mu:latest
 
 
-### SSH into container
+# SSH into container
 
  	$ docker exec -it mu:latest /bin/bash
 
