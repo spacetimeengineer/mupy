@@ -1,37 +1,20 @@
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![BSD License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-# μ : manufacturing utility
+
+# mupy : manufacturing utility
 
 μ reffers to a novel technology & utility implemented in the form of an open source (3-Clause BSD) python pip installable package. In it's current form it identifies as a horizontal abstraction layer which leverages and auguments the openscad programming language. It's primary function is to help users develop anything 
 
 # History
 This package was developed over 4 year period where it began as an internal utility (project rho) which supported a small innovation operation. When openscad was discovered by the author he became interested in modular hardware development. Due to the scripting interface, paramaterization was natural. (project psi)He believed that modular hardware developement would lead to the development of larger products which themselves could benifet from the efficiency of scale. Over time the parametrization that emerged from completed source code made it difficult to keep track of specific part implementations so an encoding scheme was developed to track these parts. Eventially a python package was designed to handle the rendersings by simple python3 libraires.
 
-## Project ρ
+### Project ρ
 
-Project ρ (Recursive Hardware Operations) was a research and development operation which explored hardware modularity to it's manufacturing limit. This was mostly implemented with 3D printers and the main goal of this project was to create hardware families which could satisfy a great deal of requirements pertaining to the possible decentralized development of large scale systems which granted effeciency-of-scale level cost-reduction. Project ρ was basically a way to empower users or communities with the capabilities needed to build such systems since they would bind together like legos.
+Project ρ (Recursive Hardware Operations) was a project which explored hardware modularity to it's manufacturing limit. This was mostly implemented with 3D printers and the main goal of this project was to create hardware families which could satisfy a great deal of requirements pertaining to the possible decentralized development of large scale systems which granted effeciency-of-scale level cost-reduction. 
 
-### Goals of project ρ
+### Project ψ
 
-   - Give smaller 3D printers or manufacturing systems more use cases in developing large scale system.
-   - Create really fun parts.
-    
-## Project ψ
+Project ψ (Parametric System Instruction) was a project which explored hardware configuration, definition and assembly to it's 
 
-Project ψ (Parametric System Instruction) was a project which explored hardware configuration, encoding, simulatin and managment. It was a nessecary next step in the development of rho becasue many problems with pure modularity based manufacturing.
-
-
-   - Give smaller 3D printers or manufacturing systems more use cases in developing large scale system.
-   - Create really fun parts.
-    
-## Project μ
-
-   - Give smaller 3D printers or manufacturing systems more use cases in developing large scale system.
-   - Create really fun parts.
+### Project μ
 
 Projct mu was a nessecary bleding of both projects. and mupy was a python implementation.
 
@@ -72,6 +55,26 @@ Projct mu was a nessecary bleding of both projects. and mupy was a python implem
     :~$ ./muterm 
 
 Obviously only certain system-codes will be valid for for input. A simple example can be expressed by the following operation.
+
+
+# Docker ( optional )
+
+If you prefer touse the provided docker image you will need to install docker at https://docs.docker.com/get-docker/ .
+
+### Build image
+
+    $ docker build -t mu .
+
+### Run container
+
+    $ docker run -i mu:latest
+
+
+### SSH into container
+
+ 	$ docker exec -it mu:latest /bin/bash
+
+
 
 # Examples
 
@@ -145,26 +148,17 @@ Certification can be thought of as a second order abstraction or iteration of th
 One of the original purposes of mu in it's inception was a place to store old works. If a prototype had been developed then the parts or prototype itself would be cleaned and parameterized and then certified so that the system is now larger and more capable while at the same time the parts and any derividives are retained.
 
 
-# Docker ( optional )
-
-If you prefer touse the provided docker image you will need to install docker at https://docs.docker.com/get-docker/ .
-
-### Build image
-
-    $ docker build -t mu .
-
-### Run container
-
-    $ docker run -i mu:latest
-
-
-### SSH into container
-
- 	$ docker exec -it mu:latest /bin/bash
-
-
 ### Contacts:
 
 | Project Team          | Email                          |
 | --------------------- | ------------------------------ |
 | Michael C Ryan        | spacetime.engineer@gmail.com   |
+
+
+
+
+<!-- ACKNOWLEDGMENTS -->
+## Acknowledgments
+
+* [openscad Community](https://github.com/openscad/openscad)
+* [python community](https://www.python.org/)
