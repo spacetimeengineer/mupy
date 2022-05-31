@@ -1,4 +1,9 @@
-
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![BSD License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 # μ : manufacturing utility
 
 μ reffers to a novel technology & utility implemented in the form of an open source (3-Clause BSD) python pip installable package. In it's current form it identifies as a horizontal abstraction layer which leverages and auguments the openscad programming language. It's primary function is to help users develop anything 
