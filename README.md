@@ -12,21 +12,21 @@ Project ρ (Recursive Hardware Operations) was a research and development operat
 
 ### Goals of project ρ
 
-    - Give smaller 3D printers or manufacturing systems more use cases in developing large scale system.
-    - Create really fun parts.
+   - Give smaller 3D printers or manufacturing systems more use cases in developing large scale system.
+   - Create really fun parts.
     
 ## Project ψ
 
 Project ψ (Parametric System Instruction) was a project which explored hardware configuration, encoding, simulatin and managment. It was a nessecary next step in the development of rho becasue many problems with pure modularity based manufacturing.
 
 
-    - Give smaller 3D printers or manufacturing systems more use cases in developing large scale system.
-    - Create really fun parts.
+   - Give smaller 3D printers or manufacturing systems more use cases in developing large scale system.
+   - Create really fun parts.
     
 ## Project μ
 
-    - Give smaller 3D printers or manufacturing systems more use cases in developing large scale system.
-    - Create really fun parts.
+   - Give smaller 3D printers or manufacturing systems more use cases in developing large scale system.
+   - Create really fun parts.
 
 Projct mu was a nessecary bleding of both projects. and mupy was a python implementation.
 
