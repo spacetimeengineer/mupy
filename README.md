@@ -20,7 +20,7 @@
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#contacts">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
@@ -105,7 +105,7 @@ If you prefer touse the provided docker image you will need to install docker at
 
 
 
-# Examples
+## Examples
 
 ### muterm
 
@@ -175,6 +175,15 @@ Certification can be thought of as a second order abstraction or iteration of th
 
 
 One of the original purposes of mu in it's inception was a place to store old works. If a prototype had been developed then the parts or prototype itself would be cleaned and parameterized and then certified so that the system is now larger and more capable while at the same time the parts and any derividives are retained.
+
+### Contributing
+
+
+
+
+### Liscense
+
+
 
 
 ### Contacts:
