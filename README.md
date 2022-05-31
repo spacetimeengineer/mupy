@@ -6,15 +6,27 @@
 # History
 This package was developed over 4 year period where it began as an internal utility (project rho) which supported a small innovation operation. When openscad was discovered by the author he became interested in modular hardware development. Due to the scripting interface, paramaterization was natural. (project psi)He believed that modular hardware developement would lead to the development of larger products which themselves could benifet from the efficiency of scale. Over time the parametrization that emerged from completed source code made it difficult to keep track of specific part implementations so an encoding scheme was developed to track these parts. Eventially a python package was designed to handle the rendersings by simple python3 libraires.
 
-### Project ρ
+## Project ρ
 
-Project ρ (Recursive Hardware Operations) was a project which explored hardware modularity to it's manufacturing limit. This was mostly implemented with 3D printers and the main goal of this project was to create hardware families which could satisfy a great deal of requirements pertaining to the possible decentralized development of large scale systems which granted effeciency-of-scale level cost-reduction. 
+Project ρ (Recursive Hardware Operations) was a research and development operation which explored hardware modularity to it's manufacturing limit. This was mostly implemented with 3D printers and the main goal of this project was to create hardware families which could satisfy a great deal of requirements pertaining to the possible decentralized development of large scale systems which granted effeciency-of-scale level cost-reduction. Project ρ was basically a way to empower users or communities with the capabilities needed to build such systems since they would bind together like legos.
 
-### Project ψ
+### Goals of project ρ
 
-Project ψ (Parametric System Instruction) was a project which explored hardware configuration, definition and assembly to it's 
+    - Give smaller 3D printers or manufacturing systems more use cases in developing large scale system.
+    - Create really fun parts.
+    
+## Project ψ
 
-### Project μ
+Project ψ (Parametric System Instruction) was a project which explored hardware configuration, encoding, simulatin and managment. It was a nessecary next step in the development of rho becasue many problems with pure modularity based manufacturing.
+
+
+    - Give smaller 3D printers or manufacturing systems more use cases in developing large scale system.
+    - Create really fun parts.
+    
+## Project μ
+
+    - Give smaller 3D printers or manufacturing systems more use cases in developing large scale system.
+    - Create really fun parts.
 
 Projct mu was a nessecary bleding of both projects. and mupy was a python implementation.
 
