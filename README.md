@@ -1,9 +1,37 @@
 
-# mupy : manufacturing utility
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
+
+# About This Project
+
+## mupy : manufacturing utility
 
 μ reffers to a novel technology & utility implemented in the form of an open source (3-Clause BSD) python pip installable package. In it's current form it identifies as a horizontal abstraction layer which leverages and auguments the openscad programming language. It's primary function is to help users develop anything 
 
-# History
+## History
 This package was developed over 4 year period where it began as an internal utility (project rho) which supported a small innovation operation. When openscad was discovered by the author he became interested in modular hardware development. Due to the scripting interface, paramaterization was natural. (project psi)He believed that modular hardware developement would lead to the development of larger products which themselves could benifet from the efficiency of scale. Over time the parametrization that emerged from completed source code made it difficult to keep track of specific part implementations so an encoding scheme was developed to track these parts. Eventially a python package was designed to handle the rendersings by simple python3 libraires.
 
 ### Project ρ
@@ -18,19 +46,9 @@ Project ψ (Parametric System Instruction) was a project which explored hardware
 
 Projct mu was a nessecary bleding of both projects. and mupy was a python implementation.
 
-# Installation
+# Getting Started
 
-## Linux
-
-### Prerequisites
-
-    apt install openscad
-
-### Install mupy
-
-    pip3 install mu
-
-## MacOS
+## Linux Installation
 
 ### Prerequisites
 
@@ -40,7 +58,7 @@ Projct mu was a nessecary bleding of both projects. and mupy was a python implem
 
     pip3 install mu
 
-## Windows
+## MacOS Installation
 
 ### Prerequisites
 
@@ -49,6 +67,17 @@ Projct mu was a nessecary bleding of both projects. and mupy was a python implem
 ### Install mupy
 
     pip3 install mu
+
+## Windows Installation
+
+### Prerequisites
+
+    apt install openscad
+
+### Install mupy
+
+    pip3 install mu
+
 ### μ-terminal
 μ comes with it bundled a command-line-interface application known as the μ-terminal or 'muterm' which behaves much like a linux terminal except that it only accepts special strings known as 'system codes'. muterm was developed to express to users μ's most rudimetry operation ; dispensing manufacturing resources for a given system code. To enter muterm, in the linux terminal
 
@@ -57,7 +86,7 @@ Projct mu was a nessecary bleding of both projects. and mupy was a python implem
 Obviously only certain system-codes will be valid for for input. A simple example can be expressed by the following operation.
 
 
-# Docker ( optional )
+## Docker Container ( optional )
 
 If you prefer touse the provided docker image you will need to install docker at https://docs.docker.com/get-docker/ .
 
