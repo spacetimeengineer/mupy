@@ -1,23 +1,17 @@
 #!/usr/bin/env python3
 
-from distutils.core import setup
 from setuptools import setup
 
 setup(
-    name='mu',
-    version='0.1.0',
+    name='mupy',
+    version='0.1.5',
     author='Michael Cranston Ryan',
     author_email='spacetime.engineer@gmail.com',
-    packages=[''],
-    scripts=['examples/*'],
-    #url='http://pypi.python.org/pypi/mu/',
+    url='http://pypi.python.org/pypi/mupy/',
     license='LICENSE.txt',
     description='Manufacturing Utility',
     long_description=open('README.md').read(),
-    install_requires=[
-
-    ],
-
+    long_description_content_type='text/markdown',
     classifiers=[
         'Development Status :: 4 - Beta',
         'Intended Audience :: Education',

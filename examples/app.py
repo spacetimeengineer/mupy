@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
-from src.workspace import WorkSpace
-from src.hardware import Hardware
-from src.coordinates import Coordinates
-from src.assembly import Assembly
+from mupy.workspace import WorkSpace
+from mupy.hardware import Hardware
+from mupy.coordinates import Coordinates
+from mupy.assembly import Assembly
 
 
 # A workspace represents a virtual 3D spce which serves as a virtual workbench except it is not a surface but a space.

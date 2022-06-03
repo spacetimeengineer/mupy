@@ -53,7 +53,7 @@ RUN mkdir -p /root/.local/share /.local/share
 # Copy in python3 project src code.
 
 COPY . home
-WORKDIR /home/src
+WORKDIR /home
 
 
 # Allows for unicode printing.
@@ -74,4 +74,4 @@ ENV TERM=xterm
 
 # Execute the command line interface.
 
-CMD [ "python3", "-m", "src/muterm/cli.py" ]
+CMD [ "python3", "-m", "src.muterm.cli.py" ]
