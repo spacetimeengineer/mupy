@@ -1,4 +1,4 @@
-## CUBX0177
+# CUBX0177
 The CUBX0177 family was developed for simple prototyping and construction. Joinery based binding. This particular family is fun for kids too.
 
 ### Manufacturing Reccomendations
