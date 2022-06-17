@@ -1,5 +1,5 @@
 # CUBX0177
-The CUBX0177 family was developed for simple prototyping and construction. This particular family is aot of fun for kids too.
+The CUBX0177 family was developed for simple prototyping and construction. Joinery based binding. This particular family is fun for kids too.
 
 ![Alt Text](resources/CUBX0006-BLK-L1000W200H15.png)
 
@@ -19,7 +19,7 @@ BPAN
 
 ### System Schema
 
-    μ:# <namespace>-<family_code>-<type_code>-B<block_unit_length_in_mm>SR<widtshaft_radius_in_mm>H<height_in_mm>
+    μ:# <namespace>-CUBX0177-BPAN-B<block_unit_length_in_mm>SR<widtshaft_radius_in_mm>-
 
 ### Manufacturing Reccomendations
 It is reccomended that CUBX0177 parts are 3D printed only if they are smaller which is the expected case. If larger utilize any manufacturing method that suites your needs. These are simple parts.
