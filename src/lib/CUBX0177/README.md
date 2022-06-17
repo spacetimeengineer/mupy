@@ -1,14 +1,6 @@
 # CUBX0177
 The CUBX0177 family was developed for simple prototyping and construction. Joinery based binding. This particular family is fun for kids too.
 
-![Alt Text](resources/CUBX0006-BLK-L1000W200H15.png)
-
-
-
-
-
-# Family Code
-CUBX0177
 
 ## Type Code
 BPAN
