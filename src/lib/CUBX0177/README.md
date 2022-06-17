@@ -20,3 +20,9 @@ It is reccomended that CUBX0177 parts are 3D printed only if they are smaller wh
 ### x_block_unit_count
 ### y_block_unit_count
 ### teeth_padding_in_mm
+
+
+
+| Parameter             | Description                    |        Type       |
+| --------------------- | ------------------------------ | ------------------|
+| block_unit_length_in_mm  | Each part exists as a mathematical array of these 'unit_blocks' which are perfect cubes. This parameter describes the unit_blocks unit-length, unit-width & unit-height (which shall always be the same). | int / float  |
