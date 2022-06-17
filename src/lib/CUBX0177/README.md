@@ -8,7 +8,7 @@ It is reccomended that CUBX0177 parts are 3D printed only if they are smaller wh
 
 ### Example(s)
 
-    μ:# CUBX0177-BPAN-B25SR2P5-X8Y8PP2-RT-SX25Y25-X8Y8-XO3YO5-X20Y20Z10-S
+    μ:# CUBX0177-BPAN-B15SR2P5-X16Y8PP2-RT-SX15Y15-X1Y1-XO0YO0-X180Y60Z10-S
 
 ### System Schema
 
