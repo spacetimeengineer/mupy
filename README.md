@@ -31,32 +31,20 @@
   </ol>
 </details>
 
-# About mupy
+# About
 
-μ reffers to a new technology and mupy reffers to a utility implemented in the form of an open source (3-Clause BSD) python pip installable package. μ essentially proposes a new way of manufacturing things with an emphasis on decentralization. In it's current form it identifies as a horizontal abstraction layer which leverages and auguments the openscad programming language. It's primary function is to help users develop anything 
+μ reffers to a new system development technology and mupy reffers to this technology implemented in the form of an open source (3-Clause BSD) python pip installable package. μ essentially proposes a new way of manufacturing anything with an emphasis on decentralization, modularity, configuration, parametrization, encodability and scaling. In it's current form it identifies as a horizontal abstraction layer which leverages and auguments the openscad programming language.
 
 ## Openscad
 
-open scad is a programming language dedicated to defining 3D geometric bodies. It is highly intuitive and extremely powerful and mupy leverages its technology.
+openscad is a programming language dedicated to defining 3D geometric bodies. It is highly intuitive and extremely powerful and mupy leverages its technology.
+
 openscad can do things other tools cant but it is too mathy to get popular. 
 mupy makes it easier to usr but leverages its power.
 
 
-
-## History
-This package was developed over 4 year period where it began as an internal utility (project rho) which supported a small innovation operation. When openscad was discovered by the author he became interested in modular hardware development. Due to the scripting interface, paramaterization was natural. (project psi)He believed that modular hardware developement would lead to the development of larger products which themselves could benifet from the efficiency of scale. Over time the parametrization that emerged from completed source code made it difficult to keep track of specific part implementations so an encoding scheme was developed to track these parts. Eventially a python package was designed to handle the rendersings by simple python3 libraires.
-
-### Project ρ
-
-Project ρ (Recursive Hardware Operations) was a project which explored hardware modularity to it's manufacturing limit. This was mostly implemented with 3D printers and the main goal of this project was to create hardware families which could satisfy a great deal of requirements pertaining to the possible decentralized development of large scale systems which granted effeciency-of-scale level cost-reduction. 
-
-### Project ψ
-
-Project ψ (Parametric System Instruction) was a project which explored hardware configuration, definition and assembly to it's 
-
-### Project μ
-
-Projct mu was a nessecary bleding of both projects. and mupy was a python implementation.
+## Replacement for CAD
+In general No, this is not a repacement for CAD however it could reduce the need for CAD in many use cases but this is becasue it auguments CAD. mupy does not replace the need to new esigne
 
 # Getting Started
 
@@ -192,6 +180,31 @@ Certification can be thought of as a second order abstraction or iteration of th
 
 
 One of the original purposes of mu in it's inception was a place to store old works. If a prototype had been developed then the parts or prototype itself would be cleaned and parameterized and then certified so that the system is now larger and more capable while at the same time the parts and any derividives are retained.
+
+
+
+
+## History
+This package was developed over 5 year period where it began as an internal utility (project rho) which supported a small innovation operation. When openscad was discovered by the author he became interested in modular hardware development. Due to the scripting interface, paramaterization was natural. (project psi)He believed that modular hardware developement would lead to the development of larger products which themselves could benifet from the efficiency of scale. Over time the parametrization that emerged from completed source code made it difficult to keep track of specific part implementations so an encoding scheme was developed to track these parts. Eventially a python package was designed to handle the rendersings by simple python3 libraires.
+
+### Project ρ
+
+Project ρ (Recursive Hardware Operations) was a project which explored hardware modularity to it's manufacturing limit. The basic idea was to ask if there was some optimal set of shapes / limited parts which could make it easier to print and assemble anything. The idea was borrowed from legos except that the parts would need to be designed with specific requirements in mind that would improve the quality of any assembly especially when it comes to binding and unbinding. This was mostly implemented with 3D printers and the main goal of this project was to create hardware families which could satisfy a great deal of requirements pertaining to the possible decentralized development of large scale systems which granted effeciency-of-scale level cost-reduction. 
+
+### Project ψ
+
+Project ψ (Parametric System Instruction) was a project which explored hardware configuration, definition and assembly to it's manufacturing limit. This was the next stage in the evolution of this project. Project rho proved that there was no way in principle to establish a modular family which satisfied all requirements. From this the idea of the psi terminal was developed which said that some terminal should exist which takes in 'system-codes' which serve to identify a system in terms of it's properties.
+
+### Project μ
+
+Projct mu was a nessecary bleding of both projects with added features. and mupy was a python implementation.
+
+
+## Roadmap
+
+### Automated certification routines
+
+This would be huge, some kind of routine which takes some mupy script in the form of a class with annotations, and automatically integrates a new family code into the mu terminal and the library. This would make all nessecary changes to main directory and the library would be modified. 
 
 ### Contributing
 
