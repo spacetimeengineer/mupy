@@ -12,6 +12,7 @@ class Decode:
 
             self.hardware_code = hardware_code
             self.family_code = self.hardware_code.split("-")[0]
+            self.family_code_valid = True
 
             ''' Checks which family the hardware code belogs to. '''
 
@@ -29,4 +30,4 @@ class Decode:
                 CRSPGR022(self.hardware_code, directory)
                 pass
             else:
-                print("Error : Invalid family code.")
+                self.family_code_valid = False

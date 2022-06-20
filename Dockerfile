@@ -74,4 +74,4 @@ ENV TERM=xterm
 
 # Execute the command line interface.
 
-CMD [ "python3", "-m", "src.muterm.cli.py" ]
+CMD [ "python3", "-m", "src.mucli.mucli.py" ]

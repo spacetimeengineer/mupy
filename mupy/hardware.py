@@ -5,6 +5,7 @@ import os, shutil
 from .decode import Decode
 from os.path import exists
 from .coordinates import Coordinates
+
 class Hardware:
     """ This class builds json objects which define parts. 
         Parts are hardware codes with more identity 
@@ -101,10 +102,24 @@ class Hardware:
     def build_stl(self, directory):
         """"""
         print("Decoding : "+self.hardware_code)
-        Decode(self.hardware_code, directory) # This is where the hardware code is converted into an scad codewhich can be rendered to an stl.
-        if not exists(directory+"/stl_files/"+self.hardware_code+".stl"): #
+        decoding = Decode(self.hardware_code, directory) # This is where the hardware code is converted into an scad code which can be rendered to an stl.
+        if not exists(directory+"/stl_files/"+self.hardware_code+".stl") and decoding.family_code_valid == True: #
             print("Rendering : "+self.hardware_code+".stl")
             os.system("openscad -o "+directory+"/stl_files/"+self.hardware_code+".stl "+directory+"/"+self.hardware_code+".scad") # This is the scad file used to create the stl files
+            
+    def mucli_build_stl(self, directory):
+        """"""
+        mu_symbol = '\u00B5'
+        decoding = Decode(self.hardware_code, directory) # This is where the hardware code is converted into an scad code which can be rendered to an stl.
+        if not exists(directory+"/stl_files/"+self.hardware_code+".stl") and decoding.family_code_valid == True: #
+        
+            print("")
+            print(""+mu_symbol+":! Rendering : "+self.hardware_code+".stl\n")
+            os.system("openscad -o "+directory+"/stl_files/"+self.hardware_code+".stl "+directory+"/"+self.hardware_code+".scad") # This is the scad file used to create the stl files
+            print("")
+            
+        if decoding.family_code_valid == False:
+            print("\n"+mu_symbol+":! Error : The entered system code contained an unrecognized family code\n")
     
     def remove_jig(self, directory): # Called with each run command per part.
         """Removes files which have served thier purpose and are no longer needed."""
@@ -120,5 +135,11 @@ class Hardware:
         """Clean function which builds and manages stl files """
         self.write_scad(directory) # Write scad files nessecarry to build stl. These files are temporary and the name of these files are equivilent to the hardware code currently.
         self.build_stl(directory) # Builds stl from hardware code.
+        self.remove_jig(directory) # Removes unnessecary files which were used to buld the stl.
+        
+    def mucli_build_hardware(self, directory):
+        """Clean function which builds and manages stl files """
+        self.write_scad(directory) # Write scad files nessecarry to build stl. These files are temporary and the name of these files are equivilent to the hardware code currently.
+        self.mucli_build_stl(directory) # Builds stl from hardware code.
         self.remove_jig(directory) # Removes unnessecary files which were used to buld the stl.
  

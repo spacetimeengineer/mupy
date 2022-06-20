@@ -20,7 +20,7 @@ class Coordinates:
         # self.rotational_velocity_0 = rv_i # Initial translational velocity.
         # self.rotational_velocity_f = rv_f # Final rotational velocity.
 
-        self.operand_id = "" # The operand _id is the id of the part the coordinate transformation is operating on.
+        self.operand_id = "" # The operand _id is the id of the hardware-unit the coordinate transformation is operating on.
         #self.description = "This data block describes the assembly coordinates for " + self.operand_id + " from time, denoted in open scad code by $t = " + self.time_0 + " to $t = " + self.time_f + "." # Gives a contextual description of this object.
 
 

@@ -1,17 +1,13 @@
 #!/usr/bin/env python3
 
-from mupy.workspace import WorkSpace
-from mupy.hardware import Hardware
-from mupy.coordinates import Coordinates
-from mupy.assembly import Assembly
-from pathlib import Path
 
-import mupy as mu
+from pathlib import Path
+import mupy.core as mu
+
 
 
 # A workspace represents a virtual 3D spce which serves as a virtual workbench except it is not a surface but a space.
 """ Set Up Workspace """
-
 
 workspace = mu.WorkSpace(str(Path.home())+"/utility_box")
 

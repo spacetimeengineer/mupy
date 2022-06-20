@@ -4,7 +4,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#about-the-project">mupy</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
@@ -19,17 +19,29 @@
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
+   <li>
+      <a href="#Liscense">Getting Started</a>
+      <ul>
+        <li><a href="#mupy">Prerequisites</a></li>
+        <li><a href="#familycode">Installation</a></li>
+      </ul>
+    </li>
     <li><a href="#contacts">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
-# About This Project
+# About mupy
 
-## mupy : manufacturing utility
+μ reffers to a new technology and mupy reffers to a utility implemented in the form of an open source (3-Clause BSD) python pip installable package. μ essentially proposes a new way of manufacturing things with an emphasis on decentralization. In it's current form it identifies as a horizontal abstraction layer which leverages and auguments the openscad programming language. It's primary function is to help users develop anything 
 
-μ reffers to a novel technology & utility implemented in the form of an open source (3-Clause BSD) python pip installable package. In it's current form it identifies as a horizontal abstraction layer which leverages and auguments the openscad programming language. It's primary function is to help users develop anything 
+## Openscad
+
+open scad is a programming language dedicated to defining 3D geometric bodies. It is highly intuitive and extremely powerful and mupy leverages its technology.
+openscad can do things other tools cant but it is too mathy to get popular. 
+mupy makes it easier to usr but leverages its power.
+
+
 
 ## History
 This package was developed over 4 year period where it began as an internal utility (project rho) which supported a small innovation operation. When openscad was discovered by the author he became interested in modular hardware development. Due to the scripting interface, paramaterization was natural. (project psi)He believed that modular hardware developement would lead to the development of larger products which themselves could benifet from the efficiency of scale. Over time the parametrization that emerged from completed source code made it difficult to keep track of specific part implementations so an encoding scheme was developed to track these parts. Eventially a python package was designed to handle the rendersings by simple python3 libraires.
@@ -162,6 +174,11 @@ workspace.run(chamber_assembly, Coordinates(0,1,[0,0,0],[0,0,0],[0,0,0],[0,0,0])
 ### System Codes
 A system-code serves to identify a general system (literally anything physical,especially technological or worth manufacturing) and generate resources and metadata which help users manufacture said system at reduced cost. These resources include CAD files and annotated openscad source code directories containing assembly and operational animation routines which help users record and transmit and intepret complex manufacturing and assembly information.
 
+### Family Codes
+A system-code serves to identify a general system (literally anything physical,especially technological or worth manufacturing) and generate resources and metadata which help users manufacture said system at reduced cost. These resources include CAD files and annotated openscad source code directories containing assembly and operational animation routines which help users record and transmit and intepret complex manufacturing and assembly information.
+
+### Type Codes
+A system-code serves to identify a general system (literally anything physical,especially technological or worth manufacturing) and generate resources and metadata which help users manufacture said system at reduced cost. These resources include CAD files and annotated openscad source code directories containing assembly and operational animation routines which help users record and transmit and intepret complex manufacturing and assembly information.
 
 ### System Schemas
 System schemas also sometimes refered to less generally as hardware schemas are a pattern or archetype constant associated the form that defines the hardware itself. THese are best momemorized becasue one can more actuartly imagine parts if theyjust use the abstraction.
@@ -178,7 +195,7 @@ One of the original purposes of mu in it's inception was a place to store old wo
 
 ### Contributing
 
-
+Currently the best form of contribution would be to play offer suggestions for iprovement or they could develp scripts to be certified or open scad code to be certified (manually).
 
 
 ### Liscense
@@ -198,5 +215,7 @@ One of the original purposes of mu in it's inception was a place to store old wo
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* [openscad Community](https://github.com/openscad/openscad)
-* [python community](https://www.python.org/)
+* [Openscad Community](https://github.com/openscad/openscad)
+* [Python community](https://www.python.org/)
+* [PiPy community](https://www.python.org/)
+* [Docker community](https://www.docker.com/)

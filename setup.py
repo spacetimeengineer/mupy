@@ -1,19 +1,21 @@
 #!/usr/bin/env python3
 
-from setuptools import setup
+from setuptools import find_packages, setup
 
 setup(
     name='mupy',
-    version='0.1.5',
+    version='0.1.8',
     author='Michael Cranston Ryan',
+    package_data={'': ['*.scad']},
+    include_package_data=True,
     author_email='spacetime.engineer@gmail.com',
     url='http://pypi.python.org/pypi/mupy/',
     license='LICENSE.txt',
     description='Manufacturing Utility',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
+    packages=find_packages(),
     classifiers=[
-        'Development Status :: 4 - Beta',
         'Intended Audience :: Education',
         'Intended Audience :: Manufacturing',
         'Intended Audience :: Science/Research',
