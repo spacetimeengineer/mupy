@@ -15,13 +15,14 @@ class CRSPGR022:
         self.errors = []
         self.directory = directory
 
-        self.scad_file_name = directory + hardware_code +".scad"
+        self.scad_file_name = directory + "/" + hardware_code +".scad"
         self.scad_file = open(self.scad_file_name, 'w+')  # open file in append mode
         
         os.system("cp -R "+os.path.dirname(__file__)+"/scad/ "+ self.directory)
-        self.scad_file.write('use <CRSPGR022/CRSPGR022.scad>;\n\n')
+        self.scad_file.write('use <scad/CRSPGR022.scad>;\n\n')
 
 
+        # "CRSPGR022-R-M1-L100H5W25-P15H0"
         if (self.type_code=="R"):
             
             self.modul = hardware_code.split("-")[2].split("M")[1]
@@ -81,6 +82,10 @@ class CRSPGR022:
             self.bore = hardware_code.split("-")[5].split("B")[1]
             self.optimized = hardware_code.split("-")[6]
             
+            if self.optimized == "T":
+                self.optimized = 'true'
+            else:
+                self.optimized = "false"
 
             self.CRSPGR022_SG()
             self.scad_file.close()
@@ -203,7 +208,7 @@ class CRSPGR022:
 
     def CRSPGR022_MR(self):
 
-        self.scad_file.write('mountable_rack(modul='+str(self.modul)+', length='+str(self.length)+', height='+str(self.height)+', width='+str(self.width)+', pressure_angle='+str(self.pressure_angle)+', helix_angle='+str(self.helix_angle)+', profile='+str(self.profile)+', head='+str(self.head)+',fastners='+str(self.fastners)+');')
+        self.scad_file.write('mountable_rack(modul='+str(self.modul)+', length='+str(self.length)+', height='+str(self.height)+', width='+str(self.width)+', pressure_angle='+str(self.pressure_angle)+', helix_angle='+str(self.helix_angle)+', profile='+str(self.profile)+', head='+str(self.head)+',fasteners='+str(self.fasteners)+');')
     
     def CRSPGR022_HR(self):
 
@@ -211,7 +216,7 @@ class CRSPGR022:
 
     def CRSPGR022_MHR(self):
 
-        self.scad_file.write('mountable_herringbone_rack(modul='+str(self.modul)+', length='+str(self.length)+', height='+str(self.height)+', width='+str(self.width)+', pressure_angle='+str(self.pressure_angle)+', helix_angle='+str(self.helix_angle)+', profile='+str(self.profile)+', head='+str(self.head)+',fastners='+str(self.fastners)+');')
+        self.scad_file.write('mountable_herringbone_rack(modul='+str(self.modul)+', length='+str(self.length)+', height='+str(self.height)+', width='+str(self.width)+', pressure_angle='+str(self.pressure_angle)+', helix_angle='+str(self.helix_angle)+', profile='+str(self.profile)+', head='+str(self.head)+',fasteners='+str(self.fasteners)+');')
 
     def CRSPGR022_SG(self):
 
