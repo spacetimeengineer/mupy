@@ -1,5 +1,7 @@
 # CRSPGR022
-The CRSPGR022 family was developed for gear production. You can find the original repo here.
+The CRSPGR022 family was developed for gear production. You can find the original repo at https://github.com/chrisspen/gears.
+
+https://github.com/chrisspen/gears
 
 ### Manufacturing Reccomendations
 It is reccomended that CRSPGR022 parts be 3D printed.
