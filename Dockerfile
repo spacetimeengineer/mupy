@@ -19,7 +19,7 @@
 
 # Base image.
 
-FROM ubuntu:18.04
+FROM ubuntu:22.04
 
 LABEL name = "μ"
 LABEL version="1.0"
@@ -74,4 +74,4 @@ ENV TERM=xterm
 
 # Execute the command line interface.
 
-CMD [ "python3", "-m", "src.mucli.mucli.py" ]
+CMD [ "python3", "-m", "mupy.mucli.mucli.py" ]

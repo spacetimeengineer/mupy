@@ -35,17 +35,6 @@
 
 μ reffers to a new system development technology and mupy reffers to this technology implemented in the form of an open source (3-Clause BSD) python pip installable package. μ essentially proposes a new way of manufacturing anything with an emphasis on decentralization, modularity, configuration, parametrization, encodability and scaling. In it's current form it identifies as a horizontal abstraction layer which leverages and auguments the openscad programming language.
 
-## Openscad
-
-openscad is a programming language dedicated to defining 3D geometric bodies. It is highly intuitive and extremely powerful and mupy leverages its technology.
-
-openscad can do things other tools cant but it is too mathy to get popular. 
-mupy makes it easier to usr but leverages its power.
-
-
-## Replacement for CAD
-In general No, this is not a repacement for CAD however it could reduce the need for CAD in many use cases but this is becasue it auguments CAD. mupy does not replace the need to new esigne
-
 # Getting Started
 
 ## Linux Installation
@@ -214,6 +203,20 @@ Currently the best form of contribution would be to play offer suggestions for i
 ### Liscense
 
 
+
+# FAQ
+## Openscad
+
+openscad is a programming language dedicated to defining 3D geometric bodies. It is highly intuitive and extremely powerful and mupy leverages its technology.
+
+openscad can do things other tools cant but it is too mathy to get popular. 
+mupy makes it easier to usr but leverages its power.
+
+
+## Does mupy replace CAD
+In general No, mupy is not a repacement for CAD however it may reduce the hours spent on CAD in many use cases because mupy essentially auguments CAD. 
+
+In time a mu termianl of sorts may be developed by the CAD developers. mupy technology is simply a way of doing things and it is very very fast.
 
 
 ### Contacts:

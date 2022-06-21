@@ -1,11 +1,11 @@
+[setup]
+command = "$ python3 setup.py sdist bdist_wheel bdist_egg"
+
 [install.local]
 command = "$ pip3 install ."
 
 [install.pipy]
 command = "$ pip3 install mupy"
-
-[setup]
-command = "$ python3 setup.py sdist bdist_wheel bdist_egg"
 
 [publish]
 command = "$ python3 -m twine upload --repository pypi dist/* --verbose"
