@@ -45,7 +45,7 @@ It is reccomended that CRSPGR022 parts be 3D printed.
 | helix_angle  |  Helix angle of the rack transverse axis; 0° = Spur Teeth. | int, float  |     degrees      |
 | profile  |  bolting. | int, float  |     mm      |
 | head  |  bolting. | int, float  |     mm      |
-| fastners  |  bolting. | boolean  |     state      |
+| fastners  |  bolting. | boolean (T - true, F - false)  |     state      |
 
 
 ## HR - Herringbone Rack
@@ -98,6 +98,16 @@ It is reccomended that CRSPGR022 parts be 3D printed.
 
     μ:# 
 
+| Parameter             | Description                    |        Type       |    Units    |
+| --------------------- | ------------------------------ | ------------------|--------------
+| modul  | Height of the tooth tip above the rolling line. | int, float  |  mm    |
+| tooth_number  |  Number of gear teeth. | int, float  |     mm      |
+| width  |  Tooth width. | int, float  |     mm      |
+| bore  |  Width of rack. | int, float  |     mm      |
+| pressure_angle  |  Pressure Angle, standard = 20° according to DIN 867. Should not exceed 45°. | int, float  |     degrees      |
+| helix_angle  |  Helix angle of the rack transverse axis; 0° = Spur Teeth. | int, float  |     degrees      |
+| optimized  |  Create holes for material-/weight-saving or surface enhancements where geometry allows. | boolean (T - true, F - false) |     state      |
+
 ## HG - Herringbone Gear
 
 ### Example(s)
@@ -108,6 +118,15 @@ It is reccomended that CRSPGR022 parts be 3D printed.
 
     μ:# 
 
+| Parameter             | Description                    |        Type       |    Units    |
+| --------------------- | ------------------------------ | ------------------|--------------
+| modul  | Height of the tooth tip above the rolling line. | int, float  |  mm    |
+| tooth_number  |  Number of gear teeth. | int, float  |     mm      |
+| width  |  Tooth width. | int, float  |     mm      |
+| bore  |  Width of rack. | int, float  |     mm      |
+| pressure_angle  |  Pressure Angle, standard = 20° according to DIN 867. Should not exceed 45°. | int, float  |     degrees      |
+| helix_angle  |  Helix angle of the rack transverse axis; 0° = Spur Teeth. | int, float  |     degrees      |
+| optimized  |  Create holes for material-/weight-saving or surface enhancements where geometry allows. | boolean (T - true, F - false) |     state      |
 
 ## RG - Ring Gear
 

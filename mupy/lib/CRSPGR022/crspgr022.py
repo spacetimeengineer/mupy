@@ -105,7 +105,11 @@ class CRSPGR022:
             self.helix_angle = hardware_code.split("-")[4].split("P")[1].split("H")[1]
             self.bore = hardware_code.split("-")[5].split("B")[1]
             self.optimized = hardware_code.split("-")[6]
-
+            
+            if self.optimized == "T":
+                self.optimized = 'true'
+            else:
+                self.optimized = "false"
             self.CRSPGR022_HG()
             self.scad_file.close()
 
