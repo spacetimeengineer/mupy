@@ -15,14 +15,14 @@ It is reccomended that CRSPGR022 parts be 3D printed.
     μ:# CRSPGR022-R-M<modul>-L<rack_length_in_mm>H<rack_height_in_mm>W<rack_width_in_mm>-P<pressure_angle>H<helix_angle>
 
 
-| Parameter             | Description                    |        Type       |    Units    |
-| --------------------- | ------------------------------ | ------------------|--------------
-| modul  | Height of the tooth tip above the rolling line. | int, float  |  mm    |
-| rack_length_in_mm  |  Length of rack. | int, float  |     mm      |
-| rack_height_in_mm  |  Height of rack. | int, float  |     mm      |
-| rack_width_in_mm  |  Width of rack. | int, float  |     mm      |
-| pressure_angle  |  Pressure Angle, standard = 20° according to DIN 867. Should not exceed 45°. | int, float  |     degrees      |
-| helix_angle  |  Helix angle of the rack transverse axis; 0° = Spur Teeth. | int, float  |     degrees      |
+| Parameter             | Description                    |        Type       |    Units    |     Example    |
+| --------------------- | ------------------------------ | ------------------|--------------------------------
+| modul  | Height of the tooth tip above the rolling line. | number  |  mm   |   3    |
+| rack_length_in_mm  |  Length of rack. | number (use 'P' to represent a decimal point)  |     mm      |    100     |
+| rack_height_in_mm  |  Height of rack. | number (use 'P' to represent a decimal point)  |     mm      |    5     |
+| rack_width_in_mm  |  Width of rack. | number (use 'P' to represent a decimal point)  |     mm      |     25   |
+| pressure_angle  |  Pressure Angle, standard = 20° according to DIN 867. Should not exceed 45°. | number |     degrees      |   15   |
+| helix_angle  |  Helix angle of the rack transverse axis; 0° = Spur Teeth. | number (use 'P' to represent a decimal point) |     degrees    |     0     |
 
 ## MR - Mountable Rack
 
@@ -43,9 +43,9 @@ It is reccomended that CRSPGR022 parts be 3D printed.
 | rack_width_in_mm  |  Width of rack. | int, float  |     mm      |
 | pressure_angle  |  Pressure Angle, standard = 20° according to DIN 867. Should not exceed 45°. | int, float  |     degrees      |
 | helix_angle  |  Helix angle of the rack transverse axis; 0° = Spur Teeth. | int, float  |     degrees      |
-| profile  |  bolting. | int, float  |     mm      |
-| head  |  bolting. | int, float  |     mm      |
-| fastners  |  bolting. | boolean (T - true, F - false)  |     state      |
+| profile  |  Metric standard profile for fastners (ISO machine screws), M4 = 4, M6 = 6 etc. | int, float  |     mm      |
+| head  |  Style of fastner to accomodate. | int, float  |     mm      |
+| fastners  |  Total number of fastners. | boolean (T - true, F - false)  |     state      |
 
 
 ## HR - Herringbone Rack
