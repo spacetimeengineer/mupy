@@ -5,7 +5,7 @@ The CRSPGR022 family was developed for gear production. You can find the origina
 It is reccomended that CRSPGR022 parts be 3D printed.
 
 ## R - Rack
-
+A gear rack has straight teeth cut into one surface of a square or round section of rod and operates with a pinion, which is a small cylindrical gear meshing with the gear rack.
 ### Example(s)
 
     μ:# CRSPGR022-R-M1-L100H5W25-P15H0
@@ -25,7 +25,7 @@ It is reccomended that CRSPGR022 parts be 3D printed.
 | helix_angle  |  Helix angle of the rack transverse axis; 0° = Spur Teeth. | number (use 'P' to represent a decimal point) |     degrees    |     0     |
 
 ## MR - Mountable Rack
-
+A gear rack has straight teeth cut into one surface of a square or round section of rod and operates with a pinion, which is a small cylindrical gear meshing with the gear rack.
 ### Example(s)
 
     μ:# CRSPGR022-MR-M2-L34H34W23-P15H20-P4-PH-F3
@@ -89,6 +89,7 @@ It is reccomended that CRSPGR022 parts be 3D printed.
 
 
 ## SG - Spur Gear
+Spur gears or straight-cut gears are the simplest type of gear. They consist of a cylinder or disk with teeth projecting radially. Viewing the gear at 90 degrees from the shaft length (side on) the tooth faces are straight and aligned parallel to the axis of rotation.
 
 ### Example(s)
 
@@ -109,6 +110,7 @@ It is reccomended that CRSPGR022 parts be 3D printed.
 | optimized  |  Create holes for material-/weight-saving or surface enhancements where geometry allows. | boolean (T - true, F - false) |     state      |
 
 ## HG - Herringbone Gear
+A herringbone gear, a specific type of double helical gear, is a special type of gear that is a side-to-side (not face-to-face) combination of two helical gears of opposite hands.
 
 ### Example(s)
 
@@ -129,7 +131,7 @@ It is reccomended that CRSPGR022 parts be 3D printed.
 | optimized  |  Create holes for material-/weight-saving or surface enhancements where geometry allows. | boolean (T - true, F - false) |     state      |
 
 ## RG - Ring Gear
-
+A ring gear is a gear ring shaped gear with teeth on the inside. It is a component of a planetary gearset.
 ### Example(s)
 
     μ:# CRSPGR022-RG-M1-T34W23R23-P15H20
@@ -140,6 +142,7 @@ It is reccomended that CRSPGR022 parts be 3D printed.
 
 
 ## HRG - Herringbone Ring Gear
+A herringbone ring gear, a specific type of double helical ring gear, is a special type of ring gear that is a side-to-side (not face-to-face) combination of two helical gears of opposite hands.
 
 ### Example(s)
 
@@ -151,6 +154,7 @@ It is reccomended that CRSPGR022 parts be 3D printed.
 
 
 ## PG - Planetary Gear
+A Planetary gearing is a gear system consisting of one or more planet gears revolving about a central sun gear.
 
 ### Example(s)
 
@@ -162,7 +166,7 @@ It is reccomended that CRSPGR022 parts be 3D printed.
 
 
 ## BG - Bevel Gear
-
+Bevel gears are gears where the axes of the two shafts intersect and the tooth-bearing faces of the gears themselves are conically shaped
 ### Example(s)
 
     μ:# CRSPGR022-BG-M1-T34W23S10-P15H20C15-B3
@@ -173,7 +177,7 @@ It is reccomended that CRSPGR022 parts be 3D printed.
 
 
 ## BHG - Bevel Herringbone Gear - Issues with render
-
+A herringbone gear, a specific type of double helical gear, is a special type of gear that is a side-to-side (not face-to-face) combination of two helical gears of opposite hands.
 ### Example(s)
 
     μ:# CRSPGR022-BHG-M1-T34W23-P15H20C15-B3
@@ -184,7 +188,7 @@ It is reccomended that CRSPGR022 parts be 3D printed.
 
 
 ## W - Worm Gear
-
+A worm gear is a gear consisting of a shaft with a spiral thread that engages with and drives a toothed wheel.
 ### Example(s)
 
     μ:# CRSPGR022-W-M1-TH34L23-P15L20-B3
