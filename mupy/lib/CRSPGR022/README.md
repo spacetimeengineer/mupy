@@ -16,7 +16,7 @@ It is reccomended that CRSPGR022 parts be 3D printed.
 
 
 | Parameter             | Description                    |        Type       |    Units    |     Example    |
-| --------------------- | ------------------------------ | ------------------|--------------------------------
+| --------------------- | ------------------------------ | ------------------|-------------|------------------|
 | modul  | Height of the tooth tip above the rolling line. | number  |  mm   |   3    |
 | rack_length_in_mm  |  Length of rack. | number (use 'P' to represent a decimal point)  |     mm      |    100     |
 | rack_height_in_mm  |  Height of rack. | number (use 'P' to represent a decimal point)  |     mm      |    5     |
