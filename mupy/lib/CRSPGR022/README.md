@@ -1,7 +1,6 @@
 # CRSPGR022
 The CRSPGR022 family was developed for gear production. You can find the original repo at https://github.com/chrisspen/gears.
 
-
 ### Manufacturing Reccomendations
 It is reccomended that CRSPGR022 parts be 3D printed.
 
@@ -18,11 +17,12 @@ It is reccomended that CRSPGR022 parts be 3D printed.
 
 | Parameter             | Description                    |        Type       |    Units    |
 | --------------------- | ------------------------------ | ------------------|--------------
-| modul  | Size | int, float  |  dimensionless    |
-| rack_length_in_mm  |  bolting. | int, float  |     mm      |
-| rack_height_in_mm  |  bolting. | int, float  |     mm      |
-| rack_width_in_mm  |  bolting. | int, float  |     mm      |
-
+| modul  | Height of the tooth tip above the rolling line. | int, float  |  mm    |
+| rack_length_in_mm  |  Length of rack. | int, float  |     mm      |
+| rack_height_in_mm  |  Height of rack. | int, float  |     mm      |
+| rack_width_in_mm  |  Width of rack. | int, float  |     mm      |
+| pressure_angle  |  Pressure Angle, standard = 20° according to DIN 867. Should not exceed 45°. | int, float  |     degrees      |
+| helix_angle  |  Helix angle of the rack transverse axis; 0° = Spur Teeth. | int, float  |     degrees      |
 
 ## MR - Mountable Rack
 
@@ -35,13 +35,14 @@ It is reccomended that CRSPGR022 parts be 3D printed.
     μ:# CRSPGR022-R-M<modul>-L<rack_length_in_mm>H<rack_height_in_mm>W<rack_width_in_mm>-P<pressure_angle>H<helix_angle>
 
 
-| Parameter             | Description                    |        Data Type       |    Units    |
+| Parameter             | Description                    |        Type       |    Units    |
 | --------------------- | ------------------------------ | ------------------|--------------
-| modul  | Size | int, float  |  dimensionless    |
-| rack_length_in_mm  |  bolting. | int, float  |     mm      |
-| rack_height_in_mm  |  bolting. | int, float  |     mm      |
-| rack_width_in_mm  |  bolting. | int, float  |     mm      |
-
+| modul  | Height of the tooth tip above the rolling line. | int, float  |  mm    |
+| rack_length_in_mm  |  Length of rack. | int, float  |     mm      |
+| rack_height_in_mm  |  Height of rack. | int, float  |     mm      |
+| rack_width_in_mm  |  Width of rack. | int, float  |     mm      |
+| pressure_angle  |  Pressure Angle, standard = 20° according to DIN 867. Should not exceed 45°. | int, float  |     degrees      |
+| helix_angle  |  Helix angle of the rack transverse axis; 0° = Spur Teeth. | int, float  |     degrees      |
 | profile  |  bolting. | int, float  |     mm      |
 | head  |  bolting. | int, float  |     mm      |
 | fastners  |  bolting. | boolean  |     state      |
@@ -57,6 +58,15 @@ It is reccomended that CRSPGR022 parts be 3D printed.
 
     μ:# 
 
+| Parameter             | Description                    |        Type       |    Units    |
+| --------------------- | ------------------------------ | ------------------|--------------
+| modul  | Height of the tooth tip above the rolling line. | int, float  |  mm    |
+| rack_length_in_mm  |  Length of rack. | int, float  |     mm      |
+| rack_height_in_mm  |  Height of rack. | int, float  |     mm      |
+| rack_width_in_mm  |  Width of rack. | int, float  |     mm      |
+| pressure_angle  |  Pressure Angle, standard = 20° according to DIN 867. Should not exceed 45°. | int, float  |     degrees      |
+| helix_angle  |  Helix angle of the rack transverse axis; 0° = Spur Teeth. | int, float  |     degrees      |
+
 
 ## MHR - Mountable Herringbone Rack
 
@@ -67,6 +77,15 @@ It is reccomended that CRSPGR022 parts be 3D printed.
 ### System Schema
 
     μ:# 
+
+| Parameter             | Description                    |        Type       |    Units    |
+| --------------------- | ------------------------------ | ------------------|--------------
+| modul  | Height of the tooth tip above the rolling line. | int, float  |  mm    |
+| rack_length_in_mm  |  Length of rack. | int, float  |     mm      |
+| rack_height_in_mm  |  Height of rack. | int, float  |     mm      |
+| rack_width_in_mm  |  Width of rack. | int, float  |     mm      |
+| pressure_angle  |  Pressure Angle, standard = 20° according to DIN 867. Should not exceed 45°. | int, float  |     degrees      |
+| helix_angle  |  Helix angle of the rack transverse axis; 0° = Spur Teeth. | int, float  |     degrees      |
 
 
 ## SG - Spur Gear
@@ -134,7 +153,7 @@ It is reccomended that CRSPGR022 parts be 3D printed.
     μ:# 
 
 
-## BHG - Bevel Herringbone Gear
+## BHG - Bevel Herringbone Gear - Issues with render
 
 ### Example(s)
 

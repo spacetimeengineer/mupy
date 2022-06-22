@@ -106,7 +106,7 @@ module copier(vect, number, distance, winkel){
 }
 
 /*  rack
-    modul = Height of the Tooth Tip above the Rolling LIne
+    modul = Height of the Tooth Tip above the Rolling Line
     length = Length of the Rack
     height = Height of the Rack to the Pitch Line
     width = Width of a Tooth
