@@ -5,7 +5,7 @@ The CRSPGR022 family was developed for gear production. You can find the origina
 ### Manufacturing Reccomendations
 It is reccomended that CRSPGR022 parts be 3D printed.
 
-## R
+## R - Rack
 
 ### Example(s)
 
@@ -24,18 +24,18 @@ It is reccomended that CRSPGR022 parts be 3D printed.
 | rack_width_in_mm  |  bolting. | int, float  |     mm      |
 
 
-## MR
+## MR - Mountable Rack
 
 ### Example(s)
 
-    μ:# CRSPGR022-MR-M1-L100H5W25-P15H0
+    μ:# CRSPGR022-MR-M2-L34H34W23-P15H20-P4-PH-F3
 
 ### System Schema
 
     μ:# CRSPGR022-R-M<modul>-L<rack_length_in_mm>H<rack_height_in_mm>W<rack_width_in_mm>-P<pressure_angle>H<helix_angle>
 
 
-| Parameter             | Description                    |        Type       |    Units    |
+| Parameter             | Description                    |        Data Type       |    Units    |
 | --------------------- | ------------------------------ | ------------------|--------------
 | modul  | Size | int, float  |  dimensionless    |
 | rack_length_in_mm  |  bolting. | int, float  |     mm      |
@@ -47,109 +47,109 @@ It is reccomended that CRSPGR022 parts be 3D printed.
 | fastners  |  bolting. | boolean  |     state      |
 
 
-## HR
+## HR - Herringbone Rack
 
 ### Example(s)
 
-    μ:# 
+    μ:# CRSPGR022-HR-M1-L100H5W25-P15H0
 
 ### System Schema
 
     μ:# 
 
 
-## MHR
+## MHR - Mountable Herringbone Rack
 
 ### Example(s)
 
-    μ:# 
+    μ:# CRSPGR022-MHR-M1-L34H34W23-P15H20-P4-PH-F2
 
 ### System Schema
 
     μ:# 
 
 
-## SG
+## SG - Spur Gear
 
 ### Example(s)
 
-    μ:# 
+    μ:# CRSPGR022-SG-M1-T34W23-P15H20-B4-T
 
 ### System Schema
 
     μ:# 
 
-## HG
+## HG - Herringbone Gear
 
 ### Example(s)
 
-    μ:# 
-
-### System Schema
-
-    μ:# 
-
-
-## RG
-
-### Example(s)
-
-    μ:# 
+    μ:# CRSPGR022-HG-M1-T34W23-P15H20-B4-T
 
 ### System Schema
 
     μ:# 
 
 
-## HRG
+## RG - Ring Gear
 
 ### Example(s)
 
-    μ:# 
+    μ:# CRSPGR022-RG-M1-T34W23R23-P15H20
 
 ### System Schema
 
     μ:# 
 
 
-## PG
+## HRG - Herringbone Ring Gear
 
 ### Example(s)
 
-    μ:# 
+    μ:# CRSPGR022-HRG-M1-T34W23R23-P15H20
 
 ### System Schema
 
     μ:# 
 
 
-## BG
+## PG - Planetary Gear
 
 ### Example(s)
 
-    μ:# 
+    μ:# CRSPGR022-PG-M1-S34P34N3W23R23-P15H20-B2-T-T
 
 ### System Schema
 
     μ:# 
 
 
-## BHG
+## BG - Bevel Gear
 
 ### Example(s)
 
-    μ:# 
+    μ:# CRSPGR022-BG-M1-T34W23S10-P15H20C15-B3
 
 ### System Schema
 
     μ:# 
 
 
-## W
+## BHG - Bevel Herringbone Gear
 
 ### Example(s)
 
+    μ:# CRSPGR022-BHG-M1-T34W23-P15H20C15-B3
+
+### System Schema
+
     μ:# 
+
+
+## W - Worm Gear
+
+### Example(s)
+
+    μ:# CRSPGR022-W-M1-TH34L23-P15L20-B3
 
 ### System Schema
 

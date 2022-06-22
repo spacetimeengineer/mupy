@@ -33,7 +33,8 @@ class CRSPGR022:
             self.helix_angle = hardware_code.split("-")[4].split("H")[1]
             self.CRSPGR022_R()
             self.scad_file.close()
-
+            
+        # "CRSPGR022-MR-M1-L34H34W23-P15H20-P4-PH-F2"
         elif (self.type_code=="MR"): 
 
             self.modul = hardware_code.split("-")[2].split("M")[1]
@@ -42,9 +43,13 @@ class CRSPGR022:
             self.width = hardware_code.split("-")[3].split("W")[1]
             self.pressure_angle = hardware_code.split("-")[4].split("P")[1].split("H")[0]
             self.helix_angle = hardware_code.split("-")[4].split("H")[1]
+            self.profile = hardware_code.split("-")[5].split("P")[1]
+            self.head = hardware_code.split("-")[6]
+            self.fasteners = hardware_code.split("-")[7].split("F")[1]
             self.CRSPGR022_MR()
             self.scad_file.close()
 
+        # "CRSPGR022-HR-M1-L100H5W25-P15H0"
         elif (self.type_code=="HR"): 
 
             self.modul = hardware_code.split("-")[2].split("M")[1]
@@ -224,15 +229,15 @@ class CRSPGR022:
 
     def CRSPGR022_HG(self):
 
-        self.scad_file.write('herringbone_gear (modul='+str(self.modul)+', tooth_number='+str(self.tooth_number)+', width='+str(self.width)+', bore='+str(self.bore)+', pressure_angle='+str(self.pressure_angle)+', helix_angle='+str(self.helix_angle)+', optimized='+str(self.optimized)+');')
+        self.scad_file.write('herringbone_gear(modul='+str(self.modul)+', tooth_number='+str(self.tooth_number)+', width='+str(self.width)+', bore='+str(self.bore)+', pressure_angle='+str(self.pressure_angle)+', helix_angle='+str(self.helix_angle)+', optimized='+str(self.optimized)+');')
 
     def CRSPGR022_RG(self):
 
-        self.scad_file.write('ring_gear (modul='+str(self.modul)+', tooth_number='+str(self.tooth_number)+', width='+str(self.width)+', rim_width='+str(self.rim_width)+', pressure_angle='+str(self.pressure_angle)+', helix_angle='+str(self.helix_angle)+');')
+        self.scad_file.write('ring_gear(modul='+str(self.modul)+', tooth_number='+str(self.tooth_number)+', width='+str(self.width)+', rim_width='+str(self.rim_width)+', pressure_angle='+str(self.pressure_angle)+', helix_angle='+str(self.helix_angle)+');')
 
     def CRSPGR022_HRG(self):
 
-        self.scad_file.write('herringbone_ring_gear (modul='+str(self.modul)+', tooth_number='+str(self.tooth_number)+', width='+str(self.width)+', rim_width='+str(self.rim_width)+', pressure_angle='+str(self.pressure_angle)+', helix_angle='+str(self.helix_angle)+');')
+        self.scad_file.write('herringbone_ring_gear(modul='+str(self.modul)+', tooth_number='+str(self.tooth_number)+', width='+str(self.width)+', rim_width='+str(self.rim_width)+', pressure_angle='+str(self.pressure_angle)+', helix_angle='+str(self.helix_angle)+');')
 
     def CRSPGR022_PG(self):
 
