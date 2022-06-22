@@ -16,22 +16,22 @@ It is reccomended that CUBX0177 parts are 3D printed only if they are smaller wh
 
 
 
-| Parameter             | Description                    |        Type       |    Units    |    Example  |
-| --------------------- | ------------------------------ | ------------------|-------------|-------------|
-| block_unit_length_in_mm  | Each part exists as a mathematical array of these 'unit_blocks' which are perfect cubes. This parameter describes the unit_blocks unit-length, unit-width & unit-height (which shall always be the same). | number (Use 'P' to indicate decimal within numerical string)  |    mm    |      S       | 
-| shaft_radius_in_mm  | Radius of bolting shaft | number (Use 'P' to indicate decimal within numerical string)  |     mm      |      S       | 
-| x_block_unit_count  | Block units in x dimension. | number (Use 'P' to indicate decimal within numerical string)  |     block_unit      |      S       | 
-| y_block_unit_count  | XXX | number (Use 'P' to indicate decimal within numerical string)  |     block_units     |      S       | 
-| teeth_padding_in_mm  | interteeth padding distance. Reccomended is 0.12 but  | int, float  |     block_unit      |      S       | 
-| orientation  | XXX| int, float  |     block_unit      |
-| teeth_present  | XXXX | number (Use 'P' to indicate decimal within numerical string)  |     block_unit      |      S       | 
-| x_cavity_spacing_in_mm  | XXXX | number (Use 'P' to indicate decimal within numerical string)  |     block_unit      |      S       | 
-| y_cavity_spacing_in_mm  | XXXX | number (Use 'P' to indicate decimal within numerical string)  |     block_unit      |      S       | 
-| x_cavity_count  | XXXX | number (Use 'P' to indicate decimal within numerical string)  |     block_unit      |      S       | 
-| y_cavity_count  | XXXX | number (Use 'P' to indicate decimal within numerical string)  |     block_unit      |      S       | 
-| x_offset_in_mm  | XXXX | number (Use 'P' to indicate decimal within numerical string)  |     block_unit      |      S       | 
-| y_offset_in_mm  | XXXX | number (Use 'P' to indicate decimal within numerical string)  |     block_unit      |      S       | 
-| x_cavity_dimensions_in_mm  | XXXX | number (Use 'P' to indicate decimal within numerical string)  |     block_unit      |      S       | 
-| y_cavity_dimensions_in_mm  | XXXX | number (Use 'P' to indicate decimal within numerical string)  |     block_unit      |      S       | 
-| z_cavity_dimensions_in_mm  | XXXX | number (Use 'P' to indicate decimal within numerical string)  |     block_unit      |      S       | 
-| cavity_type  | XXXX | Letter  |     block_unit      |      S       | 
+| Parameter             | Description                    |        Type       |    Units    |    Example  |  Example Meaning  |
+| --------------------- | ------------------------------ | ------------------|-------------|-------------|-------------------|
+| block_unit_length_in_mm  | Each part exists as a mathematical array of these 'unit_blocks' which are perfect cubes. This parameter describes the unit_blocks unit-length, unit-width & unit-height (which shall always be the same). | number (Use 'P' to indicate decimal within numerical string)  |    mm    |      S       |       S       |
+| shaft_radius_in_mm  | Radius of bolting shaft | number (Use 'P' to indicate decimal within numerical string)  |     mm      |      S       |       S       |
+| x_block_unit_count  | Block units in x dimension. | number (Use 'P' to indicate decimal within numerical string)  |     block_unit      |      S       |       M       |
+| y_block_unit_count  | XXX | number (Use 'P' to indicate decimal within numerical string)  |     block_units     |      S       |       M       | 
+| teeth_padding_in_mm  | interteeth padding distance. Reccomended is 0.12 but  | int, float  |     block_unit      |      S       |        M       |
+| orientation  | XXX| int, float  |     block_unit      |       M       |
+| teeth_present  | XXXX | number (Use 'P' to indicate decimal within numerical string)  |     block_unit      |      S       |        M       |
+| x_cavity_spacing_in_mm  | XXXX | number (Use 'P' to indicate decimal within numerical string)  |     block_unit      |      S       |        M       |
+| y_cavity_spacing_in_mm  | XXXX | number (Use 'P' to indicate decimal within numerical string)  |     block_unit      |      S       |        M       |
+| x_cavity_count  | XXXX | number (Use 'P' to indicate decimal within numerical string)  |     block_unit      |      S       |        M       |
+| y_cavity_count  | XXXX | number (Use 'P' to indicate decimal within numerical string)  |     block_unit      |      S       |        M       |
+| x_offset_in_mm  | XXXX | number (Use 'P' to indicate decimal within numerical string)  |     block_unit      |      S       |        M       |
+| y_offset_in_mm  | XXXX | number (Use 'P' to indicate decimal within numerical string)  |     block_unit      |      S       |        M       |
+| x_cavity_dimensions_in_mm  | XXXX | number (Use 'P' to indicate decimal within numerical string)  |     block_unit      |      S       |        M       |
+| y_cavity_dimensions_in_mm  | XXXX | number (Use 'P' to indicate decimal within numerical string)  |     block_unit      |      S       |        M       |
+| z_cavity_dimensions_in_mm  | XXXX | number (Use 'P' to indicate decimal within numerical string)  |     block_unit      |      S       |        M       |
+| cavity_type  | XXXX | Letter  |     block_unit      |      S       |        M       |
