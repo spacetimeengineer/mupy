@@ -34,3 +34,6 @@ It is reccomended that CUBX0177 parts are 3D printed only if they are smaller wh
 | y_cavity_dimensions  | y dimensions of the cavities. | number (Use 'P' to indicate decimal within numerical string)  |     mm      |      5       |
 | z_cavity_dimensions  | z dimensions of the cavities. | number (Use 'P' to indicate decimal within numerical string)  |     mm      |      20       |
 | cavity_type  | For the cavity array embedded on the panel, specifies if the cavities are circular (C) or square (S). | letter (C - circular, S - square) |     state      |      S       |
+
+
+CUBX0177-BPAN-B12SR3-X10Y10PP12-RT-SX10Y10-X1Y1-XO0YO0-X70Y70Z10-C
