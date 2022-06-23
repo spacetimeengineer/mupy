@@ -35,15 +35,8 @@
 μ-py or mupy is a shorthand for python manufacturing utility and reffers to a new system development tech implemented in the form of a python pip installable package. mupy essentially proposes a new way to design and distrubute technology with an emphasis on decentralization, modularity, configuration, parametrization, encodability and scaling. 
 
 ### Function
-simulates operation, assembly and manufacturing
-encodes syste
-
 
 - Simulation
-
-    - Operational
-
-    - Assembly
 
 - Configuration
 
@@ -59,10 +52,37 @@ encodes syste
 
 ### Form
 
-- horizontal abstraction layer for openscad
+- openscad horizontal abstraction layer
 
 - python pip package
 
+- command line interface - mucli
+
+- application programming interface
+
+- system schematic library
+
+- part generator
+
+- system generator
+
+### Goals
+
+- increase development speed
+
+- reduce development cost
+
+- decentralized manufacturing
+
+- massive scale system development
+
+- system schematic database
+
+- expose programmers to mechanical engineering
+
+- expose mechanical engineers to programming
+
+- decentralized research and development
 
 # Getting Started
 
