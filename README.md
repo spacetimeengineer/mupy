@@ -41,6 +41,10 @@ encodes syste
 
 - Simulation
 
+    - Operational
+
+    - Assembly
+
 - Configuration
 
 - Modularity
@@ -51,9 +55,14 @@ encodes syste
 
 - Manufacturing
 
+- Certification
 
 ### Form
-In it's current form it identifies as a horizontal abstraction layer which leverages and auguments the openscad programming language.
+
+- horizontal abstraction layer for openscad
+
+- python pip package
+
 
 # Getting Started
 

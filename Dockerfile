@@ -19,7 +19,7 @@
 
 # Base image.
 
-FROM ubuntu:22.04
+FROM ubuntu:latest
 
 LABEL name = "μ"
 LABEL version="1.0"
@@ -27,8 +27,9 @@ LABEL description="Manufacturing Utility"
 
 
 # Update and upgrade linux systems within the container.
-
-RUN apt-get update && apt-get install -y --no-install-recommends locales\
+RUN apt install -y apt-transport-https
+RUN apt-get update 
+RUN apt-get install -y apt-utils --no-install-recommends locales\
 	software-properties-common \
     ca-certificates \
 	git \
@@ -74,4 +75,4 @@ ENV TERM=xterm
 
 # Execute the command line interface.
 
-CMD [ "python3", "-m", "mupy.mucli.mucli.py" ]
+CMD [ "python3", "-m", "mupy.mucli.mucli" ]
