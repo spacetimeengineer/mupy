@@ -136,7 +136,7 @@ If you prefer touse the provided docker image you will need to install docker at
  	$ docker exec -it mu:latest /bin/bash
 
 
-## mucli
+# mucli
 
 The mucli is a general purpose utility and represents the most rudimetry operation of mu technology ; you give it a code and it sends back a system. Here is an example :
 
@@ -145,6 +145,10 @@ The mucli is a general purpose utility and represents the most rudimetry operati
 ## Example
 
 ![Alt Text](resources/CUBX0006-BLK-L1000W200H15.png)
+
+# muapi - mupy.core
+
+A more complex interface would be the python shell or scripting enviornment.
 
 ### utility_box.py
 
