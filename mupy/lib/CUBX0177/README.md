@@ -36,4 +36,4 @@ For smaller parts it is reccomended that CUBX0177 parts be 3D printed. If larger
 | cavity_type  | For the cavity array embedded on the panel, specifies if the cavities are circular (C) or square (S). | letter (C - circular, S - square) |     state      |      S       |
 
 
-CUBX0177-BPAN-B12SR3-X10Y10PP12-RT-SX10Y10-X1Y1-XO0YO0-X70Y70Z10-C
+CUBX0177-BPAN-B12SR3-X10Y10PP12-RF-SX10Y10-X1Y1-XO0YO0-X70Y70Z10-C

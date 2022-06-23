@@ -32,7 +32,19 @@
 
 # About
 
-mupy is a shorthand for python manufacturing utility and reffers to a new system development technology implemented in the form of a python pip installable package. μ essentially proposes a new way of manufacturing anything with an emphasis on decentralization, modularity, configuration, parametrization, encodability and scaling. In it's current form it identifies as a horizontal abstraction layer which leverages and auguments the openscad programming language.
+μ-py or mupy is a shorthand for python manufacturing utility and reffers to a new system development tech implemented in the form of a python pip installable package. mupy essentially proposes a new way to design and distrubute technology with an emphasis on decentralization, modularity, configuration, parametrization, encodability and scaling. 
+
+### Function
+simulates operation, assembly and manufacturing
+encodes syste
+
+can render countless stl files for modeling or 3D print.
+
+
+
+
+### Form
+In it's current form it identifies as a horizontal abstraction layer which leverages and auguments the openscad programming language.
 
 # Getting Started
 
