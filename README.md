@@ -32,7 +32,7 @@
 
 # About
 
-μ reffers to a new system development technology and mupy reffers to this technology implemented in the form of an open source (3-Clause BSD) python pip installable package. μ essentially proposes a new way of manufacturing anything with an emphasis on decentralization, modularity, configuration, parametrization, encodability and scaling. In it's current form it identifies as a horizontal abstraction layer which leverages and auguments the openscad programming language.
+mupy is shorthand for python manufacturing utility and reffers to a new system development technology implemented in the form of a python pip installable package. μ essentially proposes a new way of manufacturing anything with an emphasis on decentralization, modularity, configuration, parametrization, encodability and scaling. In it's current form it identifies as a horizontal abstraction layer which leverages and auguments the openscad programming language.
 
 # Getting Started
 
@@ -50,6 +50,22 @@
 
 ### Prerequisites
 
+1.) Install homebrew  
+    
+    $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" brew doctor
+    
+2.) Set python as an enviornmental varible. 
+
+    $ export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+    
+2.) Install git
+
+    $ brew install git
+    
+3.) Install python3 and pip3 (https://docs.python-guide.org/starting/install3/osx/)
+
+    $ brew install python3
+    $ brew postinstall python3
     apt install openscad
 
 ### Install mupy
@@ -60,6 +76,13 @@
 
 ### Prerequisites
 
+1.) Install Python3 & pip3
+
+    Navigate to https://www.python.org/downloads/
+    
+3.) Install git
+
+    Navigate to https://gitforwindows.org/
     apt install openscad
 
 ### Install mupy
@@ -173,7 +196,7 @@ One of the original purposes of mu in it's inception was a place to store old wo
 
 
 ## History
-This package was developed over 5 year period where it began as an internal utility (project rho) which supported a small innovation operation. When openscad was discovered by the author he became interested in modular hardware development. Due to the scripting interface, paramaterization was natural. (project psi)He believed that modular hardware developement would lead to the development of larger products which themselves could benifet from the efficiency of scale. Over time the parametrization that emerged from completed source code made it difficult to keep track of specific part implementations so an encoding scheme was developed to track these parts. Eventially a python package was designed to handle the rendersings by simple python3 libraires.
+This package was developed over 5 year period where it began as an experiment which supported a small innovation operation. 
 
 ### Project ρ
 
@@ -192,7 +215,13 @@ Projct mu was a nessecary bleding of both projects with added features. and mupy
 
 ### Automated certification routines
 
-This would be huge, some kind of routine which takes some mupy script in the form of a class with annotations, and automatically integrates a new family code into the mu terminal and the library. This would make all nessecary changes to main directory and the library would be modified. 
+This particular function is the golden function which would render this project truly powerful. Automated certification makes reference to the automation of a family code being injected into mupy. This function is desired for several reasons;
+
+  - Family codes themselves are valuable, for each family code hat exists there exists anywhere from millions to quadrillions of permutations of renderings provided by mupy.
+  - Scripted assemblies, if parameterized can be certified and this would make any scripter 1000 times as productive.
+  - Encoding routines are automatically integrated into terminal.
+  - New scad libraries could be integrated.
+  - Makes namespace type 
 
 ### Contributing
 
