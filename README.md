@@ -38,9 +38,18 @@
 simulates operation, assembly and manufacturing
 encodes syste
 
-can render countless stl files for modeling or 3D print.
 
+- Simulation
 
+- Configuration
+
+- Modularity
+
+- Encodability
+
+- Distribution
+
+- Manufacturing
 
 
 ### Form
@@ -127,16 +136,13 @@ If you prefer touse the provided docker image you will need to install docker at
  	$ docker exec -it mu:latest /bin/bash
 
 
-
-## Examples
-
-### muterm
+### mucli
 
 The CUBX0006 family was created for basic cubic stuctures ( there is only one CUBX0006 type : 'BLK' which stands for 'block' ) ; all 90 degree angles. It is one of the simplest hardware families and this system code 'CUBX0006-BLK-L1000W200H15' will dispense a CUBX0006 rendering of 'Block' type with a length of 1000mm, a width of 200mm and a height of 15mm.
 
     μ:# CUBX0006-BLK-L1000W200H15
     
-
+## Example
 
 ![Alt Text](resources/CUBX0006-BLK-L1000W200H15.png)
 
