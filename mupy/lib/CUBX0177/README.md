@@ -35,3 +35,8 @@ It is reccomended that CUBX0177 parts are 3D printed only if they are smaller wh
 | y_cavity_dimensions_in_mm  | XXXX | number (Use 'P' to indicate decimal within numerical string)  |     block_unit      |      S       |        M       |
 | z_cavity_dimensions_in_mm  | XXXX | number (Use 'P' to indicate decimal within numerical string)  |     block_unit      |      S       |        M       |
 | cavity_type  | XXXX | Letter  |     block_unit      |      S       |        M       |
+
+
+
+
+XXX
