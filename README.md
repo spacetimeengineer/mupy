@@ -136,9 +136,9 @@ If you prefer touse the provided docker image you will need to install docker at
  	$ docker exec -it mu:latest /bin/bash
 
 
-### mucli
+## mucli
 
-The CUBX0006 family was created for basic cubic stuctures ( there is only one CUBX0006 type : 'BLK' which stands for 'block' ) ; all 90 degree angles. It is one of the simplest hardware families and this system code 'CUBX0006-BLK-L1000W200H15' will dispense a CUBX0006 rendering of 'Block' type with a length of 1000mm, a width of 200mm and a height of 15mm.
+The mucli is a general purpose utility and represents the most rudimetry operation of mu technology ; you give it a code and it sends back a system. Here is an example :
 
     μ:# CUBX0006-BLK-L1000W200H15
     
