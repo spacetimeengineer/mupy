@@ -12,7 +12,7 @@ It is reccomended that CUBX0177 parts are 3D printed only if they are smaller wh
 
 ### System Schema
 
-    μ:# <namespace>-CUBX0177-BPAN-B<block_unit_length>SR<shaft_radius>-X<x_block_unit_count>Y<y_block_unit_count>P<teeth_padding>-R<orientation>T<teeth_present>-SX<x_cavity_spacing>Y<y_cavity_spacing>-X<x_cavity_count>Y<y_cavity_count>-XO<x_offset>YO<y_offset>-X<x_cavity_dimensions>Y<y_cavity_dimensions>Z<z_cavity_dimensions>-<cavity_type>
+    μ:# CUBX0177-BPAN-B<block_unit_length>SR<shaft_radius>-X<x_block_unit_count>Y<y_block_unit_count>P<teeth_padding>-R<orientation>T<teeth_present>-SX<x_cavity_spacing>Y<y_cavity_spacing>-X<x_cavity_count>Y<y_cavity_count>-XO<x_offset>YO<y_offset>-X<x_cavity_dimensions>Y<y_cavity_dimensions>Z<z_cavity_dimensions>-<cavity_type>
 
 
 
@@ -20,9 +20,9 @@ It is reccomended that CUBX0177 parts are 3D printed only if they are smaller wh
 | --------------------- | ------------------------------ | ------------------------|-------------------|-------------------|
 | block_unit_length  | Each part exists as an array of 'unit_blocks' which are perfect cubes. This parameter describes the unit_blocks unit-length, unit-width & unit-height (which shall always be the same). | number (Use 'P' to indicate decimal within numerical string)  |    mm    |      15       |
 | shaft_radius  | Radius of bolt shaft. | number (Use 'P' to indicate decimal within numerical string)  |     mm      |      3       |
-| x_block_unit_count  | Block units in x dimension. | number (Use 'P' to indicate decimal within numerical string)  |     block_unit      |      S       |
-| y_block_unit_count  |  Block units in y dimension. | number (Use 'P' to indicate decimal within numerical string)  |     block_unit     |      S       |
-| teeth_padding  | Interteeth padding distance. Recommended is '0.12' or 'P12' or '0P12' but this is kept variable due to variance in 3D printer quality. Increase to loosen. Decrease to tighten.| number (Use 'P' to indicate decimal within numerical string)  |     block_unit      |      S       |
+| x_block_unit_count  | Block units in x dimension. | number (Use 'P' to indicate decimal within numerical string)  |     block_unit      |      10       |
+| y_block_unit_count  |  Block units in y dimension. | number (Use 'P' to indicate decimal within numerical string)  |     block_unit     |      12       |
+| teeth_padding  | Interteeth padding distance. Recommended is '0.12' or 'P12' or '0P12' but this is kept variable due to variance in 3D printer quality. Increase to loosen. Decrease to tighten.| number (Use 'P' to indicate decimal within numerical string)  |     block_unit      |      0P12  ( = 0.12)     |
 | orientation  | For box panel hardware components there is an orientation variable which refers to the way the side teeth are placed with respect to the bulk of the panel. There are 4 states however this reduces to two states if the top and bottom sides are identical ; If no top-teeth are added.| R - regular, I - inverted, C - chimera, X - inverted chimera  |     topological state      |       I       |
 | teeth_present  | Are top teeth present. These are nessecary in order to join CUBX0177 complete boxes to one another. | boolean (T - true, F - false)  |     state      |      T       |
 | x_cavity_spacing  | Inter-cavity spacing in the x dimesnsion. | number (Use 'P' to indicate decimal within numerical string)  |     mm      |      10       |
