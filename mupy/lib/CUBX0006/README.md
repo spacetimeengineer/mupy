@@ -2,9 +2,11 @@
 The CUBX0006 family was created for basic cubic stuctures ( there is only one CUBX0006 type : 'BLK' which stands for 'block' ) ; all 90 degree angles. It is one of the simplest. Here this code will generate a CUBX0006 rendering
 
 ### Manufacturing Reccomendations
-Avoid 3D printing with this family and stick to woodworking. This family is bulky and will make 3D prints very long.
+Avoid 3D printing with this family and stick to woodworkingand computer simulation. This family is bulky and will make 3D prints very long.
 
-## BLK
+## BLK - Block
+
+This is a simple hardware type which gives users the ability to create boxes of any length width and height.
 
 ### Example(s)
 
