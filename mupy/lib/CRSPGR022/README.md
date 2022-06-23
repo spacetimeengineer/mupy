@@ -34,6 +34,7 @@ A gear rack has straight teeth cut into one surface of a square or round section
 
     μ:# CRSPGR022-R-M<modul>-L<rack_length_in_mm>H<rack_height_in_mm>W<rack_width_in_mm>-P<pressure_angle>H<helix_angle>
 
+### Parameterization Table
 
 | Parameter             | Description                    |        Type       |    Units    |
 | --------------------- | ------------------------------ | ------------------|--------------

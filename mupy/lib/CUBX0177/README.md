@@ -14,7 +14,7 @@ For smaller parts it is reccomended that CUBX0177 parts be 3D printed. If larger
 
     μ:# CUBX0177-BPAN-B<block_unit_length>SR<shaft_radius>-X<x_block_unit_count>Y<y_block_unit_count>P<teeth_padding>-R<orientation>T<teeth_present>-SX<x_cavity_spacing>Y<y_cavity_spacing>-X<x_cavity_count>Y<y_cavity_count>-XO<x_offset>YO<y_offset>-X<x_cavity_dimensions>Y<y_cavity_dimensions>Z<z_cavity_dimensions>-<cavity_type>
 
-
+### Parameterization Table
 
 | Parameter             | Description                    |        Input Type       |    Input Units    |    Input Example  |
 | --------------------- | ------------------------------ | ------------------------|-------------------|-------------------|

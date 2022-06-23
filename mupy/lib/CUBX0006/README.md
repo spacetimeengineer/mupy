@@ -18,6 +18,9 @@ This is a simple hardware type which gives users the ability to create boxes of 
 ### System Code Schema
 <family_code>-<type_code>-L<length_in_mm>W<width_in_mm>H<height_in_mm>
 
+
+
+### Parameterization Table
 | Parameter             | Description                    |        Input Type                                            |    Input Units |    Input Example  |
 | --------------------- | ------------------------------ | -------------------------------------------------------------|----------------|-------------------|
 | length_in_mm          | Block length.                  | number (Use 'P' to indicate decimal within numerical string) |    mm          |      25P2         |
