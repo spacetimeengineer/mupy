@@ -1,4 +1,4 @@
-### CUBX0006
+# CUBX0006
 The CUBX0006 family was created for basic cubic stuctures ( there is only one CUBX0006 type : 'BLK' which stands for 'block' ) ; all 90 degree angles. It is one of the simplest. Here this code will generate a CUBX0006 rendering
 
 ### Manufacturing Reccomendations
