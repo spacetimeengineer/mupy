@@ -2,13 +2,13 @@
 The CUBX0177 family was developed for simple prototyping and construction. Joinery and bolting based binding. This particular family is really really fun for prototyping. These parts are like legos in some ways but are unlike legos in other ways. 
 
 ### Manufacturing Reccomendations
-It is reccomended that CUBX0177 parts are 3D printed only if they are smaller which is the expected case. If larger utilize any manufacturing method that suites your needs. These are simple parts.
+For smaller parts it is reccomended that CUBX0177 parts be 3D printed. If larger utilize any manufacturing method that which suites your needs.
 
 ## BPAN
 
 ### Example(s)
 
-    μ:# CUBX0177-BPAN-B25SR2P5-X8Y8PP2-RT-SX25Y25-X8Y8-XO3YO5-X20Y20Z10-S
+    μ:# CUBX0177-BPAN-B12SR3-X10Y10PP12-RT-SX10Y10-X1Y1-XO0YO0-X70Y70Z10-S
 
 ### System Schema
 
