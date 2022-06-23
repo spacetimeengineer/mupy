@@ -19,24 +19,19 @@ It is reccomended that CUBX0177 parts are 3D printed only if they are smaller wh
 | Parameter             | Description                    |        Type       |    Units    |    Example  |  Example Meaning  |
 | --------------------- | ------------------------------ | ------------------|-------------|-------------|-------------------|
 | block_unit_length_in_mm  | Each part exists as a mathematical array of these 'unit_blocks' which are perfect cubes. This parameter describes the unit_blocks unit-length, unit-width & unit-height (which shall always be the same). | number (Use 'P' to indicate decimal within numerical string)  |    mm    |      S       |       S       |
-| shaft_radius_in_mm  | Radius of bolting shaft | number (Use 'P' to indicate decimal within numerical string)  |     mm      |      S       |       S       |
+| shaft_radius_in_mm  | Radius of bolt shaft. | number (Use 'P' to indicate decimal within numerical string)  |     mm      |      S       |       S       |
 | x_block_unit_count  | Block units in x dimension. | number (Use 'P' to indicate decimal within numerical string)  |     block_unit      |      S       |       M       |
-| y_block_unit_count  | XXX | number (Use 'P' to indicate decimal within numerical string)  |     block_units     |      S       |       M       | 
-| teeth_padding_in_mm  | interteeth padding distance. Reccomended is 0.12 but  | int, float  |     block_unit      |      S       |        M       |
-| orientation  | XXX| int, float  |     block_unit      |       M       |
-| teeth_present  | XXXX | number (Use 'P' to indicate decimal within numerical string)  |     block_unit      |      S       |        M       |
-| x_cavity_spacing_in_mm  | XXXX | number (Use 'P' to indicate decimal within numerical string)  |     block_unit      |      S       |        M       |
-| y_cavity_spacing_in_mm  | XXXX | number (Use 'P' to indicate decimal within numerical string)  |     block_unit      |      S       |        M       |
-| x_cavity_count  | XXXX | number (Use 'P' to indicate decimal within numerical string)  |     block_unit      |      S       |        M       |
-| y_cavity_count  | XXXX | number (Use 'P' to indicate decimal within numerical string)  |     block_unit      |      S       |        M       |
-| x_offset_in_mm  | XXXX | number (Use 'P' to indicate decimal within numerical string)  |     block_unit      |      S       |        M       |
-| y_offset_in_mm  | XXXX | number (Use 'P' to indicate decimal within numerical string)  |     block_unit      |      S       |        M       |
-| x_cavity_dimensions_in_mm  | XXXX | number (Use 'P' to indicate decimal within numerical string)  |     block_unit      |      S       |        M       |
-| y_cavity_dimensions_in_mm  | XXXX | number (Use 'P' to indicate decimal within numerical string)  |     block_unit      |      S       |        M       |
-| z_cavity_dimensions_in_mm  | XXXX | number (Use 'P' to indicate decimal within numerical string)  |     block_unit      |      S       |        M       |
-| cavity_type  | XXXX | Letter  |     block_unit      |      S       |        M       |
-
-
-
-
-XXX
+| y_block_unit_count  |  Block units in y dimension. | number (Use 'P' to indicate decimal within numerical string)  |     block_units     |      S       |       M       | 
+| teeth_padding_in_mm  | Interteeth padding distance. Recommended is '0.12' or 'P12' or '0P12' but this is kept variable due to variance in 3D printer quality. Increase to loosen. Decrease to tighten.| int, float  |     block_unit      |      S       |        M       |
+| orientation  | For box panel hardware components there is an orientation variable which refers to the way the side teeth are placed with respect to the bulk of the panel. There are 4 states however this reduces to two states if the top and bottom sides are identical ; If no top-teeth are added.| R,I,C,X  |     topological state      |       I       |    The box panel hardware element is inverted  |
+| teeth_present  | Are top teeth present. These are nessecary in order to join CUBX0177 complete boxes to one another. | boolean (T - true, F - false)  |     state      |      T       |        Teeth are present.       |
+| x_cavity_spacing_in_mm  | XXXX | number (Use 'P' to indicate decimal within numerical string)  |     mm      |      S       |        M       |
+| y_cavity_spacing_in_mm  | XXXX | number (Use 'P' to indicate decimal within numerical string)  |     mm      |      S       |        M       |
+| x_cavity_count  | XXXX | number (Use 'P' to indicate decimal within numerical string)  |     mm      |      S       |        M       |
+| y_cavity_count  | XXXX | number (Use 'P' to indicate decimal within numerical string)  |     mm      |      S       |        M       |
+| x_offset_in_mm  | XXXX | number (Use 'P' to indicate decimal within numerical string)  |     mm      |      S       |        M       |
+| y_offset_in_mm  | XXXX | number (Use 'P' to indicate decimal within numerical string)  |     mm      |      S       |        M       |
+| x_cavity_dimensions_in_mm  | XXXX | number (Use 'P' to indicate decimal within numerical string)  |     mm      |      S       |        M       |
+| y_cavity_dimensions_in_mm  | XXXX | number (Use 'P' to indicate decimal within numerical string)  |     mm      |      S       |        M       |
+| z_cavity_dimensions_in_mm  | XXXX | number (Use 'P' to indicate decimal within numerical string)  |     mm      |      S       |        M       |
+| cavity_type  | For the cavity array embedded on the panel, specifies if the cavities are circular (C) or square (S). | character  |     state      |      S       |        Square type cavities.       |
