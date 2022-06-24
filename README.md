@@ -330,16 +330,21 @@ Currently the best form of contribution would be to play offer suggestions for i
 # FAQ
 ## Openscad
 
-openscad is a programming language dedicated to defining 3D geometric bodies. It is highly intuitive and extremely powerful and mupy leverages its technology.
+### How many system-codes are available?
+Incalculable, since the family codes define thier own rules, it is difficult to measure the permutation count of parts. Currently in mupys infancy there are over a quadrillion parts. 
 
-openscad can do things other tools cant but it is too mathy to get popular. 
-mupy makes it easier to usr but leverages its power.
+### What is the mupy interface?
 
+    Command Line Interface - mucli (terminal interface)
 
-## Does mupy replace CAD
-In general No, mupy is not a repacement for CAD however it may reduce the hours spent on CAD in many use cases because mupy essentially auguments CAD. 
+    Applications Programming Interface - mu.core (scripting interface)
 
-In time a mu termianl of sorts may be developed by the CAD developers. mupy technology is simply a way of doing things and it is very very fast.
+### Is it free?
+Yes! but only the core technology is free, the various family code libraries which should each contain thier own license which states the conditions for use. In most cases it is free to use but read the license.
+
+### Does mupy replace CAD?
+Absolutely not, mupy is it's own thing. In some cases it may reduce the hours spent on CAD for people and in other cases it may increase the time people spend. In the future I see CAD applications just integrating a mucli-like application into it to get the best of both worlds.
+
 
 
 ### Contacts:
