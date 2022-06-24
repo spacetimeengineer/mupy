@@ -36,24 +36,36 @@
 
 ### Why build mupy
 
-- To give community access to quadrillions of 3D printable parts and counting. These parts are for recreation, utility and economic development. The large number of parts are available through the various permutations of parameterized functions wich build 3D shapes (with openscad) and are referenced or identified by a system-codes. 
+- To give the community access to quadrillions of 3D printable parts and counting. These parts are for recreation, utility and economic development. The large number of parts are available through the various permutations of parameterized scad functions that build 3D shapes and are referenced or identified by system-codes. 
 
     - System Code Example 
     
-        CUBX0177-BPAN-B12SR3-X10Y10PP12-RT-SX10Y10-X1Y1-XO0YO0-X70Y70Z10-S
+    CUBX0177-BPAN-B12SR3-X10Y10PP12-RT-SX10Y10-X1Y1-XO0YO0-X70Y70Z10-S
 
 - To render simulations and manufacturing resources from system-codes directly ; Data compression through abstraction & quick development.
 
 - To assign system-encodings, system-schemas and system-parameterizations to organically designed systems and hardware for later customization and recall.
+
+- To give inventors, makers, engineers and artists a more powerful platform for distribution and where thier liscens is respected.
 
 
 ### Function
 
 - Simulation
 
+    - Simulate operation.
+
+    - Simulate assembly.
+
+    - Simulate manufacturing. (Advanced topic)
+
 - Configuration
 
+    - Giving users higher levels of configuration through abstraction tecquniques.
+
 - Modularity
+
+    - 
 
 - Encodability
 
@@ -103,17 +115,15 @@
 
 # Getting Started
 
-There are a few types of users who should
+There are a few catagories of users who could findgreat use in mupy :
 
-- 3D printing enthusists or makers or repair proffessionals : Reccomended usage : install mupy and run mucli. Enter a system code and a workspace directory and print part for whatever purpose.
+- 3D printing enthusists - Reccomended usage : mucli
 
-- Designers
+- Inventors - Reccomended usage : mu.core
 
-- Library developers : People who develop Family Code Libraires and drivers.
+- Library developers : - Reccomended usage : see contributing guidelines.
 
-- System developers :
-
-- Core developers :
+- Core developers : : - Reccomended usage : see contributing guidelines.
 
 
 ## Linux Installation
