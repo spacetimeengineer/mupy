@@ -59,6 +59,8 @@
 
 - Certification
 
+- R & D
+
 ### Form
 
 - openscad horizontal abstraction layer
