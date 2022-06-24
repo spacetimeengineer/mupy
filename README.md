@@ -34,6 +34,10 @@
 
 μpy or mupy is a shorthand for python manufacturing utility and reffers to a new system development technology implemented in the form of a python pip installable package. The μpy package essentially proposes to the open source community a new way to design, distrubute and manufacture technology with an emphasis on community, modularity, decentralization, scaling, customization, parametrization, encodability and certification. 
 
+### A note from the developer
+
+I need to be real here, this project mupy was a project that came from a place of pain, a place where I felt so incredibly insignificant and unconsequential. I did not develop it out of hope or beliefe but rather something else entirely. I used to be the kind of physicist/ engineer who sught the athetic is a project which represents years ofwork, ideas and concepts packed into a little project. Like many engineers before me I had big big dreams about changing the world. In the end we usually find happiness in helping the ver
+
 ### Why build mupy
 
 - To give the community access to quadrillions of 3D printable parts and counting. These parts are for recreation, utility and economic development. The large number of parts are available through the various permutations of parameterized scad functions that build 3D shapes and are referenced or identified by system-codes. 
