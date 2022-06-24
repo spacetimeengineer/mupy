@@ -32,7 +32,16 @@
 
 # About
 
-μ-py or mupy is a shorthand for python manufacturing utility and reffers to a new system development tech implemented in the form of a python pip installable package. mupy essentially proposes a new way to design and distrubute technology with an emphasis on decentralization, modularity, configuration, parametrization, encodability and scaling. 
+μpy or mupy is a shorthand for python manufacturing utility and reffers to a new system development technology implemented in the form of a python pip installable package. The μpy package essentially proposes to the open source community a new way to design, distrubute and manufacture technology with an emphasis on community, modularity, decentralization, scaling, customization, parametrization, encodability and certification. 
+
+### Why build mupy
+
+- To give community access to quadrillions of 3D printable parts and counting. These parts are for recreation, utility and economic development. The large number of parts are available through the various permutations of parameterized functions wich build 3D shapes (with openscad) and are referenced or identified by a system-codes. An example of a system code : CUBX0177-BPAN-B12SR3-X10Y10PP12-RT-SX10Y10-X1Y1-XO0YO0-X70Y70Z10-S.
+
+- To render simulations and manufacturing resources from system-codes directly ; Data compression through abstraction & quick development.
+
+- To assign system-encodings, system-schemas and system-parameterizations to organically designed systems and hardware for later customization and recall.
+
 
 ### Function
 
@@ -66,6 +75,8 @@
 
 - system generator
 
+- system oriented data compression / abstraction engine
+
 ### Goals
 
 - increase development speed
@@ -85,6 +96,19 @@
 - decentralized research and development
 
 # Getting Started
+
+There are a few types of users who should
+
+- 3D printing enthusists or makers or repair proffessionals : Reccomended usage : install mupy and run mucli. Enter a system code and a workspace directory and print part for whatever purpose.
+
+- Designers
+
+- Library developers : People who develop Family Code Libraires and drivers.
+
+- System developers :
+
+- Core developers :
+
 
 ## Linux Installation
 
