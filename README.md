@@ -152,7 +152,7 @@ There are two main interfaces for mupy, a command line interface (CLI) and an ap
 
 - decentralized research and development
 
-# Getting Started
+# Installation
 
 There are a few types of users who may find great enjoyment using mupy :
 
@@ -255,29 +255,32 @@ If you prefer touse the provided docker image you will need to install docker at
 
 ### SSH into container
 
- 	$ docker exec -it mu:latest /bin/bash
+    $ docker exec -it mu:latest /bin/bash
 
 
-### μ-terminal
+    
+# Getting Started
+
+## mucli
+
 μ comes with it bundled a command-line-interface application known as the μ-terminal or 'muterm' which behaves much like a linux terminal except that it only accepts special strings known as 'system codes'. muterm was developed to express to users μ's most rudimetry operation ; dispensing manufacturing resources for a given system code. To enter muterm, in the linux terminal
 
-    :~$ ./muterm 
-
-Obviously only certain system-codes will be valid for for input. A simple example can be expressed by the following operation.
+    :~$ ./mucli 
 
 
-
-The mucli is a general purpose utility and represents the most rudimetry operation of mu technology ; you give it a code and it sends back a system. Here is an example :
+### Enter system-code
+The mucli is a general purpose utility and represents the most rudimetry operation of the mupy technology ; if you enter a code and it responds with system resources, schematics and renderings. An example..
 
     μ:# CUBX0006-BLK-L1000W200H15
-    
-## Example
+
+Next, navigate to specified workspace directory.
 
 ![Alt Text](resources/CUBX0006-BLK-L1000W200H15.png)
 
 
-### utility_box.py
+## utility_box.py
 
+This example gives users the ability to build a custom utility box. This example uses the CUBX0177 family and mupy.core
 
 ```python
 from src.workspace import WorkSpace
@@ -285,25 +288,26 @@ from src.hardware import Hardware
 from src.coordinates import Coordinates
 from src.assembly import Assembly
 
+import mupy.core as mu
 
 # A workspace represents a virtual 3D spce which serves as a virtual workbench except it is not a surface but a space.
 """ Workspace """
 
-workspace = WorkSpace("/home/mryan/Desktop/psi/modular_gearboxes/")
+workspace = mu.WorkSpace("/home/mryan/Desktop/psi/modular_gearboxes/")
 
 """ Hardware """
 # Declare Hardware codes and unique part names.
-panel_a = Hardware("panel_a", "CUBX0177-BPAN-B25SR2P5-X8Y8P18-RT-SX25Y25-X8Y8-X20Y20Z5")
-panel_b = Hardware("panel_b", "CUBX0177-BPAN-B25SR2P5-X8Y8P18-RT-SX25Y25-X8Y8-X20Y20Z5")
-panel_c = Hardware("panel_c", "CUBX0177-BPAN-B25SR2P5-X8Y8P18-RT-SX25Y25-X8Y8-X20Y20Z5")
-panel_d = Hardware("panel_d", "CUBX0177-BPAN-B25SR2P5-X8Y8P18-RT-SX25Y25-X8Y8-X20Y20Z5")
-panel_e = Hardware("panel_e", "CUBX0177-BPAN-B25SR2P5-X8Y8P18-RT-SX25Y25-X8Y8-X20Y20Z5")
-panel_f = Hardware("panel_f", "CUBX0177-BPAN-B25SR2P5-X8Y8P18-RT-SX25Y25-X8Y8-X20Y20Z5")
+panel_a = mu.Hardware("panel_a", "CUBX0177-BPAN-B25SR2P5-X8Y8P18-RT-SX25Y25-X8Y8-X20Y20Z5")
+panel_b = mu.Hardware("panel_b", "CUBX0177-BPAN-B25SR2P5-X8Y8P18-RT-SX25Y25-X8Y8-X20Y20Z5")
+panel_c = mu.Hardware("panel_c", "CUBX0177-BPAN-B25SR2P5-X8Y8P18-RT-SX25Y25-X8Y8-X20Y20Z5")
+panel_d = mu.Hardware("panel_d", "CUBX0177-BPAN-B25SR2P5-X8Y8P18-RT-SX25Y25-X8Y8-X20Y20Z5")
+panel_e = mu.Hardware("panel_e", "CUBX0177-BPAN-B25SR2P5-X8Y8P18-RT-SX25Y25-X8Y8-X20Y20Z5")
+panel_f = mu.Hardware("panel_f", "CUBX0177-BPAN-B25SR2P5-X8Y8P18-RT-SX25Y25-X8Y8-X20Y20Z5")
 
 
 
 alpha = 200 
-chamber_assembly = Assembly("chamber_assembly")
+chamber_assembly = mu.Assembly("chamber_assembly")
 chamber_assembly.include(panel_a, Coordinates(0,1,[0, 0 , 8 * 25 / 2 + alpha],[0, 0 , 8 * 25 / 2 ],[0,0,1000],[0,0,0])) # Coordinates complete!
 chamber_assembly.include(panel_b, Coordinates(0,1,[0, 8 * 25 / 2 + alpha, 0],[0, 8 * 25 / 2, 0],[0,0,1000],[-90,0,0])) # Coordinates complete!
 chamber_assembly.include(panel_c, Coordinates(0,1,[ - 8 * 25 / 2 - alpha, 0, 0 ],[ - 8 * 25 / 2, 0, 0 ],[0,0,1000],[0,-90,0])) # Coordinates complete!
