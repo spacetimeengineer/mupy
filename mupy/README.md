@@ -14,7 +14,7 @@ Contains code that builds the hardware itself. This library will be continuously
 
 ### index
 
-| Class         | Description                    |        Status       |
+| Class         | Description                    |        Example       |
 | --------------------- | ------------------------------ | ------------------------|
 | hardware.py  | X | X  |
 | assembly.py  | X | X  |

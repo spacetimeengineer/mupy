@@ -122,7 +122,7 @@
 
 # Getting Started
 
-There are a few catagories of users who could findgreat use in mupy :
+There are a few types of users who may find great enjoyment using mupy :
 
 - 3D printing enthusists - Reccomended usage : mucli
 
@@ -137,11 +137,25 @@ There are a few catagories of users who could findgreat use in mupy :
 
 ### Prerequisites
 
+1.) Install openscad ( openscad programming language )
+
     apt install openscad
+
+2.) Install python3-pip ( python package manager )
+
+    apt install python3-pip
+
+3.) Install git (if you plan to contribute or install by cloning) - Follow instrucations at https://www.atlassian.com/git/tutorials/install-git
+
+    $ sudo apt-get update 
+    
+    $ sudo apt-get install git
 
 ### Install mupy
 
-    pip3 install mu
+1.) Install mupy from the python3 package-manager.
+
+    pip3 install mupy
 
 ## MacOS Installation
 
@@ -155,19 +169,22 @@ There are a few catagories of users who could findgreat use in mupy :
 
     $ export PATH="/usr/local/opt/python/libexec/bin:$PATH"
     
-2.) Install git
+3.) Install git (if you plan to contribute or install by cloning)
 
     $ brew install git
     
-3.) Install python3 and pip3 (https://docs.python-guide.org/starting/install3/osx/)
+4.) Install python3 and pip3 (https://docs.python-guide.org/starting/install3/osx/)
 
     $ brew install python3
     $ brew postinstall python3
-    apt install openscad
+
+5.) Install openscad - Follow instructions at https://openscad.org/downloads.html or https://ports.macports.org/port/openscad/
 
 ### Install mupy
 
-    pip3 install mu
+1.) Install mupy from the python3 package-manager.
+
+    pip3 install mupy
 
 ## Windows Installation
 
@@ -177,14 +194,16 @@ There are a few catagories of users who could findgreat use in mupy :
 
     Navigate to https://www.python.org/downloads/
     
-3.) Install git
+3.) Install git (if you plan to contribute or install by cloning)
 
     Navigate to https://gitforwindows.org/
     apt install openscad
 
 ### Install mupy
 
-    pip3 install mu
+1.) Install mupy from the python3 package-manager.
+
+    pip3 install mupy
 
 ### μ-terminal
 μ comes with it bundled a command-line-interface application known as the μ-terminal or 'muterm' which behaves much like a linux terminal except that it only accepts special strings known as 'system codes'. muterm was developed to express to users μ's most rudimetry operation ; dispensing manufacturing resources for a given system code. To enter muterm, in the linux terminal
