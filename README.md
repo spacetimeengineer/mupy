@@ -318,40 +318,47 @@ workspace.run(chamber_assembly, Coordinates(0,1,[0,0,0],[0,0,0],[0,0,0],[0,0,0])
 
 ![Alt Text](resources/utility_box.gif)
 
-### System Codes
+# Concepts
+
+## System Codes
 A system-code serves to identify a general system (literally anything physical,especially technological or worth manufacturing) and generate resources and metadata which help users manufacture said system at reduced cost. These resources include CAD files and annotated openscad source code directories containing assembly and operational animation routines which help users record and transmit and intepret complex manufacturing and assembly information.
 
-### Family Codes
+## Family Codes
 A system-code serves to identify a general system (literally anything physical,especially technological or worth manufacturing) and generate resources and metadata which help users manufacture said system at reduced cost. These resources include CAD files and annotated openscad source code directories containing assembly and operational animation routines which help users record and transmit and intepret complex manufacturing and assembly information.
 
-### Type Codes
+## Type Codes
 A system-code serves to identify a general system (literally anything physical,especially technological or worth manufacturing) and generate resources and metadata which help users manufacture said system at reduced cost. These resources include CAD files and annotated openscad source code directories containing assembly and operational animation routines which help users record and transmit and intepret complex manufacturing and assembly information.
 
-### System Schemas
+## System Schemas
 System schemas also sometimes refered to less generally as hardware schemas are a pattern or archetype constant associated the form that defines the hardware itself. THese are best momemorized becasue one can more actuartly imagine parts if theyjust use the abstraction.
 
 
-### Certification
-Certification can be thought of as a second order abstraction or iteration of the technology onto itself ; if one writes a script with the μ package and invokes a collection of system codes into an assembly then they should be able to identify some naturally occuring parameterization scheme once the system is optimized and second to assign a system schema to this assembly giving it configuration freedom within a single string and invokable from the μ-terminal. After this certification is complete, the mu termal can generate some corresponding assembly with just a single system code. Currently this process is manual and the best practices regarding this operation have not been identified as of this time.
-
-
-One of the original purposes of mu in it's inception was a place to store old works. If a prototype had been developed then the parts or prototype itself would be cleaned and parameterized and then certified so that the system is now larger and more capable while at the same time the parts and any derividives are retained.
-
-
-## History
+# History
 This package was developed over 5 year period where it began as an experiment which supported a small innovation operation. 
 
-### Project ρ
+## Project ρ
 
 Project ρ (Recursive Hardware Operations) was a project which explored hardware modularity to it's manufacturing limit. The basic idea was to ask if there was some optimal set of shapes / limited parts which could make it easier to print and assemble anything. The idea was borrowed from legos except that the parts would need to be designed with specific requirements in mind that would improve the quality of any assembly especially when it comes to binding and unbinding. This was mostly implemented with 3D printers and the main goal of this project was to create hardware families which could satisfy a great deal of requirements pertaining to the possible decentralized development of large scale systems which granted effeciency-of-scale level cost-reduction. 
 
-### Project ψ
+###
+
+###
+
+## Project ψ
 
 Project ψ (Parametric System Instruction) was a project which explored hardware configuration, definition and assembly to it's manufacturing limit. This was the next stage in the evolution of this project. Project rho proved that there was no way in principle to establish a modular family which satisfied all requirements. From this the idea of the psi terminal was developed which said that some terminal should exist which takes in 'system-codes' which serve to identify a system in terms of it's properties.
 
-### Project μ
+###
+
+###
+
+## Project μ
 
 Projct mu was a nessecary bleding of both projects with added features. and mupy was a python implementation.
+
+###
+
+###
 
 ## Roadmap
 
@@ -375,13 +382,11 @@ This particular function is the golden function which would render this project 
 
 Currently the best form of contribution would be to play offer suggestions for iprovement or they could develp scripts to be certified or open scad code to be certified (manually).
 
-## Liscensing considerations
+## Liscense
 
-### mupy license
+### mupy.core liscense
 
-### mupy.lib sub-package licenses always override core license
-
-###
+### mupy.lib licenses
 
 ## FAQ
 
