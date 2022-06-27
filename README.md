@@ -208,14 +208,6 @@ There are a few types of users who may find great enjoyment using mupy :
 
     pip3 install mupy
 
-### μ-terminal
-μ comes with it bundled a command-line-interface application known as the μ-terminal or 'muterm' which behaves much like a linux terminal except that it only accepts special strings known as 'system codes'. muterm was developed to express to users μ's most rudimetry operation ; dispensing manufacturing resources for a given system code. To enter muterm, in the linux terminal
-
-    :~$ ./muterm 
-
-Obviously only certain system-codes will be valid for for input. A simple example can be expressed by the following operation.
-
-
 ## Docker Container ( optional )
 
 If you prefer touse the provided docker image you will need to install docker at https://docs.docker.com/get-docker/ .
@@ -234,7 +226,14 @@ If you prefer touse the provided docker image you will need to install docker at
  	$ docker exec -it mu:latest /bin/bash
 
 
-# mucli
+### μ-terminal
+μ comes with it bundled a command-line-interface application known as the μ-terminal or 'muterm' which behaves much like a linux terminal except that it only accepts special strings known as 'system codes'. muterm was developed to express to users μ's most rudimetry operation ; dispensing manufacturing resources for a given system code. To enter muterm, in the linux terminal
+
+    :~$ ./muterm 
+
+Obviously only certain system-codes will be valid for for input. A simple example can be expressed by the following operation.
+
+
 
 The mucli is a general purpose utility and represents the most rudimetry operation of mu technology ; you give it a code and it sends back a system. Here is an example :
 
