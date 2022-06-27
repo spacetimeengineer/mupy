@@ -45,9 +45,7 @@
 
 - To give the community access to quadrillions of 3D printable parts and counting. These parts are for recreation, utility and economic development. The large number of parts are available through the various permutations of parameterized scad functions that build 3D shapes and are referenced or identified by system-codes. 
 
-    - System Code Example 
-    
-    CUBX0177-BPAN-B12SR3-X10Y10PP12-RT-SX10Y10-X1Y1-XO0YO0-X70Y70Z10-S
+    - System Code Example : CUBX0177-BPAN-B12SR3-X10Y10PP12-RT-SX10Y10-X1Y1-XO0YO0-X70Y70Z10-S
 
 - To render simulations and manufacturing resources from system-codes directly ; Data compression through abstraction & quick development.
 
@@ -55,6 +53,17 @@
 
 - To give inventors, makers, engineers and artists a more powerful platform for distribution and where thier liscens is respected.
 
+
+### How does it work?
+
+There are two main interfaces for mupy, a command line interface (CLI) and an applications programming interface (API) They are described below.
+
+- mucli - This is the manufacturing utility command line tool and is used to express the most rudimetry function of mupy ; to quickly render manufacturing resources from known system-code.
+
+- mu.core - This library represents the general case for mupy use-case.
+
+    - python3 scripting interface.
+    - hardware class objects combine system-codes and names.
 
 ### Function
 
