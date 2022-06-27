@@ -275,9 +275,6 @@ The mucli is a general purpose utility and represents the most rudimetry operati
 
 ![Alt Text](resources/CUBX0006-BLK-L1000W200H15.png)
 
-# muapi - mupy.core
-
-A more complex interface would be the python shell or scripting enviornment.
 
 ### utility_box.py
 
@@ -333,9 +330,6 @@ A system-code serves to identify a general system (literally anything physical,e
 ### System Schemas
 System schemas also sometimes refered to less generally as hardware schemas are a pattern or archetype constant associated the form that defines the hardware itself. THese are best momemorized becasue one can more actuartly imagine parts if theyjust use the abstraction.
 
-### System Sets
-Any system code with unspecified parameters ; rendering a set of possible system configuration. the mu package cannot handle these objects yet but soon it will. 
-
 
 ### Certification
 Certification can be thought of as a second order abstraction or iteration of the technology onto itself ; if one writes a script with the μ package and invokes a collection of system codes into an assembly then they should be able to identify some naturally occuring parameterization scheme once the system is optimized and second to assign a system schema to this assembly giving it configuration freedom within a single string and invokable from the μ-terminal. After this certification is complete, the mu termal can generate some corresponding assembly with just a single system code. Currently this process is manual and the best practices regarding this operation have not been identified as of this time.
@@ -364,6 +358,12 @@ Projct mu was a nessecary bleding of both projects with added features. and mupy
 
 ## Roadmap
 
+### Implement a script store
+
+### Redesign core model from grown up
+
+### Utilizing better techology
+
 ### Automated certification routines
 
 This particular function is the golden function which would render this project truly powerful. Automated certification makes reference to the automation of a family code being injected into mupy. This function is desired for several reasons;
@@ -384,16 +384,14 @@ Currently the best form of contribution would be to play offer suggestions for i
 
 
 # FAQ
+
 ## Openscad
+
+### Why should I download mucli
+If you have a 3D printer it is an absolute must! You can print really great parts.
 
 ### How many system-codes are available?
 Incalculable, since the family codes define thier own rules, it is difficult to measure the permutation count of parts. Currently in mupys infancy there are over a quadrillion parts. 
-
-### What is the mupy interface?
-
-    Command Line Interface - mucli (terminal interface)
-
-    Applications Programming Interface - mu.core (scripting interface)
 
 ### Is it free?
 Yes! but only the core technology is free, the various family code libraries which should each contain thier own license which states the conditions for use. In most cases it is free to use but read the license.
