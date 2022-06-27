@@ -173,9 +173,12 @@ There are a few types of users who may find great enjoyment using mupy :
 
     $ brew install git
     
-4.) Install python3 and pip3 (https://docs.python-guide.org/starting/install3/osx/)
+4a.) Install python3 and pip3 (https://docs.python-guide.org/starting/install3/osx/)
 
     $ brew install python3
+
+4b.) Post-install routine.   
+
     $ brew postinstall python3
 
 5.) Install openscad - Follow instructions at https://openscad.org/downloads.html or https://ports.macports.org/port/openscad/
