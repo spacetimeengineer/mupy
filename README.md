@@ -338,8 +338,6 @@ Certification can be thought of as a second order abstraction or iteration of th
 One of the original purposes of mu in it's inception was a place to store old works. If a prototype had been developed then the parts or prototype itself would be cleaned and parameterized and then certified so that the system is now larger and more capable while at the same time the parts and any derividives are retained.
 
 
-
-
 ## History
 This package was developed over 5 year period where it began as an experiment which supported a small innovation operation. 
 
@@ -354,7 +352,6 @@ Project ψ (Parametric System Instruction) was a project which explored hardware
 ### Project μ
 
 Projct mu was a nessecary bleding of both projects with added features. and mupy was a python implementation.
-
 
 ## Roadmap
 
@@ -374,18 +371,19 @@ This particular function is the golden function which would render this project 
   - New scad libraries could be integrated.
   - Makes namespace type 
 
-### Contributing
+## Contributing
 
 Currently the best form of contribution would be to play offer suggestions for iprovement or they could develp scripts to be certified or open scad code to be certified (manually).
 
+## Liscensing considerations
 
-### Liscense
+### mupy license
 
+### mupy.lib sub-package licenses always override core license
 
+###
 
-# FAQ
-
-## Openscad
+## FAQ
 
 ### Why should I download mucli
 If you have a 3D printer it is an absolute must! You can print really great parts.
@@ -399,16 +397,11 @@ Yes! but only the core technology is free, the various family code libraries whi
 ### Does mupy replace CAD?
 Absolutely not, mupy is it's own thing. In some cases it may reduce the hours spent on CAD for people and in other cases it may increase the time people spend. In the future I see CAD applications just integrating a mucli-like application into it to get the best of both worlds.
 
-
-
-### Contacts:
+## Contacts:
 
 | Project Team          | Email                          |
 | --------------------- | ------------------------------ |
 | Michael C Ryan        | spacetime.engineer@gmail.com   |
-
-
-
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
