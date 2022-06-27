@@ -39,7 +39,59 @@
 
 ### Disclaimer
 
+### Structure
 
+    ├── Dockerfile
+    ├── examples
+    │   ├── app.py
+    │   └── utility_box.py
+    ├── LICENSE
+    ├── MANIFEST.in
+    ├── mupy
+    │   ├── assembly.py
+    │   ├── coordinates.py
+    │   ├── core.py
+    │   ├── decode.py
+    │   ├── hardware.py
+    │   ├── __init__.py
+    │   ├── lib
+    │   │   ├── CRSPGR022
+    │   │   │   ├── crspgr022.py
+    │   │   │   ├── __init__.py
+    │   │   │   ├── README.md
+    │   │   │   └── scad
+    │   │   │       └── CRSPGR022.scad
+    │   │   ├── CUBX0006
+    │   │   │   ├── cubx0006.py
+    │   │   │   ├── __init__.py
+    │   │   │   ├── LICENSE
+    │   │   │   ├── README.md
+    │   │   │   └── scad
+    │   │   │       └── CUBX0006.scad
+    │   │   ├── CUBX0177
+    │   │   │   ├── cubx0177.py
+    │   │   │   ├── __init__.py
+    │   │   │   ├── LICENSE
+    │   │   │   ├── README.md
+    │   │   │   └── scad
+    │   │   │       └── CUBX0177.scad
+    │   │   ├── __init__.py
+    │   │   └── README.md
+    │   ├── mucli
+    │   │   ├── __init__.py
+    │   │   ├── input_branch.py
+    │   │   ├── mucli.py
+    │   │   └── selection_branch.py
+    │   ├── README.md
+    │   └── workspace.py
+    ├── mupy.toml
+    ├── Pipfile
+    ├── Pipfile.lock
+    ├── README.md
+    ├── resources
+    │   ├── CUBX0006-BLK-L1000W200H15.png
+    │   └── utility_box.gif
+    └── setup.py
 
 ### Why build mupy
 
