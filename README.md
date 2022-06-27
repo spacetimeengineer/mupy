@@ -81,17 +81,40 @@ There are two main interfaces for mupy, a command line interface (CLI) and an ap
 
 - Modularity
 
-    - 
+    - Countless parts available for render and in many cases parts interlock.
+    
+    - modularity makes assebly and manufacturing cheaper and quicker to scale.
+    
+    - Will help build efficiency of scale designs.
+    
+
 
 - Encodability
 
+    - Hardware identified and described with system-codes.
+
 - Distribution
+
+    - New system codes and family codes can be provided by contributers.
 
 - Manufacturing
 
+    - 3D print systems in many cases, material independent or material specified.
+    
+- Context
+
+    - Manufacturing context
+    - Assembly context
+    - Material context
+    - Indentity context
+    
 - Certification
 
+    - Like a package manager but configured for mupy requirements so that family codes provide permutations from scad parameterization.
+
 - R & D
+
+    - General purpose utility for many research and development needs.
 
 ### Form
 
