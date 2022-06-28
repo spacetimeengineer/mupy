@@ -349,7 +349,7 @@ workspace.run(chamber_assembly, Coordinates(0,1,[0,0,0],[0,0,0],[0,0,0],[0,0,0])
 
 ### Modifying generated code
 
-# 3D Printing Parts (For people who wish to 3D print stuff)
+# 3D Printing
 
 ## Running cura
 
