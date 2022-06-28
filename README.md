@@ -117,21 +117,33 @@ There are two main interfaces for mupy, a command line interface (CLI) and an ap
 
 ### Form
 
-- openscad horizontal abstraction layer
+- Horizontal abstraction layer 
 
-- python pip package
+    - Makes calls to pre-written openscad functions with parameterization
 
-- command line interface - mucli
+- Python Pip Package
 
-- application programming interface
+    $ pip3 install mupy
 
-- system schematic library
+- Command Line Interface
+
+    $ ./mucli
+
+- Application Programming Interface
+
+    import mupy.core as mu
+
+- System schematic library
+
+    - Pre-installed 
 
 - part generator
 
-- system generator
+- system generator (advanced)
 
 - system oriented data compression / abstraction engine
+
+    - Small package, quadrillions of parts sofar.
 
 ### Goals
 
@@ -140,6 +152,10 @@ There are two main interfaces for mupy, a command line interface (CLI) and an ap
 - reduce development cost
 
 - decentralized manufacturing
+
+    - manufacture forks and guitar picks
+
+    - manufacture toasters and quantum computers
 
 - massive scale system development
 
@@ -150,6 +166,8 @@ There are two main interfaces for mupy, a command line interface (CLI) and an ap
 - expose mechanical engineers to programming
 
 - decentralized research and development
+
+
 
 # Installation
 
@@ -320,6 +338,20 @@ workspace.run(chamber_assembly, Coordinates(0,1,[0,0,0],[0,0,0],[0,0,0],[0,0,0])
 
 
 ![Alt Text](resources/utility_box.gif)
+
+
+
+# Output
+
+## Running openscad
+
+### Animations
+
+### Modifying generated code
+
+# 3D Printing Parts (For people who wish to 3D print stuff)
+
+## Running cura
 
 # Concepts
 
