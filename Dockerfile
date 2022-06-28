@@ -29,11 +29,12 @@ LABEL description="Manufacturing Utility"
 # Update and upgrade linux systems within the container.
 RUN apt install -y apt-transport-https
 RUN apt-get update 
-RUN apt-get install -y apt-utils --no-install-recommends locales\
-	software-properties-common \
-    ca-certificates \
-	git \
-	make
+RUN apt-get install -y apt-utils
+RUN apt-get install -y --no-install-recommends locales
+RUN apt-get install -y --no-install-recommends --reinstall software-properties-common 
+RUN apt-get install -y --no-install-recommends ca-certificates 
+RUN apt-get install -y --no-install-recommends git 
+RUN apt-get install -y --no-install-recommends make
 
 # Adds openscad repository to the apt-get package manager.
 
