@@ -32,12 +32,22 @@
 
 # About
 
-μpy or mupy is a shorthand for python manufacturing utility and reffers to a new system development technology implemented in the form of a python pip installable package. The μpy package essentially proposes to the open source community a new way to design, distrubute and manufacture technology with an emphasis on community, modularity, decentralization, scaling, customization, parametrization, encodability and certification. 
+μpy or mupy is a shorthand for python manufacturing utility and reffers to a new system development technology implemented in the form of a python pip installable package. The μpy package essentially proposes to the open source community a new model for designing, distributing and manufacturing technology with an emphasis on community, modularity, decentralization, scaling, customization, parametrization, encodability and certification. 
 
 ### Note from the developer
+This system got a little out of hand and mabye a little over engineered in the process but I think there might be something here.
 
+ I adit I tried really hard to give meanign or form to the essentially hobeld together feature package which was only designed to do what served my purposes for my projects.
+ 
+ 
+  Thats another thing I dont really want to work too much on this system since it works well enough
 
-### Disclaimer
+open scad is just too powerful but not for everyone. This is sortof unfortuneate but the good news is that 
+
+This project has limitations and is hacky sortof.
+
+    - Still work in openscad IDE.
+    - openscad is single threaded
 
 
 ### Why build mupy
@@ -78,6 +88,8 @@ There are two main interfaces for mupy, a command line interface (CLI) and an ap
 
     - Giving users higher levels of configuration through abstraction tecquniques.
 
+- Customization
+
 - Modularity
 
     - Countless parts available for render and in many cases parts interlock.
@@ -85,8 +97,6 @@ There are two main interfaces for mupy, a command line interface (CLI) and an ap
     - modularity makes assebly and manufacturing cheaper and quicker to scale.
     
     - Will help build efficiency of scale designs.
-    
-
 
 - Encodability
 
@@ -166,7 +176,6 @@ There are two main interfaces for mupy, a command line interface (CLI) and an ap
 - expose mechanical engineers to programming
 
 - decentralized research and development
-
 
 
 # Installation
@@ -341,7 +350,81 @@ workspace.run(chamber_assembly, Coordinates(0,1,[0,0,0],[0,0,0],[0,0,0],[0,0,0])
 
 
 
-# Output
+
+```python
+#!/usr/bin/env python3
+
+"""
+Note to user : This script as seen on github is used to illustrate the power of mupy parameterization and how it can be manipulated with python calls.
+"""
+
+""" Required Libray Imports. """
+from pathlib import Path # Imports library nessecary for fetching terminal path information.
+import mupy.core as mu # Imports mupy library.
+
+""" Set Up Workspace. """
+workspace_name = "utility_box" # Workspace name ; this will be the name of the workspace directory.
+workspace = mu.WorkSpace(str(Path.home())+"/"+workspace_name) # Creates workspace.
+
+""" Set Up Workspace. """
+unit_block_length = 15 # The CUBX0177 family contains a unit_block_length parameter.
+shaft_radius = 3 # The CUBX0177 family contains a shaft_radius parameter which makes reference to a shaft radius within each unit block in the x,y and zed dimensions.
+
+""" Defines the dimensions of the total utility box.in units of unit_bock_length. """
+box_x_units = 6 # Defines the count of 'block units' in the x dimension that make up utility box.
+box_y_units = 20 # Defines the count of 'block units' in the y dimension that make up utility box.
+box_z_units = 8 # Defines the count of 'block units' in the z dimension that make up utility box.
+
+""" Defines the dimensions of the individual panels making up the utility box which are themselves derived from the box dimensions defined in units of unit_bock_length. """
+panel_a_x_block_units = box_x_units # Equation must be satisfied in order to express utility-box function. 
+panel_a_y_block_units = box_y_units # Equation must be satisfied in order to express utility-box function. 
+panel_b_x_block_units = box_x_units # Equation must be satisfied in order to express utility-box function. 
+panel_b_y_block_units = box_z_units # Equation must be satisfied in order to express utility-box function. 
+panel_c_x_block_units = box_z_units # Equation must be satisfied in order to express utility-box function. 
+panel_c_y_block_units = box_y_units # Equation must be satisfied in order to express utility-box function. 
+panel_d_x_block_units = box_x_units # Equation must be satisfied in order to express utility-box function. 
+panel_d_y_block_units = box_y_units # Equation must be satisfied in order to express utility-box function. 
+panel_e_x_block_units = box_x_units # Equation must be satisfied in order to express utility-box function. 
+panel_e_y_block_units = box_z_units # Equation must be satisfied in order to express utility-box function. 
+panel_f_x_block_units = box_y_units # Equation must be satisfied in order to express utility-box function. 
+panel_f_y_block_units = box_z_units # Equation must be satisfied in order to express utility-box function. 
+
+""" Define Hardware Components"""
+panel_a = mu.Hardware("panel_a", "CUBX0177-BPAN-B"+str(unit_block_length)+"SR"+str(shaft_radius)+"-X"+str(panel_a_x_block_units)+"Y"+str(panel_a_y_block_units)+"PP2-RF-SX5Y3-X1Y1-XO0YO0-X30Y30Z20-S") # Constructs panel : This hardware component is a box panel of a CUBX0177 class hardware component. This CUBX0177 component
+panel_b = mu.Hardware("panel_b", "CUBX0177-BPAN-B"+str(unit_block_length)+"SR"+str(shaft_radius)+"-X"+str(panel_b_x_block_units)+"Y"+str(panel_b_y_block_units)+"PP2-RF-SX5Y3-X1Y1-XO0YO0-X30Y30Z20-C") # Constructs panel A
+panel_c = mu.Hardware("panel_c", "CUBX0177-BPAN-B"+str(unit_block_length)+"SR"+str(shaft_radius)+"-X"+str(panel_c_x_block_units)+"Y"+str(panel_c_y_block_units)+"PP2-RF-SX5Y10-X1Y1-XO0YO0-X30Y30Z20-S")
+panel_d = mu.Hardware("panel_d", "CUBX0177-BPAN-B"+str(unit_block_length)+"SR"+str(shaft_radius)+"-X"+str(panel_d_x_block_units)+"Y"+str(panel_d_y_block_units)+"PP2-RF-SX5Y10-X1Y1-XO0YO0-X30Y30Z20-C")
+panel_e = mu.Hardware("panel_e", "CUBX0177-BPAN-B"+str(unit_block_length)+"SR"+str(shaft_radius)+"-X"+str(panel_e_x_block_units)+"Y"+str(panel_e_y_block_units)+"PP2-RF-SX5Y5-X1Y1-XO0YO0-X30Y30Z20-S")
+panel_f = mu.Hardware("panel_f", "CUBX0177-BPAN-B"+str(unit_block_length)+"SR"+str(shaft_radius)+"-X"+str(panel_f_x_block_units)+"Y"+str(panel_f_y_block_units)+"PP2-RF-SX5Y5-X1Y1-XO0YO0-X30Y30Z20-C")
+
+""" Define Hardware Components"""
+alpha = 200 # Equation must be satisfied in order to express utility-box function. Alpha is a constant which is useful for describing the distance between panels in the utility box.
+
+panel_a_assembly_coords = mu.Coordinates(0,1,[0, 0 , box_z_units * unit_block_length / 2 + alpha],[0, 0 , box_z_units * unit_block_length / 2],[0,0,0],[0,0,0]) # Equation must be satisfied in order to express utility-box function. 
+panel_b_assembly_coords = mu.Coordinates(0,1,[0, box_y_units * unit_block_length / 2 + alpha, 0],[0, box_y_units * unit_block_length / 2, 0],[0,0,0],[-90,0,0]) # Equation must be satisfied in order to express utility-box function. 
+panel_c_assembly_coords = mu.Coordinates(0,1,[ - box_x_units * unit_block_length / 2 - alpha, 0, 0 ],[ - box_x_units * unit_block_length / 2, 0, 0 ],[0,0,0],[0,-90,0]) # Equation must be satisfied in order to express utility-box function. 
+panel_d_assembly_coords = mu.Coordinates(0,1,[0 , 0, - box_z_units*unit_block_length / 2 - alpha],[0 , 0, - box_z_units*unit_block_length / 2],[0,0,0],[0,180,0]) # Equation must be satisfied in order to express utility-box function. 
+panel_e_assembly_coords = mu.Coordinates(0,1,[ 0, - box_y_units * unit_block_length / 2 - alpha, 0 ],[ 0, - box_y_units * unit_block_length / 2, 0 ],[0,0,0],[90,0,0]) # Equation must be satisfied in order to express utility-box function. 
+panel_f_assembly_coords = mu.Coordinates(0,1,[ box_x_units * unit_block_length / 2 + alpha, 0 ,0 ],[ box_x_units * unit_block_length / 2, 0 ,0 ],[0,0,0],[90,0,90]) # Equation must be satisfied in order to express utility-box function. 
+
+""" Define assembly. """
+box_assembly = mu.Assembly("box_assembly")
+box_assembly.include(panel_a, panel_a_assembly_coords) # Coordinates complete!
+box_assembly.include(panel_b, panel_b_assembly_coords) # Coordinates complete!
+box_assembly.include(panel_c, panel_c_assembly_coords) # Coordinates complete!
+box_assembly.include(panel_d, panel_d_assembly_coords) # Coordinates complete!
+box_assembly.include(panel_e, panel_e_assembly_coords) # Coordinates complete!
+box_assembly.include(panel_f, panel_f_assembly_coords) # Coordinates complete!
+
+""" Run """
+workspace.run(box_assembly, mu.Coordinates(0,1,[0,0,0],[0,0,0],[0,0,0],[0,0,0])) # This command creates all directorires and assemblies.
+
+```
+
+
+
+# Generating Output
+Upon pressing 'enter' by the mucli commmand line tool or running a workspace with workspace.run() inside a scipt will generate a workspace directory.
 
 ## Running openscad
 
