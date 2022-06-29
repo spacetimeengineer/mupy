@@ -304,9 +304,9 @@ Next, navigate to specified workspace directory.
 ![Alt Text](resources/CUBX0006-BLK-L1000W200H15.png)
 
 
-## utility_box.py
+## simple_box.py
 
-This example gives users the ability to build a custom utility box. This example uses the CUBX0177 family and mupy.core
+This simple example gives users the ability to build a simple box. This example uses the CUBX0177 family and the mupy.core library. In this script modularity is utilized however only certain system codes will fit with other certain system codes generally speaking. In the case of the CUBX0177 family the first five elements in the system code strings should be synchronized for modularity to be possible. Keep in mind that every type code has its own rules that it must follow and in some cases specific parameterization choices will override other intended features. In other cases the systems codes won't even be meaningful geometrically unless the libraries have built in their own boundary conditions to keep certain codes un-renderable.
 
 ```python
 from src.workspace import WorkSpace
@@ -350,6 +350,10 @@ workspace.run(chamber_assembly, Coordinates(0,1,[0,0,0],[0,0,0],[0,0,0],[0,0,0])
 
 
 
+
+## custom_box.py
+
+The script below 'custom_box.py' is a modification of the previous 'simple_box.py'. Below is an example of parameterization being applied on a higher level using python; now the variables which plug into system codes can be configured at the script level and it makes things easier when you want a customize certain aspects of the assembly you're desgining in a quick fashion. The hope is that we can as a community identify and build new family codes and schemas.
 
 ```python
 #!/usr/bin/env python3
@@ -424,7 +428,9 @@ workspace.run(box_assembly, mu.Coordinates(0,1,[0,0,0],[0,0,0],[0,0,0],[0,0,0]))
 
 
 # Generating Output
-Upon pressing 'enter' by the mucli commmand line tool or running a workspace with workspace.run() inside a scipt will generate a workspace directory.
+Upon pressing 'enter' by the mucli commmand line tool or running a workspace with workspace.run() inside a scipt will generate a workspace directory an this will be the entrypoint for your IP.
+
+## Generated Workspace Directory
 
 ## Running openscad
 
