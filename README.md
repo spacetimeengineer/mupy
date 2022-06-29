@@ -31,60 +31,6 @@
 </details>
 
 
-## Structure
-
-    ├── Dockerfile
-    ├── examples
-    │   ├── app.py
-    │   └── utility_box.py
-    ├── LICENSE
-    ├── MANIFEST.in
-    ├── mupy
-    │   ├── assembly.py
-    │   ├── coordinates.py
-    │   ├── core.py
-    │   ├── decode.py
-    │   ├── hardware.py
-    │   ├── __init__.py
-    │   ├── lib
-    │   │   ├── CRSPGR022
-    │   │   │   ├── crspgr022.py
-    │   │   │   ├── __init__.py
-    │   │   │   ├── README.md
-    │   │   │   └── scad
-    │   │   │       └── CRSPGR022.scad
-    │   │   ├── CUBX0006
-    │   │   │   ├── cubx0006.py
-    │   │   │   ├── __init__.py
-    │   │   │   ├── LICENSE
-    │   │   │   ├── README.md
-    │   │   │   └── scad
-    │   │   │       └── CUBX0006.scad
-    │   │   ├── CUBX0177
-    │   │   │   ├── cubx0177.py
-    │   │   │   ├── __init__.py
-    │   │   │   ├── LICENSE
-    │   │   │   ├── README.md
-    │   │   │   └── scad
-    │   │   │       └── CUBX0177.scad
-    │   │   ├── __init__.py
-    │   │   └── README.md
-    │   ├── mucli
-    │   │   ├── __init__.py
-    │   │   ├── input_branch.py
-    │   │   ├── mucli.py
-    │   │   └── selection_branch.py
-    │   ├── README.md
-    │   └── workspace.py
-    ├── mupy.toml
-    ├── Pipfile
-    ├── Pipfile.lock
-    ├── README.md
-    ├── resources
-    │   ├── CUBX0006-BLK-L1000W200H15.png
-    │   └── utility_box.gif
-    └── setup.py
-
 # About
 
 μpy or mupy is a shorthand for python manufacturing utility and reffers to a new system development technology implemented in the form of a python pip installable package. The μpy package essentially proposes to the open source community a new model for designing, distributing and manufacturing technology with an emphasis on community, modularity, decentralization, scaling, customization, parametrization, encodability and certification. 
@@ -231,6 +177,61 @@ There are two main interfaces for mupy, a command line interface (CLI) and an ap
 - expose mechanical engineers to programming
 
 - decentralized research and development
+
+
+### Structure
+
+    ├── Dockerfile
+    ├── examples
+    │   ├── app.py
+    │   └── utility_box.py
+    ├── LICENSE
+    ├── MANIFEST.in
+    ├── mupy
+    │   ├── assembly.py
+    │   ├── coordinates.py
+    │   ├── core.py
+    │   ├── decode.py
+    │   ├── hardware.py
+    │   ├── __init__.py
+    │   ├── lib
+    │   │   ├── CRSPGR022
+    │   │   │   ├── crspgr022.py
+    │   │   │   ├── __init__.py
+    │   │   │   ├── README.md
+    │   │   │   └── scad
+    │   │   │       └── CRSPGR022.scad
+    │   │   ├── CUBX0006
+    │   │   │   ├── cubx0006.py
+    │   │   │   ├── __init__.py
+    │   │   │   ├── LICENSE
+    │   │   │   ├── README.md
+    │   │   │   └── scad
+    │   │   │       └── CUBX0006.scad
+    │   │   ├── CUBX0177
+    │   │   │   ├── cubx0177.py
+    │   │   │   ├── __init__.py
+    │   │   │   ├── LICENSE
+    │   │   │   ├── README.md
+    │   │   │   └── scad
+    │   │   │       └── CUBX0177.scad
+    │   │   ├── __init__.py
+    │   │   └── README.md
+    │   ├── mucli
+    │   │   ├── __init__.py
+    │   │   ├── input_branch.py
+    │   │   ├── mucli.py
+    │   │   └── selection_branch.py
+    │   ├── README.md
+    │   └── workspace.py
+    ├── mupy.toml
+    ├── Pipfile
+    ├── Pipfile.lock
+    ├── README.md
+    ├── resources
+    │   ├── CUBX0006-BLK-L1000W200H15.png
+    │   └── utility_box.gif
+    └── setup.py
 
 
 # Installation
@@ -514,11 +515,20 @@ Upon pressing 'enter' by the mucli commmand line tool or running a workspace wit
 
 ## Running openscad
 
+1.) Navigate to workspace directory
+
+2.) Open 'box_assembly' file
+
+    $ openscad box_assembly_A1cfc7f.scad
+
 ### Animations
+ In the openscad IDE, form the toolbar select View -> Animate and under the main view some animation inputs will appear. Select a frame rate and step count to run animation. 
 
 ### Modifying generated code
 
 # 3D Printing
+
+You will need to download Ultimaker Cura in order to move forward with this step.
 
 ## Running cura
 
