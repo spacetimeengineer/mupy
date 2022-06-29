@@ -554,7 +554,17 @@ This package was developed over 5 year period where it began as an experiment wh
 
 ## Project ρ
 
+![Alt Text](resources/rho_legend_0.png)
+
 Project ρ (Recursive Hardware Operations) was a project which explored hardware modularity to it's manufacturing limit. The basic idea was to ask if there was some optimal set of shapes / limited parts which could make it easier to print and assemble anything. The idea was borrowed from legos except that the parts would need to be designed with specific requirements in mind that would improve the quality of any assembly especially when it comes to binding and unbinding. This was mostly implemented with 3D printers and the main goal of this project was to create hardware families which could satisfy a great deal of requirements pertaining to the possible decentralized development of large scale systems which granted effeciency-of-scale level cost-reduction. 
+
+### Goals
+
+### Lessons
+
+## Project ρ++
+
+![Alt Text](resources/rhopp_logo_0.png)
 
 ### Goals
 
