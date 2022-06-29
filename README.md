@@ -30,6 +30,61 @@
   </ol>
 </details>
 
+
+## Structure
+
+    ├── Dockerfile
+    ├── examples
+    │   ├── app.py
+    │   └── utility_box.py
+    ├── LICENSE
+    ├── MANIFEST.in
+    ├── mupy
+    │   ├── assembly.py
+    │   ├── coordinates.py
+    │   ├── core.py
+    │   ├── decode.py
+    │   ├── hardware.py
+    │   ├── __init__.py
+    │   ├── lib
+    │   │   ├── CRSPGR022
+    │   │   │   ├── crspgr022.py
+    │   │   │   ├── __init__.py
+    │   │   │   ├── README.md
+    │   │   │   └── scad
+    │   │   │       └── CRSPGR022.scad
+    │   │   ├── CUBX0006
+    │   │   │   ├── cubx0006.py
+    │   │   │   ├── __init__.py
+    │   │   │   ├── LICENSE
+    │   │   │   ├── README.md
+    │   │   │   └── scad
+    │   │   │       └── CUBX0006.scad
+    │   │   ├── CUBX0177
+    │   │   │   ├── cubx0177.py
+    │   │   │   ├── __init__.py
+    │   │   │   ├── LICENSE
+    │   │   │   ├── README.md
+    │   │   │   └── scad
+    │   │   │       └── CUBX0177.scad
+    │   │   ├── __init__.py
+    │   │   └── README.md
+    │   ├── mucli
+    │   │   ├── __init__.py
+    │   │   ├── input_branch.py
+    │   │   ├── mucli.py
+    │   │   └── selection_branch.py
+    │   ├── README.md
+    │   └── workspace.py
+    ├── mupy.toml
+    ├── Pipfile
+    ├── Pipfile.lock
+    ├── README.md
+    ├── resources
+    │   ├── CUBX0006-BLK-L1000W200H15.png
+    │   └── utility_box.gif
+    └── setup.py
+
 # About
 
 μpy or mupy is a shorthand for python manufacturing utility and reffers to a new system development technology implemented in the form of a python pip installable package. The μpy package essentially proposes to the open source community a new model for designing, distributing and manufacturing technology with an emphasis on community, modularity, decentralization, scaling, customization, parametrization, encodability and certification. 
@@ -525,60 +580,6 @@ Yes! but only the core technology is free, the various family code libraries whi
 
 ### Does mupy replace CAD?
 Absolutely not, mupy is it's own thing. In some cases it may reduce the hours spent on CAD for people and in other cases it may increase the time people spend. In the future I see CAD applications just integrating a mucli-like application into it to get the best of both worlds.
-
-### Structure
-
-    ├── Dockerfile
-    ├── examples
-    │   ├── app.py
-    │   └── utility_box.py
-    ├── LICENSE
-    ├── MANIFEST.in
-    ├── mupy
-    │   ├── assembly.py
-    │   ├── coordinates.py
-    │   ├── core.py
-    │   ├── decode.py
-    │   ├── hardware.py
-    │   ├── __init__.py
-    │   ├── lib
-    │   │   ├── CRSPGR022
-    │   │   │   ├── crspgr022.py
-    │   │   │   ├── __init__.py
-    │   │   │   ├── README.md
-    │   │   │   └── scad
-    │   │   │       └── CRSPGR022.scad
-    │   │   ├── CUBX0006
-    │   │   │   ├── cubx0006.py
-    │   │   │   ├── __init__.py
-    │   │   │   ├── LICENSE
-    │   │   │   ├── README.md
-    │   │   │   └── scad
-    │   │   │       └── CUBX0006.scad
-    │   │   ├── CUBX0177
-    │   │   │   ├── cubx0177.py
-    │   │   │   ├── __init__.py
-    │   │   │   ├── LICENSE
-    │   │   │   ├── README.md
-    │   │   │   └── scad
-    │   │   │       └── CUBX0177.scad
-    │   │   ├── __init__.py
-    │   │   └── README.md
-    │   ├── mucli
-    │   │   ├── __init__.py
-    │   │   ├── input_branch.py
-    │   │   ├── mucli.py
-    │   │   └── selection_branch.py
-    │   ├── README.md
-    │   └── workspace.py
-    ├── mupy.toml
-    ├── Pipfile
-    ├── Pipfile.lock
-    ├── README.md
-    ├── resources
-    │   ├── CUBX0006-BLK-L1000W200H15.png
-    │   └── utility_box.gif
-    └── setup.py
 
 ## Contacts:
 
