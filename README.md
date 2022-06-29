@@ -517,6 +517,8 @@ Upon pressing 'enter' by the mucli commmand line tool or running a workspace wit
 
 1.) Navigate to workspace directory
 
+    $ cd ~/custom_box
+
 2.) Open 'box_assembly' file
 
     $ openscad box_assembly_A1cfc7f.scad
