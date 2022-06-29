@@ -556,25 +556,25 @@ This package was developed over 5 year period where it began as an experiment wh
 
 Project ρ (Recursive Hardware Operations) was a project which explored hardware modularity to it's manufacturing limit. The basic idea was to ask if there was some optimal set of shapes / limited parts which could make it easier to print and assemble anything. The idea was borrowed from legos except that the parts would need to be designed with specific requirements in mind that would improve the quality of any assembly especially when it comes to binding and unbinding. This was mostly implemented with 3D printers and the main goal of this project was to create hardware families which could satisfy a great deal of requirements pertaining to the possible decentralized development of large scale systems which granted effeciency-of-scale level cost-reduction. 
 
-###
+### Goals
 
-###
+### Lessons
 
 ## Project ψ
 
 Project ψ (Parametric System Instruction) was a project which explored hardware configuration, definition and assembly to it's manufacturing limit. This was the next stage in the evolution of this project. Project rho proved that there was no way in principle to establish a modular family which satisfied all requirements. From this the idea of the psi terminal was developed which said that some terminal should exist which takes in 'system-codes' which serve to identify a system in terms of it's properties.
 
-###
+### Goals
 
-###
+### Lessons
 
 ## Project μ
 
 Projct mu was a nessecary bleding of both projects with added features. and mupy was a python implementation.
 
-###
+### Goals
 
-###
+### Lessons
 
 ## Roadmap
 
