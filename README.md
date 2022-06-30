@@ -33,23 +33,10 @@
 
 # About
 
-μpy or mupy is a shorthand for python manufacturing utility and reffers to a new system development technology implemented in the form of a python pip installable package. The μpy package essentially proposes to the open source community a new model for designing, distributing and manufacturing technology with an emphasis on community, modularity, decentralization, scaling, customization, parametrization, encodability and certification. 
+μpy or mupy is a shorthand for python manufacturing utility and reffers to a new system development technology implemented in the form of a python pip installable package. The μpy package essentially proposes to the open source community a roughly defined model for designing, distributing and manufacturing technology with an emphasis on community, modularity, decentralization, scaling, customization, parametrization, encodability and certification. 
 
 ### Note from the developer
-This system got a little out of hand and mabye a little over engineered in the process but I think there might be something here.
-
- I adit I tried really hard to give meanign or form to the essentially hobeld together feature package which was only designed to do what served my purposes for my projects.
- 
- 
-  Thats another thing I dont really want to work too much on this system since it works well enough
-
-open scad is just too powerful but not for everyone. This is sortof unfortuneate but the good news is that 
-
-This project has limitations and is hacky sortof.
-
-    - Still work in openscad IDE.
-    - openscad is single threaded
-
+This package has gotten a little out of hand and mabye a little over engineered too and it's not without it's shortcomings but there is something very real here and it's powerful. You couldnt possibly know from parsing this repository what I mean exactly and it's part of the reason this project has become so akward since it's not really aboout software anymore atleast not for me. Hell it's not even about technology. It's more important, I swear it. This package reflects a vision for the future and how we may consider workign together to build it. This package represents a small pin hole which lets in a future so bright that it may be worth dying for. It's really hard to explain what I mean becasue I dont know exactly what I mean but I have seen it in my dreams and I could of never convinced anybody anyway what I thought could possible in our lifetimes unless I made something to prove it but even still you need the eyes to see and the ears to isten. It also wasnt the kind of thing you underdeliver, it was the kind of thing you work secretly for five years. The point is that could of never built mupy the way I did unless I had something very real to believe in and what mupy could do would be the real reward.
 
 ### Why build mupy
 
