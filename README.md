@@ -33,12 +33,12 @@
 
 # About
 
-μpy or mupy is a shorthand for python manufacturing utility and reffers to a new system development technology implemented in the form of a python pip installable package. The μpy package essentially proposes to the open source community a roughly defined model for designing, distributing and manufacturing technology with an emphasis on community, modularity, decentralization, scaling, customization, parametrization, encodability and certification. 
+μpy or mupy is a shorthand for python manufacturing utility and reffers to a new system development technology implemented in the form of a python pip installable package. The μpy package essentially proposes to the open source community in the form of a powerful tool, a model for designing, distributing and manufacturing technology with an emphasis on community, modularity, decentralization, scaling, customization, parametrization, encodability and certification. Currently mupy contains rendereings for quadrilions of parts for 3D print and exponentially more can become available with the help of users in the future.
 
 ### Note from the developer
-This package has gotten a little out of hand and mabye a little over engineered too and not without it's shortcomings also but there is something very real and very powerful here.  You couldnt possibly know from reading this repository but . 
+This package has gotten a little out of hand and mabye a little over engineered too and not without it's shortcomings also but there is something very real and very powerful here.  You couldnt possibly know this from reading this repository but its not about code, hell its not even about technology. Its about us and our search for meaning.  
 
-It was my best attempt to create something that may actuallly have the potential to change the world. I know how that sounds and I expect you to be critical as you should be. This package is something more than a simple prototype but less than a fully defined system and I make no apologies as this is malliable as it involves  community if it is to become anything more than what it is. I have fufilled my requirements for it and I intend to develop myown operations with it.
+It was my best attempt to create something real. I know how this sounds and you should be critical. This package is something more than a simple prototype but less than a fully defined system and I make no apologies as this is malliable as it involves  community if it is to become anything more than what it is. I have fufilled my requirements for it and I intend to develop myown operations with it.
 
 This package reflects a vision for the future and how we may consider workign together to build it. This package represents a small pin hole which lets in a light representing a future so bright that it may be worth atleast trying out. It's really hard to explain what I mean becasue I dont know exactly what I mean but I have seen it in my dreams and I could of never convinced anybody anyway what I thought could possible in our lifetimes unless I made something to prove it but even still you need the eyes to see and the ears to isten. 
 
