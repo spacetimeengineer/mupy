@@ -1,6 +1,4 @@
 
-
-- Python package downloads: ![downloads](https://img.shields.io/badge/downloads-13k%2Fmonth-brightgreen)
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
