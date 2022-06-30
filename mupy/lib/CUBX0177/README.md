@@ -1,6 +1,8 @@
 # CUBX0177
 The CUBX0177 family was developed for simple prototyping and construction. Joinery and bolting based binding. This particular family is really really fun for prototyping. These parts are like legos in some ways but are unlike legos in other ways. 
 
+![Alt Text](resources/cubx0177_0.png)
+
 ### Manufacturing Reccomendations
 For smaller parts it is reccomended that CUBX0177 parts be 3D printed. If larger utilize any manufacturing method that which suites your needs.
 

@@ -33,23 +33,11 @@
 
 # About
 
-μpy or mupy is a shorthand for python manufacturing utility and reffers to a new system development technology implemented in the form of a python pip installable package. The μpy package essentially proposes to the open source community a new model for designing, distributing and manufacturing technology with an emphasis on community, modularity, decentralization, scaling, customization, parametrization, encodability and certification. 
+μpy or mupy is a shorthand for python manufacturing utility and reffers to a new system development technology implemented in the form of a python pip installable package. The μpy package essentially proposes to the open source community in the form of a powerful tool, a model for designing, distributing and manufacturing technology with an emphasis on community, modularity, decentralization, scaling, customization, parametrization, encodability and certification. Currently mupy contains rendereings for quadrilions of parts for 3D print and exponentially more can become available with the help of users in the future.
 
 ### Note from the developer
-This system got a little out of hand and mabye a little over engineered in the process but I think there might be something here.
 
- I adit I tried really hard to give meanign or form to the essentially hobeld together feature package which was only designed to do what served my purposes for my projects.
- 
- 
-  Thats another thing I dont really want to work too much on this system since it works well enough
-
-open scad is just too powerful but not for everyone. This is sortof unfortuneate but the good news is that 
-
-This project has limitations and is hacky sortof.
-
-    - Still work in openscad IDE.
-    - openscad is single threaded
-
+This package is not without it's shortcomings but there is something very real and very powerful here. 
 
 ### Why build mupy
 
@@ -554,7 +542,7 @@ This package was developed over 5 year period where it began as an experiment wh
 
 ## Project ρ
 
-Project ρ (Recursive Hardware Operations) was a project which explored hardware modularity to it's manufacturing limit. The basic idea was to ask if there was some optimal set of shapes / limited parts which could make it easier to print and assemble anything. The idea was borrowed from legos except that the parts would need to be designed with specific requirements in mind that would improve the quality of any assembly especially when it comes to binding and unbinding.
+Project ρ (Recursive Hardware Operations) was a project which explored hardware modularity and manufacturing tecquniques . The basic idea was to ask if there was some set of optimal shapes / limited parts which could make it easier to print and assemble anything. The idea was borrowed from legos except that the parts would need to be designed with specific requirements in mind that would improve the quality of any assembly especially when it comes to binding and unbinding.
 
 ![Alt Text](resources/rho_legend_0.png)
 
@@ -566,11 +554,15 @@ Project ρ (Recursive Hardware Operations) was a project which explored hardware
 
 ## Project ρ++
 
+Project ρ++ was an extension of project ρ. Just some context ; in these days the hardware 'elements' that were in the process of being developed and tested were treated as agents which expressed the ρ hardware assembly language. Some more context ; A hardware assembly language should be compared to a software programming language since that if we program software and we assemble hardware then it may be nessecary to build a hardware assembly language which we would classify legos as being.
+
 ![Alt Text](resources/rhopp_logo_0.png)
 
 ### Goals
 
 ### Lessons
+
+
 
 ## Project ψ
 
@@ -590,11 +582,13 @@ Projct mu was a nessecary bleding of both projects with added features. and mupy
 
 ## Roadmap
 
-### Implement a script store
+### Redesign model with community
 
-### Redesign core model from grown up
 
-### Utilizing better techology
+
+### Inegrating technologies
+
+### Implement a package manager
 
 ### Automated certification routines
 
@@ -610,11 +604,13 @@ This particular function is the golden function which would render this project 
 
 Currently the best form of contribution would be to play offer suggestions for iprovement or they could develp scripts to be certified or open scad code to be certified (manually).
 
-## Liscense
+## License
 
 ### mupy.core liscense
+The top level dirctory license applies to all contained files and directories EXCEPT for family code files and directories which should be thought of as python sub-packages which always contain thier own source code file, license and digital-twin python class. This license overrides the top level license and applies to all same-directory-files and same-directory-directories. The mupy.core serves as an abstraction layer to the hardware family libraries which it essentially makes function calls to containing parameterization which is extracted from system-codes.
 
 ### mupy.lib licenses
+Individual hardware families are guided by thier own license agreements. Each hardware family directory will posess a license file. The mupy package makes calls to these libraries which exist as sub-directories currently.
 
 ## FAQ
 
@@ -628,7 +624,7 @@ Incalculable, since the family codes define thier own rules, it is difficult to 
 Yes! but only the core technology is free, the various family code libraries which should each contain thier own license which states the conditions for use. In most cases it is free to use but read the license.
 
 ### Does mupy replace CAD?
-Absolutely not, mupy is it's own thing. In some cases it may reduce the hours spent on CAD for people and in other cases it may increase the time people spend. In the future I see CAD applications just integrating a mucli-like application into it to get the best of both worlds.
+Absolutely not, mupy is it's own thing. In some cases it may reduce the hours spent on CAD for people and in other cases it may increase the time people spend. In the future I could see CAD applications integrating a mucli-like application utilities into it to get the best of both worlds.
 
 ## Contacts:
 
