@@ -224,15 +224,7 @@ There are two main interfaces for mupy, a command line interface (CLI) and an ap
 
 # Installation
 
-There are a few types of users who may find great enjoyment using mupy :
-
-- 3D printing enthusists - Reccomended usage : mucli
-
-- Inventors - Reccomended usage : mu.core
-
-- Library developers : - Reccomended usage : see contributing guidelines.
-
-- Core developers : : - Reccomended usage : see contributing guidelines.
+If you are a 3D printer enthusist, wood worker, developer, artist, inventor, entrepreneur looking for an internal utility to manage your projects then mupy is for you.
 
 
 ## Linux Installation
@@ -333,7 +325,7 @@ If you prefer touse the provided docker image you will need to install docker at
 
 ## mucli
 
-μ comes with it bundled a command-line-interface application known as the μ-terminal or 'muterm' which behaves much like a linux terminal except that it only accepts special strings known as 'system codes'. muterm was developed to express to users μ's most rudimetry operation ; dispensing manufacturing resources for a given system code. To enter muterm, in the linux terminal
+μpy comes with it bundled a command-line-interface application known as the mucli and behaves much like a linux terminal except that it only accepts special strings known as 'system-codes'. mucli was developed to express to users μpy's most rudimetry operation ; dispensing manufacturing resources for a given system code. To enter mucli, in the linux terminal
 
     :~$ ./mucli 
 
