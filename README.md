@@ -62,13 +62,47 @@ workspace = mu.WorkSpace(str(Path.home())+"/"+workspace_name) # Creates workspac
 
 ```
 
-Set up a workspace
+Defines hardware by name and system-code. System-codes have many permutations and should be thought of as encoded parameterizations for scad function calls.
 
 ```python
-workspace_name = "custom_box"
-workspace = mu.WorkSpace(str(Path.home())+"/"+workspace_name) # Creates workspace directory relative to home path.
+panel_a = mu.Hardware("panel_a", "CUBX0177-BPAN-B25SR2P5-X8Y8P18-RT-SX25Y25-X8Y8-X20Y20Z5")
+panel_b = mu.Hardware("panel_b", "CUBX0177-BPAN-B25SR2P5-X8Y8P18-RT-SX25Y25-X8Y8-X20Y20Z5")
 
 ```
+
+Defines initial and final coordinates of hardware in 3D space within a single assembly epoch.
+
+```python
+
+
+
+panel_a_assembly_coords = mu.Coordinates(0,1,[0, 0 , 8 * 15 / 2 + 210],[0, 0 , 8 * 15 / 2],[0,0,0],[0,0,0])
+panel_b_assembly_coords = mu.Coordinates(0,1,[0, 20 * 15 / 2 + 210, 0],[0, 20 * 15 / 2, 0],[0,0,0],[-90,0,0]) 
+
+```
+
+Defines assembly
+
+```python
+assembly_0 = mu.Assembly("box_assembly")
+assembly_0.include(panel_a, panel_a_assembly_coords)
+assembly_0.include(panel_b, panel_b_assembly_coords)
+
+```
+
+Run assembly
+
+```python
+assembly_0 = mu.Assembly("box_assembly")
+assembly_0.include(panel_a, panel_a_assembly_coords)
+assembly_0.include(panel_b, panel_b_assembly_coords)
+
+```
+
+
+
+
+
 
 ### Why build mupy
 
