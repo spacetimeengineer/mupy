@@ -6,9 +6,9 @@
     <li>
       <a href="#About">About</a>
       <ul>
-        <li><a href="#overview">Linux Installation</a></li>
-        <li><a href="#note-from-developer">Windows Installation</a></li>
-        <li><a href="#main-ideas">MacOS Installation</a></li>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#note-from-developer">Note From Developer</a></li>
+        <li><a href="#main-ideas">Main Ideas</a></li>
       </ul>
     </li>
     <li>
@@ -23,20 +23,19 @@
     <li>
       <a href="#Getting-Started">Getting Started</a>
       <ul>
-        <li><a href="#mucli">Linux Installation</a></li>
-        <li><a href="#enter-system-code">Windows Installation</a></li>
-        <li><a href="#simple_box.py">MacOS Installation</a></li>
-        <li><a href="#custom_box.py">Installation</a></li>
-        <li><a href="#running">Prerequisites</a></li>
+        <li><a href="#mucli">mucli : Manufacturing Utility Command-Line-Tool</a></li>
+        <li><a href="#enter-system-code">Enter System-Code</a></li>
+        <li><a href="#simple_box.py">simple_box.py</a></li>
+        <li><a href="#custom_box.py">custom_box.py</a></li>
+        <li><a href="#running">Running</a></li>
       </ul>
     </li>
     <li>
       <a href="#Generating-Output">Generating Output</a>
       <ul>
-        <li><a href="#workspace-directory">Linux Installation</a></li>
-        <li><a href="#running-openscad">Windows Installation</a></li>
-        <li><a href="#assembly-animations">MacOS Installation</a></li>
-        <li><a href="#modify-code.py">Installation</a></li>
+        <li><a href="#generated-workspace-directory">Generated Workspace Directory</a></li>
+        <li><a href="#running-openscad">Running OpenSCAD</a></li>
+        <li><a href="#assembly-animations">Assembly Animations</a></li>
       </ul>
     </li>
     <li>
