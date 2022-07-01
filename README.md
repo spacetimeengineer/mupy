@@ -37,7 +37,13 @@
 
 ### Note from the developer
 
-This package is not without it's shortcomings but there is something very real and very powerful here. I didnt originally build this for the community, infact I built this for myself because needed a tool that would do exactly what I needed it to do.
+This package is not without it's shortcomings but there is something very real and very powerful here. I didnt originally build this for the community, rather it was set of requirements that was fufilled. I built this for myself because needed a tool that would do exactly what I needed it to do.
+
+- Suffers Scope Creep with is why the model must be redesigned but this time by a community which has learned lessons from the previuous iteration. Model is roulghy well defined.
+- Open scad is not integrated in, rather mupy is a library that writes openscad code. 
+- Each hardware family contains its own rules.
+- Many clauses which began the effort were eventually violated.
+
 
 ### Why build mupy
 
@@ -81,7 +87,7 @@ There are two main interfaces for mupy, a command line interface (CLI) and an ap
 - mu.core - This library represents the general case for mupy use-case.
 
     - python3 scripting interface.
-    
+
     - hardware class objects combine system-codes and names.
 
 ### Function
@@ -358,7 +364,9 @@ The mucli is a general purpose utility and represents the most rudimetry operati
 
 ![Alt Text](resources/CUBX0006-BLK-L1000W200H15.png)
 
-    μ:# CUBX0006-BLK-L1000W200H15
+    μ:# CUBX0006-BLK-L2438P4W38H89
+
+![Alt Text](resources/CUBX0006-BLK-L2438P4W38H89.png)
 
     μ:# CUBX0006-BLK-L1000W200H15
 
@@ -572,6 +580,10 @@ Project ρ (Recursive Hardware Operations) was a project which explored hardware
 
 ### Lessons
 
+- Once we built the parts and tested them, we manufactured many more except and realized that we didnt actually know what to assemble and this represented a fundemental problem since it forced the decision that parts should indeed derive from design plans themselves and not the other way around ; for the sake of optimization. This violated manyof the originals clauses but it also introduced a new opertunity.
+
+- There was no set of optimal parts that could be designed unless it had infinite permutations. The CUBX0012 family was very fun but it had its problems and in some cases was an engineering 
+
 ## Project ρ++
 
 Project ρ++ was an extension of project ρ. Just some context ; in these days the hardware 'elements' that were in the process of being developed and tested were treated as agents which expressed the ρ hardware assembly language. Some more context ; A hardware assembly language should be compared to a software programming language since that if we program software and we assemble hardware then it may be nessecary to build a hardware assembly language which we would classify legos as being.
@@ -581,6 +593,8 @@ Project ρ++ was an extension of project ρ. Just some context ; in these days t
 ### Goals
 
 ### Lessons
+
+- Hardware must be schemaless ; each type code dictates it's own rules.
 
 
 
