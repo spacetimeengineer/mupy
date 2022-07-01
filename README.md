@@ -35,16 +35,8 @@
 
 μpy or mupy is a shorthand for python manufacturing utility and reffers to a new system development technology implemented in the form of a python pip installable package. The μpy package essentially proposes to the open source community in the form of a powerful tool, a model for designing, distributing and manufacturing technology with an emphasis on community, modularity, decentralization, scaling, customization, parametrization, encodability and certification. Currently mupy contains rendereings for quadrilions of parts for 3D print and exponentially more can become available with the help of users in the future.
 
-### Note from the developer
 
-This package is not without it's shortcomings but there is something very real and very powerful here. I didnt originally build this for the community, rather it was set of requirements that was fufilled. I built this for myself because needed a tool that would do exactly what I needed it to do.
-
-- Suffers Scope Creep with is why the model must be redesigned but this time by a community which has learned lessons from the previuous iteration. Model is roulghy well defined.
-- Open scad is not integrated in, rather mupy is a library that writes openscad code. 
-- Each hardware family contains its own rules.
-- Many clauses which began the effort were eventually violated.
-
-# Overview
+## Overview
 
 - Import the mupy library
 
@@ -103,7 +95,14 @@ assembly_0.include(panel_b, panel_b_assembly_coords)
 
 
 
+### Note from the developer
 
+This package is not without it's shortcomings but there is something very real and very powerful here. I didnt originally build this for the community, rather it was set of requirements that was fufilled. I built this for myself because needed a tool that would do exactly what I needed it to do.
+
+- Suffers Scope Creep with is why the model must be redesigned but this time by a community which has learned lessons from the previuous iteration. Model is roulghy well defined.
+- Open scad is not integrated in, rather mupy is a library that writes openscad code. 
+- Each hardware family contains its own rules.
+- Many clauses which began the effort were eventually violated.
 
 
 ### Why build mupy
