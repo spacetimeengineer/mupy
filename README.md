@@ -346,6 +346,25 @@ If you prefer touse the provided docker image you will need to install docker at
 
     $ docker exec -it mu:latest /bin/bash
 
+# Overview
+
+- Import the mupy library
+
+```python
+
+import mupy.core as mu
+
+```
+
+- Set up workspace
+
+```python
+
+""" Set Up Workspace. """
+workspace_name = "custom_box" # Workspace name ; this will be the name of the workspace directory.
+workspace = mu.WorkSpace(str(Path.home())+"/"+workspace_name) # Creates workspace.
+
+```
 
     
 # Getting Started
