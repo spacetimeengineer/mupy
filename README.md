@@ -574,15 +574,24 @@ Project ψ (Parametric System Instruction) was a project which explored hardware
 
 ### Goals
 
+- Handle parameterization
+
+- Implement system-codes
+
 ### Lessons
 
 ## Project μ
 
-Projct mu was a nessecary bleding of both projects with added features. and mupy was a python implementation.
+The main thing about project mu was that the realization set in and said it wasnt just about modularity anymore, it was about manufacturing anything, even if they were oneoffs. 
+
 
 ### Goals
 
-### Lessons
+- Make it a publish worthy package
+
+- make it as an api and a cli
+
+- Allow anything to be manufactured
 
 ## Roadmap
 
