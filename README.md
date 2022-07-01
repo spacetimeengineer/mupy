@@ -37,11 +37,7 @@
 
 ### Note from the developer
 
-<<<<<<< HEAD
 This package is not without it's shortcomings but there is something very real and very powerful here. 
-=======
-This package has gotten a little out of hand and and not without shortcomings but there is something very real and very powerful here. I dont think you could possibly know this from studying the repository but its not about the code and it's not about the technology. It's about something so much more important and I just dont have words to explain myself but if you knew what I knew then you couldnt of been able to stop yourself either from trying to develop this technology on your own. 
->>>>>>> 7591291c7c4ca5e776b2b4487c59f82666cabf33
 
 ### Why build mupy
 
