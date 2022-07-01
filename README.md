@@ -37,7 +37,7 @@
 
 ### Note from the developer
 
-This package is not without it's shortcomings but there is something very real and very powerful here. 
+This package is not without it's shortcomings but there is something very real and very powerful here. I didnt originally build this for the community, infact I built this for myself because needed a tool that would do exactly what I needed it to do.
 
 ### Why build mupy
 
@@ -45,11 +45,31 @@ This package is not without it's shortcomings but there is something very real a
 
     - System Code Example : CUBX0006-BLK-L1000W50H200
 
-- To render simulations and manufacturing resources from system-codes directly ; Data compression through abstraction & quick development.
+- To design complex assemblies with said parts in a scripting format.
 
-- To assign system-encodings, system-schemas and system-parameterizations to organically designed systems and hardware for later customization and recall.
+- To render simulations and manufacturing resources from system-codes directly
+
+    - Everything terminates at a system code.
+
+    - Data compression is achieved through abstraction tecquniques.
+
+- To assign system-encodings, system-schemas and system-parameterizations to organically designed systems and hardware
+
+    - Grants customization
+
+    - Grants Recall
 
 - To give inventors, makers, engineers and artists a more powerful platform for distribution and where thier liscens is respected.
+
+    - Start a business
+
+    - Build a portal gun
+
+    - Start a private project with peers
+
+    - Sell stuff on Etsy
+
+    - Take the parts and keep all your f*cking money
 
 
 ### How does it work?
@@ -61,6 +81,7 @@ There are two main interfaces for mupy, a command line interface (CLI) and an ap
 - mu.core - This library represents the general case for mupy use-case.
 
     - python3 scripting interface.
+    
     - hardware class objects combine system-codes and names.
 
 ### Function
