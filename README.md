@@ -359,10 +359,8 @@ import mupy.core as mu
 - Set up workspace
 
 ```python
-
-""" Set Up Workspace. """
-workspace_name = "custom_box" # Workspace name ; this will be the name of the workspace directory.
-workspace = mu.WorkSpace(str(Path.home())+"/"+workspace_name) # Creates workspace.
+workspace_name = "custom_box"
+workspace = mu.WorkSpace(str(Path.home())+"/"+workspace_name) # Creates workspace directory relative tohome path.
 
 ```
 
