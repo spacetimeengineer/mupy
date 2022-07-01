@@ -4,7 +4,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#About">Getting Started</a>
+      <a href="#About">About</a>
       <ul>
         <li><a href="#overview">Linux Installation</a></li>
         <li><a href="#note-from-developer">Windows Installation</a></li>
@@ -12,7 +12,7 @@
       </ul>
     </li>
     <li>
-      <a href="#Installation">Getting Started</a>
+      <a href="#Installation">Installation</a>
       <ul>
         <li><a href="#linux-installation">Linux Installation</a></li>
         <li><a href="#windows-installation">Windows Installation</a></li>
@@ -31,7 +31,7 @@
       </ul>
     </li>
     <li>
-      <a href="#Generating-Output">Getting Started</a>
+      <a href="#Generating-Output">Generating Output</a>
       <ul>
         <li><a href="#workspace-directory">Linux Installation</a></li>
         <li><a href="#running-openscad">Windows Installation</a></li>
@@ -40,7 +40,7 @@
       </ul>
     </li>
     <li>
-      <a href="#3D Printing">Getting Started</a>
+      <a href="#3D Printing">3D Printing Systems & Hardware</a>
       <ul>
         <li><a href="#workspace-directory">Linux Installation</a></li>
         <li><a href="#running-openscad">Windows Installation</a></li>
@@ -49,7 +49,7 @@
       </ul>
     </li>
     <li>
-      <a href="#mupy-Concepts">Getting Started</a>
+      <a href="#mupy-Concepts">mupy Concepts</a>
       <ul>
         <li><a href="#workspace-directory">Linux Installation</a></li>
         <li><a href="#running-openscad">Windows Installation</a></li>
@@ -58,7 +58,7 @@
       </ul>
     </li>
     <li>
-      <a href="#History">Getting Started</a>
+      <a href="#History">History</a>
       <ul>
         <li><a href="#workspace-directory">Linux Installation</a></li>
         <li><a href="#running-openscad">Windows Installation</a></li>
@@ -67,12 +67,12 @@
       </ul>
     </li>
     <li>
-      <a href="#Roadmap">Getting Started</a>
+      <a href="#Roadmap">Roadmap</a>
       <ul>
       </ul>
     </li>
     <li>
-      <a href="#Community">Getting Started</a>
+      <a href="#Community">Community</a>
       <ul>
         <li><a href="#workspace-directory">Linux Installation</a></li>
         <li><a href="#running-openscad">Windows Installation</a></li>
