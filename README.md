@@ -335,9 +335,16 @@ The mucli is a general purpose utility and represents the most rudimetry operati
 
     μ:# CUBX0006-BLK-L1000W200H15
 
-Next, navigate to specified workspace directory.
-
 ![Alt Text](resources/CUBX0006-BLK-L1000W200H15.png)
+
+    μ:# CUBX0006-BLK-L1000W200H15
+
+    μ:# CUBX0006-BLK-L1000W200H15
+
+    μ:# CUBX0006-BLK-L1000W200H15
+
+    μ:# CUBX0006-BLK-L1000W200H15
+
 
 
 ## simple_box.py
