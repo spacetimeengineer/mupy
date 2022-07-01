@@ -44,6 +44,31 @@ This package is not without it's shortcomings but there is something very real a
 - Each hardware family contains its own rules.
 - Many clauses which began the effort were eventually violated.
 
+# Overview
+
+- Import the mupy library
+
+```python
+
+import mupy.core as mu
+
+```
+
+Set up a workspace
+
+```python
+workspace_name = "custom_box"
+workspace = mu.WorkSpace(str(Path.home())+"/"+workspace_name) # Creates workspace directory relative to home path.
+
+```
+
+Set up a workspace
+
+```python
+workspace_name = "custom_box"
+workspace = mu.WorkSpace(str(Path.home())+"/"+workspace_name) # Creates workspace directory relative to home path.
+
+```
 
 ### Why build mupy
 
@@ -346,23 +371,6 @@ If you prefer touse the provided docker image you will need to install docker at
 
     $ docker exec -it mu:latest /bin/bash
 
-# Overview
-
-- Import the mupy library
-
-```python
-
-import mupy.core as mu
-
-```
-
-- Set up workspace
-
-```python
-workspace_name = "custom_box"
-workspace = mu.WorkSpace(str(Path.home())+"/"+workspace_name) # Creates workspace directory relative tohome path.
-
-```
 
     
 # Getting Started
