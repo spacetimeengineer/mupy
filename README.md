@@ -38,6 +38,8 @@
 
 ## Overview
 
+### Do some code
+
 - Import the mupy library
 
 ```python
@@ -46,7 +48,7 @@ import mupy.core as mu
 
 ```
 
-Set up a workspace
+- Set up workspace directory
 
 ```python
 workspace_name = "custom_box"
@@ -93,7 +95,11 @@ assembly_0.include(panel_b, panel_b_assembly_coords)
 
 ```
 
+### Simulate assembly
 
+### Print Parts
+
+### Assemble parts
 
 ### Note from the developer
 
