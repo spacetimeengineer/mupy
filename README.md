@@ -62,7 +62,9 @@ workspace = mu.WorkSpace(str(Path.home())+"/"+workspace_name) # Creates workspac
 
 ```
 
-Defines hardware by name and system-code. System-codes have many permutations and should be thought of as encoded parameterizations for scad function calls.
+- Defines hardware by name and system-code. 
+
+    - System-codes have many permutations and should be thought of as encoded parameterizations for scad function calls.
 
 ```python
 panel_a = mu.Hardware("panel_a", "CUBX0177-BPAN-B25SR2P5-X8Y8P18-RT-SX25Y25-X8Y8-X20Y20Z5")
@@ -70,7 +72,7 @@ panel_b = mu.Hardware("panel_b", "CUBX0177-BPAN-B25SR2P5-X8Y8P18-RT-SX25Y25-X8Y8
 
 ```
 
-Defines initial and final coordinates of hardware in 3D space within a single assembly epoch.
+- Define initial and final coordinates within an assembly epoch.
 
 ```python
 
@@ -81,7 +83,7 @@ panel_b_assembly_coords = mu.Coordinates(0,1,[0, 20 * 15 / 2 + 210, 0],[0, 20 * 
 
 ```
 
-Defines assembly
+- Defines assembly
 
 ```python
 assembly_0 = mu.Assembly("box_assembly")
@@ -90,7 +92,7 @@ assembly_0.include(panel_b, panel_b_assembly_coords)
 
 ```
 
-Run assembly
+- Run assembly
 
 ```python
 assembly_0 = mu.Assembly("box_assembly")
