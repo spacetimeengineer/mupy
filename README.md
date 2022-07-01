@@ -3,7 +3,28 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#About">About</a></li>
+    <li>
+      <a href="#About">Getting Started</a>
+      <ul>
+        <li><a href="#linux-installation">Linux Installation</a></li>
+        <li><a href="#windows-installation">Windows Installation</a></li>
+        <li><a href="#macos-installation">MacOS Installation</a></li>
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#Installation">Getting Started</a>
+      <ul>
+        <li><a href="#linux-installation">Linux Installation</a></li>
+        <li><a href="#windows-installation">Windows Installation</a></li>
+        <li><a href="#macos-installation">MacOS Installation</a></li>
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
     <li>
       <a href="#Getting-Started">Getting Started</a>
       <ul>
