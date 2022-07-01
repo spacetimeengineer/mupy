@@ -101,7 +101,7 @@ assembly_0.include(panel_b, panel_b_assembly_coords)
 
 ### Assemble parts
 
-### Note from the developer
+## Note from the developer
 
 This package is not without it's shortcomings but there is something very real and very powerful here. I didnt originally build this for the community, rather it was set of requirements that was fufilled. I built this for myself because needed a tool that would do exactly what I needed it to do.
 
@@ -110,6 +110,7 @@ This package is not without it's shortcomings but there is something very real a
 - Each hardware family contains its own rules.
 - Many clauses which began the effort were eventually violated.
 
+## Main ideas
 
 ### Why build mupy
 
