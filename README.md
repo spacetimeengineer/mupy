@@ -158,6 +158,9 @@ Once this script is run, it will generate a workspace directory with generated s
 
 ### Assemble parts
 
+### Start a business or something, IDK leave me alone!
+lol, have fun. 
+
 ## Note from the developer
 
 This package is not without it's shortcomings but there is something very real and very powerful here. I didnt originally build this for the community, rather it was set of requirements that was fufilled. I built this for myself because needed a tool that would do exactly what I needed it to do.
