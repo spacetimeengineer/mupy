@@ -151,6 +151,9 @@ assembly_0.include(panel_b, panel_b_assembly_coords)
 
 ### Simulate assembly
 
+Once this script is run, it will generate a workspace directory with generated scad source code files. This code is used to render .stl files and then import them into an assembly hierarchy which can be simulated from any point in the assembly. Just click on correct assembly .scad file.
+
+
 ### Print Parts
 
 ### Assemble parts
