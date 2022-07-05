@@ -112,7 +112,6 @@ workspace = mu.WorkSpace(str(Path.home())+"/"+workspace_name) # Creates workspac
 
 3. Defines hardware by name and system-code. 
 
-    - System-codes have many permutations and should be thought of as encoded parameterizations for scad function calls.
 
 ```python
 panel_a = mu.Hardware("panel_a", "CUBX0177-BPAN-B25SR2P5-X8Y8P18-RT-SX25Y25-X8Y8-X20Y20Z5")
@@ -385,15 +384,15 @@ If you are a 3D printer enthusist, wood worker, developer, artist, inventor, ent
 
 ### Prerequisites
 
-1.) Install openscad ( openscad programming language )
+1. Install openscad ( openscad programming language )
 
     apt install openscad
 
-2.) Install python3-pip ( python package manager )
+2. Install python3-pip ( python package manager )
 
     apt install python3-pip
 
-3.) Install git (if you plan to contribute or install by cloning) - Follow instrucations at https://www.atlassian.com/git/tutorials/install-git
+3. Install git (if you plan to contribute or install by cloning) - Follow instrucations at https://www.atlassian.com/git/tutorials/install-git
 
     $ sudo apt-get update 
     
@@ -401,7 +400,7 @@ If you are a 3D printer enthusist, wood worker, developer, artist, inventor, ent
 
 ### Install mupy
 
-1.) Install mupy from the python3 package-manager.
+1. Install mupy from the python3 package-manager.
 
     pip3 install mupy
 
@@ -409,31 +408,31 @@ If you are a 3D printer enthusist, wood worker, developer, artist, inventor, ent
 
 ### Prerequisites
 
-1.) Install homebrew  
+1. Install homebrew  
     
     $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" brew doctor
     
-2.) Set python as an enviornmental varible. 
+2. Set python as an enviornmental varible. 
 
     $ export PATH="/usr/local/opt/python/libexec/bin:$PATH"
     
-3.) Install git (if you plan to contribute or install by cloning)
+3. Install git (if you plan to contribute or install by cloning)
 
     $ brew install git
     
-4a.) Install python3 and pip3 (https://docs.python-guide.org/starting/install3/osx/)
+4. Install python3 and pip3 (https://docs.python-guide.org/starting/install3/osx/)
 
     $ brew install python3
 
-4b.) Post-install routine.   
+5. Post-install routine.   
 
     $ brew postinstall python3
 
-5.) Install openscad - Follow instructions at https://openscad.org/downloads.html or https://ports.macports.org/port/openscad/
+6. Install openscad - Follow instructions at https://openscad.org/downloads.html or https://ports.macports.org/port/openscad/
 
 ### Install mupy
 
-1.) Install mupy from the python3 package-manager.
+1. Install mupy from the python3 package-manager.
 
     pip3 install mupy
 
@@ -441,18 +440,18 @@ If you are a 3D printer enthusist, wood worker, developer, artist, inventor, ent
 
 ### Prerequisites
 
-1.) Install Python3 & pip3
+1. Install Python3 & pip3
 
     Navigate to https://www.python.org/downloads/
     
-3.) Install git (if you plan to contribute or install by cloning)
+2. Install git (if you plan to contribute or install by cloning)
 
     Navigate to https://gitforwindows.org/
     apt install openscad
 
 ### Install mupy
 
-1.) Install mupy from the python3 package-manager.
+1. Install mupy from the python3 package-manager.
 
     pip3 install mupy
 
@@ -658,11 +657,11 @@ Upon pressing 'enter' by the mucli commmand line tool or running a workspace wit
 
 ## Running openscad
 
-1.) Navigate to workspace directory
+1. Navigate to workspace directory
 
     $ cd ~/custom_box
 
-2.) Open 'box_assembly' file
+2. Open 'box_assembly' file
 
     $ openscad box_assembly_A1cfc7f.scad
 
