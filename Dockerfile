@@ -19,25 +19,16 @@
 
 # Base image.
 
-FROM ubuntu:latest
+FROM ubuntu:18.04
 
 LABEL name = "μ"
 LABEL version="1.0"
 LABEL description="Manufacturing Utility" 
 
 
-# Update and upgrade linux systems within the container.
-RUN apt install -y apt-transport-https
-RUN apt-get update 
-RUN apt-get install -y apt-utils
-RUN apt-get install -y --no-install-recommends locales
-RUN apt-get install -y --no-install-recommends --reinstall software-properties-common 
-RUN apt-get install -y --no-install-recommends ca-certificates 
-RUN apt-get install -y --no-install-recommends git 
-RUN apt-get install -y --no-install-recommends make
-
 # Adds openscad repository to the apt-get package manager.
-
+RUN apt update
+#RUN apt -y install software-properties-common
 RUN add-apt-repository ppa:openscad/releases
 
 
@@ -47,7 +38,6 @@ RUN apt install -y openscad \
     && rm -rf /var/lib/apt/lists/*
 
 
-# 
 
 RUN mkdir -p /root/.local/share /.local/share
 

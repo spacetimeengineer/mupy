@@ -94,7 +94,7 @@
 
 ### Do some code
 
-- Import the mupy library
+1.) Import the mupy library
 
 ```python
 
@@ -102,7 +102,7 @@ import mupy.core as mu
 
 ```
 
-- Set up workspace directory
+2.) Set up workspace directory
 
 ```python
 workspace_name = "custom_box"
@@ -110,7 +110,7 @@ workspace = mu.WorkSpace(str(Path.home())+"/"+workspace_name) # Creates workspac
 
 ```
 
-- Defines hardware by name and system-code. 
+3.) Defines hardware by name and system-code. 
 
     - System-codes have many permutations and should be thought of as encoded parameterizations for scad function calls.
 
@@ -131,7 +131,7 @@ panel_b_assembly_coords = mu.Coordinates(0,1,[0, 20 * 15 / 2 + 210, 0],[0, 20 * 
 
 ```
 
-- Defines assembly
+4.) Defines assembly
 
 ```python
 assembly_0 = mu.Assembly("box_assembly")
@@ -140,7 +140,7 @@ assembly_0.include(panel_b, panel_b_assembly_coords)
 
 ```
 
-- Run assembly
+5.) Run assembly
 
 ```python
 assembly_0 = mu.Assembly("box_assembly")
