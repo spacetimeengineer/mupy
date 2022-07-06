@@ -386,7 +386,9 @@ If you are a 3D printer enthusist, wood worker, developer, artist, inventor, ent
 
 1. Install openscad ( openscad programming language )
 
-  $ apt install openscad
+```console
+$ apt install openscad
+```
 
 2. Install python3-pip ( python package manager )
 
