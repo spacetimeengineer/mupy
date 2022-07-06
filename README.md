@@ -84,7 +84,8 @@
   </ol>
 </details>
 
-
+# DISCLAIMER
+This system is in active development. The README.md here is unreliable,unfinished and littered with errors until this disclaimer is removed. While this package hnoicalky publicerelease schedual and many components are still being built. This system will remain in beta for about a year from publishing and will be published a month from the time of writing this.
 # About
 
 μpy or mupy is a shorthand for python manufacturing utility and reffers to a new system development technology implemented in the form of a python pip installable package. The μpy package essentially proposes to the open source community in the form of a powerful tool, a model for designing, distributing and manufacturing technology with an emphasis on community, modularity, decentralization, scaling, customization, parametrization, encodability and certification. Currently mupy contains rendereings for quadrilions of parts for 3D print and exponentially more can become available with the help of users in the future.
