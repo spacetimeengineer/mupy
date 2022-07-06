@@ -407,7 +407,7 @@ $ sudo apt-get install git
 
 1. Install mupy from the python3 package-manager.
 ```console
-pip3 install mupy
+$ pip3 install mupy
 ```
 
 ## MacOS Installation
@@ -459,13 +459,13 @@ $ brew postinstall python3
     Navigate to https://gitforwindows.org/
 
 ```console
-apt install openscad
+$ apt install openscad
 ```
 ### Install mupy
 
 1. Install mupy from the python3 package-manager.
 ```console
-pip3 install mupy
+$ pip3 install mupy
 ```
 
 ## Docker Container ( optional )
