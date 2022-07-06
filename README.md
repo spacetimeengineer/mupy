@@ -85,7 +85,7 @@
 </details>
 
 # DISCLAIMER
-This mostly applies to people following me. This system is in active development. The README.md here should be considered unreliable, unfinished and littered with errors (includin spulling erors) until this disclaimer is removed. This package is activly being built being and designed. I am working very hard to deliver this package because I am genuinly excited but I need to test certain things that require a public status. Thankyou for your patience. - Mike
+This system is in active development. The README.md here should be considered unreliable, unfinished and littered with errors (includin spulling erors) until this disclaimer is removed. This package is activly being built being and designed. I am working very hard to deliver this package because I am genuinly excited but I need to test certain things that require a public status. Thankyou for your patience. - Mike
 
 
 # About
