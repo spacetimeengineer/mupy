@@ -391,53 +391,61 @@ $ apt install openscad
 ```
 
 2. Install python3-pip ( python package manager )
-
-    apt install python3-pip
+```console
+$ apt install python3-pip
+```
 
 3. Install git (if you plan to contribute or install by cloning) - Follow instrucations at https://www.atlassian.com/git/tutorials/install-git
-
-    $ sudo apt-get update 
-    
-    $ sudo apt-get install git
+```console
+$ sudo apt-get update 
+```
+```console
+$ sudo apt-get install git
+```
 
 ### Install mupy
 
 1. Install mupy from the python3 package-manager.
-
-    pip3 install mupy
+```console
+pip3 install mupy
+```
 
 ## MacOS Installation
-
+* There are non-trivial issues associated with this installation. MacOS makes it very difficult to install openscad on certain versions such as Montery, because of verification protocols implemented by apple. This is unfortuneate because at this time mupy essentially wries scad code but requires an instance of the installation to function. My apologies.
 ### Prerequisites
 
 1. Install homebrew  
-    
-    $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" brew doctor
+```console
+$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" brew doctor
+```
     
 2. Set python as an enviornmental varible. 
+```console
+$ export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+```
 
-    $ export PATH="/usr/local/opt/python/libexec/bin:$PATH"
-    
 3. Install git (if you plan to contribute or install by cloning)
+```console
+$ brew install git
+```
 
-    $ brew install git
-    
 4. Install python3 and pip3 (https://docs.python-guide.org/starting/install3/osx/)
-
-    $ brew install python3
-
+```console
+$ brew install python3
+```
 5. Post-install routine.   
-
-    $ brew postinstall python3
+```console
+$ brew postinstall python3
+```
 
 6. Install openscad - Follow instructions at https://openscad.org/downloads.html or https://ports.macports.org/port/openscad/
 
 ### Install mupy
 
 1. Install mupy from the python3 package-manager.
-
+```console
     pip3 install mupy
-
+```
 ## Windows Installation
 
 ### Prerequisites
@@ -449,31 +457,35 @@ $ apt install openscad
 2. Install git (if you plan to contribute or install by cloning)
 
     Navigate to https://gitforwindows.org/
-    apt install openscad
 
+```console
+apt install openscad
+```
 ### Install mupy
 
 1. Install mupy from the python3 package-manager.
-
-    pip3 install mupy
+```console
+pip3 install mupy
+```
 
 ## Docker Container ( optional )
 
 If you prefer touse the provided docker image you will need to install docker at https://docs.docker.com/get-docker/ .
 
 ### Build image
-
-    $ docker build -t mu .
+```console
+$ docker build -t mu .
+```
 
 ### Run container
-
-    $ docker run -i mu:latest
-
+```console
+$ docker run -i mu:latest
+```
 
 ### SSH into container
-
-    $ docker exec -it mu:latest /bin/bash
-
+```console
+$ docker exec -it mu:latest /bin/bash
+```
 
     
 # Getting Started
@@ -482,8 +494,9 @@ If you prefer touse the provided docker image you will need to install docker at
 
 μpy comes with it bundled a command-line-interface application known as the mucli and behaves much like a linux terminal except that it only accepts special strings known as 'system-codes'. mucli was developed to express to users μpy's most rudimetry operation ; dispensing manufacturing resources for a given system code. To enter mucli, in the linux terminal
 
-    :~$ ./mucli 
-
+```console
+$ ./mucli 
+```
 
 ### Enter system-code
 The mucli is a general purpose utility and represents the most rudimetry operation of the mupy technology ; if you enter a code and it responds with system resources, schematics and renderings. An example..
@@ -661,11 +674,15 @@ Upon pressing 'enter' by the mucli commmand line tool or running a workspace wit
 
 1. Navigate to workspace directory
 
-    $ cd ~/custom_box
+```console
+$ cd ~/custom_box
+```
 
 2. Open 'box_assembly' file
 
-    $ openscad box_assembly_A1cfc7f.scad
+```console
+$ openscad box_assembly_A1cfc7f.scad
+```
 
 ### Animations
  In the openscad IDE, form the toolbar select View -> Animate and under the main view some animation inputs will appear. Select a frame rate and step count to run animation. 
