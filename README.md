@@ -715,22 +715,38 @@ System schemas also sometimes refered to less generally as hardware schemas are 
 
 
 # History
-This package was developed over 5 year period where it began as a thought experiment which ten turned into a real experiment which then turned into a research and development operation which then became a process which then became a programmible utility and libaary which then became a publishable useable package with an API and a CLI 
+
+This package was developed over 5 year period where it began as a thought experiment which then turned into a real experiment which then turned into a research and development operation which then became a programmible utility which then became a publishable useable package.
 
 ## Project ρ
 
-### One-offs were a nogo.
+### No One Offs
 
-### Manufacturing and development is messy and wasteful
+There was a need to move away from the development of a singular product. There needed to be a way to develop many products at once. interested in building a technology which would assist in the development and manufacturing of new technology itself. I wanted greater speed and cleaner development and better coomunity oversight so that problems could be more easily identified and remedied.
 
-### Trash and recycling 
+### Research, Development & Manufacturing is Messy
+
+In general, operations create watse. Trash, wasted time, expenses and it is generally better if we can bypass these things.  
 
 ### Needed a gamechager
 
-### Prime requirement : impossible requirements and infinite constraints
+### Prime Requirement : Technology Must Be Developed To Satisfy Extreme Requirements and Constraints
 
 
 Project ρ (Recursive Hardware Operations) was a project which explored hardware modularity and manufacturing tecquniques. The basic idea was to ask if there was some set of optimal shapes / limited parts which could make it easier to print and assemble anything. The idea was borrowed from legos except that the parts would need to be designed with specific requirements in mind that would improve the quality of any assembly especially when it comes to binding and unbinding.
+
+### General Modularity Requirements
+
+  - Maximize Material Independence / Material Configuration
+  - Maximize Constructibility / Deconstructability Freedom
+  - Minimize Manufacturing Time / Cost / Resources
+  - Maximize Bindability / Connectivity
+  - Minimize Required Tools
+  - Maxmize Compadible Part Count
+
+
+### CUBX0012 Family
+The flagship style of parts which were primarily developed during project rho was the CUBX0012 family.
 
 ![Alt Text](resources/rho_legend_0.png)
 
