@@ -716,20 +716,21 @@ System schemas also sometimes refered to less generally as hardware schemas are 
 
 # History
 
-This package was developed over six year period where it began as a thought experiment which then turned into a real experiment which then became a set of research and development operations which then became a set of programmable utilities for 3D printing and then became an API / CLI python package built for open source.
+This package was developed over six year period where it began as a thought experiment which then turned into a real experiment which then became a set of research and development operations which then became a set of programmable utilities for 3D printing purposes and then that was reenvisioned an API / CLI python package built for open source.
 
 
 ## Some context...
 
-In the beginning before I began development of mupy I had experienced a plethera of innefficiencies, difficulties and realities regarding research, development and manufacturing considerations which depressed me so bad that I almost quit engineering altogether. My problem was that I essentially had wanted to scale my developments and wanted to build bigger systems (which could tap into efficiency of scale functions) but lacked the time and resources to do so and when I finnally did acomplish something marketable I seemed to lacked enough passion to maintain the project thereaftearwardswhich was never good for stake holders. I need a project that I could build momentum on for the rest of my life. I needed something that would serve me and others to make us all a hundred times as pwerful but together a illion times as powerful.
+In the beginning before I began development of mupy I had experienced a plethera of innefficiencies, difficulties and realities regarding research, development and manufacturing innefficiencies which were so difficult to overcome that I considered quitting engineering altogether. I have very big goals but not the kind you kind. My problem was my that I essentially needed to scale my developments on such a level and needed to build bigger systems (which could tap into efficiency of scale functions) but I lacked the time and resources to do so and when I finnally did acomplish something interesting I seemed to lack the passion to guide the projects thereaftearwards. I needed something new and something I could build momentum on for the rest of my life, infact it would be built into the project. A game changer really. I decided that I would only focus on a big goal and the requirements and through constraints to see that goal through. 
+
 
 ### Primary Requirement & Constraint : Mandate Extreme Requirements and Constraints
+Mandating an extreme set of requirements and constraints will force a good idea if it exists. If the system is required to do impossible things then it will do impossible things if built. The primary constraint and goal
 
-If the system is required to do impossible things then it will do impossible things if built. 
+  - Mandate Primary Constraint : Build from nothing except what you have. 
+  - Mandate Primary Goal : Build a city in space and everything we need to take us there.
 
-### Build Large Spacecraft
-
-It cannot be underestimated the level of infrastructure needed to make a star destroyer level spacecraft in earth orbit. It is a ver difficult, dangerous and expensive in every sense of the meaning however such a craft would represent a new level of freedom in humaninty. I like this iodea because it is hard but it is also rewarding. What if we had a tool that could do this.
+  I know this sounds crazy but it is possible and I built mupy to prove it. It is my offering. We just need to tap into effeciencies which are there and waiting to be exracted.
 
 ## Project ρ
 
