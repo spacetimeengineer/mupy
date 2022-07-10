@@ -95,9 +95,9 @@ This system is in active development. The README.md here should be considered un
 
 ## Overview
 
-It is exteremly difficult to explain the scope of this packages intended and current capabilities but this overview paints a fairly simple picture of the general process a user would experience. It is possible to bypass the programming aspect alltogether if you are uncomfortable in which case the mucli application can provide renderings if you know the system codes of the things you would like to print.
+It is exteremly difficult to explain the full scope of this packages intended and current capabilities but this overview paints a fairly simple picture of the general process a user would adopt. It is possible to bypass the programming aspect alltogether if you are uncomfortable in which case the mucli application can provide renderings if you know the system codes of the things you would like to print.
 
-### Do some code
+### Program some code
 
 1. Import the mupy library
 
@@ -155,10 +155,12 @@ assembly_0.include(panel_b, panel_b_assembly_coords)
 
 ### Simulate assembly
 
-Once this script is run, it will generate a workspace directory with generated scad source code files. This code is used to render .stl files and then import them into an assembly hierarchy which can be simulated from any point in the assembly. Just click on correct assembly .scad file.
+Once this script is run, it will generate a workspace directory with generated scad source code files. These files build a hierarchical stucture for defining the overall assembly. Thisbreaks things into steps with no specific order. These files are marked with an 'A' or a 'P' at the beginning of thier hash in the file name to signify an assembly or a part respectivly. This code is used to render stl files and then import them into an assembly hierarchy which can be simulated from any point in the assembly. Just click on intended assembly .scad file.
 
 
 ### Print Parts
+
+To print parts just import the stl file generated into CURA and proceed with 3Dprint configuration. In general all 3D printed parts require configuration.
 
 ### Assemble parts
 
@@ -713,15 +715,31 @@ System schemas also sometimes refered to less generally as hardware schemas are 
 
 
 # History
-This package was developed over 5 year period where it began as an experiment which supported a small innovation operation. 
+This package was developed over 5 year period where it began as a thought experiment which ten turned into a real experiment which then turned into a research and development operation which then became a process which then became a programmible utility and libaary which then became a publishable useable package with an API and a CLI 
 
 ## Project ρ
 
-Project ρ (Recursive Hardware Operations) was a project which explored hardware modularity and manufacturing tecquniques . The basic idea was to ask if there was some set of optimal shapes / limited parts which could make it easier to print and assemble anything. The idea was borrowed from legos except that the parts would need to be designed with specific requirements in mind that would improve the quality of any assembly especially when it comes to binding and unbinding.
+### One-offs were a nogo.
+
+### Manufacturing and development is messy and wasteful
+
+### Trash and recycling 
+
+### Needed a gamechager
+
+### Prime requirement : impossible requirements and infinite constraints
+
+
+Project ρ (Recursive Hardware Operations) was a project which explored hardware modularity and manufacturing tecquniques. The basic idea was to ask if there was some set of optimal shapes / limited parts which could make it easier to print and assemble anything. The idea was borrowed from legos except that the parts would need to be designed with specific requirements in mind that would improve the quality of any assembly especially when it comes to binding and unbinding.
 
 ![Alt Text](resources/rho_legend_0.png)
 
  This was mostly implemented with 3D printers and the main goal of this project was to create hardware families which could satisfy a great deal of requirements pertaining to the possible decentralized development of large scale systems which granted effeciency-of-scale level cost-reduction. 
+
+### Build a star destroyer level spacecraft in orbit.
+
+It cannot be underestimated the level of infrastructure needed to make a star destroyer level spacecraft in earth orbit. It is a ver difficult, dangerous and expensive in every sense of the meaning however such a craft would represent a new level of freedom in humaninty. I like this iodea because it is hard but it is also rewarding. What if we had a tool that could do this.
+
 
 ### Goals
 
@@ -736,6 +754,11 @@ Project ρ (Recursive Hardware Operations) was a project which explored hardware
 Project ρ++ was an extension of project ρ. Just some context ; in these days the hardware 'elements' that were in the process of being developed and tested were treated as agents which expressed the ρ hardware assembly language. Some more context ; A hardware assembly language should be compared to a software programming language since that if we program software and we assemble hardware then it may be nessecary to build a hardware assembly language which we would classify legos as being.
 
 ![Alt Text](resources/rhopp_logo_0.png)
+
+### Needed robotics
+
+### Needed 
+
 
 ### Goals
 
@@ -774,7 +797,9 @@ The main thing about project mu was that the realization set in and said it wasn
 
 ### Redesign model with community
 
+### Manufacturing codes
 
+### Material codes
 
 ### Inegrating technologies
 
