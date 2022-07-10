@@ -701,7 +701,7 @@ Feel free to modify any scad code for whatever reason you see fit (typically pos
 
 You will need to download Ultimaker Cura in order to move forward with this step. You can download it at https://ultimaker.com/software/ultimaker-cura .
 
-## Running Cura
+## Running Cura - Rough Overview
 
   1. Open Ultimaker Cura
 
@@ -718,6 +718,11 @@ Once downloaded you should take time to familiarize yoruself with basic 3D print
 Some of these things and more are configurable in in Cura, which can be thought of as a pre-print application which feeds instructions to the 3D printers with the gcode file it generates. For starters try importing an stl file generated from custom_box.py
 
   2. In the header select File -> Open File(s) to load an object.
+  3. Configure position and angle of object by selecting it.
+  4. Add any more additional objects that you may want to fit on print bed be repeating steps 1 and 2 ( Make sure the 3D printer model or print-bed size is known and configured by the Cura system. ).
+  5. Configure print settings.
+  6. Generate gcode file and store on SD drive ( or whatever the 3D printer requires )
+  7. 3D Print!
 
 # Concepts
 
