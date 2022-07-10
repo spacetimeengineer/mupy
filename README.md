@@ -716,21 +716,23 @@ System schemas also sometimes refered to less generally as hardware schemas are 
 
 # History
 
-This package was developed over 5 year period where it began as a thought experiment which then turned into a real experiment which then turned into a research and development operation which then became a programmible utility which then became a publishable useable package.
-
-## Project ρ
+This package was developed over six year period where it began as a thought experiment which then turned into a real experiment which then became a set of research and development operations which then became a set of programmable utilities for 3D printing and then became an API / CLI python package built for open source.
 
 
-### Gamechanger
+## Preamble
 
-  - No more one-offs.
-  - Research, development and manufacturing is messy.
-  - Everything is just so expensive.
+In the beginning before I began development of mupy I had experienced a plethera of innefficiencies, difficulties and realities regarding research, development and manufacturing which depressed me so bad that I almost quit engineering altogether. My problem was that I essentially wanted to build bigger things but lacked the time and resources to do so, so I decided I would build something desgined to solve just that.
 
 ### Primary Requirement & Constraint : Mandate Extreme Requirements and Constraints
 
+### Build Large Spacecraft
+
+It cannot be underestimated the level of infrastructure needed to make a star destroyer level spacecraft in earth orbit. It is a ver difficult, dangerous and expensive in every sense of the meaning however such a craft would represent a new level of freedom in humaninty. I like this iodea because it is hard but it is also rewarding. What if we had a tool that could do this.
+
+## Project ρ
 
 Project ρ (Recursive Hardware Operations) was a project which explored hardware modularity and manufacturing tecquniques. The basic idea was to ask if there was some set of optimal shapes / limited parts which could make it easier to print and assemble anything. The idea was borrowed from legos except that the parts would need to be designed with specific requirements in mind that would improve the quality of any assembly especially when it comes to binding and unbinding.
+
 
 ### General Modularity Requirements
 
@@ -747,10 +749,6 @@ Project ρ (Recursive Hardware Operations) was a project which explored hardware
 ![Alt Text](resources/rho_legend_0.png)
 
 The flagship family which represented project ρ was the CUBX0012 family. This was the best developed cubic family and propelled project ρ since CUBX0012 was so general purpose. It can be thought of as a family making up hardware elements which the simplest form attempted to build boxes from side panels ; a box with a cavity if cut up into six equal shapes would represent the general archetype geometry consituting CUBX0012 hardware elements. From more simple parts can more complex geometry be derived making up new types which belong to CUBX0012. CUBX0012 is currently retired but will be replaced soon.
-
-### Build Large Spacecraft
-
-It cannot be underestimated the level of infrastructure needed to make a star destroyer level spacecraft in earth orbit. It is a ver difficult, dangerous and expensive in every sense of the meaning however such a craft would represent a new level of freedom in humaninty. I like this iodea because it is hard but it is also rewarding. What if we had a tool that could do this.
 
 
 ### Goals
@@ -769,7 +767,7 @@ Project ρ++ was an extension of project ρ. Just some context ; in these days t
 
 ### Needed robotics
 
-### Needed 
+### Needed many components
 
 
 ### Goals
@@ -807,11 +805,21 @@ The main thing about project mu was that the realization set in and said it wasn
 
 ## Roadmap
 
-### Redesign model with community
+### Build a community
 
-### Manufacturing codes
+### Redesign model
 
-### Material codes
+### More family codes
+
+### More scripts codes
+
+### Automate certification
+
+### Implement namespaces
+
+### Implament manufacturing codes
+
+### Implament Material codes
 
 ### Inegrating technologies
 
