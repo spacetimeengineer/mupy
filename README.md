@@ -720,17 +720,14 @@ This package was developed over 5 year period where it began as a thought experi
 
 ## Project ρ
 
-### No One Offs
 
-There was a need to move away from the development of a singular product. There needed to be a way to develop many products at once. interested in building a technology which would assist in the development and manufacturing of new technology itself. I wanted greater speed and cleaner development and better coomunity oversight so that problems could be more easily identified and remedied.
+### Gamechanger
 
-### Research, Development & Manufacturing is Messy
+  - No more one-offs.
+  - Research, development and manufacturing is messy.
+  - Everything is just so expensive.
 
-In general, operations create watse. Trash, wasted time, expenses and it is generally better if we can bypass these things.  
-
-### Needed a gamechager
-
-### Prime Requirement : Technology Must Be Developed To Satisfy Extreme Requirements and Constraints
+### Primary Requirement & Constraint : Mandate Extreme Requirements and Constraints
 
 
 Project ρ (Recursive Hardware Operations) was a project which explored hardware modularity and manufacturing tecquniques. The basic idea was to ask if there was some set of optimal shapes / limited parts which could make it easier to print and assemble anything. The idea was borrowed from legos except that the parts would need to be designed with specific requirements in mind that would improve the quality of any assembly especially when it comes to binding and unbinding.
@@ -740,19 +737,18 @@ Project ρ (Recursive Hardware Operations) was a project which explored hardware
   - Maximize Material Independence / Material Configuration
   - Maximize Constructibility / Deconstructability Freedom
   - Minimize Manufacturing Time / Cost / Resources
-  - Maximize Bindability / Connectivity
-  - Minimize Required Tools
-  - Maxmize Compadible Part Count
-
+  - Maximize Bindability / Connectivity / Adaptibility
+  - Minimize Required Tools / Assembly Time
+  - Maxmize Connective Hardware Count
 
 ### CUBX0012 Family
-The flagship style of parts which were primarily developed during project rho was the CUBX0012 family.
+
 
 ![Alt Text](resources/rho_legend_0.png)
 
- This was mostly implemented with 3D printers and the main goal of this project was to create hardware families which could satisfy a great deal of requirements pertaining to the possible decentralized development of large scale systems which granted effeciency-of-scale level cost-reduction. 
+The flagship family which represented project ρ was the CUBX0012 family. This was the best developed cubic family and propelled project ρ since CUBX0012 was so general purpose. It can be thought of as a family making up hardware elements which the simplest form attempted to build boxes from side panels ; a box with a cavity if cut up into six equal shapes would represent the general archetype geometry consituting CUBX0012 hardware elements. From more simple parts can more complex geometry be derived making up new types which belong to CUBX0012. CUBX0012 is currently retired but will be replaced soon.
 
-### Build a star destroyer level spacecraft in orbit.
+### Build Large Spacecraft
 
 It cannot be underestimated the level of infrastructure needed to make a star destroyer level spacecraft in earth orbit. It is a ver difficult, dangerous and expensive in every sense of the meaning however such a craft would represent a new level of freedom in humaninty. I like this iodea because it is hard but it is also rewarding. What if we had a tool that could do this.
 
