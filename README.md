@@ -719,7 +719,7 @@ System schemas also sometimes refered to less generally as hardware schemas are 
 This package was developed over six year period where it began as a thought experiment which then turned into a real experiment which then became a set of research and development operations which then became a set of programmable utilities for 3D printing and then became an API / CLI python package built for open source.
 
 
-## Preamble
+## Some context...
 
 In the beginning before I began development of mupy I had experienced a plethera of innefficiencies, difficulties and realities regarding research, development and manufacturing which depressed me so bad that I almost quit engineering altogether. My problem was that I essentially wanted to build bigger things but lacked the time and resources to do so, so I decided I would build something desgined to solve just that.
 
