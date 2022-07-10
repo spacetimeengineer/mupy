@@ -689,15 +689,34 @@ $ openscad box_assembly_A1cfc7f.scad
 ```
 
 ### Animations
- In the openscad IDE, form the toolbar select View -> Animate and under the main view some animation inputs will appear. Select a frame rate and step count to run animation. 
+ In the openscad IDE, form the toolbar select View -> Animate and under the main view some animation inputs will appear. Select a frame rate and step count to run animation.
+
+### Generating Gifs
+I use a utility called ImageMagick and you can learn more about it from Bryan Duxbury's Blog at https://bryanduxbury.com/2014/01/16/creating-animated-gifs-from-openscad/. 
 
 ### Modifying generated code
 
 # 3D Printing
 
-You will need to download Ultimaker Cura in order to move forward with this step.
+You will need to download Ultimaker Cura in order to move forward with this step. You can download it at https://ultimaker.com/software/ultimaker-cura .
 
-## Running cura
+## Running Cura
+
+  1. Open Ultimaker Cura
+
+Once downloaded you should take time to familiarize yoruself with basic 3D printing concepts. Some common examples include 
+
+- Print Bed Temperature
+- Nozzle Temperature
+- Retraction State
+- Cleaning
+- Filament
+- Supports 
+- Print Speed
+
+Some of these things and more are configurable in in Cura, which can be thought of as a pre-print application which feeds instructions to the 3D printers with the gcode file it generates. For starters try importing an stl file generated from custom_box.py
+
+  2. In the header select File -> Open File(s) to load an object.
 
 # Concepts
 
@@ -729,8 +748,10 @@ Mandating an extreme set of requirements and constraints will force a good idea 
 
   - Mandate Primary Constraint : Build from nothing except what you have. 
   - Mandate Primary Goal : Build a city in space and everything we need to take us there.
+  - Mandate Primary Requirement : Build a utility which will assist in that goal.
 
   I know this sounds crazy but it is possible and I built mupy to prove it. It is my offering. We just need to tap into effeciencies which are there and waiting to be exracted.
+
 
 ## Project ρ
 
