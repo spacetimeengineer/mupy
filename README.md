@@ -797,15 +797,18 @@ Project ρ++ was an extension of project ρ. Just some context ; in these days t
 
 ### Needed robotics
 
-### Needed many components
+### Needed more components
 
+### Needed more materials
+
+### Needed more manufacturing
 
 ### Goals
 
 ### Lessons
 
 - Hardware must be schemaless ; each type code dictates it's own rules.
-
+- There was no one-universal schema.
 
 
 ## Project ψ
