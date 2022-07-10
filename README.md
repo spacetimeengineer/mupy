@@ -695,6 +695,7 @@ $ openscad box_assembly_A1cfc7f.scad
 I use a utility called ImageMagick and you can learn more about it from Bryan Duxbury's Blog at https://bryanduxbury.com/2014/01/16/creating-animated-gifs-from-openscad/. 
 
 ### Modifying generated code
+Feel free to modify any scad code for whatever reason you see fit (typically position, angle orother  parameterization) since it is easy enough to regenerate. Keep in mind that the hashes in the filename(s) will change.
 
 # 3D Printing
 
