@@ -721,9 +721,11 @@ This package was developed over six year period where it began as a thought expe
 
 ## Some context...
 
-In the beginning before I began development of mupy I had experienced a plethera of innefficiencies, difficulties and realities regarding research, development and manufacturing which depressed me so bad that I almost quit engineering altogether. My problem was that I essentially wanted to build bigger things but lacked the time and resources to do so, so I decided I would build something desgined to solve just that.
+In the beginning before I began development of mupy I had experienced a plethera of innefficiencies, difficulties and realities regarding research, development and manufacturing considerations which depressed me so bad that I almost quit engineering altogether. My problem was that I essentially had wanted to scale my developments and wanted to build bigger systems (which could tap into efficiency of scale functions) but lacked the time and resources to do so and when I finnally did acomplish something marketable I seemed to lacked enough passion to maintain the project thereaftearwardswhich was never good for stake holders. I need a project that I could build momentum on for the rest of my life. I needed something that would serve me and others to make us all a hundred times as pwerful but together a illion times as powerful.
 
 ### Primary Requirement & Constraint : Mandate Extreme Requirements and Constraints
+
+If the system is required to do impossible things then it will do impossible things if built. 
 
 ### Build Large Spacecraft
 
@@ -794,6 +796,7 @@ Project ψ (Parametric System Instruction) was a project which explored hardware
 
 The main thing about project mu was that the realization set in and said it wasnt just about modularity anymore, it was about manufacturing anything, even if they were oneoffs. 
 
+![Alt Text](resources/model_0.png)
 
 ### Goals
 
