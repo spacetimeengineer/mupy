@@ -502,7 +502,7 @@ $ ./mucli
 ```
 
 ### Enter system-code
-The mucli is a general purpose utility and represents the most rudimetry operation of the mupy technology ; if you enter a code and it responds with system resources, schematics and renderings. An example..
+The mucli is a general purpose utility and represents the most rudimetry operation of the mupy technology ; if you enter a code and it responds with system resources, schematics and renderings. An example.
 
     μ:# CUBX0006-BLK-L1000W200H15
 
