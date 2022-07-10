@@ -95,6 +95,8 @@ This system is in active development. The README.md here should be considered un
 
 ## Overview
 
+It is exteremly difficult to explain the scope of this packages intended and current capabilities but this overview paints a fairly simple picture of the general process a user would experience. It is possible to bypass the programming aspect alltogether if you are uncomfortable in which case the mucli application can provide renderings if you know the system codes of the things you would like to print.
+
 ### Do some code
 
 1. Import the mupy library
@@ -165,8 +167,11 @@ lol, have fun.
 
 ## Note from the developer
 
+- Its a model thant needsto be perfected.
+- It is buildt with sub-optimaal components and will eventually need to be rewritten I think.
+- It ws desgined with requirements only. 
+- 
 
-## Main ideas
 
 ### Why build mupy
 
