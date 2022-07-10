@@ -165,12 +165,6 @@ lol, have fun.
 
 ## Note from the developer
 
-This package is not without it's shortcomings but there is something very real and very powerful here. I didnt originally build this for the community, rather it was set of requirements that was fufilled. I built this for myself because needed a tool that would do exactly what I needed it to do.
-
-- Suffers Scope Creep with is why the model must be redesigned but this time by a community which has learned lessons from the previuous iteration. Model is roulghy well defined.
-- Open scad is not integrated in, rather mupy is a library that writes openscad code. 
-- Each hardware family contains its own rules.
-- Many clauses which began the effort were eventually violated.
 
 ## Main ideas
 
