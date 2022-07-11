@@ -178,6 +178,16 @@ lol, have fun.
 
 ## Note from the developer
 
+This project was developed purely as a solution to a problem I was having which related to scaling. Ok, no problem there but the kinds of things I wanted to build were lets just say hehe lol, the kind of things you say at your last day as a board member.
+
+
+
+
+relating to scaling. More specificly there are things I would like to build that are just too damn expensie and too damn complex. But you see the margins between great expense and efficiency of scale lie in this system known as mupy. This system was designed to be theat extra piece which scales up certain aspects of 
+
+
+Infact the ways I write packages is just writing a bunch of utiliteis to automate things I already was doing so much. I never automate things that need no automation, I just give them shiny controls :)
+
 - Its a model thant needsto be perfected and this goes hand in hand with the fact that it is built with sub-optimal components (difficult to integrate the tools).
 - Its mostly for 3D rinting inpractice for me but that isnt nessecaryilythe only thing it can be used for.
 - It is a meal made with ingrediants which werent optimal but sufficient for demonstrating.
@@ -709,7 +719,8 @@ Some of these things and more are configurable in in Cura, which can be thought 
 # Concepts
 
 ## System Codes
-A system-code serves to identify a general system (literally anything physical,especially technological or worth manufacturing) and generate resources and metadata which help users manufacture said system at reduced cost. These resources include CAD files and annotated openscad source code directories containing assembly and operational animation routines which help users record and transmit and intepret complex manufacturing and assembly information.
+So the whole idea behind a system-code was that it was this thing which would theoretically speed up precision development and deployment in the fastest way deemed concievable within set requirements. Consider the engineer who wishes to design something and prototype it fast. Instead of employing the usual methods, they can save a great deal of time by programming it into a string ( 16 - 200 characters if we are being generous ). Ok, ok, ok... its not that simple ofcourse, the library would needs to pre-written and certified and the hardwork has arguably already been done at that point however the system-code offers many permutations which have not of been tested before. But what is a system-code?
+A system-code is a finite, often short-string representation of a physical part, machine or structure ; anything in principle really. It is technically a seed for the creation of a digital-twin representation of that physical 'system' (generally speaking ; a part, machine or structure or anything deserving of a system-code) and all the information regarding it's operation, assembly, manufacturing, cost and material characteristics to any arbitrary degree of complexity (digital twin exists as a python class object). Moreover tools exist to keep these string representations short and organized within thier countless permutations set. Additionally system-codes serve as a name or identifier without physical uniquness and hunan readability features keeping things intuitive. A system-code can also be thought of as something which generates resources and metadata that help users manufacture said system at reduced cost. These resources include CAD files and annotated openscad source code directories containing assembly and operational animation routines which help users record and transmit and intepret complex manufacturing and assembly information.
 
 ## Family Codes
 A system-code serves to identify a general system (literally anything physical,especially technological or worth manufacturing) and generate resources and metadata which help users manufacture said system at reduced cost. These resources include CAD files and annotated openscad source code directories containing assembly and operational animation routines which help users record and transmit and intepret complex manufacturing and assembly information.
