@@ -309,7 +309,7 @@ There are two main interfaces for mupy, a command line interface (CLI) and an ap
 - decentralized research and development
 
 
-### Structure
+### mupy Directory Structure
 
     ├── Dockerfile
     ├── examples
