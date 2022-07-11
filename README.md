@@ -144,7 +144,8 @@ Infact the ways I write packages is just writing a bunch of utiliteis to automat
 - Things I want
 
 
-
+## Main Points
+A collection or list of quick concepts, items and keywords which give an overview of whats mupy is all about.
 
 ### Why build mupy
 
