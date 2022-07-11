@@ -503,11 +503,17 @@ Each system-code corresponds to a specific part. Once typed press enter to gener
 ![Alt Text](resources/CUBX0006-BLK-L2438P4W38H89.png)
 
     μ:# CUBX0006-BLK-L1000W200H15
+
 ![Alt Text](resources/CUBX0006-BLK-L1000W200H15.png)
+
     μ:# CUBX0006-BLK-L1000W200H15
+
 ![Alt Text](resources/CUBX0006-BLK-L1000W200H15.png)
+
     μ:# CUBX0006-BLK-L1000W200H15
+
 ![Alt Text](resources/CUBX0006-BLK-L1000W200H15.png)
+
 
 ## custom_box.py
 
