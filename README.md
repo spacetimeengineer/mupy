@@ -221,6 +221,19 @@ lol, have fun.
 
     - Take the parts and keep all your f*cking money
 
+### What is it?
+
+- Supply Chain Mechanism
+
+- Compression Algorithm
+
+- Decentralized Innovation & Manufacturing Utility
+
+- 3D Part Generator & Library
+
+- Applications-Programming & Command-Line Interface
+
+- A proposal on how to build the future and avoid economic ruin
 
 ### How does it work?
 
@@ -809,17 +822,17 @@ The main thing about project mu was that the realization set in and said it wasn
 ## Roadmap
 
 ### Build a community
-
+This kind of thing wont go far without a community. This community would provide real goals, like real projects that can help us do bigger and better things like infrastructure. I know it sounds crazy but why not.
 ### Redesign model
-
+These kinds of complex systems always benifet froma rebirth into a more advanced or integrated form. Currently this version is a package with hobbled together applications making things work and evne well but it is not optimal and cannot do certain things I want it to do.
 ### More family codes
-
+More family codes means more parts to print or more possible things to assemble. This will reenforce the integrety of mupy and the likelyhood to attract users. Additioonally we want to add constraints that keep certified families clean of defunt parts which should not or could not be printed.
 ### More scripts codes
-
+We need people to request like invenstions or something with an emphasis on modular development so that we can assemble advancesd systenstogethr. Coordination will need to be had and this means people taking leadership.
 ### Automate certification
-
+Basically convert scripts to family codes and type codes with all parameterizations and encoding schemes built into some certification object.
 ### Implement namespaces
-
+It is unnclesr if family codes serve as name spaces but these are essentially needed for implementing some kind of package manager application.
 ### Implament manufacturing codes
 
 ### Implament Material codes
