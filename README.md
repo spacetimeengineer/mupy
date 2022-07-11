@@ -84,6 +84,41 @@
   </ol>
 </details>
 
+
+Table of contents
+=================
+
+<!--ts-->
+   * [About](#installation)
+      * [Overview](#overview)
+      * [Note From The Developer](#note-from-the-developer)
+      * [Main Points](#main-points)
+   * [Installation](#installation)
+      * [Linux Installation](#stdin)
+      * [MacOS Installation](#local-files)
+      * [Windows Installation](#remote-files)
+      * [Docker Installation](#multiple-files)
+   * [Getting Started](#tests)
+   * [Generating Output](#dependency)
+      * [Generated Workspace Directory](#stdin)
+      * [Running openscad](#local-files)
+      * [Windows Installation](#remote-files)
+      * [Docker Installation](#multiple-files)
+   * [3D Printing](#docker)
+      * [Running Cura - Rough Overview](#remote-files)
+   * [Concepts](#tests)
+      * [system-codes](#stdin)
+      * [family-codes](#local-files)
+      * [schemas](#remote-files)
+   * [History](#history)
+   * [Community](#community)
+     * [Roadmap](#roadmap)
+     * [Contributing](#contributing)
+     * [FAQs](#local)
+     * [Contacts](#contacts)
+     * [Acknowledgments](#acknowledgments)
+<!--te-->
+
 # DISCLAIMER
 This system is in active development. The README.md here should be considered unreliable, unfinished and littered with errors (includin spulling erors) until this disclaimer is removed. I need to test certain things which require public status. Thankyou for your patience. - Mike
 
