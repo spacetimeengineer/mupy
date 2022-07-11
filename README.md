@@ -490,8 +490,9 @@ $ docker exec -it mu:latest /bin/bash
 $ python3 <package_location>/mupy/mucli/mucli.py 
 ```
 
-### Enter system-code
-The mucli is a general purpose utility and represents the most rudimetry operation of the mupy technology ; if you enter a code and it responds with system resources, schematics and renderings. An example.
+### Inputing a system-code
+
+Each system-code corresponds to a specific part. Once typed press enter to generate resources. Here are some examples of system-codes and thier corresponding hardware elements.
 
     μ:# CUBX0006-BLK-L1000W200H15
 
