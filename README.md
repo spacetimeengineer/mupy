@@ -484,10 +484,10 @@ $ docker exec -it mu:latest /bin/bash
 
 ## mucli
 
-μpy comes with it bundled a command-line-interface application known as the mucli and behaves much like a linux terminal except that it only accepts special strings known as 'system-codes'. mucli was developed to express to users μpy's most rudimetry operation ; dispensing manufacturing resources for a given system code. To enter mucli, in the linux terminal
+μpy comes with it bundled a command-line-interface application known as the mucli and behaves much like a linux terminal except that it only accepts special strings known as 'system-codes'. mucli was developed to express to users μpy's most rudimetry operation ; dispensing manufacturing resources for a given system-code. To enter mucli, in the linux terminal, navigate to the mucli directory in the project folder
 
 ```console
-$ ./mucli 
+$ python3 <package_location>/mupy/mucli/mucli.py 
 ```
 
 ### Enter system-code
@@ -502,11 +502,11 @@ The mucli is a general purpose utility and represents the most rudimetry operati
 ![Alt Text](resources/CUBX0006-BLK-L2438P4W38H89.png)
 
     μ:# CUBX0006-BLK-L1000W200H15
-
+![Alt Text](resources/CUBX0006-BLK-L1000W200H15.png)
     μ:# CUBX0006-BLK-L1000W200H15
-
+![Alt Text](resources/CUBX0006-BLK-L1000W200H15.png)
     μ:# CUBX0006-BLK-L1000W200H15
-
+![Alt Text](resources/CUBX0006-BLK-L1000W200H15.png)
 
 ## custom_box.py
 
