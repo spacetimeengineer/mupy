@@ -95,7 +95,7 @@ This system is in active development. The README.md here should be considered un
 
 ## Overview
 
-It is exteremly difficult to explain the full scope of this packages intended and current capabilities but this overview paints a fairly simple picture of the general process a user would adopt. It is possible to bypass the programming aspect alltogether if you are uncomfortable in which case the mucli application can provide renderings if you know the system codes of the things you would like to print.
+It is exteremly difficult to explain the full scope of this packages capabilities (both current and intended) but this overview paints a fairly simple picture of the general process a user would adopt. It is possible to bypass the programming aspect alltogether if you are uncomfortable in which case the mucli application can provide renderings if you know the system-codes of the hardware you would like to print.
 
 ### Program some code
 
@@ -169,10 +169,15 @@ lol, have fun.
 
 ## Note from the developer
 
-- Its a model thant needsto be perfected.
-- It is buildt with sub-optimaal components and will eventually need to be rewritten I think.
-- It ws desgined with requirements only. 
-- 
+- Its a model thant needsto be perfected and this goes hand in hand with the fact that it is built with sub-optimal components (difficult to integrate the tools).
+- Its mostly for 3D rinting inpractice for me but that isnt nessecaryilythe only thing it can be used for.
+- It is a meal made with ingrediants which werent optimal but sufficient for demonstrating.
+- Goals Requirements and Contraints
+- It should be rewrittenwith better components
+
+- Things I want
+
+
 
 
 ### Why build mupy
@@ -220,7 +225,7 @@ There are two main interfaces for mupy, a command line interface (CLI) and an ap
 
     - hardware class objects combine system-codes and names.
 
-### Function
+### What are it's functions?
 
 - Simulation
 
@@ -271,7 +276,7 @@ There are two main interfaces for mupy, a command line interface (CLI) and an ap
 
     - General purpose utility for many research and development needs.
 
-### Form
+### What is it's form?
 
 - Horizontal abstraction layer 
 
@@ -425,21 +430,21 @@ $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/maste
     
 2. Set python as an enviornmental varible. 
 ```console
-$ export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+% export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 ```
 
 3. Install git (if you plan to contribute or install by cloning)
 ```console
-$ brew install git
+% brew install git
 ```
 
 4. Install python3 and pip3 (https://docs.python-guide.org/starting/install3/osx/)
 ```console
-$ brew install python3
+% brew install python3
 ```
 5. Post-install routine.   
 ```console
-$ brew postinstall python3
+% brew postinstall python3
 ```
 
 6. Install openscad - Follow instructions at https://openscad.org/downloads.html or https://ports.macports.org/port/openscad/
@@ -448,7 +453,7 @@ $ brew postinstall python3
 
 1. Install mupy from the python3 package-manager.
 ```console
-    pip3 install mupy
+% pip3 install mupy
 ```
 ## Windows Installation
 
@@ -456,20 +461,22 @@ $ brew postinstall python3
 
 1. Install Python3 & pip3
 
-    Navigate to https://www.python.org/downloads/
+  Navigate to https://www.python.org/downloads/ and follow install instructions.
     
 2. Install git (if you plan to contribute or install by cloning)
 
-    Navigate to https://gitforwindows.org/
+  Navigate to https://gitforwindows.org/ and follow install instructions.
 
-```console
-$ apt install openscad
-```
+3. Install openscad
+
+  Navigate to https://openscad.org/downloads and follow install instructions.
+
 ### Install mupy
 
 1. Install mupy from the python3 package-manager.
+
 ```console
-$ pip3 install mupy
+> pip3 install mupy
 ```
 
 ## Docker Container ( optional )
