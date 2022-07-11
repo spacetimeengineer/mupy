@@ -286,27 +286,24 @@ There are two main interfaces for mupy, a command line interface (CLI) and an ap
 
     - Small package, quadrillions of parts sofar.
 
-### Goals
+### What are the goals of mupy
+mupy looks to solve problems, not assert compliance to it's users so consider that it exists in the form as a well organized implementation (through multiple iterations of rewrite) of a script vault which is contained with functions that handle some specific use-case problem set. mupy in its current form is in it's infacny and littered with limitations which are hard to overcome without a community. In its current form it is tailored to 3D printers due to the 
 
-- increase development speed
+- Minimize development & manufacturing time
 
-- reduce development cost
+- Minimize development & manufacturing cost
 
-- decentralized manufacturing
+- Minimize development & manufacturing risk
 
-    - manufacture forks and guitar picks
+- Minimize development & manufacturing energy
 
-    - manufacture toasters and quantum computers
+- Maximize development & manufacturing output
 
-- massive scale system development
+- Maximize development & manufacturing value
 
-- system schematic database
+- Maximize development & manufacturing predicability
 
-- expose programmers to mechanical engineering
-
-- expose mechanical engineers to programming
-
-- decentralized research and development
+- Maximize development & manufacturing potential
 
 
 ### mupy Directory Structure
@@ -708,11 +705,11 @@ Mandating an extreme set of requirements and constraints will force a good idea 
 
 
 ## Project ρ
-
 Project ρ (Recursive Hardware Operations) was a project which explored hardware modularity and manufacturing tecquniques. The basic idea was to ask if there was some set of optimal shapes / limited parts which could make it easier to print and assemble anything. The idea was borrowed from legos except that the parts would need to be designed with specific requirements in mind that would improve the quality of any assembly especially when it comes to binding and unbinding.
 
 
 ### General Modularity Requirements
+Imagine basic legos are provided to you along with Knex, Erector Sets and Some RoBlocks to spice the deal and imagine you were supplied enough hardware such that you could build almost anything you want say a space ship or something but you realize that the hardware is not optimozed for the assembly of certain things or it could be better or something Well this was the basises for this new approach to researching and developting modular hardware ; It was about aving options to buidl things and a space ship wass a hard test that would supply the requirements needed to make the [arts really optimal.
 
   - Maximize Material Independence / Material Configuration
   - Maximize Constructibility / Deconstructability Freedom
