@@ -675,13 +675,13 @@ So the whole idea behind a system-code was that it was this thing which would th
 A system-code is a finite, often short-string representation of a physical part, machine or structure ; anything in principle really. It is technically a seed for the creation of a digital-twin representation of that physical 'system' (generally speaking ; a part, machine or structure or anything deserving of a system-code) and all the information regarding it's operation, assembly, manufacturing, cost and material characteristics to any arbitrary degree of complexity (digital twin exists as a python class object). Moreover tools exist to keep these string representations short and organized within thier countless permutations set. Additionally system-codes serve as a name or identifier without physical uniquness and hunan readability features keeping things intuitive. A system-code can also be thought of as something which generates resources and metadata that help users manufacture said system at reduced cost. These resources include CAD files and annotated openscad source code directories containing assembly and operational animation routines which help users record and transmit and intepret complex manufacturing and assembly information.
 
 ## Family Codes
-A system-code serves to identify a general system (literally anything physical,especially technological or worth manufacturing) and generate resources and metadata which help users manufacture said system at reduced cost. These resources include CAD files and annotated openscad source code directories containing assembly and operational animation routines which help users record and transmit and intepret complex manufacturing and assembly information.
+Family codes serve as a kind of namespace code (it may be changed to a namespace code in time) which references a particular library of scad functions ( in this particular case ) and is always set as the first code within the system-code string separated by a dash ('-'). A family code references a family of possible parts which is into 'types' which usually are of a similar style or framework regarding geometric rules set by the author. Types maintain thier own parameterization or schema ; this means that for a given type the schema is specific to that type although it is possible that this rule can be relaxed in tim with better progrmamming ; meaning that even types can maintain shifting schemas depending on parameterization choices.
 
 ## Type Codes
 A system-code serves to identify a general system (literally anything physical, especially technological or worth manufacturing) and generate resources and metadata which help users manufacture said system at reduced cost. These resources include CAD files and annotated openscad source code directories containing assembly and operational animation routines which help users record and transmit and intepret complex manufacturing and assembly information.
 
-## System Schemas
-System schemas also sometimes refered to less generally as hardware schemas are a pattern or archetype constant associated the form that defines the hardware itself. THese are best momemorized becasue one can more actuartly imagine parts if theyjust use the abstraction.
+## Schemas
+Schemas reference the patturn the system codes obey when storing parameterization information.
 
 
 # History
