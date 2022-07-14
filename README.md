@@ -376,11 +376,12 @@ $ python3 <package_location>/mupy/mucli/mucli.py
 
 ### Inputing a system-code
 
-- Each system-code corresponds to a specific part. Once typed press enter to generate resources. Here are some examples of system-codes and thier corresponding hardware elements.
+Each system-code corresponds to a specific part. Once typed press enter to generate resources. Here are some examples of system-codes and thier corresponding hardware elements.
 
 
     μ:# CUBX0006-BLK-L1000W200H15
 
+    
 ![Alt Text](resources/CUBX0006-BLK-L1000W200H15.png)
 
     μ:# CRSPGR022-SG-M1-T34W8-P15H15-B4-T
