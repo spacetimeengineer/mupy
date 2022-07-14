@@ -1,23 +1,21 @@
 ## Table of contents
 
 <!--ts-->
-   * [About](#installation)
+   * [About](#about)
       * [Overview](#overview)
       * [Note From The Developer](#note-from-the-developer)
       * [Main Points](#main-points)
    * [Installation](#installation)
-      * [Linux Installation](#stdin)
-      * [MacOS Installation](#local-files)
-      * [Windows Installation](#remote-files)
-      * [Docker Installation](#multiple-files)
-   * [Getting Started](#tests)
+      * [Linux Installation](#linux-installation)
+      * [MacOS Installation](#macos-installation)
+      * [Windows Installation](#windows-installation)
+      * [Docker Installation](#docker-installation)
+   * [Getting Started](#getting-started)
    * [Generating Output](#dependency)
-      * [Generated Workspace Directory](#stdin)
-      * [Running openscad](#local-files)
-      * [Windows Installation](#remote-files)
-      * [Docker Installation](#multiple-files)
-   * [3D Printing](#docker)
-      * [Running Cura - Rough Overview](#remote-files)
+      * [Generated Workspace Directory](#generating-workspace-directory)
+      * [Running openscad](#running-openscad)
+   * [3D Printing](#3d-printing)
+      * [Running Cura - Rough Overview](#running-cura-rough-overview)
    * [Concepts](#tests)
       * [system-codes](#stdin)
       * [family-codes](#local-files)
@@ -374,11 +372,11 @@ $ docker exec -it mu:latest /bin/bash
 $ python3 <package_location>/mupy/mucli/mucli.py 
 ```
 
-- system codes are fundemental to the mupy model and are explained further belo. They are essentially used to rapidly development partss and systems from pre-authored libraries. The system codes contain parameterization data and can be read/write by the human.
+- system codes are fundemental to the mupy model and are explained further below. They are essentially used to rapidly development partss and systems from pre-authored libraries. The system codes contain parameterization data and can be read/write by the human.
 
 ### Inputing a system-code
 
-Each system-code corresponds to a specific part. Once typed press enter to generate resources. Here are some examples of system-codes and thier corresponding hardware elements.
+- Each system-code corresponds to a specific part. Once typed press enter to generate resources. Here are some examples of system-codes and thier corresponding hardware elements.
 
     μ:# CUBX0006-BLK-L1000W200H15
 
