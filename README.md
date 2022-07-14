@@ -130,13 +130,9 @@ lol, have fun.
 
 ## Note from the developer
 
-I developed this package because I had things I wanted to do that I could not do without it in a nutshell. There are certain things that can never be buildt without muopy like functions, I believe someone would of eventually implemented a similar system that essentially encodes systems to a high degree of abstraction. 
+I developed this package because I had things I wanted to do that I could not do without it. I could never easily explain or justify my reasons for the form it took except that I wastrying to solve a problem and this was the natuural solution that presented itself through many iterations. I whole heartedly belive that someone now or someone has developed or will develop a similar technology because they utlimatly would of encoutered similar problems as I in manufacturing and evelopment. Ultimatly we want to reduce time money energy and risk. 
 
-Information technology is equivilent to energy advancedment except 
-
-
-Originally it started off as a bunch of scripts relating to 3D printing and wood working but eventually I could sense a meaningful model or context to relate these these functions given that I created more.
-
+I want to rebuild tis system eventually but only after a community has battle tested the system and identified features, concepts and mechanisms that would improve the model so that the commutiy could more efficienty interact with the system. I personally am treating this as a proposal of a systme but make no istake this is much more than a prototype. This is the real thing but sice the core is abstracted from the library there is much room for advancement without stepping non the toes of aspiring designers.
 
 - Its a model thant needsto be perfected and this goes hand in hand with the fact that it is built with sub-optimal components (difficult to integrate the tools).
 - Its mostly for 3D rinting inpractice for me but that isnt nessecaryilythe only thing it can be used for.
@@ -144,7 +140,17 @@ Originally it started off as a bunch of scripts relating to 3D printing and wood
 - Goals Requirements and Contraints
 - It should be rewrittenwith better components
 
-- Things I want
+
+### Who will tell the developers what to build?
+We need people (ussually non-engineers) to come up wth a requirement or something amaingf to build and give us a challeng. We shouldnt develop things that arent wanted idealy so we have less defunct family codes.
+
+### Things I want
+
+- Request modular compoent proposals. Ill try to ukd them if I know there will be users but not for yourentertainment I need to know you are using the yourself. 
+- Bigger Projects. Lets build a city in the sky assuming we start small.
+- User testing, Utilization, Critism, Battle testing
+- nBelivers who want to rebukld the world in our own image nd not antiqued ideas of the past. I am ready for the future.
+
 
 
 ## Main Points
