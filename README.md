@@ -135,7 +135,7 @@ lol, have fun.
 
 
 
-I developed this package because I had several things I needed to do that I could not do without it becasue there was never enough time in my lifetime to perform these tasks on my own and now I can theoretically can in this tools current form. I could never easily explain or justify my reasons for the form or scope this project took but I can say that I was trying to solve several difficult problems at once relating to innovation and scaling and this was the natural solution which presented itself through many iterations of goals, requirments, constraints and execution. Throughout this process of development the questions changed and the minset changed and the scope changed as well and so it was always difficult to give a strait anwser as to why anything was done the way it was but I hope if you use it mupy you will begin to understand and perhaps you can help make it better. 
+I developed this package because I had several things I was tring to do which I could not do without it becasue there wouldnt be enough time in my lifetime to perform these tasks on my own using conventional methods and now I have a chance. I could never easily explain or justify my reasons for the form or scope this project took but I can say that I was trying to solve several difficult problems at once relating to innovation and scaling and this was the natural solution which presented itself through many iterations of goals, requirments, constraints and execution. Throughout this process of development the questions changed and the minset changed and the scope changed as well and so it was always difficult to give a strait anwser as to why anything was done the way it was but I hope if you use it mupy you will begin to understand and perhaps you can help make it better. 
 
 I wanted to prove there was a better waay to build things but this system is limited and unoptimized but it still works great but I need people to belive that if I could build this then we could build anything. I whole heartedly belive that someone now or someone has developed or will develop a similar technology because they utlimatly would of encoutered similar problems as I in manufacturing and evelopment. Ultimatly we want to reduce time money energy and risk. 
 
@@ -148,22 +148,12 @@ Infrastructure.
 
 
 
-### Who will tell the developers what to build?
-We need people (ussually non-engineers) to come up wth a requirement or something amaingf to build and give us a challeng. We shouldnt develop things that arent wanted idealy so we have less defunct family codes.
-
-### Things I want
-
-- Request modular compoent proposals. Ill try to ukd them if I know there will be users but not for yourentertainment I need to know you are using the yourself. 
-- Bigger Projects. Lets build a city in the sky assuming we start small.
-- User testing, Utilization, Critism, Battle testing
-- nBelivers who want to rebukld the world in our own image nd not antiqued ideas of the past. I am ready for the future.
-
-
-
 ## Main Points
 A collection or list of quick concepts, items and keywords which give an overview of whats mupy is all about.
 
 ### What is it?
+
+I was trying to find a way to program hardware originally, almost like instead of a software programming language. 
 
 - Supply Chain Mechanism
 
@@ -658,8 +648,9 @@ Project ρ++ was an extension of project ρ. Just some context ; in these days t
 
 ### Lessons
 
-- Hardware must be schemaless ; each type code dictates it's own rules.
-- There was no one-universal schema.
+- Hardware must be schemaless ; each type should dictate it's own rules.
+- Needed a command-line interface instead of programming in scad. Too many parameterizations to handle manually.
+- Too many parts were required to optimize. Universal modularity clause of project rho needed to be abandonded in favor of non-universal garenteed modularity clause since configuration freedom is too invaluable and required for optimization. We do not need to lose modularity nessecarily but only require that some parts work with others generally.
 
 
 ## Project ψ
@@ -675,13 +666,10 @@ Project rho proved that there was no way in principle to establish a modular fam
 
 ### Goals
 
-- Handle parameterization
-
-- Required a predictable naming convention
-
-- Required a schema in order to implement 
+- Handle parameterization better and cleaner.
 
 ### Lessons
+- Abandond local modularity clause in favor of Why did with the creation of family codes did things need to be modular genrally. Hell, even 3D printed guitar picks should be given thier own systems codes since the system was built to handle it.
 
 ## Project μ
 
@@ -689,21 +677,18 @@ The main thing about project mu was that the realization set in and said it wasn
 
 ![Alt Text](resources/model_0.png)
 
-### Goals
+### Requirements of mupy
 
-- Re-envision everything as a system code.
+- Needs System-Codes
 
-- Make all genrations schemaless and utalize compression tecquiniques through abstraction
+- Schemaless
 
-- Multilayered abstraction.
+- Publishable Package
 
-- Make a kind of package manager utility which gives users better handles on project distribution and wrapping.
+- Assignes Assembly, Operational & Other Context
 
-- Make it a publish worthy package
+- Offers Applications Programming Interface (API)
 
-- make it as an api and a cli
-
-- Allow anything to be manufactured
 
 ## Roadmap
 
@@ -758,7 +743,7 @@ If you have a 3D printer it is an absolute must! You can print really great part
 Incalculable, since the family codes define thier own rules, it is difficult to measure the permutation count of parts. Currently in mupys infancy there are over a quadrillion parts. 
 
 ### Is it free?
-Yes! but only the core technology is free, the various family code libraries which should each contain thier own license which states the conditions for use. In most cases it is free to use but read the license.
+Yes! but only the core technology is free, the various family code libraries which should each contain thier own license which states the conditions for use. In most cases it is free to use but read the license always.
 
 ### Does mupy replace CAD?
 Absolutely not, mupy is it's own thing. In some cases it may reduce the hours spent on CAD for people and in other cases it may increase the time people spend. In the future I could see CAD applications integrating a mucli-like application utilities into it to get the best of both worlds.
