@@ -134,17 +134,15 @@ lol, have fun.
 
 
 
-
-I developed this package because I had several things I was tring to do which I could not do without it becasue there wouldnt be enough time in my lifetime to perform these tasks on my own using conventional methods and now I have a chance. I could never easily explain or justify my reasons for the form or scope this project took but I can say that I was trying to solve several difficult problems at once relating to innovation and scaling and this was the natural solution which presented itself through many iterations of goals, requirments, constraints and execution. Throughout this process of development the questions changed and the minset changed and the scope changed as well and so it was always difficult to give a strait anwser as to why anything was done the way it was but I hope if you use it mupy you will begin to understand and perhaps you can help make it better. 
-
-I wanted to prove there was a better waay to build things but this system is limited and unoptimized but it still works great but I need people to belive that if I could build this then we could build anything. I whole heartedly belive that someone now or someone has developed or will develop a similar technology because they utlimatly would of encoutered similar problems as I in manufacturing and evelopment. Ultimatly we want to reduce time money energy and risk. 
-
-I want to rebuild tis system eventually but only after a community has battle tested the system and identified features, concepts and mechanisms that would improve the model so that the commutiy could more efficienty interact with the system. I personally am treating this as a proposal of a systme but make no istake this is much more than a prototype. This is the real thing but sice the core is abstracted from the library there is much room for advancement without stepping non the toes of aspiring designers.
+I developed this package because I had several things I was trying to do which I could not of performed without it. I could never easily explain or justify my reasons for the form or scope this project took but I can say that I was trying to solve several difficult problems at once relating to innovation and scaling and this was the natural solution which presented itself through many iterations of goals, requirments, constraints and execution. Throughout this process of development the questions changed and the minset changed and the scope changed as well and so it was always difficult to give a strait anwser to myself or anyone else as to why anything was done the way it was but I hope if you utilize this system then you will begin to understand why I did it.
 
 
-3D printing is getting better.
 
-Infrastructure.
+
+### 3D Printing is getting more advanced
+3D printing itslef is a very well understood and rutimetry technology implemented in an extremely useful and elegent way. muoy was built partly for that ;  with the hopes that addative manufacutring gets uch better.
+
+### Rebuilding & Redesigning Infrastructure
 
 
 
