@@ -125,21 +125,18 @@ To print parts just import the stl file generated into CURA and proceed with 3Dp
 
 ### Assemble parts
 
-### Start a business or something, IDK leave me alone!
+### Start a business or something! This is about manufacturing!
 lol, have fun. 
 
 ## Note from the developer
 
-I didnt build this package exactly the wa I wantedto, I built it the way I had to. I had to utalize ingrediants which werent optimal but the best I could find to make thes sytstem I wanted. I wr
+I developed this package because I had things I wanted to do that I could not do without it in a nutshell. There are certain things that can never be buildt without muopy like functions, I believe someone would of eventually implemented a similar system that essentially encodes systems to a high degree of abstraction. 
 
-This project was developed purely as a solution to a problem I was having which related to scaling years ago and and the way this project was build was not my intention. On some level it was only the requirements that guided the project but at the same time 
-
-
-
-relating to scaling. More specificly there are things I would like to build that are just too damn expensie and too damn complex. But you see the margins betwIhad to break certain clauses relating to myoringal intentions.een great expense and efficiency of scale lie in this system known as mupy. This system was designed to be theat extra piece which scales up certain aspects of 
+Information technology is equivilent to energy advancedment except 
 
 
-Infact the ways I write packages is just writing a bunch of utiliteis to automate things I already was doing so much. I never automate things that need no automation, I just give them shiny controls :)
+Originally it started off as a bunch of scripts relating to 3D printing and wood working but eventually I could sense a meaningful model or context to relate these these functions given that I created more.
+
 
 - Its a model thant needsto be perfected and this goes hand in hand with the fact that it is built with sub-optimal components (difficult to integrate the tools).
 - Its mostly for 3D rinting inpractice for me but that isnt nessecaryilythe only thing it can be used for.
