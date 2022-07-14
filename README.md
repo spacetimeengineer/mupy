@@ -147,38 +147,6 @@ Infact the ways I write packages is just writing a bunch of utiliteis to automat
 ## Main Points
 A collection or list of quick concepts, items and keywords which give an overview of whats mupy is all about.
 
-### Why build mupy
-
-- To give the community access to quadrillions of 3D printable parts and counting. These parts are for recreation, utility and economic development. The large number of parts are available through the various permutations of parameterized scad functions that build 3D shapes and are referenced or identified by system-codes. 
-
-    - System Code Example : CUBX0006-BLK-L1000W50H200
-
-- To design complex assemblies with said parts in a scripting format.
-
-- To render simulations and manufacturing resources from system-codes directly
-
-    - Everything terminates at a system code.
-
-    - Data compression is achieved through abstraction tecquniques.
-
-- To assign system-encodings, system-schemas and system-parameterizations to organically designed systems and hardware
-
-    - Grants customization
-
-    - Grants Recall
-
-- To give inventors, makers, engineers and artists a more powerful platform for distribution and where thier liscens is respected.
-
-    - Start a business
-
-    - Build a portal gun
-
-    - Start a private project with peers
-
-    - Sell stuff on Etsy
-
-    - Take the parts and keep all your f*cking money
-
 ### What is it?
 
 - Supply Chain Mechanism
@@ -193,7 +161,7 @@ A collection or list of quick concepts, items and keywords which give an overvie
 
 - A proposal on how to build the future and avoid economic ruin
 
-### How does it work?
+### How doI use it?
 
 There are two main interfaces for mupy, a command line interface (CLI) and an applications programming interface (API) They are described below.
 
@@ -206,6 +174,10 @@ There are two main interfaces for mupy, a command line interface (CLI) and an ap
     - hardware class objects combine system-codes and names.
 
 ### What are it's functions?
+
+- Hardware Generation
+
+- 3D Printing Utility / Woodworking Utility
 
 - Simulation
 
@@ -304,61 +276,6 @@ mupy looks to solve problems, not assert compliance to it's users so consider th
 - Maximize development & manufacturing predicability
 
 - Maximize development & manufacturing potential
-
-
-### mupy Directory Structure
-
-    ├── Dockerfile
-    ├── examples
-    │   ├── app.py
-    │   └── utility_box.py
-    ├── LICENSE
-    ├── MANIFEST.in
-    ├── mupy
-    │   ├── assembly.py
-    │   ├── coordinates.py
-    │   ├── core.py
-    │   ├── decode.py
-    │   ├── hardware.py
-    │   ├── __init__.py
-    │   ├── lib
-    │   │   ├── CRSPGR022
-    │   │   │   ├── crspgr022.py
-    │   │   │   ├── __init__.py
-    │   │   │   ├── README.md
-    │   │   │   └── scad
-    │   │   │       └── CRSPGR022.scad
-    │   │   ├── CUBX0006
-    │   │   │   ├── cubx0006.py
-    │   │   │   ├── __init__.py
-    │   │   │   ├── LICENSE
-    │   │   │   ├── README.md
-    │   │   │   └── scad
-    │   │   │       └── CUBX0006.scad
-    │   │   ├── CUBX0177
-    │   │   │   ├── cubx0177.py
-    │   │   │   ├── __init__.py
-    │   │   │   ├── LICENSE
-    │   │   │   ├── README.md
-    │   │   │   └── scad
-    │   │   │       └── CUBX0177.scad
-    │   │   ├── __init__.py
-    │   │   └── README.md
-    │   ├── mucli
-    │   │   ├── __init__.py
-    │   │   ├── input_branch.py
-    │   │   ├── mucli.py
-    │   │   └── selection_branch.py
-    │   ├── README.md
-    │   └── workspace.py
-    ├── mupy.toml
-    ├── Pipfile
-    ├── Pipfile.lock
-    ├── README.md
-    ├── resources
-    │   ├── CUBX0006-BLK-L1000W200H15.png
-    │   └── utility_box.gif
-    └── setup.py
 
 
 # Installation
