@@ -125,20 +125,27 @@ To print parts just import the stl file generated into CURA and proceed with 3Dp
 
 ### Assemble parts
 
+So this is the fun part. You assemble the printed parts and make sure they fit alltogether. If theey do not then ther was a problem and you can modify the system code or the python code. Voila!
+
 ### Start a business or something! This is about manufacturing!
 lol, have fun. 
 
 ## Note from the developer
 
-I developed this package because I had things I wanted to do that I could not do without it. I could never easily explain or justify my reasons for the form it took except that I wastrying to solve a problem and this was the natuural solution that presented itself through many iterations. I whole heartedly belive that someone now or someone has developed or will develop a similar technology because they utlimatly would of encoutered similar problems as I in manufacturing and evelopment. Ultimatly we want to reduce time money energy and risk. 
+
+
+
+I developed this package because I had several things I needed to do that I could not do without it becasue there was never enough time in my lifetime to perform these tasks on my own and now I can theoretically can in this tools current form. I could never easily explain or justify my reasons for the form or scope this project took but I can say that I was trying to solve several difficult problems at once relating to innovation and scaling and this was the natural solution which presented itself through many iterations of goals, requirments, constraints and execution. Throughout this process of development the questions changed and the minset changed and the scope changed as well and so it was always difficult to give a strait anwser as to why anything was done the way it was but I hope if you use it mupy you will begin to understand and perhaps you can help make it better. 
+
+I wanted to prove there was a better waay to build things but this system is limited and unoptimized but it still works great but I need people to belive that if I could build this then we could build anything. I whole heartedly belive that someone now or someone has developed or will develop a similar technology because they utlimatly would of encoutered similar problems as I in manufacturing and evelopment. Ultimatly we want to reduce time money energy and risk. 
 
 I want to rebuild tis system eventually but only after a community has battle tested the system and identified features, concepts and mechanisms that would improve the model so that the commutiy could more efficienty interact with the system. I personally am treating this as a proposal of a systme but make no istake this is much more than a prototype. This is the real thing but sice the core is abstracted from the library there is much room for advancement without stepping non the toes of aspiring designers.
 
-- Its a model thant needsto be perfected and this goes hand in hand with the fact that it is built with sub-optimal components (difficult to integrate the tools).
-- Its mostly for 3D rinting inpractice for me but that isnt nessecaryilythe only thing it can be used for.
-- It is a meal made with ingrediants which werent optimal but sufficient for demonstrating.
-- Goals Requirements and Contraints
-- It should be rewrittenwith better components
+
+3D printing is getting better.
+
+Infrastructure.
+
 
 
 ### Who will tell the developers what to build?
