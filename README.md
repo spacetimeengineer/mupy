@@ -374,7 +374,7 @@ $ docker exec -it mu:latest /bin/bash
 $ python3 <package_location>/mupy/mucli/mucli.py 
 ```
 
-        - system codes are fundemental to the mupy model and are explained further belo. They are essentially used to rapidly development partss and systems from pre-authored libraries. The system codes contain parameterization data and can be read/write by the human.
+- system codes are fundemental to the mupy model and are explained further belo. They are essentially used to rapidly development partss and systems from pre-authored libraries. The system codes contain parameterization data and can be read/write by the human.
 
 ### Inputing a system-code
 
