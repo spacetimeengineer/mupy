@@ -386,9 +386,9 @@ Each system-code corresponds to a specific part. Once typed press enter to gener
 
 ![Alt Text](resources/CRSPGR022-SG-M1-T34W8-P15H15-B4-T.png)
 
-    μ:# CUBX0006-BLK-L1000W200H15
+    μ:# CUBX0177-BPAN-B12SR3-X10Y10PP12-RT-SX10Y10-X1Y1-XO0YO0-X70Y70Z10-S
 
-![Alt Text](resources/CUBX0006-BLK-L1000W200H15.png)
+![Alt Text](resources/CUBX0177-BPAN-B12SR3-X10Y10PP12-RT-SX10Y10-X1Y1-XO0YO0-X70Y70Z10-S.png)
 
     μ:# CUBX0006-BLK-L1000W200H15
 
