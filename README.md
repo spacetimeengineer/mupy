@@ -21,8 +21,13 @@
    * [Concepts](#tests)
       * [system-codes](#stdin)
       * [family-codes](#local-files)
+      * [type-codes](#local-files)
       * [schemas](#remote-files)
    * [History](#history)
+     * [Project ρ](#roadmap)
+     * [Project ρ++](#contributing)
+     * [Project ψ](#local)
+     * [Project μ](#local)
    * [Community](#community)
      * [Roadmap](#roadmap)
      * [Contributing](#contributing)
@@ -125,12 +130,13 @@ lol, have fun.
 
 ## Note from the developer
 
-This project was developed purely as a solution to a problem I was having which related to scaling. Ok, no problem there but the kinds of things I wanted to build were lets just say hehe lol, the kind of things you say at your last day as a board member.
+I didnt build this package exactly the wa I wantedto, I built it the way I had to. I had to utalize ingrediants which werent optimal but the best I could find to make thes sytstem I wanted. I wr
+
+This project was developed purely as a solution to a problem I was having which related to scaling years ago and and the way this project was build was not my intention. On some level it was only the requirements that guided the project but at the same time 
 
 
 
-
-relating to scaling. More specificly there are things I would like to build that are just too damn expensie and too damn complex. But you see the margins between great expense and efficiency of scale lie in this system known as mupy. This system was designed to be theat extra piece which scales up certain aspects of 
+relating to scaling. More specificly there are things I would like to build that are just too damn expensie and too damn complex. But you see the margins betwIhad to break certain clauses relating to myoringal intentions.een great expense and efficiency of scale lie in this system known as mupy. This system was designed to be theat extra piece which scales up certain aspects of 
 
 
 Infact the ways I write packages is just writing a bunch of utiliteis to automate things I already was doing so much. I never automate things that need no automation, I just give them shiny controls :)
@@ -160,6 +166,8 @@ A collection or list of quick concepts, items and keywords which give an overvie
 - Applications-Programming & Command-Line Interface
 
 - A proposal on how to build the future and avoid economic ruin
+
+- Horizontal abstraction library for openscad programming 
 
 ### How doI use it?
 
@@ -228,35 +236,6 @@ There are two main interfaces for mupy, a command line interface (CLI) and an ap
 
     - General purpose utility for many research and development needs.
 
-### What is it's form?
-
-- Horizontal abstraction layer 
-
-    - Makes calls to pre-written openscad functions with parameterization
-
-- Python Pip Package
-
-    $ pip3 install mupy
-
-- Command Line Interface
-
-    $ ./mucli
-
-- Application Programming Interface
-
-    import mupy.core as mu
-
-- System schematic library
-
-    - Pre-installed 
-
-- part generator
-
-- system generator (advanced)
-
-- system oriented data compression / abstraction engine
-
-    - Small package, quadrillions of parts sofar.
 
 ### What are the goals of mupy
 mupy looks to solve problems, not assert compliance to it's users so consider that it exists in the form as a well organized implementation (through multiple iterations of rewrite) of a script vault which is contained with functions that handle some specific use-case problem set. mupy in its current form is in it's infacny and littered with limitations which are hard to overcome without a community. In its current form it is tailored to 3D printers due to the 
@@ -675,13 +654,22 @@ Project ρ++ was an extension of project ρ. Just some context ; in these days t
 
 ## Project ψ
 
-Project ψ (Parametric System Instruction) was a project which explored hardware configuration, definition and assembly to it's manufacturing limit. This was the next stage in the evolution of this project. Project rho proved that there was no way in principle to establish a modular family which satisfied all requirements. From this the idea of the psi terminal was developed which said that some terminal should exist which takes in 'system-codes' which serve to identify a system in terms of it's properties.
+Project ψ (Parametric System Instruction) was a project which explored hardware configuration, definition and assembly to it's manufacturing limit. This was the next stage in the evolution of this project. 
+
+### Some context..
+
+During this time I was trying to run a business by perhaps selling these parts. At the time there was no software package. PSI was the first project which trried to bring software functions into the fold which managed the creation of renderings and organization of parts. 
+
+
+Project rho proved that there was no way in principle to establish a modular family which satisfied all requirements. From this the idea of the psi terminal was developed which said that some terminal should exist which takes in 'system-codes' which serve to identify a system in terms of it's properties.
 
 ### Goals
 
 - Handle parameterization
 
-- Implement system-codes
+- Required a predictable naming convention
+
+- Required a schema in order to implement 
 
 ### Lessons
 
@@ -692,6 +680,14 @@ The main thing about project mu was that the realization set in and said it wasn
 ![Alt Text](resources/model_0.png)
 
 ### Goals
+
+- Re-envision everything as a system code.
+
+- Make all genrations schemaless and utalize compression tecquiniques through abstraction
+
+- Multilayered abstraction.
+
+- Make a kind of package manager utility which gives users better handles on project distribution and wrapping.
 
 - Make it a publish worthy package
 
