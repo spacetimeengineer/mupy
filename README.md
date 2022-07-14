@@ -390,13 +390,13 @@ Each system-code corresponds to a specific part. Once typed press enter to gener
 
 ![Alt Text](resources/CUBX0177-BPAN-B12SR3-X10Y10PP12-RT-SX10Y10-X1Y1-XO0YO0-X70Y70Z10-S.png)
 
-    μ:# CUBX0006-BLK-L1000W200H15
+    μ:# CUBX0006-BLK-L1229P4W38H89
 
-![Alt Text](resources/CUBX0006-BLK-L1000W200H15.png)
+![Alt Text](resources/CUBX0006-BLK-L1229P4W38H89.png)
 
-    μ:# CUBX0006-BLK-L1000W200H15
+    μ:# CUBX0177-BPAN-B12SR0-X6Y18PP12-XF-SX10Y10-X1Y1-XO0YO0-X24Y168Z25-S
 
-![Alt Text](resources/CUBX0006-BLK-L1000W200H15.png)
+![Alt Text](resources/CUBX0177-BPAN-B12SR0-X6Y18PP12-XF-SX10Y10-X1Y1-XO0YO0-X24Y168Z25-S.png)
 
 
 ## custom_box.py
