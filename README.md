@@ -36,13 +36,10 @@
      * [Acknowledgments](#acknowledgments)
 <!--te-->
 
-# DISCLAIMER
-This system is in active development. The README.md here should be considered unreliable, unfinished and littered with errors (includin spulling erors) until this disclaimer is removed. I need to test certain things which require public status. Thankyou for your patience. - Mike
-
 
 # About
 
-μpy or mupy is a shorthand for python manufacturing utility and reffers to a new system development technology implemented in the form of a python pip installable package. The μpy package essentially proposes to the open source community in the form of a powerful tool, a model for designing, distributing and manufacturing technology with an emphasis on community, modularity, decentralization, scaling, customization, parametrization, encodability and certification. Currently mupy contains rendereings for quadrilions of parts for 3D print and exponentially more can become available with the help of users in the future.
+μpy or mupy is a shorthand for python manufacturing utility and reffers to a new system development technology implemented in the form of a python pip installable package. The μpy package essentially proposes to the open source community in the form of a powerful tool, a model for designing, distributing and manufacturing technology with an emphasis on community, modularity, decentralization, scaling, customization, parametrization, encodability and certification. Currently mupy contains rendereings for quadrilions of parts for 3D print and exponentially more can become available with the help of users in the future. There is a hope I have that if this tech is accepted then it can be rebuilt in a far more powerful form one day we could teach ourselves how to become master builders.
 
 
 ## Overview
@@ -134,17 +131,13 @@ lol, have fun.
 
 
 
-I developed this package because I had several things I was trying to do which I could not of performed without it. I could never easily explain or justify my reasons for the form or scope this project took but I can say that I was trying to solve several difficult problems at once relating to innovation and scaling and this was the natural solution which presented itself through many iterations of goals, requirments, constraints and execution. Throughout this process of development the questions changed and the minset changed and the scope changed as well and so it was always difficult to give a strait anwser to myself or anyone else as to why anything was done the way it was but I hope if you utilize this system then you will begin to understand why I did it.
-
-
-
+I developed this package because I had several things I was trying to do which I could not of performed without it. This is to say I only started with requirements. I could never easily explain or justify my reasons for the form or scope this project took but I can say that I was trying to solve several difficult problems at once which related to innovation, development, process scaling and manufacturing and this was the natural solution which presented itself through many iterations of goals, requirments, constraints, execution and reflection. Throughout this process of development too many times did the questions change and the minset changed and the scope changed as well and so it was always difficult to give a strait anwser to myself or anyone else as to why anything was built the way it was but I hope if you utilize this system then you may get a sense as to why.
 
 ### 3D Printing is getting more advanced
 3D printing itslef is a very well understood and rutimetry technology implemented in an extremely useful and elegent way. muoy was built partly for that ;  with the hopes that addative manufacutring gets uch better.
 
 ### Rebuilding & Redesigning Infrastructure
-
-
+It's no secret that infrastructur is crumbling. 
 
 ## Main Points
 A collection or list of quick concepts, items and keywords which give an overview of whats mupy is all about.
