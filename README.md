@@ -77,7 +77,7 @@ panel_f = mu.Hardware("panel_f", "CUBX0177-BPAN-B25SR2P5-X8Y8P18-RT-SX25Y25-X8Y8
 
 ```
 
-- Define initial and final coordinates within an assembly epoch.
+4. Define initial and final coordinates within an assembly epoch.
 
 ```python
 
@@ -88,7 +88,7 @@ panel_b_assembly_coords = mu.Coordinates(0,1,[0, 20 * 15 / 2 + 210, 0],[0, 20 * 
 
 ```
 
-4. Defines assembly
+5. Defines assembly
 
 ```python
 alpha = 200 
@@ -101,7 +101,7 @@ chamber_assembly.include(panel_e, Coordinates(0,1,[0, - 8 * 25 / 2 - alpha, 0 ],
 chamber_assembly.include(panel_f, Coordinates(0,1,[8 * 25 / 2 + alpha, 0 , 0],[8 * 25 / 2, 0 , 0],[0,0,1000],[90,0,90]))
 ```
 
-5. Run assembly
+6. Run assembly
 
 ```python
 workspace.run(chamber_assembly, Coordinates(0,1,[0,0,0],[0,0,0],[0,0,0],[0,0,0]))
@@ -144,7 +144,7 @@ A collection or list of quick concepts, items and keywords which give an overvie
 
 ### What is it?
 
-I was trying to find a way to program hardware originally, almost like instead of a software programming language. 
+Originally this project was thought of as an attempt to create a way to program hardware in a more easy fashion than direct openscad. It was litterally treated as a hardware-assembly-language which was described in a format analogous to a software-programming-language. Since openscad is a very intimidating laguage due to the requiremnts of mathematics and programming knowledge it is not unreasonalble to expect that it would not be very popluar however it retains a status by most knowlegeable progammersa as an incredibly powerful alternative where in the right hands absolutely can crush the productivity of conventianal CAD users. This being said it's relative diffiocutly is greatly abstracted by mupy. In this way mupy expressed an extreme advantage to people who are looking to design products and 3D print models.
 
 - Supply Chain Mechanism
 
@@ -366,13 +366,15 @@ $ docker exec -it mu:latest /bin/bash
     
 # Getting Started
 
-## mucli
+## Manufacturing Utility Command-Line-Tool (mucli)
 
-μpy comes with it bundled a command-line-interface application known as the mucli and behaves much like a linux terminal except that it only accepts special strings known as 'system-codes'. mucli was developed to express to users μpy's most rudimetry operation ; dispensing manufacturing resources for a given system-code. To enter mucli, in the linux terminal, navigate to the mucli directory in the project folder
+μpy comes with it bundled a command-line-interface application known as mucli or mucli-tool and behaves much like a linux terminal except that it only accepts special strings known as 'system-codes'. mucli was developed to express to users μpy's most rudimetry operation ; dispensing manufacturing resources for a given system-code. To enter mucli, in the linux terminal, navigate to the mucli directory in the project folder
 
 ```console
 $ python3 <package_location>/mupy/mucli/mucli.py 
 ```
+
+        - system codes are fundemental to the mupy model and are explained further belo. They are essentially used to rapidly development partss and systems from pre-authored libraries. The system codes contain parameterization data and can be read/write by the human.
 
 ### Inputing a system-code
 
