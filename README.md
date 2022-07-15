@@ -727,7 +727,7 @@ It is unnclesr if family codes serve as name spaces but these are essentially ne
 ### Implament manufacturing codes
 
 ### Implament Material codes
-
+It is important to eventually provide a space for information regarding se part and the material it is created from. In the future mupy will attempt to cover more manufacturing mathods other than 3D printing.
 ### Inegrating technologies
 
 ### Implement a package manager
