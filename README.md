@@ -116,20 +116,23 @@ This example gives users the ability to build a simple box. This example uses th
 
 ### Print Parts
 
-To print parts just import the stl file generated into CURA and proceed with 3Dprint configuration. In general all 3D printed parts require configuration.
+To print parts just import the .stl file that was generated into Ultimaker Cura and proceed with setting up your 3D-print configuration. In general all 3D-printed parts require configuration so be sure to familiarize yourself with the process.
+
+### Clean Parts
+Depending on the part, you may need to clean it for it to be functionable. This is not always the case and many of the parts mupy provides do not render any wasted filiment to begin with but this is not the general case when 3D-printing.
 
 ### Assemble parts
 
-So this is the fun part. You assemble the printed parts and make sure they fit alltogether. If theey do not then ther was a problem and you can modify the system code or the python code. Voila!
+So this is the fun part. You assemble the printed parts and make sure they fit all together. Fingers Crossed!
 
-### Start a business or something! This is about manufacturing!
-lol, have fun. 
+### Start a business or something!
+Do what you want!
 
 ## Note from the developer
 
 
 
-I developed this package because I had several things I was trying to do which I could not of performed without it. This is to say I only started with requirements. I could never easily explain or justify my reasons for the form or scope this project took but I can say that I was trying to solve several difficult problems at once which related to innovation, development, process scaling and manufacturing and this was the natural solution which presented itself through many iterations of goals, requirments, constraints, execution and reflection. Throughout this process of development too many times did the questions change and the minset changed and the scope changed as well and so it was always difficult to give a strait anwser to myself or anyone else as to why anything was built the way it was but I hope if you utilize this system then you may get a sense as to why.
+I developed this package because I had several things I was trying to do which I could not of done without it. This is to say I only really started with requirements that were identified through the goals I had. This project was not the goal, it was separate of that. I cannot easily explain or justify my reasons for the form or scope this project adopted but I can say that I was trying to solve several difficult problems at once which related to innovation, development, process, scaling and manufacturing and this was the natural solution which presented itself through many iterations of goals, requirments, constraints, execution, testing and reflection. As they say nessesity is the mother of all invention and if at first you dont succeed, try try again... Throughout this process of development too many times did the questions change and my mindset changed and the scope changed as well and so it was always difficult to give a strait anwser to myself or anyone else as to why anything was built the way it was but I know what I did saves time and in time Ill save more but I hope if you utilize this system then you may get a sense as to why I did what I did and how we can go further.
 
 ### 3D Printing is getting more advanced
 3D printing itslef is a very well understood and rutimetry technology implemented in an extremely useful and elegent way. muoy was built partly for that ;  with the hopes that addative manufacutring gets uch better.
@@ -209,7 +212,7 @@ There are two main interfaces for mupy, a command line interface (CLI) and an ap
 
     - Hardware is identified, described or generated using system-codes (short human-readable alphanumeric codes).
     - 3D print systems in many cases, material independent or material specified.
-    
+
 - Complex Physical System Certification
 
     - Like a package manager but configured for mupy requirements so that family codes provide permutations from scad parameterization.
