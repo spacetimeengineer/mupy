@@ -727,6 +727,25 @@ This particular function is the golden function which would render this project 
 
 Currently the best form of contribution would be to play offer suggestions for iprovement or they could develp scripts to be certified or open scad code to be certified (manually).
 
+### Project Identification
+Currently this is the most valuable and important top priority (ongoing) task. This is not a pprogramming or technology task rather it is a task for the visionary or the philosopher but it's the hardest job of all. Where this task fails or succesds cascades to all other aspects of entire system. This is even more important than the functions or the algorithms which consitute mupy becaue the algorithms are derived from requirements which are derived from goals but only the greatest but possible goals are worth pursuing becasue other boons are are found along the way.We need these people to identify what we must build. I am not reffering to the subcomponents of some bigger system becasue those developments can be derived from the greater requirements which may exists from the greater requirements. 
+
+### Part Identification
+This is similar to the previous except ona primitive scale. So If a project is identified then a new modular family in most cases will be developed to fufill some requirements fro a design.
+
+
+### Script Vault
+
+
+### mupy.lib
+
+
+### mupy.mucli
+
+
+### mupy.core
+mupy.core should be rebuilt in a couple years after user feedback has been processed and a team is ready to develop.
+
 ## License
 
 ### mupy.core liscense
