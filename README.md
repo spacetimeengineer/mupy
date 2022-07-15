@@ -336,7 +336,7 @@ Open the MacOS terminal and run the following commands:
 > pip3 install mupy
 ```
 
-## Docker Container ( optional )
+## Docker Installation
 
 If you prefer touse the provided docker image you will need to install docker at https://docs.docker.com/get-docker/ .
 
