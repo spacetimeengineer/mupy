@@ -130,9 +130,7 @@ Do what you want!
 
 ## Note from the developer
 
-
-
-I developed this package because I had several things I was trying to do which I could not of done without it. This is to say I only really started with requirements that were identified through the goals I had. This project was not the goal, it was separate of that. I cannot easily explain or justify my reasons for the form or scope this project adopted but I can say that I was trying to solve several difficult problems at once which related to innovation, development, process, scaling and manufacturing and this was the natural solution which presented itself through many iterations of goals, requirments, constraints, execution, testing and reflection. As they say nessesity is the mother of all invention and if at first you dont succeed, try try again... Throughout this process of development too many times did the questions change and my mindset changed and the scope changed as well and so it was always difficult to give a strait anwser to myself or anyone else as to why anything was built the way it was but I know what I did saves time and in time Ill save more but I hope if you utilize this system then you may get a sense as to why I did what I did and how we can go further.
+This system is crude and rutimetry. Make no mistake it needs work for the next 100 years but the reason why is beacuse of what it istrying to do... I developed this package because I had several things I was trying to do which I could not of done without it. I have not done these things yet but this is to say I only really started with requirements that were identified through the goals I had. This project was not the goal, it's separate of that. I cannot easily explain or justify my reasons for the form or scope this project adopted but I can say that I was trying to solve several difficult problems at once which related to innovation, development, process, scaling and manufacturing and this was the natural solution which presented itself through many iterations of goals, requirments, constraints, execution, testing and reflection. As they say "Nessesity is the mother of all invention" and "If at first you dont succeed, try try again...", these quotes describe the philosophy behind mupy developments. Throughout this process of development too many times did the questions change and my mindset changed and the scope changed as well and so it was always difficult to give a strait anwser to myself or anyone else as to why anything was built the way it was but I know what I did saves time and in time Ill save more but I hope if you utilize this system then you may get a sense as to why I did what I did and how we can go further.
 
 ### 3D Printing is getting more advanced
 3D printing itslef is a very well understood and rutimetry technology implemented in an extremely useful and elegent way. muoy was built partly for that ;  with the hopes that addative manufacutring gets uch better.
@@ -473,6 +471,14 @@ workspace.run(box_assembly, mu.Coordinates(0,1,[0,0,0],[0,0,0],[0,0,0],[0,0,0]))
 
 
 
+### Workspace
+
+### Hardware
+
+### Coordinates
+
+### Assembly
+
 # Generating Output
 Upon pressing 'enter' by the mucli commmand line tool or running a workspace with workspace.run() inside a scipt will generate a workspace directory an this will be the entrypoint for your IP.
 
@@ -554,6 +560,17 @@ Some of these things and more are configurable in in Cura, which can be thought 
   7. 3D Print!
 
 # Concepts
+
+## mupy.core model
+
+### Workspace
+
+### Hardware
+
+### Coordinates
+
+### Assembly
+
 
 ## System Codes
 So the whole idea behind a system-code was that it was this thing which would theoretically speed up precision development and deployment in the fastest way deemed concievable within set requirements. Consider the engineer who wishes to design something and prototype it fast. Instead of employing the usual methods, they can save a great deal of time by programming it into a string ( 16 - 200 characters if we are being conservative ). Ok, ok, ok... its not that simple ofcourse, the library would needs to pre-written and certified and the hardwork has arguably already been done at that point however the system-code offers many permutations which have not of been tested before. But what is a system-code?
