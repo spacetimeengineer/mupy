@@ -16,7 +16,7 @@
       * [Running openscad](#running-openscad)
    * [3D Printing](#3d-printing)
       * [Running Cura - Rough Overview](#running-cura-rough-overview)
-   * [Concepts](#tests)
+   * [Concepts](#concepts)
       * [system-codes](#system-codes)
       * [family-codes](#family-codes)
       * [type-codes](#type-codes)
