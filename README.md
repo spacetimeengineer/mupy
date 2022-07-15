@@ -659,10 +659,11 @@ Project ρ++ was an extension of project ρ. Just some context ; in these days t
 ### Needed robotics
 
 ### Needed more components
+The more complex the machinery, the smaller and more precision certain parts need to be. This seems to be a fundemental principle.
 
 ### Needed more materials
 
-### Needed more manufacturing
+### Needed more manufacturing methods
 
 ### Goals
 
@@ -730,7 +731,14 @@ It is unnclesr if family codes serve as name spaces but these are essentially ne
 It is important to eventually provide a space for information regarding se part and the material it is created from. In the future mupy will attempt to cover more manufacturing mathods other than 3D printing.
 ### Inegrating technologies
 
-### Implement a package manager
+
+
+
+### Implement a package manager with authentication
+This would rpresent a better system for managing community-authored-systems. Additionally this would make upy more efficient as well as do a better job to make it more useful for the community.
+
+### Create a community goals / wishlist
+Lets design a nuclear spacecraft togerther! Even if we fail imagine what we learn or accomplish on the way! The requirements of such a goal would make mupy very powerful if it were designed to handle those requirements.
 
 ### Automated certification routines
 
@@ -754,19 +762,19 @@ This is similar to the previous except ona primitive scale. So If a project is i
 
 
 ### Script Vault
-
+The more systems that are built the better, more they are parameterized and modular the better although that is no requirement. This will make the technology stronger and more useful.
 
 ### mupy.lib
-
+The standard library of parts should be developed more and more over time becasue these represent the primitive parts which make up the scripted-systems. The are also represented by system-codes but they themselves do not really represent systems so much except in the general sense. More libraries will make the system stronger in time but I would reccomend to only design hardware that has been identified as a requirement in a larger system.
 
 ### mupy.mucli
-
+Currenly the command line tool is extremely crude. The reasons for this are vast but I typically build command line tools in my projects to illustrate basic functionality and prototyping. The mucli tool is no different except that I really like it's overall form in principle. The idea of just typing in  a code to get quick resources is really cool and useful.
 
 ### mupy.core
 mupy.core should be rebuilt in a couple years after user feedback has been processed and a team is ready to develop.
 
-## License
-
+## Licensing Structure
+Most things are free typically but the individual namespaces or family codes are protected by thier own license.  
 ### mupy.core liscense
 The top level dirctory license applies to all contained files and directories EXCEPT for family code files and directories which should be thought of as python sub-packages which always contain thier own source code file, license and digital-twin python class. This license overrides the top level license and applies to all same-directory-files and same-directory-directories. The mupy.core serves as an abstraction layer to the hardware family libraries which it essentially makes function calls to containing parameterization which is extracted from system-codes.
 
