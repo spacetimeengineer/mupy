@@ -472,12 +472,16 @@ workspace.run(box_assembly, mu.Coordinates(0,1,[0,0,0],[0,0,0],[0,0,0],[0,0,0]))
 
 
 ### Workspace
+A workspace is essentially a directory structure or enviornment to place hardware or assemblies objects into. It is a python class object and possees other unique properties and functions which make it behave as a sort of virtual workbench.
 
 ### Hardware
+Hardware objects are the primary mechanism for introducing system-codes into the scripting enviornment.
 
 ### Coordinates
+In an assembly generally speaking, there needs to exist initial and final coordinates in 3D space within a certain time quantum since the assembly will exist as a hirerarchical structure and will need to be organized down into multiple time domains. Keep in mind that multiple assemblies can exist in a single time quantum but not if they ever involve the same part.
 
 ### Assembly
+Contains similar properties as a Hardware object except that it's primary purpose is to include Hardware objects and other assebly object into itself. It is an object with recursive properties built in.
 
 # Generating Output
 Upon pressing 'enter' by the mucli commmand line tool or running a workspace with workspace.run() inside a scipt will generate a workspace directory an this will be the entrypoint for your IP.
