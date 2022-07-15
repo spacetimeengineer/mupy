@@ -11,7 +11,7 @@
       * [Windows Installation](#windows-installation)
       * [Docker Installation](#docker-installation)
    * [Getting Started](#getting-started)
-   * [Generating Output](#dependency)
+   * [Generating Output](#generating-output)
       * [Generated Workspace Directory](#generating-workspace-directory)
       * [Running openscad](#running-openscad)
    * [3D Printing](#3d-printing)
