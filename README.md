@@ -144,6 +144,8 @@ A collection or list of quick concepts, items and keywords which give an overvie
 
 Originally this project was thought of as an attempt to create a way to program hardware in a more easy fashion than direct openscad. It was litterally treated as a hardware-assembly-language which was described in a format analogous to a software-programming-language. Since openscad is a very intimidating laguage due to the requiremnts of mathematics and programming knowledge it is not unreasonalble to expect that it would not be very popluar however it retains a status by most knowlegeable progammersa as an incredibly powerful alternative where in the right hands absolutely can crush the productivity of conventianal CAD users. This being said it's relative diffiocutly is greatly abstracted by mupy. In this way mupy expressed an extreme advantage to people who are looking to design products and 3D print models.
 
+- Creation Engine
+
 - Supply Chain Mechanism
 
 - Compression Algorithm
@@ -158,7 +160,7 @@ Originally this project was thought of as an attempt to create a way to program 
 
 - Horizontal abstraction library for openscad programming 
 
-### How do I use it?
+### How do I use mupy?
 
 There are two main interfaces for mupy, a command line interface (CLI) and an applications programming interface (API) They are described below.
 
@@ -170,52 +172,49 @@ There are two main interfaces for mupy, a command line interface (CLI) and an ap
 
     - hardware class objects combine system-codes and names.
 
-### What are it's functions?
+### What are mupy's functions?
 
 - Hardware Generation
 
-- Simulation
+- Physical / Mechanical System Simulation
 
-    - Simulate operation.
+  - Operation
+  - Assembly
 
-    - Simulate assembly.
+- Physical / Mechanical System Configuration
+- Software Generation
 
-    - Simulate manufacturing. (Advanced topic)
+  - Generates openscad code
+  - Generates directory structures
+  - system-codes are a seed to generate digital-twin
 
-- Configuration
+- Python Library
 
-    - Giving users higher levels of configuration through abstraction tecquniques.
+  - Grants greater automation capabilities & empowers users with computing-based augumentations to mupy system-code technology
+  - Allows other 3rd-party libaries and python functions to interact with mupy.core functions
+  - Only utilizes standard python libary
 
-- Fine Customization
+- CLI (command-line-tool)
 
-- Scripting Library
+  - system-code reciever
+  - expresses prime function
 
-- Modularity
+- High Integrity Modularity Hardware Repository
 
-    - Countless parts available for render and in many cases parts interlock.
-    
-    - modularity makes assebly and manufacturing cheaper and quicker to scale.
-    
-    - Will help build efficiency of scale designs.
+  - These parts grant fast prototyping
+  - modular families can be developed to optimize a specific intended assembly or design of larger system
+  - General purpose modular hardware for printing and prototyping
 
-- Encodability
+- Complex Physical System Encoder/Decoder/Distribution/Manufacturing Engine
 
-    - Hardware identified and described with system-codes.
-
-- Distribution
-
-    - New system codes and family codes can be provided by contributers.
-
-- Manufacturing
-
+    - Hardware is identified, described or generated using system-codes (short human-readable alphanumeric codes).
     - 3D print systems in many cases, material independent or material specified.
-
     
-- Certification
+- Complex Physical System Certification
 
     - Like a package manager but configured for mupy requirements so that family codes provide permutations from scad parameterization.
 
-- R & D
+- Creation Engine
 
     - General purpose utility for many research and development needs.
 
