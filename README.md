@@ -158,7 +158,7 @@ Originally this project was thought of as an attempt to create a way to program 
 
 - Horizontal abstraction library for openscad programming 
 
-### How doI use it?
+### How do I use it?
 
 There are two main interfaces for mupy, a command line interface (CLI) and an applications programming interface (API) They are described below.
 
@@ -174,8 +174,6 @@ There are two main interfaces for mupy, a command line interface (CLI) and an ap
 
 - Hardware Generation
 
-- 3D Printing Utility / Woodworking Utility
-
 - Simulation
 
     - Simulate operation.
@@ -188,7 +186,9 @@ There are two main interfaces for mupy, a command line interface (CLI) and an ap
 
     - Giving users higher levels of configuration through abstraction tecquniques.
 
-- Customization
+- Fine Customization
+
+- Scripting Library
 
 - Modularity
 
@@ -209,13 +209,7 @@ There are two main interfaces for mupy, a command line interface (CLI) and an ap
 - Manufacturing
 
     - 3D print systems in many cases, material independent or material specified.
-    
-- Context
 
-    - Manufacturing context
-    - Assembly context
-    - Material context
-    - Indentity context
     
 - Certification
 
@@ -381,7 +375,7 @@ Each system-code corresponds to a specific part. Once typed press enter to gener
 
     μ:# CUBX0006-BLK-L1000W200H15
 
-    
+
 ![Alt Text](resources/CUBX0006-BLK-L1000W200H15.png)
 
     μ:# CRSPGR022-SG-M1-T34W8-P15H15-B4-T
@@ -562,6 +556,20 @@ Some of these things and more are configurable in in Cura, which can be thought 
 ## System Codes
 So the whole idea behind a system-code was that it was this thing which would theoretically speed up precision development and deployment in the fastest way deemed concievable within set requirements. Consider the engineer who wishes to design something and prototype it fast. Instead of employing the usual methods, they can save a great deal of time by programming it into a string ( 16 - 200 characters if we are being conservative ). Ok, ok, ok... its not that simple ofcourse, the library would needs to pre-written and certified and the hardwork has arguably already been done at that point however the system-code offers many permutations which have not of been tested before. But what is a system-code?
 A system-code is a finite, often short-string representation of a physical part, machine or structure ; anything in principle really. It is technically a seed for the creation of a digital-twin representation of that physical 'system' (generally speaking ; a part, machine or structure or anything deserving of a system-code) and all the information regarding it's operation, assembly, manufacturing, cost and material characteristics to any arbitrary degree of complexity (digital twin exists as a python class object). Moreover tools exist to keep these string representations short and organized within thier countless permutations set. Additionally system-codes serve as a name or identifier without physical uniquness and hunan readability features keeping things intuitive. A system-code can also be thought of as something which generates resources and metadata that help users manufacture said system at reduced cost. These resources include CAD files and annotated openscad source code directories containing assembly and operational animation routines which help users record and transmit and intepret complex manufacturing and assembly information.
+
+### Properties
+
+
+- Schemaless : Individual system-codes only are required to share the same schema with system-codes that belong to the same type code.
+- Seedlike : system-coded serve as a seed which when processed by mupy.core produces a digital-twin class object which is responsible for the generated code and renderings.
+- Constituent-Codes:
+
+    - family-code : Serves as a namespace code. 
+    - type-code : Serves as a namespace code.
+    - parameterization-code : Serves as the inputs which tune the values the hardware .
+    - manufacturing-code : Serves as a namespace code. (Not yet implemented)
+    - material-code : Describes Material. (Not yet implemented)
+
 
 ## Family Codes
 Family codes serve as a kind of namespace code (it may be changed to a namespace code in time) which references a particular library of scad functions in most cases currently and is always set as the first code within the system-code string separated by a dash ('-'). A family code references a family of possible parts which is into 'types' which usually are of a similar style or framework regarding geometric rules set by the author. Types maintain thier own parameterization or schema ; this means that for a given type the schema is specific to that type although it is possible that this rule can be relaxed in time with better progrmamming ; meaning that even types can maintain shifting schemas depending on parameterization choices.
