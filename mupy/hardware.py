@@ -44,42 +44,67 @@ class Hardware:
         scad_code = 'module '+self.id+'()\n{\n' #
         if (len(self.coordinate_superset)==0):
             self.assign_coordinates(Coordinates(0,1,[0,0,0],[0,0,0],[0,0,0],[0,0,0]))
+            
+            
+            
+            
+        if (len(self.coordinate_superset)==1): # Here you need to add more coordinate sets sepending on choice of epochs.
+            
+            
+            if (self.coordinate_superset[0].time_0 > 0): # Here you need to add more coordinate sets sepending on choice of epochs.
+                time_f = self.coordinate_superset[0].time_0  # Pu0ll from other coordinate information.
+                position_0 = self.coordinate_superset[0].position_0
+                orientation_0 = self.coordinate_superset[0].orientation_0
+                self.assign_coordinates(Coordinates(0,time_f,position_0,position_0,orientation_0,orientation_0))#TODO: Need to pull resto of information.
+                
+            if (self.coordinate_superset[0].time_f < 1): # Here you need to add more coordinate sets sepending on choice of epochs.
+                position_f = self.coordinate_superset[0].position_f
+                orientation_f = self.coordinate_superset[0].orientation_f
+                time_0 = self.coordinate_superset[0].time_f  # Pu0ll from other coordinate information.
+                
+                self.assign_coordinates(Coordinates(time_0,1,position_f,position_f,orientation_f,orientation_f))
+
+
+
 
         for coordinates in self.coordinate_superset: #
             
 
-            scad_code = scad_code + "    /* Initialize initial and final position and orientation. These values may be modified for assembly purposes. */\n\n" 
-            
-            scad_code = scad_code + "    /* Time */\n"
-            scad_code = scad_code + "    t_position_initial = "+str(coordinates.t_i)+";    // Initial time ( from 0 = initial to 1 = final and globally ).\n"
-            scad_code = scad_code + "    t_position_final = "+str(coordinates.t_f)+";      // Final time ( from 0 = initial to 1 = final and globally ).\n\n"
-
-            scad_code = scad_code + "    /* Position */\n"
-            scad_code = scad_code + "    x_position_initial = "+str(coordinates.p_i[0])+";    // Initial 'x' position ( in mm ).\n"
-            scad_code = scad_code + "    x_position_final = "+str(coordinates.p_f[0])+";      // Final 'x' position ( in mm ).\n"
-            scad_code = scad_code + "    y_position_initial = "+str(coordinates.p_i[1])+";    // Initial 'y' position ( in mm ).\n"
-            scad_code = scad_code + "    y_position_final = "+str(coordinates.p_f[1])+";      // Final 'y' position ( in mm ).\n"
-            scad_code = scad_code + "    z_position_initial = "+str(coordinates.p_i[2])+";    // Initial 'z' position ( in mm ).\n"
-            scad_code = scad_code + "    z_position_final = "+str(coordinates.p_f[2])+";      // Final 'z' position ( in mm ).\n\n"
-
-            scad_code = scad_code + "    /* Orientation */\n"
-            scad_code = scad_code + "    x_axis_angle_initial = "+str(coordinates.a_i[0])+";  // Initial angle along the 'x' axis. ( in degrees ).\n"
-            scad_code = scad_code + "    x_axis_angle_final = "+str(coordinates.a_f[0])+";    // Final angle along the 'x' axis. ( in degrees ).\n"
-            scad_code = scad_code + "    y_axis_angle_initial = "+str(coordinates.a_i[1])+";  // Initial angle along the 'y' axis. ( in degrees ).\n"
-            scad_code = scad_code + "    y_axis_angle_final = "+str(coordinates.a_f[1])+";    // Final angle along the the 'z' axis. ( in degrees ).\n"
-            scad_code = scad_code + "    z_axis_angle_initial = "+str(coordinates.a_i[2])+";    // Final angle along the the 'z' axis. ( in degrees ).\n"
-            scad_code = scad_code + "    z_axis_angle_final = "+str(coordinates.a_f[2])+";    // Final angle along the 'z' axis. ( in degrees ).\n\n"
-
-            scad_code = scad_code + "    /* Animation */\n"
+                    
+            scad_code = scad_code + "    /* Animation Sequence*/\n"
 
             scad_code = scad_code + \
                     '  if ($t >= '+str(coordinates.t_i)+' && $t <= '+str(coordinates.t_f)+')\n'\
-                    '  {\n'\
-                    '    translate(['+ str(coordinates.p_i[0])+'+$t*('+str(coordinates.p_f[0])+'-'+ str(coordinates.p_i[0])+') , '+ str(coordinates.p_i[1])+'+$t*('+ str(coordinates.p_f[1])+'-'+ str(coordinates.p_i[1])+'), '  \
-                    + str(coordinates.p_i[2])+'+$t*('+ str(coordinates.p_f[2])+'-'+ str(coordinates.p_i[2])+') ] ) { rotate(['+ str(coordinates.a_i[0])+'+$t*('+ str(coordinates.a_f[0])+'-'+ str(coordinates.a_i[0])+'), '  \
-                    + str(coordinates.a_i[1])+'+$t*('+ str(coordinates.a_f[1])+'-'+ str(coordinates.a_i[1])+'), '+ str(coordinates.a_i[2])+'+$t*('+str(coordinates.a_f[2])+'-'+ str(coordinates.a_i[2])+')])' \
+                    '  {\n'      
+                    
+            scad_code = scad_code + "    /* Initialize initial and final position and orientation. These values may be modified for assembly purposes. */\n\n" 
+    
+            scad_code = scad_code + "        /* Position */\n"
+            scad_code = scad_code + "        x_position_initial = "+str(coordinates.p_i[0])+";    // Initial 'x' position ( in mm ).\n"
+            scad_code = scad_code + "        x_position_final = "+str(coordinates.p_f[0])+";      // Final 'x' position ( in mm ).\n"
+            scad_code = scad_code + "        y_position_initial = "+str(coordinates.p_i[1])+";    // Initial 'y' position ( in mm ).\n"
+            scad_code = scad_code + "        y_position_final = "+str(coordinates.p_f[1])+";      // Final 'y' position ( in mm ).\n"
+            scad_code = scad_code + "        z_position_initial = "+str(coordinates.p_i[2])+";    // Initial 'z' position ( in mm ).\n"
+            scad_code = scad_code + "        z_position_final = "+str(coordinates.p_f[2])+";      // Final 'z' position ( in mm ).\n\n"
+
+            scad_code = scad_code + "        /* Orientation */\n"
+            scad_code = scad_code + "        x_axis_angle_initial = "+str(coordinates.a_i[0])+";  // Initial angle along the 'x' axis. ( in degrees ).\n"
+            scad_code = scad_code + "        x_axis_angle_final = "+str(coordinates.a_f[0])+";    // Final angle along the 'x' axis. ( in degrees ).\n"
+            scad_code = scad_code + "        y_axis_angle_initial = "+str(coordinates.a_i[1])+";  // Initial angle along the 'y' axis. ( in degrees ).\n"
+            scad_code = scad_code + "        y_axis_angle_final = "+str(coordinates.a_f[1])+";    // Final angle along the the 'z' axis. ( in degrees ).\n"
+            scad_code = scad_code + "        z_axis_angle_initial = "+str(coordinates.a_i[2])+";    // Final angle along the the 'z' axis. ( in degrees ).\n"
+            scad_code = scad_code + "        z_axis_angle_final = "+str(coordinates.a_f[2])+";    // Final angle along the 'z' axis. ( in degrees ).\n\n"
+        
+            scad_code = scad_code + \
+                    '    translate([x_position_initial+$t*(x_position_final-x_position_initial)/'+str(coordinates.t_f)+' , y_position_initial+$t*(y_position_final-y_position_initial)/'+str(coordinates.t_f)+', z_position_initial  \
+                    +$t*(z_position_final-z_position_initial)/'+str(coordinates.t_f)+' ] ) { rotate([x_axis_angle_initial+$t*(x_axis_angle_final-x_axis_angle_initial)/'+str(coordinates.t_f)+',   \
+                    y_axis_angle_initial+$t*(y_axis_angle_final-y_axis_angle_initial)/'+str(coordinates.t_f)+', z_axis_angle_initial+$t*(z_axis_angle_final-z_axis_angle_initial)/'+str(coordinates.t_f)+'])' \
                     +' { import("stl_files/'+ self.hardware_code + '.stl"); } }\n'\
-                    '  }\n' # translation block sca code.
+                    '  }\n' # translation block scad code.
+                    
+        """ This bit here is so the assembly time quantums dont delete the object from ever coming into view."""            
+                    
+                    
         scad_code = scad_code + '}\n' # Finishes themodule closing bracket.
         scad_code = scad_code + '/* Run */\n' # scad code.
         scad_code = scad_code + self.id+'();' # Writes the scad code used to call the function.

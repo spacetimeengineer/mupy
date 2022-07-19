@@ -11,8 +11,8 @@ class Coordinates:
         self.position_0 = p_i # Initial_position.
         self.position_f = p_f # Final position.
 
-        self.angle_0 = a_i # Initial angle.
-        self.angle_f = a_f # Final angle. 
+        self.orientation_0 = a_i # Initial angle.
+        self.orientation_f = a_f # Final angle. 
 
         # self.translational_velocity_0 = vt_i # Initial translational velocity.
         # self.translational_velocity_f = vt_i # Final rotational velocity.
