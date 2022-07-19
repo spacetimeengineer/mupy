@@ -49,20 +49,20 @@ panel_l_assembly_coords = mu.Coordinates(0,0.5,[8 * 25 / 2 + alpha, 0 , 0],[8 * 
 
 """ Define assembly. """
 box_assembly_1 = mu.Assembly("box_assembly_1")
-box_assembly_1.include(panel_a, panel_a_assembly_coords) # Coordinates complete!
-box_assembly_1.include(panel_b, panel_b_assembly_coords) # Coordinates complete!
-box_assembly_1.include(panel_c, panel_c_assembly_coords) # Coordinates complete!
-box_assembly_1.include(panel_d, panel_d_assembly_coords) # Coordinates complete!
-box_assembly_1.include(panel_e, panel_e_assembly_coords) # Coordinates complete!
-box_assembly_1.include(panel_f, panel_f_assembly_coords) # Coordinates complete!
+box_assembly_1.include(panel_a, panel_a_assembly_coords) 
+box_assembly_1.include(panel_b, panel_b_assembly_coords) 
+box_assembly_1.include(panel_c, panel_c_assembly_coords)
+box_assembly_1.include(panel_d, panel_d_assembly_coords)
+box_assembly_1.include(panel_e, panel_e_assembly_coords)
+box_assembly_1.include(panel_f, panel_f_assembly_coords)
 
 box_assembly_2 = mu.Assembly("box_assembly_2")
-box_assembly_2.include(panel_g, panel_g_assembly_coords) # Coordinates complete!
-box_assembly_2.include(panel_h, panel_h_assembly_coords) # Coordinates complete!
-box_assembly_2.include(panel_i, panel_i_assembly_coords) # Coordinates complete!
-box_assembly_2.include(panel_j, panel_j_assembly_coords) # Coordinates complete!
-box_assembly_2.include(panel_k, panel_k_assembly_coords) # Coordinates complete!
-box_assembly_2.include(panel_l, panel_l_assembly_coords) # Coordinates complete!
+box_assembly_2.include(panel_g, panel_g_assembly_coords)
+box_assembly_2.include(panel_h, panel_h_assembly_coords)
+box_assembly_2.include(panel_i, panel_i_assembly_coords)
+box_assembly_2.include(panel_j, panel_j_assembly_coords)
+box_assembly_2.include(panel_k, panel_k_assembly_coords)
+box_assembly_2.include(panel_l, panel_l_assembly_coords)
 
 beta = 1000
 box_assembly_1_coords = mu.Coordinates(0.5,1,[8 * 25 / 2 + beta,0,0],[8 * 25 / 2,0,0],[0,0,0],[0,0,0]) # Equation must be satisfied in order to express custom-box function. 
