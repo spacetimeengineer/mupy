@@ -44,13 +44,9 @@ class Hardware:
         scad_code = '\n/* A module dedicated to this hardware object. This module is only called once becasue it references the unique hardware element (In both real and virtual space) which only needs to be done once. */\n\n'
         scad_code = 'module '+self.id+'()\n{\n' #
         if (len(self.coordinate_superset)==0):
-            self.assign_coordinates(Coordinates(0,1,[0,0,0],[0,0,0],[0,0,0],[0,0,0]))
-            
-            
-            
+            self.assign_coordinates(Coordinates(0,1,[0,0,0],[0,0,0],[0,0,0],[0,0,0]))     
             
         if (len(self.coordinate_superset)==1): # Here you need to add more coordinate sets sepending on choice of epochs.
-            
             
             if (self.coordinate_superset[0].time_0 > 0): # Here you need to add more coordinate sets sepending on choice of epochs.
                 time_f = self.coordinate_superset[0].time_0  # Pu0ll from other coordinate information.
@@ -62,22 +58,14 @@ class Hardware:
                 position_f = self.coordinate_superset[0].position_f
                 orientation_f = self.coordinate_superset[0].orientation_f
                 time_0 = self.coordinate_superset[0].time_f  # Pu0ll from other coordinate information.
-                
                 self.assign_coordinates(Coordinates(time_0,1,position_f,position_f,orientation_f,orientation_f))
 
-
-
-
         for coordinates in self.coordinate_superset: #
-            
 
-                    
             scad_code = scad_code + "    /* Animation Sequence*/\n"
-
             scad_code = scad_code + \
                     '  if ($t >= '+str(coordinates.t_i)+' && $t <= '+str(coordinates.t_f)+')\n'\
                     '  {\n'      
-                    
             scad_code = scad_code + "    /* Initialize initial and final position and orientation. These values may be modified for assembly purposes. */\n\n" 
     
             scad_code = scad_code + "        /* Position */\n"
@@ -93,15 +81,13 @@ class Hardware:
             scad_code = scad_code + "        x_axis_angle_final = "+str(coordinates.a_f[0])+";    // Final angle along the 'x' axis. ( in degrees ).\n"
             scad_code = scad_code + "        y_axis_angle_initial = "+str(coordinates.a_i[1])+";  // Initial angle along the 'y' axis. ( in degrees ).\n"
             scad_code = scad_code + "        y_axis_angle_final = "+str(coordinates.a_f[1])+";    // Final angle along the the 'z' axis. ( in degrees ).\n"
-            scad_code = scad_code + "        z_axis_angle_initial = "+str(coordinates.a_i[2])+";    // Final angle along the the 'z' axis. ( in degrees ).\n"
+            scad_code = scad_code + "        z_axis_angle_initial = "+str(coordinates.a_i[2])+";  // Final angle along the the 'z' axis. ( in degrees ).\n"
             scad_code = scad_code + "        z_axis_angle_final = "+str(coordinates.a_f[2])+";    // Final angle along the 'z' axis. ( in degrees ).\n\n"
         
-            scad_code = scad_code + \
-                    '    translate([x_position_initial+($t-'+str(coordinates.t_i)+')*(x_position_final-x_position_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+') , y_position_initial+($t-'+str(coordinates.t_i)+')*(y_position_final-y_position_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+'), z_position_initial + ($t-'+str(coordinates.t_i)+')*(z_position_final-z_position_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+') ] ) { rotate([x_axis_angle_initial+($t-'+str(coordinates.t_i)+')*(x_axis_angle_final-x_axis_angle_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+'), y_axis_angle_initial+($t-'+str(coordinates.t_i)+')*(y_axis_angle_final-y_axis_angle_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+'), z_axis_angle_initial+($t-'+str(coordinates.t_i)+')*(z_axis_angle_final-z_axis_angle_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+')])'+' { color("'+self.color+'") { import("stl_files/'+ self.hardware_code + '.stl"); } } }\n''  }\n' # translation block scad code.
+            scad_code = scad_code + '    translate([x_position_initial+($t-'+str(coordinates.t_i)+')*(x_position_final-x_position_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+') , y_position_initial+($t-'+str(coordinates.t_i)+')*(y_position_final-y_position_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+'), z_position_initial + ($t-'+str(coordinates.t_i)+')*(z_position_final-z_position_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+') ] ) { rotate([x_axis_angle_initial+($t-'+str(coordinates.t_i)+')*(x_axis_angle_final-x_axis_angle_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+'), y_axis_angle_initial+($t-'+str(coordinates.t_i)+')*(y_axis_angle_final-y_axis_angle_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+'), z_axis_angle_initial+($t-'+str(coordinates.t_i)+')*(z_axis_angle_final-z_axis_angle_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+')])'+' { color("'+self.color+'") { import("stl_files/'+ self.hardware_code + '.stl"); } } }\n''  }\n' # translation block scad code.
                     
         """ This bit here is so the assembly time quantums dont delete the object from ever coming into view."""            
-                    
-                    
+                
         scad_code = scad_code + '}\n' # Finishes themodule closing bracket.
         scad_code = scad_code + '/* Run */\n' # scad code.
         scad_code = scad_code + self.id+'();' # Writes the scad code used to call the function.
@@ -124,10 +110,12 @@ class Hardware:
     
     def build_stl(self, directory):
         """"""
+        mu_symbol = '\u00B5'
         print("Decoding : "+self.hardware_code)
         decoding = Decode(self.hardware_code, directory) # This is where the hardware code is converted into an scad code which can be rendered to an stl.
         if not exists(directory+"/stl_files/"+self.hardware_code+".stl") and decoding.family_code_valid == True: #
-            print("Rendering : "+self.hardware_code+".stl")
+            print("Rendering : "+self.hardware_code)
+            print(""+mu_symbol+":! openscad -o "+directory+"/stl_files/"+self.hardware_code+".stl "+directory+"/"+self.hardware_code+".scad") # This is the scad file used to create the stl files
             os.system("openscad -o "+directory+"/stl_files/"+self.hardware_code+".stl "+directory+"/"+self.hardware_code+".scad") # This is the scad file used to create the stl files
             
     def mucli_build_stl(self, directory):
@@ -137,8 +125,8 @@ class Hardware:
         if not exists(directory+"/stl_files/"+self.hardware_code+".stl") and decoding.family_code_valid == True: #
         
             print("")
-            print(""+mu_symbol+":! Rendering : "+self.hardware_code+".stl\n")
-            os.system("openscad -o "+directory+"/stl_files/"+self.hardware_code+".stl "+directory+"/"+self.hardware_code+".scad") # This is the scad file used to create the stl files
+            print(""+mu_symbol+":! Rendering : "+self.hardware_code)
+            print(""+mu_symbol+":! openscad -o "+directory+"/stl_files/"+self.hardware_code+".stl "+directory+"/"+self.hardware_code+".scad") # This is the scad file used to create the stl files
             print("")
             
         if decoding.family_code_valid == False:

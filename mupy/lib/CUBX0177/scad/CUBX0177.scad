@@ -1,18 +1,4 @@
-
-// Need to make the teeth a bit smaller using a scale inderpendent tolerance parameter.
-
-
-// Each block type needs special cuts and rotations to look cool and reduce mass.
-
-// There needs to be holes throle the teeth and sides to reduce mass.
-
-// There needs to be angled bindshafts.
-
-// There needs to be codes built in from the outset and the need to be very intellegent.
-
-// The bind array parameters bust be defined. Bindshaft radius. Bindshaft x distance. Bindshaft Y distance. Same goes for angled bindshafts.
-
-// "Proto" style, "lite" style and "stock" style.
+$fn = 50;
 
 module general_block(block_length = 25.001, shaft_radius = 2.5 )
 {
@@ -91,7 +77,6 @@ module circular_cavity_array(x_spacing, y_spacing, x_units, y_units, x_offset, y
     }
 }
 
-/*CUBX0177-BPAN-B25SR2P5-X8Y8PP2-RT-SX25Y25-X8Y8-XO3YO5-X20Y20Z10-S*/
 module CUBX0177_BPAN(block_length, shaft_radius, xunits, yunits, padding = 0.2, side_teeth_orientation = "regular", top_teeth_included = true, x_spacing, y_spacing, x_units, y_units, x_offset, y_offset, x_cavity_dimensions, y_cavity_dimensions, z_cavity_dimensions, cavity_type)
 {
     difference()
@@ -249,90 +234,16 @@ module triangular_corner_difference(block_length, shaft_radius)
 }
 
 
-//$fn = 15;
-//block_length = 7.5;
-//shaft_radius = 2.5;
-
-
-$fn = 15;
-block_length = 10.00;
-shaft_radius = 3.33;
-
-
-
-
-/* Main gear set for differential */
-
-/*
-translate([0, 0, block_length]) { mirror([0, 0, 1]) { bevel_gear_pair(modul=3, gear_teeth=34, pinion_teeth=14, axis_angle=90, tooth_width=block_length, gear_bore=4, pinion_bore=5, pressure_angle = 20, helix_angle=20, together_built=true); } }
-
-/* Mountable gear ; please integrate. */
-
-/*
-translate([0, 0, -1]) { CUBX0177_element(block_length, shaft_radius, 8, 8, 0.10, "regular", false); }
-difference()
-{
-    translate([0, 0, 0]) { bevel_gear(modul=3, tooth_number=17,  partial_cone_angle=45, tooth_width=block_length, bore=shaft_radius*2, pressure_angle=20, helix_angle=-20); } 
-    translate([0, 0, 0]) { shaft_array(block_length, shaft_radius, 4, 4, block_length*3); }
-    translate([0 ,0 ,0]) { rotate([0,0,0]) { cylinder(block_length*3, 8.09, 8.09, true); } }
-    translate([0 ,0 ,8.6]) { rotate([0,0,0]) { cylinder(block_length, 9.5, 9.5, true); } }
-    translate([0, 0, 0]) { CUBX0177_element(block_length, shaft_radius, 8, 8, 0.10, "regular", false); }
-}
-*/
-
-/* Single Large Gear */
-
-/*
-difference()
-{
-    translate([0, 0, block_length/2]) { bevel_gear(modul=3, tooth_number=28,  partial_cone_angle=45, tooth_width=7.5, bore=5, pressure_angle=15, helix_angle=-20); }   
-    translate([0 ,0 ,0]) { rotate([0,0,0]) { cylinder(block_length*3, 8.09, 8.09, true); } }
-}
-*/
-
-/* Cubic module */
-
-/*
-cubic_module(block_length, shaft_radius, x_units = 16, y_units = 16, z_units = 16, alpha = -3.75);
-*/
-
-/* Interior 20 degree helix bevel gear */
-
-/*
-translate([0, 0, 0]) { bevel_gear(modul=2, tooth_number=18,  partial_cone_angle=45, tooth_width=7.5*1.5, bore=5, pressure_angle=15, helix_angle=-20); } 
-*/
-
-
-
-/* Bearing config (please integrate)*/
-
-/*
-difference()
-{
-    translate([0, 0, 0]) { CUBX0177_element(block_length, shaft_radius, 18, 18, 0.1, "regular", false); }
-    translate([0 ,0 ,0]) { rotate([0,0,0]) { cylinder(block_length+0.002, 8.08, 8.08, true); } }
-}
-*/
-
-
-/* Improved Strait Strait Inside bevel gear */
-
-/*
-translate([0, 0, 0]) { bevel_gear(modul=1.75, tooth_number=20,  partial_cone_angle=45, tooth_width=7.5*2, bore=5, pressure_angle=15, helix_angle=0); }
-translate([0, 0, 0]) { bevel_gear(modul=2, tooth_number=17,  partial_cone_angle=45, tooth_width=block_length, bore=shaft_radius*2, pressure_angle=20, helix_angle=0); } 
-*/
-
 
 
 /* Axle Adapter */
 
-module CUBX0177_axle_adapter_v0( block_length, shaft_radius )
+module CUBX0177_AXAD( block_length, shaft_radius )
 {
     difference()
     {
         union()
         {
-
             translate([block_length*0, block_length*0, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
             translate([block_length*1, block_length*0, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
             translate([block_length*1, block_length*-1, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
@@ -361,22 +272,11 @@ module CUBX0177_axle_adapter_v0( block_length, shaft_radius )
             translate([block_length*0, block_length*1, block_length*2]) { general_block(block_length + 0.01, shaft_radius ); }
             translate([block_length*1, block_length*1, block_length*2]) { general_block(block_length + 0.01, shaft_radius ); }
             
-            
             translate([block_length*2, block_length*0, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
-            //translate([block_length*3, block_length*0, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
-            //translate([block_length*2, block_length*0, block_length*1]) { general_block(block_length + 0.01, shaft_radius ); }
-
             translate([block_length*0, block_length*-2, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
-            //translate([block_length*0, block_length*-3, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
-            //translate([block_length*0, block_length*-2, block_length*1]) { general_block(block_length + 0.01, shaft_radius ); }
-
             translate([block_length*-2, block_length*0, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
-            //translate([block_length*-3, block_length*0, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
-            //translate([block_length*-2, block_length*0, block_length*1]) { general_block(block_length + 0.01, shaft_radius ); }
-            
             translate([block_length*0, block_length*2, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
-            //translate([block_length*0, block_length*3, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
-            //translate([block_length*0, block_length*2, block_length*1]) { general_block(block_length + 0.01, shaft_radius ); }
+
         }
         translate([0,0,block_length*1]) { cube([block_length+0.1, block_length+0.1, block_length+0.1],true);}
         translate([0,0,block_length*2]) { cube([block_length+0.1, block_length+0.1, block_length+0.1],true);}
@@ -387,7 +287,7 @@ module CUBX0177_axle_adapter_v0( block_length, shaft_radius )
 
 /* Axle - Flywheel Adapter */
 
-module CUBX0177_flywheel_adapter_v0( block_length, shaft_radius )
+module CUBX0177_FYAD( block_length, shaft_radius )
 {
     translate([0*block_length, 0*block_length, 0*block_length]) { general_block(block_length + 0.01, shaft_radius ); }
     translate([block_length*1, block_length*0, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
@@ -413,4 +313,22 @@ module CUBX0177_flywheel_adapter_v0( block_length, shaft_radius )
 }
 
 
-CUBX0177_BPAN(block_length = 15, shaft_radius=2.5, xunits=18, yunits=12, padding = 0.2, side_teeth_orientation = "regular", top_teeth_included = true, x_spacing = 25, y_spacing = 35, x_units=3, y_units=2, x_offset=0, y_offset=0, x_cavity_dimensions=15, y_cavity_dimensions=15, z_cavity_dimensions=5, cavity_type="C");
+/* Axle - Flywheel Adapter */
+
+module CUBX0177_AXLE( block_length, shaft_radius, axle_blocks )
+{
+    length = block_length*(axle_blocks-1);
+    for ( x_block_step = [ - length / 2 : block_length : length / 2 ]) 
+    { 
+        translate([x_block_step,0,0])
+        {
+            scale([1.0001,1,1])
+            {
+                general_block(block_length, shaft_radius);
+            }
+        }
+
+    }
+}
+
+

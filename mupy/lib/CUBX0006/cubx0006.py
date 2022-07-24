@@ -38,8 +38,6 @@ class CUBX0006:
     def CUBX0006_BLK(self): # Example BLK hardware code : CUBX0006-BLK-L67W796H897
         """  Writes CUBX0006_BLK function to scad file with parameters pulled from hardware code. """
         self.scad_file.write('CUBX0006_BLK(length='+str(self.length).replace('P','.')+', height='+str(self.height).replace('P','.')+', width='+str(self.width).replace('P','.')+');') # Writes function to scad file with parameters set.
-        print('CUBX0006_BLK(length='+str(self.length).replace('P','.')+', height='+str(self.height).replace('P','.')+', width='+str(self.width).replace('P','.')+');')
-
 
 class CUBX0006_encoding:
     def __init__(self):

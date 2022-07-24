@@ -139,16 +139,34 @@ class CUBX0177:
 
         elif (self.type_code=="AXLE"): # Square axle.
 
-            # Example SPAN hardware code : "CUBX0177-AXLE-B25SR2P5-22"
-            self.block_unit_length = self.hardware_code.split("-")[2].split("B")[1].split("SR")[0] # Block length.
+            # Example SPAN hardware code : "CUBX0177-AXLE-B25SR2P5-A22"
+            
+            
+            
+            self.block_unit_length = self.hardware_code.split("-")[2].split("B")[1].split("SR")[0].replace("P", ".", 1) # Block length.
             self.shaft_radius = self.hardware_code.split("-")[2].split("B")[1].split("SR")[1].replace("P", ".", 1) # Shaft radius.
+            self.axle_blocks = self.hardware_code.split("-")[3].split("A")[1].replace("P", ".", 1) # Axle blocks.
 
             ''' Rules logic goes here ; conditions of which parameters combinations can exist.   '''
-
+            
+            ''' Testing that code is parsed correctly.'''
+            
+            
+            print("")
+            print("    Parameterization Information")
+            print("")
+            print("    famliy_code = "+self.family_code)
+            print("    type_code = "+self.type_code)
+            print("    block_unit_length = "+self.block_unit_length)
+            print("    shaft_radius = "+self.shaft_radius)
+            print("    axle_blocks = "+self.axle_blocks)
+            print("")
+            
             ''' Execute write scad functions.   '''
 
             self.CUBX0177_AXLE()
             self.scad_file.close()
+            
         elif (self.type_code=="FYAD"): # Flywheel adapter.
 
             # Example SPAN hardware code : "CUBX0177-FYAD-B25SR2P5".
@@ -157,10 +175,25 @@ class CUBX0177:
 
             ''' Rules logic goes here ; conditions of which parameters combinations can exist.   '''
 
+            self.block_unit_length = self.block_unit_length.replace("P", ".", 1)
+            self.threshaft_radiusad_starts = self.shaft_radius.replace("P", ".", 1)
+
+            ''' Testing that code is parsed correctly.'''
+            
+            print("")
+            print("    Parameterization Information")
+            print("")
+            print("    famliy_code = "+self.family_code)
+            print("    type_code = "+self.type_code)
+            print("    block_unit_length = "+self.block_unit_length)
+            print("    shaft_radius = "+self.shaft_radius)
+            print("")
+
             ''' Execute write scad functions.   '''
 
             self.CUBX0177_FYAD()
             self.scad_file.close()
+            
         elif (self.type_code=="AXAD"): # Axle adapter.
 
             # Example SPAN hardware code : "CUBX0177-FYAD-B25SR2P5"
@@ -168,7 +201,21 @@ class CUBX0177:
             self.shaft_radius = self.hardware_code.split("-")[2].split("B")[1].split("SR")[1].replace("P", ".", 1) # Shaft radius.
 
             ''' Rules logic goes here ; conditions of which parameters combinations can exist.   '''
-
+            
+            self.block_unit_length = self.block_unit_length.replace("P", ".", 1)
+            self.threshaft_radiusad_starts = self.shaft_radius.replace("P", ".", 1)
+            
+            ''' Testing that code is parsed correctly.'''
+            
+            print("")
+            print("    Parameterization Information")
+            print("")
+            print("    famliy_code = "+self.family_code)
+            print("    type_code = "+self.type_code)
+            print("    block_unit_length = "+self.block_unit_length)
+            print("    shaft_radius = "+self.shaft_radius)
+            print("")
+            
             ''' Execute write scad functions.   '''
 
             self.CUBX0177_AXAD()
@@ -186,28 +233,24 @@ class CUBX0177:
 
     def CUBX0177_SPAN(self):
 
-        self.scad_file.write('CUBX0177_SPAN( '+self.block_unit_length+', '+self.block_unit_length+', '+self.x_units+', '+self.y_units+' )\n')
+        self.scad_file.write('CUBX0177_SPAN( '+self.block_unit_length+', '+self.block_unit_length+', '+self.x_units+', '+self.y_units+' );\n')
 
 
     def CUBX0177_FYAD(self):
 
-        self.block_unit_length = 0
-        self.shaft_radius = 0
 
-        self.scad_file.write('CUBX0177_FYAD( '+self.block_unit_length+', '+self.shaft_radius+' )\n')
+
+        self.scad_file.write('CUBX0177_FYAD( '+self.block_unit_length+', '+self.shaft_radius+' );\n')
 
 
     def CUBX0177_AXAD(self):
-        self.block_unit_length = 0
-        self.shaft_radius = 0
-        self.scad_file.write('CUBX0177_AXAD( '+self.block_unit_length+', '+self.shaft_radius+', '+self.padding+' )\n')
+
+        self.scad_file.write('CUBX0177_AXAD( '+self.block_unit_length+', '+self.shaft_radius+', '+self.padding+' );\n')
     
 
     def CUBX0177_AXLE(self):
-        self.block_unit_length = 0
-        self.shaft_radius = 0
-        self.length_units = 0
-        self.scad_file.write('CUBX0177_AXLE( '+self.block_unit_length+', '+self.shaft_radius+', '+self.length_units+' )\n')
+
+        self.scad_file.write('CUBX0177_AXLE( '+self.block_unit_length+', '+self.shaft_radius+', '+self.axle_blocks+' );\n')
 
 
 class CUBX0177_encoding:
