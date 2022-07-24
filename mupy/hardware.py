@@ -22,6 +22,7 @@ class Hardware:
         self.workspace_directory = "" # The directory associated with workspace which contains this hardware object.
         self.stl_file_name = self.hardware_code+".stl" # The string path variable associated with the .stl file which this object helps generate.
         self.scad_file_name = self.id+".scad" # The string path variable associated with the scad file which is used to render the .stl file.
+        self.color = "blue"
 
     def assign_id(self):
         """ Assigns an appropriate ID ; one which maintains uniuness but is also alphabetic ; 
@@ -96,11 +97,7 @@ class Hardware:
             scad_code = scad_code + "        z_axis_angle_final = "+str(coordinates.a_f[2])+";    // Final angle along the 'z' axis. ( in degrees ).\n\n"
         
             scad_code = scad_code + \
-                    '    translate([x_position_initial+($t-'+str(coordinates.t_i)+')*(x_position_final-x_position_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+') , y_position_initial+($t-'+str(coordinates.t_i)+')*(y_position_final-y_position_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+'), z_position_initial  \
-                    +($t-'+str(coordinates.t_i)+')*(z_position_final-z_position_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+') ] ) { rotate([x_axis_angle_initial+($t-'+str(coordinates.t_i)+')*(x_axis_angle_final-x_axis_angle_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+'),   \
-                    y_axis_angle_initial+($t-'+str(coordinates.t_i)+')*(y_axis_angle_final-y_axis_angle_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+'), z_axis_angle_initial+($t-'+str(coordinates.t_i)+')*(z_axis_angle_final-z_axis_angle_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+')])' \
-                    +' { import("stl_files/'+ self.hardware_code + '.stl"); } }\n'\
-                    '  }\n' # translation block scad code.
+                    '    translate([x_position_initial+($t-'+str(coordinates.t_i)+')*(x_position_final-x_position_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+') , y_position_initial+($t-'+str(coordinates.t_i)+')*(y_position_final-y_position_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+'), z_position_initial + ($t-'+str(coordinates.t_i)+')*(z_position_final-z_position_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+') ] ) { rotate([x_axis_angle_initial+($t-'+str(coordinates.t_i)+')*(x_axis_angle_final-x_axis_angle_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+'), y_axis_angle_initial+($t-'+str(coordinates.t_i)+')*(y_axis_angle_final-y_axis_angle_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+'), z_axis_angle_initial+($t-'+str(coordinates.t_i)+')*(z_axis_angle_final-z_axis_angle_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+')])'+' { color("'+self.color+'") { import("stl_files/'+ self.hardware_code + '.stl"); } } }\n''  }\n' # translation block scad code.
                     
         """ This bit here is so the assembly time quantums dont delete the object from ever coming into view."""            
                     

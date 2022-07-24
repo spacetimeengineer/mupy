@@ -17,7 +17,7 @@ class CRSPGR022:
 
         self.scad_file_name = directory + "/" + hardware_code +".scad"
         self.scad_file = open(self.scad_file_name, 'w+')  # open file in append mode
-        
+        print("")
         os.system("cp -R "+os.path.dirname(__file__)+"/scad/ "+ self.directory)
         self.scad_file.write('use <scad/CRSPGR022.scad>;\n\n')
 
@@ -31,10 +31,32 @@ class CRSPGR022:
             self.width = hardware_code.split("-")[3].split("W")[1]
             self.pressure_angle = hardware_code.split("-")[4].split("P")[1].split("H")[0]
             self.helix_angle = hardware_code.split("-")[4].split("H")[1]
+            
+            # Replace appropriate 'P' character with decimal point. This is performed after code identification so that to remove inappropriate 'P' characters.
+            self.modul = self.modul.replace("P", ".", 1)
+            self.length = self.length.replace("P", ".", 1)
+            self.height = self.height.replace("P", ".", 1)
+            self.width = self.width.replace("P", ".", 1)
+            self.pressure_angle = self.pressure_angle.replace("P", ".", 1)
+            self.helix_angle = self.helix_angle.replace("P", ".", 1)
+            
+            ''' Testing that code is parsed correctly.'''
+            print("")
+            print("    Parameterization Information")
+            print("")
+            print("    modul = "+self.modul)
+            print("    length = "+self.length)
+            print("    height = "+self.height)
+            print("    width = "+self.width)
+            print("    pressure_angle = "+self.pressure_angle)
+            print("    helix_angle = "+self.helix_angle)
+            print("")
+            
             self.CRSPGR022_R()
             self.scad_file.close()
             
-        # "CRSPGR022-MR-M1-L34H34W23-P15H20-P4-PH-F2"
+        # "CRSPGR022-MR-M1-L34H34W23-P15H20-P4-PH-F2" 
+        # TODO: Getting rendering Errors when automated ; openscad -o xxxx.scad
         elif (self.type_code=="MR"): 
 
             self.modul = hardware_code.split("-")[2].split("M")[1]
@@ -45,7 +67,32 @@ class CRSPGR022:
             self.helix_angle = hardware_code.split("-")[4].split("H")[1]
             self.profile = hardware_code.split("-")[5].split("P")[1]
             self.head = hardware_code.split("-")[6]
-            self.fasteners = hardware_code.split("-")[7].split("F")[1]
+            self.fastners = hardware_code.split("-")[7].split("F")[1]
+            
+            # Replace appropriate 'P' character with decimal point. This is performed after code identification so that to remove inappropriate 'P' characters.
+            self.modul = self.modul.replace("P", ".", 1)
+            self.length = self.length.replace("P", ".", 1)
+            self.height = self.height.replace("P", ".", 1)
+            self.width = self.width.replace("P", ".", 1)
+            self.pressure_angle = self.pressure_angle.replace("P", ".", 1)
+            self.helix_angle = self.helix_angle.replace("P", ".", 1)
+            self.profile = self.profile.replace("P", ".", 1)
+            
+            ''' Testing that code is parsed correctly.'''
+            print("")
+            print("    Parameterization Information")
+            print("")
+            print("    modul = "+self.modul)
+            print("    length = "+self.length)
+            print("    height = "+self.height)
+            print("    width = "+self.width)
+            print("    pressure_angle = "+self.pressure_angle)
+            print("    helix_angle = "+self.helix_angle)
+            print("    profile = "+self.profile)
+            print("    head = "+self.head)
+            print("    fastners = "+self.fastners)
+            print("")
+                        
             self.CRSPGR022_MR()
             self.scad_file.close()
 
@@ -58,6 +105,29 @@ class CRSPGR022:
             self.width = hardware_code.split("-")[3].split("W")[1]
             self.pressure_angle = hardware_code.split("-")[4].split("P")[1].split("H")[0]
             self.helix_angle = hardware_code.split("-")[4].split("H")[1]
+            
+            # Replace appropriate 'P' character with decimal point. This is performed after code identification so that to remove inappropriate 'P' characters.
+            self.modul = self.modul.replace("P", ".", 1)
+            self.length = self.length.replace("P", ".", 1)
+            self.height = self.height.replace("P", ".", 1)
+            self.width = self.width.replace("P", ".", 1)
+            self.pressure_angle = self.pressure_angle.replace("P", ".", 1)
+            self.helix_angle = self.helix_angle.replace("P", ".", 1)
+            
+            ''' Testing that code is parsed correctly.'''
+            print("")
+            print("    Parameterization Information")
+            print("")
+            print("    modul = "+self.modul)
+            print("    length = "+self.length)
+            print("    height = "+self.height)
+            print("    width = "+self.width)
+            print("    pressure_angle = "+self.pressure_angle)
+            print("    helix_angle = "+self.helix_angle)
+            print("")
+            
+            
+            
             self.CRSPGR022_HR()
             self.scad_file.close()
 
@@ -70,9 +140,36 @@ class CRSPGR022:
             self.width = hardware_code.split("-")[3].split("W")[1]
             self.pressure_angle = hardware_code.split("-")[4].split("P")[1].split("H")[0]
             self.helix_angle = hardware_code.split("-")[4].split("H")[1]
-            self.profile = ""
-            self.head = ""
-            self.fasteners = ""
+            self.profile = hardware_code.split("-")[5].split("P")[1]
+            self.head = hardware_code.split("-")[6]
+            self.fastners = hardware_code.split("-")[7].split("F")[1]
+            
+            
+            # Replace appropriate 'P' character with decimal point. This is performed after code identification so that to remove inappropriate 'P' characters.
+            self.modul = self.modul.replace("P", ".", 1)
+            self.length = self.length.replace("P", ".", 1)
+            self.height = self.height.replace("P", ".", 1)
+            self.width = self.width.replace("P", ".", 1)
+            self.pressure_angle = self.pressure_angle.replace("P", ".", 1)
+            self.helix_angle = self.helix_angle.replace("P", ".", 1)
+            self.profile = self.profile.replace("P", ".", 1)
+            
+            ''' Testing that code is parsed correctly.'''
+            print("")
+            print("    Parameterization Information")
+            print("")
+            print("    modul = "+self.modul)
+            print("    length = "+self.length)
+            print("    height = "+self.height)
+            print("    width = "+self.width)
+            print("    pressure_angle = "+self.pressure_angle)
+            print("    helix_angle = "+self.helix_angle)
+            print("    profile = "+self.profile)
+            print("    head = "+self.head)
+            print("    fastners = "+self.fastners)
+            print("")
+            
+            
             self.CRSPGR022_MHR()
             self.scad_file.close()
 
@@ -92,6 +189,28 @@ class CRSPGR022:
             else:
                 self.optimized = "false"
 
+
+            # Replace appropriate 'P' character with decimal point. This is performed after code identification so that to remove inappropriate 'P' characters.
+            self.modul = self.modul.replace("P", ".", 1)
+            self.tooth_number = self.tooth_number.replace("P", ".", 1)
+            self.width = self.width.replace("P", ".", 1)
+            self.pressure_angle = self.pressure_angle.replace("P", ".", 1)
+            self.helix_angle = self.helix_angle.replace("P", ".", 1)
+            self.bore = self.bore.replace("P", ".", 1)
+            
+            ''' Testing that code is parsed correctly.'''
+            print("")
+            print("    Parameterization Information")
+            print("")
+            print("    modul = "+self.modul)
+            print("    tooth_number = "+self.tooth_number)
+            print("    width = "+self.width)
+            print("    pressure_angle = "+self.pressure_angle)
+            print("    helix_angle = "+self.helix_angle)
+            print("    bore = "+self.bore)
+            print("    optimized = "+self.optimized)
+            print("")
+            
             self.CRSPGR022_SG()
             self.scad_file.close()
 
@@ -110,6 +229,28 @@ class CRSPGR022:
                 self.optimized = 'true'
             else:
                 self.optimized = "false"
+                
+                        # Replace appropriate 'P' character with decimal point. This is performed after code identification so that to remove inappropriate 'P' characters.
+            self.modul = self.modul.replace("P", ".", 1)
+            self.tooth_number = self.tooth_number.replace("P", ".", 1)
+            self.width = self.width.replace("P", ".", 1)
+            self.pressure_angle = self.pressure_angle.replace("P", ".", 1)
+            self.helix_angle = self.helix_angle.replace("P", ".", 1)
+            self.bore = self.bore.replace("P", ".", 1)
+            
+            ''' Testing that code is parsed correctly.'''
+            print("")
+            print("    Parameterization Information")
+            print("")
+            print("    modul = "+self.modul)
+            print("    tooth_number = "+self.tooth_number)
+            print("    width = "+self.width)
+            print("    pressure_angle = "+self.pressure_angle)
+            print("    helix_angle = "+self.helix_angle)
+            print("    bore = "+self.bore)
+            print("    optimized = "+self.optimized)
+            print("")    
+                
             self.CRSPGR022_HG()
             self.scad_file.close()
 
@@ -123,6 +264,25 @@ class CRSPGR022:
             self.pressure_angle = hardware_code.split("-")[4].split("P")[1].split("H")[0]
             self.helix_angle = hardware_code.split("-")[4].split("P")[1].split("H")[1]
 
+            self.modul = self.modul.replace("P", ".", 1)
+            self.tooth_number = self.tooth_number.replace("P", ".", 1)
+            self.width = self.width.replace("P", ".", 1)
+            self.rim_width = self.rim_width.replace("P", ".", 1)
+            self.pressure_angle = self.pressure_angle.replace("P", ".", 1)
+            self.helix_angle = self.helix_angle.replace("P", ".", 1)
+            
+            ''' Testing that code is parsed correctly.'''
+            print("")
+            print("    Parameterization Information")
+            print("")
+            print("    modul = "+self.modul)
+            print("    tooth_number = "+self.tooth_number)
+            print("    width = "+self.width)
+            print("    rim_width = "+self.rim_width)
+            print("    pressure_angle = "+self.pressure_angle)
+            print("    helix_angle = "+self.helix_angle)
+            print("") 
+
             self.CRSPGR022_RG()
             self.scad_file.close()
 
@@ -135,27 +295,63 @@ class CRSPGR022:
             self.rim_width = hardware_code.split("-")[3].split("T")[1].split("W")[1].split("R")[1]
             self.pressure_angle = hardware_code.split("-")[4].split("P")[1].split("H")[0]
             self.helix_angle = hardware_code.split("-")[4].split("P")[1].split("H")[1]
+            
+            self.modul = self.modul.replace("P", ".", 1)
+            self.tooth_number = self.tooth_number.replace("P", ".", 1)
+            self.width = self.width.replace("P", ".", 1)
+            self.rim_width = self.rim_width.replace("P", ".", 1)
+            self.pressure_angle = self.pressure_angle.replace("P", ".", 1)
+            self.helix_angle = self.helix_angle.replace("P", ".", 1)
+            
+            ''' Testing that code is parsed correctly.'''
+            print("")
+            print("    Parameterization Information")
+            print("")
+            print("    modul = "+self.modul)
+            print("    tooth_number = "+self.tooth_number)
+            print("    width = "+self.width)
+            print("    rim_width = "+self.rim_width)
+            print("    pressure_angle = "+self.pressure_angle)
+            print("    helix_angle = "+self.helix_angle)
+            print("") 
 
             self.CRSPGR022_HRG()
             self.scad_file.close()
 
-        # "CRSPGR022-PG-M1-S34P34N3W23R23-P15H20-B2-T-T"
+        # "CRSPGR022-PG-M1-S34P34N3W23R23-P15H20-B2-T"
         elif (self.type_code=="PG"): 
 
             self.modul = hardware_code.split("-")[2].split("M")[1]
-            self.sun_teeth = ""
-            self.planet_teeth = ""
-            self.number_planets = ""
-
-            self.width = ""
-            self.rim_width = ""
-
-            self.pressure_angle = ""
-            self.helix_angle = ""
-
-            self.together_built = ""
-            self.optimized = ""
+            self.sun_teeth = hardware_code.split("-")[3].split("S")[1].split("P")[0]
+            self.planet_teeth = hardware_code.split("-")[3].split("P")[1].split("N")[0]
+            self.number_planets = hardware_code.split("-")[3].split("N")[1].split("W")[0]
+            self.width = hardware_code.split("-")[3].split("W")[1].split("R")[0]
+            self.rim_width = hardware_code.split("-")[3].split("R")[1]
+            self.pressure_angle = hardware_code.split("-")[4].split("P")[1].split("H")[0]
+            self.helix_angle = hardware_code.split("-")[4].split("P")[1].split("H")[1]
             self.bore = hardware_code.split("-")[5].split("B")[1]
+            self.optimized = hardware_code.split("-")[6]
+            
+            self.modul = self.modul.replace("P", ".", 1)
+            self.optimized = '"'+self.optimized+'"'
+            self.width = self.width.replace("P", ".", 1)
+            self.rim_width = self.rim_width.replace("P", ".", 1)
+            self.pressure_angle = self.pressure_angle.replace("P", ".", 1)
+            self.helix_angle = self.helix_angle.replace("P", ".", 1)
+            
+            ''' Testing that code is parsed correctly.'''
+            print("")
+            print("    Parameterization Information")
+            print("")
+            print("    modul = "+self.modul)
+            print("    sun_teeth = "+self.sun_teeth)
+            print("    planet_teeth = "+self.planet_teeth)
+            print("    number_planets = "+self.number_planets)
+            print("    width = "+self.width)
+            print("    rim_width = "+self.rim_width)
+            print("    pressure_angle = "+self.pressure_angle)
+            print("    helix_angle = "+self.helix_angle)
+            print("") 
 
             self.CRSPGR022_PG()
             self.scad_file.close()
@@ -166,26 +362,70 @@ class CRSPGR022:
             self.modul = hardware_code.split("-")[2].split("M")[1]
             self.tooth_number = hardware_code.split("-")[3].split("T")[1].split("W")[0]
             self.width = hardware_code.split("-")[3].split("T")[1].split("W")[1].split("S")[0]
-            self.tooth_width = hardware_code.split("-")[3].split("T")[1].split("W")[1].split("S")[1]
+            self.tooth_width = hardware_code.split("-")[3].split("S")[1]
             self.pressure_angle = hardware_code.split("-")[4].split("P")[1].split("H")[0]
             self.helix_angle = hardware_code.split("-")[4].split("H")[1].split("C")[0]
             self.partial_cone_angle = hardware_code.split("-")[4].split("C")[1]
             self.bore = hardware_code.split("-")[5].split("B")[1]
 
+
+            self.modul = self.modul.replace("P", ".", 1)
+            self.width = self.width.replace("P", ".", 1)
+            self.tooth_width = self.tooth_width.replace("P", ".", 1)
+            self.pressure_angle = self.pressure_angle.replace("P", ".", 1)
+            self.helix_angle = self.helix_angle.replace("P", ".", 1)
+            self.partial_cone_angle = self.partial_cone_angle.replace("P", ".", 1)
+            
+            ''' Testing that code is parsed correctly.'''
+            print("")
+            print("    Parameterization Information")
+            print("")
+            print("    modul = "+self.modul)
+            print("    tooth_number = "+self.tooth_number)
+            print("    width = "+self.width)
+            print("    tooth_width = "+self.tooth_width)
+            print("    pressure_angle = "+self.pressure_angle)
+            print("    helix_angle = "+self.helix_angle)
+            print("    partial_cone_angle = "+self.partial_cone_angle)
+            print("    bore = "+self.bore)
+            print("") 
+
+
             self.CRSPGR022_BG()
             self.scad_file.close()
 
-        # "CRSPGR022-BHG-M1-T34W23-P15H20C15-B3"
+        # "CRSPGR022-BHG-M1-T34W50S5P5-P15H20C15-B3"
         elif (self.type_code=="BHG"):
 
             self.modul = hardware_code.split("-")[2].split("M")[1]
             self.tooth_number = hardware_code.split("-")[3].split("T")[1].split("W")[0]
-            self.width = hardware_code.split("-")[3].split("T")[1].split("W")[1]
+            self.width = hardware_code.split("-")[3].split("W")[1].split("S")[0]
+            self.tooth_width = hardware_code.split("-")[3].split("S")[1]
             self.pressure_angle = hardware_code.split("-")[4].split("P")[1].split("H")[0]
-            self.helix_angle = hardware_code.split("-")[4].split("P")[1].split("H")[1].split("C")[0]
-            self.partial_cone_angle = hardware_code.split("-")[4].split("P")[1].split("H")[1].split("C")[0]
+            self.helix_angle = hardware_code.split("-")[4].split("H")[1].split("C")[0]
+            self.partial_cone_angle = hardware_code.split("-")[4].split("C")[1]
             self.bore = hardware_code.split("-")[5].split("B")[1]
 
+            self.modul = self.modul.replace("P", ".", 1)
+            self.width = self.width.replace("P", ".", 1)
+            self.tooth_width = self.tooth_width.replace("P", ".", 1)
+            self.pressure_angle = self.pressure_angle.replace("P", ".", 1)
+            self.helix_angle = self.helix_angle.replace("P", ".", 1)
+            self.partial_cone_angle = self.partial_cone_angle.replace("P", ".", 1)
+            
+            ''' Testing that code is parsed correctly.'''
+            print("")
+            print("    Parameterization Information")
+            print("")
+            print("    modul = "+self.modul)
+            print("    tooth_number = "+self.tooth_number)
+            print("    width = "+self.width)
+            print("    tooth_width = "+self.tooth_width)
+            print("    pressure_angle = "+self.pressure_angle)
+            print("    helix_angle = "+self.helix_angle)
+            print("    partial_cone_angle = "+self.partial_cone_angle)
+            print("    bore = "+self.bore)
+            print("") 
 
             self.CRSPGR022_BHG()
             self.scad_file.close()
@@ -196,11 +436,30 @@ class CRSPGR022:
             self.modul = hardware_code.split("-")[2].split("M")[1]
             self.thread_starts = hardware_code.split("-")[3].split("TH")[1].split("L")[0]
             self.length = hardware_code.split("-")[3].split("TH")[1].split("L")[1]
-            
             self.pressure_angle = hardware_code.split("-")[4].split("P")[1].split("L")[0]
             self.lead_ground = hardware_code.split("-")[4].split("P")[1].split("L")[1]
-
             self.bore = hardware_code.split("-")[5].split("B")[1]
+            
+            
+            self.modul = self.modul.replace("P", ".", 1)
+            self.thread_starts = self.thread_starts.replace("P", ".", 1)
+            self.length = self.length.replace("P", ".", 1)
+            self.pressure_angle = self.pressure_angle.replace("P", ".", 1)
+            self.lead_ground = self.lead_ground.replace("P", ".", 1)
+            
+            
+            ''' Testing that code is parsed correctly.'''
+            print("")
+            print("    Parameterization Information")
+            print("")
+            print("    modul = "+self.modul)
+            print("    thread_starts = "+self.thread_starts)
+            print("    length = "+self.length)
+            print("    pressure_angle = "+self.pressure_angle)
+            print("    lead_ground = "+self.lead_ground)
+            print("    bore = "+self.bore)
+            print("") 
+
             self.CRSPGR022_W()
             self.scad_file.close()
 
@@ -217,7 +476,7 @@ class CRSPGR022:
 
     def CRSPGR022_MR(self):
 
-        self.scad_file.write('mountable_rack(modul='+str(self.modul)+', length='+str(self.length)+', height='+str(self.height)+', width='+str(self.width)+', pressure_angle='+str(self.pressure_angle)+', helix_angle='+str(self.helix_angle)+', profile='+str(self.profile)+', head='+str(self.head)+',fasteners='+str(self.fasteners)+');')
+        self.scad_file.write('mountable_rack(modul='+str(self.modul)+', length='+str(self.length)+', height='+str(self.height)+', width='+str(self.width)+', pressure_angle='+str(self.pressure_angle)+', helix_angle='+str(self.helix_angle)+', profile='+str(self.profile)+', head="'+str(self.head)+'",fastners='+str(self.fastners)+');')
     
     def CRSPGR022_HR(self):
 
@@ -225,7 +484,7 @@ class CRSPGR022:
 
     def CRSPGR022_MHR(self):
 
-        self.scad_file.write('mountable_herringbone_rack(modul='+str(self.modul)+', length='+str(self.length)+', height='+str(self.height)+', width='+str(self.width)+', pressure_angle='+str(self.pressure_angle)+', helix_angle='+str(self.helix_angle)+', profile='+str(self.profile)+', head='+str(self.head)+',fasteners='+str(self.fasteners)+');')
+        self.scad_file.write('mountable_herringbone_rack(modul='+str(self.modul)+', length='+str(self.length)+', height='+str(self.height)+', width='+str(self.width)+', pressure_angle='+str(self.pressure_angle)+', helix_angle='+str(self.helix_angle)+', profile='+str(self.profile)+', head='+str(self.head)+',fastners='+str(self.fastners)+');')
 
     def CRSPGR022_SG(self):
 
