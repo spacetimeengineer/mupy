@@ -1,5 +1,7 @@
 ## Table of contents
 
+![Alt Text](resources/temp_logo.png)
+
 <!--ts-->
    * [About](#about)
       * [Overview](#overview)
