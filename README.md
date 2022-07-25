@@ -407,6 +407,11 @@ Each system-code corresponds to a specific part. Once typed press enter to gener
 
 ![Alt Text](resources/CUBX0177-AXAD-B15SR3P1.png)
 
+    μ:# CRSPGR022-BG-M2-T34W25-P25H20C50-B15
+
+![Alt Text](resources/CRSPGR022-BG-M2-T34W25-P25H20C50-B15.png)
+
+
 ## custom_box.py
 
 The script below 'custom_box.py' is a modification of the previous 'simple_box.py'. Below is an example of parametrization being applied on a higher level using python; now the variables which plug into system codes can be configured at the script level and it makes things easier when you want a customize certain aspects of the assembly you're designing in a quick fashion. The hope is that we can as a community identify and build new family codes and schemas.

@@ -332,13 +332,12 @@ class CRSPGR022:
             self.CRSPGR022_PG()
             self.scad_file.close()
 
-        # "CRSPGR022-BG-M1-T34W23S10-P15H20C15-B3"
+        # "CRSPGR022-BG-M2-T34W25-P25H20C50-B15"
         elif (self.type_code=="BG"):
 
             self.modul = hardware_code.split("-")[2].split("M")[1]
             self.tooth_number = hardware_code.split("-")[3].split("T")[1].split("W")[0]
-            self.width = hardware_code.split("-")[3].split("T")[1].split("W")[1].split("S")[0]
-            self.tooth_width = hardware_code.split("-")[3].split("S")[1]
+            self.tooth_width = hardware_code.split("-")[3].split("W")[1]
             self.pressure_angle = hardware_code.split("-")[4].split("P")[1].split("H")[0]
             self.helix_angle = hardware_code.split("-")[4].split("H")[1].split("C")[0]
             self.partial_cone_angle = hardware_code.split("-")[4].split("C")[1]
@@ -346,7 +345,6 @@ class CRSPGR022:
 
 
             self.modul = self.modul.replace("P", ".", 1)
-            self.width = self.width.replace("P", ".", 1)
             self.tooth_width = self.tooth_width.replace("P", ".", 1)
             self.pressure_angle = self.pressure_angle.replace("P", ".", 1)
             self.helix_angle = self.helix_angle.replace("P", ".", 1)
@@ -357,7 +355,6 @@ class CRSPGR022:
             print("")
             print("    modul = "+self.modul)
             print("    tooth_number = "+self.tooth_number+" teeth")
-            print("    width = "+self.width+"mm")
             print("    tooth_width = "+self.tooth_width+"mm")
             print("    pressure_angle = "+self.pressure_angle+"°")
             print("    helix_angle = "+self.helix_angle+"°")
