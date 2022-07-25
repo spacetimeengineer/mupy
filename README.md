@@ -634,10 +634,14 @@ Mandating an extreme set of requirements and constraints will force a good idea 
   - Mandate Primary Requirement : Build a utility which will assist in that goal.
 
   I know this sounds crazy but it is possible and I built mupy to prove it. It is my offering. We just need to tap into efficiencies which are there and waiting to be exacted.
-
+ 
 
 ## Project ρ
-Project ρ (Recursive Hardware Operations) was a project which explored hardware modularity and manufacturing techniques. The basic idea was to ask if there was some set of optimal shapes / limited parts which could make it easier to print and assemble anything. The idea was borrowed from legos except that the parts would need to be designed with specific requirements in mind that would improve the quality of any assembly especially when it comes to binding and unbinding.
+Project ρ (Recursive Hardware Operations) was dedicated to making better use of smaller 3D printers by researching and developing hardware with advanced modularity features.
+
+
+
+ask if there was some set of optimal shapes / limited parts which could make it easier to print and assemble anything. The idea was borrowed from legos except that the parts would need to be designed with specific requirements in mind that would improve the quality of any assembly especially when it comes to binding and unbinding.
 
 
 ### General Modularity Requirements
@@ -655,7 +659,7 @@ Imagine basic legos are provided to you along with Knex, Erector Sets and Some R
 
 ![Alt Text](resources/rho_legend_0.png)
 
-The flagship family which represented project ρ was the CUBX0012 family. This was the best developed cubic family and propelled project ρ since CUBX0012 was so general purpose. It can be thought of as a family making up hardware elements which the simplest form attempted to build boxes from side panels ; a box with a cavity if cut up into six equal shapes would represent the general archetype geometry constituting CUBX0012 hardware elements. From more simple parts can more complex geometry be derived making up new types which belong to CUBX0012. CUBX0012 is currently retired but will be replaced soon.
+The flagship family which represented project ρ was the CUBX0012 family. This cubic family propelled project ρ since CUBX0012 was so general purpose. It can be thought of as a family making up hardware elements which the simplest form attempted to build boxes from side panels ; a box with a cavity if cut up into six equal shapes would represent the general archetype geometry constituting CUBX0012 hardware elements. From more simple parts can more complex geometry be derived making up new types which belong to CUBX0012. CUBX0012 is currently retired but will be replaced soon.
 
 
 ### Goals
@@ -711,7 +715,9 @@ Project rho proved that there was no way in principle to establish a modular fam
 
 ## Project μ
 
-The main thing about project mu was that the realization set in and said it wasn't just about modularity anymore, it was about manufacturing anything, even if they were one offs. 
+Project μ aimed to take a step back and generalize these technologies into a more general purpose form. There needed to exist distribution and packaging mechanisms so that people could have acces, also there needed to exist assembly information.
+THERE NEEDED TO EXIST
+
 
 ![Alt Text](resources/model_0.png)
 
