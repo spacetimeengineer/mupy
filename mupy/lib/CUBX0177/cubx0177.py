@@ -2,7 +2,6 @@
 import os, sys
 import shutil
 
-
 class CUBX0177:
     """ This class builds digital representations of CUBX0177 hardware elements. These representations contain varius objects which help simulate the part."""
 
@@ -17,12 +16,11 @@ class CUBX0177:
         self.scad_file_name = directory + "/" + hardware_code +".scad" # This scad file is used to build the stl. It can be deleted afterwards. # TODO : Delete this file after run() command is called.
         self.scad_file = open(self.scad_file_name, 'w+')  # open file in append mode
 
-
         os.system("cp -R "+os.path.dirname(__file__)+"/scad/ "+ self.directory) # Copies resouces into the workspace directory. These will be deletd later. TODO : Its not a general case that we are in the right directory for this command to work.
         # TODO : Mayneed to put in a double slash test ; replace with one slash incase too many were appended.
         self.scad_file.write('use <scad/CUBX0177.scad>;\n\n')
-        
         if (self.type_code=="BPAN"): # Box panel.
+            
             # Example BPAN hardware code : "CUBX0177-BPAN-B25SR2P5-X8Y8PP2-RT-SX25Y25-X8Y8-XO3YO5-X20Y20Z10-S"
 
             self.block_unit_length = self.hardware_code.split("-")[2].split("B")[1].split("SR")[0] # Block length.
@@ -42,7 +40,6 @@ class CUBX0177:
             else:
                 self.errors.append("Incorrect orientation code.")
                 pass
-
             if (self.hardware_code.split("-")[4].count("T") == 1):
                 self.teeth = "true"
             elif (self.hardware_code.split("-")[4].count("F") == 1):
@@ -100,7 +97,9 @@ class CUBX0177:
             self.scad_file.close()
 
         elif (self.type_code=="SPAN"): # Simple panel.
+
             # Example SPAN hardware code : "CUBX0177-SPAN-B25SR2P5-X9Y9P18-RT-SX25Y25-X8Y8-X20Y2010Z5"
+
             self.block_unit_length = self.hardware_code.split("-")[2].split("B")[1].split("SR")[0] # Block length.
             self.shaft_radius = self.hardware_code.split("-")[2].split("B")[1].split("SR")[1].replace("P", ".", 1) # Shaft radius.
             self.x_units =  self.hardware_code.split("-")[3].split("X")[1].split("Y")[0] # x block units.
@@ -108,6 +107,14 @@ class CUBX0177:
 
             ''' Testing that code is parsed correctly.'''
             
+            '''
+            print(self.type_code)
+            print(self.block_unit_length)
+            print(self.shaft_radius)
+            print(self.x_units)
+            print(self.y_units)
+            '''
+
             ''' Rules logic goes here ; conditions of which parameters combinations can exist.   '''
 
             ''' Execute write scad functions.   '''
@@ -116,8 +123,8 @@ class CUBX0177:
             self.scad_file.close()
 
         elif (self.type_code=="AXLE"): # Square axle.
+
             # Example SPAN hardware code : "CUBX0177-AXLE-B25SR2P5-A22"
-            
             self.block_unit_length = self.hardware_code.split("-")[2].split("B")[1].split("SR")[0].replace("P", ".", 1) # Block length.
             self.shaft_radius = self.hardware_code.split("-")[2].split("B")[1].split("SR")[1].replace("P", ".", 1) # Shaft radius.
             self.axle_blocks = self.hardware_code.split("-")[3].split("A")[1].replace("P", ".", 1) # Axle blocks.
@@ -125,7 +132,7 @@ class CUBX0177:
             ''' Rules logic goes here ; conditions of which parameters combinations can exist.   '''
             
             ''' Testing that code is parsed correctly.'''
-        
+            
             print("    Parameterization Information")
             print("")
             print("    famliy_code = "+self.family_code)
@@ -166,7 +173,7 @@ class CUBX0177:
             
         elif (self.type_code=="AXAD"): # Axle adapter.
 
-            # Example SPAN hardware code : "CUBX0177-AXAD-B25SR2P5"
+            # Example SPAN hardware code : "CUBX0177-FYAD-B25SR2P5"
             self.block_unit_length = self.hardware_code.split("-")[2].split("B")[1].split("SR")[0] # Block length.
             self.shaft_radius = self.hardware_code.split("-")[2].split("B")[1].split("SR")[1].replace("P", ".", 1) # Shaft radius.
 
@@ -185,13 +192,13 @@ class CUBX0177:
             print("    shaft_radius = "+self.shaft_radius+"mm")
             
             ''' Execute write scad functions.   '''
-            
+
             self.CUBX0177_AXAD()
             self.scad_file.close()
         else:
             self.errors.append("Invalid type code.")
 
-    def CUBX0177_BPAN(self):                                                                                                                                                                   #CUBX0177-BPAN-B25SR2P5-X8Y8PP2-RT-SX25Y25-X8Y8-XO3YO5-X20Y20Z10-S
+    def CUBX0177_BPAN(self):                                                                                                                                                               #CUBX0177-BPAN-B25SR2P5-X8Y8PP2-RT-SX25Y25-X8Y8-XO3YO5-X20Y20Z10-S
         self.scad_file.write('CUBX0177_BPAN( '+self.block_unit_length+', '+self.shaft_radius+', '+self.x_units+', '+self.y_units+', '+self.padding+', '+self.orientation+', '+self.teeth+', '+self.x_cavity_spacing+', '+self.y_cavity_spacing+', '+self.x_cavity_units+', '+self.y_cavity_units+', '+self.x_offset+', '+self.y_offset+', '+self.x_cavity_dimensions+', '+self.y_cavity_dimensions+', '+self.z_cavity_dimensions+', '+self.cavity_type+');\n')
 
     def CUBX0177_SPAN(self):
@@ -213,6 +220,7 @@ class CUBX0177_encoding:
         self.system_code
     
     def encode_session(self):
+
         #type_code = SelectionBranch("Select CUBX0177 type:")
         #type_code.options.append(["1", "BP", "Box Panel", CUBX0177_BP_input.run])
         #type_code.options.append(["2", "SP", "Simple Panel", exit])
@@ -232,5 +240,4 @@ class CUBX0177_encoding:
         elif (self.type_code=="AXAD"): # Axle adapter.
             pass
         else:
-
             pass
