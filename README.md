@@ -393,6 +393,17 @@ Each system-code corresponds to a specific part. Once typed press enter to gener
 
 ![Alt Text](resources/CUBX0177-BPAN-B12SR0-X6Y18PP12-XF-SX10Y10-X1Y1-XO0YO0-X24Y168Z25-S.png)
 
+    μ:# CUBX0177-AXLE-B10SR2P5-A22
+
+![Alt Text](resources/CUBX0177-AXLE-B25SR2P5-A22.png)
+
+    μ:# CUBX0177-FYAD-B15SR3P1
+
+![Alt Text](resources/CUBX0177-FYAD-B15SR3P1.png)
+
+    μ:# CUBX0177-AXAD-B15SR3P1
+
+![Alt Text](resources/CUBX0177-AXAD-B15SR3P1.png)
 
 ## custom_box.py
 

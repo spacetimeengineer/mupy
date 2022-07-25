@@ -44,9 +44,7 @@ def encoding_session():
     family_selection_branch.options.append(["b", "Back", "Navigate to previous menu.", encoding_session])
 
     family_selection_branch.run()
-
-
-
+    
 mu_symbol = '\u00B5'
 print("\n"+mu_symbol+"term ~ manufacturing utility terminal\n") 
 relative_workspace_path=""
