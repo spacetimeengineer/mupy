@@ -41,8 +41,6 @@ module top_tooth(block_length, shaft_radius, padding = 0.20 )
     }
 }
 
-
-
 module square_cavity_array(x_spacing, y_spacing, x_units, y_units, x_offset, y_offset, x_cavity_dimensions, y_cavity_dimensions, z_cavity_dimensions)
 {
     /*  Constants */
@@ -121,7 +119,6 @@ module CUBX0177_BPAN(block_length, shaft_radius, xunits, yunits, padding = 0.2, 
             }
             
             /*  Side Teeth  */
-            
             if ( side_teeth_orientation == "regular" )
             {
                 for ( x_tooth_step = [ - xlength / 2 : block_length : xlength / 2 ]) { if ( (x_tooth_step + xlength / 2 ) % ( block_length * 2 )  == block_length ) { translate([x_tooth_step , ylength / 2 + block_length , 0 ]) { side_tooth(block_length + 0.001, shaft_radius, padding ); } } }
@@ -166,8 +163,6 @@ module CUBX0177_BPAN(block_length, shaft_radius, xunits, yunits, padding = 0.2, 
                 for ( x_tooth_step = [ - xlength / 2 : block_length : xlength / 2 ] ) { if ( ( x_tooth_step + xlength / 2 ) % ( block_length * 2 )  == 0 && ! ( x_tooth_step == xlength / 2 ) && ! ( x_tooth_step == -xlength / 2 ) ) { translate([x_tooth_step , - ylength / 2 , block_length - ( block_length - top_teeth_block_thickness ) / 2  ] ) { if (!( x_tooth_step == xlength / 2 ) && !( x_tooth_step == - xlength / 2 ) ) { top_tooth(block_length+ 0.001, shaft_radius, padding);  } } } }
                 for ( y_tooth_step = [ - ylength / 2 : block_length : ylength / 2 ]) { if ( ( y_tooth_step + ylength / 2 ) % ( block_length * 2 )  == block_length && ! ( y_tooth_step == ylength / 2 ) && ! ( y_tooth_step == - ylength / 2 ) ) { translate([ - xlength / 2 , y_tooth_step , block_length - ( block_length - top_teeth_block_thickness ) / 2  ]) { if (!( y_tooth_step == ylength / 2 ) && !( y_tooth_step == - ylength / 2 ) ) { top_tooth(block_length+ 0.001, shaft_radius); } } } }
             }
-            
-        
         }
         
         if (cavity_type == "S")
@@ -188,9 +183,7 @@ module CUBX0177_BPAN(block_length, shaft_radius, xunits, yunits, padding = 0.2, 
         {
             
         }
-            
     }
-    
 }
 
 module cubic_module(block_length = 25, shaft_radius=2.5, x_units = 8, y_units = 12, z_units = 4, alpha = 200)
@@ -202,7 +195,6 @@ module cubic_module(block_length = 25, shaft_radius=2.5, x_units = 8, y_units = 
     translate( [ 0, - y_units * block_length / 2 - alpha, 0 ] ) { rotate([90,0,0]) { color( 0.65) { CUBX0177_element(block_length, shaft_radius, x_units, z_units, 0.08,"regular", false); } } } // -y side.
     //translate([ x_units * block_length / 2 + alpha, 0 ,0 ] ) { rotate([90,0,90]) { color( 0.65) { CUBX0177_element(block_length, shaft_radius, y_units, z_units, 0.08,"regular", false); } } } // +x side.
 }
-
 
 module triangular_corner_difference(block_length, shaft_radius)
 {
@@ -233,11 +225,7 @@ module triangular_corner_difference(block_length, shaft_radius)
     
 }
 
-
-
-
 /* Axle Adapter */
-
 module CUBX0177_AXAD( block_length, shaft_radius )
 {
     difference()
@@ -286,7 +274,6 @@ module CUBX0177_AXAD( block_length, shaft_radius )
 
 
 /* Axle - Flywheel Adapter */
-
 module CUBX0177_FYAD( block_length, shaft_radius )
 {
     translate([0*block_length, 0*block_length, 0*block_length]) { general_block(block_length + 0.01, shaft_radius ); }
@@ -312,9 +299,7 @@ module CUBX0177_FYAD( block_length, shaft_radius )
     translate([block_length*0, block_length*2, block_length*1]) { general_block(block_length + 0.01, shaft_radius ); }
 }
 
-
 /* Axle - Flywheel Adapter */
-
 module CUBX0177_AXLE( block_length, shaft_radius, axle_blocks )
 {
     length = block_length*(axle_blocks-1);
@@ -327,7 +312,6 @@ module CUBX0177_AXLE( block_length, shaft_radius, axle_blocks )
                 general_block(block_length, shaft_radius);
             }
         }
-
     }
 }
 

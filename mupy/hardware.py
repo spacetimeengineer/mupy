@@ -127,6 +127,7 @@ class Hardware:
             print("")
             print(""+mu_symbol+":! Rendering : "+self.hardware_code)
             print(""+mu_symbol+":! openscad -o "+directory+"/stl_files/"+self.hardware_code+".stl "+directory+"/"+self.hardware_code+".scad") # This is the scad file used to create the stl files
+            os.system("openscad -o "+directory+"/stl_files/"+self.hardware_code+".stl "+directory+"/"+self.hardware_code+".scad") # This is the scad file used to create the stl files
             print("")
             
         if decoding.family_code_valid == False:

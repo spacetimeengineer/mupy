@@ -23,7 +23,6 @@ class CUBX0177:
         self.scad_file.write('use <scad/CUBX0177.scad>;\n\n')
         
         if (self.type_code=="BPAN"): # Box panel.
-            
             # Example BPAN hardware code : "CUBX0177-BPAN-B25SR2P5-X8Y8PP2-RT-SX25Y25-X8Y8-XO3YO5-X20Y20Z10-S"
 
             self.block_unit_length = self.hardware_code.split("-")[2].split("B")[1].split("SR")[0] # Block length.
@@ -31,7 +30,6 @@ class CUBX0177:
             self.x_units =  self.hardware_code.split("-")[3].split("X")[1].split("Y")[0]
             self.y_units =  self.hardware_code.split("-")[3].split("Y")[1].split("P")[0]
             self.padding =  "0."+self.hardware_code.split("-")[3].split("PP")[1]
-
 
             if (self.hardware_code.split("-")[4].count("R") == 1):
                 self.orientation = '"regular"' # Regular orientation.
@@ -58,15 +56,11 @@ class CUBX0177:
             self.y_cavity_spacing =  self.hardware_code.split("-")[5].split("X")[1].split("Y")[1]
             self.x_cavity_units =  self.hardware_code.split("-")[6].split("X")[1].split("Y")[0]
             self.y_cavity_units =  self.hardware_code.split("-")[6].split("X")[1].split("Y")[1]
-            
-            
             self.x_offset  =  self.hardware_code.split("-")[7].split("XO")[1].split("YO")[0]
             self.y_offset  =  self.hardware_code.split("-")[7].split("YO")[1]
-            
             self.x_cavity_dimensions =  self.hardware_code.split("-")[8].split("X")[1].split("Y")[0]
             self.y_cavity_dimensions =  self.hardware_code.split("-")[8].split("X")[1].split("Y")[1].split("Z")[0]
             self.z_cavity_dimensions =  self.hardware_code.split("-")[8].split("X")[1].split("Y")[1].split("Z")[1]
-
 
             if (self.hardware_code.split("-")[9].count("S") == 1):
                 self.cavity_type = '"S"'
@@ -76,31 +70,27 @@ class CUBX0177:
                 self.errors.append("Incorrect cavity code.")
                 pass
 
-
             ''' Testing that code is parsed correctly.'''
-            print("")
             print("    Parameterization Information")
             print("")
             print("    famliy_code = "+self.family_code)
             print("    type_code = "+self.type_code)
-            print("    block_unit_length = "+self.block_unit_length)
-            print("    shaft_radius = "+self.shaft_radius)
+            print("    block_unit_length = "+self.block_unit_length+"mm")
+            print("    shaft_radius = "+self.shaft_radius+"mm")
             print("    x_units = "+self.x_units)
             print("    y_units = "+self.y_units)
-            print("    padding = "+self.padding)
+            print("    padding = "+self.padding+"mm")
             print("    orientation = "+self.orientation)
             print("    teeth = "+self.teeth)
             print("    cavity_shape_code = "+self.cavity_shape_code)
-            print("    x_cavity_spacing = "+self.x_cavity_spacing)
-            print("    y_cavity_spacing = "+self.y_cavity_spacing)
+            print("    x_cavity_spacing = "+self.x_cavity_spacing+"mm")
+            print("    y_cavity_spacing = "+self.y_cavity_spacing+"mm")
             print("    x_cavity_units = "+self.x_cavity_units)
             print("    y_cavity_units = "+self.y_cavity_units)
-            print("    x_cavity_dimensions = "+self.x_cavity_dimensions)
-            print("    y_cavity_dimensions = "+self.y_cavity_dimensions)
-            print("    z_cavity_dimensions = "+self.z_cavity_dimensions)
+            print("    x_cavity_dimensions = "+self.x_cavity_dimensions+"mm")
+            print("    y_cavity_dimensions = "+self.y_cavity_dimensions+"mm")
+            print("    z_cavity_dimensions = "+self.z_cavity_dimensions+"mm")
             print("    cavity_type = "+self.cavity_type)
-            print("")
-
 
             ''' Rules logic goes here ; conditions of which parameters combinations can exist.   '''
 
@@ -110,9 +100,7 @@ class CUBX0177:
             self.scad_file.close()
 
         elif (self.type_code=="SPAN"): # Simple panel.
-
             # Example SPAN hardware code : "CUBX0177-SPAN-B25SR2P5-X9Y9P18-RT-SX25Y25-X8Y8-X20Y2010Z5"
-
             self.block_unit_length = self.hardware_code.split("-")[2].split("B")[1].split("SR")[0] # Block length.
             self.shaft_radius = self.hardware_code.split("-")[2].split("B")[1].split("SR")[1].replace("P", ".", 1) # Shaft radius.
             self.x_units =  self.hardware_code.split("-")[3].split("X")[1].split("Y")[0] # x block units.
@@ -120,16 +108,6 @@ class CUBX0177:
 
             ''' Testing that code is parsed correctly.'''
             
-            '''
-            print(self.type_code)
-            print(self.block_unit_length)
-            print(self.shaft_radius)
-            print(self.x_units)
-            print(self.y_units)
-            '''
-
-
-
             ''' Rules logic goes here ; conditions of which parameters combinations can exist.   '''
 
             ''' Execute write scad functions.   '''
@@ -138,10 +116,7 @@ class CUBX0177:
             self.scad_file.close()
 
         elif (self.type_code=="AXLE"): # Square axle.
-
             # Example SPAN hardware code : "CUBX0177-AXLE-B25SR2P5-A22"
-            
-            
             
             self.block_unit_length = self.hardware_code.split("-")[2].split("B")[1].split("SR")[0].replace("P", ".", 1) # Block length.
             self.shaft_radius = self.hardware_code.split("-")[2].split("B")[1].split("SR")[1].replace("P", ".", 1) # Shaft radius.
@@ -150,17 +125,14 @@ class CUBX0177:
             ''' Rules logic goes here ; conditions of which parameters combinations can exist.   '''
             
             ''' Testing that code is parsed correctly.'''
-            
-            
-            print("")
+        
             print("    Parameterization Information")
             print("")
             print("    famliy_code = "+self.family_code)
             print("    type_code = "+self.type_code)
-            print("    block_unit_length = "+self.block_unit_length)
-            print("    shaft_radius = "+self.shaft_radius)
-            print("    axle_blocks = "+self.axle_blocks)
-            print("")
+            print("    block_unit_length = "+self.block_unit_length+"mm")
+            print("    shaft_radius = "+self.shaft_radius+"mm")
+            print("    axle_blocks = "+self.axle_blocks+" blocks")
             
             ''' Execute write scad functions.   '''
 
@@ -180,14 +152,12 @@ class CUBX0177:
 
             ''' Testing that code is parsed correctly.'''
             
-            print("")
             print("    Parameterization Information")
             print("")
             print("    famliy_code = "+self.family_code)
             print("    type_code = "+self.type_code)
-            print("    block_unit_length = "+self.block_unit_length)
-            print("    shaft_radius = "+self.shaft_radius)
-            print("")
+            print("    block_unit_length = "+self.block_unit_length+"mm")
+            print("    shaft_radius = "+self.shaft_radius+"mm")
 
             ''' Execute write scad functions.   '''
 
@@ -207,51 +177,34 @@ class CUBX0177:
             
             ''' Testing that code is parsed correctly.'''
             
-            print("")
             print("    Parameterization Information")
             print("")
             print("    famliy_code = "+self.family_code)
             print("    type_code = "+self.type_code)
-            print("    block_unit_length = "+self.block_unit_length)
-            print("    shaft_radius = "+self.shaft_radius)
-            print("")
+            print("    block_unit_length = "+self.block_unit_length+"mm")
+            print("    shaft_radius = "+self.shaft_radius+"mm")
             
             ''' Execute write scad functions.   '''
-
+            
             self.CUBX0177_AXAD()
             self.scad_file.close()
-
         else:
-
             self.errors.append("Invalid type code.")
 
-
-    def CUBX0177_BPAN(self):
-                                                                                                                                                                                                #CUBX0177-BPAN-B25SR2P5-X8Y8PP2-RT-SX25Y25-X8Y8-XO3YO5-X20Y20Z10-S
+    def CUBX0177_BPAN(self):                                                                                                                                                                   #CUBX0177-BPAN-B25SR2P5-X8Y8PP2-RT-SX25Y25-X8Y8-XO3YO5-X20Y20Z10-S
         self.scad_file.write('CUBX0177_BPAN( '+self.block_unit_length+', '+self.shaft_radius+', '+self.x_units+', '+self.y_units+', '+self.padding+', '+self.orientation+', '+self.teeth+', '+self.x_cavity_spacing+', '+self.y_cavity_spacing+', '+self.x_cavity_units+', '+self.y_cavity_units+', '+self.x_offset+', '+self.y_offset+', '+self.x_cavity_dimensions+', '+self.y_cavity_dimensions+', '+self.z_cavity_dimensions+', '+self.cavity_type+');\n')
 
-
     def CUBX0177_SPAN(self):
-
         self.scad_file.write('CUBX0177_SPAN( '+self.block_unit_length+', '+self.block_unit_length+', '+self.x_units+', '+self.y_units+' );\n')
 
-
     def CUBX0177_FYAD(self):
-
-
-
         self.scad_file.write('CUBX0177_FYAD( '+self.block_unit_length+', '+self.shaft_radius+' );\n')
 
-
     def CUBX0177_AXAD(self):
-
         self.scad_file.write('CUBX0177_AXAD( '+self.block_unit_length+', '+self.shaft_radius+', '+self.padding+' );\n')
     
-
     def CUBX0177_AXLE(self):
-
         self.scad_file.write('CUBX0177_AXLE( '+self.block_unit_length+', '+self.shaft_radius+', '+self.axle_blocks+' );\n')
-
 
 class CUBX0177_encoding:
     
@@ -260,8 +213,6 @@ class CUBX0177_encoding:
         self.system_code
     
     def encode_session(self):
-
-
         #type_code = SelectionBranch("Select CUBX0177 type:")
         #type_code.options.append(["1", "BP", "Box Panel", CUBX0177_BP_input.run])
         #type_code.options.append(["2", "SP", "Simple Panel", exit])
@@ -270,12 +221,9 @@ class CUBX0177_encoding:
         #type_code.options.append(["4", "FA", "Flywheel Adapter", exit])
         #type_code.options.append(["b", "Back", "Navigate to previous menu.", exit])
         
-        
         if (self.type_code=="BPAN"): # Box panel.
-            
             pass
         elif (self.type_code=="SPAN"): # Simple panel.
-
             pass
         elif (self.type_code=="AXLE"): # Square axle.
             pass

@@ -130,14 +130,8 @@ Do what you want!
 
 ## Note from the developer
 
-This system in it's current state is rudimentary, crude, over-engineered in some aspcts while under-engineered in others. It's essentially a work in progress but thats partly the point. Too oftendo tools get built that are not used and too often there are goals than are never achieved but if we build things for the goals but as tools then they will never go to waste especially if we sharpen them with the tasks of 
+This system is rudimentary, crude, over-engineered in some aspects while under-engineered in others. It's littered with innefficiencies and design principle violations. There is room for improvement on every level. It's a work in progress but  despite all of this, it has extreme potential and is very powerful in the right hands. I can for organizing people and projects 
 
-
-the plan is for the model which the core operates on should be improved over time to accomidate new features and newscopes. All thisasidemupy is extremely fucking powerful and 
-
-
-
-I developed this package because I had several things I was trying to do which I could not of done without it. I have not done these things yet but this is to say I only really started with requirements that were identified through the goals I possessed. This project was not the goal, it's separate of that, rather it is a path to get there but maybe others could help me get there faster and perhaps I could help others attain their goal too. I cannot easily explain or justify my reasons for the form or scope this project adopted but I can say that I was trying to solve several difficult problems at once which related to innovation, development, process, scaling and manufacturing and this was the natural solution which presented itself through many iterations of goals, requirements, constraints, execution, testing and reflection. As they say "Necessity is the mother of all invention" and "If at first you don't succeed, try try again...", then think of mupy as the product of those lessons combined.
 
 ### 3D Printing is getting more advanced
 3D printing itself is a very well understood and rudimentary technology implemented in an extremely useful and elegant way. mupy was built partly for that ;  with the hopes that additive manufacturing gets much better.
@@ -163,8 +157,6 @@ Originally this project was thought of as an attempt to create a way to program 
 - 3D Part Generator & Library
 
 - Applications-Programming & Command-Line Interface
-
-- A proposal on how to build the future and avoid economic ruin
 
 - Horizontal abstraction library for openscad programming 
 

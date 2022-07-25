@@ -30,6 +30,18 @@ class CUBX0006:
             self.width = hardware_code.split("-")[2].split("W")[1].split("H")[0] # Defines width of a block. Pulled directly from hardware code.
             self.height = hardware_code.split("-")[2].split("H")[1] # Defines height of a box. Pulled directly from hardware code.
             
+            
+            self.length = self.length.replace("P", ".", 1)
+            self.width = self.width.replace("P", ".", 1)
+            self.height = self.height.replace("P", ".", 1)
+
+            ''' Testing that code is parsed correctly.'''
+            print("    Parameterization Information")
+            print("")
+            print("    length = "+self.length+"mm")
+            print("    width = "+self.width+"mm")
+            print("    height = "+self.height+"mm")
+            
             self.CUBX0006_BLK() # Writes function to scad file with parameters set.
 
         else:
