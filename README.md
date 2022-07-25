@@ -1,6 +1,6 @@
 ## Table of contents
 
-![Alt Text](resources/temp_logo.png | width=100 height=100)
+![Alt Text](resources/temp_logo.png | width="200" height="400")
 
 <!--ts-->
    * [About](#about)
