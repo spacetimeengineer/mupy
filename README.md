@@ -130,18 +130,15 @@ So this is the fun part. You assemble the printed parts and make sure they fit a
 
 ## Note from the developer
 
-Let me be the first to say that this system is rudimentary, crude, over-engineered in some aspects while under-engineered in others. It's littered with innefficiencies and design principle violations but despite all this it is extremely powerful in the right hands. 
+Let me be the first to say that this system is rudimentary, crude, over-engineered in some aspects while under-engineered in others. It's littered with innefficiencies and design principle violations but despite all this it is extremely powerful in the right hands. The intentions behind this system are difficult to explain but if you just use it and get the hang of it, everything will make sense. 
 
-This system is something more than a prototype but somethgin less than an enterprise system. It is maliable becasue I think the community would appreciate as I would to give thier input as I am not capable nor is anyone else on doing this themselves. If people and companies were willing to work together then we could ide
-
-This system was born from hard requirements and so there are many things it can do. 
 
 ## Main Points
 A collection or list of quick concepts, items and keywords which give an overview of whats mupy is all about.
 
 ### What is it?
 
-Originally this project could of been thought of as an attempt to create a physical analogy to a software programming language ; a hardware assebly language but over time even more abstractions and degrees of freedom were buult in. Since openscad is a very intimidating language due to the requirements of mathematics and programming knowledge it is not unreasonable to expect that it would not be very popular however it retains a status by most knowledgeable programmers as an incredibly powerful alternative where in the right hands absolutely can crush the productivity of conventional CAD users. This being said it's relative difficultly is greatly abstracted by mupy. In this way mupy expressed an extreme advantage to people who are looking to design products and 3D print models.
+Originally this project could of been thought of as an attempt to create a physical analogy to a software programming language ; a hardware assembly language it was treated as but over time even more abstractions and degrees of freedom were built in. The hardware assembly language interpretation was not entirely appropriate upon further realizations about the nature about manufacturing and development in general and what problems needed to actually be solved. The form this system took ended up being multifaceted and perhaps a precursor to someting new. Additionally since openscad is an intimidating language due to the requirements of mathematics and programming knowledge it is not unreasonable to expect that it's popularity would not be matched by it's power so it made sense to build a system that would extend it's capability to others. It's best to think of mupy as a
 
 - Creation Engine
 
