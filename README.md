@@ -130,8 +130,7 @@ So this is the fun part. You assemble the printed parts and make sure they fit a
 
 ## Note from the developer
 
-Let me be the first to say that this system is rudimentary, crude, over-engineered in some aspects while under-engineered in others. It's littered with innefficiencies and design principle violations but despite all this it is extremely powerful in the right hands. The intentions behind this system are difficult to explain but if you just use it and get the hang of it, everything will make sense. 
-
+Let me be the first to say that this system is rudimentary, crude, over-engineered in some aspects while under-engineered in others. It's littered with innefficiencies and design principle violations but despite all this it is extremely powerful in the right hands. The intentions behind this system are difficult to explain but in the most basic sense I needed a tool that I could handle more complexity and size while givieng me more speed and control.
 
 ## Main Points
 A collection or list of quick concepts, items and keywords which give an overview of whats mupy is all about.
@@ -478,17 +477,7 @@ workspace.run(box_assembly, mu.Coordinates(0,1,[0,0,0],[0,0,0],[0,0,0],[0,0,0]))
 
 
 
-### Workspace
-A workspace is essentially a directory structure or environment to place hardware or assemblies objects into. It is a python class object and possess other unique properties and functions which make it behave as a sort of virtual workbench.
 
-### Hardware
-Hardware objects are the primary mechanism for introducing system-codes into the scripting environment.
-
-### Coordinates
-In an assembly generally speaking, there needs to exist initial and final coordinates in 3D space within a certain time quantum since the assembly will exist as a hierarchical structure and will need to be organized down into multiple time domains. Keep in mind that multiple assemblies can exist in a single time quantum but not if they ever involve the same part.
-
-### Assembly
-Contains similar properties as a Hardware object except that it's primary purpose is to include Hardware objects and other assembly object into itself. It is an object with recursive properties built in.
 
 # Generating Output
 Upon pressing 'enter' by the mucli command line tool or running a workspace with workspace.run() inside a scipt will generate a workspace directory an this will be the entry-point for your IP.
@@ -572,15 +561,21 @@ Some of these things and more are configurable in in Cura, which can be thought 
 
 # Concepts
 
-## mupy.core model
+## mupy.core
 
 ### Workspace
+A workspace is essentially a directory structure or environment to place hardware or assemblies objects into. It is a python class object and possess other unique properties and functions which make it behave as a sort of virtual workbench.
 
 ### Hardware
+Hardware objects are the primary mechanism for introducing system-codes into the scripting environment.
 
 ### Coordinates
+In an assembly generally speaking, there needs to exist initial and final coordinates in 3D space within a certain time quantum since the assembly will exist as a hierarchical structure and will need to be organized down into multiple time domains. Keep in mind that multiple assemblies can exist in a single time quantum but not if they ever involve the same part.
 
 ### Assembly
+Contains similar properties as a Hardware object except that it's primary purpose is to include Hardware objects and other assembly object into itself. It is an object with recursive properties built in.
+
+### Time Quantum
 
 
 ## System Codes
@@ -607,6 +602,8 @@ Family codes serve as a kind of name-space code (it may be changed to a name-spa
 ## Type Codes
 A system-code serves to identify a general system (literally anything physical, especially technological or worth manufacturing) and generate resources and metadata which help users manufacture said system at reduced cost. These resources include CAD files and annotated openscad source code directories containing assembly and operational animation routines which help users record and transmit and interpret complex manufacturing and assembly information.
 
+## Parametrization Codes
+
 ## Schemas
 Schemas reference the pattern the system codes obey when storing parametrization information.
 
@@ -616,7 +613,7 @@ Schemas reference the pattern the system codes obey when storing parametrization
 This package was developed over six year period where it began as a thought experiment which then turned into a real experiment which then became a set of research and development operations which then became a set of programmable utilities for 3D printing purposes and then that was re-envisioned an API / CLI python package built for open source.
 
 
-## Some context...
+## Context
 
 In the beginning before I began development of mupy I had experienced a plethora of inefficiencies, difficulties and realities regarding research, development and manufacturing inefficiencies which were so difficult to overcome that I considered quitting engineering altogether. I have very big goals but not the kind you kind. My problem was my that I essentially needed to scale my developments on such a level and needed to build bigger systems (which could tap into efficiency of scale functions) but I lacked the time and resources to do so and when I finally did accomplish something interesting I seemed to lack the passion to guide the projects thenceforwards. I needed something new and something I could build momentum on for the rest of my life, in-fact it would be built into the project. A game changer really. I decided that I would only focus on a big goal and the requirements and through constraints to see that goal through. 
 
