@@ -21,7 +21,7 @@ class Assembly:
         self.errors = [] # A list that collects errors associated with this object.
         self.directory = "" # Workspace directory.
         self.id = self.assign_id() # Assigns a special
-        self.color = "green"
+        self.color = "white"
 
     def assign_id(self):
         """ Assigns an appropriate ID with required propertied; 

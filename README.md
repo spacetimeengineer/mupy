@@ -569,7 +569,8 @@ workspace.run(system_assembly_1, mu.Coordinates(0,1,[0,0,0],[0,0,0],[0,0,0],[0,0
 
 
 ```
-
+### double-box.py Simulation
+![Alt Text](resources/double_box.gif)
 
 # Generating Output
 Upon pressing 'enter' by the mucli command line tool or running a workspace with workspace.run() inside a scipt will generate a workspace directory an this will be the entry-point for your IP.

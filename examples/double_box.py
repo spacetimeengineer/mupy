@@ -49,7 +49,6 @@ panel_j_assembly_coords = mu.Coordinates(0.2,0.75,[0 , 0, -8 * 25 / 2 - alpha],[
 panel_k_assembly_coords = mu.Coordinates(0.2,0.75,[0, - 8 * 25 / 2 - alpha, 0 ],[0, - 8 * 25 / 2, 0 ],[0,0,0],[90,0,0]) # Equation must be satisfied in order to express custom-box function. 
 panel_l_assembly_coords = mu.Coordinates(0.2,0.75,[8 * 25 / 2 + alpha, 0 , 0],[8 * 25 / 2, 0 , 0],[0,0,0],[90,0,90]) # Equation must be satisfied in order to express custom-box function. 
 
-
 """ Define assembly. """
 box_assembly_1 = mu.Assembly("box_assembly_1")
 box_assembly_1.include(panel_a, panel_a_assembly_coords) 
@@ -74,7 +73,6 @@ box_assembly_2_coords = mu.Coordinates(0.5,0.8,[-8 * 25 / 2 - beta ,0,0],[-8 * 2
 system_assembly_1 = mu.Assembly("system_assembly_1")
 system_assembly_1.include(box_assembly_1, box_assembly_1_coords) # Coordinates complete!
 system_assembly_1.include(box_assembly_2, box_assembly_2_coords) # Coordinates complete!
-
 
 """ Run """
 workspace.run(system_assembly_1, mu.Coordinates(0,1,[0,0,0],[0,0,0],[0,0,0],[0,0,0])) # This command creates all directorires and assemblies.
