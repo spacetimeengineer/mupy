@@ -39,12 +39,12 @@
 
 # About
 
-μpy or mupy is a shorthand for python manufacturing utility and reffers to a new system development technology implemented in the form of a python pip installable package. The μpy package essentially proposes to the open source community in the form of a powerful tool, a model for designing, distributing and manufacturing technology with an emphasis on community, modularity, decentralization, scaling, customization, parametrization, encodability and certification. Currently mupy contains rendereings for quadrilions of parts for 3D print and exponentially more can become available with the help of users in the future. There is a hope I have that if this tech is accepted then it can be rebuilt in a far more powerful form one day we could teach ourselves how to become master builders.
+μpy or mupy is a shorthand for python manufacturing utility and reffers to a new system development technology implemented in the form of a python pip installable package. The μpy package essentially proposes to the open source community in the form of a powerful tool, a model for designing, distributing and manufacturing technology with an emphasis on community, modularity, decentralization, scaling, customization, parametrization, encodability and certification. 
 
 
 ## Overview
 
-It is exteremly difficult to explain the full scope of this packages capabilities (both current and intended) but this overview paints a fairly simple picture of the general process a user would adopt. It is possible to bypass the programming aspect alltogether if you are uncomfortable in which case the mucli application can provide renderings if you know the system-codes of the hardware you would like to print.
+It is difficult to explain the full scope of this packages capabilities (both current and intended) but this overview paints a fairly simple picture of the general process a user may adopt. 
 
 ### Program some code
 
@@ -110,43 +110,38 @@ workspace.run(chamber_assembly, Coordinates(0,1,[0,0,0],[0,0,0],[0,0,0],[0,0,0])
 
 ### Simulate assembly
 
-Once this script is run, it will generate a workspace directory with generated scad source code files. These files build a hierarchical stucture for defining the overall assembly. Thisbreaks things into steps with no specific order. These files are marked with an 'A' or a 'P' at the beginning of thier hash in the file name to signify an assembly or a part respectivly. This code is used to render stl files and then import them into an assembly hierarchy which can be simulated from any point in the assembly. Just click on intended assembly .scad file.
+Once this script is run, it will generate a workspace directory with generated scad source code files. These files build a hierarchical stucture for defining the overall assembly. This breaks things into steps with no specific order. These files are marked with an 'A' or a 'P' at the beginning of thier hash in the file name to signify an assembly or a hardware part respectivly. This code is used to render stl files and then import them into an assembly hierarchy which can be simulated from any point in the assembly. Just click on intended assembly .scad file.
 
 ![Alt Text](resources/utility_box.gif)
 
-This example gives users the ability to build a simple box. This example uses the CUBX0177 family and the mupy.core library. In this script modularity is utilized however only certain system codes will fit with other certain system codes generally speaking. In the case of the CUBX0177 family the first five elements in the system code strings should be synchronized for modularity to be possible. Keep in mind that every type code has its own rules that it must follow and in some cases specific parameterization choices will override other intended features. In other cases the systems codes won't even be meaningful geometrically unless the libraries have built in their own boundary conditions to keep certain codes un-renderable.
+This example gives users the resources to construct a simple box. This example utilizes the CUBX0177 family and the mupy.core library. For this script, modular principles are employed however generally speaking system codes only fit with other certain system codes. In the case of the CUBX0177 family the first five elements composing the system code strings should be synchronized for modularity to be possible. Keep in mind that every type code has its own rules that it must follow and in some cases specific parameterization choices will override other intended features. In other cases the systems codes won't even be meaningful geometrically unless the libraries have built in their own boundary conditions to keep certain codes un-renderable.
 
 ### Print Parts
 
-To print parts just import the .stl file that was generated into Ultimaker Cura and proceed with setting up your 3D-print configuration. In general all 3D-printed parts require configuration so be sure to familiarize yourself with the process.
+To print parts just import the generated stl file into [Ultimaker Cura](https://ultimaker.com/software/ultimaker-cura) and proceed with setting up your 3D-print configuration. In general all 3D-printed parts require configuration so be sure to familiarize yourself with the process. [This video runs through the process quite well](https://www.youtube.com/watch?v=T-Z3GmM20JM)
 
 ### Clean Parts
 Depending on the part, you may need to clean it for it to be functionable. This is not always the case and many of the parts mupy provides do not render any wasted filiment to begin with but this is not the general case when 3D-printing.
 
 ### Assemble parts
 
-So this is the fun part. You assemble the printed parts and make sure they fit all together. Fingers Crossed!
+So this is the fun part. You assemble the printed parts and make sure they fit all together. Good Luck!
 
-### Start a business or something!
-Do what you want!
 
 ## Note from the developer
 
-This system is rudimentary, crude, over-engineered in some aspects while under-engineered in others. It's littered with innefficiencies and design principle violations. There is room for improvement on every level. It's a work in progress but  despite all of this, it has extreme potential and is very powerful in the right hands. I can for organizing people and projects 
+Let me be the first to say that this system is rudimentary, crude, over-engineered in some aspects while under-engineered in others. It's littered with innefficiencies and design principle violations but despite all this it is extremely powerful in the right hands. 
 
+This system is something more than a prototype but somethgin less than an enterprise system. It is maliable becasue I think the community would appreciate as I would to give thier input as I am not capable nor is anyone else on doing this themselves. If people and companies were willing to work together then we could ide
 
-### 3D Printing is getting more advanced
-3D printing itself is a very well understood and rudimentary technology implemented in an extremely useful and elegant way. mupy was built partly for that ;  with the hopes that additive manufacturing gets much better.
-
-### Rebuilding & Redesigning Infrastructure
-It's no secret that infrastructure is crumbling. 
+This system was born from hard requirements and so there are many things it can do. 
 
 ## Main Points
 A collection or list of quick concepts, items and keywords which give an overview of whats mupy is all about.
 
 ### What is it?
 
-Originally this project was thought of as an attempt to create a way to program hardware in a more easy fashion than direct openscad. It was literally treated as a hardware-assembly-language which was described in a format analogous to a software-programming-language. Since openscad is a very intimidating language due to the requirements of mathematics and programming knowledge it is not unreasonable to expect that it would not be very popular however it retains a status by most knowledgeable programmers as an incredibly powerful alternative where in the right hands absolutely can crush the productivity of conventional CAD users. This being said it's relative difficultly is greatly abstracted by mupy. In this way mupy expressed an extreme advantage to people who are looking to design products and 3D print models.
+Originally this project could of been thought of as an attempt to create a physical analogy to a software programming language ; a hardware assebly language but over time even more abstractions and degrees of freedom were buult in. Since openscad is a very intimidating language due to the requirements of mathematics and programming knowledge it is not unreasonable to expect that it would not be very popular however it retains a status by most knowledgeable programmers as an incredibly powerful alternative where in the right hands absolutely can crush the productivity of conventional CAD users. This being said it's relative difficultly is greatly abstracted by mupy. In this way mupy expressed an extreme advantage to people who are looking to design products and 3D print models.
 
 - Creation Engine
 
@@ -373,9 +368,7 @@ $ python3 <package_location>/mupy/mucli/mucli.py
 
 Each system-code corresponds to a specific part. Once typed press enter to generate resources. Here are some examples of system-codes and their corresponding hardware elements.
 
-
     μ:# CUBX0006-BLK-L1000W200H15
-
 
 ![Alt Text](resources/CUBX0006-BLK-L1000W200H15.png)
 

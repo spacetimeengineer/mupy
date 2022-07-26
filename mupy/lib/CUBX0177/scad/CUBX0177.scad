@@ -152,7 +152,6 @@ module CUBX0177_BPAN(block_length, shaft_radius, xunits, yunits, padding = 0.2, 
                 
             }
 
-
             /*  Top Teeth  */
             if (top_teeth_included == true)
             {
@@ -163,6 +162,52 @@ module CUBX0177_BPAN(block_length, shaft_radius, xunits, yunits, padding = 0.2, 
                 for ( x_tooth_step = [ - xlength / 2 : block_length : xlength / 2 ] ) { if ( ( x_tooth_step + xlength / 2 ) % ( block_length * 2 )  == 0 && ! ( x_tooth_step == xlength / 2 ) && ! ( x_tooth_step == -xlength / 2 ) ) { translate([x_tooth_step , - ylength / 2 , block_length - ( block_length - top_teeth_block_thickness ) / 2  ] ) { if (!( x_tooth_step == xlength / 2 ) && !( x_tooth_step == - xlength / 2 ) ) { top_tooth(block_length+ 0.001, shaft_radius, padding);  } } } }
                 for ( y_tooth_step = [ - ylength / 2 : block_length : ylength / 2 ]) { if ( ( y_tooth_step + ylength / 2 ) % ( block_length * 2 )  == block_length && ! ( y_tooth_step == ylength / 2 ) && ! ( y_tooth_step == - ylength / 2 ) ) { translate([ - xlength / 2 , y_tooth_step , block_length - ( block_length - top_teeth_block_thickness ) / 2  ]) { if (!( y_tooth_step == ylength / 2 ) && !( y_tooth_step == - ylength / 2 ) ) { top_tooth(block_length+ 0.001, shaft_radius); } } } }
             }
+        }
+        
+        if (cavity_type == "S")
+        {        
+            translate([0,0,block_length / 2])
+            {
+                square_cavity_array(x_spacing, y_spacing, x_units, y_units, x_offset, y_offset, x_cavity_dimensions, y_cavity_dimensions, z_cavity_dimensions*2);
+            }
+        }
+        else if (cavity_type == "C")
+        {
+            translate([0,0,block_length / 2])
+            {
+                circular_cavity_array(x_spacing, y_spacing, x_units, y_units, x_offset, y_offset, x_cavity_dimensions, y_cavity_dimensions, z_cavity_dimensions*2);
+            }
+        }
+        else
+        {
+            
+        }
+    }
+}
+
+module CUBX0177_SPAN(block_length, shaft_radius, xunits, yunits, x_spacing, y_spacing, x_units, y_units, x_offset, y_offset, x_cavity_dimensions, y_cavity_dimensions, z_cavity_dimensions, cavity_type)
+{
+    difference()
+    {
+        union()
+        {
+            /*  Constants */
+            xlength = ( xunits - 1 ) * block_length;
+            ylength = ( yunits - 1 ) * block_length;
+
+            /* Main grid building loop. */
+            for ( x_step = [ - xlength / 2 : block_length : xlength / 2 ])
+            {
+                /* Main grid building loop. */
+                for ( y_step = [ - ylength / 2 : block_length : ylength / 2 ])
+                {
+                    translate([ x_step,y_step, 0 ] ) 
+                    { 
+                        general_block(block_length + 0.001, shaft_radius );
+                    }  
+                }
+            }
+
         }
         
         if (cavity_type == "S")
@@ -316,3 +361,4 @@ module CUBX0177_AXLE( block_length, shaft_radius, axle_blocks )
 }
 
 
+CUBX0177_SPAN(block_length=25, shaft_radius=3, xunits=5, yunits=5, x_spacing=15, y_spacing=10, x_units=2, y_units=3, x_offset=0, y_offset=0, x_cavity_dimensions=5, y_cavity_dimensions=5, z_cavity_dimensions=5, cavity_type="S");
