@@ -135,7 +135,7 @@ So this is the fun part. You assemble the printed parts and make sure they fit a
 
 ## Note from the developer
 
-Let me be the first to say that this system is rudimentary, crude, over-engineered in some aspects while under-engineered in others. It's littered with innefficiencies and design principle violations but despite all this it is extremely powerful in the right hands. The intentions behind this system are difficult to explain but in the most basic sense I needed a tool that I could handle more complexity and size while givieng me more speed and control.
+Let me be the first to say that this system is rudimentary, crude, over-engineered in some aspects while under-engineered in others. It's littered with innefficiencies and design principle violations but despite all this it is extremely powerful in the right hands. The intentions behind this system are difficult to explain but in the most basic sense I needed a tool that could handle higher order levels of design, complexity, size and control in all aspects in the domain of science, engineering, manufacturing, design and distribution. It will make more sense once you use it. Good luck.
 
 ## Main Points
 A collection or list of quick concepts, items and keywords which give an overview of whats mupy is all about.
