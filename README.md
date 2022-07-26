@@ -1,3 +1,7 @@
+### Disclaimer
+If you are reading this please understand that repository is unfinished. This repository requires public status temporarily for testing purposes. It is still littered with errors, is unstable and the documentation is incomplete and littered with spuling errurs. Feel free to explore source code if you must but keep your commentary to yourself until I formally release. Thankyou
+
+
 ## Table of contents
 
 ![Alt Text](resources/temp_logo.png=250x250)
@@ -35,6 +39,7 @@
      * [Contacts](#contacts)
      * [Acknowledgments](#acknowledgments)
 <!--te-->
+
 
 
 # About
@@ -564,7 +569,14 @@ Some of these things and more are configurable in in Cura, which can be thought 
 ## mupy.core
 
 ### Workspace
-A workspace is essentially a directory structure or environment to place hardware or assemblies objects into. It is a python class object and possess other unique properties and functions which make it behave as a sort of virtual workbench.
+A workspace is essentially a directory structure or environment to place hardware or assemblies objects into. It is a python class object and possess other unique properties and functions which make it behave as a sort of virtual workbench. Some properties and functions :
+
+  - Ensures hardware & assembly uniqueness within script.
+  - Contains a run() function that initializes rendering sequence.
+  - Only needs one arguments ; the final assembly.
+    - All sub-assemblies and hardware are imported recursively.
+  - Manages directory structure. Gives a home to parts which may be numerous.
+  - 3D Workbench.
 
 ### Hardware
 Hardware objects are the primary mechanism for introducing system-codes into the scripting environment.
