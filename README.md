@@ -482,6 +482,10 @@ workspace.run(box_assembly, mu.Coordinates(0,1,[0,0,0],[0,0,0],[0,0,0],[0,0,0]))
 
 ```
 
+### custom-box.py Simulation
+![Alt Text](resources/custom_box.gif)
+
+
 ### double_box.py
 The double_box script was designed to illustrate basic encapsuation priciples expressed by assembly objects. Essentially assembly objects are in many ways just like hardware objects becasue they can both be includied in a workspace or assembly and they can both be assigned coordinates. The only difference is that assemblies do not  possess system codes (yet) instaed they are just consided collections of sub-system-coes and thier corresonding coordinet sets. The other difference is that primitive hardware components are built from openscad wheras assembllies withien  thier respective 'workspace' are built by python scripts. This is not a rule as much as it is a trend. 
 ```python
