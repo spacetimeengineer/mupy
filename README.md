@@ -146,6 +146,8 @@ Originally this project could of been thought of as an attempt to create a physi
 
 - Creation Engine
 
+- Knowledge Transfer Mechanism
+
 - Supply Chain Mechanism
 
 - Compression Algorithm
