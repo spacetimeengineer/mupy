@@ -20,6 +20,8 @@ panel_d = mu.Hardware("panel_d", "CUBX0177-BPAN-B25SR2P5-X8Y8PP2-RT-SX25Y25-X8Y8
 panel_e = mu.Hardware("panel_e", "CUBX0177-BPAN-B25SR2P5-X8Y8PP2-RT-SX25Y25-X8Y8-XO0YO0-X30Y30Z20-S")
 panel_f = mu.Hardware("panel_f", "CUBX0177-BPAN-B25SR2P5-X8Y8PP2-RT-SX25Y25-X8Y8-XO0YO0-X30Y30Z20-S")
 
+
+
 """ Define Hardware Assembly Coordinates"""
 
 alpha = 200 
