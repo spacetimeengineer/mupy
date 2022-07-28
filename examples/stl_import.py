@@ -14,16 +14,23 @@ workspace = mu.WorkSpace(str(Path.home())+"/"+workspace_name) # Creates workspac
 
 
 """ Define Hardware Components"""
-benchy = mu.Hardware("3DBenchy", "resources/3DBenchy.stl")
-
-
+panel_a = mu.Hardware("3DBenchy", "resources/3DBenchy.stl")
+panel_b = mu.Hardware("3DBenchy", "resources/3DBenchy.stl")
+panel_c = mu.Hardware("3DBenchy", "resources/3DBenchy.stl")
+panel_d = mu.Hardware("3DBenchy", "resources/3DBenchy.stl")
+panel_e = mu.Hardware("3DBenchy", "resources/3DBenchy.stl")
+panel_f = mu.Hardware("3DBenchy", "resources/3DBenchy.stl")
 
 """ Define Hardware Assembly Coordinates"""
 
-
+alpha = 200
 test_assembly = mu.Assembly("test_assembly")
-test_assembly.include(benchy, mu.Coordinates(0,1,[0, 0 , 8 * 25 / 2 + 200],[0, 0 , 8 * 25 / 2 ],[0,0,1000],[0,0,0]))
-
+test_assembly.include(panel_a, mu.Coordinates(0,1,[0, 0 , 8 * 25 / 2 + alpha],[0, 0 , 8 * 25 / 2 ],[0,0,1000],[0,0,0]))
+test_assembly.include(panel_b, mu.Coordinates(0,1,[0, 8 * 25 / 2 + alpha, 0],[0, 8 * 25 / 2, 0],[0,0,1000],[-90,0,0]))
+test_assembly.include(panel_c, mu.Coordinates(0,1,[ - 8 * 25 / 2 - alpha, 0, 0 ],[ - 8 * 25 / 2, 0, 0 ],[0,0,1000],[0,-90,0]))
+test_assembly.include(panel_d, mu.Coordinates(0,1,[0 , 0, -8 * 25 / 2 - alpha],[0 , 0, -8 * 25 / 2 ],[0,0,1000],[0,180,0]))
+test_assembly.include(panel_e, mu.Coordinates(0,1,[0, - 8 * 25 / 2 - alpha, 0 ],[0, - 8 * 25 / 2, 0 ],[0,0,1000],[90,0,0]))
+test_assembly.include(panel_f, mu.Coordinates(0,1,[8 * 25 / 2 + alpha, 0 , 0],[8 * 25 / 2, 0 , 0],[0,0,1000],[90,0,90]))
 
 """ Run """
 workspace.run(test_assembly, mu.Coordinates(0,1,[0,0,0],[0,0,0],[0,0,0],[0,0,0])) # This command creates all directorires and assemblies.
