@@ -3,7 +3,9 @@ If you are reading this please understand that repository is unfinished. This re
 
 
 ## Table of contents
-
+<img
+  src="resources/temp_logo.png"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
 ![Alt Text](resources/temp_logo.png=250x250)
 
 <!--ts-->
