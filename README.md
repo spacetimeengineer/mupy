@@ -149,13 +149,13 @@ Originally this project could of been thought of as an attempt to create a physi
 
 - Compression Algorithm
 
-- Decentralized Innovation & Manufacturing Utility
+- Decentralized Innovation Utility
 
 - 3D Part Generator & Library
 
 - Applications-Programming & Command-Line Interface
 
-- Horizontal abstraction library for openscad programming 
+- Horizontal abstraction library for openscad programming
 
 ### How do I use mupy?
 
