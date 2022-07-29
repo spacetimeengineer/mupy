@@ -1,11 +1,12 @@
 ### Disclaimer
 If you are reading this please understand that repository is unfinished. This repository requires public status temporarily for testing purposes. It is still littered with errors, is unstable and the documentation is incomplete and littered with spuling errurs. Feel free to explore source code if you must but keep your commentary to yourself until I formally release. Thankyou
 
-
-## Table of contents
 <img
   src="resources/temp_logo.png"
   style="display: inline-block; margin: 0 auto; width: 200px">
+
+
+## Table of contents
 
 <!--ts-->
    * [About](#about)
