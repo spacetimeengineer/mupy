@@ -727,10 +727,10 @@ Schemas reference the pattern the system codes obey when storing parametrization
 ## Road-map
 
 ### Build a community
-This kind of thing wont go far without a community. This community would provide real goals, like real projects that can help us do bigger and better things like infrastructure or innovation. I know it sounds crazy but why not. For my purposes mupy is basically finished but the community may identify worthwhile proposals for features. It's really important to understand that the only way to build amazing things is to try and if at first you dont succeed try try again. mupy will expedite this process.
+This kind of thing wont go far without a community. This community would provide real goals, like real projects that can help or train us and mupy or some successor technology to do bigger and better things that could handle infrastructure or high-power innovation. I know it sounds crazy but why not. Lets build a space ship or something. The community may identify worthwhile proposals for features. Consider that the scripting interface makes it easier for people and teams to coordinate larger projects using a version control system like github.
 
 ### Redesign model (perhaps in a different language)
-All programming all starts with a model. The more efficient the model the more efficient the programming.Every time you rebuild a system from the ground up you can identify deeper problems which when solved leads to more efficiency. This creates more automation power and longevity. It also keeps us smart.
+All programming all starts with a model. The more efficient the model the more efficient the programming.Every time you rebuild a system from the ground up the developers identify deeper problems which when solved leads to more efficiency. This creates more automation power and longevity. It also keeps the programmers sharp.
 
 ### More family codes
 More family codes means more parts to print or more possible things to assemble. This has an exponential effect. This will reinforce the integrity of mupy and the likelihood to attract users. Additionally we want to add constraints that keep certified families clean of defunct parts which should not or could not be printed.
