@@ -727,7 +727,7 @@ Schemas reference the pattern the system codes obey when storing parametrization
 ## Road-map
 
 ### Build a community
-This kind of thing wont go far without a community. This community would provide real goals, like real projects that can help us do bigger and better things like infrastructure or innovation. I know it sounds crazy but why not. For my purposes mupy is basically finished but the community may identifyworthwhile proposals for features. 
+This kind of thing wont go far without a community. This community would provide real goals, like real projects that can help us do bigger and better things like infrastructure or innovation. I know it sounds crazy but why not. For my purposes mupy is basically finished but the community may identify worthwhile proposals for features. It's really important to understand that the only way to build amazing things is to try and if at first you dont succeed try try again. mupy will expedite this process.
 
 ### Redesign model (perhaps in a different language)
 All programming all starts with a model. The more efficient the model the more efficient the programming.Every time you rebuild a system from the ground up you can identify deeper problems which when solved leads to more efficiency. This creates more automation power and longevity. It also keeps us smart.
