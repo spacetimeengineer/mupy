@@ -727,15 +727,20 @@ Schemas reference the pattern the system codes obey when storing parametrization
 ## Road-map
 
 ### Build a community
-This kind of thing wont go far without a community. This community would provide real goals, like real projects that can help us do bigger and better things like infrastructure. I know it sounds crazy but why not.
-### Redesign model
-These kinds of complex systems always benefit from a rebirth into a more advanced or integrated form. Currently this version is a package with hobbled together applications making things work and even well but it is not optimal and cannot do certain things I want it to do.
+This kind of thing wont go far without a community. This community would provide real goals, like real projects that can help us do bigger and better things like infrastructure or innovation. I know it sounds crazy but why not. For my purposes mupy is basically finished but the community may identifyworthwhile proposals for features. 
+
+### Redesign model (perhaps in a different language)
+All programming all starts with a model. The more efficient the model the more efficient the programming.Every time you rebuild a system from the ground up you can identify deeper problems which when solved leads to more efficiency. This creates more automation power and longevity. It also keeps us smart.
+
 ### More family codes
-More family codes means more parts to print or more possible things to assemble. This will reinforce the integrity of mupy and the likelihood to attract users. Additionally we want to add constraints that keep certified families clean of defunct parts which should not or could not be printed.
+More family codes means more parts to print or more possible things to assemble. This has an exponential effect. This will reinforce the integrity of mupy and the likelihood to attract users. Additionally we want to add constraints that keep certified families clean of defunct parts which should not or could not be printed.
+
 ### More scripts codes
 We need people to request like inventions or something with an emphasis on modular development so that we can assemble advanced systems together. Coordination will need to be had and this means people taking leadership.
-### Automate certification
-Basically convert scripts to family codes and type codes with all parametrizations and encoding schemes built into some certification object.
+
+### Design a package manager
+This is essential. While from the point of view of python itself, mupy could effectivly created packages on it's own with mupy nstalled and for now it is the best we have but eventually it would be extremely beneficial to write mupy scripts which assembly and operational animations built in that are themselves callable as a system-codes. This would give a higher level of abstraction to the creations of the community. It also serves as an additional compression layer saying memory for temporary comute time. 
+
 ### Implement name spaces
 It is unclear if family codes serve as name spaces but these are essentially needed for implementing some kind of package manager application.
 ### Implement manufacturing codes
@@ -773,21 +778,21 @@ Currently this is the most valuable and important top priority (ongoing) task. T
 ### Part Identification
 This is similar to the previous except ona primitive scale. So If a project is identified then a new modular family in most cases will be developed to fulfill some requirements fro a design.
 
-
 ### Script Vault
 The more systems that are built the better, more they are parameterized and modular the better although that is no requirement. This will make the technology stronger and more useful.
 
-### mupy.lib
+### Improvements and additions to hardware library.
 The standard library of parts should be developed more and more over time because these represent the primitive parts which make up the scripted-systems. The are also represented by system-codes but they themselves do not really represent systems so much except in the general sense. More libraries will make the system stronger in time but I would recommend to only design hardware that has been identified as a requirement in a larger system.
 
-### mupy.mucli
+### Improvements to mu command-line-tool
 Currently the command line tool is extremely crude. The reasons for this are vast but I typically build command line tools in my projects to illustrate basic functionality and prototyping. The mucli tool is no different except that I really like it's overall form in principle. The idea of just typing in  a code to get quick resources is really cool and useful.
 
 ### mupy.core
 mupy.core should be rebuilt in a couple years after user feedback has been processed and a team is ready to develop.
 
 ## Licensing Structure
-Most things are free typically but the individual name-spaces or family codes are protected by their own license.  
+All subdirectories which contain a license will be represented by that license. This is always a subdirectory representing a family code or namespace. In this way mupy can be thought of as an abstraction that makes efficient calls to some library which may contain a drifferent liscens. Additionally one could protect a library with authentication / prmissions systems. 
+
 ### mupy.core license
 The top level directory license applies to all contained files and directories EXCEPT for family code files and directories which should be thought of as python sub-packages which always contain their own source code file, license and digital-twin python class. This license overrides the top level license and applies to all same-directory-files and same-directory-directories. The mupy.core serves as an abstraction layer to the hardware family libraries which it essentially makes function calls to containing parametrization which is extracted from system-codes.
 
