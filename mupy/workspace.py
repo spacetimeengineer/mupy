@@ -39,15 +39,17 @@ class WorkSpace:
                 print("Discovering assembly object : "+ system.id) # Prints status to terminal.
                 system.workspace_directory = self.workspace_directory # Assigns workspace directory path to the workspace_directory class variables associated with hardware and assembly component objects.
                 self.assemblies.append(system) # Append assembly to workspace.
-
+            
                 if (first_processed_assemblies_call==False): # If the first_processed_assemblies_call has been set to false. This is the more likely case but it only happens after the first assembly is identified.
                     self.processed_assemblies.remove(system) # Remove system from processed assemblies list. Remember this was added originally as a component of a larger system.
                 
                 first_processed_assemblies_call = False # Sets first_processed_assemblies_call flag to False.
                 for component in system.components:# Iterates through sub-components of system.
                     self.processed_assemblies.append(component) # Include assembly into the catagories of assemblues which are being processed.
+                    print(component)
             else: # If there is some other object.
                 pass # Just pass.
+        
 
     def detect_duplicates(self, list):    
         ''' Check if given list contains any duplicates '''
