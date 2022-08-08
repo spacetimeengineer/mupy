@@ -10,7 +10,7 @@ class Assembly:
     These positions are typically defined using parametric equations of time $t (referenced in openscad).
     """
     
-    def __init__(self, name, coordinates = Coordinates(0,1,[50,50,50],[10,10,10],[0,0,0],[10,10,10])):
+    def __init__(self, name, system_code = None):
         """Runs at object creation."""
 
         self.name = name # A name that associates with a part or assembly. it should be human readable and does not need to be unique.
@@ -22,6 +22,8 @@ class Assembly:
         self.directory = "" # Workspace directory.
         self.id = self.assign_id() # Assigns a special
         self.color = "white"
+        self.system_code = system_code
+
 
     def assign_id(self):
         """ Assigns an appropriate ID with required propertied; 

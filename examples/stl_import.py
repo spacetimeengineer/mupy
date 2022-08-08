@@ -14,12 +14,12 @@ workspace = mu.WorkSpace(str(Path.home())+"/"+workspace_name) # Creates workspac
 
 
 """ Define Hardware Components"""
-panel_a = mu.Hardware("3DBenchy", "resources/3DBenchy.stl")
-panel_b = mu.Hardware("3DBenchy", "resources/3DBenchy.stl")
-panel_c = mu.Hardware("3DBenchy", "resources/3DBenchy.stl")
-panel_d = mu.Hardware("3DBenchy", "resources/3DBenchy.stl")
-panel_e = mu.Hardware("3DBenchy", "resources/3DBenchy.stl")
-panel_f = mu.Hardware("3DBenchy", "resources/3DBenchy.stl")
+panel_a = mu.Hardware("3DBenchy", "https://cdn.thingiverse.com/assets/0e/b7/cc/6e/45/X-Wing24th_X_Wing_pilot_0_001.stl")
+panel_b = mu.Hardware("3DBenchy", "https://cdn.thingiverse.com/assets/0e/b7/cc/6e/45/X-Wing24th_X_Wing_pilot_0_001.stl")
+panel_c = mu.Hardware("3DBenchy", "https://cdn.thingiverse.com/assets/0e/b7/cc/6e/45/X-Wing24th_X_Wing_pilot_0_001.stl")
+panel_d = mu.Hardware("3DBenchy", "https://cdn.thingiverse.com/assets/0e/b7/cc/6e/45/X-Wing24th_X_Wing_pilot_0_001.stl")
+panel_e = mu.Hardware("3DBenchy", "https://cdn.thingiverse.com/assets/0e/b7/cc/6e/45/X-Wing24th_X_Wing_pilot_0_001.stl")
+panel_f = mu.Hardware("3DBenchy", "https://cdn.thingiverse.com/assets/0e/b7/cc/6e/45/X-Wing24th_X_Wing_pilot_0_001.stl")
 
 """ Define Hardware Assembly Coordinates"""
 

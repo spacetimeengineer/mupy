@@ -23,8 +23,8 @@ class CUBX0177:
             
             # Example BPAN hardware code : "CUBX0177-BPAN-B25SR2P5-X8Y8PP2-RT-SX25Y25-X8Y8-XO3YO5-X20Y20Z10-S"
 
-            self.block_unit_length = self.hardware_code.split("-")[2].split("B")[1].split("SR")[0] # Block length.
-            self.shaft_radius = self.hardware_code.split("-")[2].split("B")[1].split("SR")[1].replace("P", ".", 1) # Shaft radius.
+            self.block_unit_length = self.hardware_code.split("-")[2].split("B")[1].split("SR")[0].replace("P", ".", 1) 
+            self.shaft_radius = self.hardware_code.split("-")[2].split("B")[1].split("SR")[1].replace("P", ".", 1) 
             self.x_units =  self.hardware_code.split("-")[3].split("X")[1].split("Y")[0]
             self.y_units =  self.hardware_code.split("-")[3].split("Y")[1].split("P")[0]
             self.padding =  "0."+self.hardware_code.split("-")[3].split("PP")[1]
@@ -49,15 +49,15 @@ class CUBX0177:
                 pass
 
             self.cavity_shape_code =  self.hardware_code.split("-")[5].split("X")[0] # Values can take the following but are not limited to the following values : 'S' for square, 'R' for rectangle, 'C' for circle, 'P' for pentagon, 'O' for octagon.
-            self.x_cavity_spacing =  self.hardware_code.split("-")[5].split("X")[1].split("Y")[0]
-            self.y_cavity_spacing =  self.hardware_code.split("-")[5].split("X")[1].split("Y")[1]
-            self.x_cavity_units =  self.hardware_code.split("-")[6].split("X")[1].split("Y")[0]
-            self.y_cavity_units =  self.hardware_code.split("-")[6].split("X")[1].split("Y")[1]
-            self.x_offset  =  self.hardware_code.split("-")[7].split("XO")[1].split("YO")[0]
-            self.y_offset  =  self.hardware_code.split("-")[7].split("YO")[1]
-            self.x_cavity_dimensions =  self.hardware_code.split("-")[8].split("X")[1].split("Y")[0]
-            self.y_cavity_dimensions =  self.hardware_code.split("-")[8].split("X")[1].split("Y")[1].split("Z")[0]
-            self.z_cavity_dimensions =  self.hardware_code.split("-")[8].split("X")[1].split("Y")[1].split("Z")[1]
+            self.x_cavity_spacing =  self.hardware_code.split("-")[5].split("X")[1].split("Y")[0].replace("P", ".", 1) 
+            self.y_cavity_spacing =  self.hardware_code.split("-")[5].split("X")[1].split("Y")[1].replace("P", ".", 1)
+            self.x_cavity_units =  self.hardware_code.split("-")[6].split("X")[1].split("Y")[0].replace("P", ".", 1) 
+            self.y_cavity_units =  self.hardware_code.split("-")[6].split("X")[1].split("Y")[1].replace("P", ".", 1)
+            self.x_offset  =  self.hardware_code.split("-")[7].split("XO")[1].split("YO")[0].replace("P", ".", 1)
+            self.y_offset  =  self.hardware_code.split("-")[7].split("YO")[1].replace("P", ".", 1) 
+            self.x_cavity_dimensions =  self.hardware_code.split("-")[8].split("X")[1].split("Y")[0].replace("P", ".", 1)
+            self.y_cavity_dimensions =  self.hardware_code.split("-")[8].split("X")[1].split("Y")[1].split("Z")[0].replace("P", ".", 1) # Shaft radius.
+            self.z_cavity_dimensions =  self.hardware_code.split("-")[8].split("X")[1].split("Y")[1].split("Z")[1].replace("P", ".", 1) # Shaft radius.
 
             if (self.hardware_code.split("-")[9].count("S") == 1):
                 self.cavity_type = '"S"'
@@ -99,17 +99,17 @@ class CUBX0177:
             # CUBX0177_SPAN(block_length, shaft_radius, xunits, yunits, x_spacing, y_spacing, x_units, y_units, x_offset, y_offset, x_cavity_dimensions, y_cavity_dimensions, z_cavity_dimensions, cavity_type)
             # Example SPAN hardware code : "CUBX0177-SPAN-B25SR2P5-X9Y9-SX25Y25-X8Y8-XO8YO7-X20Y20Z5-S"
 
-            self.block_unit_length = self.hardware_code.split("-")[2].split("B")[1].split("SR")[0] # Block length.
-            self.shaft_radius = self.hardware_code.split("-")[2].split("B")[1].split("SR")[1].replace("P", ".", 1) # Shaft radius.
+            self.block_unit_length = self.hardware_code.split("-")[2].split("B")[1].split("SR")[0].replace("P", ".", 1)
+            self.shaft_radius = self.hardware_code.split("-")[2].split("B")[1].split("SR")[1].replace("P", ".", 1)
             self.x_units =  self.hardware_code.split("-")[3].split("X")[1].split("Y")[0]
             self.y_units =  self.hardware_code.split("-")[3].split("Y")[1].split("P")[0]
 
-            self.x_cavity_spacing =  self.hardware_code.split("-")[4].split("X")[1].split("Y")[0]
-            self.y_cavity_spacing =  self.hardware_code.split("-")[4].split("X")[1].split("Y")[1]
-            self.x_cavity_units =  self.hardware_code.split("-")[6].split("X")[1].split("Y")[0]
-            self.y_cavity_units =  self.hardware_code.split("-")[6].split("X")[1].split("Y")[1]
-            self.x_offset  =  self.hardware_code.split("-")[7].split("XO")[1].split("YO")[0]
-            self.y_offset  =  self.hardware_code.split("-")[7].split("YO")[1]
+            self.x_cavity_spacing =  self.hardware_code.split("-")[4].split("X")[1].split("Y")[0].replace("P", ".", 1)
+            self.y_cavity_spacing =  self.hardware_code.split("-")[4].split("X")[1].split("Y")[1].replace("P", ".", 1)
+            self.x_cavity_units =  self.hardware_code.split("-")[6].split("X")[1].split("Y")[0].replace("P", ".", 1) 
+            self.y_cavity_units =  self.hardware_code.split("-")[6].split("X")[1].split("Y")[1].replace("P", ".", 1) 
+            self.x_offset  =  self.hardware_code.split("-")[7].split("XO")[1].split("YO")[0].replace("P", ".", 1)
+            self.y_offset  =  self.hardware_code.split("-")[7].split("YO")[1].replace("P", ".", 1) 
             self.x_cavity_dimensions =  self.hardware_code.split("-")[8].split("X")[1].split("Y")[0]
             self.y_cavity_dimensions =  self.hardware_code.split("-")[8].split("X")[1].split("Y")[1].split("Z")[0]
             self.z_cavity_dimensions =  self.hardware_code.split("-")[8].split("X")[1].split("Y")[1].split("Z")[1]

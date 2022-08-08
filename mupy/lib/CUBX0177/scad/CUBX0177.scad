@@ -1,6 +1,6 @@
 $fn = 50;
 
-module general_block(block_length = 25.001, shaft_radius = 2.5 )
+module general_block(block_length, shaft_radius )
 {
     difference()
     {
@@ -13,7 +13,7 @@ module general_block(block_length = 25.001, shaft_radius = 2.5 )
     }
 }
 
-module side_tooth(block_length = 25.001, shaft_radius = 2.5, padding = 0.20 )
+module side_tooth(block_length, shaft_radius, padding )
 {
     difference()
     {
@@ -26,7 +26,7 @@ module side_tooth(block_length = 25.001, shaft_radius = 2.5, padding = 0.20 )
     }
 }
 
-module top_tooth(block_length, shaft_radius, padding = 0.20 )
+module top_tooth(block_length, shaft_radius, padding = 0.22 )
 {
     difference()
     {
@@ -40,7 +40,7 @@ module top_tooth(block_length, shaft_radius, padding = 0.20 )
         rotate([0,90,0]) { cylinder( h = 50, r1 = shaft_radius, r2 = shaft_radius, center = true ); }
     }
 }
-
+    
 module square_cavity_array(x_spacing, y_spacing, x_units, y_units, x_offset, y_offset, x_cavity_dimensions, y_cavity_dimensions, z_cavity_dimensions)
 {
     /*  Constants */

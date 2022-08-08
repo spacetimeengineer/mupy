@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 from distutils.command.build_scripts import first_line_re
+from .decode import Decode
 
 class WorkSpace:
     """  Gives context to parts and assemblys. Provides functionallity by calling sub-functions of assembly and part objects making code much shorter and much more advanced. 
@@ -62,7 +63,16 @@ class WorkSpace:
             for hardware in self.hardware: # For each part.
                 hardware.build_hardware(self.workspace_directory) # Write scad file for this hardwere.
             for assembly in self.assemblies: # For each assembly.
-                assembly.assemble(self.workspace_directory) # Write scad file for this assembly.
+                
+                # TODO: This is where we will need to "call the decode function? (man I had the way I built this interface.)"
+                if assembly.system_code != None:
+                    # This is where we will need to "call the decode function? (man I had the way I built this interface.)"
+                    # At this point the workspace does not know anything about the assembly. Only the sysytem code. This is why we need to decode it here before the assemble function is called.
+                    system_code_decoding = Decode(assembly.system_code, self.workspace_directory)
+                    assembly = system_code_decoding.assembly
+                    assembly.assemble(self.workspace_directory) # Write scad file for this assembly.
+                else:
+                    assembly.assemble(self.workspace_directory) # Write scad file for this assembly.
 
     def print_errors(self):
         "Debug function for getting access to system level erros."

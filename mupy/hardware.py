@@ -5,6 +5,7 @@ import os, shutil
 from .decode import Decode
 from os.path import exists
 from .coordinates import Coordinates
+import urllib.request
 
 class Hardware:
     """ This class builds json objects which define parts. 
@@ -25,7 +26,9 @@ class Hardware:
         self.color = "blue"
         self.stl_imported = False # Determines if the hardware object handles a system-code based design or a custom imported design.
         self.imported_stl = ""
+
         if hardware_code.endswith('.stl'):
+                
             self.stl_imported = True
             self.imported_stl = hardware_code.split("/")[len(hardware_code.split("/"))-1]
             
@@ -91,7 +94,7 @@ class Hardware:
         
             if self.stl_imported == False:
                 scad_code = scad_code + '    translate([x_position_initial+($t-'+str(coordinates.t_i)+')*(x_position_final-x_position_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+') , y_position_initial+($t-'+str(coordinates.t_i)+')*(y_position_final-y_position_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+'), z_position_initial + ($t-'+str(coordinates.t_i)+')*(z_position_final-z_position_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+') ] ) { rotate([x_axis_angle_initial+($t-'+str(coordinates.t_i)+')*(x_axis_angle_final-x_axis_angle_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+'), y_axis_angle_initial+($t-'+str(coordinates.t_i)+')*(y_axis_angle_final-y_axis_angle_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+'), z_axis_angle_initial+($t-'+str(coordinates.t_i)+')*(z_axis_angle_final-z_axis_angle_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+')])'+' { color("'+self.color+'") { import("stl_files/'+ self.hardware_code + '.stl"); } } }\n''  }\n' # translation block scad code.
-            elif self.stl_imported == True:
+            elif self.stl_imported == True: 
                 scad_code = scad_code + '    translate([x_position_initial+($t-'+str(coordinates.t_i)+')*(x_position_final-x_position_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+') , y_position_initial+($t-'+str(coordinates.t_i)+')*(y_position_final-y_position_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+'), z_position_initial + ($t-'+str(coordinates.t_i)+')*(z_position_final-z_position_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+') ] ) { rotate([x_axis_angle_initial+($t-'+str(coordinates.t_i)+')*(x_axis_angle_final-x_axis_angle_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+'), y_axis_angle_initial+($t-'+str(coordinates.t_i)+')*(y_axis_angle_final-y_axis_angle_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+'), z_axis_angle_initial+($t-'+str(coordinates.t_i)+')*(z_axis_angle_final-z_axis_angle_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+')])'+' { color("'+self.color+'") { import("stl_files/'+ self.imported_stl + '"); } } }\n''  }\n' # translation block scad code. 
                     
         """ This bit here is so the assembly time quantums dont delete the object from ever coming into view."""            
@@ -119,6 +122,7 @@ class Hardware:
     def build_stl(self, directory):
         """"""
         mu_symbol = '\u00B5'
+        #TODO: Make a downloading statement for downloaded or imported.
         print("Decoding : "+self.hardware_code)
         decoding = Decode(self.hardware_code, directory) # This is where the hardware code is converted into an scad code which can be rendered to an stl.
         if not exists(directory+"/stl_files/"+self.hardware_code+".stl") and decoding.family_code_valid == True: #
@@ -127,7 +131,13 @@ class Hardware:
             os.system("openscad -o "+directory+"/stl_files/"+self.hardware_code+".stl "+directory+"/"+self.hardware_code+".scad") # This is the scad file used to create the stl files
                     
         if self.stl_imported == True:
-            shutil.copy2(self.hardware_code, directory+"/stl_files/")
+            
+
+            if len(self.hardware_code.split("http")) > 0:
+                stl_file = self.hardware_code
+                urllib.request.urlretrieve(stl_file, directory+"/stl_files/"+self.imported_stl)
+            else:
+                shutil.copy2(self.imported_stl, directory+"/stl_files/")            
 
             
     def mucli_build_stl(self, directory):

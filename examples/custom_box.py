@@ -55,12 +55,12 @@ panel_f_assembly_coords = mu.Coordinates(0,1,[ box_x_units * unit_block_length /
 
 """ Define assembly. """
 box_assembly = mu.Assembly("box_assembly")
-box_assembly.include(panel_a, panel_a_assembly_coords) # Coordinates complete!
-box_assembly.include(panel_b, panel_b_assembly_coords) # Coordinates complete!
-box_assembly.include(panel_c, panel_c_assembly_coords) # Coordinates complete!
-box_assembly.include(panel_d, panel_d_assembly_coords) # Coordinates complete!
-box_assembly.include(panel_e, panel_e_assembly_coords) # Coordinates complete!
-box_assembly.include(panel_f, panel_f_assembly_coords) # Coordinates complete!
+box_assembly.include(panel_a, panel_a_assembly_coords)
+box_assembly.include(panel_b, panel_b_assembly_coords)
+box_assembly.include(panel_c, panel_c_assembly_coords)
+box_assembly.include(panel_d, panel_d_assembly_coords)
+box_assembly.include(panel_e, panel_e_assembly_coords)
+box_assembly.include(panel_f, panel_f_assembly_coords)
 
 """ Run """
 workspace.run(box_assembly, mu.Coordinates(0,1,[0,0,0],[0,0,0],[0,0,0],[0,0,0])) # This command creates all directorires and assemblies.
