@@ -687,7 +687,8 @@ Hardware objects are the primary mechanism for introducing system-codes into the
 In an assembly generally speaking, there needs to exist initial and final coordinates in 3D space within a certain time quantum since the assembly will exist as a hierarchical structure and will need to be organized down into multiple time domains. Keep in mind that multiple assemblies can exist in a single time quantum but not if they ever involve the same part.
 
 ### Assembly
-Contains similar properties as a Hardware object except that it's primary purpose is to include Hardware objects and other assembly object into itself. It is an object with recursive properties built in.
+Contains similar properties as a Hardware object except that it's primary purpose is to include Hardware objects and other assembly object into itself. It can be injected into other assemblies.
+Additionally the assembly object was chosen as the primary mechanism for implementing mu packages.
 
 ### Time Quantum
 
