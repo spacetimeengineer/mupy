@@ -84,6 +84,8 @@ class WorkSpace:
             # At this point the workspace does not know anything about the assembly. Only the sysytem code. This is why we need to decode it here before the assemble function is called.
             system_code_decoding = Decode(system.system_code, self.workspace_directory)
             system_code_assembly = system_code_decoding.assembly
-        
-        self.recursive_import(system_code_assembly, coordinates) # Recursive inclusion of parts and assemblies into workspace.
+            self.recursive_import(system_code_assembly, coordinates) # Recursive inclusion of parts and assemblies into workspace.
+            
+        else: # In the case that no system code was provided.
+            self.recursive_import(system, coordinates) # Recursive inclusion of parts and assemblies into workspace. 
         self.generate() # Recursive writing of scad object contained in assembly.

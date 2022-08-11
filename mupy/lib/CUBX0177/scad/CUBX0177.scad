@@ -271,7 +271,7 @@ module triangular_corner_difference(block_length, shaft_radius)
 }
 
 /* Axle Adapter */
-module CUBX0177_AXAD( block_length, shaft_radius )
+module CUBX0177_AXAD( block_length, shaft_radius, padding )
 {
     difference()
     {
@@ -311,8 +311,8 @@ module CUBX0177_AXAD( block_length, shaft_radius )
             translate([block_length*0, block_length*2, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
 
         }
-        translate([0,0,block_length*1]) { cube([block_length+0.1, block_length+0.1, block_length+0.1],true);}
-        translate([0,0,block_length*2]) { cube([block_length+0.1, block_length+0.1, block_length+0.1],true);}
+        translate([0,0,block_length*1]) { cube([block_length+padding, block_length+padding, block_length+padding],true);}
+        translate([0,0,block_length*2]) { cube([block_length+padding, block_length+padding, block_length+padding],true);}
         
     }
 }

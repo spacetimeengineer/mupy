@@ -12,7 +12,6 @@ class CUBX0177:
         self.family_code = self.hardware_code.split("-")[0]
         self.type_code = self.hardware_code.split("-")[1]
         self.directory = directory
-
         self.scad_file_name = directory + "/" + hardware_code +".scad" # This scad file is used to build the stl. It can be deleted afterwards. # TODO : Delete this file after run() command is called.
         self.scad_file = open(self.scad_file_name, 'w+')  # open file in append mode
 
@@ -86,6 +85,7 @@ class CUBX0177:
 
 
             ''' Testing that code is parsed correctly.'''
+            print("")
             print("    Parameterization Information")
             print("")
             print("    famliy_code = "+self.family_code)
@@ -105,7 +105,8 @@ class CUBX0177:
             print("    y_cavity_dimensions = "+self.y_cavity_dimensions+"mm")
             print("    z_cavity_dimensions = "+self.z_cavity_dimensions+"mm")
             print("    cavity_type = "+self.cavity_type)
-
+            print("")
+            
             ''' Rules logic goes here ; conditions of which parameters combinations can exist.   '''
 
             ''' Execute write scad functions.   '''
@@ -170,6 +171,7 @@ class CUBX0177:
             
             ''' Testing that code is parsed correctly.'''
             
+            print("")
             print("    Parameterization Information")
             print("")
             print("    famliy_code = "+self.family_code)
@@ -177,6 +179,7 @@ class CUBX0177:
             print("    block_unit_length = "+self.block_unit_length+"mm")
             print("    shaft_radius = "+self.shaft_radius+"mm")
             print("    axle_blocks = "+self.axle_blocks+" blocks")
+            print("")
             
             ''' Execute write scad functions.   '''
 
@@ -195,14 +198,15 @@ class CUBX0177:
             self.threshaft_radiusad_starts = self.shaft_radius.replace("P", ".", 1)
 
             ''' Testing that code is parsed correctly.'''
-            
+            print("")
             print("    Parameterization Information")
             print("")
             print("    famliy_code = "+self.family_code)
             print("    type_code = "+self.type_code)
             print("    block_unit_length = "+self.block_unit_length+"mm")
             print("    shaft_radius = "+self.shaft_radius+"mm")
-
+            print("")
+            
             ''' Execute write scad functions.   '''
 
             self.CUBX0177_FYAD()
@@ -213,20 +217,22 @@ class CUBX0177:
             # Example SPAN hardware code : "CUBX0177-FYAD-B25SR2P5"
             self.block_unit_length = self.hardware_code.split("-")[2].split("B")[1].split("SR")[0] # Block length.
             self.shaft_radius = self.hardware_code.split("-")[2].split("B")[1].split("SR")[1].replace("P", ".", 1) # Shaft radius.
-
+            self.padding =  "0."+self.hardware_code.split("-")[3].split("PP")[1]
             ''' Rules logic goes here ; conditions of which parameters combinations can exist.   '''
             
             self.block_unit_length = self.block_unit_length.replace("P", ".", 1)
             self.threshaft_radiusad_starts = self.shaft_radius.replace("P", ".", 1)
             
             ''' Testing that code is parsed correctly.'''
-            
+            print("")
             print("    Parameterization Information")
             print("")
             print("    famliy_code = "+self.family_code)
             print("    type_code = "+self.type_code)
             print("    block_unit_length = "+self.block_unit_length+"mm")
             print("    shaft_radius = "+self.shaft_radius+"mm")
+            print("    padding = "+self.padding+"mm")
+            print("")
             
             ''' Execute write scad functions.   '''
 

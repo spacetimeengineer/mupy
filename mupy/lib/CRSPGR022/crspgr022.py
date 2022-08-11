@@ -17,7 +17,6 @@ class CRSPGR022:
 
         self.scad_file_name = directory + "/" + hardware_code +".scad"
         self.scad_file = open(self.scad_file_name, 'w+')  # open file in append mode
-        print("")
         os.system("cp -R "+os.path.dirname(__file__)+"/scad/ "+ self.directory)
         self.scad_file.write('use <scad/CRSPGR022.scad>;\n\n')
 
@@ -40,6 +39,7 @@ class CRSPGR022:
             self.helix_angle = self.helix_angle.replace("P", ".", 1)
             
             ''' Testing that code is parsed correctly.'''
+            print("")
             print("    Parameterization Information")
             print("")
             print("    modul = "+self.modul)
@@ -76,6 +76,7 @@ class CRSPGR022:
             self.profile = self.profile.replace("P", ".", 1)
             
             ''' Testing that code is parsed correctly.'''
+            print("")
             print("    Parameterization Information")
             print("")
             print("    modul = "+self.modul)
@@ -110,6 +111,7 @@ class CRSPGR022:
             self.helix_angle = self.helix_angle.replace("P", ".", 1)
             
             ''' Testing that code is parsed correctly.'''
+            print("")
             print("    Parameterization Information")
             print("")
             print("    modul = "+self.modul)
@@ -145,6 +147,7 @@ class CRSPGR022:
             self.profile = self.profile.replace("P", ".", 1)
             
             ''' Testing that code is parsed correctly.'''
+            print("")
             print("    Parameterization Information")
             print("")
             print("    modul = "+self.modul)
@@ -185,6 +188,7 @@ class CRSPGR022:
             self.bore = self.bore.replace("P", ".", 1)
             
             ''' Testing that code is parsed correctly.'''
+            print("")
             print("    Parameterization Information")
             print("")
             print("    modul = "+self.modul)
@@ -223,6 +227,7 @@ class CRSPGR022:
             self.bore = self.bore.replace("P", ".", 1)
             
             ''' Testing that code is parsed correctly.'''
+            print("")
             print("    Parameterization Information")
             print("")
             print("    modul = "+self.modul)
@@ -254,6 +259,7 @@ class CRSPGR022:
             self.helix_angle = self.helix_angle.replace("P", ".", 1)
             
             ''' Testing that code is parsed correctly.'''
+            print("")
             print("    Parameterization Information")
             print("")
             print("    modul = "+self.modul)
@@ -284,6 +290,7 @@ class CRSPGR022:
             self.helix_angle = self.helix_angle.replace("P", ".", 1)
             
             ''' Testing that code is parsed correctly.'''
+            print("")
             print("    Parameterization Information")
             print("")
             print("    modul = "+self.modul)
@@ -318,6 +325,7 @@ class CRSPGR022:
             self.helix_angle = self.helix_angle.replace("P", ".", 1)
             
             ''' Testing that code is parsed correctly.'''
+            print("")
             print("    Parameterization Information")
             print("")
             print("    modul = "+self.modul)
@@ -337,7 +345,7 @@ class CRSPGR022:
 
             self.modul = hardware_code.split("-")[2].split("M")[1]
             self.tooth_number = hardware_code.split("-")[3].split("T")[1].split("W")[0]
-            self.tooth_width = hardware_code.split("-")[3].split("W")[1]
+            self.tooth_width = hardware_code.split("-")[3].split("W")[1].split("S")[0]
             self.pressure_angle = hardware_code.split("-")[4].split("P")[1].split("H")[0]
             self.helix_angle = hardware_code.split("-")[4].split("H")[1].split("C")[0]
             self.partial_cone_angle = hardware_code.split("-")[4].split("C")[1]
@@ -351,6 +359,7 @@ class CRSPGR022:
             self.partial_cone_angle = self.partial_cone_angle.replace("P", ".", 1)
             
             ''' Testing that code is parsed correctly.'''
+            print("")
             print("    Parameterization Information")
             print("")
             print("    modul = "+self.modul)
@@ -360,6 +369,7 @@ class CRSPGR022:
             print("    helix_angle = "+self.helix_angle+"°")
             print("    partial_cone_angle = "+self.partial_cone_angle+"°")
             print("    bore = "+self.bore+" bores")
+            print("")
 
             self.CRSPGR022_BG()
             self.scad_file.close()
@@ -384,6 +394,7 @@ class CRSPGR022:
             self.partial_cone_angle = self.partial_cone_angle.replace("P", ".", 1)
             
             ''' Testing that code is parsed correctly.'''
+            print("")
             print("    Parameterization Information")
             print("")
             print("    modul = "+self.modul)
