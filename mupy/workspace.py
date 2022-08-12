@@ -2,6 +2,7 @@
 
 from distutils.command.build_scripts import first_line_re
 from .decode import Decode
+import os
 
 class WorkSpace:
     """  Gives context to parts and assemblys. Provides functionallity by calling sub-functions of assembly and part objects making code much shorter and much more advanced. 
@@ -88,4 +89,11 @@ class WorkSpace:
             
         else: # In the case that no system code was provided.
             self.recursive_import(system, coordinates) # Recursive inclusion of parts and assemblies into workspace. 
+            
+
+        for file in os.listdir(self.workspace_directory):
+            if os.path.isfile(os.path.join(self.workspace_directory,file)) == True:
+                os.remove(os.path.join(self.workspace_directory, file)) 
+                
+                   
         self.generate() # Recursive writing of scad object contained in assembly.

@@ -137,6 +137,7 @@ class Assembly:
 
         if not os.path.exists(directory): # If directory does not exists.
             os.mkdir(directory) # Create directory for new objects.
+    
         # TODO: may need to fix a double slash here.
         scad_file = open(directory+"/"+str(self.id)+".scad", "w") # Creates scad file staging without text.
         scad_file.write("\n/* Manufacturing Utility : Generated hardware assembly .scad file. */\n\n")

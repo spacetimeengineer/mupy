@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+from genericpath import isdir
 import hashlib
 import os, shutil
 from .decode import Decode

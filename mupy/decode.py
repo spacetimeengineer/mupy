@@ -1,5 +1,13 @@
 #!/usr/bin/python3
 
+"""
+This class is one of the worst parts of this whole project. 
+The reason for it's existence was that there needed to be a place to make function calls for various scad libraries.
+It sucks because certification implies based on this structure that we need to inject a new directory for each family code.
+At first this seems reasonable but when you consider automating certification to the point where you can make a new family for a trivial assembly, it would be hard to program so many more directories.
+I Think there needs to exist a 3rd part database or online marketplace or archive where the code is stored.
+"""
+
 from os import DirEntry
 from .lib.CUBX0006.cubx0006 import CUBX0006
 from .lib.CUBX0177.cubx0177 import CUBX0177
