@@ -13,7 +13,7 @@ workspace_name = "utility_box" # Workspace name ; this will be the name of the w
 workspace = mu.WorkSpace(str(Path.home())+"/"+workspace_name) # Creates workspace.
 
 """ Define Hardware Components"""
-panel_a = mu.Hardware("panel_a", "CUBX0177-BPAN-B25SR2P5-X8Y8PP2-RT-SX25Y25-X8Y8-XO0YO0-X30Y30Z20-S")
+panel_a = mu.Hardware("pipe_a", "CYLX0006-PIP-L66P6O10P2I2P5")
 panel_b = mu.Hardware("panel_b", "CUBX0177-BPAN-B25SR2P5-X8Y8PP2-RT-SX25Y25-X8Y8-XO0YO0-X30Y30Z20-S")
 panel_c = mu.Hardware("panel_c", "CUBX0177-BPAN-B25SR2P5-X8Y8PP2-RT-SX25Y25-X8Y8-XO0YO0-X30Y30Z20-S")
 panel_d = mu.Hardware("panel_d", "CUBX0177-BPAN-B25SR2P5-X8Y8PP2-RT-SX25Y25-X8Y8-XO0YO0-X30Y30Z20-S")

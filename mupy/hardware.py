@@ -24,7 +24,7 @@ class Hardware:
         self.workspace_directory = "" # The directory associated with workspace which contains this hardware object.
         self.stl_file_name = self.hardware_code+".stl" # The string path variable associated with the .stl file which this object helps generate.
         self.scad_file_name = self.id+".scad" # The string path variable associated with the scad file which is used to render the .stl file.
-        self.color = "blue"
+        self.color = "white"
         self.stl_imported = False # Determines if the hardware object handles a system-code based design or a custom imported design.
         self.imported_stl = ""
 

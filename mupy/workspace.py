@@ -17,6 +17,7 @@ class WorkSpace:
         self.assemblies = [] # A list of assembly objects contained in this workspace.
         self.processed_assemblies = [] # A list of processed assemblies used for recursive import.
         self.errors = [] # Error aggregation object. # TODO : Make a class for this that is more thoughtful.
+        self.assembly_epoch_count = 0
 
     def recursive_import(self, system, system_coordinates):
         """This is a strange function ; it recursivly takes in objects from the main assembly and gives them a home them in the workspace. 
@@ -90,7 +91,8 @@ class WorkSpace:
         else: # In the case that no system code was provided.
             self.recursive_import(system, coordinates) # Recursive inclusion of parts and assemblies into workspace. 
             
-
+        if not os.path.exists(self.workspace_directory): # Checks if main workspace directory exists.
+            os.mkdir(self.workspace_directory) # Creates the workspace directory.
         for file in os.listdir(self.workspace_directory):
             if os.path.isfile(os.path.join(self.workspace_directory,file)) == True:
                 os.remove(os.path.join(self.workspace_directory, file)) 

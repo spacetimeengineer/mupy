@@ -10,6 +10,7 @@ I Think there needs to exist a 3rd part database or online marketplace or archiv
 
 from os import DirEntry
 from .lib.CUBX0006.cubx0006 import CUBX0006
+from .lib.CYLX0006.cylx0006 import CYLX0006
 from .lib.CUBX0177.cubx0177 import CUBX0177
 from .lib.CRSPGR022.crspgr022 import CRSPGR022
 from .lib.CUSBX0177.cusbx0177 import CUSBX0177
@@ -36,6 +37,9 @@ class Decode:
                 pass
             elif family_code == "CUBX0006":
                 CUBX0006(self.hardware_code, directory)
+                pass
+            elif family_code == "CYLX0006":
+                CYLX0006(self.hardware_code, directory)
                 pass
             elif family_code == "CRSPGR022":
                 CRSPGR022(self.hardware_code, directory)
