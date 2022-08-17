@@ -7,7 +7,6 @@ import os
 from mupy.mucli.selection_branch import SelectionBranch
 from mupy.mucli.input_branch import InputBranch
 from mupy.lib.CUBX0006.cubx0006 import CUBX0006, CUBX0006_encoding
-from mupy.decode import Decode
 from mupy.hardware import Hardware
 from pathlib import Path
 
@@ -50,6 +49,7 @@ print("\n"+mu_symbol+"term ~ manufacturing utility terminal\n")
 relative_workspace_path=""
 while len(relative_workspace_path) == 0:
     relative_workspace_path = input(mu_symbol+":! To proceed you must specify an existing workspace directory or create a new workspace directory relative to home path (:~/$) \n\n    > ")
+    relative_workspace_path.replace(" ", "_")
 absolute_workspace_path = str(Path.home()) + "/" + relative_workspace_path
 if not os.path.exists(absolute_workspace_path):
     os.makedirs(absolute_workspace_path)
