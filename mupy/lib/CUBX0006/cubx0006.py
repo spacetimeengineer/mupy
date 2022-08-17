@@ -41,6 +41,7 @@ class CUBX0006:
             print("    length = "+self.length+"mm")
             print("    width = "+self.width+"mm")
             print("    height = "+self.height+"mm")
+            print("")
             
             self.CUBX0006_BLK() # Writes function to scad file with parameters set.
 

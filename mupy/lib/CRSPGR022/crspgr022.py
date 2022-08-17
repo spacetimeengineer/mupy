@@ -48,6 +48,7 @@ class CRSPGR022:
             print("    width = "+self.width+"mm")
             print("    pressure_angle = "+self.pressure_angle+"°")
             print("    helix_angle = "+self.helix_angle+"°")
+            print("")
             
             self.CRSPGR022_R()
             self.scad_file.close()
@@ -88,6 +89,7 @@ class CRSPGR022:
             print("    profile = "+self.profile)
             print("    head = "+self.head)
             print("    fastners = "+self.fastners)
+            print("")
                                     
             self.CRSPGR022_MR()
             self.scad_file.close()
@@ -120,6 +122,7 @@ class CRSPGR022:
             print("    width = "+self.width+"mm")
             print("    pressure_angle = "+self.pressure_angle+"°")
             print("    helix_angle = "+self.helix_angle+"°")
+            print("")
             
             self.CRSPGR022_HR()
             self.scad_file.close()
@@ -158,7 +161,8 @@ class CRSPGR022:
             print("    helix_angle = "+self.helix_angle+"°")
             print("    profile = "+self.profile)
             print("    head = "+self.head)
-            print("    fastners = "+self.fastners)            
+            print("    fastners = "+self.fastners)
+            print("")  
             
             self.CRSPGR022_MHR()
             self.scad_file.close()
@@ -198,6 +202,7 @@ class CRSPGR022:
             print("    helix_angle = "+self.helix_angle+"°")
             print("    bore = "+self.bore+" bores")
             print("    optimized = "+self.optimized)
+            print("")
             
             self.CRSPGR022_SG()
             self.scad_file.close()
@@ -237,6 +242,7 @@ class CRSPGR022:
             print("    helix_angle = "+self.helix_angle+"°")
             print("    bore = "+self.bore+" bores")
             print("    optimized = "+self.optimized)
+            print("")
                 
             self.CRSPGR022_HG()
             self.scad_file.close()
@@ -268,6 +274,7 @@ class CRSPGR022:
             print("    rim_width = "+self.rim_width+"mm")
             print("    pressure_angle = "+self.pressure_angle+"°")
             print("    helix_angle = "+self.helix_angle+"°")
+            print("")
 
             self.CRSPGR022_RG()
             self.scad_file.close()
@@ -299,6 +306,7 @@ class CRSPGR022:
             print("    rim_width = "+self.rim_width+"mm")
             print("    pressure_angle = "+self.pressure_angle+"°")
             print("    helix_angle = "+self.helix_angle+"°")
+            print("")
 
             self.CRSPGR022_HRG()
             self.scad_file.close()
@@ -336,6 +344,7 @@ class CRSPGR022:
             print("    rim_width = "+self.rim_width+"mm")
             print("    pressure_angle = "+self.pressure_angle+"°")
             print("    helix_angle = "+self.helix_angle+"°")
+            print("")
 
             self.CRSPGR022_PG()
             self.scad_file.close()
@@ -405,6 +414,7 @@ class CRSPGR022:
             print("    helix_angle = "+self.helix_angle+"°")
             print("    partial_cone_angle = "+self.partial_cone_angle+"°")
             print("    bore = "+self.bore)
+            print("")
 
             self.CRSPGR022_BHG()
             self.scad_file.close()
@@ -434,6 +444,7 @@ class CRSPGR022:
             print("    pressure_angle = "+self.pressure_angle+"°")
             print("    lead_ground = "+self.lead_ground)
             print("    bore = "+self.bore+" bores")
+            print("")
 
             self.CRSPGR022_W()
             self.scad_file.close()
