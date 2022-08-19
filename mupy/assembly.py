@@ -25,7 +25,6 @@ class Assembly:
         self.system_code = system_code
         self.assembly_epoch = 0
 
-
     def assign_id(self):
         """ Assigns an appropriate ID with required propertied; 
         1.) maintains uniuness using SHA hashing but is also 
@@ -158,8 +157,10 @@ class Assembly:
 
         if (type(component).__name__ == "Hardware"): # If it is a part object.
             component.assign_coordinates(coordinates) # Add coordinates to component superset.
+            component.parent_assembly_id = self.id
         elif (type(component).__name__ == "Assembly"): # If it is an assembly object.
             component.assign_coordinates(coordinates) # Adds coordinates to component superset.
+            component.parent_assembly_id = self.id
         elif (type(component).__name__ == "Coordinates"): # If it is a coordinate set object.
             self.coordinates_superset.append(component.coordinates_json) # Add to coordinate superset.
         else: # Or else..

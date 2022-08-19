@@ -8,7 +8,6 @@ At first this seems reasonable but when you consider automating certification to
 I Think there needs to exist a 3rd part database or online marketplace or archive where the code is stored.
 """
 
-
 class Decode:
     """ This class creates objects which represent a decoding of a knonw hardware code. This object contains a name and hrdware code mostly but handles the hardware library importing routines which provide the system the tools to build the intended hardware element."""
 
@@ -19,7 +18,6 @@ class Decode:
             self.family_code = self.hardware_code.split("-")[0]
             self.family_code_valid = True
             
-
             ''' Checks which family the hardware code belogs to. '''
 
             family_code = self.hardware_code.split("-")[0]
