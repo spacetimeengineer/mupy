@@ -28,7 +28,7 @@ module CYLX0006_COUP(inner_shaft_radius_a, outer_shaft_radius_a, inner_shaft_dep
         difference()
         {
             cylinder(h = intershaft_separation_length, r1 = outer_shaft_radius_a, r2 = outer_shaft_radius_b, center = true);
-            cylinder(h = intershaft_separation_length+0.01, r1 = inner_shaft_radius_a, r2 = inner_shaft_radius_b, center = true);
+            cylinder(h = intershaft_separation_length+0.01, r1 = inner_shaft_radius_a - (outer_shaft_radius_a-inner_shaft_radius_a)/3, r2 = inner_shaft_radius_b - (outer_shaft_radius_b-inner_shaft_radius_b)/3, center = true);
         }
     }
     
