@@ -66,6 +66,12 @@ panel_assembly_b = mu.Assembly("panel_assembly_b")
 panel_assembly_b.include(panel_gear_assembly_b, mu.Coordinates(0.4,0.9,[-50,0,0],[-50,0,0],[0,180,0],[0,180,0]))
 panel_assembly_b.include(axle_adapter_flywheel_adapter_assembly_b, mu.Coordinates(0.4,0.9,[300,0,0],[50,0,0],[0,0,0],[0,0,0]))
 
+
+
+bearing_security_cap = mu.Hardware("bearing_security_cap_b","CUBX0177-BPANS2-B7P5SR2P2-X10Y10PP21-RF-SX0Y0-X1Y1-XO0YO0-X45Y45Z6-S-SX0Y0-X1Y1-XO0YO0-X12Y12Z15-S")
+
+
+
 alpha = 200 
 gearbox_assembly = mu.Assembly("gearbox_assembly")
 gearbox_assembly.include(panel_assembly_a, mu.Coordinates(0,0.98,[0, 0 , 8 * float(block_length.replace("P", ".", 1)) / 2 + 500],[0, 0 , 8 * float(block_length.replace("P", ".", 1)) / 2 + 25],[0,-90,0],[0,-90,0]))

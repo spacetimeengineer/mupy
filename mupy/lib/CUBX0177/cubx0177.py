@@ -49,7 +49,6 @@ class CUBX0177:
             
             """Draw Inputs From System-Code"""
 
-            self.cavity_shape_code =  self.hardware_code.split("-")[5].split("X")[0] # Values can take the following but are not limited to the following values : 'S' for square, 'R' for rectangle, 'C' for circle, 'P' for pentagon, 'O' for octagon.
             self.x_cavity_spacing =  self.hardware_code.split("-")[5].split("X")[1].split("Y")[0]
             self.y_cavity_spacing =  self.hardware_code.split("-")[5].split("X")[1].split("Y")[1]
             self.x_cavity_units =  self.hardware_code.split("-")[6].split("X")[1].split("Y")[0]
@@ -113,10 +112,139 @@ class CUBX0177:
 
             self.CUBX0177_BPAN()
             self.scad_file.close()
+            
+        if (self.type_code=="BPANS2"): # Box panel.
+            
+            # Example BPANS2 hardware code : "CUBX0177-BPANS2-B7P5SR2P2-X8Y8PP21-IF-SX0Y0-X1Y1-XO0YO0-X19Y19Z1P5-C-SX0Y0-X1Y1-XO0YO0-X10Y10Z1P10-C"
+
+            self.block_unit_length = self.hardware_code.split("-")[2].split("B")[1].split("SR")[0]
+            self.shaft_radius = self.hardware_code.split("-")[2].split("B")[1].split("SR")[1]
+            self.x_units =  self.hardware_code.split("-")[3].split("X")[1].split("Y")[0]
+            self.y_units =  self.hardware_code.split("-")[3].split("Y")[1].split("P")[0]
+            self.padding =  "0."+self.hardware_code.split("-")[3].split("PP")[1]
+
+            if (self.hardware_code.split("-")[4].count("R") == 1):
+                self.orientation = '"regular"' # Regular orientation.
+            elif (self.hardware_code.split("-")[4].count("I") == 1):
+                self.orientation = '"inverted"' # Inverted orientation.
+            elif (self.hardware_code.split("-")[4].count("C") == 1):
+                self.orientation = '"chimera"' # Chimera orientation.
+            elif (self.hardware_code.split("-")[4].count("X") == 1):
+                self.orientation = '"inverted_chimera"' # Inverted chimera.
+            else:
+                self.errors.append("Incorrect orientation code.")
+                pass
+            if (self.hardware_code.split("-")[4].count("T") == 1):
+                self.teeth = "true"
+            elif (self.hardware_code.split("-")[4].count("F") == 1):
+                self.teeth = "false"
+            else:
+                self.errors.append("Incorrect teeth code.")
+                pass
+            
+            """Draw Inputs From System-Code"""
+
+            self.x_cavity_spacing_1 =  self.hardware_code.split("-")[5].split("X")[1].split("Y")[0]
+            self.y_cavity_spacing_1 =  self.hardware_code.split("-")[5].split("X")[1].split("Y")[1]
+            self.x_cavity_units_1 =  self.hardware_code.split("-")[6].split("X")[1].split("Y")[0]
+            self.y_cavity_units_1 =  self.hardware_code.split("-")[6].split("X")[1].split("Y")[1]
+            self.x_offset_1  =  self.hardware_code.split("-")[7].split("XO")[1].split("YO")[0]
+            self.y_offset_1  =  self.hardware_code.split("-")[7].split("YO")[1]
+            self.x_cavity_dimensions_1 =  self.hardware_code.split("-")[8].split("X")[1].split("Y")[0]
+            self.y_cavity_dimensions_1 =  self.hardware_code.split("-")[8].split("X")[1].split("Y")[1].split("Z")[0]
+            self.z_cavity_dimensions_1 =  self.hardware_code.split("-")[8].split("X")[1].split("Y")[1].split("Z")[1]
+
+            if (self.hardware_code.split("-")[9].count("S") == 1):
+                self.cavity_type_1 = '"S"'
+            elif (self.hardware_code.split("-")[9].count("C") == 1):
+                self.cavity_type_1 = '"C"'
+            else:
+                self.errors.append("Incorrect cavity code 1.")
+                pass
+            
+            
+            self.x_cavity_spacing_2 =  self.hardware_code.split("-")[10].split("X")[1].split("Y")[0]
+            self.y_cavity_spacing_2 =  self.hardware_code.split("-")[10].split("X")[1].split("Y")[1]
+            self.x_cavity_units_2 =  self.hardware_code.split("-")[11].split("X")[1].split("Y")[0]
+            self.y_cavity_units_2 =  self.hardware_code.split("-")[11].split("X")[1].split("Y")[1]
+            self.x_offset_2  =  self.hardware_code.split("-")[12].split("XO")[1].split("YO")[0]
+            self.y_offset_2  =  self.hardware_code.split("-")[12].split("YO")[1]
+            self.x_cavity_dimensions_2 =  self.hardware_code.split("-")[13].split("X")[1].split("Y")[0]
+            self.y_cavity_dimensions_2 =  self.hardware_code.split("-")[13].split("X")[1].split("Y")[1].split("Z")[0]
+            self.z_cavity_dimensions_2 =  self.hardware_code.split("-")[13].split("X")[1].split("Y")[1].split("Z")[1]
+
+            if (self.hardware_code.split("-")[14].count("S") == 1):
+                self.cavity_type_2 = '"S"'
+            elif (self.hardware_code.split("-")[14].count("C") == 1):
+                self.cavity_type_2 = '"C"'
+            else:
+                self.errors.append("Incorrect cavity code 2.")
+                pass
+
+
+            """Format Inputs"""
+            self.block_unit_length = self.block_unit_length.replace("P", ".", 1)
+            self.shaft_radius = self.shaft_radius.replace("P", ".", 1)
+            self.x_cavity_spacing_1 = self.x_cavity_spacing_1.replace("P", ".", 1)
+            self.y_cavity_spacing_1 = self.y_cavity_spacing_1.replace("P", ".", 1)
+            self.x_offset_1 = self.x_offset_1.replace("P", ".", 1)
+            self.y_offset_1 = self.y_offset_1.replace("P", ".", 1)
+            self.x_cavity_dimensions_1 = self.x_cavity_dimensions_1.replace("P", ".", 1)
+            self.y_cavity_dimensions_1 = self.y_cavity_dimensions_1.replace("P", ".", 1)
+            self.z_cavity_dimensions_1 = self.z_cavity_dimensions_1.replace("P", ".", 1)
+
+            self.x_cavity_spacing_2 = self.x_cavity_spacing_2.replace("P", ".", 1)
+            self.y_cavity_spacing_2 = self.y_cavity_spacing_2.replace("P", ".", 1)
+            self.x_offset_2 = self.x_offset_2.replace("P", ".", 1)
+            self.y_offset_2 = self.y_offset_2.replace("P", ".", 1)
+            self.x_cavity_dimensions_2 = self.x_cavity_dimensions_2.replace("P", ".", 1)
+            self.y_cavity_dimensions_2 = self.y_cavity_dimensions_2.replace("P", ".", 1)
+            self.z_cavity_dimensions_2 = self.z_cavity_dimensions_2.replace("P", ".", 1)
+
+
+
+
+            ''' Testing that code is parsed correctly.'''
+            print("")
+            print("    Parameterization Information")
+            print("")
+            print("    famliy_code = "+self.family_code)
+            print("    type_code = "+self.type_code)
+            print("    block_unit_length = "+self.block_unit_length+"mm")
+            print("    shaft_radius = "+self.shaft_radius+"mm")
+            print("    x_units = "+self.x_units)
+            print("    y_units = "+self.y_units)
+            print("    padding = "+self.padding+"mm")
+            print("    orientation = "+self.orientation)
+            print("    teeth = "+self.teeth)
+            print("    x_cavity_spacing_1 = "+self.x_cavity_spacing_1+"mm")
+            print("    y_cavity_spacing_1 = "+self.y_cavity_spacing_1+"mm")
+            print("    x_cavity_units_1 = "+self.x_cavity_units_1)
+            print("    y_cavity_units_1 = "+self.y_cavity_units_1)
+            print("    x_cavity_dimensions_1 = "+self.x_cavity_dimensions_1+"mm")
+            print("    y_cavity_dimensions_1 = "+self.y_cavity_dimensions_1+"mm")
+            print("    z_cavity_dimensions_1 = "+self.z_cavity_dimensions_1+"mm")
+            print("    cavity_type_1 = "+self.cavity_type_1)
+            print("    x_cavity_spacing_2 = "+self.x_cavity_spacing_2+"mm")
+            print("    y_cavity_spacing_2 = "+self.y_cavity_spacing_2+"mm")
+            print("    x_cavity_units_2 = "+self.x_cavity_units_2)
+            print("    y_cavity_units_2 = "+self.y_cavity_units_2)
+            print("    x_cavity_dimensions_2 = "+self.x_cavity_dimensions_2+"mm")
+            print("    y_cavity_dimensions_2 = "+self.y_cavity_dimensions_2+"mm")
+            print("    z_cavity_dimensions_2 = "+self.z_cavity_dimensions_2+"mm")
+            print("    cavity_type_2 = "+self.cavity_type_2)
+            print("")
+            
+            ''' Rules logic goes here ; conditions of which parameters combinations can exist.   '''
+
+            ''' Execute write scad functions.   '''
+
+            self.CUBX0177_BPANS2()
+            self.scad_file.close()
 
         elif (self.type_code=="SPAN"): # Simple panel.
-            # CUBX0177_SPAN(block_length, shaft_radius, xunits, yunits, x_spacing, y_spacing, x_units, y_units, x_offset, y_offset, x_cavity_dimensions, y_cavity_dimensions, z_cavity_dimensions, cavity_type)
-            # Example SPAN hardware code : "CUBX0177-SPAN-B25SR2P5-X9Y9-SX25Y25-X8Y8-XO8YO7-X20Y20Z5-S"
+            # CUBX0177_SPAN(block_length, shaft_radius, x_units, y_units, x_spacing, y_spacing, x_cavity_units, y_cavity_units, x_offset, y_offset, x_cavity_dimensions, y_cavity_dimensions, z_cavity_dimensions, cavity_type)
+            # Example SPAN hardware code : "CUBX0177-SPAN-B7P5SR2P18-X9Y9-SX15Y15-X4Y4-XO0YO0-X7P6Y7P6Z10-S"
 
             self.block_unit_length = self.hardware_code.split("-")[2].split("B")[1].split("SR")[0]
             self.shaft_radius = self.hardware_code.split("-")[2].split("B")[1].split("SR")[1]
@@ -125,17 +253,17 @@ class CUBX0177:
 
             self.x_cavity_spacing =  self.hardware_code.split("-")[4].split("X")[1].split("Y")[0]
             self.y_cavity_spacing =  self.hardware_code.split("-")[4].split("X")[1].split("Y")[1]
-            self.x_cavity_units =  self.hardware_code.split("-")[6].split("X")[1].split("Y")[0]
-            self.y_cavity_units =  self.hardware_code.split("-")[6].split("X")[1].split("Y")[1]
-            self.x_offset  =  self.hardware_code.split("-")[7].split("XO")[1].split("YO")[0]
-            self.y_offset  =  self.hardware_code.split("-")[7].split("YO")[1]
-            self.x_cavity_dimensions =  self.hardware_code.split("-")[8].split("X")[1].split("Y")[0]
-            self.y_cavity_dimensions =  self.hardware_code.split("-")[8].split("X")[1].split("Y")[1].split("Z")[0]
-            self.z_cavity_dimensions =  self.hardware_code.split("-")[8].split("X")[1].split("Y")[1].split("Z")[1]
+            self.x_cavity_units =  self.hardware_code.split("-")[5].split("X")[1].split("Y")[0]
+            self.y_cavity_units =  self.hardware_code.split("-")[5].split("X")[1].split("Y")[1]
+            self.x_offset  =  self.hardware_code.split("-")[6].split("XO")[1].split("YO")[0]
+            self.y_offset  =  self.hardware_code.split("-")[6].split("YO")[1]
+            self.x_cavity_dimensions =  self.hardware_code.split("-")[7].split("X")[1].split("Y")[0]
+            self.y_cavity_dimensions =  self.hardware_code.split("-")[7].split("X")[1].split("Y")[1].split("Z")[0]
+            self.z_cavity_dimensions =  self.hardware_code.split("-")[7].split("X")[1].split("Y")[1].split("Z")[1]
 
-            if (self.hardware_code.split("-")[9].count("S") == 1):
+            if (self.hardware_code.split("-")[8].count("S") == 1):
                 self.cavity_type = '"S"'
-            elif (self.hardware_code.split("-")[9].count("C") == 1):
+            elif (self.hardware_code.split("-")[8].count("C") == 1):
                 self.cavity_type = '"C"'
             else:
                 self.errors.append("Incorrect cavity code.")
@@ -241,11 +369,15 @@ class CUBX0177:
         else:
             self.errors.append("Invalid type code.")
 
-    def CUBX0177_BPAN(self):                                                                                                                                                               #CUBX0177-BPAN-B25SR2P5-X8Y8PP2-RT-SX25Y25-X8Y8-XO3YO5-X20Y20Z10-S
+    def CUBX0177_BPAN(self): # CUBX0177-BPAN-B25SR2P5-X8Y8PP2-RT-SX25Y25-X8Y8-XO3YO5-X20Y20Z10-S
         self.scad_file.write('CUBX0177_BPAN( '+self.block_unit_length+', '+self.shaft_radius+', '+self.x_units+', '+self.y_units+', '+self.padding+', '+self.orientation+', '+self.teeth+', '+self.x_cavity_spacing+', '+self.y_cavity_spacing+', '+self.x_cavity_units+', '+self.y_cavity_units+', '+self.x_offset+', '+self.y_offset+', '+self.x_cavity_dimensions+', '+self.y_cavity_dimensions+', '+self.z_cavity_dimensions+', '+self.cavity_type+');\n')
+   
+    def CUBX0177_BPANS2(self): # CUBX0177-BPAN-B25SR2P5-X8Y8PP2-RT-SX25Y25-X8Y8-XO3YO5-X20Y20Z10-S-SX25Y25-X8Y8-XO3YO5-X20Y20Z10-S
+        self.scad_file.write('CUBX0177_BPANS2( '+self.block_unit_length+', '+self.shaft_radius+', '+self.x_units+', '+self.y_units+', '+self.padding+', '+self.orientation+', '+self.teeth+', '+self.x_cavity_spacing_1+', '+self.x_cavity_spacing_1+', '+self.x_cavity_units_1+', '+self.y_cavity_units_1+', '+self.x_offset_1+', '+self.y_offset_1+', '+self.x_cavity_dimensions_1+', '+self.y_cavity_dimensions_1+', '+self.z_cavity_dimensions_1+', '+self.cavity_type_1+', '+self.x_cavity_spacing_2+', '+self.x_cavity_spacing_2+', '+self.x_cavity_units_2+', '+self.y_cavity_units_2+', '+self.x_offset_2+', '+self.y_offset_2+', '+self.x_cavity_dimensions_2+', '+self.y_cavity_dimensions_2+', '+self.z_cavity_dimensions_2+', '+self.cavity_type_2+');\n')
 
+    # CUBX0177_SPAN(block_length, shaft_radius, x_units, y_units, x_spacing, y_spacing, x_cavity_units, y_cavity_units, x_offset, y_offset, x_cavity_dimensions, y_cavity_dimensions, z_cavity_dimensions, cavity_type)
     def CUBX0177_SPAN(self):
-        self.scad_file.write('CUBX0177_SPAN( '+self.block_unit_length+', '+self.block_unit_length+', '+self.x_units+', '+self.y_units+' );\n')
+        self.scad_file.write('CUBX0177_SPAN( block_length = '+self.block_unit_length+', shaft_radius = '+self.shaft_radius+', x_units = '+self.x_units+', y_units = '+self.y_units+', x_cavity_spacing = '+self.x_cavity_spacing+', y_cavity_spacing = '+self.y_cavity_spacing+', x_cavity_units = '+self.x_cavity_units+', y_cavity_units = '+self.y_cavity_units+', x_offset = '+self.x_offset+', y_offset = '+self.y_offset+', x_cavity_dimensions = '+self.x_cavity_dimensions+', y_cavity_dimensions = '+self.y_cavity_dimensions+', z_cavity_dimensions = '+self.z_cavity_dimensions+', cavity_type = '+self.cavity_type+' );\n')
 
     def CUBX0177_FYAD(self):
         self.scad_file.write('CUBX0177_FYAD( '+self.block_unit_length+', '+self.shaft_radius+' );\n')
