@@ -200,7 +200,7 @@ class CRSPGR022:
             print("    width = "+self.width+"mm")
             print("    pressure_angle = "+self.pressure_angle+"°")
             print("    helix_angle = "+self.helix_angle+"°")
-            print("    bore = "+self.bore+" bores")
+            print("    bore diameter= "+self.bore+" mm")
             print("    optimized = "+self.optimized)
             print("")
             
@@ -240,7 +240,7 @@ class CRSPGR022:
             print("    width = "+self.width+"mm")
             print("    pressure_angle = "+self.pressure_angle+"°")
             print("    helix_angle = "+self.helix_angle+"°")
-            print("    bore = "+self.bore+" bores")
+            print("    bore diameter= "+self.bore+" mm")
             print("    optimized = "+self.optimized)
             print("")
                 
@@ -331,6 +331,7 @@ class CRSPGR022:
             self.rim_width = self.rim_width.replace("P", ".", 1)
             self.pressure_angle = self.pressure_angle.replace("P", ".", 1)
             self.helix_angle = self.helix_angle.replace("P", ".", 1)
+            self.bore = self.bore.replace("P", ".", 1)
             
             ''' Testing that code is parsed correctly.'''
             print("")
@@ -344,6 +345,7 @@ class CRSPGR022:
             print("    rim_width = "+self.rim_width+"mm")
             print("    pressure_angle = "+self.pressure_angle+"°")
             print("    helix_angle = "+self.helix_angle+"°")
+            print("    bore diameter= "+self.bore+" mm")
             print("")
 
             self.CRSPGR022_PG()
@@ -366,6 +368,7 @@ class CRSPGR022:
             self.pressure_angle = self.pressure_angle.replace("P", ".", 1)
             self.helix_angle = self.helix_angle.replace("P", ".", 1)
             self.partial_cone_angle = self.partial_cone_angle.replace("P", ".", 1)
+            self.bore = self.bore.replace("P", ".", 1)
             
             ''' Testing that code is parsed correctly.'''
             print("")
@@ -377,7 +380,7 @@ class CRSPGR022:
             print("    pressure_angle = "+self.pressure_angle+"°")
             print("    helix_angle = "+self.helix_angle+"°")
             print("    partial_cone_angle = "+self.partial_cone_angle+"°")
-            print("    bore = "+self.bore+" bores")
+            print("    bore diameter= "+self.bore+" mm")
             print("")
 
             self.CRSPGR022_BG()
@@ -401,6 +404,7 @@ class CRSPGR022:
             self.pressure_angle = self.pressure_angle.replace("P", ".", 1)
             self.helix_angle = self.helix_angle.replace("P", ".", 1)
             self.partial_cone_angle = self.partial_cone_angle.replace("P", ".", 1)
+            self.bore = self.bore.replace("P", ".", 1)
             
             ''' Testing that code is parsed correctly.'''
             print("")
@@ -413,7 +417,7 @@ class CRSPGR022:
             print("    pressure_angle = "+self.pressure_angle+"°")
             print("    helix_angle = "+self.helix_angle+"°")
             print("    partial_cone_angle = "+self.partial_cone_angle+"°")
-            print("    bore = "+self.bore)
+            print("    bore diameter= "+self.bore+" mm")
             print("")
 
             self.CRSPGR022_BHG()
@@ -434,6 +438,7 @@ class CRSPGR022:
             self.length = self.length.replace("P", ".", 1)
             self.pressure_angle = self.pressure_angle.replace("P", ".", 1)
             self.lead_ground = self.lead_ground.replace("P", ".", 1)
+            self.bore = self.bore.replace("P", ".", 1)
             
             ''' Testing that code is parsed correctly.'''
             print("    Parameterization Information")
@@ -443,7 +448,7 @@ class CRSPGR022:
             print("    length = "+self.length+"mm")
             print("    pressure_angle = "+self.pressure_angle+"°")
             print("    lead_ground = "+self.lead_ground)
-            print("    bore = "+self.bore+" bores")
+            print("    bore diameter= "+self.bore+" mm")
             print("")
 
             self.CRSPGR022_W()
