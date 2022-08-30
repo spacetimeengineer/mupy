@@ -310,7 +310,7 @@ module CUBX0177_SPANS2(block_length, shaft_radius, x_units, y_units, x_cavity_sp
 }
 
 /* Axle Adapter */
-module CUBX0177_AXAD( block_length, shaft_radius, padding )
+module CUBX0177_AXAD( block_length, shaft_radius, padding = 0.3)
 {
     difference()
     {
@@ -341,10 +341,26 @@ module CUBX0177_AXAD( block_length, shaft_radius, padding )
             translate([block_length*0, block_length*-1, block_length*2]) { general_block(block_length + 0.01, shaft_radius ); }
             translate([block_length*0, block_length*1, block_length*2]) { general_block(block_length + 0.01, shaft_radius ); }
             translate([block_length*1, block_length*1, block_length*2]) { general_block(block_length + 0.01, shaft_radius ); }
+            
             translate([block_length*2, block_length*0, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
+            translate([block_length*2, block_length*1, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
+            translate([block_length*2, block_length*-1, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
+            translate([block_length*3, block_length*0, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
+            
             translate([block_length*0, block_length*-2, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
+            translate([block_length*1, block_length*-2, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
+            translate([block_length*-1, block_length*-2, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
+            translate([block_length*0, block_length*-3, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
+            
             translate([block_length*-2, block_length*0, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
+            translate([block_length*-2, block_length*1, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
+            translate([block_length*-2, block_length*-1, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
+            translate([block_length*-3, block_length*0, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
+            
             translate([block_length*0, block_length*2, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
+            translate([block_length*1, block_length*2, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
+            translate([block_length*-1, block_length*2, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
+            translate([block_length*0, block_length*3, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
         }
 
         translate([0,0,block_length*1]) { cube([block_length+padding, block_length+padding, block_length+padding],true);}
@@ -366,14 +382,37 @@ module CUBX0177_FYAD( block_length, shaft_radius )
     translate([block_length*0, block_length*-1, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
     translate([block_length*0, block_length*1, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
     translate([block_length*1, block_length*1, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
+    
+    
+    
+    translate([block_length*2, block_length*1, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
+    translate([block_length*2, block_length*-1, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
+    
+    translate([block_length*-2, block_length*1, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
+    translate([block_length*-2, block_length*-1, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
+    
+    translate([block_length*1, block_length*2, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
+    translate([block_length*-1, block_length*2, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
+    
+    translate([block_length*1, block_length*-2, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
+    translate([block_length*-1, block_length*-2, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
+    
     translate([block_length*2, block_length*0, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
-    translate([block_length*2, block_length*0, block_length*1]) { general_block(block_length + 0.01, shaft_radius ); }
+    translate([block_length*3, block_length*0, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
+    translate([block_length*3, block_length*0, block_length*1]) { general_block(block_length + 0.01, shaft_radius ); }
+    
     translate([block_length*0, block_length*-2, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
-    translate([block_length*0, block_length*-2, block_length*1]) { general_block(block_length + 0.01, shaft_radius ); }
+    translate([block_length*0, block_length*-3, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
+    translate([block_length*0, block_length*-3, block_length*1]) { general_block(block_length + 0.01, shaft_radius ); }
+    
     translate([block_length*-2, block_length*0, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
-    translate([block_length*-2, block_length*0, block_length*1]) { general_block(block_length + 0.01, shaft_radius ); }
+    translate([block_length*-3, block_length*0, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
+    translate([block_length*-3, block_length*0, block_length*1]) { general_block(block_length + 0.01, shaft_radius ); }
+    
+    
     translate([block_length*0, block_length*2, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
-    translate([block_length*0, block_length*2, block_length*1]) { general_block(block_length + 0.01, shaft_radius ); }
+    translate([block_length*0, block_length*3, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
+    translate([block_length*0, block_length*3, block_length*1]) { general_block(block_length + 0.01, shaft_radius ); }
 }
 
 /* Axle - Flywheel Adapter */
@@ -461,6 +500,8 @@ module CUBX0177_BPIN( block_length, shaft_radius, block_units_pin_length )
     cylinder(h = block_units_pin_length*block_length, r1 = shaft_radius, r2 = shaft_radius, center = true);
     pin_length = block_length*block_units_pin_length;
 }
+
+
 //translate([-7.5, 0, 0 ]){ general_block(7.5, 2.2);}
 //pin_block(7.5, 2.2 );
 // To be integrated into mupy
@@ -468,9 +509,12 @@ module CUBX0177_BPIN( block_length, shaft_radius, block_units_pin_length )
 //CUBX0177_BPIN( block_length = 7.5, shaft_radius=  2.25, block_units_pin_length = 4 );
 //CUBX0177_SPAN(block_length=7.5, shaft_radius=2.20, xunits=9, yunits=9, x_spacing=2*7.5, y_spacing=2*7.5, x_units=4, y_units=4, x_offset=0, y_offset=0, x_cavity_dimensions=7.7, y_cavity_dimensions=7.7, z_cavity_dimensions=26, cavity_type="S");
 //CUBX0177_BPANS2( 7.5, 2.18, 10, 10, 0.21, "regular", false, 0, 0, 1, 1, 0, 0, 6*7.5, 6*7.5, 6, "S", 20, 20, 1, 1, 0, 0, 12, 12, 15, "S");
-CUBX0177_SPANS2( 7.5, 2.18, 6, 6, 0, 0, 1, 1, 0, 0, 19, 19, 0.75, "C", 0, 0, 1, 1, 0, 0, 12, 12, 10, "S"); // CUBX0177-SPANS2-B7P5SR2P2-X6Y6-SX0Y0-X1Y1-XO0YO0-X18Y18Z0P75-C-SX0Y0-X1Y1-XO0YO0-X7P5Y7P5Z10-S
+//CUBX0177_SPANS2( 7.5, 2.18, 6, 6, 0, 0, 1, 1, 0, 0, 19, 19, 0.75, "C", 0, 0, 1, 1, 0, 0, 12, 12, 10, "S"); // CUBX0177-SPANS2-B7P5SR2P2-X6Y6-SX0Y0-X1Y1-XO0YO0-X18Y18Z0P75-C-SX0Y0-X1Y1-XO0YO0-X7P5Y7P5Z10-S
 
 
 //CUBX0177_BPAN( 7.5, 1, 8, 8, 0.21, "regular", false, 0, 0, 1, 1, 0, 0, 19, 19, 1.5, "C");
 //CUBX0177_COUP( block_length = 7.5, shaft_radius = 2.20, block_units_shaft_length = 2, padding = 0.2, coupling_type = "S" );
 //CUBX0177_AXLE( block_length = 7.5, shaft_radius = 2.25, axle_blocks = 20);
+
+CUBX0177_FYAD( block_length = 7.5, shaft_radius = 2.18 );
+//CUBX0177_AXAD( block_length = 7.5, shaft_radius = 2.18 );
