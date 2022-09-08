@@ -35,7 +35,7 @@ panel_e = mu.Hardware("panel_e", "CUBX0177-BPAN-B"+block_length+"SR"+shaft_radiu
 panel_f = mu.Hardware("panel_f", "CUBX0177-BPAN-B"+block_length+"SR"+shaft_radius+"-X"+x_block_units+"Y"+y_block_units+"PP2-RF-SX25Y25-X1Y1-XO0YO0-X30Y30Z20-C")
 
 panel_a = mu.Hardware("panel_a", "CUBX0177-BPAN-B"+block_length+"SR"+shaft_radius+"-X8Y8PP18-RF-SX25Y25-X1Y1-XO0YO0-X16Y16Z20-C")
-bevel_gear_a = mu.Hardware("bevel_gear_a", "CRSPGR022-BG-M1P75-T20W9-P15H0C45-B4P9")
+bevel_gear_a = mu.Hardware("bevel_gear_a", "CRSPGR022-BG-M1P75-T20W9-P15H0C45-B4P95")
 bevel_gear_a.color="blue"
 
 panel_gear_assembly_a = mu.Assembly("panel_gear_assembly_a")
@@ -85,3 +85,10 @@ gearbox_assembly.include(panel_e, mu.Coordinates(0.02,0.98,[0, - 8 * float(block
 gearbox_assembly.include(panel_f, mu.Coordinates(0.02,0.98,[8 * float(block_length.replace("P", ".", 1)) / 2 + alpha, 0 , 0],[8 * float(block_length.replace("P", ".", 1)) / 2, 0 , 0],[90,0,90],[90,0,90]))
 
 workspace.run(gearbox_assembly, mu.Coordinates(0,1,[0,0,0],[0,0,0],[0,0,0],[0,0,0]))
+
+
+# Print Manifest
+
+CRSPGR022-BG-M1P73-T20W9-P15H0C45-B4P95 X 1
+CUBX0177-BPIN-B7P5SR2P2-PL7PR1P2 X 6
+UBX0177-AXAD-B7P5SR2P2-PP17

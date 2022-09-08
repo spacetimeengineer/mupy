@@ -388,7 +388,7 @@ class CUBX0177:
             
         if (self.type_code=="AXAD"): # Axle adapter.
 
-            # Example SPAN hardware code : "CUBX0177-FYAD-B25SR2P5"
+            # Example AXAD hardware code : "CUBX0177-FYAD-B7P5SR2P22-PP32"
             self.block_unit_length = self.hardware_code.split("-")[2].split("B")[1].split("SR")[0] # Block length.
             self.shaft_radius = self.hardware_code.split("-")[2].split("B")[1].split("SR")[1].replace("P", ".", 1) # Shaft radius.
             self.padding =  "0."+self.hardware_code.split("-")[3].split("PP")[1]
