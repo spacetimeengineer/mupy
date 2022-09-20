@@ -35,7 +35,7 @@ panel_e = mu.Hardware("panel_e", "CUBX0177-BPAN-B"+block_length+"SR"+shaft_radiu
 panel_f = mu.Hardware("panel_f", "CUBX0177-BPAN-B"+block_length+"SR"+shaft_radius+"-X"+x_block_units+"Y"+y_block_units+"PP2-RF-SX25Y25-X1Y1-XO0YO0-X30Y30Z20-C")
 
 panel_a = mu.Hardware("panel_a", "CUBX0177-BPAN-B"+block_length+"SR"+shaft_radius+"-X8Y8PP18-RF-SX25Y25-X1Y1-XO0YO0-X16Y16Z20-C")
-bevel_gear_a = mu.Hardware("bevel_gear_a", "CRSPGR022-BG-M1P73-T20W9-P15H0C45-B4P95")
+bevel_gear_a = mu.Hardware("bevel_gear_a", "CRSPGR022-BG-M1P73-T40W9-P15H0C45-B4P95")
 bevel_gear_a.color="blue"
 
 panel_gear_assembly_a = mu.Assembly("panel_gear_assembly_a")
@@ -55,7 +55,7 @@ panel_assembly_a.include(panel_gear_assembly_a, mu.Coordinates(0.4,0.9,[-100,0,0
 panel_assembly_a.include(axle_adapter_flywheel_adapter_assembly_a, mu.Coordinates(0.4,0.9,[100,0,0],[50,0,0],[0,0,0],[0,0,0]))
 
 panel_b = mu.Hardware("panel_b", "CUBX0177-BPAN-B"+block_length+"SR"+shaft_radius+"-X8Y8PP18-RF-SX25Y25-X1Y1-XO0YO0-X16Y16Z20-C")
-bevel_gear_b = mu.Hardware("bevel_gear_b", "CRSPGR022-BG-M1P73-T20W9-P15H0C45-B4P85")
+bevel_gear_b = mu.Hardware("bevel_gear_b", "CRSPGR022-BG-M1P75-T20W9-P15H0C45-B4P9")
 
 panel_gear_assembly_b = mu.Assembly("panel_gear_assembly_b")
 panel_gear_assembly_b.include(panel_b, mu.Coordinates(0.1,0.4,[-100,0,0],[-18.5,0,0],[180,90,0],[180,90,0]))
