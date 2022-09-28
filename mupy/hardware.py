@@ -54,50 +54,62 @@ class Hardware:
         scad_code = '\n/* A module dedicated to this hardware object. This module is only called once becasue it references the unique hardware element (In both real and virtual space) which only needs to be done once. */\n\n'
         scad_code = 'module '+self.id+'()\n{\n' #
         if (len(self.coordinate_superset)==0):
-            self.assign_coordinates(Coordinates(0,1,[0,0,0],[0,0,0],[0,0,0],[0,0,0]))     
+            self.assign_coordinates(Coordinates())     
             
         if (len(self.coordinate_superset)==1): # Here you need to add more coordinate sets sepending on choice of epochs.
             
-            if (self.coordinate_superset[0].time_0 > 0): # Here you need to add more coordinate sets sepending on choice of epochs.
-                time_f = self.coordinate_superset[0].time_0  # Pu0ll from other coordinate information.
-                position_0 = self.coordinate_superset[0].position_0
-                orientation_0 = self.coordinate_superset[0].orientation_0
-                self.assign_coordinates(Coordinates(0,time_f,position_0,position_0,orientation_0,orientation_0))#TODO: Need to pull resto of information.
+            if (self.coordinate_superset[0].t0 > 0): # Here you need to add more coordinate sets sepending on choice of epochs.
+                t0 = self.coordinate_superset[0].t0  # Pu0ll from other coordinate information.
+                x0 = self.coordinate_superset[0].x0
+                y0 = self.coordinate_superset[0].y0
+                z0 = self.coordinate_superset[0].z0
+                a0 = self.coordinate_superset[0].a0
+                b0 = self.coordinate_superset[0].b0
+                c0 = self.coordinate_superset[0].c0
                 
-            if (self.coordinate_superset[0].time_f < 1): # Here you need to add more coordinate sets sepending on choice of epochs.
-                position_f = self.coordinate_superset[0].position_f
-                orientation_f = self.coordinate_superset[0].orientation_f
-                time_0 = self.coordinate_superset[0].time_f  # Pu0ll from other coordinate information.
-                self.assign_coordinates(Coordinates(time_0,1,position_f,position_f,orientation_f,orientation_f))
+                self.assign_coordinates(Coordinates(t0 = 0, tf = t0, x0 = x0, y0 =  y0, z0 =  z0, xf = x0, yf =  y0, zf =  z0,  a0 = a0, b0 =  b0, c0 =  c0, af = a0, bf =  b0, cf =  c0))
+                
+            if (self.coordinate_superset[0].tf < 1): # Here you need to add more coordinate sets sepending on choice of epochs.
+
+                tf = self.coordinate_superset[0].tf  # Pu0ll from other coordinate information.
+                tf = self.coordinate_superset[0].tf  # Pu0ll from other coordinate information.
+                xf = self.coordinate_superset[0].xf
+                yf = self.coordinate_superset[0].yf
+                zf = self.coordinate_superset[0].zf
+                af = self.coordinate_superset[0].af
+                bf = self.coordinate_superset[0].bf
+                cf = self.coordinate_superset[0].cf
+                
+                self.assign_coordinates(Coordinates(t0 = tf, tf = 1, x0 = xf, y0 =  yf, z0 =  zf, xf = xf, yf =  yf, zf =  zf,  a0 = af, b0 =  bf, c0 =  cf, af = af, bf =  bf, cf =  cf))
 
         for coordinates in self.coordinate_superset: #
 
             scad_code = scad_code + "    /* Animation Sequence*/\n"
             scad_code = scad_code + \
-                    '  if ($t >= '+str(coordinates.t_i)+' && $t <= '+str(coordinates.t_f)+')\n'\
+                    '  if ($t >= '+str(coordinates.t0)+' && $t <= '+str(coordinates.tf)+')\n'\
                     '  {\n'      
             scad_code = scad_code + "    /* Initialize initial and final position and orientation. These values may be modified for assembly purposes. */\n\n" 
     
             scad_code = scad_code + "        /* Position */\n"
-            scad_code = scad_code + "        x_position_initial = "+str(coordinates.p_i[0])+";    // Initial 'x' position ( in mm ).\n"
-            scad_code = scad_code + "        x_position_final = "+str(coordinates.p_f[0])+";      // Final 'x' position ( in mm ).\n"
-            scad_code = scad_code + "        y_position_initial = "+str(coordinates.p_i[1])+";    // Initial 'y' position ( in mm ).\n"
-            scad_code = scad_code + "        y_position_final = "+str(coordinates.p_f[1])+";      // Final 'y' position ( in mm ).\n"
-            scad_code = scad_code + "        z_position_initial = "+str(coordinates.p_i[2])+";    // Initial 'z' position ( in mm ).\n"
-            scad_code = scad_code + "        z_position_final = "+str(coordinates.p_f[2])+";      // Final 'z' position ( in mm ).\n\n"
+            scad_code = scad_code + "        x_position_initial = "+str(coordinates.x0)+";    // Initial 'x' position ( in mm ).\n"
+            scad_code = scad_code + "        x_position_final = "+str(coordinates.xf)+";      // Final 'x' position ( in mm ).\n"
+            scad_code = scad_code + "        y_position_initial = "+str(coordinates.y0)+";    // Initial 'y' position ( in mm ).\n"
+            scad_code = scad_code + "        y_position_final = "+str(coordinates.yf)+";      // Final 'y' position ( in mm ).\n"
+            scad_code = scad_code + "        z_position_initial = "+str(coordinates.z0)+";    // Initial 'z' position ( in mm ).\n"
+            scad_code = scad_code + "        z_position_final = "+str(coordinates.zf)+";      // Final 'z' position ( in mm ).\n\n"
 
             scad_code = scad_code + "        /* Orientation */\n"
-            scad_code = scad_code + "        x_axis_angle_initial = "+str(coordinates.a_i[0])+";  // Initial angle along the 'x' axis. ( in degrees ).\n"
-            scad_code = scad_code + "        x_axis_angle_final = "+str(coordinates.a_f[0])+";    // Final angle along the 'x' axis. ( in degrees ).\n"
-            scad_code = scad_code + "        y_axis_angle_initial = "+str(coordinates.a_i[1])+";  // Initial angle along the 'y' axis. ( in degrees ).\n"
-            scad_code = scad_code + "        y_axis_angle_final = "+str(coordinates.a_f[1])+";    // Final angle along the the 'z' axis. ( in degrees ).\n"
-            scad_code = scad_code + "        z_axis_angle_initial = "+str(coordinates.a_i[2])+";  // Final angle along the the 'z' axis. ( in degrees ).\n"
-            scad_code = scad_code + "        z_axis_angle_final = "+str(coordinates.a_f[2])+";    // Final angle along the 'z' axis. ( in degrees ).\n\n"
+            scad_code = scad_code + "        x_axis_angle_initial = "+str(coordinates.a0)+";  // Initial angle along the 'x' axis. ( in degrees ).\n"
+            scad_code = scad_code + "        x_axis_angle_final = "+str(coordinates.af)+";    // Final angle along the 'x' axis. ( in degrees ).\n"
+            scad_code = scad_code + "        y_axis_angle_initial = "+str(coordinates.b0)+";  // Initial angle along the 'y' axis. ( in degrees ).\n"
+            scad_code = scad_code + "        y_axis_angle_final = "+str(coordinates.bf)+";    // Final angle along the the 'z' axis. ( in degrees ).\n"
+            scad_code = scad_code + "        z_axis_angle_initial = "+str(coordinates.c0)+";    // Final angle along the the 'z' axis. ( in degrees ).\n"
+            scad_code = scad_code + "        z_axis_angle_final = "+str(coordinates.cf)+";    // Final angle along the 'z' axis. ( in degrees ).\n\n"
         
             if self.stl_imported == False:
-                scad_code = scad_code + '    translate([x_position_initial+($t-'+str(coordinates.t_i)+')*(x_position_final-x_position_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+') , y_position_initial+($t-'+str(coordinates.t_i)+')*(y_position_final-y_position_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+'), z_position_initial + ($t-'+str(coordinates.t_i)+')*(z_position_final-z_position_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+') ] ) { rotate([x_axis_angle_initial+($t-'+str(coordinates.t_i)+')*(x_axis_angle_final-x_axis_angle_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+'), y_axis_angle_initial+($t-'+str(coordinates.t_i)+')*(y_axis_angle_final-y_axis_angle_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+'), z_axis_angle_initial+($t-'+str(coordinates.t_i)+')*(z_axis_angle_final-z_axis_angle_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+')])'+' { color("'+self.color+'") { import("stl_files/'+ self.hardware_code + '.stl"); } } }\n''  }\n' # translation block scad code.
+                scad_code = scad_code + '    translate([x_position_initial+($t-'+str(coordinates.t0)+')*(x_position_final-x_position_initial)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+') , y_position_initial+($t-'+str(coordinates.t0)+')*(y_position_final-y_position_initial)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+'), z_position_initial + ($t-'+str(coordinates.t0)+')*(z_position_final-z_position_initial)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+') ] ) { rotate([x_axis_angle_initial+($t-'+str(coordinates.t0)+')*(x_axis_angle_final-x_axis_angle_initial)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+'), y_axis_angle_initial+($t-'+str(coordinates.t0)+')*(y_axis_angle_final-y_axis_angle_initial)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+'), z_axis_angle_initial+($t-'+str(coordinates.t0)+')*(z_axis_angle_final-z_axis_angle_initial)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+')])'+' { color("'+self.color+'") { import("stl_files/'+ self.hardware_code + '.stl"); } } }\n''  }\n' # translation block scad code.
             elif self.stl_imported == True: 
-                scad_code = scad_code + '    translate([x_position_initial+($t-'+str(coordinates.t_i)+')*(x_position_final-x_position_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+') , y_position_initial+($t-'+str(coordinates.t_i)+')*(y_position_final-y_position_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+'), z_position_initial + ($t-'+str(coordinates.t_i)+')*(z_position_final-z_position_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+') ] ) { rotate([x_axis_angle_initial+($t-'+str(coordinates.t_i)+')*(x_axis_angle_final-x_axis_angle_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+'), y_axis_angle_initial+($t-'+str(coordinates.t_i)+')*(y_axis_angle_final-y_axis_angle_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+'), z_axis_angle_initial+($t-'+str(coordinates.t_i)+')*(z_axis_angle_final-z_axis_angle_initial)/('+str(coordinates.t_f)+'-'+str(coordinates.t_i)+')])'+' { color("'+self.color+'") { import("stl_files/'+ self.imported_stl + '"); } } }\n''  }\n' # translation block scad code. 
+                scad_code = scad_code + '    translate([x_position_initial+($t-'+str(coordinates.t0)+')*(x_position_final-x_position_initial)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+') , y_position_initial+($t-'+str(coordinates.t0)+')*(y_position_final-y_position_initial)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+'), z_position_initial + ($t-'+str(coordinates.t0)+')*(z_position_final-z_position_initial)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+') ] ) { rotate([x_axis_angle_initial+($t-'+str(coordinates.t0)+')*(x_axis_angle_final-x_axis_angle_initial)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+'), y_axis_angle_initial+($t-'+str(coordinates.t0)+')*(y_axis_angle_final-y_axis_angle_initial)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+'), z_axis_angle_initial+($t-'+str(coordinates.t0)+')*(z_axis_angle_final-z_axis_angle_initial)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+')])'+' { color("'+self.color+'") { import("stl_files/'+ self.imported_stl + '"); } } }\n''  }\n' # translation block scad code. 
                     
         """ This bit here is so the assembly time quantums dont delete the object from ever coming into view."""            
                 

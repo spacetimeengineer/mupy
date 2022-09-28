@@ -44,5 +44,8 @@ class Decode:
                 from .lib.CUSBX0177.cusbx0177 import CUSBX0177
                 self.digital_twin = CUSBX0177(self.hardware_code, directory)
                 self.assembly = self.digital_twin.assembly
+            elif family_code == "BOLTX0004":
+                from .lib.BOLTX0004.boltx0004 import BOLTX0004
+                BOLTX0004(self.hardware_code, directory)
             else:
                 self.family_code_valid = False
