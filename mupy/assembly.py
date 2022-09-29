@@ -20,9 +20,9 @@ class Assembly:
         self.parent = "" # Parent (assembly) ID.
         self.errors = [] # A list that collects errors associated with this object.
         self.directory = "" # Workspace directory.
-        self.id = self.assign_id() # Assigns a special
         self.color = None
         self.system_code = system_code
+        self.id = self.assign_id() # Assigns a special
         self.assembly_epoch = 0
 
     def assign_id(self):
@@ -32,7 +32,15 @@ class Assembly:
         3.) Contains a name string so that an aspect of ID is human readable.
         4.) Contains discernable information about weather it is a hardware or assembly object. (In this case the string 'A' or' H' is concated.)
         """
-        unrefined_hash = "A"+hashlib.sha256(str(id(self)).encode('utf-8')).hexdigest() # Combines "A" string to represent that is an assembly, a hash to express uniqueness and a name to express human readability and identification.
+        
+        # TODO : Need to create a new hash source with the following properties :
+        
+        # 1.) If a script is run then if the script doesnt change and is run again the hash must remain the same ; only within the context of a single script regardless of where it is executed creates random like strings when infact the purpose is to allow complexity but still be referenceable post-script run.
+        # 2.) Not too sensitive. If some parts are deleted or modified then it would be undesirable for each hash to change. In this way hashes should definatly be dependent on system codes and coordinate sets. Seems strange but these need not be replicated anywhere becasue two objects can not occupy the same space.
+        
+        hash_source = str(self.system_code)+"-"+str(self.name)
+        #hash_source = id(self)
+        unrefined_hash = "A"+hashlib.sha256(hash_source.encode('utf-8')).hexdigest() # Combines "A" string to represent that is an assembly, a hash to express uniqueness and a name to express human readability and identification.
         return self.name+"_"+unrefined_hash[:7] # Returns assembly ID.
 
     def assign_parent_id(self):

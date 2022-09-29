@@ -11,7 +11,7 @@ class CYLX0006:
         self.hardware_code = hardware_code # Hardware code fed directly from script or user. 
         
         if len(self.hardware_code.split("-")) < 2: # If there is no type code available.
-            print("No typecode")
+            print("There is no type-code present within the provided input.")
         else:
             self.type_code = self.hardware_code.split("-")[1] # The second section in the hardware code.
             
@@ -23,6 +23,7 @@ class CYLX0006:
         self.scad_file.write('use <scad/CYLX0006.scad>;\n\n') # Write imports.
 
         if (self.type_code=="PIP"): # Example PIP hardware code : CYLX0006-PIP-L67W796H897
+            
             """Example : CYLX0006-PIP-L44O77I12
                Schema : CYLX0006-PIP-L<Length(mm)>O<OuterRadus(mm)>I<InnerRadus(mm)>"""
 
@@ -36,6 +37,7 @@ class CYLX0006:
             self.inner_radius = self.inner_radius.replace("P", ".", 1)
 
             ''' Testing that code is parsed correctly.'''
+            print("")
             print("    Parameterization Information")
             print("")
             print("    length = "+self.length+"mm")
@@ -48,6 +50,7 @@ class CYLX0006:
         # CYLX0006_COUP(inner_shaft_radius_a, outer_shaft_radius_a, inner_shaft_depth_a, inner_shaft_radius_b, outer_shaft_radius_b, inner_shaft_depth_b, intershaft_separation_length)
         
         if (self.type_code=="COUP"): # Example PIP hardware code : CYLX0006-PIP-L67W796H897
+            
             """Example : CYLX0006-COUP-I25O30D25-I35O40D75-L50
                Schema : CYLX0006-COUP-I<>O<>D<>-I<>O<>D<>-L<>"""
 

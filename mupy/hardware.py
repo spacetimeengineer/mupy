@@ -38,7 +38,9 @@ class Hardware:
         """ Assigns an appropriate ID ; one which maintains uniuness but is also alphabetic ; 
         no numbers so that scad code can use it formodule definitions.
         """
-        unrefined_hash = "P"+hashlib.sha256(str(id(self)).encode('utf-8')).hexdigest() #
+        hash_source = str(self.hardware_code)+"-"+str(self.name)
+        #hash_source = id(self)
+        unrefined_hash = "P"+hashlib.sha256(hash_source.encode('utf-8')).hexdigest() #
         return self.name+"_"+unrefined_hash[:7] #
     
     def assign_coordinates(self, coordinates): #

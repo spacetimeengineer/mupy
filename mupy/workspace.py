@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 from distutils.command.build_scripts import first_line_re
+from unicodedata import name
 from .decode import Decode
 import os
 
@@ -15,6 +16,7 @@ class WorkSpace:
         self.workspace_directory = directory
         self.hardware = [] # A list of hardware objects contained in this workspace.
         self.assemblies = [] # A list of assembly objects contained in this workspace.
+        self.names = []
         self.processed_assemblies = [] # A list of processed assemblies used for recursive import.
         self.errors = [] # Error aggregation object. # TODO : Make a class for this that is more thoughtful.
         self.assembly_epoch_count = 0
@@ -34,6 +36,7 @@ class WorkSpace:
                 print("Workspace : "+self.workspace_directory+" : Discovering hardware object: "+system.id) # Prints status to terminal.
                 system.workspace_directory = self.workspace_directory # Assigns workspace directory path to the workspace_directory class variables associated with hardware and assembly component objects.
                 self.hardware.append(system) # Append hardware to workspace.
+                self.names.append(system.name)
                 if (first_processed_assemblies_call==False): # If the first_processed_assemblies_call has been set to false. This is the more likely case but it only happens after the first assembly is identified.
                     self.processed_assemblies.remove(system) # Remove system from processed assemblies list. Remember this was added originally as a component of a larger system.
 
@@ -41,7 +44,7 @@ class WorkSpace:
                 print("Discovering assembly object : "+ system.id) # Prints status to terminal.
                 system.workspace_directory = self.workspace_directory # Assigns workspace directory path to the workspace_directory class variables associated with hardware and assembly component objects.
                 self.assemblies.append(system) # Append assembly to workspace.
-            
+                self.names.append(system.name)
                 if (first_processed_assemblies_call==False): # If the first_processed_assemblies_call has been set to false. This is the more likely case but it only happens after the first assembly is identified.
                     self.processed_assemblies.remove(system) # Remove system from processed assemblies list. Remember this was added originally as a component of a larger system.
                 
@@ -63,11 +66,16 @@ class WorkSpace:
 
     def generate(self):
         "Debug function for getting access to system level errors."
-        if not (self.detect_duplicates(self.hardware) or self.detect_duplicates(self.assemblies)): # If there are no part duplicates.
+        if not (self.detect_duplicates(self.hardware) or self.detect_duplicates(self.assemblies) or self.detect_duplicates(self.names)): # If there are no part duplicates.
             for hardware in self.hardware: # For each part.
                 hardware.build_hardware(self.workspace_directory) # Write scad file for this hardwere.
             for assembly in self.assemblies: # For each assembly.
                 assembly.assemble(self.workspace_directory) # Write scad file for this assembly.
+        else:
+            print("Duplicate hardware and/or assemblies detected. Make sure names is globally unique.")
+            print(set(self.names))
+            print("")
+            print(self.names)
 
     def print_errors(self):
         "Debug function for getting access to system level erros."

@@ -36,7 +36,7 @@ panel_e = mu.Hardware("panel_e", "CUBX0177-BPANS2-B"+block_length+"SR"+shaft_rad
 panel_f = mu.Hardware("panel_f", "CUBX0177-BPANS2-B"+block_length+"SR"+shaft_radius+"-X"+x_block_units+"Y"+y_block_units+"PP25-RF-SX0Y0-X1Y1-XO0YO0-X30Y30Z6-S-SX0Y0-X1Y1-XO0YO0-X16Y16Z15-S")
 
 
-def panel_bearing_assembly_a(tag):
+def panel_bearing_assembly_a():
     
     panel_bearing_assembly_a = mu.Assembly("panel_bearing_assembly_a")
     panel_a = mu.Hardware("panel_a", "CUBX0177-BPAN-B"+block_length+"SR"+shaft_radius+"-X8Y8PP18-RF-SX25Y25-X1Y1-XO0YO0-X16Y16Z20-C")
@@ -53,8 +53,8 @@ def panel_gear_assembly_a():
     primary_shaft_bolt = mu.Hardware("primary_shaft_bolt_a",   "BOLTX0004-B1024-HEX-L50D7H3")
     panel_gear_assembly_a.include(primary_shaft_bolt,              mu.Coordinates(t0 = 0.1, tf = 0.4, x0 = 300, xf = 16,   b0 = 90, bf = 90, c0 = 180, cf = 180))
     primary_shaft_bolt.color = "silver"
-    panel_gear_assembly_a.include(mu.Hardware("shaft_small_washer_1_a", "CYLX0006-PIP-L0P3175O4P7625I2P1844"),       mu.Coordinates(t0 = 0.1, tf = 0.4, x0 = 160, xf = 15,   b0 = 90, bf = 90, c0 = 180, cf = 180))
-    panel_gear_assembly_a.include(mu.Hardware("shaft_large_washer_1_a", "CYLX0006-PIP-L0P3175O9P525I3P175"),        mu.Coordinates(t0 = 0.1, tf = 0.4, x0 = 140, xf = 14.8,   b0 = 90, bf = 90))
+    panel_gear_assembly_a.include(mu.Hardware("shaft_small_washer_1_a", "CYLX0006-PIP-L0P3175O4P7625I2P1844"),       mu.Coordinates(t0 = 0.1, tf = 0.4,   x0 = 160, xf = 15,     b0 = 90,  bf = 90,  c0 = 180, cf = 180))
+    panel_gear_assembly_a.include(mu.Hardware("shaft_large_washer_1_a", "CYLX0006-PIP-L0P3175O9P525I3P175"),         mu.Coordinates(t0 = 0.1, tf = 0.4,   x0 = 140, xf = 14.8,   b0 = 90,  bf = 90))
     
     
     bevel_gear = mu.Hardware("bevel_gear_a","CRSPGR022-BG-M1P73-T20W9-P15H0C45-B4P95")
@@ -62,30 +62,30 @@ def panel_gear_assembly_a():
     panel_gear_assembly_a.include(bevel_gear,  mu.Coordinates(t0 = 0.1, tf = 0.4, x0 = 120, xf = 7.25, b0 = 90, bf = 90))
     
     
-    panel_gear_assembly_a.include(mu.Hardware("shaft_large_washer_2_a", "CYLX0006-PIP-L0P3175O9P525I3P175"),        mu.Coordinates(t0 = 0.1, tf = 0.4, x0 = 100,  xf = 7.15, b0 = 90,  bf = 90))
-    panel_gear_assembly_a.include(mu.Hardware("shaft_small_washer_2_a", "CYLX0006-PIP-L0P3175O4P7625I2P1844"),       mu.Coordinates(t0 = 0.1, tf = 0.4, x0 = 80,   xf = 7,  b0 = 90,  bf = 90))
-    panel_gear_assembly_a.include(mu.Hardware("shaft_small_washer_3_a", "CYLX0006-PIP-L0P3175O4P7625I2P1844"),       mu.Coordinates(t0 = 0.1, tf = 0.4, x0 = 60,   xf = 2, b0 = 90,  bf = 90))
-    panel_gear_assembly_a.include(mu.Hardware("shaft_locknut_a_1",      "BOLTX0004-N1024-HEX-D10H5"),     mu.Coordinates(t0 = 0.1, tf = 0.4, x0 = 40,   xf = 4, b0 = 90,  bf = 90))
-    panel_gear_assembly_a.include(mu.Hardware("shaft_small_washer_4_a", "CYLX0006-PIP-L0P3175O4P7625I2P1844"),       mu.Coordinates(t0 = 0.1, tf = 0.4, x0 = 20,   xf = 1,  b0 = 90,  bf = 90))
-    panel_gear_assembly_a.include(panel_bearing_assembly_a(),                                                        mu.Coordinates(t0 = 0.1, tf = 0.4, x0 = -70, xf = 0, a0 = 180, b0 = 0,  af = 180, bf = 0))
-    panel_gear_assembly_a.include(mu.Hardware("shaft_small_washer_4_a", "CYLX0006-PIP-L0P3175O4P7625I2P1844"),       mu.Coordinates(t0 = 0.1, tf = 0.4, x0 = -150, xf = -4, a0 = 180, b0 = 90, af = 180, bf = 90))
-    panel_gear_assembly_a.include(mu.Hardware("shaft_locknut_2_a",      "BOLTX0004-N1024-HEX-D10H5"),             mu.Coordinates(t0 = 0.1, tf = 0.4, x0 = -160, xf = -7, a0 = 180, b0 = 90, af = 180, bf = 90))
-    panel_gear_assembly_a.include(mu.Hardware("shaft_locknut_3_a",      "BOLTX0004-N1024-HEX-D10H5"),     mu.Coordinates(t0 = 0.1, tf = 0.4, x0 = -180, xf = -12.1, a0 = 180, b0 = 90, af = 180, bf = 90))
-    panel_gear_assembly_a.include(mu.Hardware("shaft_locknut_4_a",      "BOLTX0004-N1024-HEX-D10H5"),     mu.Coordinates(t0 = 0.1, tf = 0.4, x0 = -190, xf = -17.2, a0 = 180, b0 = 90, af = 180, bf = 90))
-    panel_gear_assembly_a.include(mu.Hardware("shaft_small_washer_5_a", "CYLX0006-PIP-L0P3175O4P7625I2P1844"),       mu.Coordinates(t0 = 0.1, tf = 0.4, x0 = -200, xf = -20, a0 = 180, b0 = 90, af = 180, bf = 90))
+    panel_gear_assembly_a.include(mu.Hardware("shaft_large_washer_2_a", "CYLX0006-PIP-L0P3175O9P525I3P175"),         mu.Coordinates(t0 = 0.1, tf = 0.4,   x0 = 100,  xf = 7.15,  b0 = 90,  bf = 90))
+    panel_gear_assembly_a.include(mu.Hardware("shaft_small_washer_2_a", "CYLX0006-PIP-L0P3175O4P7625I2P1844"),       mu.Coordinates(t0 = 0.1, tf = 0.4,   x0 = 80,   xf = 7,     b0 = 90,  bf = 90))
+    panel_gear_assembly_a.include(mu.Hardware("shaft_small_washer_3_a", "CYLX0006-PIP-L0P3175O4P7625I2P1844"),       mu.Coordinates(t0 = 0.1, tf = 0.4,   x0 = 60,   xf = 2,     b0 = 90,  bf = 90))
+    panel_gear_assembly_a.include(mu.Hardware("shaft_locknut_a_1",      "BOLTX0004-N1024-HEX-D10H5"),                mu.Coordinates(t0 = 0.1, tf = 0.4,   x0 = 40,   xf = 4,     b0 = 90,  bf = 90))
+    panel_gear_assembly_a.include(mu.Hardware("shaft_small_washer_4_a", "CYLX0006-PIP-L0P3175O4P7625I2P1844"),       mu.Coordinates(t0 = 0.1, tf = 0.4,   x0 = 20,   xf = 1,     b0 = 90,  bf = 90))
+    panel_gear_assembly_a.include(panel_bearing_assembly_a(),                                                        mu.Coordinates(t0 = 0.1, tf = 0.4,   x0 = -70,  xf = 0,     a0 = 180, b0 = 0,   af = 180, bf = 0))
+    panel_gear_assembly_a.include(mu.Hardware("shaft_small_washer_5_a", "CYLX0006-PIP-L0P3175O4P7625I2P1844"),       mu.Coordinates(t0 = 0.1, tf = 0.4,   x0 = -150, xf = -4,    a0 = 180, b0 = 90,  af = 180, bf = 90))
+    panel_gear_assembly_a.include(mu.Hardware("shaft_locknut_2_a",      "BOLTX0004-N1024-HEX-D10H5"),                mu.Coordinates(t0 = 0.1, tf = 0.4,   x0 = -160, xf = -7,    a0 = 180, b0 = 90,  af = 180, bf = 90))
+    panel_gear_assembly_a.include(mu.Hardware("shaft_locknut_3_a",      "BOLTX0004-N1024-HEX-D10H5"),                mu.Coordinates(t0 = 0.1, tf = 0.4,   x0 = -180, xf = -12.1, a0 = 180, b0 = 90,  af = 180, bf = 90))
+    panel_gear_assembly_a.include(mu.Hardware("shaft_locknut_4_a",      "BOLTX0004-N1024-HEX-D10H5"),                mu.Coordinates(t0 = 0.1, tf = 0.4,   x0 = -190, xf = -17.2, a0 = 180, b0 = 90,  af = 180, bf = 90))
+    panel_gear_assembly_a.include(mu.Hardware("shaft_small_washer_6_a", "CYLX0006-PIP-L0P3175O4P7625I2P1844"),       mu.Coordinates(t0 = 0.1, tf = 0.4,   x0 = -200, xf = -20,   a0 = 180, b0 = 90,  af = 180, bf = 90))
 
     return panel_gear_assembly_a
 
-'''
+
 def bearing_security_cap_panel_assembly():
     
     bearing_security_cap_panel_assembly = mu.Assembly("bearing_security_cap_panel_assembly")
     
     flywheel_adapter_a = mu.Hardware("flywheel_adapter_a","CUBX0177-FYAD-B7P5SR"+shaft_radius)
-    primary_shaft_bolt_1_a = mu.Hardware("primary_shaft_bolt_1_a", "BOLTX0004-B1024-HEX-L22D10H5")
-    primary_shaft_bolt_2_a = mu.Hardware("primary_shaft_bolt_2_a", "BOLTX0004-B1024-HEX-L22D10H5")
-    primary_shaft_bolt_3_a = mu.Hardware("primary_shaft_bolt_3_a", "BOLTX0004-B1024-HEX-L22D10H5")
-    primary_shaft_bolt_4_a = mu.Hardware("primary_shaft_bolt_4_a", "BOLTX0004-B1024-HEX-L22D10H5")
+    primary_shaft_bolt_1_a = mu.Hardware("primary_shaft_bolt_1_a", "BOLTX0004-B832-HEX-L25P4D4H2P5")
+    primary_shaft_bolt_2_a = mu.Hardware("primary_shaft_bolt_2_a", "BOLTX0004-B832-HEX-L25P4D4H2P5")
+    primary_shaft_bolt_3_a = mu.Hardware("primary_shaft_bolt_3_a", "BOLTX0004-B832-HEX-L25P4D4H2P5")
+    primary_shaft_bolt_4_a = mu.Hardware("primary_shaft_bolt_4_a", "BOLTX0004-B832-HEX-L25P4D4H2P5")
    
     bearing_security_cap_a = mu.Hardware("bearing_security_cap_a", "BOLTX0004-B1024-HEX-L22D10H5")
     
@@ -97,7 +97,7 @@ def bearing_security_cap_panel_assembly():
 
     return bearing_security_cap_panel_assembly
     
-'''
+
 
 
 '''
@@ -191,4 +191,4 @@ gearbox_assembly.include(panel_f, mu.Coordinates(0.02,0.98,[8 * float(block_leng
 
 
 
-workspace.run(gearbox_assembly, mu.Coordinates(0,1,[0,0,0],[0,0,0],[0,0,0],[0,0,0]))
+workspace.run(panel_gear_assembly_a(), mu.Coordinates(0,1,[0,0,0],[0,0,0],[0,0,0],[0,0,0]))
