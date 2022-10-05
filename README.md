@@ -38,7 +38,11 @@
 
 # About
 
-μpy or mupy is a shorthand for python manufacturing utility and reffers to a new system development technology implemented in the form of a python pip installable package. The μpy package essentially proposes to the open source community in the form of a powerful tool, a model for designing, distributing and manufacturing technology with an emphasis on community, modularity, decentralization, scaling, customization, parametrization, encodability and certification. 
+μpy or mupy is a shorthand for python manufacturing utility and reffers to a new system development technology implemented in the form of a python pip installable package. The μpy package essentially proposes to the open source community in the form of a powerful tool a model for building almost anything. 
+
+##Note from the developer
+
+mupy has grown too large for a single developer to maintain the system. The time come for the internet to be released on it to seehow things evolve if they do. I am more interested in standing up acommunity around thins with best practices and resources and then I am off to do with mupy what I intended to built with it.
 
 
 ## Overview
