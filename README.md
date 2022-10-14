@@ -43,7 +43,7 @@
 
 ## Note from the developer
 
-mupy has grown too large for a single developer to responsibly maintain the system. It works very well and remains more powerful than you could possibly believe without using it yourself but there are caveats and inefficiencies which are things only experts from a larger community could solve. I must note that I am not an open source developer trying to win karma points with the community rather I have requirements I need to fufillfor my own purposes but this system compliments communities well.
+mupy has grown too large for a single developer to responsibly maintain the system. This package has plenty of potential and that is an understatement but make no mistake It works very well and remains more powerful than you could possibly imagine without using it yourself but there are caveats and inefficiencies which are things only experts from a larger community could solve. I must note that I am not an open source developer trying to win karma points with the community rather I over-engineerered my own tools in place of my products and I am sharing it with you.
 
 ## Overview
 
