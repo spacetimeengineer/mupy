@@ -38,13 +38,12 @@
 
 # About
 
-μpy (mupy) or python manufacturing utility is an extremely powerful new digital-twin technology implemented in the form of a python pip installable package which essentially empowers users with hardware-class-objects into the python scripting envornment. mupy features include hardware generation, assembly, operation and simulation. mupy is many things and shall make us all very dangerous.
+μpy (mupy) or python manufacturing utility is an extremely powerful new digital-twin technology implemented in the form of a python pip installable package which essentially empowers users with hardware-class-objects into the python scripting envornment. mupy posesses features such as hardware / system generation, assembly & operational simulation, metadata & resources renderings. mupy empowers the artist with speed. Get dangerous.
 
 
 ## Note from the developer
 
 mupy has grown too large for a single developer to responsibly maintain the system. It works very well and remains more powerful than you could possibly believe without using it yourself but there are caveats and inefficiencies which are things only experts from a larger community could solve. I must note that I am not an open source developer trying to win karma points with the community rather I have requirements I need to fufillfor my own purposes but this system compliments communities well.
-
 
 ## Overview
 
@@ -152,10 +151,6 @@ What, you think this is a hobby. I got people to feed.
 
 ### Certify Assembly/Script (Optional)
 The whole point of mupy is to script hardware and assemblies using system codes but what if the entire script could be cast as one. Let that sink in and call me when you start to freak out k...
-
-## Note from the developer
-
-Let me be the first to say that this system is rudimentary, crude, over-engineered in some aspects while under-engineered in others. It's littered with innefficiencies and design principle violations but despite all this it is extremely powerful in the right hands. The intentions behind this system are difficult to explain but in the most basic sense I needed a tool that could handle higher order levels of design, complexity, size and control in all aspects in the domain of science, engineering, manufacturing, design and distribution. It will make more sense once you use it. Good luck.
 
 ## Main Points
 A collection or list of quick concepts, items and keywords which give an overview of whats mupy is all about.
