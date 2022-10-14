@@ -42,7 +42,7 @@
 
 ##Note from the developer
 
-mupy has grown too large for a single developer to maintain the system. The time come for the internet to be released on it to seehow things evolve if they do. I am more interested in standing up acommunity around thins with best practices and resources and then I am off to do with mupy what I intended to built with it.
+mupy has grown too large for a single developer to responsibly maintain the system. It works very well and remains more powerful than you could possibly believe without using it yourself but there are caveats and inefficiencies which are things only experts from a larger community could solve. I must note that I am not an open source developer trying to win karma points with the community rather I have requirements I need to fufillfor my own purposes but this system compliments communities well.
 
 
 ## Overview
