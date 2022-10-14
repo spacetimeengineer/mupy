@@ -146,8 +146,9 @@ So this is the fun part. You assemble the printed parts and make sure they fit a
 
 So this is the fun part. You assemble the printed parts and make sure they fit all together. Good Luck!
 
+### Transfer knowlegde in a capacity that sutainstains growth and commerce.
 
-### Transfer knowlegde in a capacity that sutains growth and commerce.
+What, you think this is a hobby. I got people to feed.
 
 ### Certify Assembly/Script (Optional)
 The whole point of mupy is to script hardware and assemblies using system codes but what if the entire script could be cast as one. Let that sink in and call me when you start to freak out k...
