@@ -38,7 +38,8 @@
 
 # About
 
-μpy or mupy is a shorthand for python manufacturing utility and reffers to a new technology implemented in the form of a python pip installable package. 
+μpy (mupy) or python manufacturing utility is an extremely powerful new digital-twin technology implemented in the form of a python pip installable package which essentially empowers users with hardware-class-objects into the python scripting envornment. mupy features include hardware generation, assembly, operation and simulation. mupy is many things and shall make us all very dangerous.
+
 
 ##Note from the developer
 
