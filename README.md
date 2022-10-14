@@ -168,17 +168,20 @@ Originally this project could of been thought of as an attempt to create a physi
 
 - Knowledge Transfer Mechanism
 
-- Supply Chain Mechanism
+- Supply Chain Asset
 
 - Compression Algorithm
 
 - Decentralized Innovation Utility
 
-- 3D Part Generator & Library
+- Hardware Generator
 
-- Applications-Programming & Command-Line Interface
+- Applications-Programming Interface ( CLI Included )
 
-- Horizontal abstraction library for openscad programming
+- Openscad Horizontal Abstraction Layer & Formalism
+
+
+This all sound very complicated but in truth it is very very simple. Itjust has no form like anything else and you must use it to undertand like anything else new.
 
 ### How do I use mupy?
 
