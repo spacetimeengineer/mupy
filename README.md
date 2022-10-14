@@ -40,6 +40,10 @@
 
 μpy (mupy) or python manufacturing utility is an extremely powerful new digital-twin technology implemented in the form of a python pip installable package which essentially empowers users with hardware-class-objects into the python scripting envornment. mupy posesses features such as hardware / system generation, assembly & operational simulation, metadata & resources renderings. mupy empowers the artist with speed. Get dangerous.
 
+- quintillions (of quintillions (of quintillions...) of identifiable 3D printable parts and even more assemblies.
+- programmatic representation ; For hardware & assemblies (of hardware and assemblies) within virtual 3D workspaces.
+- operational & assembly simulations (animations) with real time programmatic modification.
+- Integrateable with thousands of other technologies
 
 ## Note from the developer
 
@@ -235,26 +239,6 @@ There are two main interfaces for mupy, a command line interface (CLI) and an ap
 - Creation Engine
 
     - General purpose utility for many research and development needs.
-
-
-### What are the goals of mupy
-mupy looks to solve problems, not assert compliance to it's users so consider that it exists in the form as a well organized implementation (through multiple iterations of rewrite) of a script vault which is contained with functions that handle some specific use-case problem set. mupy in its current form is in it's infancy and littered with limitations which are hard to overcome without a community. In its current form it is tailored to 3D printers due to the 
-
-- Minimize development & manufacturing time
-
-- Minimize development & manufacturing cost
-
-- Minimize development & manufacturing risk
-
-- Minimize development & manufacturing energy
-
-- Maximize development & manufacturing output
-
-- Maximize development & manufacturing value
-
-- Maximize development & manufacturing predictability
-
-- Maximize development & manufacturing potential
 
 
 # Installation
