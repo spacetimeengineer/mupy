@@ -38,7 +38,7 @@
 
 # About
 
-μpy (mupy) or python manufacturing utility is an extremely powerful new digital-twin technology implemented in the form of a python pip installable package. This package. essentially empowers users with hardware-class-objects into the python scripting envornment. mupy posesses features such as hardware / system generation, assembly & operational simulation, metadata & resources renderings. mupy empowers the artist with speed. Get dangerous.
+Python manufacturing utility or mupy is an extremely powerful new digital-twin technology implemented in the form of a python pip installable package. This package and the tools included empowers users with hardware-class-objects into the python scripting envornment. mupy posesses features such as hardware & system generation, assembly & operational simulation, metadata & resources renderings. mupy empowers the user with resources and speed. Without mupy some things could never be built. Let's get dangerous.
 
 - quintillions (of quintillions (of quintillions...) of identifiable 3D Print/CNC parts and even more assemblies.
 - programmatic representation ; For hardware & assemblies (of hardware and assemblies) within virtual 3D workspaces.
@@ -48,6 +48,9 @@
 ## Note from the developer
 
 mupy has grown too large for a single developer to responsibly maintain the system. The reason is that there are caveats and inefficiencies which are things only experts from a larger community could solve.
+
+### Caveats
+The first important caveat is that mupy is a python package but it's use requires an enviornment in addition to python which makes things slightly more complex when setting up. The reason for this is mupy was designed to support teams and operations. As a result of this requirement that an enviornment is set up it was difficult for me to develop a full windows and mac solution. Part of this is due to my lack of non-linux archetexture, part of it is beacus I dont like maintaining multipme source codes.  Since I take advantage of linux file systems in this . 
 
 ## Overview
 
