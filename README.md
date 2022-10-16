@@ -174,7 +174,7 @@ Originally this project could of been thought of as an attempt to create a physi
 
 - Knowledge Transfer Mechanism
 
-- Supply Chain Asset
+- Cloneable Supply Chain Asset
 
 - Compression Algorithm
 
