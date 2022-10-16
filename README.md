@@ -154,7 +154,7 @@ So this is the fun part. You assemble the printed parts and make sure they fit a
 
 ### Optimize Assembly/Script
 
-So this is the fun part. You assemble the printed parts and make sure they fit all together. Good Luck!
+This is a great way to think about why one might employ mupy scripting tools. Imagine having avaoilable some well designed but unoptimized assembled part, system or tech and some corresponding script to reflect it's digital twin available. The basic idea is that this resource would allow the user to make programmatic modifications within the simulation enviornment and render resources, code and metadata accordingly in an instant. This will in turn support the continued evolution of the project without risking costly materials. Once optimized, the script becomes meaningful and powerful and valuable. This person would then have the right to sell this intelectual property at whatever price they see fit. This efficiency is then further multiplied if the knowledge is transered digitally, decoded and manufacrtured remotely. Also the belief is that this enviornment will support commerce and reducinOnce a designer optimizes thier design or prodecut then it can be tranfered digitally withT all possible information regarding it's operation and assembly and manufacturing within reasonable limits. Additionally this information may 
 
 ### Transfer knowlegde in a capacity that sutainstains growth and commerce.
 
