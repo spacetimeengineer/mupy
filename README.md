@@ -278,8 +278,9 @@ $ sudo apt-get install git
 ```console
 $ pip3 install mupy
 ```
-
+<!--
 ## MacOS Installation
+
 * There are non-trivial issues associated with this installation. MacOS makes it very difficult to install openscad on certain versions such as Montery, because of verification protocols implemented by apple. This is unfortuneate because at this time mupy essentially wries scad code but requires an instance of the installation to function. My apologies.
 ### Prerequisites
 Open the MacOS terminal and run the following commands:
@@ -358,7 +359,7 @@ $ docker run -i mu:latest
 ```console
 $ docker exec -it mu:latest /bin/bash
 ```
-
+-->
     
 # Getting Started
 
