@@ -47,7 +47,9 @@ Python manufacturing utility or mupy is an extremely powerful new digital-twin t
 
 ## Note from the developer
 
-mupy has grown too large for a single developer to responsibly maintain the system. Dont get me wrong, mupy works well... TOO well. You wouldnt believe me and I wouldnt blame you, but nevertheless in the past 6 months since I began battle-testing and tweaking mupy for preparation of the community release I measured that I was clocking in the productvity of fifty engineers. This number is increasing as I develop new libraries and assemblies butthere are still caveats which are things only experts from a larger community could solve.
+mupy has grown too large for a single developer to responsibly maintain the system. Dont get me wrong, mupy works well... TOO well. You wouldnt believe me and I wouldnt blame you, but nevertheless in the past 6 months since I began battle-testing and tweaking mupy for preparation of the community release I measured that I was clocking in the productvity of fifty engineers. This number is increasing as I develop new libraries and assemblies butthere are still caveats which are things only experts from a larger community could solve. 
+
+I didnt build this for the community although I always new I would give it away if built. I have projects that I need built and I will build tools to see those goals through but I haverealized that otherscan use my tools too
 
 
 
