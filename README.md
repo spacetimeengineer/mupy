@@ -833,11 +833,11 @@ Individual hardware families are guided by their own license agreements. Each ha
 
 ## FAQ
 
-### Why should I download mucli
-If you have a 3D printer it is an absolute must! You can print really great parts.
+### Why should I install mupy
+If you own a 3D printer or CNC equiptment then you would have acess to parts which you could manufacture for free. The standard library is populated with some useful hardware elements.
 
 ### How many system-codes are available?
-Incalculable, since the family codes define their own rules, it is difficult to measure the permutation count of parts. Currently in mupys infancy there are over a quadrillion parts. 
+The available system-code permutation set is an incalculable number and is believed to be on the order of order of quintillions of quintillions of quintillions of parts built just by myself however the assembly technology and the ability to cast or map assembly-sets to systemm-code-sets easily diverges this number to infinity. It really depends on the users themselves. My personal two-cents ; dont focus on all the possible assemblies, rather focus on getting the sub-assemblies and parts needed to build the best system-code-set.
 
 ### Is it free?
 Yes! but only the core technology is free, the various family code libraries which should each contain their own license which states the conditions for use. In most cases it is free to use but read the license always.
