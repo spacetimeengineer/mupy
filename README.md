@@ -692,7 +692,17 @@ Additionally the assembly object was chosen as the primary mechanism for impleme
 
 
 ## System Codes
-So the whole idea behind a system-code was that it was this thing which could theoretically speed up precision development and deployment in the fastest way deemed conceivable within set requirements. Consider the engineer who wishes to design something and prototype it fast but instead of just building it outright they design the part with parametrization so things could be easily tweaked on the go or those other permutations could be absorbed by others. This is nothing new with programmers however rarely do people consider the possibility of doing this with hardware. Additionally if the libraries didnt exist there would be a simple protocol (non-automated except with AI perhaps) Ofcourse the library would need to be written first however this system-code would be a string representations which could be decoded by mupy
+
+System codes are the most important contribution to the mu technology but what are they exactly? Well the whole idea behind a system-code was that it was this thing which could theoretically speed up precision development and deployment in the fastest way deemed conceivable within reason requirements and cost. 
+
+Consider every single hardware element one might find in a hardware store and consider every meaningful aspect of that part being something with could be subject to variance like say the distance of a punched out hole in a bracket from it's edge for a screw to slide through and fasten with and the radius of said hole for example and consider that the person who authored such a part or piece of hardware did so with code and did so with meaningful intention and parametrization so that someone else could make thier own modifications without actually changing anything. Now consider that there also existed parts you cant find at a hardware store, like a guitar or beauty products and cosider all the pssible permutations there and consider all the things that have never been invented yet but might be. Now consider how one might identify in a human-readable, meaningful, part-like or serial-code like way part or piece of hardware geometry with such vast permutation sets and containing it in a short string.
+
+
+Now consider that one may modify and assembly or disect these products with geometrical meaning and encodability and multiply that by a trillion and every possible permutation Now consider how one might be requireed to identify such a part that the rules which dictate the parts names and conventions were very loose and simple. The only requirement is that a part has a family code and a type code and a parametriztion code even if the permutation set is small or singular. Consider that there may exist two similar parts belonging to didfferent familyes and
+
+
+
+Consider the engineer who wishes to design something and prototype it fast but instead of just building it outright they design the part with parametrization so things could be easily tweaked on the go or those other permutations could be absorbed by others. This is nothing new with programmers however rarely do people consider the possibility of doing this with hardware. Additionally if the libraries didnt exist there would be a simple protocol (non-automated except with AI perhaps) Ofcourse the library would need to be written first however this system-code would be a string representations which could be decoded by mupy
 
 
 the library would need to be authored and certified first and the hard work has arguably already been done at that point however the system-code offers many permutations which have not of been tested before. But what is a system-code?
