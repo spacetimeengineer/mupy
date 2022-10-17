@@ -679,7 +679,7 @@ A workspace is essentially a directory structure or environment to place hardwar
   - 3D Workbench.
 
 ### Hardware
-Hardware objects are the primary mechanism for introducing system-codes into the scripting environment.
+Hardware objects are the primary agents or mechanism for introducing system-codes into the scripting environment. These hardware objects may also call 3D renderings (.stl files) from local or remote URL adderess in place of the system-codes if desired. It is important to note here that if one is uninterestedin system-code technology then mupy still expressses great utility to user becasue simulation,operation and assembly and certification is still posssible through these features.
 
 ### Coordinates
 In an assembly generally speaking, there needs to exist initial and final coordinates in 3D space within a certain time quantum since the assembly will exist as a hierarchical structure and will need to be organized down into multiple time domains. Keep in mind that multiple assemblies can exist in a single time quantum but not if they ever involve the same part.
