@@ -692,8 +692,20 @@ Additionally the assembly object was chosen as the primary mechanism for impleme
 
 
 ## System Codes
-So the whole idea behind a system-code was that it was this thing which would theoretically speed up precision development and deployment in the fastest way deemed conceivable within set requirements. Consider the engineer who wishes to design something and prototype it fast. Instead of employing the usual methods, they can save a great deal of time by programming it into a string ( 16 - 200 characters if we are being conservative ). Ok, ok, ok... its not that simple of-course, the library would need to be authored and certified first and the hard work has arguably already been done at that point however the system-code offers many permutations which have not of been tested before. But what is a system-code?
+So the whole idea behind a system-code was that it was this thing which could theoretically speed up precision development and deployment in the fastest way deemed conceivable within set requirements. Consider the engineer who wishes to design something and prototype it fast but instead of just building it outright they design the part with parametrization so things could be easily tweaked on the go or those other permutations could be absorbed by others. This is nothing new with programmers however rarely do people consider the possibility of doing this with hardware. Additionally if the libraries didnt exist there would be a simple protocol (non-automated except with AI perhaps) Ofcourse the library would need to be written first however this system-code would be a string representations which could be decoded by mupy
+
+
+the library would need to be authored and certified first and the hard work has arguably already been done at that point however the system-code offers many permutations which have not of been tested before. But what is a system-code?
 A system-code is a finite, often short-string representation of a physical part, machine or structure ; anything in principle really. It is technically a seed for the creation of a digital-twin representation of that physical 'system' (generally speaking ; a part, machine or structure or anything deserving of a system-code) and all the information regarding it's operation, assembly, manufacturing, cost and material characteristics to any arbitrary degree of complexity (digital twin exists as a python class object). Moreover tools exist to keep these string representations short and organized within their countless permutations set. Additionally system-codes serve as a name or identifier without physical uniqueness and human readability features keeping things intuitive. A system-code can also be thought of as something which generates resources and metadata that help users manufacture said system at reduced cost. These resources include CAD files and annotated openscad source code directories containing assembly and operational animation routines which help users record and transmit and intepret complex manufacturing and assembly information.
+
+- Follows general schema : <Family-Code>-<Type-Code>-<Param-Code>
+- Human decipherable
+- Part-like in name
+- Does not identify physical part, only geometry.
+- System Codes serves to identify some hardware geometery
+- Encodable
+- Decodable
+- <Family-Code>-<Type-Code>-<Param-Code>
 
 ### Properties
 
