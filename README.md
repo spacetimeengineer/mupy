@@ -693,9 +693,11 @@ Additionally the assembly object was chosen as the primary mechanism for impleme
 
 ## System Codes
 
-System codes are the most important contribution to the mu technology but what are they exactly? Well the whole idea behind a system-code was that it was this thing which could theoretically speed up precision development and deployment in the fastest way deemed conceivable within reason requirements and cost. 
+The special strings known as system-codes are probably the most important features to be dispensed by the mu technology but what are they exactly? The whole idea behind a system-code was that it was meant to represent a part, hardware or assembly but most generally speaking, a system. It was a small string that could be thought of as a seed which carried vast information regarding some system's geometry, operation, assembly, dissasembly, resources and other meta-data which using mupy can be decoded and used to generate digital-twin representations and resources for manufactuirng said system.
 
-Consider every single hardware element one might find in a hardware store and consider every meaningful aspect of that part being something with could be subject to variance like say the distance of a punched out hole in a bracket from it's edge for a screw to slide through and fasten with and the radius of said hole for example and consider that the person who authored such a part or piece of hardware did so with code and did so with meaningful intention and parametrization so that someone else could make thier own modifications without actually changing anything. Now consider that there also existed parts you cant find at a hardware store, like a guitar or beauty products and cosider all the pssible permutations there and consider all the things that have never been invented yet but might be. Now consider how one might identify in a human-readable, meaningful, part-like or serial-code like way part or piece of hardware geometry with such vast permutation sets and containing it in a short string.
+
+
+Consider every single hardware element one might find in a hardware store and consider every meaningful aspect of that part being something with could be subject to variance like say the distance of a punched out hole in a bracket from it's edge for a screw to slide through and fasten with and the radius of said hole  and the length of the edge of the bracket for example and consider that the person who authored such a part or piece of hardware did so with code and did so with meaningful intention and parametrization such that if someone else wanted to commit thier own configurations. Now consider that there existed parts which you could not find at a hardware store also, like a guitar or beauty products and consider all the pssible permutations there might exist and consider all the things that have never been invented yet but might be. Now consider how one might identify in a human-readable, meaningful, part-like or serial-code like way, a part or hardware geometry with such vast permutation sets and containing it in a short string.
 
 
 Now consider that one may modify and assembly or disect these products with geometrical meaning and encodability and multiply that by a trillion and every possible permutation Now consider how one might be requireed to identify such a part that the rules which dictate the parts names and conventions were very loose and simple. The only requirement is that a part has a family code and a type code and a parametriztion code even if the permutation set is small or singular. Consider that there may exist two similar parts belonging to didfferent familyes and
@@ -710,11 +712,9 @@ A system-code is a finite, often short-string representation of a physical part,
 
 - Follows general schema : <Family-Code>-<Type-Code>-<Param-Code>
 - Human decipherable
-- Part-like in name
-- Does not identify physical part, only geometry.
-- System Codes serves to identify some hardware geometery
-- Encodable
-- Decodable
+- Identifies Geometry/Part/Hardware/Assembly/System
+- Seed-Like
+- Encodable/Decodable
 - <Family-Code>-<Type-Code>-<Param-Code>
 
 ### Properties
