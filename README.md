@@ -835,6 +835,12 @@ Individual hardware families are guided by their own license agreements. Each ha
 
 ### Why should I install mupy
 If you own a 3D printer or CNC equiptment then you would have acess to parts which you could manufacture for free. The standard library is populated with some useful hardware elements.
+  - Print toys for your kids.
+  - Repair custom equiptment on the cheap
+  - Design stuff and build your own libraries
+  - Simulate assemblies
+  - Integrate with other technologies such as artificial intellegenceor videogames
+  - Develop mupy itself
 
 ### How many system-codes are available?
 The available system-code permutation set is an incalculable number and is believed to be on the order of order of quintillions of quintillions of quintillions of parts built just by myself however the assembly technology and the ability to cast or map assembly-sets to systemm-code-sets easily diverges this number to infinity. It really depends on the users themselves. My personal two-cents ; dont focus on all the possible assemblies, rather focus on getting the sub-assemblies and parts needed to build the best system-code-set.
