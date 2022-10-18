@@ -761,44 +761,16 @@ Schemas reference the pattern the system codes obey when storing parametrization
 ### Build a community
 This kind of thing wont go far without a community. This community would provide real goals, like real projects that can help or train us and mupy or some successor technology to do bigger and better things that could handle infrastructure or high-power innovation. I know it sounds crazy but why not. Lets build a space ship or something. The community may identify worthwhile proposals for features. Consider that the scripting interface makes it easier for people and teams to coordinate larger projects using a version control system like github.
 
-### Redesign model (perhaps in a different language)
-All programming all starts with a model. The more efficient the model the more efficient the programming.Every time you rebuild a system from the ground up the developers identify deeper problems which when solved leads to more efficiency. This creates more automation power and longevity. It also keeps the programmers sharp.
-
-### More family codes
-More family codes means more parts to print or more possible things to assemble. This has an exponential effect. This will reinforce the integrity of mupy and the likelihood to attract users. Additionally we want to add constraints that keep certified families clean of defunct parts which should not or could not be printed.
-
-### More scripts codes
-We need people to request like inventions or something with an emphasis on modular development so that we can assemble advanced systems together. Coordination will need to be had and this means people taking leadership.
-
-### Design a package manager
-This is essential. While from the point of view of python itself, mupy could effectivly created packages on it's own with mupy nstalled and for now it is the best we have but eventually it would be extremely beneficial to write mupy scripts which assembly and operational animations built in that are themselves callable as a system-codes. This would give a higher level of abstraction to the creations of the community. It also serves as an additional compression layer saying memory for temporary comute time. 
-
-### Implement name spaces
-It is unclear if family codes serve as name spaces but these are essentially needed for implementing some kind of package manager application.
-### Implement manufacturing codes
-
-### Implement Material codes
-It is important to eventually provide a space for information regarding se part and the material it is created from. In the future mupy will attempt to cover more manufacturing methods other than 3D printing.
-### Integrating technologies
-
-
-
-
-### Implement a package manager with authentication
-This would represent a better system for managing community-authored-systems. Additionally this would make upy more efficient as well as do a better job to make it more useful for the community.
-
-### Create a community goals / wish list
-Lets design a nuclear spacecraft together! Even if we fail imagine what we learn or accomplish on the way! The requirements of such a goal would make mupy very powerful if it were designed to handle those requirements.
+    - System Code Library Wishlist
+    - Gather Requirements
+    - Open Source Funded Projects
+    - Start Markets
+  
+### Aurthor More System-Code Libraries
+More family codes means more parts to print or more possible things to assemble. This has an exponential effect. This will reinforce the integrity of mupy and the likelihood to attract users. Additionally we want to add constraints that keep certified families clean of defunct parts which should not or could not be printed. 
 
 ### Automated certification routines
-
-This particular function is the golden function which would render this project truly powerful. Automated certification makes reference to the automation of a family code being injected into mupy. This function is desired for several reasons;
-
-  - Family codes themselves are valuable, for each family code hat exists there exists anywhere from millions to quadrillions of permutations of renderings provided by mupy.
-  - Scripted assemblies, if parameterized can be certified and this would make any scripted 1000 times as productive.
-  - Encoding routines are automatically integrated into terminal.
-  - New scad libraries could be integrated.
-  - Makes name-space type 
+This feature would be very powerful but will definatly take time to build becasue it certification is a non-trivial advanced feature. Possible just hard.
 
 ## Contributing
 
