@@ -842,10 +842,11 @@ Absolutely not, mupy is it's own thing and solves different problems. In some ca
 
 ## Contacts:
 
-| Project Team          | Email                          |
-| --------------------- | ------------------------------ |
-| Michael C Ryan        | spacetime.engineer@gmail.com   |
-
+| Company             | Project Team          | Role           | Email                          |
+|-------------------- | --------------------- | -------------- | ------------------------------ |
+| Ryan Solutions Inc. | Michael C Ryan        | Lead Developer | spacetime.engineer@gmail.com   |
+| Ryan Solutions Inc. | Shonna M Ryan         | Editor         | mcgrailpr@gmail.com   |
+  
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
