@@ -775,18 +775,19 @@ Schemas reference the pattern the system codes obey when storing parametrization
 ## Road-map
 
 ### Build a community
-This kind of thing wont go far without a community. This community would provide real goals, like real projects that can help or train us and mupy or some successor technology to do bigger and better things that could handle infrastructure or high-power innovation. I know it sounds crazy but why not. Lets build a space ship or something. The community may identify worthwhile proposals for features. Consider that the scripting interface makes it easier for people and teams to coordinate larger projects using a version control system like github.
+This kind of technology cannot grow without a community. The expectation is that this community would provide real visions, real milestones and real goals which are tangleble and linkable to other projects being developed at the same time by the same community. This is to say I imagine a coordinated machine of innovation rapidly accellerating until the most beautiful system-codes are devised and we are all in space with pretty fusion engines. I know it sounds crazy but why the hell not. Lets build a space-ship or something. The point is that the community may identify worthwhile proposals for features. Consider that the scripting interface makes it much easier for people and organizations to coordinate larger projects and integrate other technologies using a version control systems like github. Things a community may do :
 
-- System Code Library Wishlist
+- Cultivate Design Wishlist
 - Gather Requirements
-- Open Source Funded Projects
-- Start Markets
+- Stand Up Massive Scale Decentralized Projects
+- Stand Up Markets
+- Devise canonacle formalisms to strengthen the technology
   
-### Aurthor More System-Code Libraries
+### Author More System-Code Libraries
 More family codes means more parts to print or more possible things to assemble. This has an exponential effect. This will reinforce the integrity of mupy and the likelihood to attract users. Additionally we want to add constraints that keep certified families clean of defunct parts which should not or could not be printed. 
 
 ### Automated certification routines
-This feature would be very powerful but will definatly take time to build becasue it certification is a non-trivial advanced feature. Possible just hard.
+This feature would be very powerful. Not yet complete. Certification is a non-trivial yet predictable operation. No one is even close to needing this feature yet. Few would be this advanced.
 
 ## Contributing
 
@@ -831,13 +832,13 @@ If you own a 3D printer or CNC equiptment then you would have acess to parts whi
   - Develop mupy itself
 
 ### How many system-codes are available?
-The available system-code permutation set is an incalculable number and is believed to be on the order of order of quintillions of quintillions of quintillions of parts built just by myself however the assembly technology and the ability to cast or map assembly-sets to systemm-code-sets easily diverges this number to infinity. It really depends on the users themselves. My personal two-cents ; dont focus on all the possible assemblies, rather focus on getting the sub-assemblies and parts needed to build the best system-code-set.
+The available system-code permutation set is an incalculable number and is believed to be on the order of order of quintillions of quintillions of quintillions of parts built just by myself however the assembly technology and the ability to cast or map assembly-sets to systemm-code-sets easily diverges this number to infinity. It really depends on the users themselves. My personal two-cents ; dont focus on all the possible assemblies, rather focus on getting the sub-assemblies and parts required to assemble the best system-code-set.
 
 ### Is it free?
 Yes! but only the core technology is free, the various family code libraries which should each contain their own license which states the conditions for use. In most cases it is free to use but read the license always.
 
 ### Does mupy replace CAD?
-Absolutely not, mupy is it's own thing. In some cases it may reduce the hours spent on CAD for people and in other cases it may increase the time people spend. In the future I could see CAD applications integrating a mucli-like application utilities into it to get the best of both worlds.
+Absolutely not, mupy is it's own thing and solves different problems. In some cases it may reduce or replace the hours spent using CAD and in other cases it may increase the time people spend. If used in conjunction, you may get an optimized effect depending on your work. CAD simply doesnt provide system-code technology; this much is true. CAD however is optimized, mupy is rudimetry. Apples and oranges, but I like fruit salad anyways. Additionally the simulation enviornment is far far more intuitve and can be automated by scripts. CAD doesnt do that. The mechanical engineer may appreciate mupy and the programmer will never know CAD existed but the libraries will need to expand beyond the standard set I provided.
 
 ## Contacts:
 
