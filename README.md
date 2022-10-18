@@ -47,7 +47,7 @@ Python manufacturing utility or mupy is an extremely powerful new digital-twin t
 
 ## Note from the developer
 
-This package has grown too large for a single developer to responsibly maintain the system. Do not get me wrong, mupy works well, perhaps too well but it's just that it performs in every way I need it to do and so much more. This project had eveolved many times over where it began as a series of scripts which I used to automate small operations I was perfoming using 3D printers. 
+This package has grown too large for a single developer to responsibly maintain the system. Do not get me wrong, mupy works well, perhaps too well but it's just that it performs in every way I need it to do and so much more and it is becoming very complex. This project had evolved through many interations of insight and a need to develop bare metal algorithms it began as a series of scripts which I used to automate small operations I was perfoming using 3D printers. 
 
 ### On 3D Printers
 3D printers are hailed by most for thier unmatched ability to give anybody the ability to manufacture a small quanitity of parts.
@@ -59,7 +59,12 @@ This package has grown too large for a single developer to responsibly maintain 
 
 
 ### Caveats
-The first important caveat is that mupy is a python package but it's use requires an enviornment in addition to python which makes things slightly more complex when setting up. The reason for this is mupy was designed to support teams and operations. As a result of this requirement that an enviornment is set up it was difficult for me to develop a full windows and mac solution. Part of this is due to my lack of non-linux archetexture, part of it is beacus I dont like maintaining multipme source codes.  Since I take advantage of linux file systems in this . 
+The mupy-core package is not without it's issues or inefficiencies and to make an analogy, imagine the mu technology or model as a phenomenal recipe and mupy as the prepared cuisine implementation of said technology using suboptimal or subsitution ingredients. Technically the model works but it's power could be multiplied even further if more key features were devised but the community will need be responsible for those developments and features unless I need them first. Here are two glaring caveats youshould know about...
+
+- mupy is a package however an enviornment will be needed to utilize it; openscad will need to be installed (VSCode reccomended)
+- Stable on linux Only ; linux file system is leverage heavily. Doesnt work on windows or MacOS yet. Just need more time.
+
+I offer zero apologies for this reality. You want features build it yourself.
 
 ## Overview
 
