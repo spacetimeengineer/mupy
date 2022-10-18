@@ -50,7 +50,7 @@ Python manufacturing utility or mupy is an extremely powerful new digital-twin t
 This package has grown too large for a single developer to responsibly maintain the system. Do not get me wrong, mupy works well, perhaps too well but it's just that it performs in every way I need it to do and so much more and it is becoming very complex. This project had evolved through many interations of insight and a need to develop bare metal algorithms it began as a series of scripts which I used to automate small operations I was perfoming using 3D printers. 
 
 ### On 3D Printers
-3D printers are hailed by most for thier unmatched ability to give anybody the ability to manufacture a small quanitity of parts.
+If you look at the cost/quantity curve for 3D printers vs other manufacturing methods you willnotice that 3D printers prestent a flat curve. 
 - How do you find parts to print?
 - How to design a part?
 - The cost/
