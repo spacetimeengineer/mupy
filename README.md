@@ -709,42 +709,24 @@ Additionally the assembly object was chosen as the primary mechanism for impleme
 
 ## System Codes
 
-The special strings known as system-codes are probably the most important features to be dispensed by the mu technology but what are they exactly? The whole idea behind a system-code was that it was meant to represent a part, hardware or assembly but most generally speaking, a system. It was a small string that could be thought of as a seed which carried vast information regarding some system's geometry, operation, assembly, dissasembly, resources and other meta-data which using mupy can be decoded and used to generate digital-twin representations and resources for manufactuirng said system.
-
-
+The special strings known as system-codes are probably the most important features to be dispensed by the mu technology but what are they exactly? The whole idea behind a system-code was that it was a string which represented a specific part, assembly, technology or most generally speaking, a system. It could be thought of as a seed which carried information regarding some system's geometry, operation, assembly, dissasembly and meta-data. A system-code decoding could be perfomred using mupy ; mupy generates a digital-twin representation of some system from it's corresponding syste-code and the resources for manufacturing or assembling it.
 
 Consider every single hardware element one might find in a hardware store and consider every meaningful aspect of that part being something with could be subject to variance like say the distance of a punched out hole in a bracket from it's edge for a screw to slide through and fasten with and the radius of said hole  and the length of the edge of the bracket for example and consider that the person who authored such a part or piece of hardware did so with code and did so with meaningful intention and parametrization such that if someone else wanted to commit thier own configurations. Now consider that there existed parts which you could not find at a hardware store also, like a guitar or beauty products and consider all the pssible permutations there might exist and consider all the things that have never been invented yet but might be. Now consider how one might identify in a human-readable, meaningful, part-like or serial-code like way, a part or hardware geometry with such vast permutation sets and containing it in a short string.
 
 
-Now consider that one may modify and assembly or disect these products with geometrical meaning and encodability and multiply that by a trillion and every possible permutation Now consider how one might be requireed to identify such a part that the rules which dictate the parts names and conventions were very loose and simple. The only requirement is that a part has a family code and a type code and a parametriztion code even if the permutation set is small or singular. Consider that there may exist two similar parts belonging to didfferent familyes and
-
-
-
-Consider the engineer who wishes to design something and prototype it fast but instead of just building it outright they design the part with parametrization so things could be easily tweaked on the go or those other permutations could be absorbed by others. This is nothing new with programmers however rarely do people consider the possibility of doing this with hardware. Additionally if the libraries didnt exist there would be a simple protocol (non-automated except with AI perhaps) Ofcourse the library would need to be written first however this system-code would be a string representations which could be decoded by mupy
-
-
-the library would need to be authored and certified first and the hard work has arguably already been done at that point however the system-code offers many permutations which have not of been tested before. But what is a system-code?
-A system-code is a finite, often short-string representation of a physical part, machine or structure ; anything in principle really. It is technically a seed for the creation of a digital-twin representation of that physical 'system' (generally speaking ; a part, machine or structure or anything deserving of a system-code) and all the information regarding it's operation, assembly, manufacturing, cost and material characteristics to any arbitrary degree of complexity (digital twin exists as a python class object). Moreover tools exist to keep these string representations short and organized within their countless permutations set. Additionally system-codes serve as a name or identifier without physical uniqueness and human readability features keeping things intuitive. A system-code can also be thought of as something which generates resources and metadata that help users manufacture said system at reduced cost. These resources include CAD files and annotated openscad source code directories containing assembly and operational animation routines which help users record and transmit and intepret complex manufacturing and assembly information.
+### Properties
 
 - Follows general schema : <Family-Code>-<Type-Code>-<Param-Code>
 - Human decipherable
 - Identifies Geometry/Part/Hardware/Assembly/System
-- Seed-Like
+- System-Seed
 - Encodable/Decodable
-- <Family-Code>-<Type-Code>-<Param-Code>
-
-### Properties
-
-
-- Schema-less : Individual system-codes only are required to share the same schema with system-codes that belong to the same type code.
-- Seed-like : system-coded serve as a seed which when processed by mupy.core produces a digital-twin class object which is responsible for the generated code and renderings.
+- Schema-less : Each <Family-Code>-<Type-Code> permutation dictates it's own rules.
 - Constituent-Codes:
 
-    - family-code : Serves as a name-space code. 
-    - type-code : Serves as a name-space code.
-    - parametrization-code : Serves as the inputs which tune the values the hardware .
-    - manufacturing-code : Serves as a name-space code. (Not yet implemented)
-    - material-code : Describes Material. (Not yet implemented)
+    - family-code : Serves as a name-space code. Ussually parts of the same style or shared functions belong to it.
+    - type-code : Identifies a part without specifying parameters. What makes something a different type or family is for the author to decide.
+    - parametrization-code : Stores information describing the input parameters of a system.
 
 
 ## Family Codes
