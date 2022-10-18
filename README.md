@@ -45,9 +45,18 @@ Python manufacturing utility or mupy is an extremely powerful new digital-twin t
 - operational & assembly simulations (animations) with real time programmatic modification.
 - Integrateable with thousands of other technologies
 
-## Note from the developer a
+## Note from the developer
 
-This package has grown too large for a single developer to responsibly maintain the system. Do not get me wrong, mupy works well... TOO well. It's just that it does everything I need it to do and so much more. Remember, mupy is a tool for building things like tools. Since all project requirements have been fuffilled from my point of view I must perform the hand-off to the community. I hope you all like it and consider my vision becasue I did this on some level for you too. I want so badly to see what y'all can do with it and I hope you can bring wealth to your life and families and friends through innovation. I will point out that in my own experience you should always focus on the requirements of your goals. Best to start there and best to start small becasue it snowballs quick. 
+This package has grown too large for a single developer to responsibly maintain the system. Do not get me wrong, mupy works well, perhaps too well but it's just that it performs in every way I need it to do and so much more. This project had eveolved many times over where it began as a series of scripts which I used to automate small operations I was perfoming using 3D printers. 
+
+### On 3D Printers
+3D printers are hailed by most for thier unmatched ability to give anybody the ability to manufacture a small quanitity of parts.
+- How do you find parts to print?
+- How to design a part?
+- The cost/
+
+- It is a misconception that 3D printers are not worthy canidates for scale grade manufacturing its just that we have to not compare them to manufacturing systems which limit 
+
 
 ### Caveats
 The first important caveat is that mupy is a python package but it's use requires an enviornment in addition to python which makes things slightly more complex when setting up. The reason for this is mupy was designed to support teams and operations. As a result of this requirement that an enviornment is set up it was difficult for me to develop a full windows and mac solution. Part of this is due to my lack of non-linux archetexture, part of it is beacus I dont like maintaining multipme source codes.  Since I take advantage of linux file systems in this . 
