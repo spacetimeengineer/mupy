@@ -761,10 +761,10 @@ Schemas reference the pattern the system codes obey when storing parametrization
 ### Build a community
 This kind of thing wont go far without a community. This community would provide real goals, like real projects that can help or train us and mupy or some successor technology to do bigger and better things that could handle infrastructure or high-power innovation. I know it sounds crazy but why not. Lets build a space ship or something. The community may identify worthwhile proposals for features. Consider that the scripting interface makes it easier for people and teams to coordinate larger projects using a version control system like github.
 
-    - System Code Library Wishlist
-    - Gather Requirements
-    - Open Source Funded Projects
-    - Start Markets
+- System Code Library Wishlist
+- Gather Requirements
+- Open Source Funded Projects
+- Start Markets
   
 ### Aurthor More System-Code Libraries
 More family codes means more parts to print or more possible things to assemble. This has an exponential effect. This will reinforce the integrity of mupy and the likelihood to attract users. Additionally we want to add constraints that keep certified families clean of defunct parts which should not or could not be printed. 
