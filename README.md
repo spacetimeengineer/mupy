@@ -791,25 +791,16 @@ This feature would be very powerful. Not yet complete. Certification is a non-tr
 
 ## Contributing
 
-Currently the best form of contribution would be to play offer suggestions for improvement or they could develop scripts to be certified or open scad code to be certified (manually).
+Currently the simplest form of contribution would be to star the repository or attempt to use the system for real development. Below are some more specific suggestions :
 
-### Project Identification
-Currently this is the most valuable and important top priority (ongoing) task. This is not a programming or technology task rather it is a task for the visionary or the philosopher but it's the hardest job of all. Where this task fails or succeeds cascades to all other aspects of entire system. This is even more important than the functions or the algorithms which constitute mupy because the algorithms are derived from requirements which are derived from goals but only the greatest but possible goals are worth pursuing because other boons are are found along the way. We need these people to identify what we must build. I am not referring to the sub-components of some bigger system because those developments can be derived from the greater requirements which may exists from the greater requirements. 
+### Requirements Gathering
+People should identify things to be built. Take note every time this happens, new family codes become realized or identified and need to be authored and certified but this is ok. This is how libraries are born : requirements. After all nessecity is the mother of all invention. Chances are I can help with building some of the hardware libraries if your serious.
 
-### Part Identification
-This is similar to the previous except ona primitive scale. So If a project is identified then a new modular family in most cases will be developed to fulfill some requirements fro a design.
-
-### Script Vault
-The more systems that are built the better, more they are parameterized and modular the better although that is no requirement. This will make the technology stronger and more useful.
-
-### Improvements and additions to hardware library.
-The standard library of parts should be developed more and more over time because these represent the primitive parts which make up the scripted-systems. The are also represented by system-codes but they themselves do not really represent systems so much except in the general sense. More libraries will make the system stronger in time but I would recommend to only design hardware that has been identified as a requirement in a larger system.
+### Building New Libraries
+Currently mupy only has a standard library which can be modified manually but in time we will implement features which allow new remote libraries to be accessed too.
 
 ### Improvements to mu command-line-tool
-Currently the command line tool is extremely crude. The reasons for this are vast but I typically build command line tools in my projects to illustrate basic functionality and prototyping. The mucli tool is no different except that I really like it's overall form in principle. The idea of just typing in  a code to get quick resources is really cool and useful.
-
-### mupy.core
-mupy.core should be rebuilt in a couple years after user feedback has been processed and a team is ready to develop.
+Currently the command line tool is extremely crude. The reasons for this are non-interesting but I typically build command line tools in my projects to illustrate basic functionality and prototyping. The mucli tool is no different except that I really like it's overall form in principle. The idea of just typing in a system-code to get quick resources is really cool and useful to me. I needs to be better and this is just a whole bag of things too complicated to mention. Im sure others have done this before.
 
 ## Licensing Structure
 All subdirectories which contain a license will be represented by that license. This is always a subdirectory representing a family code or namespace. In this way mupy can be thought of as an abstraction that makes efficient calls to some library which may contain a drifferent liscens. Additionally one could protect a library with authentication / prmissions systems. 
