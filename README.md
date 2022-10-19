@@ -78,7 +78,7 @@ I offer zero apologies for this reality. You want features go build it yourself.
 I have been cultivating concern about the state of the world economy, education and manufacturing for some time. I wont get into the details regarding my personal feelings but after compiling these thoughts for years into the form of productive goals, I began to realize that I wanted to develop a super-utility which would provide free infinite resources to the individual so that they could cultivate manufacturing value from a small space. I wanted these individuals who struggle competing with large companies to have more power. I am no enemy of large companies becasue I offer them the same resource but I am trying to change the dynamic. I want to connect people of all industries. I want more competition but I also want more cooperation.
 
 ### mupy is a proposal, mupy is a gift
-mupy is a tool which reflects how I would do things if I were in charge. What would I do? I would give the broader community the tools to build things powerful and advanced like spacecraft. I think the communnity could compete with any space company to build a spacecraft with mupy. These are my visions.
+mupy is a tool which reflects how I would do things if I were in charge. What would I do? I would give the broader community the tools to build things powerful cool. I want to build spacecraftand cities in space. This is exactly how I would do it. Atleast I built it before talking about it.
 
 
 ## Overview
