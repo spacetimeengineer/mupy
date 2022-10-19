@@ -77,7 +77,7 @@ class Hardware:
             _type_: _description_
         """        
 
-        """ Viewport Special Variables """
+        """ Viewport Special Variables : Engage By Uncommenting """
 
         scad_code = ""
         scad_code = scad_code + "/* Viewport Global Variables */\n\n"
@@ -97,41 +97,41 @@ class Hardware:
             
             if (self.coordinate_superset[0].t0 > 0): # Here you need to add more coordinate sets sepending on choice of epochs.
                 
-                t0 = self.coordinate_superset[0].t0  
+                t0 = self.coordinate_superset[0].t0 # Pulling coordinate data to write in .scad file.  
                 
-                x0 = self.coordinate_superset[0].x0
-                y0 = self.coordinate_superset[0].y0
-                z0 = self.coordinate_superset[0].z0
-                a0 = self.coordinate_superset[0].a0
-                b0 = self.coordinate_superset[0].b0
-                c0 = self.coordinate_superset[0].c0
+                x0 = self.coordinate_superset[0].x0 # Pulling coordinate data to write in .scad file.
+                y0 = self.coordinate_superset[0].y0 # Pulling coordinate data to write in .scad file.
+                z0 = self.coordinate_superset[0].z0 # Pulling coordinate data to write in .scad file.
+                a0 = self.coordinate_superset[0].a0 # Pulling coordinate data to write in .scad file.
+                b0 = self.coordinate_superset[0].b0 # Pulling coordinate data to write in .scad file.
+                c0 = self.coordinate_superset[0].c0 # Pulling coordinate data to write in .scad file.
 
-                e0 = self.coordinate_superset[0].e0
-                f0 = self.coordinate_superset[0].f0
-                g0 = self.coordinate_superset[0].g0
-                u0 = self.coordinate_superset[0].u0
-                v0 = self.coordinate_superset[0].v0
-                w0 = self.coordinate_superset[0].w0
+                e0 = self.coordinate_superset[0].e0 # Pulling coordinate data to write in .scad file.
+                f0 = self.coordinate_superset[0].f0 # Pulling coordinate data to write in .scad file.
+                g0 = self.coordinate_superset[0].g0 # Pulling coordinate data to write in .scad file.
+                u0 = self.coordinate_superset[0].u0 # Pulling coordinate data to write in .scad file.
+                v0 = self.coordinate_superset[0].v0 # Pulling coordinate data to write in .scad file.
+                w0 = self.coordinate_superset[0].w0 # Pulling coordinate data to write in .scad file.
                 
                 self.assign_coordinates(Coordinates(t0 = 0, tf = t0, x0 = x0, y0 = y0, z0 = z0, xf = x0, yf = y0, zf = z0, a0 = a0, b0 = b0, c0 = c0, af = a0, bf = b0, cf = c0, e0 = e0, f0 = f0, g0 = g0, ef = e0, ff = f0, gf = g0, u0 = u0, v0 = v0, w0 = w0, uf = u0, vf = v0, wf = w0))
                 
             if (self.coordinate_superset[0].tf < 1): # Here you need to add more coordinate sets sepending on choice of epochs.
 
-                tf = self.coordinate_superset[0].tf  
+                tf = self.coordinate_superset[0].tf # Pulling coordinate data to write in .scad file.  
                 
-                xf = self.coordinate_superset[0].xf
-                yf = self.coordinate_superset[0].yf
-                zf = self.coordinate_superset[0].zf
-                af = self.coordinate_superset[0].af
-                bf = self.coordinate_superset[0].bf
-                cf = self.coordinate_superset[0].cf
+                xf = self.coordinate_superset[0].xf # Pulling coordinate data to write in .scad file.
+                yf = self.coordinate_superset[0].yf # Pulling coordinate data to write in .scad file.
+                zf = self.coordinate_superset[0].zf # Pulling coordinate data to write in .scad file.
+                af = self.coordinate_superset[0].af # Pulling coordinate data to write in .scad file.
+                bf = self.coordinate_superset[0].bf # Pulling coordinate data to write in .scad file.
+                cf = self.coordinate_superset[0].cf # Pulling coordinate data to write in .scad file.
             
-                ef = self.coordinate_superset[0].ef
-                ff = self.coordinate_superset[0].ff
-                gf = self.coordinate_superset[0].gf
-                uf = self.coordinate_superset[0].uf
-                vf = self.coordinate_superset[0].vf
-                wf = self.coordinate_superset[0].wf
+                ef = self.coordinate_superset[0].ef # Pulling coordinate data to write in .scad file.
+                ff = self.coordinate_superset[0].ff # Pulling coordinate data to write in .scad file.
+                gf = self.coordinate_superset[0].gf # Pulling coordinate data to write in .scad file.
+                uf = self.coordinate_superset[0].uf # Pulling coordinate data to write in .scad file.
+                vf = self.coordinate_superset[0].vf # Pulling coordinate data to write in .scad file.
+                wf = self.coordinate_superset[0].wf # Pulling coordinate data to write in .scad file.
                 
                 self.assign_coordinates(Coordinates(t0 = tf, tf = 1, x0 = xf, y0 = yf, z0 = zf, xf = xf, yf = yf, zf = zf, a0 = af, b0 = bf, c0 = cf, af = af, bf = bf, cf = cf, e0 = ef, f0 = ff, g0 = gf, ef = ef, ff = ff, gf = gf, u0 = uf, v0 = vf, w0 = wf, uf = uf, vf = vf, wf = wf))
 
