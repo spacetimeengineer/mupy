@@ -116,9 +116,6 @@ panel_f = mu.Hardware("panel_f", "CUBX0177-BPAN-B25SR2P5-X8Y8P18-RT-SX25Y25-X8Y8
 
 ```
 
-
-```
-
 4. Define initial and final coordinates within an assembly epoch.
 
 ```python
@@ -130,8 +127,6 @@ assembly_coords_c = mu.Coordinates( x0 = - 8 * 25 / 2 - alpha,           xf = - 
 assembly_coords_d = mu.Coordinates( z0 = -8 * 25 / 2 - alpha,            zf = -8 * 25 / 2,            bf = 180                 )     # Equation must be satisfied in order to express custom-box function. 
 assembly_coords_e = mu.Coordinates( y0 = - 8 * 25 / 2 - alpha,           yf = - 8 * 25 / 2,           af = 90                  )     # Equation must be satisfied in order to express custom-box function. 
 assembly_coords_f = mu.Coordinates( x0 = 8 * 25 / 2 + alpha,             xf = 8 * 25 / 2,             af = 90,       cf = 90   )     # Equation must be satisfied in order to express custom-box function. 
-
-
 ```
 
 5. Defines assembly
