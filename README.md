@@ -38,7 +38,7 @@
 
 # About
 
-Python manufacturing utility or mupy is an extremely powerful new digital-twin technology implemented in the form of a python pip installable package. Ultimatly mupy is a platform or a new way to think about physical hardware, advanced assemblies, innovative technologies or most generally.. systems. This package and the tools included empowers users with hardware-class-objects into the python scripting envornment. mupy posesses features such as hardware & system generation, assembly & operational simulation, metadata & resources renderings. mupy empowers the user with resources and speed. Without mupy some things could never be built. Let's get dangerous.
+Python manufacturing utility or mupy is an extremely powerful new digital-twin technology implemented in the form of a python pip installable package. Ultimatly mupy is a platform or a new way to think about physical hardware, advanced assemblies, innovative technologies or most generally, systems. This package and the tools included empowers users with hardware-class-objects into the python scripting envornment. mupy posesses features such as hardware & system generation, assembly & operational simulation, metadata & resources renderings. mupy empowers the user with resources and speed. Without mupy some things could never be built. Let's get dangerous.
 
 - quintillions (of quintillions (of quintillions...) of identifiable 3D Print/CNC parts and even more assemblies.
 - programmatic representation ; For hardware & assemblies (of hardware and assemblies) within virtual 3D workspaces.
@@ -47,9 +47,24 @@ Python manufacturing utility or mupy is an extremely powerful new digital-twin t
 
 ## Note from the developer
 
-This package has grown too large for a single developer to responsibly maintain the system. Do not get me wrong, mupy works well, perhaps too well but it's just that it performs in every way I need it to do and so much more and it is becoming very complex. This project had evolved through many interations of insight and a need to develop bare metal algorithms it began as a series of scripts which I used to automate small operations I was perfoming using 3D printers. 
+### powerful but rudimetry
+mupy is more powerful than you think, certainly more than you would believe but less than it could be one day. The package has grown too large for a single developer to responsibly maintain and there is still so much to do. Do not get me wrong, I love to code and mupy works well, perhaps too well but it finnally meets all requirements from my perspective and there is little to do. This project has evolved through so many interations of insight and usecase and I dont built things in a vacuum so I can only make trivial modifications from this point forward. This may not be the case forever but I need dedicated community and others to supply requirements. 
+ 
+### mupy was battle tested for years
+mupy is a conglomeration of scripts that were rewritten many times over and organized and coordinated into a functiong system. 
 
-### On 3D Printers
+
+
+
+
+
+
+I have been developing it for years but utilizing it and employing it in my tool-set has been a very new exerience for me.
+
+
+More accuratly mupy was community-grade implementation of the tools I had been developing for my own R&D operation. 
+
+### On 3D Printers VS traditional
 If you look at the cost/quantity curve for 3D printers vs other manufacturing methods you willnotice that 3D printers prestent a flat curve. 
 - How do you find parts to print?
 - How to design a part?
