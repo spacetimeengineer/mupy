@@ -189,7 +189,7 @@ A collection or list of quick concepts, items and keywords which give an overvie
 
 ### What is it?
 
-Originally mu could of been thought of as an attempt to devise a physical analogy to a software programming language ; a hardware assembly language but the interpretation became not entirely appropriate upon further realizations about the nature about manufacturing and development set in, new concepts and tools to make eveything work. Additionally since openscad is an intimidating language due to the requirements of mathematics and programming knowledge it is not unreasonable to expect that it's popularity would not be matched by it's power so it made sense to build a system that would extend it's capability to others. It's best to think of mupy as a
+Originally mu could of been thought of as an attempt to devise a physical analogy to a software-programming language. The mu project was in past considered a hardware-assembly language but this interpretation became not entirely appropriate upon further realizations concerning the nature of manufacturing and development. Some additional context, the mu project started off as an internal utility ( a bag of scripts really ) to a small but growing research and development operation. This operation was tasked with developing utility and recreational grade hardware tha featured advanced modular properties. This operation utilized a linux-openscad-python enviornment. Additioanlly there existed a 3D-Print and Assembly sub operation which gave even greater insight to the development of mupy. mupy is many things, you may think of it as :
 
 - Creation Engine
 
