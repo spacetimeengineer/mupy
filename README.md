@@ -725,14 +725,13 @@ Consider every single hardware element one might find in a hardware store and co
 
 ### Properties
 
-- Follows general schema : <Family-Code>-<Type-Code>-<Param-Code>
-- Human decipherable
-- Identifies Geometry/Part/Hardware/Assembly/System
-- System-Seed
-- Encodable/Decodable
-- Schema-less : Each <Family-Code>-<Type-Code> permutation dictates it's own rules.
-- Constituent-Codes:
-
+  - Follows general schema : <Family-Code>-<Type-Code>-<Param-Code>
+  - Human decipherable
+  - Identifies Geometry/Part/Hardware/Assembly/System
+  - System-Seed
+  - Encodable/Decodable
+  - Schema-less : Each <Family-Code>-<Type-Code> permutation dictates it's own rules.
+  - Constituent-Codes:
     - family-code : Serves as a name-space code. Ussually parts of the same style or shared functions belong to it.
     - type-code : Identifies a part without specifying parameters. What makes something a different type or family is for the author to decide.
     - parametrization-code : Stores information describing the input parameters of a system.
