@@ -114,6 +114,12 @@ panel_d = mu.Hardware("panel_d", "CUBX0177-BPAN-B25SR2P5-X8Y8P18-RT-SX25Y25-X8Y8
 panel_e = mu.Hardware("panel_e", "CUBX0177-BPAN-B25SR2P5-X8Y8P18-RT-SX25Y25-X8Y8-X20Y20Z5")
 panel_f = mu.Hardware("panel_f", "CUBX0177-BPAN-B25SR2P5-X8Y8P18-RT-SX25Y25-X8Y8-X20Y20Z5")
 
+panel_a.color = "green"
+panel_b.color = "blue"
+panel_c.color = "orange"
+panel_d.color = "red"
+panel_e.color = "pink"
+panel_f.color = "cyan"
 ```
 
 4. Define initial and final coordinates within an assembly epoch.
