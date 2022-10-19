@@ -48,20 +48,11 @@ Python manufacturing utility or mupy is an extremely powerful new digital-twin t
 ## Note from the developer
 
 ### powerful but rudimetry
-mupy is more powerful than you think, certainly more than you would believe but less than it could be one day. The package has grown too large for a single developer to responsibly maintain and there is still so much to do. Do not get me wrong, I love to code and mupy works well, perhaps too well but it finnally meets all requirements from my perspective and there is little to do. This project has evolved through so many interations of insight and usecase and I dont built things in a vacuum so I can only make trivial modifications from this point forward. This may not be the case forever but I need dedicated community and others to supply requirements. 
+mupy is more powerful than you think, certainly more than you would believe but less than it could be. The package has grown too large for a single developer to responsibly maintain and there is still much to do. Dont get me wrong, I love to code and mupy works well, perhaps too well but it finnally meets all requirements from my perspective and there is little to do. The mu project had evolved through many interations of insight and usecase and the days of building things in a vacuum are behind me so I can only make trivial modifications from this point forward. This may not be the case forever but I need a dedicated community before I consider further contributions to be worth my while. I will continue developing scad libraries but these shall be limited to my own needs and requirements.
  
 ### mupy was battle tested for years
 mupy is a conglomeration of scripts that were rewritten many times over and organized and coordinated into a functiong system. 
-
-
-
-
-
-
-
 I have been developing it for years but utilizing it and employing it in my tool-set has been a very new exerience for me.
-
-
 More accuratly mupy was community-grade implementation of the tools I had been developing for my own R&D operation. 
 
 ### On 3D Printers VS traditional
@@ -81,7 +72,7 @@ The mupy-core package is not without issues or inefficiencies and to make an ana
 - OpenScad is a fantastic technology to which mupy relies heavily on but it's 3D graphical user interface enviornments can not be called from python as objects. These enviornments are essential to make mupy "fun". Additionally these modules are tightly coupled to the integrated development enviornment which supports the openscad language. For this reason mupy essentially writes openscad code and one could simply open the code with the openscad IDE one generated. Currently this is the standard protocol.
 - mupy is a complex library. It is almost it's own language. Writing with it may not be so easy. It's perfect for me, but that me.
 
-I offer zero apologies for this reality. You want features go build it yourself. I love you.
+I offer zero apologies for this reality. You want features go build it yourself.
 
 ### mupy is the real mcoy
 I have been cultivating concern about the state of the world economy, education and manufacturing for some time. I wont get into the details regarding my personal feelings but after compiling these thoughts for years into the form of productive goals, I began to realize that I wanted to develop a super-utility which would provide free infinite resources to the individual so that they could cultivate manufacturing value from a small space. I wanted these individuals who struggle competing with large companies to have more power. I am no enemy of large companies becasue I offer them the same resource but I am trying to change the dynamic. I want to connect people of all industries. I want more competition but I also want more cooperation.
