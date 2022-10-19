@@ -19,22 +19,22 @@
 
 # Base image.
 
-FROM ubuntu:18.04
+FROM ubuntu:16.04
 
-LABEL name = "μ"
-LABEL version="1.0"
+LABEL name = "mupy"
+LABEL version="0.1.14"
 LABEL description="Manufacturing Utility" 
 
 
 # Adds openscad repository to the apt-get package manager.
 RUN apt update
 #RUN apt -y install software-properties-common
-RUN add-apt-repository ppa:openscad/releases
+#RUN add-apt-repository ppa:openscad/releases
 
 
 # Installs openscad.
 
-RUN apt install -y openscad \
+RUN apt-get install -y openscad \
     && rm -rf /var/lib/apt/lists/*
 
 
@@ -50,19 +50,18 @@ WORKDIR /home
 
 # Allows for unicode printing.
 
-RUN locale-gen en_US.UTF-8
-ENV LANG='en_US.UTF-8' LANGUAGE='en_US:en' LC_ALL='en_US.UTF-8'
+#RUN locale-gen en_US.UTF-8
+#ENV LANG='en_US.UTF-8' LANGUAGE='en_US:en' LC_ALL='en_US.UTF-8'
 
 
 # Allows commands like 'clear' to work properly.
 
-ENV TERM=xterm
+#ENV TERM=xterm
 
 
 # Install python3 project using setup.py.
 
 # RUN setup.py install
-
 
 # Execute the command line interface.
 

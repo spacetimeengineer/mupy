@@ -38,12 +38,48 @@
 
 # About
 
-μpy or mupy is a shorthand for python manufacturing utility and reffers to a new system development technology implemented in the form of a python pip installable package. The μpy package essentially proposes to the open source community in the form of a powerful tool, a model for designing, distributing and manufacturing technology with an emphasis on community, modularity, decentralization, scaling, customization, parametrization, encodability and certification. 
+Python manufacturing utility or mupy is an extremely powerful new digital-twin technology implemented in the form of a python pip installable package. Ultimatly mupy is a platform or a new way to think about physical hardware, advanced assemblies, innovative technologies or most generally, systems. This package and the tools included empowers users with hardware-class-objects into the python scripting envornment. mupy posesses features such as hardware & system generation, assembly & operational simulation, metadata & resources renderings. mupy empowers the user with resources and speed. Without mupy some things could never be built. Let's get dangerous.
 
+- quintillions (of quintillions (of quintillions...) of identifiable 3D Print/CNC parts and even more assemblies.
+- programmatic representation ; For hardware & assemblies (of hardware and assemblies) within virtual 3D workspaces.
+- operational & assembly simulations (animations) with real time programmatic modification.
+- Integrateable with thousands of other technologies
+
+## Note from the developer
+
+### powerful but rudimetry
+mupy is more powerful than you think, certainly more than you would believe but less than it could be. The package has grown too large for a single developer to responsibly maintain and there is still much to do. Dont get me wrong, I love to code and mupy works well, perhaps too well but it finnally meets all requirements from my perspective and there is little to do. The mu project had evolved through many interations of insight and usecase and the days of building things in a vacuum are behind me so I can only make trivial modifications from this point forward. This may not be the case forever but I need a dedicated community before I consider further contributions to be worth my while. I will continue developing scad libraries but these shall be limited to my own needs and requirements.
+ 
+### mupy was battle tested for years
+mupy is a conglomeration of scripts that were rewritten many times over and organized and coordinated into a functiong system. 
+I have been developing it for years but utilizing it and employing it in my tool-set has been a very new exerience for me.
+More accuratly mupy was community-grade implementation of the tools I had been developing for my own R&D operation. 
+
+### On 3D Printers VS traditional
+If you look at the cost/quantity curve for 3D printers vs other manufacturing methods you willnotice that 3D printers prestent a flat curve. 
+- How do you find parts to print?
+- How to design a part?
+- The cost/
+
+- It is a misconception that 3D printers are not worthy canidates for scale grade manufacturing its just that we have to not compare them to manufacturing systems which limit 
+
+
+### Caveats
+The mupy-core package is not without issues or inefficiencies and to make an analogy regarding the circumstance, try to imagine the mu technology as a recipe and mupy as the cuisine implementation of the recipe one prepares but with using suboptimal or subsitution ingredients. Obviously this is not ideal but it works! Here are three glaring issues you should be aware of. They are more difficult to solve than you would probally realize. 
+
+- mupy is a package however an enviornment will be needed to utilize it; openscad will need to be installed (VSCode is also reccomended)
+- Stable on linux Only ; linux file systems are leveraged heavily. It doesnt yet work on Docker, Windows or MacOS. All are trivial fixes but take time and consideration to solve. The plan is to get everything working eventually but it has been lowered on priority level.
+- OpenScad is a fantastic technology to which mupy relies heavily on but it's 3D graphical user interface enviornments can not be called from python as objects. These enviornments are essential to make mupy "fun". Additionally these modules are tightly coupled to the integrated development enviornment which supports the openscad language. For this reason mupy essentially writes openscad code and one could simply open the code with the openscad IDE one generated. Currently this is the standard protocol.
+- mupy is a complex library. It is almost it's own language. Writing with it may not be so easy. It's perfect for me, but that me.
+
+I offer zero apologies for this reality. You want features go build it yourself.
+
+### mupy is the real mcoy
+I have been cultivating concern about the state of the world economy, education and manufacturing for some time. I wont get into the details regarding my personal feelings but after compiling these thoughts for years into the form of productive goals, I began to realize that I wanted to develop a super-utility which would provide free infinite resources to the individual so that they could cultivate manufacturing value from a small space. I wanted these individuals who struggle competing with large companies to have more power. I am no enemy of large companies becasue I offer them the same resource but I am trying to change the dynamic. I want to connect people of all industries. I want more competition but I also want more cooperation.
 
 ## Overview
 
-It is difficult to explain the full scope of this packages capabilities (both current and intended) but this overview paints a fairly simple picture of the general process a user may adopt. 
+It is difficult to describe the full scope of features (both current and intended) but this overview paints a simple picture of the general process a user may adopt. 
 
 ### Program some code
 
@@ -120,11 +156,11 @@ workspace.run(chamber_assembly, Coordinates(0,1,[0,0,0],[0,0,0],[0,0,0],[0,0,0])
 
 ### Simulate assembly
 
-Once this script is run, it will generate a workspace directory with generated scad source code files. These files build a hierarchical stucture for defining the overall assembly. This breaks things into steps with no specific order. These files are marked with an 'A' or a 'P' at the beginning of thier hash in the file name to signify an assembly or a hardware part respectivly. This code is used to render stl files and then import them into an assembly hierarchy which can be simulated from any point in the assembly. Just click on intended assembly .scad file.
+Once the script is run, it will generate a workspace directory with generated scad source code files. These files build a hierarchical stucture for defining the overall assembly. This breaks things into steps with no specific order in the current implementation. These files are marked with an 'A' or a 'P' at the beginning of thier hash in the file name to signify an assembly or a hardware part respectivly. This code is used to render .stl files and then import them into an assembly hierarchy which can be simulated from any point in the assembly. Just click on intended assembly .scad file. Additionally the hashes are predictable in the sense that the simulation may be re run without canceling the openscad IDE or animation.
 
 ![Alt Text](resources/utility_box.gif)
 
-This example gives users the resources to construct a simple box. This example utilizes the CUBX0177 family and the mupy.core library. For this script, modular principles are employed however generally speaking system codes only fit with other certain system codes. In the case of the CUBX0177 family the first five elements composing the system code strings should be synchronized for modularity to be possible. Keep in mind that every type code has its own rules that it must follow and in some cases specific parameterization choices will override other intended features. In other cases the systems codes won't even be meaningful geometrically unless the libraries have built in their own boundary conditions to keep certain codes un-renderable.
+This example gives users the resources to construct a simple box. This example utilizes the CUBX0177 family and the mupy.core library. For this script, modular principles are employed however generally speaking system-codes only interlock with other certain system-codes. In the case of the CUBX0177 family the first five elements composing the system code strings should be synchronized for modularity to be possible. Keep in mind that every type-code has its own rules that it must follow and in some cases specific parameterization choices will override other intended features. In other cases the systems-codes won't even be meaningful geometrically unless the libraries have built in their own boundary-conditions to keep certain codes un-renderable.
 
 ### Print Parts
 
@@ -137,33 +173,42 @@ Depending on the part, you may need to clean it for it to be functionable. This 
 
 So this is the fun part. You assemble the printed parts and make sure they fit all together. Good Luck!
 
+### Optimize Assembly/Script
 
-## Note from the developer
+This is a great way to think about why one might employ mupy scripting tools. Imagine having avaoilable some well designed but unoptimized assembled part, system or tech and some corresponding script to reflect it's digital twin available. The basic idea is that this resource would allow the user to make programmatic modifications within the simulation enviornment and render resources, code and metadata accordingly in an instant. This will in turn support the continued evolution of the project without risking costly materials. Once optimized, the script becomes meaningful and powerful and valuable. This person would then have the right to sell this intelectual property at whatever price they see fit. This efficiency is then further multiplied if the knowledge is transered digitally, decoded and manufacrtured remotely. Also the belief is that this enviornment will support commerce and reducinOnce a designer optimizes thier design or prodecut then it can be tranfered digitally withT all possible information regarding it's operation and assembly and manufacturing within reasonable limits. Additionally this information may 
 
-Let me be the first to say that this system is rudimentary, crude, over-engineered in some aspects while under-engineered in others. It's littered with innefficiencies and design principle violations but despite all this it is extremely powerful in the right hands. The intentions behind this system are difficult to explain but in the most basic sense I needed a tool that could handle higher order levels of design, complexity, size and control in all aspects in the domain of science, engineering, manufacturing, design and distribution. It will make more sense once you use it. Good luck.
+### Transfer knowlegde in a capacity that sutainstains growth and commerce.
+
+What, you think this is a hobby. I got people to feed.
+
+### Certify Assembly/Script (Optional)
+The whole point of mupy is to script hardware and assemblies using system codes but what if the entire script could be cast as one. Let that sink in and call me when you start to freak out k...
 
 ## Main Points
 A collection or list of quick concepts, items and keywords which give an overview of whats mupy is all about.
 
 ### What is it?
 
-Originally this project could of been thought of as an attempt to create a physical analogy to a software programming language ; a hardware assembly language, and it was treated as such for a time but eventually as even more abstractions and degrees of freedom were built in the hardware assembly language interpretation became not entirely appropriate. Upon further realizations about the nature about manufacturing and development set in, new concepts and tools to make eveything work. Additionally since openscad is an intimidating language due to the requirements of mathematics and programming knowledge it is not unreasonable to expect that it's popularity would not be matched by it's power so it made sense to build a system that would extend it's capability to others. It's best to think of mupy as a
+Originally mu could of been thought of as an attempt to devise a physical analogy to a software-programming language. The mu project was in past considered a hardware-assembly language but this interpretation became not entirely appropriate upon further realizations concerning the nature of manufacturing and development. Some additional context, the mu project started off as an internal utility ( a bag of scripts really ) to a small but growing research and development operation. This operation was tasked with developing utility and recreational grade hardware tha featured advanced modular properties. This operation utilized a linux-openscad-python enviornment. Additioanlly there existed a 3D-Print and Assembly sub operation which gave even greater insight to the development of mupy. mupy is many things, you may think of it as :
 
 - Creation Engine
 
 - Knowledge Transfer Mechanism
 
-- Supply Chain Mechanism
+- Cloneable Supply Chain Asset
 
 - Compression Algorithm
 
 - Decentralized Innovation Utility
 
-- 3D Part Generator & Library
+- Hardware Generator
 
-- Applications-Programming & Command-Line Interface
+- Applications-Programming Interface ( CLI Included )
 
-- Horizontal abstraction library for openscad programming
+- Openscad Horizontal Abstraction Layer & Formalism
+
+
+This all sound very complicated but in truth it is very very simple. Itjust has no form like anything else and you must use it to undertand like anything else new.
 
 ### How do I use mupy?
 
@@ -224,26 +269,6 @@ There are two main interfaces for mupy, a command line interface (CLI) and an ap
     - General purpose utility for many research and development needs.
 
 
-### What are the goals of mupy
-mupy looks to solve problems, not assert compliance to it's users so consider that it exists in the form as a well organized implementation (through multiple iterations of rewrite) of a script vault which is contained with functions that handle some specific use-case problem set. mupy in its current form is in it's infancy and littered with limitations which are hard to overcome without a community. In its current form it is tailored to 3D printers due to the 
-
-- Minimize development & manufacturing time
-
-- Minimize development & manufacturing cost
-
-- Minimize development & manufacturing risk
-
-- Minimize development & manufacturing energy
-
-- Maximize development & manufacturing output
-
-- Maximize development & manufacturing value
-
-- Maximize development & manufacturing predictability
-
-- Maximize development & manufacturing potential
-
-
 # Installation
 
 If you are a 3D printer enthusiast, wood worker, developer, artist, inventor, entrepreneur looking for an internal utility to manage your projects then mupy is for you.
@@ -278,8 +303,9 @@ $ sudo apt-get install git
 ```console
 $ pip3 install mupy
 ```
-
+<!--
 ## MacOS Installation
+
 * There are non-trivial issues associated with this installation. MacOS makes it very difficult to install openscad on certain versions such as Montery, because of verification protocols implemented by apple. This is unfortuneate because at this time mupy essentially wries scad code but requires an instance of the installation to function. My apologies.
 ### Prerequisites
 Open the MacOS terminal and run the following commands:
@@ -358,7 +384,7 @@ $ docker run -i mu:latest
 ```console
 $ docker exec -it mu:latest /bin/bash
 ```
-
+-->
     
 # Getting Started
 
@@ -584,7 +610,7 @@ workspace.run(system_assembly_1, mu.Coordinates(0,1,[0,0,0],[0,0,0],[0,0,0],[0,0
 ![Alt Text](resources/double_box.gif)
 
 # Generating Output
-Upon pressing 'enter' by the mucli command line tool or running a workspace with workspace.run() inside a scipt will generate a workspace directory an this will be the entry-point for your IP.
+Upon pressing 'enter' within the mucli command line tool or running a project script with workspace.run() mupy will generate a workspace directory and this will represent the path containing your IP.
 
 ## Generated Workspace Directory
         .
@@ -628,13 +654,13 @@ $ openscad box_assembly_A1cfc7f.scad
 ```
 
 ### Animations
- In the openscad IDE, form the toolbar select View -> Animate and under the main view some animation inputs will appear. Select a frame rate and step count to run animation.
+From the openscad IDE toolbar select View -> Animate.  Under the main view some animation text field inputs will appear. Select a frame rate and step count to run animation. These numbers will influence the evolution of the value of the special global time variable denoted by $t ( 0 ≤ $t ≤ 1 ) recognized by openscad and generated by mupy. This will in turn drive the animations. 
 
 ### Generating Gifs
 I use a utility called ImageMagick and you can learn more about it from Bryan Duxbury's Blog at https://bryanduxbury.com/2014/01/16/creating-animated-gifs-from-openscad/. 
 
 ### Modifying generated code
-Feel free to modify any scad code for whatever reason you see fit (typically position, angle orother  parameterization) since it is easy enough to regenerate. Keep in mind that the hashes in the filename(s) will change.
+Feel free to modify any scad-code for whatever reason you see fit (typically position, angle or other parameterization) since it is easy enough to regenerate but it is often not nessecary becasue you can do the same from mupy. Keep in mind that these hashes are predicable becasue they are derived from system codes and names which if do not change, will not affect the change the hash.
 
 # 3D Printing
 
@@ -678,7 +704,7 @@ A workspace is essentially a directory structure or environment to place hardwar
   - 3D Workbench.
 
 ### Hardware
-Hardware objects are the primary mechanism for introducing system-codes into the scripting environment.
+Hardware objects are the primary agents or mechanism for introducing system-codes into the scripting environment. These hardware objects may also call 3D renderings (.stl files) from local or remote URL adderess in place of the system-codes if desired. It is important to note here that if one is uninterestedin system-code technology then mupy still expressses great utility to user becasue simulation,operation and assembly and certification is still posssible through these features.
 
 ### Coordinates
 In an assembly generally speaking, there needs to exist initial and final coordinates in 3D space within a certain time quantum since the assembly will exist as a hierarchical structure and will need to be organized down into multiple time domains. Keep in mind that multiple assemblies can exist in a single time quantum but not if they ever involve the same part.
@@ -691,21 +717,25 @@ Additionally the assembly object was chosen as the primary mechanism for impleme
 
 
 ## System Codes
-So the whole idea behind a system-code was that it was this thing which would theoretically speed up precision development and deployment in the fastest way deemed conceivable within set requirements. Consider the engineer who wishes to design something and prototype it fast. Instead of employing the usual methods, they can save a great deal of time by programming it into a string ( 16 - 200 characters if we are being conservative ). Ok, ok, ok... its not that simple of-course, the library would need to be authored and certified first and the hard work has arguably already been done at that point however the system-code offers many permutations which have not of been tested before. But what is a system-code?
-A system-code is a finite, often short-string representation of a physical part, machine or structure ; anything in principle really. It is technically a seed for the creation of a digital-twin representation of that physical 'system' (generally speaking ; a part, machine or structure or anything deserving of a system-code) and all the information regarding it's operation, assembly, manufacturing, cost and material characteristics to any arbitrary degree of complexity (digital twin exists as a python class object). Moreover tools exist to keep these string representations short and organized within their countless permutations set. Additionally system-codes serve as a name or identifier without physical uniqueness and human readability features keeping things intuitive. A system-code can also be thought of as something which generates resources and metadata that help users manufacture said system at reduced cost. These resources include CAD files and annotated openscad source code directories containing assembly and operational animation routines which help users record and transmit and intepret complex manufacturing and assembly information.
+
+The special strings known as system-codes are probably the most important features to be dispensed by the mu technology but what are they exactly? The whole idea behind a system-code was that it was a string which represented a specific part, assembly, technology or most generally speaking, a system. It could be thought of as a seed which carried information regarding some system's geometry, operation, assembly, dissasembly and meta-data. A system-code decoding could be perfomred using mupy ; mupy generates a digital-twin representation of some system from it's corresponding syste-code and the resources for manufacturing or assembling it.
+
+Consider every single hardware element one might find in a hardware store and consider every meaningful aspect of that part being something with could be subject to variance like say the distance of a punched out hole in a bracket from it's edge for a screw to slide through and fasten with and the radius of said hole  and the length of the edge of the bracket for example and consider that the person who authored such a part or piece of hardware did so with code and did so with meaningful intention and parametrization such that if someone else wanted to commit thier own configurations. Now consider that there existed parts which you could not find at a hardware store also, like a guitar or beauty products and consider all the pssible permutations there might exist and consider all the things that have never been invented yet but might be. Now consider how one might identify in a human-readable, meaningful, part-like or serial-code like way, a part or hardware geometry with such vast permutation sets and containing it in a short string.
+
 
 ### Properties
 
-
-- Schema-less : Individual system-codes only are required to share the same schema with system-codes that belong to the same type code.
-- Seed-like : system-coded serve as a seed which when processed by mupy.core produces a digital-twin class object which is responsible for the generated code and renderings.
+- Follows general schema : <Family-Code>-<Type-Code>-<Param-Code>
+- Human decipherable
+- Identifies Geometry/Part/Hardware/Assembly/System
+- System-Seed
+- Encodable/Decodable
+- Schema-less : Each <Family-Code>-<Type-Code> permutation dictates it's own rules.
 - Constituent-Codes:
 
-    - family-code : Serves as a name-space code. 
-    - type-code : Serves as a name-space code.
-    - parametrization-code : Serves as the inputs which tune the values the hardware .
-    - manufacturing-code : Serves as a name-space code. (Not yet implemented)
-    - material-code : Describes Material. (Not yet implemented)
+    - family-code : Serves as a name-space code. Ussually parts of the same style or shared functions belong to it.
+    - type-code : Identifies a part without specifying parameters. What makes something a different type or family is for the author to decide.
+    - parametrization-code : Stores information describing the input parameters of a system.
 
 
 ## Family Codes
@@ -736,68 +766,32 @@ Schemas reference the pattern the system codes obey when storing parametrization
 ## Road-map
 
 ### Build a community
-This kind of thing wont go far without a community. This community would provide real goals, like real projects that can help or train us and mupy or some successor technology to do bigger and better things that could handle infrastructure or high-power innovation. I know it sounds crazy but why not. Lets build a space ship or something. The community may identify worthwhile proposals for features. Consider that the scripting interface makes it easier for people and teams to coordinate larger projects using a version control system like github.
+This kind of technology cannot grow without a community. The expectation is that this community would provide real visions, real milestones and real goals which are tangleble and linkable to other projects being developed at the same time by the same community. This is to say I imagine a coordinated machine of innovation rapidly accellerating until the most beautiful system-codes are devised and we are all in space with pretty fusion engines. I know it sounds crazy but why the hell not. Lets build a space-ship or something. The point is that the community may identify worthwhile proposals for features. Consider that the scripting interface makes it much easier for people and organizations to coordinate larger projects and integrate other technologies using a version control systems like github. Things a community may do :
 
-### Redesign model (perhaps in a different language)
-All programming all starts with a model. The more efficient the model the more efficient the programming.Every time you rebuild a system from the ground up the developers identify deeper problems which when solved leads to more efficiency. This creates more automation power and longevity. It also keeps the programmers sharp.
-
-### More family codes
-More family codes means more parts to print or more possible things to assemble. This has an exponential effect. This will reinforce the integrity of mupy and the likelihood to attract users. Additionally we want to add constraints that keep certified families clean of defunct parts which should not or could not be printed.
-
-### More scripts codes
-We need people to request like inventions or something with an emphasis on modular development so that we can assemble advanced systems together. Coordination will need to be had and this means people taking leadership.
-
-### Design a package manager
-This is essential. While from the point of view of python itself, mupy could effectivly created packages on it's own with mupy nstalled and for now it is the best we have but eventually it would be extremely beneficial to write mupy scripts which assembly and operational animations built in that are themselves callable as a system-codes. This would give a higher level of abstraction to the creations of the community. It also serves as an additional compression layer saying memory for temporary comute time. 
-
-### Implement name spaces
-It is unclear if family codes serve as name spaces but these are essentially needed for implementing some kind of package manager application.
-### Implement manufacturing codes
-
-### Implement Material codes
-It is important to eventually provide a space for information regarding se part and the material it is created from. In the future mupy will attempt to cover more manufacturing methods other than 3D printing.
-### Integrating technologies
-
-
-
-
-### Implement a package manager with authentication
-This would represent a better system for managing community-authored-systems. Additionally this would make upy more efficient as well as do a better job to make it more useful for the community.
-
-### Create a community goals / wish list
-Lets design a nuclear spacecraft together! Even if we fail imagine what we learn or accomplish on the way! The requirements of such a goal would make mupy very powerful if it were designed to handle those requirements.
+- Cultivate Design Wishlist
+- Gather Requirements
+- Stand Up Massive Scale Decentralized Projects
+- Stand Up Markets
+- Devise canonacle formalisms to strengthen the technology
+  
+### Author More System-Code Libraries
+More family codes means more parts to print or more possible things to assemble. This has an exponential effect. This will reinforce the integrity of mupy and the likelihood to attract users. Additionally we want to add constraints that keep certified families clean of defunct parts which should not or could not be printed. 
 
 ### Automated certification routines
-
-This particular function is the golden function which would render this project truly powerful. Automated certification makes reference to the automation of a family code being injected into mupy. This function is desired for several reasons;
-
-  - Family codes themselves are valuable, for each family code hat exists there exists anywhere from millions to quadrillions of permutations of renderings provided by mupy.
-  - Scripted assemblies, if parameterized can be certified and this would make any scripted 1000 times as productive.
-  - Encoding routines are automatically integrated into terminal.
-  - New scad libraries could be integrated.
-  - Makes name-space type 
+This feature would be very powerful. Not yet complete. Certification is a non-trivial yet predictable operation. No one is even close to needing this feature yet. Few would be this advanced.
 
 ## Contributing
 
-Currently the best form of contribution would be to play offer suggestions for improvement or they could develop scripts to be certified or open scad code to be certified (manually).
+Currently the simplest form of contribution would be to star the repository or attempt to use the system for real development. Below are some more specific suggestions :
 
-### Project Identification
-Currently this is the most valuable and important top priority (ongoing) task. This is not a programming or technology task rather it is a task for the visionary or the philosopher but it's the hardest job of all. Where this task fails or succeeds cascades to all other aspects of entire system. This is even more important than the functions or the algorithms which constitute mupy because the algorithms are derived from requirements which are derived from goals but only the greatest but possible goals are worth pursuing because other boons are are found along the way. We need these people to identify what we must build. I am not referring to the sub-components of some bigger system because those developments can be derived from the greater requirements which may exists from the greater requirements. 
+### Requirements Gathering
+People should identify things to be built. Take note every time this happens, new family codes become realized or identified and need to be authored and certified but this is ok. This is how libraries are born : requirements. After all nessecity is the mother of all invention. Chances are I can help with building some of the hardware libraries if your serious.
 
-### Part Identification
-This is similar to the previous except ona primitive scale. So If a project is identified then a new modular family in most cases will be developed to fulfill some requirements fro a design.
-
-### Script Vault
-The more systems that are built the better, more they are parameterized and modular the better although that is no requirement. This will make the technology stronger and more useful.
-
-### Improvements and additions to hardware library.
-The standard library of parts should be developed more and more over time because these represent the primitive parts which make up the scripted-systems. The are also represented by system-codes but they themselves do not really represent systems so much except in the general sense. More libraries will make the system stronger in time but I would recommend to only design hardware that has been identified as a requirement in a larger system.
+### Building New Libraries
+Currently mupy only has a standard library which can be modified manually but in time we will implement features which allow new remote libraries to be accessed too.
 
 ### Improvements to mu command-line-tool
-Currently the command line tool is extremely crude. The reasons for this are vast but I typically build command line tools in my projects to illustrate basic functionality and prototyping. The mucli tool is no different except that I really like it's overall form in principle. The idea of just typing in  a code to get quick resources is really cool and useful.
-
-### mupy.core
-mupy.core should be rebuilt in a couple years after user feedback has been processed and a team is ready to develop.
+Currently the command line tool is extremely crude. The reasons for this are non-interesting but I typically build command line tools in my projects to illustrate basic functionality and prototyping. The mucli tool is no different except that I really like it's overall form in principle. The idea of just typing in a system-code to get quick resources is really cool and useful to me. I needs to be better and this is just a whole bag of things too complicated to mention. Im sure others have done this before.
 
 ## Licensing Structure
 All subdirectories which contain a license will be represented by that license. This is always a subdirectory representing a family code or namespace. In this way mupy can be thought of as an abstraction that makes efficient calls to some library which may contain a drifferent liscens. Additionally one could protect a library with authentication / prmissions systems. 
@@ -810,24 +804,31 @@ Individual hardware families are guided by their own license agreements. Each ha
 
 ## FAQ
 
-### Why should I download mucli
-If you have a 3D printer it is an absolute must! You can print really great parts.
+### Why should I install mupy
+If you own a 3D printer or CNC equiptment then you would have acess to parts which you could manufacture for free. The standard library is populated with some useful hardware elements.
+  - Print toys for your kids.
+  - Repair custom equiptment on the cheap
+  - Design stuff and build your own libraries
+  - Simulate assemblies
+  - Integrate with other technologies such as artificial intellegenceor videogames
+  - Develop mupy itself
 
 ### How many system-codes are available?
-Incalculable, since the family codes define their own rules, it is difficult to measure the permutation count of parts. Currently in mupys infancy there are over a quadrillion parts. 
+The available system-code permutation set is an incalculable number and is believed to be on the order of order of quintillions of quintillions of quintillions of parts built just by myself however the assembly technology and the ability to cast or map assembly-sets to systemm-code-sets easily diverges this number to infinity. It really depends on the users themselves. My personal two-cents ; dont focus on all the possible assemblies, rather focus on getting the sub-assemblies and parts required to assemble the best system-code-set.
 
 ### Is it free?
 Yes! but only the core technology is free, the various family code libraries which should each contain their own license which states the conditions for use. In most cases it is free to use but read the license always.
 
 ### Does mupy replace CAD?
-Absolutely not, mupy is it's own thing. In some cases it may reduce the hours spent on CAD for people and in other cases it may increase the time people spend. In the future I could see CAD applications integrating a mucli-like application utilities into it to get the best of both worlds.
+Absolutely not, mupy is it's own thing and solves different problems. In some cases it may reduce or replace the hours spent using CAD and in other cases it may increase the time people spend. If used in conjunction, you may get an optimized effect depending on your work. CAD simply doesnt provide system-code technology; this much is true. CAD however is optimized, mupy is rudimetry. Apples and oranges, but I like fruit salad anyways. Additionally the simulation enviornment is far far more intuitve and can be automated by scripts. CAD doesnt do that. The mechanical engineer may appreciate mupy and the programmer will never know CAD existed but the libraries will need to expand beyond the standard set I provided for this to become true.
 
 ## Contacts:
 
-| Project Team          | Email                          |
-| --------------------- | ------------------------------ |
-| Michael C Ryan        | spacetime.engineer@gmail.com   |
-
+| Company             | Project Team          | Role           | Email                          |
+|-------------------- | --------------------- | -------------- | ------------------------------ |
+| Ryan Solutions Inc. | Michael C Ryan        | Lead Developer | spacetime.engineer@gmail.com   |
+| Ryan Solutions Inc. | Shonna M Ryan         | Editor         | mcgrailpr@gmail.com   |
+  
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 

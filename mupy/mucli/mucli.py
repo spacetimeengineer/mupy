@@ -11,7 +11,8 @@ from mupy.hardware import Hardware
 from pathlib import Path
 
 def encoding_session():
-
+    """_summary_
+    """
     enter_a_number_branch = InputBranch("Enter a number from 1 to 10")
     CUBX0177_BP_input = SelectionBranch("Select adaptive geometry.")
     CUBX0177_BP_input.options.append(["1", "BEAR", "Bearing Array", exit])

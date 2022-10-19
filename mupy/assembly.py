@@ -11,7 +11,12 @@ class Assembly:
     """
     
     def __init__(self, name, system_code = None):
-        """Runs at object creation."""
+        """Runs at object creation.
+
+        Args:
+            name (_type_): _description_
+            system_code (_type_, optional): _description_. Defaults to None.
+        """        
 
         self.name = name # A name that associates with a part or assembly. it should be human readable and does not need to be unique.
         self.description = "no description" # A description of the object.
@@ -26,12 +31,15 @@ class Assembly:
         self.assembly_epoch = 0
 
     def assign_id(self):
-        """ Assigns an appropriate ID with required propertied; 
+        """Assigns an appropriate ID with required propertied; 
         1.) maintains uniuness using SHA hashing but is also 
         2.) alphabetic such that no numbers so that scad code can use it for module definitions and 
         3.) Contains a name string so that an aspect of ID is human readable.
         4.) Contains discernable information about weather it is a hardware or assembly object. (In this case the string 'A' or' H' is concated.)
-        """
+
+        Returns:
+            _type_: _description_
+        """        
         
         # TODO : Need to create a new hash source with the following properties :
         
@@ -44,22 +52,38 @@ class Assembly:
         return self.name+"_"+unrefined_hash[:7] # Returns assembly ID.
 
     def assign_parent_id(self):
-        """Empowers each child component a reference to its parent ID ; The ID of this class object."""
+        """Empowers each child component a reference to its parent ID ; The ID of this class object.
+        """  
+              
         for component in self.components: # For each component in the components of this assembly object.
             component.parent_id = self.id # Parent assembly assigns reference information about itself to it's children.
         pass
 
     def assign_coordinates_operand_id(self, coordinates):
-        """ Assigns coordinate object extra information about the part it operates on. This works by calling a hidden variable in the Coordinates object which expects this function.  """
+        """Assigns coordinate object extra information about the part it operates on. This works by calling a hidden variable in the Coordinates object which expects this function.
+
+        Args:
+            coordinates (_type_): _description_
+        """ 
+               
         coordinates.operand_id = self.id # Assigns an operand ID to the coordinate object.
 
     def assign_coordinates(self, coordinates): #
-        """ Adds another assembly epoche effectivly but it is on the user to utalize the $t time variable properly."""
+        """Adds another assembly epoche effectivly but it is on the user to utalize the $t time variable properly.
+
+        Args:
+            coordinates (_type_): _description_
+        """      
+          
         self.coordinate_superset.append(coordinates) # Adds a coordinate set to the coordinate superset. TODO : More needs to be done with the coordinate superset.
 
 
     def encapsulated_components_scad(self):
-        """ Returns scad code representations of parts which are encapsulated."""
+        """_summary_
+
+        Returns:
+            _type_: Returns scad code representations of parts which are encapsulated.
+        """        
         
         encapsulated_components_scad = "" # Declares scad code component.
         for component in self.components: # For each child component in this assembly object.
@@ -68,74 +92,150 @@ class Assembly:
 
 
     def assembly_scad(self):
-        """ Returns scad code representations of entire assembly."""
+        """_summary_
 
-        scad_code = '\n/* A module dedicated to this assembly. This module is only called once becasue it references the unique hardware assembly operation (In both real and virtual space) which only needs to be done once. \nThese components are themselves other hardware and assembly objects which carries both python3 and scad representation and eferences other files like these.*/\n'
+        Returns:
+            _type_:  Returns scad code representations of entire assembly.
+        """        
+
+
+        """ Viewport Special Variables """
+
+        scad_code = ""
+        scad_code = scad_code + "/* Viewport Global Variables */\n\n"
+        scad_code = scad_code + "//$vpr = [$t * 360, $t * 360, $t * 180]; // Viewport rotation angles in degrees. \n"
+        scad_code = scad_code + "//$vpt = [$t * 360, $t * 360, $t * 180]; // Viewport translation. \n"
+        scad_code = scad_code + "//$vpd = (1-$t)*4000;                    // Viewport camera distance. \n"
+        scad_code = scad_code + "//$vpf = $t;                             // Viewport camera field of view. \n"
+
+        """ Hardware Module Code """
+
+
+
+        scad_code = scad_code + '\n/* A module dedicated to this assembly. This module is only called once becasue it references the unique hardware assembly operation (In both real and virtual space) which only needs to be done once. \nThese components are themselves other hardware and assembly objects which carries both python3 and scad representation and eferences other files like these.*/\n'
         scad_code = scad_code + 'module '+str(self.id)+'()\n{\n' # Creates scad codestring to be placed in new file with a file name using the object identification code.
 
 
         if (len(self.coordinate_superset)==0): # If there is no coordinate set yet or at all assigned to this hardware object (digital-twin).
             self.assign_coordinates(Coordinates()) # Assign trivial coodinate set; unmoving and existing ($t) being equal from t0 = 0 to tf = 1 .
             
-
-            
         if (len(self.coordinate_superset)==1): # Here you need to add more coordinate sets sepending on choice of epochs.
             
-            
-            if (self.coordinate_superset[0].t0 > 0): # Here you need to add more coordinate sets sepending on choice of epochs.
-                t0 = self.coordinate_superset[0].t0  # Pu0ll from other coordinate information.
+            if (self.coordinate_superset[0].t0 > 0): # Here you need to add more coordinate sets depending on choice of epochs.
+                
+                t0 = self.coordinate_superset[0].t0  
+                
                 x0 = self.coordinate_superset[0].x0
                 y0 = self.coordinate_superset[0].y0
                 z0 = self.coordinate_superset[0].z0
                 a0 = self.coordinate_superset[0].a0
                 b0 = self.coordinate_superset[0].b0
                 c0 = self.coordinate_superset[0].c0
-                
-                self.assign_coordinates(Coordinates(t0 = 0, tf = t0, x0 = x0, y0 =  y0, z0 =  z0, xf = x0, yf =  y0, zf =  z0,  a0 = a0, b0 =  b0, c0 =  c0, af = a0, bf =  b0, cf =  c0))
-                
-            if (self.coordinate_superset[0].tf < 1): # Here you need to add more coordinate sets sepending on choice of epochs.
 
-                tf = self.coordinate_superset[0].tf  # Pu0ll from other coordinate information.
-                tf = self.coordinate_superset[0].tf  # Pu0ll from other coordinate information.
+                e0 = self.coordinate_superset[0].e0
+                f0 = self.coordinate_superset[0].f0
+                g0 = self.coordinate_superset[0].g0
+                u0 = self.coordinate_superset[0].u0
+                v0 = self.coordinate_superset[0].v0
+                w0 = self.coordinate_superset[0].w0
+                
+                self.assign_coordinates(Coordinates(t0 = 0, tf = t0, x0 = x0, y0 = y0, z0 = z0, xf = x0, yf = y0, zf = z0, a0 = a0, b0 = b0, c0 = c0, af = a0, bf = b0, cf = c0, e0 = e0, f0 = f0, g0 = g0, ef = e0, ff = f0, gf = g0, u0 = u0, v0 = v0, w0 = w0, uf = u0, vf = v0, wf = w0))
+                
+            if (self.coordinate_superset[0].tf < 1): # Here you need to add more coordinate sets depending on choice of epochs.
+
+                tf = self.coordinate_superset[0].tf  
+                
                 xf = self.coordinate_superset[0].xf
                 yf = self.coordinate_superset[0].yf
                 zf = self.coordinate_superset[0].zf
                 af = self.coordinate_superset[0].af
                 bf = self.coordinate_superset[0].bf
                 cf = self.coordinate_superset[0].cf
+            
+                ef = self.coordinate_superset[0].ef
+                ff = self.coordinate_superset[0].ff
+                gf = self.coordinate_superset[0].gf
+                uf = self.coordinate_superset[0].uf
+                vf = self.coordinate_superset[0].vf
+                wf = self.coordinate_superset[0].wf
                 
-                self.assign_coordinates(Coordinates(t0 = tf, tf = 1, x0 = xf, y0 =  yf, z0 =  zf, xf = xf, yf =  yf, zf =  zf,  a0 = af, b0 =  bf, c0 =  cf, af = af, bf =  bf, cf =  cf))
+                self.assign_coordinates(Coordinates(t0 = tf, tf = 1, x0 = xf, y0 = yf, z0 = zf, xf = xf, yf = yf, zf = zf, a0 = af, b0 = bf, c0 = cf, af = af, bf = bf, cf = cf, e0 = ef, f0 = ff, g0 = gf, ef = ef, ff = ff, gf = gf, u0 = uf, v0 = vf, w0 = wf, uf = uf, vf = vf, wf = wf))
 
 
         for coordinates in self.coordinate_superset: # For each coordinate set.
 
 
-            scad_code = scad_code + "    /* Animation */\n"
-
-            """This script is contains code which utilizes animation variables ; $t. Using basic linear equations, trajectories are plotted and used for operational and assembly simulations in 3D space."""
-
+            scad_code = scad_code + "    /* Animation Sequence*/\n"
             scad_code = scad_code + \
-                    '    if ($t >= '+str(coordinates.t0)+' && $t <= '+str(coordinates.tf)+')\n'\
-                    '    {\n'
-                    
-                    
-            scad_code = scad_code + "        /* Initialize initial and final position and orientation. These values may be modified for assembly purposes. */\n\n" 
+                    '  if ($t >= '+str(coordinates.t0)+' && $t <= '+str(coordinates.tf)+')\n'\
+                    '  {\n'      
+            scad_code = scad_code + "    /* Initialize initial and final position and orientation. These values may be modified for assembly purposes. */\n\n" 
+    
+            scad_code = scad_code + "        /* Assembly Type Spatial (along x,y,z axes) Coordinates */\n"
+            scad_code = scad_code + "        assembly_x_position_initial = "+str(coordinates.x0)+";    // Initial 'x' position ( in mm ).\n"
+            scad_code = scad_code + "        assembly_x_position_final = "+str(coordinates.xf)+";      // Final 'x' position ( in mm ).\n"
+            scad_code = scad_code + "        assembly_y_position_initial = "+str(coordinates.y0)+";    // Initial 'y' position ( in mm ).\n"
+            scad_code = scad_code + "        assembly_y_position_final = "+str(coordinates.yf)+";      // Final 'y' position ( in mm ).\n"
+            scad_code = scad_code + "        assembly_z_position_initial = "+str(coordinates.z0)+";    // Initial 'z' position ( in mm ).\n"
+            scad_code = scad_code + "        assembly_z_position_final = "+str(coordinates.zf)+";      // Final 'z' position ( in mm ).\n\n"
 
-            scad_code = scad_code + "        /* Position */\n"
-            scad_code = scad_code + "        x_position_initial = "+str(coordinates.x0)+";    // Initial 'x' position ( in mm ).\n"
-            scad_code = scad_code + "        x_position_final = "+str(coordinates.xf)+";      // Final 'x' position ( in mm ).\n"
-            scad_code = scad_code + "        y_position_initial = "+str(coordinates.y0)+";    // Initial 'y' position ( in mm ).\n"
-            scad_code = scad_code + "        y_position_final = "+str(coordinates.yf)+";      // Final 'y' position ( in mm ).\n"
-            scad_code = scad_code + "        z_position_initial = "+str(coordinates.z0)+";    // Initial 'z' position ( in mm ).\n"
-            scad_code = scad_code + "        z_position_final = "+str(coordinates.zf)+";      // Final 'z' position ( in mm ).\n\n"
+            scad_code = scad_code + "        /* Assembly Type Angular (about x,y,z axes) Coordinates */\n"
+            scad_code = scad_code + "        assembly_x_axis_angle_initial = "+str(coordinates.a0)+";  // Initial angle along the 'x' axis. ( in degrees ).\n"
+            scad_code = scad_code + "        assembly_x_axis_angle_final = "+str(coordinates.af)+";    // Final angle along the 'x' axis. ( in degrees ).\n"
+            scad_code = scad_code + "        assembly_y_axis_angle_initial = "+str(coordinates.b0)+";  // Initial angle along the 'y' axis. ( in degrees ).\n"
+            scad_code = scad_code + "        assembly_y_axis_angle_final = "+str(coordinates.bf)+";    // Final angle along the the 'z' axis. ( in degrees ).\n"
+            scad_code = scad_code + "        assembly_z_axis_angle_initial = "+str(coordinates.c0)+";  // Final angle along the the 'z' axis. ( in degrees ).\n"
+            scad_code = scad_code + "        assembly_z_axis_angle_final = "+str(coordinates.cf)+";    // Final angle along the 'z' axis. ( in degrees ).\n\n"
+            
+            scad_code = scad_code + "        /* Operational Type Spatial (along x,y,z axes) Coordinates */\n"
+            scad_code = scad_code + "        operational_x_position_initial = "+str(coordinates.e0)+";    // Initial 'x' position ( in mm ).\n"
+            scad_code = scad_code + "        operational_x_position_final = "+str(coordinates.ef)+";      // Final 'x' position ( in mm ).\n"
+            scad_code = scad_code + "        operational_y_position_initial = "+str(coordinates.f0)+";    // Initial 'y' position ( in mm ).\n"
+            scad_code = scad_code + "        operational_y_position_final = "+str(coordinates.ff)+";      // Final 'y' position ( in mm ).\n"
+            scad_code = scad_code + "        operational_z_position_initial = "+str(coordinates.g0)+";    // Initial 'z' position ( in mm ).\n"
+            scad_code = scad_code + "        operational_z_position_final = "+str(coordinates.gf)+";      // Final 'z' position ( in mm ).\n\n"
 
-            scad_code = scad_code + "        /* Orientation */\n"
-            scad_code = scad_code + "        x_axis_angle_initial = "+str(coordinates.a0)+";  // Initial angle along the 'x' axis. ( in degrees ).\n"
-            scad_code = scad_code + "        x_axis_angle_final = "+str(coordinates.af)+";    // Final angle along the 'x' axis. ( in degrees ).\n"
-            scad_code = scad_code + "        y_axis_angle_initial = "+str(coordinates.b0)+";  // Initial angle along the 'y' axis. ( in degrees ).\n"
-            scad_code = scad_code + "        y_axis_angle_final = "+str(coordinates.bf)+";    // Final angle along the the 'z' axis. ( in degrees ).\n"
-            scad_code = scad_code + "        z_axis_angle_initial = "+str(coordinates.c0)+";    // Final angle along the the 'z' axis. ( in degrees ).\n"
-            scad_code = scad_code + "        z_axis_angle_final = "+str(coordinates.cf)+";    // Final angle along the 'z' axis. ( in degrees ).\n\n"
+            scad_code = scad_code + "        /* Operational Type Angular (about x,y,z axes) Coordinates */\n"
+            scad_code = scad_code + "        operational_x_axis_angle_initial = "+str(coordinates.u0)+";  // Initial angle along the 'x' axis. ( in degrees ).\n"
+            scad_code = scad_code + "        operational_x_axis_angle_final = "+str(coordinates.uf)+";    // Final angle along the 'x' axis. ( in degrees ).\n"
+            scad_code = scad_code + "        operational_y_axis_angle_initial = "+str(coordinates.v0)+";  // Initial angle along the 'y' axis. ( in degrees ).\n"
+            scad_code = scad_code + "        operational_y_axis_angle_final = "+str(coordinates.vf)+";    // Final angle along the the 'z' axis. ( in degrees ).\n"
+            scad_code = scad_code + "        operational_z_axis_angle_initial = "+str(coordinates.w0)+";  // Final angle along the the 'z' axis. ( in degrees ).\n"
+            scad_code = scad_code + "        operational_z_axis_angle_final = "+str(coordinates.wf)+";    // Final angle along the 'z' axis. ( in degrees ).\n\n"
+            
+            scad_code = scad_code + "        /* Assembly Type Spatial (along x,y,z axes) Coordinates Substitution*/\n"
+            scad_code = scad_code + "        x0 = assembly_x_position_initial;       // Substitution for a readability and a shorter equation.\n"
+            scad_code = scad_code + "        xf = assembly_x_position_final;         // Substitution for a readability and a shorter equation.\n"
+            scad_code = scad_code + "        y0 = assembly_y_position_initial;       // Substitution for a readability and a shorter equation.\n"
+            scad_code = scad_code + "        yf = assembly_y_position_final;         // Substitution for a readability and a shorter equation.\n"
+            scad_code = scad_code + "        z0 = assembly_z_position_initial;       // Substitution for a readability and a shorter equation.\n"
+            scad_code = scad_code + "        zf = assembly_z_position_final;         // Substitution for a readability and a shorter equation.\n\n"
+
+            scad_code = scad_code + "        /* Assembly Type Angular (about x,y,z axes) Coordinates Substitution*/\n"
+            scad_code = scad_code + "        a0 = assembly_x_axis_angle_initial;     // Substitution for a readability and a shorter equation.\n"
+            scad_code = scad_code + "        af = assembly_x_axis_angle_final;       // Substitution for a readability and a shorter equation.\n"
+            scad_code = scad_code + "        b0 = assembly_y_axis_angle_initial;     // Substitution for a readability and a shorter equation.\n"
+            scad_code = scad_code + "        bf = assembly_y_axis_angle_final;       // Substitution for a readability and a shorter equation.\n"
+            scad_code = scad_code + "        c0 = assembly_z_axis_angle_initial;     // Substitution for a readability and a shorter equation.\n"
+            scad_code = scad_code + "        cf = assembly_z_axis_angle_final;       // Substitution for a readability and a shorter equation.\n\n"
+            
+            scad_code = scad_code + "        /* Operational Type Spatial (along x,y,z axes) Coordinates Substitution*/\n"
+            scad_code = scad_code + "        e0 = operational_x_position_initial;    // Substitution for a readability and a shorter equation.\n"
+            scad_code = scad_code + "        ef = operational_x_position_final;      // Substitution for a readability and a shorter equation.\n"
+            scad_code = scad_code + "        f0 = operational_y_position_initial;    // Substitution for a readability and a shorter equation.\n"
+            scad_code = scad_code + "        ff = operational_y_position_final;      // Substitution for a readability and a shorter equation.\n"
+            scad_code = scad_code + "        g0 = operational_z_position_initial;    // Substitution for a readability and a shorter equation.\n"
+            scad_code = scad_code + "        gf = operational_z_position_final;      // Substitution for a readability and a shorter equation.\n\n"
+
+            scad_code = scad_code + "        /* Operational Type Angular (about x,y,z axes) Coordinates Substitution*/\n"
+            scad_code = scad_code + "        u0 = operational_x_axis_angle_initial;  // Substitution for a readability and a shorter equation.\n"
+            scad_code = scad_code + "        uf = operational_x_axis_angle_final;    // Substitution for a readability and a shorter equation.\n"
+            scad_code = scad_code + "        v0 = operational_y_axis_angle_initial;  // Substitution for a readability and a shorter equation.\n"
+            scad_code = scad_code + "        vf = operational_y_axis_angle_final;    // Substitution for a readability and a shorter equation.\n"
+            scad_code = scad_code + "        w0 = operational_z_axis_angle_initial;   // Substitution for a readability and a shorter equation.\n"
+            scad_code = scad_code + "        wf = operational_z_axis_angle_final;    // Substitution for a readability and a shorter equation.\n\n"
+            
+            scad_code = scad_code + "        /* Primary Equation */\n"
 
             if self.color == None:
                 scad_code = scad_code + \
@@ -155,8 +255,12 @@ class Assembly:
         return scad_code # Returns scad code as a string.
 
     def assemble(self, directory):
-        """ Writes scad file representations of parts and assemblys. This function is called in the generation function in the workspace object."""
+        """Writes scad file representations of parts and assemblys. This function is called in the generation function in the workspace object.
 
+        Args:
+            directory (_type_): _description_
+        """
+        
         if not os.path.exists(directory): # If directory does not exists.
             os.mkdir(directory) # Create directory for new objects.
     
@@ -171,8 +275,13 @@ class Assembly:
         scad_file.close() # Close scad file.
 
     def include(self, component, coordinates): # Includes parts or sub-assemblies with a coordinate set attached to reflect it's position within the assembly.
-        """ Includes parts or sub-assemblies with a coordinate set attached to reflect it's position within the assembly."""
+        """Includes parts or sub-assemblies with a coordinate set attached to reflect it's position within the assembly.
 
+        Args:
+            component (_type_): _description_
+            coordinates (_type_): _description_
+        """    
+            
         if (type(component).__name__ == "Hardware"): # If it is a part object.
             component.assign_coordinates(coordinates) # Add coordinates to component superset.
             component.parent_assembly_id = self.id

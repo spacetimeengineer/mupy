@@ -284,7 +284,6 @@ module CUBX0177_SPAN(block_length, shaft_radius, x_units, y_units, x_cavity_spac
 
 module CUBX0177_SPANS2(block_length, shaft_radius, x_units, y_units, x_cavity_spacing_1, y_cavity_spacing_1, x_cavity_units_1, y_cavity_units_1, x_offset_1, y_offset_1, x_cavity_dimensions_1, y_cavity_dimensions_1, z_cavity_dimensions_1, cavity_type_1, x_cavity_spacing_2, y_cavity_spacing_2, x_cavity_units_2, y_cavity_units_2, x_offset_2, y_offset_2, x_cavity_dimensions_2, y_cavity_dimensions_2, z_cavity_dimensions_2, cavity_type_2)
 {
-    echo();
     difference()
     {
 
@@ -431,6 +430,27 @@ module CUBX0177_AXLE( block_length, shaft_radius, axle_blocks )
     }
 }
 
+module CUBX0177_VANE( block_length, shaft_radius, x_units, y_units )
+{
+    translate([0*block_length, 0*block_length, 0*block_length]) { general_block(block_length + 0.01, shaft_radius ); }
+    translate([block_length*1, block_length*0, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
+    translate([block_length*1, block_length*-1, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
+    translate([block_length*-1, block_length*-1, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
+    translate([block_length*-1, block_length*1, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
+    translate([block_length*-1, block_length*0, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
+    translate([block_length*0, block_length*-1, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
+    translate([block_length*0, block_length*1, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
+    translate([block_length*1, block_length*1, block_length*0]) { general_block(block_length + 0.01, shaft_radius ); }
+}
+
+module CUBX0177_FOIL( block_length, shaft_radius, x_units, y_units, axle_blocks)
+{
+    translate([0*block_length, 0*block_length, 0*block_length]) { general_block(block_length + 0.01, shaft_radius ); }
+    CUBX0177_AXLE( block_length, shaft_radius, axle_blocks = axle_blocks );
+    translate([axle_blocks*block_length,0,0]) {CUBX0177_SPAN(block_length, shaft_radius, x_units = x_units, y_units = y_units, x_cavity_spacing = 0, y_cavity_spacing = 0, x_cavity_units = 0, y_cavity_units = 0 , x_offset = 0 , y_offset = 0, x_cavity_dimensions = 0, y_cavity_dimensions = 0 , z_cavity_dimensions = 0, cavity_type = "S"); }
+}
+
+
 module CUBX0177_SHAFT( block_length, shaft_radius, block_units_shaft_length, padding )
 {
     difference()
@@ -502,12 +522,19 @@ module CUBX0177_BPIN( block_length, shaft_radius, block_units_pin_length, pin_ra
     { 
         pin_length = block_length*block_units_pin_length;
         cylinder(h = pin_length, r1 = pin_radius, r2 = pin_radius, center = true);
+        
+    }
+    translate([0,0,shaft_radius+(block_length - 2*shaft_radius)/4])
+    {
+        cube([block_length, block_length, (block_length - 2*shaft_radius)/2],true);
     }
     
 }
 
 //CUBX0177_PIN( block_length = 7.5, shaft_radius = 2.25, block_units_pin_length = 4 );
-//CUBX0177_BPIN( block_length = 7.5, shaft_radius =  2.18, block_units_pin_length = 7, pin_radius = 1.20 );                                                                                                                                                                           // CUBX0177-PIN-B7P5SR2P22-PP32
+//CUBX0177_BPIN( block_length = 7.5, shaft_radius =  2.18, block_units_pin_length = 6.25, pin_radius = 1.20 );    
+//CUBX0177_BPIN( block_length = 7.5, shaft_radius =  2.18, block_units_pin_length = 10.25, pin_radius = 1.20 );  
+// CUBX0177-PIN-B7P5SR2P22-PP32
 //CUBX0177_SPAN( block_length = 7.5, shaft_radius = 2.18, xunits=9, yunits=9, x_spacing=2*7.5, y_spacing=2*7.5, x_units=4, y_units=4, x_offset=0, y_offset=0, x_cavity_dimensions=7.7, y_cavity_dimensions=7.7, z_cavity_dimensions=26, cavity_type="S");                             //  
 //CUBX0177_BPANS2( block_length = 7.5, shaft_radius = 2.18, 8, 8, 0.25, "regular", false, 0, 0, 1, 1, 0, 0, 4*7.5, 4*7.5, 6, "S", 0, 0, 1, 1, 0, 0, 16, 16, 15, "S");                                                                                                                 // CUBX0177-BPANS2-B7P5SR2P2-X8Y8PP25-RF-SX0Y0-X1Y1-XO0YO0-X30Y30Z6-S-SX0Y0-X1Y1-XO0YO0-X16Y16Z15-S
 //CUBX0177_BPANS2( block_length = 7.5, shaft_radius = 2.18, 12, 12, 0.25, "regular", false, 0, 0, 1, 1, 0, 0, 8*7.5, 8*7.5, 6, "S", 0, 0, 1, 1, 0, 0, 45, 45, 15, "S");                                                                                                               // CUBX0177-BPANS2-B7P5SR2P2-X8Y8PP25-RF-SX0Y0-X1Y1-XO0YO0-X60Y60Z6-S-SX0Y0-X1Y1-XO0YO0-X45Y45Z15-S
@@ -517,7 +544,24 @@ module CUBX0177_BPIN( block_length, shaft_radius, block_units_pin_length, pin_ra
 //CUBX0177_SPANS2( block_length = 7.5, shaft_radius = 2.18, 10, 10, 0, 0, 1, 1, 0, 0, 19, 19, 0.75, "C", 0, 0, 1, 1, 0, 0, 12, 12, 10, "S");                                                                                                                                          // CUBX0177-SPANS2-B7P5SR2P2-X10Y10-SX0Y0-X1Y1-XO0YO0-X19Y19Z0P75-C-SX0Y0-X1Y1-XO0YO0-X12Y12Z10-S
 //CUBX0177_SPANS2( block_length = 7.5, shaft_radius = 2.18, 6, 10, 0, 0, 1, 1, 0, 0, 19, 19, 0.75, "C", 0, 0, 1, 1, 0, 0, 12, 12, 10, "S");                                                                                                                                           // CUBX0177-SPANS2-B7P5SR2P2-X6Y10-SX0Y0-X1Y1-XO0YO0-X19Y19Z0P75-C-SX0Y0-X1Y1-XO0YO0-X12Y12Z10-S
 //CUBX0177_BPAN( block_length = 7.5, shaft_radius = 1, 8, 8, 0.21, "regular", false, 0, 0, 1, 1, 0, 0, 16, 16, 1.5, "C");                                                                                                                                                             // CUBX0177-BPAN-B7P5SR2P18-X8Y8PP12-RF-SX0Y0-X1Y1-XO0YO0-X16Y16Z10-C
+
+
+                                                                                                                                                                                                                                                                                      // 
+                                                                                                                                                                                                                                                                                      // CUBX0177-SPANS2-B7P5SR2P2-X6Y10-SX0Y0-X1Y1-XO0YO0-X19Y19Z0P75-C-SX0Y0-X1Y1-XO0YO0-X12Y12Z10-S
+
+
+                                                                                                                                                                                                                                                                                      // CUBX0177-SPANS2-B7P5SR2P2-X6Y10-SX0Y0-X1Y1-XO0YO0-X19Y19Z0P75-C-SX0Y0-X1Y1-XO0YO0-X12Y12Z10-S
 //CUBX0177_COUP( block_length = 7.5, shaft_radius = 2.18, block_units_shaft_length = 2, padding = 0.32, coupling_type = "S" );                                                                                                                                                        // CUBX0177-COUP-B7P5SR2P18-BUSL2PP32
 //CUBX0177_AXLE( block_length = 7.5, shaft_radius = 2.18, axle_blocks = 20);                                                                                                                                                                                                          // CUBX0177-AXLE-B7P5SR2P18-A8
 //CUBX0177_FYAD( block_length = 7.5, shaft_radius = 2.22 );                                                                                                                                                                                                                           // CUBX0177-FYAD-B7P5SR2P22
 //CUBX0177_AXAD( block_length = 7.5, shaft_radius = 2.25, padding = 0.35 );                                                                                                                                                                                                           // CUBX0177-AXAD-B7P5SR2P18-PP32
+
+
+
+
+
+
+
+
+// CUBX0177_VANE( block_length = 7.5, shaft_radius = 2.25, x_units = 5, y_units = 8 )
+CUBX0177_FOIL( block_length = 7.5, shaft_radius = 2.25, x_units = 6, y_units = 6, axle_blocks = 8 );

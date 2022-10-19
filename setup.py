@@ -4,7 +4,7 @@ from setuptools import find_packages, setup
 
 setup(
     name='mupy',
-    version='0.1.10',
+    version='0.1.12',
     author='Michael Cranston Ryan',
     package_data={'': ['*.scad']},
     include_package_data=True,

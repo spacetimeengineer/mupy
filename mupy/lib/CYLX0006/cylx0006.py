@@ -41,8 +41,8 @@ class CYLX0006:
             print("    Parameterization Information")
             print("")
             print("    length = "+self.length+"mm")
-            print("    outer radus = "+self.outer_radius+"mm")
-            print("    inner radus = "+self.inner_radius+"mm")
+            print("    outer radius = "+self.outer_radius+"mm")
+            print("    inner radius = "+self.inner_radius+"mm")
             print("")
             
             self.CYLX0006_PIP() # Writes function to scad file with parameters set.

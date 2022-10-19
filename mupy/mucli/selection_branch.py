@@ -1,17 +1,25 @@
 #!/usr/bin/env python3
 class SelectionBranch:
-
-    # Run at object creation.
+    """_summary_
+    """    
     def __init__(self, question):
+        """_summary_
 
+        Args:
+            question (_type_): _description_
+        """
         self.question = question
         self.options = []
 
     def pretty_print_options(self):
+        """_summary_
+        """        
         for option in self.options: # For each option stored in the object.
             print("  "+option[0]+"  -  "+option[1]+" : "+option[2])
 
     def run(self):
+        """_summary_
+        """        
         mu_symbol = '\u00B5'
         print("\n"+mu_symbol+":! "+self.question+"\n")
         if len(self.options) > 0:
