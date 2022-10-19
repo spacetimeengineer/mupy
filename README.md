@@ -50,12 +50,12 @@ Python manufacturing utility or mupy is an extremely powerful new digital-twin t
 ### powerful but rudimetry
 mupy is more powerful than you think, certainly more than you would believe but less than it could be. The package has grown too large for a single developer to responsibly maintain and there is still much to do. Dont get me wrong, I love to code and mupy works well, perhaps too well but it finnally meets all requirements from my perspective and there is little to do. The mu project had evolved through many interations of insight and usecase and the days of building things in a vacuum are behind me so I can only make trivial modifications from this point forward. This may not be the case forever but I need a dedicated community before I consider further contributions to be worth my while. I will continue developing scad libraries but these shall be limited to my own needs and requirements.
  
-### mupy was battle tested for years
+### battle tested
 mupy is a conglomeration of scripts that were rewritten many times over and organized and coordinated into a functiong system. 
 I have been developing it for years but utilizing it and employing it in my tool-set has been a very new exerience for me.
 More accuratly mupy was community-grade implementation of the tools I had been developing for my own R&D operation. 
 
-### On 3D Printers VS traditional
+### On 3D printers
 If you look at the cost/quantity curve for 3D printers vs other manufacturing methods you willnotice that 3D printers prestent a flat curve. 
 - How do you find parts to print?
 - How to design a part?
@@ -74,8 +74,12 @@ The mupy-core package is not without issues or inefficiencies and to make an ana
 
 I offer zero apologies for this reality. You want features go build it yourself.
 
-### mupy is the real mcoy
+### mupy as an tool of commerce
 I have been cultivating concern about the state of the world economy, education and manufacturing for some time. I wont get into the details regarding my personal feelings but after compiling these thoughts for years into the form of productive goals, I began to realize that I wanted to develop a super-utility which would provide free infinite resources to the individual so that they could cultivate manufacturing value from a small space. I wanted these individuals who struggle competing with large companies to have more power. I am no enemy of large companies becasue I offer them the same resource but I am trying to change the dynamic. I want to connect people of all industries. I want more competition but I also want more cooperation.
+
+### mupy is a proposal, mupy is a gift
+mupy is a tool which reflects how I would do things if I were in charge. What would I do? I would give the broader community the tools to build things powerful and advanced like spacecraft. I think the communnity could compete with any space company to build a spacecraft with mupy. These are my visions.
+
 
 ## Overview
 
