@@ -189,7 +189,7 @@ A collection or list of quick concepts, items and keywords which give an overvie
 
 ### What is it?
 
-Originally this project could of been thought of as an attempt to create a physical analogy to a software programming language ; a hardware assembly language, and it was treated as such for a time but eventually as even more abstractions and degrees of freedom were built in the hardware assembly language interpretation became not entirely appropriate. Upon further realizations about the nature about manufacturing and development set in, new concepts and tools to make eveything work. Additionally since openscad is an intimidating language due to the requirements of mathematics and programming knowledge it is not unreasonable to expect that it's popularity would not be matched by it's power so it made sense to build a system that would extend it's capability to others. It's best to think of mupy as a
+Originally mu could of been thought of as an attempt to devise a physical analogy to a software programming language ; a hardware assembly language but the interpretation became not entirely appropriate upon further realizations about the nature about manufacturing and development set in, new concepts and tools to make eveything work. Additionally since openscad is an intimidating language due to the requirements of mathematics and programming knowledge it is not unreasonable to expect that it's popularity would not be matched by it's power so it made sense to build a system that would extend it's capability to others. It's best to think of mupy as a
 
 - Creation Engine
 
