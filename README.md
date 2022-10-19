@@ -83,6 +83,9 @@ The mupy-core package is not without issues or inefficiencies and to make an ana
 
 I offer zero apologies for this reality. You want features go build it yourself. I love you.
 
+### mupy is the real mcoy
+I have been cultivating concern about the state of the world economy, education and manufacturing for some time. I wont get into the details regarding my personal feelings but after compiling these thoughts for years into the form of productive goals, I began to realize that I wanted to develop a super-utility which would provide free infinite resources to the individual so that they could cultivate manufacturing value from a small space. I wanted these individuals who struggle competing with large companies to have more power. I am no enemy of large companies becasue I offer them the same resource but I am trying to change the dynamic. I want to connect people of all industries. I want more competition but I also want more cooperation.
+
 ## Overview
 
 It is difficult to describe the full scope of features (both current and intended) but this overview paints a simple picture of the general process a user may adopt. 
