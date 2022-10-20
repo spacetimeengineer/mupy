@@ -56,6 +56,8 @@ I have been developing it for years but utilizing it and employing it in my tool
 More accuratly mupy was community-grade implementation of the tools I had been developing for my own R&D operation. 
 
 ### On 3D printers
+mupy was not specificly built for 3D printers but it was designed with 3D printers. Woodworking / CNC / Other manufacturing methods will not affect mupy operation since the assembly is not an integrated operation.
+
 If you look at the cost/quantity curve for 3D printers vs other manufacturing methods you willnotice that 3D printers prestent a flat curve. 
 - How do you find parts to print?
 - How to design a part?
