@@ -59,9 +59,8 @@ More accuratly mupy was community-grade implementation of the tools I had been d
 mupy was not specificly built for 3D printers but it was designed with 3D printers. Woodworking / CNC / Other manufacturing methods will not affect mupy operation since the assembly is not an integrated operation.
 
 If you look at the cost/quantity curve for 3D printers vs other manufacturing methods you willnotice that 3D printers prestent a flat curve. 
-- How do you find parts to print?
-- How to design a part?
-- The cost/
+- 3D printers are getting better.
+- 3D printers can be more compadible withmupy because small tweaks to the geometry of the part is trivial. 
 
 - It is a misconception that 3D printers are not worthy canidates for scale grade manufacturing its just that we have to not compare them to manufacturing systems which limit 
 
