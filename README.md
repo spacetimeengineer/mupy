@@ -48,8 +48,8 @@ Python manufacturing utility or mupy is a powerful new digital-twin technology i
 ## Note from the developer
 
 ### powerful but rudimetry
-mupy is more powerful than you think, certainly more than you would believe but less than it must. The package has grown too large for a single developer to responsibly maintain and there is still much that can be done as of now. The time has come for jusgment. mupy works well, perhaps too well and it finnally meets all requirements from my perspective. I need users before I can do anything else and I must assume that will never happen. I planned for this becasue mupyt was originally built for me. If these users never come, no problem. I will soley posess one of the greatest engineering assets in existence. Big talk I know, I know what good engineering looks like. The mu project had evolved through many interations of insight and usecase over six years. The days of building things in a vacuum are finally behind me so I can only make trivial modifications from this point forward. This may not be the case forever but I need a dedicated community before I consider further contributions to be worth my while. I will continue developing scad libraries but these shall be limited to my own needs and requirements.
- 
+mupy is more powerful than you think, certainly more than you would believe. The package has grown too large for a single developer to responsibly maintain and the time has come for community to make judgements since we are at a good stopping point. mupy works well, perhaps too well and it finally meets all requirements from my perspective. I just need users and feedback before I can build it up more. I will be employing mupy from this point fourth and I will dedicate my use-case to my own projects. 
+
 ### battle tested
 mupy is a conglomeration of scripts that were rewritten many times over and organized and coordinated into a functiong system. 
 I have been developing it for years but utilizing it and employing it in my tool-set has been a very new exerience for me.
