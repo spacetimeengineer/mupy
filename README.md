@@ -55,7 +55,7 @@ mupy is a conglomeration of scripts that were rewritten many times over and orga
 I have been developing it for years but utilizing it and employing it in my tool-set has been a very new exerience for me.
 More accuratly mupy was community-grade implementation of the tools I had been developing for my own R&D operation. 
 
-### On 3D printers
+### on 3D printers
 mupy was not specificly built for 3D printers but it was battle-tested using 3D printers. Weather it be Woodworking, casting, CNC or soome other manufacturing process, mupy does not care because it is abstracted away from the manufacturing process itself. It is merely a utility for supplying your desings to be manufactured. There are some things however about mupy that screams "Buy a 3D printer!"
 
 If you look at the cost/quantity curve for 3D printers vs other manufacturing methods you willnotice that 3D printers prestent a flat curve. 
@@ -64,7 +64,7 @@ If you look at the cost/quantity curve for 3D printers vs other manufacturing me
 - It is a misconception that 3D printers are not worthy canidates for scale grade manufacturing its just that we have to not compare them to manufacturing systems which limit 
 
 
-### caveats
+### mupy caveats
 The mupy-core package is not without issues or inefficiencies and to make an analogy regarding the circumstance, try to imagine the mu technology as a recipe and mupy as the cuisine implementation of the recipe one prepares but with using suboptimal or subsitution ingredients. Obviously this is not ideal but it works! Here are three glaring issues you should be aware of. They are more difficult to solve than you would probally realize. 
 
 - mupy is a package however an enviornment will be needed to utilize it; openscad will need to be installed (VSCode is also reccomended)
@@ -74,8 +74,10 @@ The mupy-core package is not without issues or inefficiencies and to make an ana
 
 I offer zero apologies for this reality. If you need features build them yourself. 
 
-### mupy as an tool of commerce
+### education, manufacturing & commerce
 I have been concerned about the state of the world economy, education and manufacturing for some time. I wont get into the details regarding my personal feelings but these thoughts eventually became goals as the questions changed. I began to realize that I needed to develop a super-utility which would provide free infinite resources to the individual so that they could cultivate innovative power from a small space and little education. I wanted these individuals who struggle to compete with larger companies to have more power. I also want companies to earn thier money more honorably by facing real competition. I am no enemy of large companies becasue I offer them the same deal but I am also trying to change the dynamic. I want to connect, compete and coorperate with people of all industries.
+
+### parts for days, parts for eons
 
 ### mupy is a proposal, mupy is a gift
 mupy is a tool which reflects how I would do things if I were in charge. What would I do? I would give the broader community the tools to build things powerful cool. I want to build spacecraftand cities in space. This is exactly how I would do it. Atleast I built it before talking about it.
