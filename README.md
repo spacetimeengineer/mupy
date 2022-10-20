@@ -60,8 +60,7 @@ mupy was not specificly built for 3D printers but it was battle-tested using 3D 
 
 If you look at the cost/quantity curve for 3D printers vs other manufacturing methods you willnotice that 3D printers prestent a flat curve. 
 - 3D printers are getting better.
-- 3D printers can be more compadible withmupy because small tweaks to the geometry of the part is trivial. 
-
+- 3D printers can be more compadible withmupy because small tweaks to the geometry of the part is trivial.  
 - It is a misconception that 3D printers are not worthy canidates for scale grade manufacturing its just that we have to not compare them to manufacturing systems which limit 
 
 
