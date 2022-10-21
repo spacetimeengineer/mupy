@@ -61,8 +61,7 @@ mupy was not specificly built for 3D printers but it was battle-tested using 3D 
 If you look at the cost/quantity curve for 3D printers vs other manufacturing methods you willnotice that 3D printers prestent a flat curve. 
 - 3D printers are getting better.
 - 3D printers can be more compadible withmupy because small tweaks to the geometry of the part is trivial.  
-- It is a misconception that 3D printers are not worthy canidates for scale grade manufacturing its just that we have to not compare them to manufacturing systems which limit 
-
+- It is a misconception that 3D printers are not worthy canidates for scale grade manufacturing its just that we have to not compare them to manufacturing systems which limit.
 
 ### mupy caveats
 The mupy-core package is not without issues or inefficiencies and to make an analogy regarding the circumstance, try to imagine the mu technology as a recipe and mupy as the cuisine implementation of the recipe one prepares but with using suboptimal or subsitution ingredients. Obviously this is not ideal but it works! Here are three glaring issues you should be aware of. They are more difficult to solve than you would probally realize. 
@@ -77,7 +76,8 @@ I offer zero apologies for this reality. If you need features build them yoursel
 ### education, manufacturing & commerce
 I have been concerned about the state of the world economy, education and manufacturing for some time. I wont get into the details regarding my personal feelings but these thoughts eventually became goals as the questions changed. I began to realize that I needed to develop a super-utility which would provide free infinite resources to the individual so that they could cultivate innovative power from a small space and little education. I wanted these individuals who struggle to compete with larger companies to have more power. I also want companies to earn thier money more honorably by facing real competition. I am no enemy of large companies becasue I offer them the same deal but I am also trying to change the dynamic. I want to connect, compete and coorperate with people of all industries.
 
-### parts for days, parts for eons
+### so many parts 
+mupy's system-code technology allows users to programmatically call and build hardware from a 
 
 ### mupy is a proposal, mupy is a gift
 mupy is a tool which reflects how I would do things if I were in charge. What would I do? I would give the broader community the tools to build things powerful cool. I want to build spacecraftand cities in space. This is exactly how I would do it. Atleast I built it before talking about it.
