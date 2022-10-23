@@ -47,40 +47,7 @@ Python manufacturing utility or mupy is a powerful new digital-twin technology i
 
 ## Note from the developer
 
-### powerful but rudimetry
 mupy is more powerful than you think, certainly more than you would believe. The package has grown too large for a single developer to responsibly maintain and the time has come for community to make judgements since we are at a good stopping point. mupy works well, perhaps too well and it finally meets all requirements from my perspective. I just need users and feedback before I can build it up more. I will be employing mupy from this point fourth and I will dedicate my use-case to my own projects. 
-
-### battle tested
-mupy is a conglomeration of scripts that were rewritten many times over and organized and coordinated into a functiong system. 
-I have been developing it for years but utilizing it and employing it in my tool-set has been a very new exerience for me.
-More accuratly mupy was community-grade implementation of the tools I had been developing for my own R&D operation. 
-
-### on 3D printers
-mupy was not specificly built for 3D printers but it was battle-tested using 3D printers. Weather it be Woodworking, casting, CNC or soome other manufacturing process, mupy does not care because it is abstracted away from the manufacturing process itself. It is merely a utility for supplying your desings to be manufactured. There are some things however about mupy that screams "Buy a 3D printer!"
-
-If you look at the cost/quantity curve for 3D printers vs other manufacturing methods you willnotice that 3D printers prestent a flat curve. 
-- 3D printers are getting better.
-- 3D printers can be more compadible withmupy because small tweaks to the geometry of the part is trivial.  
-- It is a misconception that 3D printers are not worthy canidates for scale grade manufacturing its just that we have to not compare them to manufacturing systems which limit.
-
-### mupy caveats
-The mupy-core package is not without issues or inefficiencies and to make an analogy regarding the circumstance, try to imagine the mu technology as a recipe and mupy as the cuisine implementation of the recipe one prepares but with using suboptimal or subsitution ingredients. Obviously this is not ideal but it works! Here are three glaring issues you should be aware of. They are more difficult to solve than you would probally realize. 
-
-- mupy is a package however an enviornment will be needed to utilize it; openscad will need to be installed (VSCode is also reccomended)
-- Stable on linux Only ; linux file systems are leveraged heavily. It doesnt yet work on Docker, Windows or MacOS. All are trivial fixes but take time and consideration to solve. The plan is to get everything working eventually but it has been lowered on priority level.
-- OpenScad is a fantastic technology to which mupy relies heavily on but it's 3D graphical user interface enviornments can not be called from python as objects. These enviornments are essential to make mupy "fun". Additionally these modules are tightly coupled to the integrated development enviornment which supports the openscad language. For this reason mupy essentially writes openscad code and one could simply open the code with the openscad IDE one generated. Currently this is the standard protocol.
-- mupy is a complex library. It is almost it's own language. Writing with it may not be so easy. It's perfect for me, but that me.
-
-I offer zero apologies for this reality. If you need features build them yourself. 
-
-### education, manufacturing & commerce
-I have been concerned about the state of the world economy, education and manufacturing for some time. I wont get into the details regarding my personal feelings but these thoughts eventually became goals as the questions changed. I began to realize that I needed to develop a super-utility which would provide free infinite resources to the individual so that they could cultivate innovative power from a small space and little education. I wanted these individuals who struggle to compete with larger companies to have more power. I also want companies to earn thier money more honorably by facing real competition. I am no enemy of large companies becasue I offer them the same deal but I am also trying to change the dynamic. I want to connect, compete and coorperate with people of all industries.
-
-### so many parts 
-mupy's system-code technology allows users to programmatically call and build hardware from a 
-
-### mupy is a proposal, mupy is a gift
-mupy is a tool which reflects how I would do things if I were in charge. What would I do? I would give the broader community the tools to build things powerful cool. I want to build spacecraftand cities in space. This is exactly how I would do it. Atleast I built it before talking about it.
 
 
 ## Overview
