@@ -3,8 +3,9 @@
   src="resources/mupy_logo.png"
   style="display: inline-block; margin: 0 auto; width: 200px">
 </p>
-## Table of contents
 
+## Table of contents
+<p align="center">
 <!--ts-->
    * [About](#about)
       * [Overview](#overview)
@@ -33,7 +34,7 @@
      * [Contacts](#contacts)
      * [Acknowledgments](#acknowledgments)
 <!--te-->
-
+</p>
 
 
 # About
