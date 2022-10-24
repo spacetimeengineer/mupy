@@ -49,6 +49,14 @@ Python manufacturing utility or mupy is a powerful new digital-twin technology i
 
 mupy is more powerful than you think, certainly more than you would believe. The package has grown too large for a single developer to responsibly maintain and I am at a good stopping point. mupy works well, perhaps too well and it finally meets all requirements from my perspective. I just need users and feedback before I can add aditional features. In the meantime I will be developing hardware & assembly libraries which should be considered fundementally important but separate of the mupy.core library. Currently the standard-hardware library is small but useful enough and with more time additional hardware and assemblies can be injected (yet another useful feature). I am still learning this technology myself. I didnt develop it, I discovered it. I just hope other people utilize, study and develop system-code tech or some derived tech becasue it is too powerful to be wasted. 
 
+### Caveats
+The mupy-core package is not without issues or inefficiencies and to make an analogy regarding the circumstance, try to imagine the mu technology as a recipe and mupy as the cuisine implementation of the recipe one prepares but with using subsitution ingredients. Obviously this is not ideal however it works! but here are some glaring issues you should be aware of. I would need the community to help these ones.
+
+mupy is a package however an enviornment will be needed to utilize it; openscad will need to be installed (VSCode is also reccomended)
+Stable on linux Only ; linux file systems are leveraged heavily. It doesnt yet work on Docker, Windows or MacOS. All are non-trivial fixes. Time and consideration are required to solve. The plan is to get everything working eventually but it has been lowered on priority level. This is a beta.
+OpenScad is a fantastic technology to which mupy relies heavily on but it's 3D graphical user interface enviornments can not be called from python as objects. These enviornments are essential to make mupy "fun". Additionally these modules are tightly coupled to the integrated development enviornment which supports the openscad language. For this reason mupy essentially writes openscad code and one could simply open the code with the openscad IDE one generated. Currently this is the standard protocol.
+mupy is a complex library. It is almost it's own language. Writing with it may not be so easy. It's perfect for me, but that me.
+
 
 ## Overview
 
