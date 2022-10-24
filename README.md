@@ -1,7 +1,7 @@
 <p align="center">
   <img
   src="resources/mupy_logo.png"
-  style="display: inline-block; margin: 0 auto; width: 200px">
+  style="display: inline-block; margin: 0 auto; ">
 </p>
 
 ## Table of contents
