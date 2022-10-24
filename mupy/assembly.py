@@ -103,10 +103,10 @@ class Assembly:
 
         scad_code = ""
         scad_code = scad_code + "/* Viewport Global Variables */\n\n"
-        scad_code = scad_code + "//$vpr = [$t * 360, $t * 360, $t * 180]; // Viewport rotation angles in degrees. \n"
-        scad_code = scad_code + "//$vpt = [$t * 360, $t * 360, $t * 180]; // Viewport translation. \n"
-        scad_code = scad_code + "//$vpd = (1-$t)*4000;                    // Viewport camera distance. \n"
-        scad_code = scad_code + "//$vpf = $t;                             // Viewport camera field of view. \n"
+        scad_code = scad_code + "$vpr = [-15, $t * 360, 0]; // Viewport rotation angles in degrees. \n"
+        scad_code = scad_code + "//$vpt = [0, 0, 0];        // Viewport translation. \n"
+        scad_code = scad_code + "$vpd = 5000;               // Viewport camera distance. \n"
+        scad_code = scad_code + "$vpf = 10;                 // Viewport camera field of view. \n"
 
         """ Hardware Module Code """
 
@@ -239,12 +239,10 @@ class Assembly:
 
             if self.color == None:
                 scad_code = scad_code + \
-                        '        translate([x_position_initial+($t-'+str(coordinates.t0)+')*(x_position_final-x_position_initial)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+') , y_position_initial+($t-'+str(coordinates.t0)+')*(y_position_final-y_position_initial)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+'), z_position_initial+($t-'+str(coordinates.t0)+')*(z_position_final-z_position_initial)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+') ] ) { rotate([x_axis_angle_initial+($t-'+str(coordinates.t0)+')*(x_axis_angle_final-x_axis_angle_initial)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+'), y_axis_angle_initial+($t-'+str(coordinates.t0)+')*(y_axis_angle_final-y_axis_angle_initial)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+'), z_axis_angle_initial+($t-'+str(coordinates.t0)+')*(z_axis_angle_final-z_axis_angle_initial)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+')]) { '+self.encapsulated_components_scad()+' } }\n'\
-                        '    }\n' # scad code.
+                        '        translate([x0+($t-'+str(coordinates.t0)+')*(xf-x0)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+') , y0+($t-'+str(coordinates.t0)+')*(yf-y0)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+'), z0 + ($t-'+str(coordinates.t0)+')*(zf-z0)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+') ] ) { rotate([a0+($t-'+str(coordinates.t0)+')*(af-a0)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+'), b0+($t-'+str(coordinates.t0)+')*(bf-b0)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+'), c0+($t-'+str(coordinates.t0)+')*(cf-c0)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+')])'+' { translate([e0+($t-'+str(coordinates.t0)+')*(ef-e0)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+') , f0+($t-'+str(coordinates.t0)+')*(ff-f0)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+'), g0 + ($t-'+str(coordinates.t0)+')*(gf-g0)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+') ] ) { rotate([u0+($t-'+str(coordinates.t0)+')*(uf-u0)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+'), v0+($t-'+str(coordinates.t0)+')*(vf-v0)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+'), w0+($t-'+str(coordinates.t0)+')*(wf-w0)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+')])'+' { '+self.encapsulated_components_scad()+' } } } } }\n\n'
             else:        
                 scad_code = scad_code + \
-                        '        translate([x_position_initial+($t-'+str(coordinates.t0)+')*(x_position_final-x_position_initial)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+') , y_position_initial+($t-'+str(coordinates.t0)+')*(y_position_final-y_position_initial)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+'), z_position_initial+($t-'+str(coordinates.t0)+')*(z_position_final-z_position_initial)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+') ] ) { rotate([x_axis_angle_initial+($t-'+str(coordinates.t0)+')*(x_axis_angle_final-x_axis_angle_initial)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+'), y_axis_angle_initial+($t-'+str(coordinates.t0)+')*(y_axis_angle_final-y_axis_angle_initial)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+'), z_axis_angle_initial+($t-'+str(coordinates.t0)+')*(z_axis_angle_final-z_axis_angle_initial)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+')]) { color("'+self.color+'") { '+self.encapsulated_components_scad()+' } } }\n'\
-                        '    }\n' # scad code.
+                        '        translate([x0+($t-'+str(coordinates.t0)+')*(xf-x0)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+') , y0+($t-'+str(coordinates.t0)+')*(yf-y0)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+'), z0 + ($t-'+str(coordinates.t0)+')*(zf-z0)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+') ] ) { rotate([a0+($t-'+str(coordinates.t0)+')*(af-a0)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+'), b0+($t-'+str(coordinates.t0)+')*(bf-b0)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+'), c0+($t-'+str(coordinates.t0)+')*(cf-c0)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+')])'+' { translate([e0+($t-'+str(coordinates.t0)+')*(ef-e0)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+') , f0+($t-'+str(coordinates.t0)+')*(ff-f0)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+'), g0 + ($t-'+str(coordinates.t0)+')*(gf-g0)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+') ] ) { rotate([u0+($t-'+str(coordinates.t0)+')*(uf-u0)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+'), v0+($t-'+str(coordinates.t0)+')*(vf-v0)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+'), w0+($t-'+str(coordinates.t0)+')*(wf-w0)/('+str(coordinates.tf)+'-'+str(coordinates.t0)+')])'+' { color("'+self.color+'") { '+self.encapsulated_components_scad()+' } } } } }\n\n' # scad code.
                     
         """ This bit here is so the assembly time quantums dont delete the object from ever coming into view."""       
                          

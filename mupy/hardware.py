@@ -81,10 +81,10 @@ class Hardware:
 
         scad_code = ""
         scad_code = scad_code + "/* Viewport Global Variables */\n\n"
-        scad_code = scad_code + "//$vpr = [$t * 360, $t * 360, $t * 180]; // Viewport rotation angles in degrees. \n"
-        scad_code = scad_code + "//$vpt = [$t * 360, $t * 360, $t * 180]; // Viewport translation. \n"
-        scad_code = scad_code + "//$vpd = (1-$t)*4000;                    // Viewport camera distance. \n"
-        scad_code = scad_code + "//$vpf = $t;                             // Viewport camera field of view. \n"
+        scad_code = scad_code + "$vpr = [-15, $t * 360, 0]; // Viewport rotation angles in degrees. \n"
+        scad_code = scad_code + "//$vpt = [0, 0, 0];        // Viewport translation. \n"
+        scad_code = scad_code + "$vpd = 5000;               // Viewport camera distance. \n"
+        scad_code = scad_code + "$vpf = 10;                 // Viewport camera field of view. \n"
 
         """ Hardware Module Code """
         
