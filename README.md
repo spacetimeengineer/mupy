@@ -8,31 +8,12 @@
 
 <!--ts-->
    * [About](#about)
-      * [Overview](#overview)
-      * [Note From The Developer](#note-from-the-developer)
-      * [Main Points](#main-points)
    * [Installation](#installation)
-      * [Linux Installation](#linux-installation)
-      * [MacOS Installation ( Coming Soon )](#macos-installation)
-      * [Windows Installation ( Coming Soon )](#windows-installation)
-      * [Docker Installation ( Coming Soon )](#docker-installation)
    * [Getting Started](#getting-started)
    * [Generating Output](#generating-output)
-      * [Generated Workspace Directory](#generating-workspace-directory)
-      * [Running openscad](#running-openscad)
    * [3D Printing](#3d-printing)
-      * [Running Cura - Rough Overview](#running-cura-rough-overview)
    * [Concepts](#concepts)
-      * [system-codes](#system-codes)
-      * [family-codes](#family-codes)
-      * [type-codes](#type-codes)
-      * [schemas](#schemas)
    * [Community](#community)
-     * [Roadmap](#roadmap)
-     * [Contributing](#contributing)
-     * [FAQs](#faqs)
-     * [Contacts](#contacts)
-     * [Acknowledgments](#acknowledgments)
 <!--te-->
 
 
