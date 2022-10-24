@@ -40,14 +40,14 @@
 
 Python manufacturing utility or mupy is a powerful new digital-twin technology implemented as a python pip installable package. In it's essence mupy is a platform or a new way to think about design, physical hardware, advanced assemblies, innovative technologies or most generally speaking, systems. This package and the tools included empowers users with hardware-class-objects into the python scripting envornment. mupy posesses features such as hardware & system generation, assembly & operational simulation, metadata & resources renderings. mupy empowers the user with resources and speed. Get dangerous.
 
-- quintillions (of quintillions (of quintillions...) of identifiable 3D Print/CNC parts and even more assemblies.
-- programmatic representation ; For hardware & assemblies (of hardware and assemblies) within virtual 3D workspaces.
-- operational & assembly simulations (animations) with real time programmatic modification.
-- Integrateable with thousands of other technologies
+- quintillions (of quintillions (of quintillions...)) of identifiable and discernible hardware elements and even more assemblies for 3D print, CNC or any other form of manufacturing
+- programmatic representation ; of hardware & assemblies ( composing of smaller hardware elements and sub-assemblies ) within virtual 3D workspaces
+- operational & assembly simulations (animations) with real-time programmatic modification capabilities
+- Integratable with thousands of other python compadible technologies
 
 ## Note from the developer
 
-mupy is more powerful than you think, certainly more than you would believe. The package has grown too large for a single developer to responsibly maintain and the time has come for community to make judgements since we are at a good stopping point. mupy works well, perhaps too well and it finally meets all requirements from my perspective. I just need users and feedback before I can build it up more. I will be employing mupy from this point fourth and I will dedicate my use-case to my own projects. 
+mupy is more powerful than you think, certainly more than you would believe. The package has grown too large for a single developer to responsibly maintain and I am at a good stopping point. mupy works well, perhaps too well and it finally meets all requirements from my perspective. I just need users and feedback before I can add aditional features. In the meantime I will be developing hardware & assembly libraries which should be considered fundementally important but separate of the mupy.core library. Currently the standard-hardware library is small but useful enough and with more time additional hardware and assemblies can be injected (yet another useful feature). I am still learning this technology myself. I didnt develop it, I discovered it. I just hope other people utilize, study and develop system-code tech or some derived tech becasue it is too powerful to be wasted. 
 
 
 ## Overview
