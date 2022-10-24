@@ -8,12 +8,14 @@
 
 <!--ts-->
    * [About](#about)
+   * [Overview](#overview)
    * [Installation](#installation)
    * [Getting Started](#getting-started)
    * [Generating Output](#generating-output)
    * [3D Printing](#3d-printing)
    * [Concepts](#concepts)
    * [Community](#community)
+   * [Information](#information)
 <!--te-->
 
 
