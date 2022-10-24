@@ -110,17 +110,17 @@ def bearing_security_cap_panel_assembly(tag):
     bearing_security_cap_a.color = "yellow"
     bearing_security_cap_panel_assembly.include(panel_gear_assembly_a(tag),                                                            mu.Coordinates())
     
-    bearing_security_cap_panel_assembly.include(bearing_cap_bolt_1_a,                                                                  mu.Coordinates(t0 = 0.5, tf = 0.6,   x0 = -250, xf = -13, y0 = 7.5/2*5,  yf = 7.5/2*5,  z0 = 7.5/2*5,  zf = 7.5/2*5,  b0 = 90, bf = 90))
-    bearing_security_cap_panel_assembly.include(bearing_cap_bolt_2_a,                                                                  mu.Coordinates(t0 = 0.5, tf = 0.6,   x0 = -250, xf = -13, y0 = -7.5/2*5, yf = -7.5/2*5, z0 = -7.5/2*5, zf = -7.5/2*5, b0 = 90, bf = 90))
+    bearing_security_cap_panel_assembly.include(bearing_cap_bolt_1_a,                                                                  mu.Coordinates(t0 = 0.5, tf = 0.6,   x0 = -250, xf = -13,    y0 = 7.5/2*5,  yf = 7.5/2*5,  z0 = 7.5/2*5,  zf = 7.5/2*5,  b0 = 90, bf = 90))
+    bearing_security_cap_panel_assembly.include(bearing_cap_bolt_2_a,                                                                  mu.Coordinates(t0 = 0.5, tf = 0.6,   x0 = -250, xf = -13,    y0 = -7.5/2*5, yf = -7.5/2*5, z0 = -7.5/2*5, zf = -7.5/2*5, b0 = 90, bf = 90))
 
     bearing_security_cap_panel_assembly.include(mu.Hardware("bearing_cap_top_washer_1_"+tag,    "CYLX0006-PIP-L0P3175O4P7625I2P1844"), mu.Coordinates(t0 = 0.5, tf = 0.6,   x0 = -220, xf = -11.5,  y0 = 7.5/2*5,  yf = 7.5/2*5,  z0 = 7.5/2*5,  zf = 7.5/2*5,  b0 = 90, bf = 90))
     bearing_security_cap_panel_assembly.include(mu.Hardware("bearing_cap_top_washer_2_"+tag,    "CYLX0006-PIP-L0P3175O4P7625I2P1844"), mu.Coordinates(t0 = 0.5, tf = 0.6,   x0 = -220, xf = -11.5,  y0 = -7.5/2*5, yf = -7.5/2*5, z0 = -7.5/2*5, zf = -7.5/2*5, b0 = 90, bf = 90))
     
-    bearing_security_cap_panel_assembly.include(mu.Hardware("bearing_cap_bottom_washer_1_"+tag, "CYLX0006-PIP-L0P3175O4P7625I2P1844"), mu.Coordinates(t0 = 0.5, tf = 0.6,   x0 = 200, xf = 4,    y0 = 7.5/2*5,  yf = 7.5/2*5,  z0 = 7.5/2*5,  zf = 7.5/2*5,  b0 = 90, bf = 90))
-    bearing_security_cap_panel_assembly.include(mu.Hardware("bearing_cap_bottom_washer_2_"+tag, "CYLX0006-PIP-L0P3175O4P7625I2P1844"), mu.Coordinates(t0 = 0.5, tf = 0.6,   x0 = 200, xf = 4,    y0 = -7.5/2*5, yf = -7.5/2*5, z0 = -7.5/2*5, zf = -7.5/2*5, b0 = 90, bf = 90))    
+    bearing_security_cap_panel_assembly.include(mu.Hardware("bearing_cap_bottom_washer_1_"+tag, "CYLX0006-PIP-L0P3175O4P7625I2P1844"), mu.Coordinates(t0 = 0.5, tf = 0.6,   x0 = 200,  xf = 4,      y0 = 7.5/2*5,  yf = 7.5/2*5,  z0 = 7.5/2*5,  zf = 7.5/2*5,  b0 = 90, bf = 90))
+    bearing_security_cap_panel_assembly.include(mu.Hardware("bearing_cap_bottom_washer_2_"+tag, "CYLX0006-PIP-L0P3175O4P7625I2P1844"), mu.Coordinates(t0 = 0.5, tf = 0.6,   x0 = 200,  xf = 4,      y0 = -7.5/2*5, yf = -7.5/2*5, z0 = -7.5/2*5, zf = -7.5/2*5, b0 = 90, bf = 90))    
     
-    bearing_security_cap_panel_assembly.include(mu.Hardware("bearing_cap_nut_1_"+tag,      "BOLTX0004-N832-HEX-D7H3"),                 mu.Coordinates(t0 = 0.5, tf = 0.6,   x0 = 300, xf = 6, y0 = 7.5/2*5,  yf = 7.5/2*5,  z0 = 7.5/2*5,  zf = 7.5/2*5,  b0 = 90, bf = 90))
-    bearing_security_cap_panel_assembly.include(mu.Hardware("bearing_cap_nut_2_"+tag,      "BOLTX0004-N832-HEX-D7H3"),                 mu.Coordinates(t0 = 0.5, tf = 0.6,   x0 = 300, xf = 6, y0 = -7.5/2*5, yf = -7.5/2*5, z0 = -7.5/2*5, zf = -7.5/2*5, b0 = 90, bf = 90))
+    bearing_security_cap_panel_assembly.include(mu.Hardware("bearing_cap_nut_1_"+tag,      "BOLTX0004-N832-HEX-D7H3"),                 mu.Coordinates(t0 = 0.5, tf = 0.6,   x0 = 300,  xf = 6,      y0 = 7.5/2*5,  yf = 7.5/2*5,  z0 = 7.5/2*5,  zf = 7.5/2*5,  b0 = 90, bf = 90))
+    bearing_security_cap_panel_assembly.include(mu.Hardware("bearing_cap_nut_2_"+tag,      "BOLTX0004-N832-HEX-D7H3"),                 mu.Coordinates(t0 = 0.5, tf = 0.6,   x0 = 300,  xf = 6,      y0 = -7.5/2*5, yf = -7.5/2*5, z0 = -7.5/2*5, zf = -7.5/2*5, b0 = 90, bf = 90))
     
     
     

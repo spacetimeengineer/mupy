@@ -38,44 +38,24 @@
 
 # About
 
-Python manufacturing utility or mupy is an extremely powerful new digital-twin technology implemented in the form of a python pip installable package. Ultimatly mupy is a platform or a new way to think about physical hardware, advanced assemblies, innovative technologies or most generally, systems. This package and the tools included empowers users with hardware-class-objects into the python scripting envornment. mupy posesses features such as hardware & system generation, assembly & operational simulation, metadata & resources renderings. mupy empowers the user with resources and speed. Without mupy some things could never be built. Let's get dangerous.
+Python manufacturing utility or mupy is a powerful new digital-twin technology implemented as a python pip installable package. In it's essence mupy is a platform or a new way to think about design, physical hardware, advanced assemblies, innovative technologies or most generally speaking, systems. This package and the tools included empowers users with hardware-class-objects into the python scripting envornment. mupy posesses features such as hardware & system generation, assembly & operational simulation, metadata & resources renderings. mupy empowers the user with resources and speed. Get dangerous.
 
-- quintillions (of quintillions (of quintillions...) of identifiable 3D Print/CNC parts and even more assemblies.
-- programmatic representation ; For hardware & assemblies (of hardware and assemblies) within virtual 3D workspaces.
-- operational & assembly simulations (animations) with real time programmatic modification.
-- Integrateable with thousands of other technologies
+- quintillions (of quintillions (of quintillions...)) of identifiable and discernible hardware elements and even more assemblies for 3D print, CNC or any other form of manufacturing
+- programmatic representation ; of hardware & assemblies ( composing of smaller hardware elements and sub-assemblies ) within virtual 3D workspaces
+- operational & assembly simulations (animations) with real-time programmatic modification capabilities
+- Integratable with thousands of other python compadible technologies
 
 ## Note from the developer
 
-### powerful but rudimetry
-mupy is more powerful than you think, certainly more than you would believe but less than it could be. The package has grown too large for a single developer to responsibly maintain and there is still much to do. Dont get me wrong, I love to code and mupy works well, perhaps too well but it finnally meets all requirements from my perspective and there is little to do. The mu project had evolved through many interations of insight and usecase and the days of building things in a vacuum are behind me so I can only make trivial modifications from this point forward. This may not be the case forever but I need a dedicated community before I consider further contributions to be worth my while. I will continue developing scad libraries but these shall be limited to my own needs and requirements.
- 
-### mupy was battle tested for years
-mupy is a conglomeration of scripts that were rewritten many times over and organized and coordinated into a functiong system. 
-I have been developing it for years but utilizing it and employing it in my tool-set has been a very new exerience for me.
-More accuratly mupy was community-grade implementation of the tools I had been developing for my own R&D operation. 
-
-### On 3D Printers VS traditional
-If you look at the cost/quantity curve for 3D printers vs other manufacturing methods you willnotice that 3D printers prestent a flat curve. 
-- How do you find parts to print?
-- How to design a part?
-- The cost/
-
-- It is a misconception that 3D printers are not worthy canidates for scale grade manufacturing its just that we have to not compare them to manufacturing systems which limit 
-
+mupy is more powerful than you think, certainly more than you would believe. The package has grown too large for a single developer to responsibly maintain and I am at a good stopping point. mupy works well, perhaps too well and it finally meets all requirements from my perspective. I just need users and feedback before I can add aditional features. In the meantime I will be developing hardware & assembly libraries which should be considered fundementally important but separate of the mupy.core library. Currently the standard-hardware library is small but useful enough and with more time additional hardware and assemblies can be injected (yet another useful feature). I am still learning this technology myself. I didnt develop it, I discovered it. I just hope other people utilize, study and develop system-code tech or some derived tech becasue it is too powerful to be wasted. 
 
 ### Caveats
-The mupy-core package is not without issues or inefficiencies and to make an analogy regarding the circumstance, try to imagine the mu technology as a recipe and mupy as the cuisine implementation of the recipe one prepares but with using suboptimal or subsitution ingredients. Obviously this is not ideal but it works! Here are three glaring issues you should be aware of. They are more difficult to solve than you would probally realize. 
+The mupy-core package is not without issues or inefficiencies and to make an analogy regarding the circumstance, try to imagine the mu technology as a recipe and mupy as the cuisine implementation of the recipe one prepares but with using subsitution ingredients. Obviously this is not ideal however it works! but here are some glaring issues you should be aware of. I would need the community to help these ones.
 
 - mupy is a package however an enviornment will be needed to utilize it; openscad will need to be installed (VSCode is also reccomended)
-- Stable on linux Only ; linux file systems are leveraged heavily. It doesnt yet work on Docker, Windows or MacOS. All are trivial fixes but take time and consideration to solve. The plan is to get everything working eventually but it has been lowered on priority level.
-- OpenScad is a fantastic technology to which mupy relies heavily on but it's 3D graphical user interface enviornments can not be called from python as objects. These enviornments are essential to make mupy "fun". Additionally these modules are tightly coupled to the integrated development enviornment which supports the openscad language. For this reason mupy essentially writes openscad code and one could simply open the code with the openscad IDE one generated. Currently this is the standard protocol.
-- mupy is a complex library. It is almost it's own language. Writing with it may not be so easy. It's perfect for me, but that me.
+- Stable on linux Only ; linux file systems are leveraged heavily. It doesnt yet work on Docker, Windows or MacOS. All are non-trivial fixes. Time and consideration are required to solve but can be solved hopefully sooner than later. All depends on supply and demand. The plan is to get everything working eventually but it has been lowered in terms of prioritization. Consider it beta.
+- OpenScad is a fantastic technology to which mupy relies heavily on but it's 3D graphical user interface enviornments or features can not be called from python as objects yet. These enviornments are essential to make mupy "fun" but these modules are too tightly coupled to the integrated development enviornment which supports the openscad language. This is a fancy way of saying I am too dumb to figure it out myself within my time constraints. For this reason I designed mupy to essentially write openscad code directory structures and then the user operates or modifies the code from the openscad integrated development enviornment once mupy generates the code. One still should consider just modifying the original python code because it will work mid-animation anyways. As cumbersome as this all is, it is the standard protocol and very much worth it. mupy is a complex library. It is almost it's own language. No, scatch that. It's an ecosystem of languages. Writing with it may not be so easy. It's perfect for me, but that me.
 
-I offer zero apologies for this reality. You want features go build it yourself.
-
-### mupy is the real mcoy
-I have been cultivating concern about the state of the world economy, education and manufacturing for some time. I wont get into the details regarding my personal feelings but after compiling these thoughts for years into the form of productive goals, I began to realize that I wanted to develop a super-utility which would provide free infinite resources to the individual so that they could cultivate manufacturing value from a small space. I wanted these individuals who struggle competing with large companies to have more power. I am no enemy of large companies becasue I offer them the same resource but I am trying to change the dynamic. I want to connect people of all industries. I want more competition but I also want more cooperation.
 
 ## Overview
 
@@ -99,7 +79,7 @@ workspace = mu.WorkSpace(str(Path.home())+"/"+workspace_name) # Creates workspac
 
 ```
 
-3. Defines hardware by name and system-code. 
+3. Defines hardware by name and system-code. Alternativly you may place a .stl file path in the place of the system code.
 
 
 ```python
@@ -110,47 +90,44 @@ panel_d = mu.Hardware("panel_d", "CUBX0177-BPAN-B25SR2P5-X8Y8P18-RT-SX25Y25-X8Y8
 panel_e = mu.Hardware("panel_e", "CUBX0177-BPAN-B25SR2P5-X8Y8P18-RT-SX25Y25-X8Y8-X20Y20Z5")
 panel_f = mu.Hardware("panel_f", "CUBX0177-BPAN-B25SR2P5-X8Y8P18-RT-SX25Y25-X8Y8-X20Y20Z5")
 
-```
-or you can import an stl filelocally or remotely with a url.
-
-```python
-panel_a = mu.Hardware("panel_a", "CUBX0177-BPAN-B25SR2P5-X8Y8P18-RT-SX25Y25-X8Y8-X20Y20Z5")
-panel_b = mu.Hardware("panel_b", "CUBX0177-BPAN-B25SR2P5-X8Y8P18-RT-SX25Y25-X8Y8-X20Y20Z5")
-panel_c = mu.Hardware("panel_c", "CUBX0177-BPAN-B25SR2P5-X8Y8P18-RT-SX25Y25-X8Y8-X20Y20Z5")
-panel_d = mu.Hardware("panel_d", "CUBX0177-BPAN-B25SR2P5-X8Y8P18-RT-SX25Y25-X8Y8-X20Y20Z5")
-panel_e = mu.Hardware("panel_e", "CUBX0177-BPAN-B25SR2P5-X8Y8P18-RT-SX25Y25-X8Y8-X20Y20Z5")
-panel_f = mu.Hardware("panel_f", "CUBX0177-BPAN-B25SR2P5-X8Y8P18-RT-SX25Y25-X8Y8-X20Y20Z5")
-
+panel_a.color = "green"
+panel_b.color = "blue"
+panel_c.color = "orange"
+panel_d.color = "red"
+panel_e.color = "pink"
+panel_f.color = "cyan"
 ```
 
 4. Define initial and final coordinates within an assembly epoch.
 
 ```python
-
-
-
-panel_a_assembly_coords = mu.Coordinates(0,1,[0, 0 , 8 * 15 / 2 + 210],[0, 0 , 8 * 15 / 2],[0,0,0],[0,0,0])
-panel_b_assembly_coords = mu.Coordinates(0,1,[0, 20 * 15 / 2 + 210, 0],[0, 20 * 15 / 2, 0],[0,0,0],[-90,0,0]) 
-
+""" Defines coordinates for hardware components within workspace. """
+alpha = 200 
+assembly_coords_a = mu.Coordinates( z0 = 8 * 25 / 2 + alpha,    zf = 8 * 25 / 2                              )     # Equation must be satisfied in order to express custom-box function. 
+assembly_coords_b = mu.Coordinates( y0 = 8 * 25 / 2 + alpha,    yf = 8 * 25 / 2,    af = -90                 )     # Equation must be satisfied in order to express custom-box function. 
+assembly_coords_c = mu.Coordinates( x0 = - 8 * 25 / 2 - alpha,  xf = - 8 * 25 / 2,  bf = -90                 )     # Equation must be satisfied in order to express custom-box function. 
+assembly_coords_d = mu.Coordinates( z0 = -8 * 25 / 2 - alpha,   zf = -8 * 25 / 2,   bf = 180                 )     # Equation must be satisfied in order to express custom-box function. 
+assembly_coords_e = mu.Coordinates( y0 = - 8 * 25 / 2 - alpha,  yf = - 8 * 25 / 2,  af = 90                  )     # Equation must be satisfied in order to express custom-box function. 
+assembly_coords_f = mu.Coordinates( x0 = 8 * 25 / 2 + alpha,    xf = 8 * 25 / 2,    af = 90,   cf = 90       )     # Equation must be satisfied in order to express custom-box function. 
 ```
 
 5. Defines assembly
 
 ```python
-alpha = 200 
-chamber_assembly = mu.Assembly("chamber_assembly")
-chamber_assembly.include(panel_a, Coordinates(0,1,[0, 0 , 8 * 25 / 2 + alpha],[0, 0 , 8 * 25 / 2 ],[0,0,1000],[0,0,0]))
-chamber_assembly.include(panel_b, Coordinates(0,1,[0, 8 * 25 / 2 + alpha, 0],[0, 8 * 25 / 2, 0],[0,0,1000],[-90,0,0]))
-chamber_assembly.include(panel_c, Coordinates(0,1,[ - 8 * 25 / 2 - alpha, 0, 0 ],[ - 8 * 25 / 2, 0, 0 ],[0,0,1000],[0,-90,0]))
-chamber_assembly.include(panel_d, Coordinates(0,1,[0 , 0, -8 * 25 / 2 - alpha],[0 , 0, -8 * 25 / 2 ],[0,0,1000],[0,180,0]))
-chamber_assembly.include(panel_e, Coordinates(0,1,[0, - 8 * 25 / 2 - alpha, 0 ],[0, - 8 * 25 / 2, 0 ],[0,0,1000],[90,0,0]))
-chamber_assembly.include(panel_f, Coordinates(0,1,[8 * 25 / 2 + alpha, 0 , 0],[8 * 25 / 2, 0 , 0],[0,0,1000],[90,0,90]))
+""" Defines total assembly dynamics ; hardware componenets, names, coordinates, information and metadata. """
+box_assembly = mu.Assembly("box_assembly")
+box_assembly.include(panel_a, assembly_coords_a) 
+box_assembly.include(panel_b, assembly_coords_b) 
+box_assembly.include(panel_c, assembly_coords_c)
+box_assembly.include(panel_d, assembly_coords_d)
+box_assembly.include(panel_e, assembly_coords_e)
+box_assembly.include(panel_f, assembly_coords_f)
 ```
 
 6. Run assembly
 
 ```python
-workspace.run(chamber_assembly, Coordinates(0,1,[0,0,0],[0,0,0],[0,0,0],[0,0,0]))
+workspace.run(box_assembly, mu.Coordinates()) # This command creates all directorires and assemblies.
 
 ```
 
@@ -207,67 +184,18 @@ Originally mu could of been thought of as an attempt to devise a physical analog
 
 - Openscad Horizontal Abstraction Layer & Formalism
 
+- Technology Database
 
-This all sound very complicated but in truth it is very very simple. Itjust has no form like anything else and you must use it to undertand like anything else new.
+
+This all may sound very complicated but in truth it is all very simple. It just has no form like anything else and you must use it to gain better insight. I like to think of it as a replacement for engineering notes. Something richer and more real. 
 
 ### How do I use mupy?
 
-There are two main interfaces for mupy, a command line interface (CLI) and an applications programming interface (API) They are described below.
+There are two interfaces for mupy, a command line interface (CLI) ( mostly a novelty but suprisingly very useful ) and an applications programming interface (API) They are described below.
 
-- mucli - This is the manufacturing utility command line tool and is used to express the most rudimentary function of mupy ; to quickly render manufacturing resources from known system-code.
+- mucli - This is the manufacturing utility command line tool and is used to express the most rudimentary function of mupy ; to decode system-codes
 
-- mu.core - This library represents the general case for mupy use-case.
-
-    - python3 scripting interface.
-
-    - hardware class objects combine system-codes and names.
-
-### What are mupy's functions?
-
-- Hardware Generation
-
-- Physical / Mechanical System Simulation
-
-  - Operation
-  - Assembly
-
-- Physical / Mechanical System Configuration
-- Software Generation
-
-  - Generates openscad code
-  - Generates directory structures
-  - system-codes are a seed to generate digital-twin
-
-- Python Library
-
-  - Grants greater automation capabilities & empowers users with computing-based augmentations to mupy system-code technology
-  - Allows other 3rd-party libraries and python functions to interact with mupy.core functions
-  - Only utilizes standard python library
-
-- CLI (command-line-tool)
-
-  - system-code receiver
-  - expresses prime function
-
-- High Integrity Modularity Hardware Repository
-
-  - These parts grant fast prototyping
-  - modular families can be developed to optimize a specific intended assembly or design of larger system
-  - General purpose modular hardware for printing and prototyping
-
-- Complex Physical System Encoder/Decoder/Distribution/Manufacturing Engine
-
-    - Hardware is identified, described or generated using system-codes (short human-readable alphanumeric codes).
-    - 3D print systems in many cases, material independent or material specified.
-
-- Complex Physical System Certification
-
-    - Like a package manager but configured for mupy requirements so that family codes provide permutations from scad parametrization.
-
-- Creation Engine
-
-    - General purpose utility for many research and development needs.
-
+- mu.core - A manufacturing oriented digital-twin technology implemented as a python3 library
 
 # Installation
 
@@ -720,19 +648,18 @@ Additionally the assembly object was chosen as the primary mechanism for impleme
 
 The special strings known as system-codes are probably the most important features to be dispensed by the mu technology but what are they exactly? The whole idea behind a system-code was that it was a string which represented a specific part, assembly, technology or most generally speaking, a system. It could be thought of as a seed which carried information regarding some system's geometry, operation, assembly, dissasembly and meta-data. A system-code decoding could be perfomred using mupy ; mupy generates a digital-twin representation of some system from it's corresponding syste-code and the resources for manufacturing or assembling it.
 
-Consider every single hardware element one might find in a hardware store and consider every meaningful aspect of that part being something with could be subject to variance like say the distance of a punched out hole in a bracket from it's edge for a screw to slide through and fasten with and the radius of said hole  and the length of the edge of the bracket for example and consider that the person who authored such a part or piece of hardware did so with code and did so with meaningful intention and parametrization such that if someone else wanted to commit thier own configurations. Now consider that there existed parts which you could not find at a hardware store also, like a guitar or beauty products and consider all the pssible permutations there might exist and consider all the things that have never been invented yet but might be. Now consider how one might identify in a human-readable, meaningful, part-like or serial-code like way, a part or hardware geometry with such vast permutation sets and containing it in a short string.
+Consider every single hardware element one might find in a hardware store and consider every meaningful aspect of that part being something with could be subject to variance like say the distance of a punched out hole in a bracket from it's edge for some screw to slide through and fasten with and the radius of said hole and the length of the edge of the bracket for example and consider that the person who authored such a part or piece of hardware did so with code and did so with meaningful intention and parametrization such that if someone else wanted to commit thier own configurations to the part they could. Now consider that there existed parts which you could not find at a hardware store also, like a guitar or beauty products and consider all the possible permutations there might exist and consider all the things that have never been invented yet but might be. Now consider all the permutations that exist when assemblies of any combination and any complex hierarchy set are granted certification and hence systems-code set. Now consider how one might identify in a human-readable, meaningful, part-like or serial-code like way, a part, hardware, an assembly or technology with such vast permutation sets and containing all it in a relativly short string. And you can pull those all into a script to build whatever assembly you like.
 
 
 ### Properties
 
-- Follows general schema : <Family-Code>-<Type-Code>-<Param-Code>
-- Human decipherable
-- Identifies Geometry/Part/Hardware/Assembly/System
-- System-Seed
-- Encodable/Decodable
-- Schema-less : Each <Family-Code>-<Type-Code> permutation dictates it's own rules.
-- Constituent-Codes:
-
+  - Follows general schema : <Family-Code>-<Type-Code>-<Param-Code>
+  - Human decipherable
+  - Identifies Geometry/Part/Hardware/Assembly/System
+  - System-Seed
+  - Encodable/Decodable
+  - Schema-less : Each <Family-Code>-<Type-Code> permutation dictates it's own rules.
+  - Constituent-Codes:
     - family-code : Serves as a name-space code. Ussually parts of the same style or shared functions belong to it.
     - type-code : Identifies a part without specifying parameters. What makes something a different type or family is for the author to decide.
     - parametrization-code : Stores information describing the input parameters of a system.

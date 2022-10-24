@@ -1,43 +1,48 @@
 #!/usr/bin/env python3
 
-"""
-Note to user : This script as seen on github is used to illustrate the power of mupy parameterization and how it can be manipulated with python calls.
-"""
-
 """ Required Libray Imports. """
 from pathlib import Path # Imports library nessecary for fetching terminal path information.
 import mupy.core as mu # Imports mupy library.
 
 """ Set Up Workspace. """
-workspace_name = "utility_box" # Workspace name ; this will be the name of the workspace directory.
+workspace_name = "simple_box" # Workspace name ; this will be the name of the workspace directory.
 workspace = mu.WorkSpace(str(Path.home())+"/"+workspace_name) # Creates workspace.
 
-""" Define Hardware Components"""
-panel_a = mu.Hardware("pipe_a", "CYLX0006-PIP-L66P6O10P2I2P5")
-panel_b = mu.Hardware("panel_b", "CUBX0177-BPAN-B25SR2P5-X8Y8PP2-RT-SX25Y25-X8Y8-XO0YO0-X30Y30Z20-S")
-panel_c = mu.Hardware("panel_c", "CUBX0177-BPAN-B25SR2P5-X8Y8PP2-RT-SX25Y25-X8Y8-XO0YO0-X30Y30Z20-S")
-panel_d = mu.Hardware("panel_d", "CUBX0177-BPAN-B25SR2P5-X8Y8PP2-RT-SX25Y25-X8Y8-XO0YO0-X30Y30Z20-S")
-panel_e = mu.Hardware("panel_e", "CUBX0177-BPAN-B25SR2P5-X8Y8PP2-RT-SX25Y25-X8Y8-XO0YO0-X30Y30Z20-S")
-panel_f = mu.Hardware("panel_f", "CUBX0177-BPAN-B25SR2P5-X8Y8PP2-RT-SX25Y25-X8Y8-XO0YO0-X30Y30Z20-S")
+""" Define hardware using system codes. """
+panel_a = mu.Hardware("panel_a", "CUBX0177-BPAN-B25SR7-X8Y8PP2-RF-SX25Y25-X1Y1-XO0YO0-X50Y70Z50-C")
+panel_b = mu.Hardware("panel_b", "CUBX0177-BPAN-B25SR4-X8Y8PP2-RF-SX25Y25-X8Y8-XO0YO0-X30Y30Z50-S")
+panel_c = mu.Hardware("panel_c", "CUBX0177-BPAN-B25SR2P5-X8Y8PP2-RT-SX25Y25-X3Y6-XO0YO0-X30Y10Z50-S")
+panel_d = mu.Hardware("panel_d", "CUBX0177-BPAN-B25SR9-X8Y8PP2-RF-SX25Y25-X1Y1-XO0YO0-X50Y70Z50-C")
+panel_e = mu.Hardware("panel_e", "CUBX0177-BPAN-B25SR2P5-X8Y8PP2-RF-SX7Y7-X6Y6-XO0YO0-X8Y10Z5-S")
+panel_f = mu.Hardware("panel_f", "CUBX0177-BPAN-B25SR6-X8Y8PP2-RF-SX20Y10-X2Y4-XO0YO0-X30Y30Z20-S")
 
+""" Use colors to visually label hardware. """
+panel_a.color = "green"
+panel_b.color = "blue"
+panel_c.color = "orange"
+panel_d.color = "red"
+panel_e.color = "pink"
+panel_f.color = "cyan"
 
-""" Define Hardware Assembly Coordinates"""
-
+""" Defines coordinates for hardware components within workspace. """
 alpha = 200 
-panel_a_assembly_coords = mu.Coordinates(0,1,[0, 0 , 8 * 15 / 2 + 210],[0, 0 , 8 * 15 / 2],[0,0,0],[0,0,0])
-panel_b_assembly_coords = mu.Coordinates(0,1,[0, 20 * 15 / 2 + 210, 0],[0, 20 * 15 / 2, 0],[0,0,0],[-90,0,0]) 
+assembly_coords_a = mu.Coordinates( z0 = 8 * 25 / 2 + alpha,             zf = 8 * 25 / 2                                       )     # Equation must be satisfied in order to express custom-box function. 
+assembly_coords_b = mu.Coordinates( y0 = 8 * 25 / 2 + alpha,             yf = 8 * 25 / 2,             af = -90                 )     # Equation must be satisfied in order to express custom-box function. 
+assembly_coords_c = mu.Coordinates( x0 = - 8 * 25 / 2 - alpha,           xf = - 8 * 25 / 2,           bf = -90                 )     # Equation must be satisfied in order to express custom-box function. 
+assembly_coords_d = mu.Coordinates( z0 = -8 * 25 / 2 - alpha,            zf = -8 * 25 / 2,            bf = 180                 )     # Equation must be satisfied in order to express custom-box function. 
+assembly_coords_e = mu.Coordinates( y0 = - 8 * 25 / 2 - alpha,           yf = - 8 * 25 / 2,           af = 90                  )     # Equation must be satisfied in order to express custom-box function. 
+assembly_coords_f = mu.Coordinates( x0 = 8 * 25 / 2 + alpha,             xf = 8 * 25 / 2,             af = 90,       cf = 90   )     # Equation must be satisfied in order to express custom-box function. 
 
 
-""" Define assembly. """
-alpha = 200 
-chamber_assembly = mu.Assembly("chamber_assembly")
-chamber_assembly.include(panel_a, mu.Coordinates(0,1,[0, 0 , 8 * 25 / 2 + alpha],[0, 0 , 8 * 25 / 2 ],[0,0,1000],[0,0,0]))
-chamber_assembly.include(panel_b, mu.Coordinates(0,1,[0, 8 * 25 / 2 + alpha, 0],[0, 8 * 25 / 2, 0],[0,0,1000],[-90,0,0]))
-chamber_assembly.include(panel_c, mu.Coordinates(0,1,[ - 8 * 25 / 2 - alpha, 0, 0 ],[ - 8 * 25 / 2, 0, 0 ],[0,0,1000],[0,-90,0]))
-chamber_assembly.include(panel_d, mu.Coordinates(0,1,[0 , 0, -8 * 25 / 2 - alpha],[0 , 0, -8 * 25 / 2 ],[0,0,1000],[0,180,0]))
-chamber_assembly.include(panel_e, mu.Coordinates(0,1,[0, - 8 * 25 / 2 - alpha, 0 ],[0, - 8 * 25 / 2, 0 ],[0,0,1000],[90,0,0]))
-chamber_assembly.include(panel_f, mu.Coordinates(0,1,[8 * 25 / 2 + alpha, 0 , 0],[8 * 25 / 2, 0 , 0],[0,0,1000],[90,0,90]))
+""" Defines total assembly dynamics ; hardware componenets, names, coordinates, information and metadata. """
+box_assembly = mu.Assembly("box_assembly")
+box_assembly.include(panel_a, assembly_coords_a) 
+box_assembly.include(panel_b, assembly_coords_b) 
+box_assembly.include(panel_c, assembly_coords_c)
+box_assembly.include(panel_d, assembly_coords_d)
+box_assembly.include(panel_e, assembly_coords_e)
+box_assembly.include(panel_f, assembly_coords_f)
 
 
-""" Run """
-workspace.run(chamber_assembly, mu.Coordinates(0,1,[0,0,0],[0,0,0],[0,0,0],[0,0,0])) # This command creates all directorires and assemblies.
+""" Run workspace. """
+workspace.run(box_assembly, mu.Coordinates()) # This command creates all directorires and assemblies.
