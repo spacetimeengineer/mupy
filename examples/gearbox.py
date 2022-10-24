@@ -79,7 +79,7 @@ def panel_gear_assembly_a(tag):
     panel_gear_assembly_a.include(mu.Hardware("shaft_large_washer_2_"+tag, "CYLX0006-PIP-L0P3175O9P525I3P175"),         mu.Coordinates(t0 = 0.1, tf = 0.4,   x0 = 100,  xf = 7.15,  b0 = 90,  bf = 90))
     panel_gear_assembly_a.include(mu.Hardware("shaft_small_washer_2_"+tag, "CYLX0006-PIP-L0P3175O4P7625I2P1844"),       mu.Coordinates(t0 = 0.1, tf = 0.4,   x0 = 80,   xf = 7,     b0 = 90,  bf = 90))
     panel_gear_assembly_a.include(mu.Hardware("shaft_small_washer_3_"+tag, "CYLX0006-PIP-L0P3175O4P7625I2P1844"),       mu.Coordinates(t0 = 0.1, tf = 0.4,   x0 = 60,   xf = 2,     b0 = 90,  bf = 90))
-    panel_gear_assembly_a.include(mu.Hardware("shaft_locknut_1_"+tag,      "BOLTX0004-N1024-HEX-D10H5"),                mu.Coordinates(t0 = 0.1, tf = 0.4,   x0 = 40,   xf = 4,     b0 = 90,  bf = 90))
+    panel_gear_assembly_a.include(mu.Hardware("shaft_locknut_1_"+tag,      "BOLTX0004-N1024-HEX-D10H5"),                mu.Coordinates(t0 = 0.1, tf = 0.4,   x0 = 40,   xf = 4,     b0 = 90,  bf = 90, wf = 888))
     panel_gear_assembly_a.include(mu.Hardware("shaft_small_washer_4_"+tag, "CYLX0006-PIP-L0P3175O4P7625I2P1844"),       mu.Coordinates(t0 = 0.1, tf = 0.4,   x0 = 20,   xf = 1,     b0 = 90,  bf = 90))
     panel_gear_assembly_a.include(panel_bearing_assembly_a(tag),                                                        mu.Coordinates(t0 = 0.1, tf = 0.4,   x0 = -70,  xf = 0,     a0 = 180, b0 = 0,   af = 180, bf = 0))
     panel_gear_assembly_a.include(mu.Hardware("shaft_small_washer_5_"+tag, "CYLX0006-PIP-L0P3175O4P7625I2P1844"),       mu.Coordinates(t0 = 0.1, tf = 0.4,   x0 = -150, xf = -4,    a0 = 180, b0 = 90,  af = 180, bf = 90))

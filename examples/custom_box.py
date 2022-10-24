@@ -39,6 +39,13 @@ panel_d = mu.Hardware("panel_d", "CUBX0177-BPAN-B"+str(unit_block_length)+"SR"+s
 panel_e = mu.Hardware("panel_e", "CUBX0177-BPAN-B"+str(unit_block_length)+"SR"+str(shaft_radius)+"-X"+str(panel_e_x_block_units)+"Y"+str(panel_e_y_block_units)+"PP2-RF-SX5Y5-X1Y1-XO0YO0-X30Y30Z20-S")     # Constructs panel : This hardware component is a box panel of a CUBX0177-class hardware component.
 panel_f = mu.Hardware("panel_f", "CUBX0177-BPAN-B"+str(unit_block_length)+"SR"+str(shaft_radius)+"-X"+str(panel_f_x_block_units)+"Y"+str(panel_f_y_block_units)+"PP2-RF-SX5Y5-X1Y1-XO0YO0-X30Y30Z20-S")     # Constructs panel : This hardware component is a box panel of a CUBX0177-class hardware component.
 
+panel_a.color = "green"
+panel_b.color = "blue"
+panel_c.color = "orange"
+panel_d.color = "red"
+panel_e.color = "pink"
+panel_f.color = "cyan"
+
 """ Defines coordinates for hardware components within workspace. """
 alpha = 230 # Equation must be satisfied in order to express custom-box function. Alpha is a constant which is useful for describing the distance between panels in the custom box.
 assembly_coords_a = mu.Coordinates( z0 = box_z_units * unit_block_length / 2 + alpha,             zf = box_z_units * unit_block_length / 2                                       )     # Equation must be satisfied in order to express custom-box function. 
