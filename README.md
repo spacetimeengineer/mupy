@@ -184,67 +184,18 @@ Originally mu could of been thought of as an attempt to devise a physical analog
 
 - Openscad Horizontal Abstraction Layer & Formalism
 
+- Technology Database
 
-This all sound very complicated but in truth it is very very simple. Itjust has no form like anything else and you must use it to undertand like anything else new.
+
+This all may sound very complicated but in truth it is all very simple. It just has no form like anything else and you must use it to gain better insight. I like to think of it as a replacement for engineering notes. Something richer and more real. 
 
 ### How do I use mupy?
 
-There are two main interfaces for mupy, a command line interface (CLI) and an applications programming interface (API) They are described below.
+There are two interfaces for mupy, a command line interface (CLI) ( mostly a novelty but suprisingly very useful ) and an applications programming interface (API) They are described below.
 
-- mucli - This is the manufacturing utility command line tool and is used to express the most rudimentary function of mupy ; to quickly render manufacturing resources from known system-code.
+- mucli - This is the manufacturing utility command line tool and is used to express the most rudimentary function of mupy ; to decode system-codes
 
-- mu.core - This library represents the general case for mupy use-case.
-
-    - python3 scripting interface.
-
-    - hardware class objects combine system-codes and names.
-
-### What are mupy's functions?
-
-- Hardware Generation
-
-- Physical / Mechanical System Simulation
-
-  - Operation
-  - Assembly
-
-- Physical / Mechanical System Configuration
-- Software Generation
-
-  - Generates openscad code
-  - Generates directory structures
-  - system-codes are a seed to generate digital-twin
-
-- Python Library
-
-  - Grants greater automation capabilities & empowers users with computing-based augmentations to mupy system-code technology
-  - Allows other 3rd-party libraries and python functions to interact with mupy.core functions
-  - Only utilizes standard python library
-
-- CLI (command-line-tool)
-
-  - system-code receiver
-  - expresses prime function
-
-- High Integrity Modularity Hardware Repository
-
-  - These parts grant fast prototyping
-  - modular families can be developed to optimize a specific intended assembly or design of larger system
-  - General purpose modular hardware for printing and prototyping
-
-- Complex Physical System Encoder/Decoder/Distribution/Manufacturing Engine
-
-    - Hardware is identified, described or generated using system-codes (short human-readable alphanumeric codes).
-    - 3D print systems in many cases, material independent or material specified.
-
-- Complex Physical System Certification
-
-    - Like a package manager but configured for mupy requirements so that family codes provide permutations from scad parametrization.
-
-- Creation Engine
-
-    - General purpose utility for many research and development needs.
-
+- mu.core - A manufacturing oriented digital-twin technology implemented as a python3 library
 
 # Installation
 
