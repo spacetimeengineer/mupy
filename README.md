@@ -1,8 +1,8 @@
-<img
+<p align="center">
+  <img
   src="resources/mupy_logo.png"
   style="display: inline-block; margin: 0 auto; width: 200px">
-
-
+</p>
 ## Table of contents
 
 <!--ts-->
