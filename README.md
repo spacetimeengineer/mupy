@@ -5,8 +5,9 @@
 </p>
 
 ## Table of contents
-<p align="center">
+
 <!--ts-->
+<p align="center">
    * [About](#about)
       * [Overview](#overview)
       * [Note From The Developer](#note-from-the-developer)
@@ -33,8 +34,8 @@
      * [FAQs](#faqs)
      * [Contacts](#contacts)
      * [Acknowledgments](#acknowledgments)
+  </p>
 <!--te-->
-</p>
 
 
 # About
