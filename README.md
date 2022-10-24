@@ -1,5 +1,5 @@
 <img
-  src="resources/temp_logo.png"
+  src="resources/mupy_logo.png"
   style="display: inline-block; margin: 0 auto; width: 200px">
 
 
