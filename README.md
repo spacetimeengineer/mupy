@@ -1,7 +1,7 @@
 <p align="center">
   <img
   src="resources/mupy_logo.png"
-  style="display: inline-block; margin: 0 auto; width: 200px">
+  style="display: inline-block; margin: 0 auto; width: 500px ">
 </p>
 
 ## Table of contents
@@ -30,7 +30,7 @@ Python manufacturing utility or mupy is a powerful new digital-twin technology i
 
 ## Note from the developer
 
-mupy is more powerful than you think, certainly more than you would believe. The package has grown too large for a single developer to responsibly maintain and I am at a good stopping point. mupy works well, perhaps too well and it finally meets all requirements from my perspective. I just need users and feedback before I can add aditional features. In the meantime I will be developing hardware & assembly libraries which should be considered fundementally important but separate of the mupy.core library. Currently the standard-hardware library is small but useful enough and with more time additional hardware and assemblies can be injected (yet another useful feature). I am still learning this technology myself. I didnt develop it, I discovered it. I just hope other people utilize, study and develop system-code tech or some derived tech becasue it is too powerful to be wasted. 
+mupy is more powerful than you think, certainly more than you would believe. The package has grown too large to maintain alone and I am at a good stopping point. mupy works well, too well and it finally meets all requirements from my perspective. I require users and feedback on the work done thus far before additional features can be developed. I am only interested in the commentary of actual users or practitioners who have demonstrated actual projects supported by mupy. If you are not sure if mupy is for your project, then read this README and try it for yourself first. Remember, I built mupy becasue time is that most precious of resources. In the meantime, I'll continue populating mupy standard library (/mupy/lib) with additional hardware & assembly system-code sets which is abstracted away from the mupy.core library. The standard-library is small but useful enough and with more time, additional hardware and assemblies can be certified. I am still learning this technology to be honest. It is very useful, I just hope other people can utilize, study and develop system-code tech or some derived tech becasue it is too powerful to be wasted. I just want to say lastly that I have nbenn taught throughout my life to not give a man a fish but teach him how. I just want to say that while I agree with the sentiment mostly, there was a real part of me growing up who was tired of teachers, I didnt want thier teachings sometimes I just wanted tools. That is who I wanted to be.
 
 ### Caveats
 The mupy-core package is not without issues or inefficiencies and to make an analogy regarding the circumstance, try to imagine the mu technology as a recipe and mupy as the cuisine implementation of the recipe one prepares but with using subsitution ingredients. Obviously this is not ideal however it works! but here are some glaring issues you should be aware of. I would need the community to help these ones.
@@ -38,7 +38,6 @@ The mupy-core package is not without issues or inefficiencies and to make an ana
 - mupy is a package however an enviornment will be needed to utilize it; openscad will need to be installed (VSCode is also reccomended)
 - Stable on linux Only ; linux file systems are leveraged heavily. It doesnt yet work on Docker, Windows or MacOS. All are non-trivial fixes. Time and consideration are required to solve but can be solved hopefully sooner than later. All depends on supply and demand. The plan is to get everything working eventually but it has been lowered in terms of prioritization. Consider it beta.
 - OpenScad is a fantastic technology to which mupy relies heavily on but it's 3D graphical user interface enviornments or features can not be called from python as objects yet. These enviornments are essential to make mupy "fun" but these modules are too tightly coupled to the integrated development enviornment which supports the openscad language. This is a fancy way of saying I am too dumb to figure it out myself within my time constraints. For this reason I designed mupy to essentially write openscad code directory structures and then the user operates or modifies the code from the openscad integrated development enviornment once mupy generates the code. One still should consider just modifying the original python code because it will work mid-animation anyways. As cumbersome as this all is, it is the standard protocol and very much worth it. mupy is a complex library. It is almost it's own language. No, scatch that. It's an ecosystem of languages. Writing with it may not be so easy. It's perfect for me, but that me.
-
 
 ## Overview
 
@@ -168,9 +167,6 @@ Originally mu could of been thought of as an attempt to devise a physical analog
 - Openscad Horizontal Abstraction Layer & Formalism
 
 - Technology Database
-
-
-This all may sound very complicated but in truth it is all very simple. It just has no form like anything else and you must use it to gain better insight. I like to think of it as a replacement for engineering notes. Something richer and more real. 
 
 ### How do I use mupy?
 
@@ -654,7 +650,7 @@ The available system-code permutation set is an incalculable number and is belie
 Yes! but only the core technology is free, the various family code libraries which should each contain their own license which states the conditions for use. In most cases it is free to use but read the license always.
 
 ### Does mupy replace CAD?
-Absolutely not, mupy is it's own thing and solves different problems. In some cases it may reduce or replace the hours spent using CAD and in other cases it may increase the time people spend. If used in conjunction, you may get an optimized effect depending on your work. CAD simply doesnt provide system-code technology; this much is true. CAD however is optimized, mupy is rudimetry. Apples and oranges, but I like fruit salad anyways. Additionally the simulation enviornment is far far more intuitve and can be automated by scripts. CAD doesnt do that. The mechanical engineer may appreciate mupy and the programmer will never know CAD existed but the libraries will need to expand beyond the standard set I provided for this to become true.
+Absolutely not, mupy is it's own thing and solves different problems. In some cases it may reduce or replace the hours spent using CAD and in other cases it may increase the time people spend. If used in conjunction, you may get an optimized effect depending on your work. CAD simply doesn't provide system-code technology; this much is true. And system code technology is exponentially more overpowered. If there is an argument against CAD, that would be it. CAD however is optimized, mupy is rudimetry. Apples and oranges, but I like fruit salad. Additionally the simulation enviornment is far more intuitve and can be automated with scripts if one chooses. traditional CAD doesnt do that.
 
 ## Contacts:
 
