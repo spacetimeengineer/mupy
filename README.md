@@ -169,9 +169,6 @@ Originally mu could of been thought of as an attempt to devise a physical analog
 
 - Technology Database
 
-
-This all may sound very complicated but in truth it is all very simple. It just has no form like anything else and you must use it to gain better insight. I like to think of it as a replacement for engineering notes. Something richer and more real. 
-
 ### How do I use mupy?
 
 There are two interfaces for mupy, a command line interface (CLI) ( mostly a novelty but suprisingly very useful ) and an applications programming interface (API) They are described below.
