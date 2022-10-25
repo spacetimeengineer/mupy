@@ -627,7 +627,7 @@ Currently the command line tool is extremely crude. The reasons for this are non
 All subdirectories which contain a license will be represented by that license. This is always a subdirectory representing a family code or name-space. In this way mupy can be thought of as an abstraction that makes efficient calls to some library which may contain a different license. Additionally one could protect a library with authentication / permissions systems. 
 
 ### mupy.core license
-The top level directory license applies to all contained files and directories EXCEPT for family code files and directories which should be thought of as python sub-packages which always contain their own source code file, license and digital-twin python class. This license overrides the top level license and applies to all same-directory-files and same-directory-directories. The mupy.core serves as an abstraction layer to the hardware family libraries which it essentially makes function calls to containing parametrization which is extracted from system-codes.
+The top level directory license applies to all contained files and directories EXCEPT for family code files and directories which should be thought of as python sub-packages which always contain their own source code file, license and digital-twin python class. This license overrides the top level license and applies to all same-directory-files and same-directory-directories.
 
 ### mupy.lib licenses
 Individual hardware families are guided by their own license agreements. Each hardware family directory will posses a license file. The mupy package makes calls to these libraries which exist as sub-directories currently.
