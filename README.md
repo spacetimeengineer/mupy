@@ -13,9 +13,8 @@
    * [Getting Started](#getting-started)
    * [Generating Output](#generating-output)
    * [3D Printing](#3d-printing)
-   * [Concepts](#concepts)
    * [Community](#community)
-   * [Information](#information)
+   * [Contact](#contact)
 <!--te-->
 
 
