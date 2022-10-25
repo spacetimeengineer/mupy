@@ -134,14 +134,14 @@ So this is the fun part. You assemble the printed parts and make sure they fit a
 
 ### Optimize Assembly/Script
 
-One way to think about why one may consider using mupy scripting tools is to imagine the scenario of having in your posession some prototype you wish to carry to the next stage and some corresponding script to reflect it's digital twin available to you. The basic idea is that this mupy script would be matching the state of the prototype and allow the user to make programmatic modifications to the simulation enviornment and render resources and render everything in an instant without halting the simulation. This is how I use it. This will in turn support the continued evolution of the project without risking costly materials. Once optimized, the script becomes meaningful and powerful and valuable. This person would then have the right to sell this intelectual property at some price they see fit. This efficiency is then further multiplied if the knowledge is transered digitally, decoded and manufacrtured remotely. Alsoit is believed that this enviornment will support commerce and reduce cost for many people generally speaking. Once a designer optimizes thier script or prodecut then it can be tranfered digitally withT all possible information regarding it's operation and assembly and manufacturing within reasonable limits. Additionally this information may 
+One way to think about why one may consider using mupy scripting tools is to imagine the scenario of having in your posession some prototype you wish to take to the next stage and along-side it a corresponding script reflecting it's digital twin available to you. The basic idea is that this mupy script would match the state of the physical prototype and allow the user to make programmatic modifications to the simulation enviornment and render resources in an instant without halting the simulation or breaking a sweat. This would support the evolution of the physical prototype as well. This is how I use it and it's fast. This will in turn support the continued evolution of the project without risking costly materials. Once optimized, the script becomes meaningful, powerful and valuable. This person may then posess the right to sell this intellectual property at some price they see fit. They could also manufacture it whenever they wanted to. This efficiency could then further multiplied if the knowledge regarding it's assembly and operation are transered digitally, decoded and manufactured remotely. It is believed that this kind of enviornment will support commerce and reduce cost for many people generally speaking once newer layers of tweaking and customizations are made available in the form of new system codes.
 
 ### Transfer knowlegde in a capacity that sutainstains growth and commerce.
 
-What, you think this is a hobby. I got people to feed.
+Yeah, use these parts and start a business or do whatever you want.
 
 ### Certify Assembly/Script (Optional)
-The whole point of mupy is to script hardware and assemblies using system codes but what if the entire script could be cast as one. Let that sink in and call me when you start to freak out k...
+The whole point of mupy is to script hardware and assemblies using system codes but what if the entire script could be cast as one. Let that sink in.
 
 ## Main Points
 A collection or list of quick concepts, items and keywords which give an overview of whats mupy is all about.
