@@ -118,7 +118,7 @@ workspace.run(box_assembly, mu.Coordinates()) # This command creates all directo
 
 Once the script is run, it will generate a workspace directory with generated scad source code files. These files build a hierarchical stucture for defining the overall assembly. This breaks things into steps with no specific order in the current implementation. These files are marked with an 'A' or a 'P' at the beginning of thier hash in the file name to signify an assembly or a hardware part respectivly. This code is used to render .stl files and then import them into an assembly hierarchy which can be simulated from any point in the assembly. Just click on intended assembly .scad file. Additionally the hashes are predictable in the sense that the simulation may be re run without canceling the openscad IDE or animation.
 
-![Alt Text](resources/utility_box.gif)
+![Alt Text](resources/simple_box.gif)
 
 This example gives users the resources to construct a simple box. This example utilizes the CUBX0177 family and the mupy.core library. For this script, modular principles are employed however generally speaking system-codes only interlock with other certain system-codes. In the case of the CUBX0177 family the first five elements composing the system code strings should be synchronized for modularity to be possible. Keep in mind that every type-code has its own rules that it must follow and in some cases specific parameterization choices will override other intended features. In other cases the systems-codes won't even be meaningful geometrically unless the libraries have built in their own boundary-conditions to keep certain codes un-renderable.
 
