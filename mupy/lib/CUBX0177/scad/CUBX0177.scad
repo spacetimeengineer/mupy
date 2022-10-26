@@ -445,9 +445,21 @@ module CUBX0177_VANE( block_length, shaft_radius, x_units, y_units )
 
 module CUBX0177_FOIL( block_length, shaft_radius, x_units, y_units, axle_blocks)
 {
-    translate([0*block_length, 0*block_length, 0*block_length]) { general_block(block_length + 0.01, shaft_radius ); }
-    CUBX0177_AXLE( block_length, shaft_radius, axle_blocks = axle_blocks );
-    translate([axle_blocks*block_length,0,0]) {CUBX0177_SPAN(block_length, shaft_radius, x_units = x_units, y_units = y_units, x_cavity_spacing = 0, y_cavity_spacing = 0, x_cavity_units = 0, y_cavity_units = 0 , x_offset = 0 , y_offset = 0, x_cavity_dimensions = 0, y_cavity_dimensions = 0 , z_cavity_dimensions = 0, cavity_type = "S"); }
+    rotate([-90,0,0])
+    {
+        translate([0,-30,0]) { rotate([ 0, 0, 90 ]) { CUBX0177_AXLE( block_length, shaft_radius, axle_blocks = axle_blocks ); } }
+        translate([0,-50,0]) { rotate([ 0, 0, 90 ]) { CUBX0177_AXLE( block_length, 0, axle_blocks = 11 ); } }
+        difference()
+        {
+            union()
+            {
+                translate([0,0,0]) { cylinder(h = 2, r1 = 125, r2 = 125, center = true); }
+                translate([0,-100,0]) { cube([250,200,2], center = true); }
+            }
+            translate([0,0,0]) { cylinder(h = 3, r1 = 60, r2 = 60, center = true); }
+            translate([0,500,0]) { cube([1000,1000,10], center = true); }
+        }
+    }
 }
 
 
@@ -564,4 +576,4 @@ module CUBX0177_BPIN( block_length, shaft_radius, block_units_pin_length, pin_ra
 
 
 // CUBX0177_VANE( block_length = 7.5, shaft_radius = 2.25, x_units = 5, y_units = 8 )
-CUBX0177_FOIL( block_length = 7.5, shaft_radius = 2.25, x_units = 6, y_units = 6, axle_blocks = 8 );
+CUBX0177_FOIL( block_length = 7.5, shaft_radius = 2, x_units = 12, y_units = 12, axle_blocks = 8 );
