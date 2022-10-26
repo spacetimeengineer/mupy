@@ -2,12 +2,8 @@
   <img
   src="resources/mupy_logo.png"
   style="display: inline-block; margin: 0 auto; width: 500px ">
-  </p>
-  <p align="center">
-  <img
-  src="resources/printed_hardware.png"
-  style="display: inline-block; margin: 0 auto; width: 800px ">
 </p>
+
 
 ## Table of contents
 
@@ -23,6 +19,11 @@
    * [Other Information](#other-information)
 <!--te-->
 
+<p align="center">
+  <img
+  src="resources/printed_hardware.png"
+  style="display: inline-block; margin: 0 auto; width: 800px ">
+</p>
 
 # About
 
