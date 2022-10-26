@@ -32,7 +32,7 @@ Python manufacturing utility or mupy is a powerful new digital-twin technology i
 <p align="center">
   <img
   src="resources/printed_hardware.png"
-  style="display: inline-block; margin: 0 auto; width: 800px ">
+  style="display: inline-block; margin: 0 auto; width: 1000px ">
 </p>
 
 ## Note from the developer
