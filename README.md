@@ -175,6 +175,8 @@ Originally mu could of been thought of as an attempt to devise a physical analog
 
 - Technology Database
 
+- Personal Economic Experiment
+
 ### How do I use mupy?
 
 There are two interfaces for mupy, a command line interface (CLI) ( mostly a novelty but surprisingly very useful ) and an applications programming interface (API) They are described below.
