@@ -6,7 +6,7 @@
   <p align="center">
   <img
   src="resources/printed_hardware.png"
-  style="display: inline-block; margin: 0 auto; width: 500px ">
+  style="display: inline-block; margin: 0 auto; width: 800px ">
 </p>
 
 ## Table of contents
