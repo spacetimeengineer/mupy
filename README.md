@@ -19,11 +19,6 @@
    * [Other Information](#other-information)
 <!--te-->
 
-<p align="center">
-  <img
-  src="resources/printed_hardware.png"
-  style="display: inline-block; margin: 0 auto; width: 800px ">
-</p>
 
 # About
 
@@ -33,6 +28,12 @@ Python manufacturing utility or mupy is a powerful new digital-twin technology i
 - programmatic representation ; of hardware & assemblies ( composing of smaller hardware elements and sub-assemblies ) within virtual 3D workspaces
 - operational & assembly simulations (animations) with real-time programmatic modification capabilities
 - Integratable with thousands of other python compatible technologies
+
+<p align="center">
+  <img
+  src="resources/printed_hardware.png"
+  style="display: inline-block; margin: 0 auto; width: 800px ">
+</p>
 
 ## Note from the developer
 
