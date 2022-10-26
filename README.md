@@ -3,7 +3,7 @@
   src="resources/mupy_logo.png"
   style="display: inline-block; margin: 0 auto; width: 500px ">
   <img
-  src="resources/hardware.png"
+  src="resources/printed_hardware.png"
   style="display: inline-block; margin: 0 auto; width: 500px ">
 </p>
 
