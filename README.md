@@ -28,6 +28,7 @@ Python manufacturing utility or mupy is a powerful new digital-twin technology i
 - programmatic representation ; of hardware & assemblies ( composing of smaller hardware elements and sub-assemblies ) within virtual 3D workspaces
 - operational & assembly simulations (animations) with real-time programmatic modification capabilities
 - Integratable with thousands of other python compatible technologies
+- Transfer complete knowledge of your innovations to others
 
 <p align="center">
   <img
