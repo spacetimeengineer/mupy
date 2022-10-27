@@ -373,8 +373,7 @@ $ python3 <package_location>/mupy/mucli/mucli.py
 
 ### Imputing a system-code
 
-Each system-code corresponds to a specific part. Once typed press enter to generate resources. Here are some examples of system-codes and their corresponding hardware elements.
-
+Each system-code corresponds to a specific part. Once typed press enter to generate resources. Here are a few examples below of some system-codes and their corresponding hardware elements.
     μ:# CUBX0006-BLK-L1000W200H15
 
 ![Alt Text](resources/CUBX0006-BLK-L1000W200H15.gif)
@@ -383,33 +382,9 @@ Each system-code corresponds to a specific part. Once typed press enter to gener
 
 ![Alt Text](resources/CRSPGR022-SG-M1-T34W8-P15H15-B4-T.gif)
 
-    μ:# CUBX0177-BPAN-B12SR3-X10Y10PP12-RF-SX10Y10-X1Y1-XO0YO0-X70Y70Z10-S
-
-![Alt Text](resources/CUBX0177-BPAN-B12SR3-X10Y10PP12-RF-SX10Y10-X1Y1-XO0YO0-X70Y70Z10-S.gif)
-
-    μ:# CUBX0006-BLK-L1229P4W38H89
-
-![Alt Text](resources/CUBX0006-BLK-L1229P4W38H89.gif)
-
     μ:# CUBX0177-BPAN-B12SR0-X6Y18PP12-XF-SX10Y10-X1Y1-XO0YO0-X24Y168Z25-S
 
 ![Alt Text](resources/CUBX0177-BPAN-B12SR0-X6Y18PP12-XF-SX10Y10-X1Y1-XO0YO0-X24Y168Z25-S.gif)
-
-    μ:# CUBX0177-AXLE-B10SR2P5-A22
-
-![Alt Text](resources/CUBX0177-AXLE-B10SR2P5-A22.png)
-
-    μ:# CUBX0177-FYAD-B15SR3P1
-
-![Alt Text](resources/CUBX0177-FYAD-B15SR3P1.png)
-
-    μ:# CUBX0177-AXAD-B15SR3P1
-
-![Alt Text](resources/CUBX0177-AXAD-B15SR3P1.png)
-
-    μ:# CRSPGR022-BG-M2-T34W25-P25H20C50-B15
-
-![Alt Text](resources/CRSPGR022-BG-M2-T34W25-P25H20C50-B15.png)
 
 
 ## Scripting with mupy.core
