@@ -1,16 +1,12 @@
 #!/usr/bin/env python3
 
-"""
-Note to user : This script as seen on github is used to illustrate the power of mupy parameterization and how it can be manipulated with python calls.
-"""
-
 """ Required Libray Imports. """
-from pathlib import Path # Imports library nessecary for fetching terminal path information.
-import mupy.core as mu # Imports mupy library.
+from pathlib import Path
+import mupy.core as mu
 
 """ Set Up Workspace. """
-workspace_name = "double_box" # Workspace name ; this will be the name of the workspace directory.
-workspace = mu.WorkSpace(str(Path.home())+"/"+workspace_name) # Creates workspace.
+workspace_name = "double_box"
+workspace = mu.WorkSpace(str(Path.home())+"/"+workspace_name)
 
 """ Define Hardware Components"""
 panel_a = mu.Hardware("panel_a", "CUBX0177-BPAN-B25SR2P5-X8Y8PP2-RT-SX10Y10-X1Y1-XO0YO0-X70Y70Z10-S")
@@ -31,20 +27,20 @@ panel_l = mu.Hardware("panel_l", "CUBX0177-BPAN-B25SR2P5-X8Y8PP2-RT-SX10Y10-X1Y1
 """ Define Hardware Assembly Coordinates"""
 
 
-alpha = 230                                                                                                                          # Alpha is a constant which is useful for describing the distance between panels in the custom box.
-assembly_coords_a = mu.Coordinates( z0 = 8 * 25 / 2 + alpha,             zf = 8 * 25 / 2                                       )     # Equation must be satisfied in order to express custom-box function. 
-assembly_coords_b = mu.Coordinates( y0 = 8 * 25 / 2 + alpha,             yf = 8 * 25 / 2,             af = -90                 )     # Equation must be satisfied in order to express custom-box function. 
-assembly_coords_c = mu.Coordinates( x0 = - 8 * 25 / 2 - alpha,           xf = - 8 * 25 / 2,           bf = -90                 )     # Equation must be satisfied in order to express custom-box function. 
-assembly_coords_d = mu.Coordinates( z0 = -8 * 25 / 2 - alpha,            zf = -8 * 25 / 2,            bf = 180                 )     # Equation must be satisfied in order to express custom-box function. 
-assembly_coords_e = mu.Coordinates( y0 = - 8 * 25 / 2 - alpha,           yf = - 8 * 25 / 2,           af = 90                  )     # Equation must be satisfied in order to express custom-box function. 
-assembly_coords_f = mu.Coordinates( x0 = 8 * 25 / 2 + alpha,             xf = 8 * 25 / 2,             af = 90,       cf = 90   )     # Equation must be satisfied in order to express custom-box function. 
+alpha = 230                                                                                                                    
+assembly_coords_a = mu.Coordinates( z0 = 8 * 25 / 2 + alpha,             zf = 8 * 25 / 2                                       )
+assembly_coords_b = mu.Coordinates( y0 = 8 * 25 / 2 + alpha,             yf = 8 * 25 / 2,             af = -90                 )
+assembly_coords_c = mu.Coordinates( x0 = - 8 * 25 / 2 - alpha,           xf = - 8 * 25 / 2,           bf = -90                 )
+assembly_coords_d = mu.Coordinates( z0 = -8 * 25 / 2 - alpha,            zf = -8 * 25 / 2,            bf = 180                 )
+assembly_coords_e = mu.Coordinates( y0 = - 8 * 25 / 2 - alpha,           yf = - 8 * 25 / 2,           af = 90                  )
+assembly_coords_f = mu.Coordinates( x0 = 8 * 25 / 2 + alpha,             xf = 8 * 25 / 2,             af = 90,       cf = 90   )
 
-assembly_coords_g = mu.Coordinates( z0 = 8 * 25 / 2 + alpha,             zf = 8 * 25 / 2                                       )     # Equation must be satisfied in order to express custom-box function. 
-assembly_coords_h = mu.Coordinates( y0 = 8 * 25 / 2 + alpha,             yf = 8 * 25 / 2,             af = -90                 )     # Equation must be satisfied in order to express custom-box function. 
-assembly_coords_i = mu.Coordinates( x0 = - 8 * 25 / 2 - alpha,           xf = - 8 * 25 / 2,           bf = -90                 )     # Equation must be satisfied in order to express custom-box function. 
-assembly_coords_j = mu.Coordinates( z0 = -8 * 25 / 2 - alpha,            zf = -8 * 25 / 2,            bf = 180                 )     # Equation must be satisfied in order to express custom-box function. 
-assembly_coords_k = mu.Coordinates( y0 = - 8 * 25 / 2 - alpha,           yf = - 8 * 25 / 2,           af = 90                  )     # Equation must be satisfied in order to express custom-box function. 
-assembly_coords_l = mu.Coordinates( x0 = 8 * 25 / 2 + alpha,             xf = 8 * 25 / 2,             af = 90,       cf = 90   )     # Equation must be satisfied in order to express custom-box function. 
+assembly_coords_g = mu.Coordinates( z0 = 8 * 25 / 2 + alpha,             zf = 8 * 25 / 2                                       )
+assembly_coords_h = mu.Coordinates( y0 = 8 * 25 / 2 + alpha,             yf = 8 * 25 / 2,             af = -90                 )
+assembly_coords_i = mu.Coordinates( x0 = - 8 * 25 / 2 - alpha,           xf = - 8 * 25 / 2,           bf = -90                 )
+assembly_coords_j = mu.Coordinates( z0 = -8 * 25 / 2 - alpha,            zf = -8 * 25 / 2,            bf = 180                 )
+assembly_coords_k = mu.Coordinates( y0 = - 8 * 25 / 2 - alpha,           yf = - 8 * 25 / 2,           af = 90                  )
+assembly_coords_l = mu.Coordinates( x0 = 8 * 25 / 2 + alpha,             xf = 8 * 25 / 2,             af = 90,       cf = 90   )    
 
 """ Define assembly. """
 box_assembly_1 = mu.Assembly("box_assembly_1")
@@ -64,12 +60,12 @@ box_assembly_2.include(panel_k, assembly_coords_k)
 box_assembly_2.include(panel_l, assembly_coords_l)
 
 beta = 1000
-box_assembly_1_coords = mu.Coordinates(t0 = 0.1, tf = 0.5, x0 = 8 * 25 / 2 + beta, xf = 8 * 25 / 2) # Equation must be satisfied in order to express custom-box function. 
-box_assembly_2_coords = mu.Coordinates(t0 = 0.5, tf = 0.8, x0 = -8 * 25 / 2 - beta, xf = -8 * 25 / 2) # Equation must be satisfied in order to express custom-box function. 
+box_assembly_1_coords = mu.Coordinates(t0 = 0.1, tf = 0.5, x0 = 8 * 25 / 2 + beta, xf = 8 * 25 / 2)
+box_assembly_2_coords = mu.Coordinates(t0 = 0.5, tf = 0.8, x0 = -8 * 25 / 2 - beta, xf = -8 * 25 / 2)
 
 system_assembly_1 = mu.Assembly("system_assembly_1")
 system_assembly_1.include(box_assembly_1, box_assembly_1_coords)
 system_assembly_1.include(box_assembly_2, box_assembly_2_coords)
 
 """ Run """
-workspace.run(system_assembly_1, mu.Coordinates()) # This command creates all directorires and assemblies.
+workspace.run(system_assembly_1, mu.Coordinates())
