@@ -2,10 +2,8 @@
   <img
   src="resources/mupy_logo.png"
   style="display: inline-block; margin: 0 auto; width: 500px ">
-  <img
-  src="resources/printed_hardware.png"
-  style="display: inline-block; margin: 0 auto; width: 500px ">
 </p>
+
 
 ## Table of contents
 
@@ -22,14 +20,21 @@
 <!--te-->
 
 
-# About
+## About
 
 Python manufacturing utility or mupy is a powerful new digital-twin technology implemented as a python pip installable package. In it's essence mupy is a platform or a new way to think about design, physical hardware, advanced assemblies, innovative technologies or most generally speaking, systems. This package and the tools included empowers users with hardware-class-objects into the python scripting environment. mupy possesses features such as hardware & system generation, assembly & operational simulation, metadata & resources renderings. mupy empowers the user with resources and speed. Get dangerous.
 
-- quintillions (of quintillions (of quintillions...)) of identifiable and discernible hardware elements and even more assemblies for 3D print, CNC or any other form of manufacturing
+- billions (of billions (of billions...)) of identifiable and discernible hardware elements and even more assemblies for 3D print, CNC or any other form of manufacturing
 - programmatic representation ; of hardware & assemblies ( composing of smaller hardware elements and sub-assemblies ) within virtual 3D workspaces
 - operational & assembly simulations (animations) with real-time programmatic modification capabilities
 - Integratable with thousands of other python compatible technologies
+- Transfer complete knowledge of your innovations to others
+
+<p align="center">
+  <img
+  src="resources/printed_hardware.png"
+  style="display: inline-block; margin: 0 auto; width: 1000px ">
+</p>
 
 ## Note from the developer
 
@@ -41,7 +46,8 @@ The mupy-core package is not without issues and I would liek to be the first to 
 - mupy is a package however an environment will be needed to utilize it; openscad will need to be installed (VSCode is also recommended)
 - Stable on Linux Only ; Linux file systems are leveraged heavily. It doesn't yet work on Docker, Windows or MacOS. All are non-trivial fixes. Time and consideration are required to solve but can be solved hopefully sooner than later. All depends on supply and demand. The plan is to get everything working eventually but it has been lowered in terms of prioritization. Consider it beta.
 - OpenScad is a fantastic technology to which mupy relies heavily on but it's 3D graphical user interface environments or features can not be called from python as objects yet. These environments are essential to make mupy "fun" but these modules are too tightly coupled to the integrated development environment which supports the openscad language. This is a fancy way of saying I am too dumb to figure it out myself within my time constraints. For this reason I designed mupy to essentially write openscad code directory structures and then the user operates or modifies the code from the openscad integrated development environment once mupy generates the code. One still should consider just modifying the original python code because it will work mid-animation anyways. As cumbersome as this all is, it is the standard protocol and very much worth it. mupy is a complex library. It is almost it's own language. No, scratch that. It's an ecosystem of languages. Writing with it may not be so easy. It's perfect for me, but that me.
-
+- Standard library is still very small compared to future expectations.
+-
 ## Overview
 
 It is difficult to describe the full scope of features (both current and intended) but this overview paints a simple picture of the general process a user may adopt. 
@@ -151,7 +157,7 @@ A collection or list of quick concepts, items and keywords which give an overvie
 
 ### What is it?
 
-Originally mu could of been thought of as an attempt to devise a physical analogy to a software-programming language. The mu project was in past considered a hardware-assembly language but this interpretation became not entirely appropriate upon further realizations concerning the nature of manufacturing and development. Some additional context, the mu project started off as an internal utility ( a bag of scripts really ) to a small but growing research and development operation. This operation was tasked with developing utility and recreational grade hardware which featured advanced modular properties. This operation utilized a linux-openscad-python environment. Additionally there existed a 3D-Print and Assembly sub operation which gave even greater insight to the development of mupy. mupy is many things, you may think of it as :
+Originally mu could of been thought of as an attempt to devise a physical analogy to a software-programming language it was simultaniously serving as a hyper-efficient storage medium. For every part I devised, I created a trillion, trillion permutations of that same part. The mu project was in past considered a hardware-assembly language but this interpretation became not entirely appropriate upon further realizations concerning the nature of manufacturing and development. Some additional context, the mu project started off as an internal utility ( a bag of scripts really ) to a small but growing research and development operation. This operation was tasked with developing utility and recreational grade hardware which featured advanced modular properties. This operation utilized a linux-openscad-python environment. Additionally there existed a 3D-Print and Assembly sub operation which gave even greater insight to the development of mupy. mupy is many things, you may think of it as :
 
 - Creation Engine
 
@@ -170,6 +176,8 @@ Originally mu could of been thought of as an attempt to devise a physical analog
 - Openscad Horizontal Abstraction Layer & Formalism
 
 - Technology Database
+
+- Personal Economic Experiment
 
 ### How do I use mupy?
 
