@@ -47,7 +47,7 @@ The mupy-core package is not without issues and I would liek to be the first to 
 - Stable on Linux Only ; Linux file systems are leveraged heavily. It doesn't yet work on Docker, Windows or MacOS. All are non-trivial fixes. Time and consideration are required to solve but can be solved hopefully sooner than later. All depends on supply and demand. The plan is to get everything working eventually but it has been lowered in terms of prioritization. Consider it beta.
 - OpenScad is a fantastic technology to which mupy relies heavily on but it's 3D graphical user interface environments or features can not be called from python as objects yet. These environments are essential to make mupy "fun" but these modules are too tightly coupled to the integrated development environment which supports the openscad language. This is a fancy way of saying I am too dumb to figure it out myself within my time constraints. For this reason I designed mupy to essentially write openscad code directory structures and then the user operates or modifies the code from the openscad integrated development environment once mupy generates the code. One still should consider just modifying the original python code because it will work mid-animation anyways. As cumbersome as this all is, it is the standard protocol and very much worth it. mupy is a complex library. It is almost it's own language. No, scratch that. It's an ecosystem of languages. Writing with it may not be so easy. It's perfect for me, but that me.
 - Standard library is still very small compared to future expectations.
-
+- The worst caveat by far is the mapping system-code space. 
 
 ## Overview
 
