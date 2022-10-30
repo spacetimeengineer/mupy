@@ -375,6 +375,7 @@ $ python3 <package_location>/mupy/mucli/mucli.py
 ### Imputing a system-code
 
 Each system-code corresponds to a specific part. Once typed press enter to generate resources. Here are a few examples below of some system-codes and their corresponding hardware elements.
+
     μ:# CUBX0006-BLK-L1000W200H15
 
 ![Alt Text](resources/CUBX0006-BLK-L1000W200H15.gif)
