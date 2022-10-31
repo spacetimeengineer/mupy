@@ -180,8 +180,11 @@ As was stated before, once the script is run, mupy will generate a workspace dir
 This example gives users the resources to construct a simple box. This example utilizes the CUBX0177 family and the mupy.core library. For this script, modular principles are employed however generally speaking system-codes only interlock with other certain system-codes. In the case of the CUBX0177 family the first five elements composing the system code strings should be synchronized for modularity to be possible. Keep in mind that every type-code has its own rules that it must follow and in some cases specific parametrization choices will override other intended features. In other cases the systems-codes won't even be meaningful geometrically unless the libraries have built in their own boundary-conditions to keep certain codes non-render-able.
 
 ## 3D Printing
+ 
+3D printers are getting better by the day but the community has been unable to utilize their true capabilities.  This is mostly becasue the design sets available from the open domain are very limited. This is to say there are not alot of proffesionals developing hardware designs for 3D printers to print, and especially not things utility grade. Additionally, manufacturing proffesionals and leaders tend to watse time comparing addative manufacturing methods to traditional manufacturing methods such as injection molding or casting. 3D printers are slow wheras traditional methods are fast. I am very familiar with the narrative but one never seems to consider the possibilities of 3D printers. The rapid modificiation/ modular culture which could never be caught up with. Once materials get better. 
 
-You will need to download *Ultimaker Cura* (or some other slicing software) in order to move forward with this step. You can download it from https://ultimaker.com/software/ultimaker-cura .
+
+My point is that   has matched the capabliliteis of 3D printers untilnow. mupy was not designed for just 3D printing alone but it was certainly battle-tested with 3D printing. To go down this path, you will need to download *Ultimaker Cura* (or some other slicing software) in order to move forward with this step. You can download it from https://ultimaker.com/software/ultimaker-cura .
 
 ### Running Cura - Rough Overview
 
