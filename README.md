@@ -18,10 +18,10 @@ This project is not finished. The code is relatively stable and is on a soft rel
    * [Installation](#installation)
    * [Getting Started](#getting-started)
    * [Generating Output](#generating-output)
-   * [3D Printing](#3d-printing)
-   * [Road-map](#road-map)
-   * [Contact](#contact)
-   * [Other Information](#other-information)
+   * [Manufacturing](#manufacturing)
+   * [Concepts](#concepts)
+   * [Community](#contact)
+   * [Contact](#other-information)
 <!--te-->
 
 
