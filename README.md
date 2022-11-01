@@ -7,7 +7,8 @@
   style="display: inline-block; margin: 0 auto; width: 500px ">
 </p>
 -->
-
+### DIsclaimer 
+This project is not finished. on a soft release schedual. Please forgive spelling or grammatical mistakes as this project is not intended to be show
 ## Table of contents
 
 <!--ts-->
