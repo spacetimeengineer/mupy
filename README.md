@@ -233,7 +233,7 @@ Depending on the part, you may need to clean it for it to be functional. This is
 
 So this is the fun part. You assemble the printed parts and make sure they fit all together. Good Luck!
 
-### Optimize Assembly/Script
+## Optimize Assembly/Script
 
 One way to think about why one may consider using mupy scripting tools is to imagine the scenario of having in your possession some prototype you wish to take to the next stage and along-side it a corresponding script reflecting it's digital twin available to you. The basic idea is that this mupy script would match the state of the physical prototype and allow the user to make programmatic modifications to the simulation environment and render resources in an instant without halting the simulation or breaking a sweat. This would support the evolution of the physical prototype as well. This is how I use it and it's fast. This will in turn support the continued evolution of the project without risking costly materials. Once optimized, the script becomes meaningful, powerful and valuable. This person may then possess the right to sell this intellectual property at some price they see fit. They could also manufacture it whenever they wanted to. This efficiency could then further multiplied if the knowledge regarding it's assembly and operation are transferred digitally, decoded and manufactured remotely. It is believed that this kind of environment will support commerce and reduce cost for many people generally speaking once newer layers of tweaking and customizations are made available in the form of new system codes.
 
