@@ -9,3 +9,5 @@ command = "$ pip3 install mupy"
 
 [publish]
 command = "$ python3 -m twine upload --repository pypi dist/* --verbose"
+
+
