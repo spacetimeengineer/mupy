@@ -53,6 +53,44 @@ The mupy-core package is not without issues and I would liek to be the first to 
 - Standard library is still very small compared to future expectations.
 - The worst caveat by far is the mapping system-code space. 
 
+
+## Main Points
+A collection or list of quick concepts, items and keywords which give an overview of whats mupy is all about.
+
+### What is it?
+
+Originally mu could of been thought of as an attempt to devise a physical analogy to a software-programming language it was simultaniously serving as a hyper-efficient storage medium. For every part I devised, I created a trillion, trillion permutations of that same part. The mu project was in past considered a hardware-assembly language but this interpretation became not entirely appropriate upon further realizations concerning the nature of manufacturing and development. Some additional context, the mu project started off as an internal utility ( a bag of scripts really ) to a small but growing research and development operation. This operation was tasked with developing utility and recreational grade hardware which featured advanced modular properties. This operation utilized a linux-openscad-python environment. Additionally there existed a 3D-Print and Assembly sub operation which gave even greater insight to the development of mupy. mupy is many things, you may think of it as :
+
+- Creation Engine
+
+- Knowledge Transfer Mechanism
+
+- Clone-able Supply Chain Asset
+
+- Compression Algorithm
+
+- Decentralized Innovation Utility
+
+- Hardware Generator
+
+- Applications-Programming Interface ( CLI Included )
+
+- Openscad Horizontal Abstraction Layer & Formalism
+
+- Technology Database
+
+- Personal Economic Experiment
+
+### How do I use mupy?
+
+There are two interfaces for mupy, a command line interface (CLI) ( mostly a novelty but surprisingly very useful ) and an applications programming interface (API) They are described below.
+
+- mucli - This is the manufacturing utility command line tool and is used to express the most rudimentary function of mupy ; to decode system-codes
+
+- mu.core - A manufacturing oriented digital-twin technology implemented as a python3 library
+
+
+
 # Overview
 
 It is difficult to describe the full scope of features (both current and intended) but this overview paints a simple picture of the general process a user may adopt. 
@@ -244,40 +282,6 @@ Yeah, use these parts and start a business or do whatever you want.
 ### Certify Assembly/Script (Optional)
 The whole point of mupy is to script hardware and assemblies using system codes but what if the entire script could be cast as one. Let that sink in.
 
-## Main Points
-A collection or list of quick concepts, items and keywords which give an overview of whats mupy is all about.
-
-### What is it?
-
-Originally mu could of been thought of as an attempt to devise a physical analogy to a software-programming language it was simultaniously serving as a hyper-efficient storage medium. For every part I devised, I created a trillion, trillion permutations of that same part. The mu project was in past considered a hardware-assembly language but this interpretation became not entirely appropriate upon further realizations concerning the nature of manufacturing and development. Some additional context, the mu project started off as an internal utility ( a bag of scripts really ) to a small but growing research and development operation. This operation was tasked with developing utility and recreational grade hardware which featured advanced modular properties. This operation utilized a linux-openscad-python environment. Additionally there existed a 3D-Print and Assembly sub operation which gave even greater insight to the development of mupy. mupy is many things, you may think of it as :
-
-- Creation Engine
-
-- Knowledge Transfer Mechanism
-
-- Clone-able Supply Chain Asset
-
-- Compression Algorithm
-
-- Decentralized Innovation Utility
-
-- Hardware Generator
-
-- Applications-Programming Interface ( CLI Included )
-
-- Openscad Horizontal Abstraction Layer & Formalism
-
-- Technology Database
-
-- Personal Economic Experiment
-
-### How do I use mupy?
-
-There are two interfaces for mupy, a command line interface (CLI) ( mostly a novelty but surprisingly very useful ) and an applications programming interface (API) They are described below.
-
-- mucli - This is the manufacturing utility command line tool and is used to express the most rudimentary function of mupy ; to decode system-codes
-
-- mu.core - A manufacturing oriented digital-twin technology implemented as a python3 library
 
 # Installation
 
