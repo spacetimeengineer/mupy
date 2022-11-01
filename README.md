@@ -8,7 +8,8 @@
 </p>
 -->
 ### DIsclaimer 
-This project is not finished. on a soft release schedual. Please forgive spelling or grammatical mistakes as this project is not intended to be show
+This project is not finished. The code is relatively stable and is on a soft release schedual. I am heavily testing mupy now but is quietly public. Others can use mupy if they want but they may have some difficulty in knowing which system codes to use since the documentation is still sparse. The README is still being written along with system-code documentation but the main code is there. Please forgive spelling or grammatical errors as finishing touches are being applied over the next couple months. Ill make a beta announcement later but conisder this something thst is notfinished but very close.
+
 ## Table of contents
 
 <!--ts-->
