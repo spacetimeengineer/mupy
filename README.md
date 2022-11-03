@@ -249,13 +249,13 @@ To print parts just import the generated stl file into [Ultimaker Cura](https://
 
   2. Once downloaded you should take time to familiarize yourself with basic 3D printing concepts. Some common examples include: 
 
-    - Print Bed Temperature
-    - Nozzle Temperature
-    - Retraction State
-    - Cleaning
-    - Filament
-    - Supports 
-    - Print Speed
+  - Print Bed Temperature
+  - Nozzle Temperature
+  - Retraction State
+  - Cleaning
+  - Filament
+  - Supports 
+  - Print Speed
 
 Some of these things and more are configurable in in Cura, which can be thought of as a pre-print application which feeds instructions to the 3D printers with the gcode file it generates. For starters, try importing an stl file generated from custom_box.py
 
