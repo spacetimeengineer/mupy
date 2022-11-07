@@ -1,3 +1,8 @@
+### Mapping the system-code landscape. 
+
+I must confess I have no good scheme for how we should navigate system-code space. The only thing that has worked for me thus far is to identify projects and let those things define your requirements. Also the certification feature of mupy provides a casting mechanism which is really a kind of compression mechansim too 
+
+
 ### library-index
 
 | Family Code         | Description                    |
