@@ -652,3 +652,6 @@ Yes! But only the core technology is free. The various family code libraries sho
 
 ### How can I earn income?
 One reason system-code technology was devised the way it was that it provided a powerful staging mechanism through abstraction to which pay walls and authentication could be assigned ; that is, to some library separate of the standard library. Although documentation on how to do this is sparse, any motivated individual could figure it out. The standard library is provided to get people stated with innovations. 
+
+## Contact
+Dont ever think about contacting me.
