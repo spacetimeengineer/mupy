@@ -12,9 +12,7 @@ Contains code that models the mucli command line tool.
 
 Contains code that builds the hardware itself. This library will be continuously built indefinitely and the hope is that with the community's help over many years we can develop and identify together a series of reliable hardware families and assembled systems for wide-scale distribution. This is the approach to technological advancement proposed by mupy.
 
-# Concepts
-
-## mupy.core
+## Concepts
 
 ### Workspace
 A workspace is essentially a directory structure or environment to place hardware or assemblies objects into. It is a python class object and possess other unique properties and functions which make it behave as a sort of virtual workbench. Some properties and functions :
