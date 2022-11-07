@@ -1,6 +1,6 @@
-### Mapping the system-code landscape. 
+### Mapping the system-code space 
 
-I must confess I have no good scheme for how we should navigate system-code space. The only thing that has worked for me thus far is to identify projects and let those things define your requirements. Also the certification feature of mupy provides a casting mechanism which is really a kind of compression mechansim too 
+I must confess I have no good scheme for how we should navigate or map system-code space as a community. I am sure you could figure something out. The only thing that has worked for me thus far is to just identify projects and let those projects define your requirements, design and certify the parts if they dont exist and script your system. The *Certification* feature provides a casting mechanism (separate of openscad code which is a more rudimetry version of certification but unlike the casting as described before) which is really a kind of compression mechansim too and this feature can squeeze data of a system into a very small string. Doesnt solvethe issue but certainly mitigates it.
 
 
 ### library-index
