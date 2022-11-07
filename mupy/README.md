@@ -1,8 +1,8 @@
 
-
+## Directories & Files
 ### mupy-core
 
-These classes are nessecary for building the mupy model in an object oriented fashion. The basic approach is to model everything in terms of hardware (think system-codes), assemblies of hardware (this implies that coordinates in 3D space must be assigned to the hardware for an assembly simulation to make sense) and assemblies (each with initial and final coordinates within some specified assembly epoch) of hardware and smaller assemblies ad infinitum.  
+mupy.core refferes to the mupy model through the classes dedicated to describing it. The model is in flux but the system-code technology is somewhat understood. These classes are nessecary for building the mupy model in an object oriented fashion. The basic approach is to model everything in terms of hardware (think system-codes), assemblies of hardware (this implies that coordinates in 3D space must be assigned to the hardware for an assembly simulation to make sense) and assemblies (each with initial and final coordinates within some specified assembly epoch) of hardware and smaller assemblies ad infinitum.  
 
 ### mucli
 
