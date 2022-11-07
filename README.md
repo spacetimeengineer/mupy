@@ -650,19 +650,5 @@ The available system-code permutation set is an incalculable number and is belie
 ### Is it free?
 Yes! But only the core technology is free. The various family code libraries should each contain their own license which states the conditions for use. In most cases it is free, but always read the license always.
 
-### Does mupy replace CAD?
-Absolutely not, mupy is it's own thing and solves different problems. In some cases it may reduce or replace the hours spent using CAD, and in other cases it may increase the time people spend within CAD. If used in conjunction, you may get an optimized effect depending on your work. CAD simply doesn't provide system-code technology; this much is true. And system code technology is exponentially more overpowered. If there is an argument against CAD, that would be it. CAD however is optimized, mupy is rudimentary. Apples and oranges, but I like fruit salad. Additionally, the simulation environment is far more intuitive and can be automated with scripts if one chooses. Traditional CAD doesn't do that.
-
-## Contacts:
-
-| Company             | Project Team          | Role           | Email                          |
-|-------------------- | --------------------- | -------------- | ------------------------------ |
-| Ryan Solutions Inc. | Michael C Ryan        | Lead Developer | spacetime.engineer@gmail.com   |
-  
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* [Openscad Community](https://github.com/openscad/openscad)
-* [Python community](https://www.python.org/)
-* [PiPy community](https://www.python.org/)
-* [Docker community](https://www.docker.com/)
+### How can I earn income?
+One reason system-code technology was devised the way it was that it provided a powerful staging mechanism through abstraction to which pay walls and authentication could be assigned ; that is, to some library separate of the standard library. Although documentation on how to do this is sparse, any motivated individual could figure it out. The standard library is provided to get people stated with innovations. 
