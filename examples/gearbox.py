@@ -188,14 +188,20 @@ def gearbox_assembly():
         _type_: _description_
     """    
     alpha = 200 
+    beta = 3.2
     gearbox_assembly = mu.Assembly("gearbox_assembly")
-    gearbox_assembly.include(axle_adapter_assembly_a("a"), mu.Coordinates(t0 = 0.7, tf = 0.9, z0 = 8 * float(block_length.replace("P", ".", 1)) / 2 + 500, zf = 8 * float(block_length.replace("P", ".", 1)) / 2, a0 = -180, af = -180, b0 = 90, bf = 90))
-    gearbox_assembly.include(axle_adapter_assembly_a("b"), mu.Coordinates(t0 = 0.7, tf = 0.9, y0 = 8 * float(block_length.replace("P", ".", 1)) / 2 + 500, yf = 8 * float(block_length.replace("P", ".", 1)) / 2, a0 = -90, c0 = -90, af = -90, cf = -90))
-    gearbox_assembly.include(panel_c, mu.Coordinates(0.02,0.98,[ - 8 * float(block_length.replace("P", ".", 1)) / 2 - alpha, 0, 0 ],[ - 8 * float(block_length.replace("P", ".", 1)) / 2, 0, 0 ],[0,-90,0],[0,-90,0]))
-    gearbox_assembly.include(panel_d, mu.Coordinates(0.02,0.98,[0 , 0, -8 * float(block_length.replace("P", ".", 1)) / 2 - alpha],[0 , 0, -8 * float(block_length.replace("P", ".", 1)) / 2 ],[0,180,0],[0,180,0]))
-    gearbox_assembly.include(panel_e, mu.Coordinates(0.02,0.98,[0, - 8 * float(block_length.replace("P", ".", 1)) / 2 - alpha, 0 ],[0, - 8 * float(block_length.replace("P", ".", 1)) / 2, 0 ],[90,0,0],[90,0,0]))
-    gearbox_assembly.include(panel_f, mu.Coordinates(0.02,0.98,[8 * float(block_length.replace("P", ".", 1)) / 2 + alpha, 0 , 0],[8 * float(block_length.replace("P", ".", 1)) / 2, 0 , 0],[90,0,90],[90,0,90]))
+    gearbox_assembly.include(axle_adapter_assembly_a("a"), mu.Coordinates(t0 = 0.7, tf = 0.9, z0 = 8 * float(block_length.replace("P", ".", 1)) / 2 + 300, zf = 8 * float(block_length.replace("P", ".", 1)) / 2 - beta, a0 = -180, af = -180, b0 = 90, bf = 90))
+    gearbox_assembly.include(axle_adapter_assembly_a("b"), mu.Coordinates(t0 = 0.7, tf = 0.9, y0 = 8 * float(block_length.replace("P", ".", 1)) / 2 + 300, yf = 8 * float(block_length.replace("P", ".", 1)) / 2 - beta, a0 = -90, c0 = -90, af = -90, cf = -90))
+    gearbox_assembly.include(panel_c, mu.Coordinates(t0 = 0.02, tf = 0.8, x0 = - 10 * float(block_length.replace("P", ".", 1)) / 2 - alpha, xf = - 8 * float(block_length.replace("P", ".", 1)) / 2 + beta, b0 = -90, bf = -90 ))
+    gearbox_assembly.include(panel_d, mu.Coordinates(t0 = 0.02, tf = 0.8, z0 = -10 * float(block_length.replace("P", ".", 1)) / 2 - alpha, zf = -8 * float(block_length.replace("P", ".", 1)) / 2 + beta, b0 = 180, bf = 180 ))
+    gearbox_assembly.include(panel_e, mu.Coordinates(t0 = 0.02, tf = 0.8, y0 = - 10 * float(block_length.replace("P", ".", 1)) / 2 - alpha, yf = - 8 * float(block_length.replace("P", ".", 1)) / 2 + beta, a0 = 90, af = 90))
+    gearbox_assembly.include(panel_f, mu.Coordinates(t0 = 0.02, tf = 0.8, x0 = 10 * float(block_length.replace("P", ".", 1)) / 2 + alpha, xf = 8 * float(block_length.replace("P", ".", 1)) / 2 - beta, a0 = 90, c0 = 90, af = 90, cf = 90))
 
+    panel_c.color = "#4287f5"
+    panel_d.color = "#4287f5"
+    panel_e.color = "#4287f5"
+    panel_f.color = "#4287f5"
+    
     return gearbox_assembly
 
 
@@ -208,4 +214,7 @@ def pinset_assembly(tag):
     """    
     pass
 
-workspace.run(gearbox_assembly(), mu.Coordinates(0,1,[0,0,0],[0,0,0],[0,0,0],[0,0,0]))
+
+
+
+workspace.run(gearbox_assembly())
