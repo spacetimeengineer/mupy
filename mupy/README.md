@@ -76,15 +76,3 @@ A system-code serves to identify a general system (literally anything physical, 
 ## Schemas
 Schemas reference the pattern the system codes obey when storing parametrization information.
 
-
-### Requirements of mupy
-
-- Needs System-Codes
-
-- Schema-less
-
-- Publishable Package
-
-- Assigned Assembly, Operational & Other Context
-
-- Offers Applications Programming Interface (API)
