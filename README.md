@@ -41,6 +41,9 @@ Python manufacturing utility or mupy is a powerful new digital-twin technology i
   style="display: inline-block; margin: 0 auto; width: 1000px ">
 </p>
 
+
+![Alt Text](resources/gearbox_assembly.gif)
+
 ## Note from the developer
 
 mupy is more powerful than you would believe. It has grown too large to maintain alone and I have arrived at a good stopping point. mupy works well, too well perhaps but the most important thing is that it meets all preset requirements. The project now requires actual users to give feedback on the work done thus far. Currently, I can only afford commentary provided by actual users or practitioners who have demonstrated actual projects supported by mupy. If you are not sure if mupy is for your project, then read this README and try it for yourself first. In the meantime, I'll continue populating & cleaning mupy standard library (/mupy/lib) with additional hardware & assembly system-code sets ( which is abstracted away from the mupy.core library ). The standard-library is small but useful enough and with more time, additional hardware and assemblies can be certified. I am still learning this technology to be honest. It is very useful, I just hope other people can utilize, study and develop system-code tech becasue it is too powerful to be wasted. Also human agents are the only way to multiply system-code sets. 
@@ -162,7 +165,7 @@ box_assembly.include(panel_f, assembly_coords_f)
 6. Run assembly
 
 ```python
-workspace.run(box_assembly, mu.Coordinates()) # This command creates all directorires and assemblies.
+workspace.run(box_assembly) # This command creates all directorires and assemblies.
 
 ```
 

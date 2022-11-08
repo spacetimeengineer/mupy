@@ -4,6 +4,7 @@ from distutils.command.build_scripts import first_line_re
 from unicodedata import name
 from .decode import Decode
 import os
+from .coordinates import Coordinates
 
 class WorkSpace:
     """Gives context to parts and assemblys. Provides functionallity by calling sub-functions of assembly and part objects making code much shorter and much more advanced. 
@@ -106,7 +107,7 @@ class WorkSpace:
         for assembly in self.assemblies:  # For each assembly.
             print(assembly.errors) # Print errors contained. (Debug only)
 
-    def run(self, system, coordinates):
+    def run(self, system, coordinates = Coordinates()):
         """Main function for workspace to get everthing written and initialized.
 
         Args:

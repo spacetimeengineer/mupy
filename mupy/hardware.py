@@ -7,6 +7,7 @@ from .decode import Decode
 from os.path import exists
 from .coordinates import Coordinates
 import urllib.request
+from sys import platform
 
 class Hardware:
     """ This class builds json objects which define parts. 
@@ -240,6 +241,27 @@ class Hardware:
         scad_file.write(self.hardware_scad()) # Writes scad code to file.
         scad_file.close() # Close file.
     
+    def render_stl(self, directory):
+        """_summary_
+
+        Args:
+            directory (_type_): _description_
+        """        
+        if platform == "linux" or platform == "linux2":
+            
+            print("Rendering : "+self.hardware_code)
+            os.system("openscad -o "+directory+"/stl_files/"+self.hardware_code+".stl "+directory+"/"+self.hardware_code+".scad") # This is the scad file used to create the stl files
+
+        if platform == "darwin":
+            
+            # OS X
+            pass
+        
+        if platform == "win32":
+            
+            # Windows...
+            pass
+    
     def build_stl(self, directory):
         """_summary_
 
@@ -254,17 +276,23 @@ class Hardware:
         if not exists(directory+"/stl_files/"+self.hardware_code+".stl") and decoding.family_code_valid == True: #
             print("Rendering : "+self.hardware_code)
             print(""+mu_symbol+":! openscad -o "+directory+"/stl_files/"+self.hardware_code+".stl "+directory+"/"+self.hardware_code+".scad") # This is the scad file used to create the stl files
-            os.system("openscad -o "+directory+"/stl_files/"+self.hardware_code+".stl "+directory+"/"+self.hardware_code+".scad") # This is the scad file used to create the stl files
+            self.render_stl(directory)
                     
-        if self.stl_imported == True:
-            
+        self.pull_stl(directory)
 
+
+    def pull_stl(self, directory):
+        """Checks if hardware is derived from system-code or is not. Copies .stl file to the .stl folder.
+
+        Args:
+            directory (_type_): _description_
+        """        
+        if self.stl_imported == True:
             if len(self.hardware_code.split("http")) > 0:
                 stl_file = self.hardware_code
                 urllib.request.urlretrieve(stl_file, directory+"/stl_files/"+self.imported_stl)
             else:
-                shutil.copy2(self.imported_stl, directory+"/stl_files/")            
-
+                shutil.copy2(self.imported_stl, directory+"/stl_files/")     
             
     def mucli_build_stl(self, directory):
         """Renders STL file and handles duplicate renderings.
@@ -278,8 +306,8 @@ class Hardware:
         
             print("")
             print(""+mu_symbol+":! Rendering : "+self.hardware_code)
-            print(""+mu_symbol+":! openscad -o "+directory+"/stl_files/"+self.hardware_code+".stl "+directory+"/"+self.hardware_code+".scad") # This is the scad file used to create the stl files.
-            os.system("openscad -o "+directory+"/stl_files/"+self.hardware_code+".stl "+directory+"/"+self.hardware_code+".scad") # This is the rendering command for linux.
+            #print(""+mu_symbol+":! openscad -o "+directory+"/stl_files/"+self.hardware_code+".stl "+directory+"/"+self.hardware_code+".scad") # This is the scad file used to create the stl files.
+            self.render_stl(directory)            
             print("")
             
         if decoding.family_code_valid == False:

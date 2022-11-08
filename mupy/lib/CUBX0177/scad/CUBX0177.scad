@@ -544,9 +544,8 @@ module CUBX0177_BPIN( block_length, shaft_radius, block_units_pin_length, pin_ra
 }
 
 //CUBX0177_PIN( block_length = 7.5, shaft_radius = 2.25, block_units_pin_length = 4 );
-//CUBX0177_BPIN( block_length = 7.5, shaft_radius =  2.18, block_units_pin_length = 6.25, pin_radius = 1.20 );    
-//CUBX0177_BPIN( block_length = 7.5, shaft_radius =  2.18, block_units_pin_length = 10.25, pin_radius = 1.20 );  
-// CUBX0177-PIN-B7P5SR2P22-PP32
+//CUBX0177_BPIN( block_length = 7.5, shaft_radius =  2.18, block_units_pin_length = 6.7, pin_radius = 1.20 );    
+CUBX0177_BPIN( block_length = 7.5, shaft_radius =  2.18, block_units_pin_length = 10.7, pin_radius = 1.20 );                                                                                                                                                                          // Not Certified
 //CUBX0177_SPAN( block_length = 7.5, shaft_radius = 2.18, xunits=9, yunits=9, x_spacing=2*7.5, y_spacing=2*7.5, x_units=4, y_units=4, x_offset=0, y_offset=0, x_cavity_dimensions=7.7, y_cavity_dimensions=7.7, z_cavity_dimensions=26, cavity_type="S");                             //  
 //CUBX0177_BPANS2( block_length = 7.5, shaft_radius = 2.18, 8, 8, 0.25, "regular", false, 0, 0, 1, 1, 0, 0, 4*7.5, 4*7.5, 6, "S", 0, 0, 1, 1, 0, 0, 16, 16, 15, "S");                                                                                                                 // CUBX0177-BPANS2-B7P5SR2P2-X8Y8PP25-RF-SX0Y0-X1Y1-XO0YO0-X30Y30Z6-S-SX0Y0-X1Y1-XO0YO0-X16Y16Z15-S
 //CUBX0177_BPANS2( block_length = 7.5, shaft_radius = 2.18, 12, 12, 0.25, "regular", false, 0, 0, 1, 1, 0, 0, 8*7.5, 8*7.5, 6, "S", 0, 0, 1, 1, 0, 0, 45, 45, 15, "S");                                                                                                               // CUBX0177-BPANS2-B7P5SR2P2-X8Y8PP25-RF-SX0Y0-X1Y1-XO0YO0-X60Y60Z6-S-SX0Y0-X1Y1-XO0YO0-X45Y45Z15-S
@@ -575,5 +574,5 @@ module CUBX0177_BPIN( block_length, shaft_radius, block_units_pin_length, pin_ra
 
 
 
-// CUBX0177_VANE( block_length = 7.5, shaft_radius = 2.25, x_units = 5, y_units = 8 )
-CUBX0177_FOIL( block_length = 7.5, shaft_radius = 2, x_units = 12, y_units = 12, axle_blocks = 8 );
+// CUBX0177_VANE( block_length = 7.5, shaft_radius = 2.25, x_units = 5, y_units = 8 );                                                                                                                                                                                                // Not Certified
+// CUBX0177_FOIL( block_length = 7.5, shaft_radius = 2, x_units = 12, y_units = 12, axle_blocks = 8 );                                                                                                                                                                                // Not Certified
