@@ -89,18 +89,32 @@ workspace.run(box_assembly) # This command creates all directorires and assembli
 
 ```
 
-## System-Code Technology
+## Generating Output
+Once this script is executed, the workspace.run() mupy.core will generate a *workspace* directory and this will indicate the directory path containing your IP.
 
-Each system-code corresponds to a specific part. Once typed press "enter" to generate resources. Here are a few examples below of some system-codes and their corresponding hardware elements:
+### Generated Workspace Directory
+        .
+        ├── box_assembly_A1cfc7f.scad
+        ├── CUBX0177-BPAN-B15SR3-X12Y20PP2-RF-SX5Y10-X1Y1-XO0YO0-X30Y30Z20-S.scad
+        ├── CUBX0177-BPAN-B15SR3-X20Y12PP2-RF-SX5Y5-X1Y1-XO0YO0-X30Y30Z20-S.scad
+        ├── CUBX0177-BPAN-B15SR3-X8Y12PP2-RF-SX5Y3-X1Y1-XO0YO0-X30Y30Z20-S.scad
+        ├── CUBX0177-BPAN-B15SR3-X8Y12PP2-RF-SX5Y5-X1Y1-XO0YO0-X30Y30Z20-S.scad
+        ├── CUBX0177-BPAN-B15SR3-X8Y20PP2-RF-SX5Y10-X1Y1-XO0YO0-X30Y30Z20-S.scad
+        ├── CUBX0177-BPAN-B15SR3-X8Y20PP2-RF-SX5Y3-X1Y1-XO0YO0-X30Y30Z20-S.scad
+        ├── panel_a_P942313.scad
+        ├── panel_b_Pef37ea.scad
+        ├── panel_c_P52f602.scad
+        ├── panel_d_P49e0f5.scad
+        ├── panel_e_P3910d0.scad
+        ├── panel_f_Pfe0d99.scad
+        ├── scad
+        │   └── CUBX0177.scad
+        └── stl_files
+            ├── CUBX0177-BPAN-B15SR3-X12Y20PP2-RF-SX5Y10-X1Y1-XO0YO0-X30Y30Z20-S.stl
+            ├── CUBX0177-BPAN-B15SR3-X20Y12PP2-RF-SX5Y5-X1Y1-XO0YO0-X30Y30Z20-S.stl
+            ├── CUBX0177-BPAN-B15SR3-X8Y12PP2-RF-SX5Y3-X1Y1-XO0YO0-X30Y30Z20-S.stl
+            ├── CUBX0177-BPAN-B15SR3-X8Y12PP2-RF-SX5Y5-X1Y1-XO0YO0-X30Y30Z20-S.stl
+            ├── CUBX0177-BPAN-B15SR3-X8Y20PP2-RF-SX5Y10-X1Y1-XO0YO0-X30Y30Z20-S.stl
+            └── CUBX0177-BPAN-B15SR3-X8Y20PP2-RF-SX5Y3-X1Y1-XO0YO0-X30Y30Z20-S.stl
 
-    μ:# CUBX0006-BLK-L1000W200H15
-
-![Alt Text](resources/CUBX0006-BLK-L1000W200H15.gif)
-
-    μ:# CRSPGR022-SG-M1-T34W8-P15H15-B4-T
-
-![Alt Text](resources/CRSPGR022-SG-M1-T34W8-P15H15-B4-T.gif)
-
-    μ:# CUBX0177-BPAN-B12SR0-X6Y18PP12-XF-SX10Y10-X1Y1-XO0YO0-X24Y168Z25-S
-
-![Alt Text](resources/CUBX0177-BPAN-B12SR0-X6Y18PP12-XF-SX10Y10-X1Y1-XO0YO0-X24Y168Z25-S.gif)
+![Alt Text](resources/simple_box.gif)
