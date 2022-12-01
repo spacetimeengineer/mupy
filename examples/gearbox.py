@@ -28,6 +28,7 @@ x_block_units = str(x_block_units)
 y_block_units = str(y_block_units)
 bearing_insert_radius_mm = 16
 
+
 """ Define Hardware Components"""
 panel_b = mu.Hardware("panel_c", "CUBX0177-BPANS2-B"+block_length+"SR"+shaft_radius+"-X"+x_block_units+"Y"+y_block_units+"PP25-RF-SX0Y0-X1Y1-XO0YO0-X30Y30Z6-S-SX0Y0-X1Y1-XO0YO0-X16Y16Z15-S") #Square waffle life panel for making boxes.
 panel_c = mu.Hardware("panel_c", "CUBX0177-BPANS2-B"+block_length+"SR"+shaft_radius+"-X"+x_block_units+"Y"+y_block_units+"PP25-RF-SX0Y0-X1Y1-XO0YO0-X30Y30Z6-S-SX0Y0-X1Y1-XO0YO0-X16Y16Z15-S")
