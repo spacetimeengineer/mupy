@@ -10,12 +10,6 @@ mupuy fearures include:
 - Integratable with thousands of other Python compatible technologies
 - Ability to transfer complete knowledge of your innovations to others
 
-<p align="center">
-  <img
-  src="resources/printed_hardware.png"
-  style="display: inline-block; margin: 0 auto; width: 1000px ">
-</p>
-
 
 ![Alt Text](resources/gearbox_assembly.gif)
 
