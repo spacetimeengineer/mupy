@@ -118,3 +118,37 @@ Once this script is executed, the workspace.run() mupy.core will generate a *wor
             └── CUBX0177-BPAN-B15SR3-X8Y20PP2-RF-SX5Y3-X1Y1-XO0YO0-X30Y30Z20-S.stl
 
 ![Alt Text](resources/simple_box.gif)
+
+
+
+
+
+## Linux Installation
+
+### Prerequisites
+
+1. Install OpenSCAD (OpenSCAD programming language)
+
+```console
+$ apt install openscad
+```
+
+2. Install python3-pip ( python package manager )
+```console
+$ apt install python3-pip
+```
+
+3. Install git (if you plan to contribute or install by cloning) - Follow instructions at https://www.atlassian.com/git/tutorials/install-git
+```console
+$ sudo apt-get update 
+```
+```console
+$ sudo apt-get install git
+```
+
+### Install mupy
+
+1. Install mupy from the Python3 package-manager.
+```console
+$ pip3 install mupy
+```
