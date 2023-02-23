@@ -1,5 +1,7 @@
 ## About
 
+* This is a very special project but it will remain in beta for some time.
+
 Python Manufacturing Utility or "mupy" is a powerful new digital-twin technology implemented as a Python pip installable package. In it's essence mupy is a platform for a new way to think about design, physical hardware, advanced assemblies, innovative technologies, or most generally speaking, system design. This package and the tools included empower users with hardware-class-objects in the Python scripting environment. mupy possesses features such as hardware and system generation, assembly and operational simulation, as well as metadata and resource renderings. mupy empowers the user with resources and speed. Get dangerous.
 
 mupuy fearures include:
